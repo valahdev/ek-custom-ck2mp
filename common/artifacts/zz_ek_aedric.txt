@@ -55,6 +55,7 @@ amulet_of_kings = {
 		theft_dr_extreme
 	}
 }
+
 amulet_of_alessia = { #Stone of Alessia
 	diplomacy = 1
 	stewardship = 1
@@ -85,6 +86,7 @@ amulet_of_alessia = { #Stone of Alessia
 		theft_dr_extreme
 	}
 }
+
 amulet_of_akatosh = {
 	monthly_character_piety = 0.1
 	eight_divines_opinion = 3
@@ -111,6 +113,7 @@ amulet_of_akatosh = {
 		no_inherit
 	}
 }
+
 amulet_of_arkay = {
 	monthly_character_piety = 0.1
 	health = 0.25
@@ -138,6 +141,7 @@ amulet_of_arkay = {
 		no_inherit
 	}
 }
+
 amulet_of_dibella = {
 	monthly_character_piety = 0.1
 	eight_divines_opinion = 3
@@ -166,6 +170,7 @@ amulet_of_dibella = {
 		no_inherit
 	}
 }
+
 amulet_of_julianos = {
 	monthly_character_piety = 0.1
 	eight_divines_opinion = 3
@@ -192,6 +197,7 @@ amulet_of_julianos = {
 		no_inherit
 	}
 }
+
 amulet_of_kynareth = {
 	monthly_character_piety = 0.1
 	eight_divines_opinion = 3
@@ -221,6 +227,7 @@ amulet_of_kynareth = {
 		no_inherit
 	}
 }
+
 amulet_of_mara = {
 	monthly_character_piety = 0.1
 	eight_divines_opinion = 3
@@ -248,6 +255,7 @@ amulet_of_mara = {
 		no_inherit
 	}
 }
+
 amulet_of_stendarr = {
 	monthly_character_piety = 0.1
 	eight_divines_opinion = 3
@@ -279,6 +287,7 @@ amulet_of_stendarr = {
 		no_inherit
 	}
 }
+
 amulet_of_talos = {
 	monthly_character_piety = 0.1
 	nine_divines_opinion = 5
@@ -355,6 +364,14 @@ armor_lordsmail = {
 	slot = torso
 	indestructible = yes
 	
+	active = { 
+		OR = {
+			religion = nine_divines
+			religion = eight_divines
+			trait = p_kynareth
+		}
+	}
+	
 	flags = {
 		armor
 		aedric_artifact
@@ -368,6 +385,7 @@ armor_lordsmail = {
 	}
 	quality = 8
 }
+
 armor_of_the_emperor = {
 	martial = 5
 	health = 0.5
@@ -416,6 +434,14 @@ maras_raiment = {
 	indestructible = yes
 	quality = 7
 	
+	active = { 
+		OR = {
+			religion = nine_divines
+			religion = eight_divines
+			trait = p_mara
+		}
+	}
+	
 	flags = {
 		clothing
 		aedric_artifact
@@ -442,6 +468,14 @@ gloves_zenithar = {
 	slot = gloves
 	indestructible = yes
 	quality = 8
+	
+	active = { 
+		OR = {
+			religion = nine_divines
+			religion = eight_divines
+			trait = p_zenithar
+		}
+	}
 	
 	flags = {
 		gloves
@@ -524,6 +558,10 @@ shield_auriel = {
 	
 	quality = 8
 	
+	active = {
+			trait = p_auriel
+		}
+	
 	flags = {
 		shield
 		unique
@@ -562,6 +600,14 @@ brush_of_truepaint = {
 	indestructible = yes
 	quality = 8
 	
+	active = { 
+		OR = {
+			religion = nine_divines
+			religion = eight_divines
+			trait = p_dibella
+		}
+	}
+	
 	flags = {
 		unique
 		aedric_artifact
@@ -593,6 +639,7 @@ weapon_stendarrshammer = {
 			martial = 25
 			trait = strong
 			trait = robust
+			trait = p_stendarr
 		}
 	}
 	allowed_gift = {
@@ -609,6 +656,7 @@ weapon_stendarrshammer = {
 		aedric_artifact
 	}
 }
+
 weapon_bow_auriel = {
 	monthly_character_prestige = 0.35
 	monthly_character_piety = 0.15
@@ -623,6 +671,10 @@ weapon_bow_auriel = {
 	quality = 8
 	indestructible = yes
 	no_shield_2hand = 1
+	
+	active = {
+			trait = p_auriel
+		}
 	
 	flags = {
 		combat_weapon

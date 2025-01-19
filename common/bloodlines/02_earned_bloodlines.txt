@@ -689,9 +689,26 @@ bloodline_diplo_appeaser = {
 	allow_bastards = yes
 	picture = GFX_bloodlines_symbol_peace
 	flags = { created_bloodline diplomacy_bloodline bloodline_less_factions }
+}
+	
+bloodline_martial_adventurer = {
+	martial = 1
+	adventurer_opinion = 10
+	monthly_character_prestige = 0.5
+	combat_rating = 10
+	
+	inheritance = all_descendants
+	matrilineal_override = yes
+	allow_bastards = yes
+	picture = GFX_ek_bloodlines_placeholder_symbol
+	flags = { created_bloodline martial_bloodline bloodline_martial_infestations }
 	
 	active = {
-		always = yes # ?
+		OR = {
+              trait = adventurer
+		}
+		bloodline_bastard_check = yes #Bastards of the founder will always have the bloodline active.
+		
 	}
 }
 
@@ -702,9 +719,7 @@ bloodline_diplo_poet = {
 	bard_2_opinion = 5
 	bard_3_opinion = 5
 	monthly_character_prestige = 0.5
-	
-	bloodline_effect_write_songs = 1 #Can write a song, prestige, opinion, even artifact if really good?
-	bloodline_effect_bard_specialization = 1 #Easier to become a Bard
+	sex_appeal_opinion = 5
 	
 	inheritance = all_descendants
 	matrilineal_override = yes
@@ -719,12 +734,13 @@ bloodline_diplo_poet = {
 
 # Martial
 bloodline_martial_adventurer = {
-	martial = 1
+	martial = 2
 	adventurer_opinion = 10
+	wayfarer_1_opinion = 5
+	wayfarer_2_opinion = 5
+	wayfarer_3_opinion = 5
 	monthly_character_prestige = 0.5
 	combat_rating = 10
-	
-	bloodline_effect_martial_infestations = 1 #Does not need to be in a fighters guild to deal with infestations events
 	
 	inheritance = all_descendants
 	matrilineal_override = yes
@@ -738,16 +754,14 @@ bloodline_martial_adventurer = {
 }
 
 bloodline_martial_duel = {
-	martial = 1
+	martial = 2
 	combat_rating = 20
 	monthly_character_prestige = 0.25
-	
-	bloodline_effect_duel = 1 #Allows duelling
 	
 	inheritance = all_descendants
 	matrilineal_override = yes
 	allow_bastards = yes
-	picture = GFX_ek_bloodlines_placeholder_symbol
+	picture = GFX_ek_bloodlines_crossed_gladius_symbol
 	flags = { created_bloodline martial_bloodline bloodline_duel }
 	
 	active = {
@@ -757,20 +771,18 @@ bloodline_martial_duel = {
 
 # Stewardship
 bloodline_stewardship_trader = {
-	stewardship = 1
+	stewardship = 2
 	trader_1_opinion = 5
 	trader_2_opinion = 5
 	trader_3_opinion = 5
 	town_opinion = 10
 	monthly_character_prestige = 0.25
-	
-	bloodline_effect_trade_post_buildings = 1 #Additional trade post buildings (duh)
-	bloodline_effect_trader_specialization = 1 #Easier to become a Trader
+	monthly_character_wealth = 0.50
 	
 	inheritance = all_descendants
 	matrilineal_override = yes
 	allow_bastards = yes
-	picture = GFX_ek_bloodlines_placeholder_symbol
+	picture = GFX_ek_bloodlines_lion_symbol
 	flags = { created_bloodline stewardship_bloodline bloodline_trade_post_buildings bloodline_trader_specialization }
 	
 	active = {
@@ -779,12 +791,10 @@ bloodline_stewardship_trader = {
 }
 
 bloodline_stewardship_law_maker = {
-	stewardship = 1
+	stewardship = 3
 	vassal_opinion = 5
 	just_opinion = 15
 	monthly_character_prestige = 0.25
-	
-	bloodline_effect_council_support_law_change = 1 #The council is more susceptible to accept a law change
 	
 	inheritance = all_descendants
 	matrilineal_override = yes
@@ -799,18 +809,15 @@ bloodline_stewardship_law_maker = {
 
 # Intrigue
 bloodline_intrigue_thief = {
-	intrigue = 1
+	intrigue = 2
 	thief_1_opinion = 5
 	thief_2_opinion = 5
 	thief_3_opinion = 5
 	
-	bloodline_effect_easier_artifact_stealing = 1 #Has more chance to sucessfully steal an artifact (can steal artifact sets a impossible to steal?)
-	bloodline_effect_influence_thieves_guild = 1 #Has access, gets more influence, has an higher score in all thieves guilds
-	
 	inheritance = all_descendants
 	matrilineal_override = yes
 	allow_bastards = yes
-	picture = GFX_ek_bloodlines_placeholder_symbol
+	picture = GFX_ek_bloodlines_durcorach_symbol
 	flags = { created_bloodline intrigue_bloodline bloodline_easier_artifact_stealing bloodline_thieves_guild }
 	
 	active = {
@@ -819,18 +826,15 @@ bloodline_intrigue_thief = {
 }
 
 bloodline_intrigue_assassin = {
-	intrigue = 1
+	intrigue = 3
 	assassin_1_opinion = 5
 	assassin_2_opinion = 5
 	assassin_3_opinion = 5
 	
-	bloodline_effect_easier_assassination = 1 #Has more chance to sucessfully assassinate someone
-	bloodline_effect_influence_assassins_guild = 1 #Has access, gets more influence, has an higher score in all assassins guilds
-	
 	inheritance = all_descendants
 	matrilineal_override = yes
 	allow_bastards = yes
-	picture = GFX_bloodlines_symbol_murder
+	picture = GFX_ek_bloodlines_serpent_symbol
 	flags = { created_bloodline intrigue_bloodline bloodline_easier_assassination bloodline_assassins_guild }
 	
 	active = {
@@ -840,16 +844,15 @@ bloodline_intrigue_assassin = {
 
 # Learning
 bloodline_learning_raw_magicka = {
-	learning = 2
+	learning = 5
+	health = 1
 	monthly_character_prestige = 0.25
 	combat_rating = 5
-	
-	bloodline_effect_more_magicka = 1 #Has a bigger magicka pool
 	
 	inheritance = all_descendants
 	matrilineal_override = yes
 	allow_bastards = yes
-	picture = GFX_ek_bloodlines_placeholder_symbol
+	picture = GFX_ek_bloodlines_scroll_symbol
 	flags = { created_bloodline learning_bloodline bloodline_more_magicka }
 	
 	active = {
@@ -858,18 +861,15 @@ bloodline_learning_raw_magicka = {
 }
 
 bloodline_learning_restoration = {
-	learning = 1
-	health = 1
+	learning = 3
+	health = 3
 	monthly_character_prestige = 0.25
 	combat_rating = 5
-	
-	bloodline_effect_heal_characters = 1 #Can use restoration magic to cure someone's disease / wound
-	bloodline_effect_cheaper_restoration = 1 #Restoration magic is cheaper
 	
 	inheritance = all_descendants
 	matrilineal_override = yes
 	allow_bastards = yes
-	picture = GFX_ek_bloodlines_placeholder_symbol
+	picture = GFX_ek_bloodlines_scroll_symbol
 	flags = { created_bloodline learning_bloodline bloodline_heal_characters bloodline_cheaper_restoration }
 	
 	active = {
@@ -878,17 +878,18 @@ bloodline_learning_restoration = {
 }
 
 bloodline_learning_destruction = {
-	learning = 1
-	martial = 1
+	learning = 2
+	martial = 2
 	monthly_character_prestige = 0.25
 	combat_rating = 10
-	
-	bloodline_effect_cheaper_destruction = 1 #Destruction magic is cheaper
+	battlemage_1_opinion = 5
+	battlemage_2_opinion = 5
+	battlemage_3_opinion = 5
 	
 	inheritance = all_descendants
 	matrilineal_override = yes
 	allow_bastards = yes
-	picture = GFX_ek_bloodlines_placeholder_symbol
+	picture = GFX_ek_bloodlines_scroll_symbol
 	flags = { created_bloodline learning_bloodline bloodline_cheaper_destruction }
 	
 	active = {
@@ -897,14 +898,11 @@ bloodline_learning_destruction = {
 }
 
 bloodline_learning_forbidden_magic = {
-	learning = 1
+	learning = 4
 	lich_opinion = 10
 	necromancer_opinion = 10
 	general_opinion = -5
 	monthly_character_prestige = 0.25
-	
-	bloodline_effect_more_magicka = 1 #Has a bigger magicka pool
-	bloodline_effect_dark_arts = 1 #Characters have an easier time studying the dark arts
 	
 	inheritance = all_descendants
 	matrilineal_override = yes
@@ -921,13 +919,12 @@ bloodline_learning_duel = {
 	learning = 1
 	combat_rating = 20
 	monthly_character_prestige = 0.25
-	
-	bloodline_effect_duel = 1 #Allows duelling
+
 	
 	inheritance = all_descendants
 	matrilineal_override = yes
 	allow_bastards = yes
-	picture = GFX_ek_bloodlines_placeholder_symbol
+	picture = GFX_ek_bloodlines_swordnshield_symbol
 	flags = { created_bloodline learning_bloodline bloodline_duel }
 	
 	active = {
@@ -940,14 +937,17 @@ bloodline_daedric_taint_blood = {
 	same_religion_opinion = 15
 	general_opinion = -10
 	monthly_character_piety = 0.25
-	
-	bloodline_effect_more_favour = 1 #Gets more favour with their dear Daedric Prince
-	bloodline_effect_daedric_artifacts = 1 #Can claim Daedric artifacts without the required traits
+	monthly_character_prestige = 0.50
+	health = 1
+	martial = 2
+	learning = 3
+	intrigue = 1
+	combat_rating = 10
 	
 	inheritance = all_descendants
 	matrilineal_override = yes
 	allow_bastards = yes
-	picture = GFX_ek_bloodlines_placeholder_symbol
+	picture = GFX_ek_bloodlines_veloth_symbol
 	flags = { created_bloodline religious_bloodline bloodline_more_favour bloodline_daedric_artifacts }
 	
 	active = {
@@ -966,50 +966,95 @@ bloodline_daedric_taint_blood = {
 # LYCANS             #
 ######################
 bloodline_werewolf_lord = {
-	lycan_opinion = 15
+	known_lycan_opinion = 50
+	lycan_opinion = 50
 	general_opinion = -5
-	health = 1
+	health = 3
 	monthly_character_prestige = 0.5
-	
-	bloodline_effect_attract_lycans = 1 #Lycans can join your court
-	bloodline_effect_latent_lycanthropy = 1 #Has higher control over their beast form
+	martial = 2
+	combat_rating = 30
+	daedra_hircine_opinion = 30
 	
 	inheritance = all_descendants
 	matrilineal_override = yes
 	allow_bastards = yes
-	picture = GFX_ek_bloodlines_wolfshead_symbol
+	picture = GFX_ek_bloodlines_werewolf_symbol
 	flags = { created_bloodline lycan_bloodline bloodline_attract_lycans bloodline_lycanthropy_control bloodline_latent_lycanthropy }
 	
 	active = {
 		OR = {
 			trait = known_lycan
-			trait = known_lycan_benevolent
+			trait = lycan
 		}
 	}
 }
 
 bloodline_feral_lycan = {
 	known_lycan_opinion = 15
-	general_opinion = -15
+	lycan_opinion = 5
 	health = 1
 	monthly_character_prestige = 0.5
+	combat_rating = 15
 	
-	bloodline_effect_attract_lycans = 1 #Lycans can join your court
 	
 	inheritance = all_descendants
 	matrilineal_override = yes
 	allow_bastards = yes
-	picture = GFX_bloodlines_symbol_norse_wolf
+	picture = GFX_ek_bloodlines_wolfshead_symbol
 	flags = { created_bloodline religious_bloodline bloodline_attract_lycans }
 	
 	active = {
-		trait = known_lycan
+		trait = lycan
 	}
 }
 
 ######################
 # VAMPIRES           #
 ######################
+
+bloodline_vampire_lord = {
+	known_vampire_opinion = 50
+	vampire_opinion = 50
+	general_opinion = -5
+	health = 1
+	monthly_character_prestige = 0.5
+	martial = 2
+	combat_rating = 50
+	daedra_molag_opinion = 30
+	
+	inheritance = all_descendants
+	matrilineal_override = yes
+	allow_bastards = yes
+	picture = GFX_ek_bloodlines_bloodgoblet_symbol
+	flags = { created_bloodline lycan_bloodline bloodline_attract_lycans bloodline_lycanthropy_control bloodline_latent_lycanthropy }
+	
+	active = {
+		OR = {
+			trait = known_vampire
+			trait = vampire
+		}
+	}
+}
+
+bloodline_feral_vampire = {
+	known_vampire_opinion = 15
+	lycan_opinjon = 5
+	health = 1
+	monthly_character_prestige = 0.5
+	combat_rating = 25
+	
+		
+	inheritance = all_descendants
+	matrilineal_override = yes
+	allow_bastards = yes
+	picture = GFX_ek_bloodlines_wolfshead_symbol
+	flags = { created_bloodline religious_bloodline bloodline_attract_lycans }
+	
+	active = {
+		trait = vampire
+	}
+}
+
 
 ######################
 # WAR                #

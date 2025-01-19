@@ -592,18 +592,6 @@ float4 main( VS_OUTPUT_PDXMESHSTANDARD In ) : COLOR
 	float3 vNormalSample = UnpackNormal( NormalMap, In.vUV0 );
 	float3x3 TBN = Create3x3( normalize( In.vTangent ), normalize( In.vBitangent ), normalize( In.vNormal ) );
 	float3 vNormal = mul( vNormalSample, TBN );
-	
-	vColor.rgb = lerp( vColor.rgb, 
-	        vColor.rgb * ( vSpecColor.r * PrimaryColor.rgb ), 
-		    vSpecColor.r );
-
-	vColor.rgb = lerp( vColor.rgb, 
-	        vColor.rgb * ( vSpecColor.g * SecondaryColor.rgb ), 
-		    vSpecColor.g );
-
-	vColor.rgb = lerp( vColor.rgb, 
-	        vColor.rgb * ( vSpecColor.b * TertiaryColor.rgb ), 
-		    vSpecColor.b );
 
 	vColor.rgb = CalculateLighting( vColor.rgb, vNormal );
 	

@@ -1,6 +1,6 @@
 From;To;Type;Through;-1;-1;-1;-1;Comment
 152;459;sea;1069;-1;-1;-1;-1;Daggerfall - Betony
-1;289;sea;1072;-1;-1;-1;-1;Imperial Isle - Weye
+1;289;major_river;1072;-1;-1;-1;-1;Imperial Isle - Weye
 8;596;sea;1143;-1;-1;-1;-1;Alessia - Culotte
 11;15;sea;1111;-1;-1;-1;-1;Irony - Redman
 13;14;sea;1111;-1;-1;-1;-1;Leyawiin - Deepscorn
@@ -107,58 +107,58 @@ From;To;Type;Through;-1;-1;-1;-1;Comment
 788;1274;major_river;1219;-1;-1;-1;-1;Viplam - Kaliggau
 1200;352;sea;1063;-1;-1;-1;-1;Sednar - Arcantys
 1201;354;sea;1063;-1;-1;-1;-1;Elran - Vallas
-420;423;sea;1048;-1;-1;-1;-1;Dargan – Cronan
-422;423;sea;1048;-1;-1;-1;-1;Ikerrin – Cronan
-455;1047;sea;1173;-1;-1;-1;-1;Kamery – Tulla
-444;454;sea;1173;-1;-1;-1;-1;Quey – Namien
-444;1291;sea;1173;-1;-1;-1;-1;Quey – Shayfan
-444;446;sea;1173;-1;-1;-1;-1;Quey – Lankhmar
-1292;446;sea;1173;-1;-1;-1;-1;Ceffa – Lankhmar
-453;1292;sea;1173;-1;-1;-1;-1;Zahedann – Ceffa
-453;454;sea;1173;-1;-1;-1;-1;Zahedann – Namien
-1029;740;sea;1171;-1;-1;-1;-1;Om Nat – Rama
-741;1041;sea;1171;-1;-1;-1;-1;Ang Het – Bang Suan
-1040;743;sea;1171;-1;-1;-1;-1;Khonong – Than Mo
-743;1044;sea;1185;-1;-1;-1;-1;Than Mo – Hua Dung
-743;1042;sea;1185;-1;-1;-1;-1;Than Mo – Buarachan
-1209;1044;sea;1185;-1;-1;-1;-1;Surinang – Hua Dung
-1209;1042;sea;1185;-1;-1;-1;-1;Surinang – Buarachan
-1209;753;sea;1185;-1;-1;-1;-1;Surinang – Tang Yala
-1044;753;sea;1185;-1;-1;-1;-1;Hua Dung – Tang Yala
-753;748;sea;1185;-1;-1;-1;-1;Tang Yala – Latchanaburi
-753;1043;sea;1185;-1;-1;-1;-1;Tang Yala – Mae Thong
-1039;744;sea;1174;-1;-1;-1;-1;Tharong – Prachata
-1163;1210;sea;1185;-1;-1;-1;-1;Ko Ong – Pa Kong
-1163;751;sea;1185;-1;-1;-1;-1;Ko Ong – Ratchasima
-1163;1043;sea;1185;-1;-1;-1;-1;Ko Ong – Mae Thong
-748;749;sea;1185;-1;-1;-1;-1;Latchanaburi – Ang Po
-749;751;sea;1178;-1;-1;-1;-1;Ang Po – Ratchasima
-748;1211;sea;1159;-1;-1;-1;-1;Latchanaburi – Phuchang
-1211;747;sea;1159;-1;-1;-1;-1;Phuchang – Langkhon
-1211;750;sea;1159;-1;-1;-1;-1;Phuchang – Ratchata
-747;750;sea;1159;-1;-1;-1;-1;Langkhon – Ratchata
-747;1046;sea;1159;-1;-1;-1;-1;Langkhon – Ang Suan
-749;750;sea;1178;-1;-1;-1;-1;Ang Po – Ratchata
-750;1166;sea;1178;-1;-1;-1;-1;Ratchata – Hua La
-1166;746;sea;1178;-1;-1;-1;-1;Hua La – Mae Taphut
-1166;938;sea;1178;-1;-1;-1;-1;Hua La – Udon Thani
-746;938;sea;1178;-1;-1;-1;-1;Mae Taphut – Udon Thani
-746;1212;sea;1178;-1;-1;-1;-1;Mae Taphut – Kalathani
-938;1169;sea;1178;-1;-1;-1;-1;Udon Thani – Amnatthaya
-1167;1212;sea;1178;-1;-1;-1;-1;Lu Ang – Kalathani
-746;751;sea;1178;-1;-1;-1;-1;Mae Taphut – Ratchasima
-1005;877;sea;1168;-1;-1;-1;-1;Chon Ang – Sisao
-877;887;sea;1168;-1;-1;-1;-1;Sisao – Mahala
-879;893;sea;1178;-1;-1;-1;-1;Hua Chang – Chiangmai
-881;1207;sea;1178;-1;-1;-1;-1;Sinak – Bang Phai
-1216;913;sea;1178;-1;-1;-1;-1;Wan Gong – Burising
-1216;893;sea;1178;-1;-1;-1;-1;Wan Gong – Chiangmai
-915;893;sea;1178;-1;-1;-1;-1;Chianglam – Chiangmai
-915;933;sea;1178;-1;-1;-1;-1;Chianglam – Sananthaburi
-913;1215;sea;1178;-1;-1;-1;-1;Burising – Amnarasak
-1217;919;sea;1178;-1;-1;-1;-1;Lam Kaen – Puchang
-1217;755;sea;1178;-1;-1;-1;-1;Lam Kaen – Mainland
-1207;870;sea;1178;-1;-1;-1;-1;Bang Phai – Mainland
+420;423;sea;1048;-1;-1;-1;-1;Dargan â€“ Cronan
+422;423;sea;1048;-1;-1;-1;-1;Ikerrin â€“ Cronan
+455;1047;sea;1173;-1;-1;-1;-1;Kamery â€“ Tulla
+444;454;sea;1173;-1;-1;-1;-1;Quey â€“ Namien
+444;1291;sea;1173;-1;-1;-1;-1;Quey â€“ Shayfan
+444;446;sea;1173;-1;-1;-1;-1;Quey â€“ Lankhmar
+1292;446;sea;1173;-1;-1;-1;-1;Ceffa â€“ Lankhmar
+453;1292;sea;1173;-1;-1;-1;-1;Zahedann â€“ Ceffa
+453;454;sea;1173;-1;-1;-1;-1;Zahedann â€“ Namien
+1029;740;sea;1171;-1;-1;-1;-1;Om Nat â€“ Rama
+741;1041;sea;1171;-1;-1;-1;-1;Ang Het â€“ Bang Suan
+1040;743;sea;1171;-1;-1;-1;-1;Khonong â€“ Than Mo
+743;1044;sea;1185;-1;-1;-1;-1;Than Mo â€“ Hua Dung
+743;1042;sea;1185;-1;-1;-1;-1;Than Mo â€“ Buarachan
+1209;1044;sea;1185;-1;-1;-1;-1;Surinang â€“ Hua Dung
+1209;1042;sea;1185;-1;-1;-1;-1;Surinang â€“ Buarachan
+1209;753;sea;1185;-1;-1;-1;-1;Surinang â€“ Tang Yala
+1044;753;sea;1185;-1;-1;-1;-1;Hua Dung â€“ Tang Yala
+753;748;sea;1185;-1;-1;-1;-1;Tang Yala â€“ Latchanaburi
+753;1043;sea;1185;-1;-1;-1;-1;Tang Yala â€“ Mae Thong
+1039;744;sea;1174;-1;-1;-1;-1;Tharong â€“ Prachata
+1163;1210;sea;1185;-1;-1;-1;-1;Ko Ong â€“ Pa Kong
+1163;751;sea;1185;-1;-1;-1;-1;Ko Ong â€“ Ratchasima
+1163;1043;sea;1185;-1;-1;-1;-1;Ko Ong â€“ Mae Thong
+748;749;sea;1185;-1;-1;-1;-1;Latchanaburi â€“ Ang Po
+749;751;sea;1178;-1;-1;-1;-1;Ang Po â€“ Ratchasima
+748;1211;sea;1159;-1;-1;-1;-1;Latchanaburi â€“ Phuchang
+1211;747;sea;1159;-1;-1;-1;-1;Phuchang â€“ Langkhon
+1211;750;sea;1159;-1;-1;-1;-1;Phuchang â€“ Ratchata
+747;750;sea;1159;-1;-1;-1;-1;Langkhon â€“ Ratchata
+747;1046;sea;1159;-1;-1;-1;-1;Langkhon â€“ Ang Suan
+749;750;sea;1178;-1;-1;-1;-1;Ang Po â€“ Ratchata
+750;1166;sea;1178;-1;-1;-1;-1;Ratchata â€“ Hua La
+1166;746;sea;1178;-1;-1;-1;-1;Hua La â€“ Mae Taphut
+1166;938;sea;1178;-1;-1;-1;-1;Hua La â€“ Udon Thani
+746;938;sea;1178;-1;-1;-1;-1;Mae Taphut â€“ Udon Thani
+746;1212;sea;1178;-1;-1;-1;-1;Mae Taphut â€“ Kalathani
+938;1169;sea;1178;-1;-1;-1;-1;Udon Thani â€“ Amnatthaya
+1167;1212;sea;1178;-1;-1;-1;-1;Lu Ang â€“ Kalathani
+746;751;sea;1178;-1;-1;-1;-1;Mae Taphut â€“ Ratchasima
+1005;877;sea;1168;-1;-1;-1;-1;Chon Ang â€“ Sisao
+877;887;sea;1168;-1;-1;-1;-1;Sisao â€“ Mahala
+879;893;sea;1178;-1;-1;-1;-1;Hua Chang â€“ Chiangmai
+881;1207;sea;1178;-1;-1;-1;-1;Sinak â€“ Bang Phai
+1216;913;sea;1178;-1;-1;-1;-1;Wan Gong â€“ Burising
+1216;893;sea;1178;-1;-1;-1;-1;Wan Gong â€“ Chiangmai
+915;893;sea;1178;-1;-1;-1;-1;Chianglam â€“ Chiangmai
+915;933;sea;1178;-1;-1;-1;-1;Chianglam â€“ Sananthaburi
+913;1215;sea;1178;-1;-1;-1;-1;Burising â€“ Amnarasak
+1217;919;sea;1178;-1;-1;-1;-1;Lam Kaen â€“ Puchang
+1217;755;sea;1178;-1;-1;-1;-1;Lam Kaen â€“ Mainland
+1207;870;sea;1178;-1;-1;-1;-1;Bang Phai â€“ Mainland
 920;881;sea;1178;-1;-1;-1;-1;
 920;1207;sea;1178;-1;-1;-1;-1;
 920;923;sea;1178;-1;-1;-1;-1;

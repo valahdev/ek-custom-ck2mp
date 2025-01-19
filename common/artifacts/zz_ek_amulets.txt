@@ -29,12 +29,12 @@ amulet_draconian_madstone = { #Draconian Madstone
 }
 amulet_of_infectious_charm = {
 	monthly_character_prestige = 0.1
-	diplomacy = 1
-	intrigue = 1
+	diplomacy = 2
+	intrigue = 2
 	health = -0.5
 	
-	sex_appeal_opinion = 10
-	general_opinion = 5
+	sex_appeal_opinion = 40
+	general_opinion = 15
 	
 	#TODO:
 	# - Infectious Charm should make the wearer more susceptible to diseases and illnesses (if done, Health malus should be removed or reduced).

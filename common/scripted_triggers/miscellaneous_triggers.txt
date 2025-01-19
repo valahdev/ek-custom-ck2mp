@@ -8,6 +8,7 @@ has_submenu_open = {
 		has_character_flag = adventuring_open
 		has_character_flag = alchemist_open
 		has_character_flag = news_open
+		has_character_flag = smithing_open
 		#has_character_flag = minor_title_open
 		#has_character_flag = prisoners_open
 		has_character_flag = supernatural_open
@@ -21,6 +22,7 @@ is_in_marketplace_shop = { #Add flags for more marketplace subsubmenus here.
 		OR = {
 			has_character_flag = alchemist_open
 			has_character_flag = adventuring_open
+			has_character_flag = smithing_open
 		}
 	}
 }

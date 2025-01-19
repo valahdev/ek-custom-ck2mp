@@ -42,7 +42,7 @@ weapon_scimitar_bloodscythe = {
 
 	picture = "GFX_weapon_scimitar"
 	stacking = no
-	slot = weapon
+	slot = special
 	quality = 4
 	flags = {
 		unique
@@ -65,7 +65,7 @@ weapon_scimitar_soulrend = {
 
 	picture = "GFX_weapon_scimitar"
 	stacking = no
-	slot = weapon
+	slot = special
 	quality = 4
 	flags = {
 		unique
@@ -499,6 +499,7 @@ weapon_chrysamere = {
 	
 	active = {
 		can_use_swords = yes
+		religion_group = human_pantheon
 	}
 	
 	#TODO Any spells cast upon a character with Chrysamere equipped should have the effects applied to the caster (or alternatively simply have no effect).

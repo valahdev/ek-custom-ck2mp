@@ -210,7 +210,7 @@ ravager = {
 		seaking
 		sea_queen
 	}
-	customizer = no
+	customizer = yes
 	random = no
 	
 	martial = 2
@@ -240,7 +240,7 @@ seaking = {
 		ravager
 		sea_queen
 	}
-	customizer = no
+	customizer = yes
 	random = no
 	
 	martial = 3
@@ -274,7 +274,7 @@ sea_queen = {
 	#monthly_character_prestige = 0.5
 	
 	#religious = yes
-	customizer = no
+	customizer = yes
 	random = no
 	
 	male_insult = COMPL_PIRATE
@@ -1260,7 +1260,7 @@ known_lycan = {
 	general_opinion = -100
 	same_opinion = 105
 	
-	daedra_hircine_opinion = 15
+	daedra_hircine_opinion = 150
 	daedra_namira_opinion = 10
 	pro_lycanthropy_trait_opinion = 100
 	
@@ -1307,6 +1307,7 @@ known_vampire = {
 	yokudan_pantheon_opinion = -15
 	tribunal_opinion = -25
 	daedra_meridia_opinion = -50
+	daedra_molag_opinion = 100
 	
 	immortal = yes
 	
@@ -1332,6 +1333,7 @@ known_vampire_benevolent = {
 	yokudan_pantheon_opinion = -5
 	tribunal_opinion = -10
 	daedra_meridia_opinion = -15
+	daedra_molag_opinion = -10
 	
 	immortal = yes
 	

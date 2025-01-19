@@ -6,6 +6,7 @@ close_submenu = {
 	clr_character_flag = adventuring_open
 	clr_character_flag = alchemist_open
 	clr_character_flag = news_open
+	clr_character_flag = smithing_open
 	#clr_character_flag = minor_title_open
 	#clr_character_flag = prisoners_open
 	clr_character_flag = supernatural_open
@@ -41,6 +42,7 @@ market_leave_store_effect = {
 		clr_character_flag = adventuring_open
 		clr_character_flag = alchemist_open
 		set_character_flag = marketplace_open
+		clr_character_flag = smithing_open	
 	}
 }
 
