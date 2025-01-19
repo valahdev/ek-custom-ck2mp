@@ -1,5 +1,6 @@
 # Custom Elder Kangz Modpack Fork 0.1
 
+![Custom Elder Kangz Modpack Banner](./EKMPreview0.png)  
 *Compatible with Crusader Kings II version 3.3.X*
 
 ## Description
