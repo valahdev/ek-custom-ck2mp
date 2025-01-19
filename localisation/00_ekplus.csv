@@ -1,0 +1,277 @@
+ingredient_metal_ebony;Ebony Ingot;;;;;;;;;;;;;x
+ingredient_metal_ebony_desc;A standard-shaped ingot of dark purple metal, smelted from two pieces of ebony ore.;;;;;;;;;;;;;x
+get_hrisamer;Get a Chrysamer;;;;;;;;;;;;;x
+get_hrisamer_desc;Go in search of the legendary sword of Chrysamer.;;;;;;;;;;;;;x
+bloodline_martial_duel;Bloodline [This.GetFirstName];;;;;;;;;;;;;x
+bloodline_martial_duel_desc;[This.GetFirstNameWithNick] the founder of this bloodline, he was a great Duelist, the knowledge of how to fight properly is passed on to his descendant;;;;;;;;;;;;;x
+prosper_ambition_timer;Fulfill the ambition To see the prosperity of the country;;;;;;;;;;;;;x
+bloodline_diplo_appeaser;Bloodline [This.GetFirstName];;;;;;;;;;;;;x
+bloodline_diplo_appeaser_desc;[This.GetFirstNameWithNick] is founder of this family tree, he did everything for prosperity and preservation of peace within his country.;;;;;;;;;;;;;x
+nick_the_peacemaker;Peacemaker;;;;;;;;;;;;;x
+nick_the_adventurer;The Adventurer;;;;;;;;;;;;;x
+bloodline_diplo_poet;Bloodline [This.GetFirstName];;;;;;;;;;;;;x
+bloodline_diplo_poet_desc;[This.GetFirstNameWithNick] the founder of this pedigree, he possessed a phenominal talent in singing and playing the lute.;;;;;;;;;;;;;x
+proclaim_bloodline_appeaser;Establish a new bloodline;;;;;;;;;;;;;x
+proclaim_bloodline_appeaser_desc;I need to show that living in peace and prosperity is normal, then people will remember me as a good person.;;;;;;;;;;;;;x
+proclaim_bloodline_adventurer;Establish a new bloodline;;;;;;;;;;;;;x
+proclaim_bloodline_adventurer_desc;I need to explore a lot of places and find a lot of rare artifacts, then my name will go down in legends!;;;;;;;;;;;;;x
+proclaim_bloodline_poet;Establish a new bloodline;;;;;;;;;;;;;x
+proclaim_bloodline_poet_desc;If I compose a lot of good works and practice enough, then people will never be able to forget me.;;;;;;;;;;;;;x
+bloodline_stewardship_trader;Bloodline [This.GetFirstName];;;;;;;;;;;;;x
+bloodline_stewardship_trader_desc;[This.GetFirstNameWithNick] the founder of this bloodline, his stock of gold was very large, so much so that he is even now able to supply relatives with money.;;;;;;;;;;;;;x
+proclaim_bloodline_trader;Establish a new bloodline;;;;;;;;;;;;;x
+proclaim_bloodline_trader_desc;I just need to raise enough money and people will remember me.;;;;;;;;;;;;;x
+bloodline_stewardship_law_maker;Bloodline [This.GetFirstName];;;;;;;;;;;;;x
+bloodline_stewardship_law_maker_desc;[This.GetFirstNameWithNick] the founder of this bloodline, he was a just and noble ruler.;;;;;;;;;;;;;x
+proclaim_bloodline_law_maker;Establish a new bloodline;;;;;;;;;;;;;x
+proclaim_bloodline_law_maker_desc;I need to be fair and noble if I want my vassals to remember me for centuries.;;;;;;;;;;;;;x
+nick_the_thief;Legendary Thief;;;;;;;;;;;;;x
+proclaim_bloodline_thief;Establish a new bloodline;;;;;;;;;;;;;x
+proclaim_bloodline_thief_desc;All the thieves of the world will be looking at my back, I intend to become the most legendary of all.;;;;;;;;;;;;;x
+nick_the_murder;The legendary Killer;;;;;;;;;;;;;x
+bloodline_intrigue_thief;Bloodline [This.GetFirstName];;;;;;;;;;;;;x
+bloodline_intrigue_thief_desc;[This.GetFirstNameWithNick] the founder of this pedigree, there is no person in the criminal world who does not know him.;;;;;;;;;;;;;x
+bloodline_intrigue_assassin;Bloodline [This.GetFirstName];;;;;;;;;;;;;x
+bloodline_intrigue_assassin_desc;[This.GetFirstNameWithNick] the founder of this bloodline, his name still strikes fear into the hearts of people.;;;;;;;;;;;;;x
+nick_the_demigod;Demigod;;;;;;;;;;;;;x
+proclaim_bloodline_raw_magicka ;Establish a new bloodline;;;;;;;;;;;;;x
+proclaim_bloodline_raw_magicka_desc;I need to perform a special ritual of replacing blood with magic, this will increase my life expectancy and mana reserve.;;;;;;;;;;;;;x
+bloodline_learning_raw_magicka;Bloodline [This.GetFirstName];;;;;;;;;;;;;x
+bloodline_learning_raw_magicka_desc;[This.GetFirstNameWithNick] the founder of this bloodline, he performed a special ritual to replace blood with mana and now has a long lifespan, his ancestors carry part of his strength.;;;;;;;;;;;;;x
+proclaim_bloodline_restoration;Establish a new bloodline;;;;;;;;;;;;;x
+proclaim_bloodline_restoration_desc;I need to use my magical powers to suspend the flow of time in me, I will deceive Akatosh himself!;;;;;;;;;;;;;x
+nick_the_battlemage;Destroyer;;;;;;;;;;;;;x
+proclaim_bloodline_destruction;Establish a new bloodline;;;;;;;;;;;;;x
+proclaim_bloodline_destruction_desc;If I create enough destruction with my magic, I will definitely be remembered.;;;;;;;;;;;;;x
+proclaim_bloodline_forbidden_magic;Establish a new bloodline;;;;;;;;;;;;;x
+proclaim_bloodline_forbidden_magic_desc;This world should belong to the dead, I need to collect forbidden knowledge.;;;;;;;;;;;;;x
+bloodline_learning_destruction;Bloodline [This.GetFirstName];;;;;;;;;;;;;x
+bloodline_learning_destruction_desc;[This.GetFirstNameWithNick] The founder of this bloodline, his battle magic could destroy cities.;;;;;;;;;;;;;x
+bloodline_learning_forbidden_magic;Bloodline [This.GetFirstName];;;;;;;;;;;;;x
+bloodline_learning_forbidden_magic_desc;[This.GetFirstNameWithNick] The founder of this bloodline, his use of necromancy was very disastrous.;;;;;;;;;;;;;x
+nick_the_princdaedra;Junior Daedra;;;;;;;;;;;;;x
+proclaim_bloodline_daedric_taint_blood;Become a Junior Daedra;;;;;;;;;;;;;x
+proclaim_bloodline_daedric_taint_blood_desc;Prepare a grand ritual for your Daedric prince in the hope that he will allow you to stop being mortal and become a junior daedra.;;;;;;;;;;;;;x
+bloodline_daedric_taint_blood;Bloodline [This.GetFirstName];;;;;;;;;;;;;x
+bloodline_daedric_taint_blood_desc;[This.GetFirstNameWithNick] The founder of this bloodline, with the help of a forbidden ritual and Daedra worship, he became the Small Daedra.;;;;;;;;;;;;;x
+proclaim_bloodline_raw_magicka;Conduct a Divinity Ritual;;;;;;;;;;;;;x
+proclaim_bloodline_raw_magicka_desc;I need to collect the ingredients and perform a ritual to replace blood with mana.;;;;;;;;;;;;;x
+nick_the_werwolfalfa;Alpha;;;;;;;;;;;;;x
+proclaim_bloodline_werewolf_lord;Create a Pack;;;;;;;;;;;;;x
+proclaim_bloodline_werewolf_lord_desc;I will gather my pack and become its leader!;;;;;;;;;;;;;x
+bloodline_werewolf_lord;Clan [This.GetFirstName];;;;;;;;;;;;;x
+bloodline_werewolf_lord_desc;[This.GetFirstNameWithNick] The founder of this bloodline, he is one of the famous werewolf lords.;;;;;;;;;;;;;x
+nick_the_vampirelord;Lord of the Vampires;;;;;;;;;;;;;x
+proclaim_bloodline_vampire_lord;Create a Clan;;;;;;;;;;;;;x
+proclaim_bloodline_vampire_lord_desc;I need to create my own clan.;;;;;;;;;;;;;x
+bloodline_vampire_lord;Clan [This.GetFirstName];;;;;;;;;;;;;x
+bloodline_vampire_lord_desc;[This.GetFirstNameWithNick] The founder of this bloodline, he is one of the famous vampire lords.;;;;;;;;;;;;;x
+be_adventure;Become an Adventurer;;;;;;;;;;;;;x
+dont_be_adventure;Stop Being an Adventurer;;;;;;;;;;;;;x
+apostol_akatosh;Apostle of Akatosh;;;;;;;;;;;;;x
+apostol_akatosh_desc;This man has quite a strong blessing from Aedr, he breathes holiness from him.;;;;;;;;;;;;;x
+be_adventure_desc;Go in search of a unique weapon.;;;;;;;;;;;;;x
+dont_be_adventure_desc;Stop looking for unique weapons.;;;;;;;;;;;;;x
+weapon_scimitar_bloodscythe;Bloody Scythe;;;;;;;;;;;;;x
+weapon_scimitar_bloodscythe_desc;The Bloody Scythe is a unique scimitar that once belonged to the legendary Hacknir Seal of Death. The blade has a fellow Strangler.;;;;;;;;;;;;;x
+weapon_scimitar_soulrend;Strangler;;;;;;;;;;;;;x
+weapon_scimitar_soulrend_desc;The Strangler is a unique scimitar that once belonged to the legendary Hacknear Seal of Death. The blade has a brother Ч a Bloody Scythe;;;;;;;;;;;;;x
+get_bloodscythe;Get a Bloody Scythe;;;;;;;;;;;;;x
+get_bloodscythe;The Bloody Scythe is a unique scimitar that once belonged to the legendary Hacknir Seal of Death. The blade has a fellow Strangler.;;;;;;;;;;;;;x
+get_soulrend;Get a Strangler;;;;;;;;;;;;;x
+get_soulrend_desc;The Strangler is a unique scimitar that once belonged to the legendary Hacknear Seal of Death. The blade has a brother Ч a Bloody Scythe.;;;;;;;;;;;;;x
+get_chillrend;Get a Cooler;;;;;;;;;;;;;x
+get_chillrend_desc;A one-handed glass sword and a semi-legendary artifact. It is extremely unusual in that the glass from which it is created is not green, but bluish, like young ice.;;;;;;;;;;;;;x
+weapon_grimsever_desc;;;;;;;;;;;;;;x
+open_adventure;Go in search of unique artifacts.;;;;;;;;;;;;;x
+open_adventure_desc;I'm going to search for the unique artifacts of Tamriel.;;;;;;;;;;;;;x
+get_immortal_martial;Looking for a way to immortality;;;;;;;;;;;;;x
+get_immortal_martial_desc;I have to find one of the sources of immortality, my skills will help me.;;;;;;;;;;;;;x
+get_immortal_magistrate;Looking for a way to immortality;;;;;;;;;;;;;x
+get_immortal_magistrate_desc;I'll just buy immortalityЕ;;;;;;;;;;;;;x
+get_immortal_agent;Looking for a way to immortality;;;;;;;;;;;;;x
+get_immortal_agent_desc;I am quite capable of stealing the formula of immortality from someone.;;;;;;;;;;;;;x
+get_immortal_diplomat;Looking for a way to immortality;;;;;;;;;;;;;x
+get_immortal_diplomat_desc;I've always been able to negotiate.;;;;;;;;;;;;;x
+get_weapon;Go in search of a unique artifact;;;;;;;;;;;;;x
+get_weapon_desc;I need to spend some money to find the artifact I need.;;;;;;;;;;;;;x
+proclaim_bloodline_assassin;Establish a new bloodline;;;;;;;;;;;;;x
+proclaim_bloodline_assassin_desc;My ability to kill will be talked about for many centuriesЕ;;;;;;;;;;;;;x
+weapon_chrysamere_get;Chrysamer;;;;;;;;;;;;;x
+weapon_chrysamere_get_desc;?;;;;;;;;;;;;;x
+weapon_scimitar_bloodscythe_get;Bloody Scythe;;;;;;;;;;;;;x
+weapon_scimitar_bloodscythe_get_desc;?;;;;;;;;;;;;;x
+weapon_scimitar_soulrend_get;Strangler;;;;;;;;;;;;;x
+weapon_scimitar_soulrend_get_desc;?;;;;;;;;;;;;;x
+weapon_chillrend_get;Cooler;;;;;;;;;;;;;x
+weapon_chillrend_get_desc;?;;;;;;;;;;;;;x
+weapon_windshear_get;Gust of Wind;;;;;;;;;;;;;x
+weapon_windshear_get_desc;?;;;;;;;;;;;;;x
+weapon_stormfang_get;Storm Fang;;;;;;;;;;;;;x
+weapon_stormfang_get_desc;?;;;;;;;;;;;;;x
+weapon_sword_sinweaver_get;Spider of Sin;;;;;;;;;;;;;x
+weapon_sword_sinweaver_get_desc;?;;;;;;;;;;;;;x
+weapon_sword_thornblade_get;Thorn Blade;;;;;;;;;;;;;x
+weapon_sword_thornblade_get_desc;?;;;;;;;;;;;;;x
+weapon_spiriteater_get;Spirit Eater;;;;;;;;;;;;;x
+weapon_spiriteater_get_desc;?;;;;;;;;;;;;;x
+weapon_icicle_get;Icicle;;;;;;;;;;;;;x
+weapon_icicle_get_desc;?;;;;;;;;;;;;;x
+weapon_sword_spiderbite_get;Spider Bite;;;;;;;;;;;;;x
+weapon_sword_spiderbite_get_desc;?;;;;;;;;;;;;;x
+weapon_magebane_get;Death of Magicians;;;;;;;;;;;;;x
+weapon_magebane_get_desc;?;;;;;;;;;;;;;x
+weapon_iceblademonarch_get;Monarch's Ice Blade;;;;;;;;;;;;;x
+weapon_iceblademonarch_get_desc;?;;;;;;;;;;;;;x
+weapon_foeburner_get;Arsonist of enemies;;;;;;;;;;;;;x
+weapon_foeburner_get_desc;?;;;;;;;;;;;;;x
+weapon_sword_of_edge_get;Blade of the Border;;;;;;;;;;;;;x
+weapon_sword_of_edge_get_desc;?;;;;;;;;;;;;;x
+weapon_clutterbane_get;Death of Panic;;;;;;;;;;;;;x
+weapon_clutterbane_get_desc;?;;;;;;;;;;;;;x
+weapon_sunder_false;Absolutely Real Separator;;;;;;;;;;;;;x
+weapon_sunder_false_desc;?;;;;;;;;;;;;;x
+weapon_staff_llothis;Bishop's Staff of Saint Llothis;;;;;;;;;;;;;x
+weapon_staff_llothis_desc;?;;;;;;;;;;;;;x
+amulet_of_akatosh_get;Akatosha Amulet;;;;;;;;;;;;;x
+amulet_of_akatosh_get_desc;?;;;;;;;;;;;;;x
+amulet_of_arkay_get;Arkey 's Amulet;;;;;;;;;;;;;x
+amulet_of_arkay_get_desc;?;;;;;;;;;;;;;x
+amulet_of_dibella;Dibella 's Amulet;;;;;;;;;;;;;x
+amulet_of_dibella_desc;?;;;;;;;;;;;;;x
+amulet_of_julianos_get;Julianos' Amulet;;;;;;;;;;;;;x
+amulet_of_julianos_get_desc;?;;;;;;;;;;;;;x
+amulet_of_kynareth_get;Kinaret Amulet;;;;;;;;;;;;;x
+amulet_of_kynareth_get_desc;?;;;;;;;;;;;;;x
+amulet_of_mara_get;Mara 's Amulet;;;;;;;;;;;;;x
+amulet_of_mara_get_desc;?;;;;;;;;;;;;;x
+amulet_of_stendarr;Amulet of Stendarr;;;;;;;;;;;;;x
+amulet_of_stendarr_desc;?;;;;;;;;;;;;;x
+amulet_of_zenithar_get;Zenithar Amulet;;;;;;;;;;;;;x
+amulet_of_zenithar_get_desc;?;;;;;;;;;;;;;x
+armor_lordsmail_get;Lord's Chain Mail;;;;;;;;;;;;;x
+armor_lordsmail_get_desc;?;;;;;;;;;;;;;x
+maras_raiment_get;Mara's Robe;;;;;;;;;;;;;x
+maras_raiment_get_desc;?;;;;;;;;;;;;;x
+gloves_zenithar_get;Zenithar 's Hands;;;;;;;;;;;;;x
+gloves_zenithar_get_desc;?;;;;;;;;;;;;;x
+ring_of_the_wind_get;Wind Ring;;;;;;;;;;;;;x
+ring_of_the_wind_get_desc;?;;;;;;;;;;;;;x
+shield_auriel_get;Auriel's Shield;;;;;;;;;;;;;x
+shield_auriel_get_desc;?;;;;;;;;;;;;;x
+brush_of_truepaint_get;A brush of true craftsmanship;;;;;;;;;;;;;x
+brush_of_truepaint_get_desc;?;;;;;;;;;;;;;x
+weapon_stendarrshammer_get;Stendarr 's Hammer;;;;;;;;;;;;;x
+weapon_stendarrshammer_get_desc;?;;;;;;;;;;;;;x
+weapon_bow_auriel_get;Auriel 's Bow;;;;;;;;;;;;;x
+weapon_bow_auriel_get_desc;?;;;;;;;;;;;;;x
+amulet_draconian_madstone_get;Dragonstone;;;;;;;;;;;;;x
+amulet_draconian_madstone_get_desc;?;;;;;;;;;;;;;x
+amulet_of_infectious_charm_get;Amulet of Infectious Charm;;;;;;;;;;;;;x
+amulet_of_infectious_charm_get_desc;?;;;;;;;;;;;;;x
+amulet_of_necromancer_get;Necromancer's Amulet;;;;;;;;;;;;;x
+amulet_of_necromancer_get_desc;?;;;;;;;;;;;;;x
+amulet_of_zenithar_whispers_get;Zenithar's Whisper;;;;;;;;;;;;;x
+amulet_of_zenithar_whispers_get_desc;?;;;;;;;;;;;;;x
+amulet_of_shadows_get;Amulet of Shadows;;;;;;;;;;;;;x
+amulet_of_shadows_get_desc;?;;;;;;;;;;;;;x
+amulet_of_cruelty_get;Cruel Heart;;;;;;;;;;;;;x
+amulet_of_cruelty_get_desc;?;;;;;;;;;;;;;x
+amulet_of_forgemaster_get;Amulet of the Master Blacksmith;;;;;;;;;;;;;x
+amulet_of_forgemaster_get_desc;?;;;;;;;;;;;;;x
+head_crown_aetherial_get;Etherium Crown;;;;;;;;;;;;;x
+head_crown_aetherial_get_desc;?;;;;;;;;;;;;;x
+head_crown_jagged_get;Toothed crown;;;;;;;;;;;;;x
+head_crown_jagged_get_desc;?;;;;;;;;;;;;;x
+ring_of_erudite_get;Erudite Ring;;;;;;;;;;;;;x
+ring_of_erudite_get_desc;?;;;;;;;;;;;;;x
+ring_of_beast_get;Ring of the Beast;;;;;;;;;;;;;x
+ring_of_beast_get_desc;?;;;;;;;;;;;;;x
+ring_of_nightweaver_get;Night Weaver's Ring;;;;;;;;;;;;;x
+ring_of_nightweaver_get_desc;?;;;;;;;;;;;;;x
+ring_of_moon_get;Moon Ring;;;;;;;;;;;;;x
+ring_of_moon_get_desc;?;;;;;;;;;;;;;x
+ring_eidolon_get;Eidolon Boundary Ring;;;;;;;;;;;;;x
+ring_eidolon_get_desc;?;;;;;;;;;;;;;x
+ring_phynaster_get;Finaster's Ring;;;;;;;;;;;;;x
+ring_phynaster_get_desc;?;;;;;;;;;;;;;x
+warlocks_ring_get;Warlock's Ring;;;;;;;;;;;;;x
+warlocks_ring_get_desc;?;;;;;;;;;;;;;x
+ring_rumare_get;Rumare Jewel;;;;;;;;;;;;;x
+ring_rumare_get_desc;?;;;;;;;;;;;;;x
+shield_eleidon_get;Symbol of Eleidon;;;;;;;;;;;;;x
+shield_eleidon_get_desc;?;;;;;;;;;;;;;x
+shield_ysgramor_get;Ysgramor Shield;;;;;;;;;;;;;x
+shield_ysgramor_get_desc;?;;;;;;;;;;;;;x
+weapon_axe_wuuthrad_get;Vutrad;;;;;;;;;;;;;x
+weapon_axe_wuuthrad_get_desc;?;;;;;;;;;;;;;x
+weapon_dagger_witsplinter_get;Weakening the mind;;;;;;;;;;;;;x
+weapon_dagger_witsplinter_get_desc;?;;;;;;;;;;;;;x
+weapon_dagger_bladeofwoe_get;Blade of Grief;;;;;;;;;;;;;x
+weapon_dagger_bladeofwoe_get_desc;?;;;;;;;;;;;;;x
+weapon_dagger_judgement_get;Dagger of Justice;;;;;;;;;;;;;x
+weapon_dagger_judgement_get_desc;?;;;;;;;;;;;;;x
+weapon_dagger_enamor_get;Eneymor;;;;;;;;;;;;;x
+weapon_dagger_enamor_get_desc;?;;;;;;;;;;;;;x
+weapon_dagger_haynekh_get; лык ’айнектнамета;;;;;;;;;;;;;x
+weapon_dagger_haynekh_get_desc;?;;;;;;;;;;;;;x
+weapon_dagger_souldrink_get;Soul Drinker;;;;;;;;;;;;;x
+weapon_dagger_souldrink_get_desc;?;;;;;;;;;;;;;x
+change_religion_azura;Start secretly worshipping Azura;;;;;;;;;;;;;x
+change_religion_azura_desc;During your travels, you stumbled upon the sanctuary of the Daedra, you wonder if there was ever a place for this daedra in your heart.;;;;;;;;;;;;;x
+change_religion_boethiah;Start secretly worshipping Boethiah;;;;;;;;;;;;;x
+change_religion_boethiah_desc;During your travels, you stumbled upon the sanctuary of the Daedra, you wonder if there was ever a place for this daedra in your heart.;;;;;;;;;;;;;x
+change_religion_clavicus;Start secretly worshipping Clavicus Vail;;;;;;;;;;;;;x
+change_religion_clavicus_desc;During your travels, you stumbled upon the sanctuary of the Daedra, you wonder if there was ever a place for this daedra in your heart.;;;;;;;;;;;;;x
+change_religion_hermaeus;Start secretly worshipping Hermaeus Mora;;;;;;;;;;;;;x
+change_religion_hermaeus_desc;During your travels, you stumbled upon the sanctuary of the Daedra, you wonder if there was ever a place for this daedra in your heart.;;;;;;;;;;;;;x
+change_religion_hircine;Start secretly worshipping Hirsin;;;;;;;;;;;;;x
+change_religion_hircine_desc;During your travels, you stumbled upon the sanctuary of the Daedra, you wonder if there was ever a place for this daedra in your heart.;;;;;;;;;;;;;x
+change_religion_mehrunes;Start secretly worshipping Mehrunes Dagon;;;;;;;;;;;;;x
+change_religion_mehrunes_desc;During your travels, you stumbled upon the sanctuary of the Daedra, you wonder if there was ever a place for this daedra in your heart.;;;;;;;;;;;;;x
+change_religion_mephala;Start secretly worshipping Mephala;;;;;;;;;;;;;x
+change_religion_mephala_desc;During your travels, you stumbled upon the sanctuary of the Daedra, you wonder if there was ever a place for this daedra in your heart.;;;;;;;;;;;;;x
+change_religion_meridia;Start secretly worshipping Meridia;;;;;;;;;;;;;x
+change_religion_meridia_desc;During your travels, you stumbled upon the sanctuary of the Daedra, you wonder if there was ever a place for this daedra in your heart.;;;;;;;;;;;;;x
+change_religion_molag;Start secretly worshipping Molag Bal;;;;;;;;;;;;;x
+change_religion_molag_desc;During your travels, you stumbled upon the sanctuary of the Daedra, you wonder if there was ever a place for this daedra in your heart.;;;;;;;;;;;;;x
+change_religion_namira;Start secretly worshipping Namira;;;;;;;;;;;;;x
+change_religion_namira_desc;During your travels, you stumbled upon the sanctuary of the Daedra, you wonder if there was ever a place for this daedra in your heart.;;;;;;;;;;;;;x
+change_religion_nocturnal;Start secretly worshipping Nocturnal;;;;;;;;;;;;;x
+change_religion_nocturnal_desc;During your travels, you stumbled upon the sanctuary of the Daedra, you wonder if there was ever a place for this daedra in your heart.;;;;;;;;;;;;;x
+change_religion_peryite;Start secretly worshipping Periait;;;;;;;;;;;;;x
+change_religion_peryite_desc;During your travels, you stumbled upon the sanctuary of the Daedra, you wonder if there was ever a place for this daedra in your heart.;;;;;;;;;;;;;x
+change_religion_sanguine;Start secretly worshipping Sanguine;;;;;;;;;;;;;x
+change_religion_sanguine_desc;During your travels, you stumbled upon the sanctuary of the Daedra, you wonder if there was ever a place for this daedra in your heart.;;;;;;;;;;;;;x
+change_religion_sheogorath;Start secretly worshipping Sheogorath;;;;;;;;;;;;;x
+change_religion_sheogorath_desc;During your travels, you stumbled upon the sanctuary of the Daedra, you wonder if there was ever a place for this daedra in your heart.;;;;;;;;;;;;;x
+change_religion_vaermina;Start secretly worshipping Vermina;;;;;;;;;;;;;x
+change_religion_vaermina_desc;During your travels, you stumbled upon the sanctuary of the Daedra, you wonder if there was ever a place for this daedra in your heart.;;;;;;;;;;;;;x
+change_religion_malacath;Start secretly worshipping Malakat;;;;;;;;;;;;;x
+change_religion_malacath_desc;During your travels, you stumbled upon the sanctuary of the Daedra, you wonder if there was ever a place for this daedra in your heart.;;;;;;;;;;;;;x
+change_religion_jyggalag;Start secretly worshipping Jigalag;;;;;;;;;;;;;x
+change_religion_jyggalag_desc;During your travels, you stumbled upon the sanctuary of the Daedra, you wonder if there was ever a place for this daedra in your heart.;;;;;;;;;;;;;x
+amulet_of_stendarr_get;Amulet of Zenithar;;;;;;;;;;;;;x
+amulet_of_stendarr_get_desc;?;;;;;;;;;;;;;x
+proclaim_bloodline_duel;Establish a new bloodline;;;;;;;;;;;;;x
+proclaim_bloodline_duel_desc;?;;;;;;;;;;;;;x
+ingredient_metal_malachite;Purified malachite;;;;;;;;;;;;;x
+ingredient_metal_malachite_desc;An item used in blacksmithing as the main component for making glass equipment;;;;;;;;;;;;;x
+ingredient_metal_dwarven;Dwemer Metal Ingot;;;;;;;;;;;;;x
+ingredient_metal_dwarven_desc;A standard-shaped ingot made of a metal alloy of unknown composition of saturated yellow color;;;;;;;;;;;;;x
+ingredient_metal_orichalcum;Orichalcum Ingot;;;;;;;;;;;;;x
+ingredient_metal_orichalcum_desc;It is an item used in blacksmithing as a component for creating and improving Orc equipment;;;;;;;;;;;;;x
+ingredient_metal_gold;Gold Ingot;;;;;;;;;;;;;x
+ingredient_metal_gold_desc;ѕримен€етс€ в†кузнечном деле†дл€ создани€†ювелирных изделий†Ч ожерелий и колец;;;;;;;;;;;;;x
+ingredient_metal_silver;Silver Ingot;;;;;;;;;;;;;x
+ingredient_metal_silver_desc;ѕримен€етс€ в†кузнечном деле†дл€ создани€†ювелирных изделий†Ч ожерелий и колец;;;;;;;;;;;;;x
+ingredient_metal_quicksilver;Quicksilver Ingot;;;;;;;;;;;;;x
+ingredient_metal_quicksilver_desc;A standard-shaped ingot of bluish metal, smelted from two pieces of mercury ore;;;;;;;;;;;;;x
+ingredient_metal_moonstone;Refined Moonstone;;;;;;;;;;;;;x
+ingredient_metal_moonstone_desc;Ingots are used for smelting all kinds of products in the forge;;;;;;;;;;;;;x
+ingredient_metal_corundum;Corundum Ingot;;;;;;;;;;;;;x
+ingredient_metal_corundum_desc;It is used to create lamellar armor in the forge;;;;;;;;;;;;;x
+ingredient_metal_iron;Iron Ingot;;;;;;;;;;;;;x
+ingredient_metal_iron_desc;It is used to create armor and weapons in the forge;;;;;;;;;;;;;x
+ingredient_metal_chitin;Chitin Plate;;;;;;;;;;;;;x
+ingredient_metal_chitin_desc;Chitin plate, extracted from the so-called ash jumpers. These insects look like large grasshoppers;;;;;;;;;;;;;x

@@ -1,0 +1,87 @@
+decisions = {
+    get_immortal_martial = {
+	is_high_prio = yes
+	potential = {
+         trait = warrior_5
+		 NOT { trait = immortal }
+		}
+	allow = {
+			prestige = 30000
+			}	
+	effect = {
+			prestige = -30000
+			add_trait=immortal
+			set_flag = immortal_no_cheats
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+	}		
+
+decisions = {
+    get_immortal_magistrate = {
+	is_high_prio = yes
+	potential = {
+         trait = magistrate_5
+		 NOT { trait = immortal }
+		}
+	allow = {
+			prestige = 10000
+			wealth = 5000
+			}	
+	effect = {
+			prestige = -10000
+			wealth = -5000
+			add_trait=immortal
+			set_flag = immortal_no_cheat
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+	}	
+
+decisions = {
+    get_immortal_agent = {
+	is_high_prio = yes
+	potential = {
+         trait = agent_5
+		 NOT { trait = immortal }
+		}
+	allow = {
+			prestige = 20000
+			wealth = 1000
+			}	
+	effect = {
+			prestige = -20000
+			wealth = -1000
+			add_trait=immortal
+			set_flag = immortal_no_cheat
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+	}	
+
+decisions = {
+    get_immortal_diplomat = {
+	is_high_prio = yes
+	potential = {
+         trait = diplomat_5
+		 NOT { trait = immortal }
+		}
+	allow = {
+			prestige = 15000
+			}	
+	effect = {
+			prestige = -15000
+			add_trait=immortal
+			set_flag = immortal_no_cheat
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+	}	

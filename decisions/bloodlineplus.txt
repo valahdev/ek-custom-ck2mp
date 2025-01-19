@@ -1,0 +1,549 @@
+decisions = {
+	proclaim_bloodline_appeaser = {
+		is_high_prio = yes
+		only_independent = no
+		
+		potential = {
+			has_submenu_open = no
+			trait = diplomat_5
+			NOT = { has_flag = create_bloodline_appeaser }
+		}
+		
+		allow = {
+			prestige = 1500
+			trait = diplomat_5
+			trait = gregarious
+			trait = kind
+			has_character_modifier = prosper_ambition_timer
+		}
+		
+		effect = {
+			
+			give_nickname = nick_the_peacemaker
+			
+			set_flag = create_bloodline_appeaser
+
+			create_bloodline = { type = bloodline_diplo_appeaser }
+			
+			presitige = -1500
+			
+			}
+			ai_will_do - {
+			        factor = 1
+			}
+		}
+}
+
+decisions = {
+	proclaim_bloodline_adventurer = {
+		is_high_prio = yes
+		only_independent = no
+		
+		potential = {
+			has_submenu_open = no
+			trait = warrior_5
+			NOT = { has_flag = create_bloodline_adventurer }
+		}
+		
+		allow = {
+			prestige = 3500
+			trait = warrior_5
+			trait = wayfarer_3
+			trait = adventurer
+		}
+		
+		effect = {
+			
+			give_nickname = nick_the_adventurer
+			
+			set_flag = create_bloodline_adventurer
+
+			create_bloodline = { type = bloodline_martial_adventurer }
+			
+			prestige = -3500
+			
+			}
+			ai_will_do - {
+			        factor = 1
+			}
+		}
+}
+
+decisions = {
+	proclaim_bloodline_poet = {
+		is_high_prio = yes
+		only_independent = no
+		
+		potential = {
+			has_submenu_open = no
+			trait = diplomat_5
+			NOT = { has_flag = create_bloodline_poet }
+		}
+		
+		allow = {
+			prestige = 2500
+			trait = diplomat_5
+			trait = poet
+			trait = bard_3
+		}
+		
+		effect = {
+			give_nickname = nick_the_troubadour
+			
+			set_flag = create_bloodline_poet
+
+			create_bloodline = { type = bloodline_diplo_poet }
+			
+			presitge = -2500
+			
+			add_trait=melodious_voice
+			add_trait=powerful_voice
+			
+			}
+			ai_will_do - {
+			        factor = 1
+			}
+		}
+}
+
+decisions = {
+	proclaim_bloodline_duel = {
+		is_high_prio = yes
+		only_independent = no
+		
+		potential = {
+			has_submenu_open = no
+			trait = warrior_5
+			NOT = { has_flag = create_bloodline_duel }
+		}
+		
+		allow = {
+			prestige = 4000
+			trait = warrior_5
+			combat_rating = 120
+		}
+		
+		effect = {
+			give_nickname = nick_the_iron_grip
+			
+			set_flag = create_bloodline_duel
+
+			create_bloodline = { type = bloodline_martial_duel }
+			
+			prestige = -4000
+			
+			}
+			ai_will_do - {
+			        factor = 1
+			}
+		}
+}
+
+decisions = {
+	proclaim_bloodline_trader = {
+		is_high_prio = yes
+		only_independent = no
+		
+		potential = {
+			has_submenu_open = no
+			trait = warrior_5
+			NOT = { has_flag = create_bloodline_trader }
+		}
+		
+		allow = {
+			prestige = 2500
+			trait = magistrate_5
+			trait = trader_3
+			wealth = 1000
+		}
+		
+		effect = {
+			give_nickname = nick_the_gilded
+			
+			set_flag = create_bloodline_trader
+
+			create_bloodline = { type = bloodline_stewardship_trader }
+			
+			prestige = -2500
+			wealth = -1000
+			
+			}
+			ai_will_do - {
+			        factor = 1
+			}
+		}
+}
+
+decisions = {
+	proclaim_bloodline_law_maker = {
+		is_high_prio = yes
+		only_independent = no
+		
+		potential = {
+			has_submenu_open = no
+			trait = magistrate_5
+			NOT = { has_flag = create_bloodline_law_maker }
+		}
+		
+		allow = {
+			prestige = 2500
+			trait = magistrate_5
+			trait = just
+		}
+		
+		effect = {
+			give_nickname = nick_the_noble
+			
+			set_flag = create_bloodline_law_maker
+
+			create_bloodline = { type = bloodline_stewardship_law_maker }
+			
+			presitge = -2500
+			
+			}
+			ai_will_do - {
+			        factor = 1
+			}
+		}
+}
+
+decisions = {
+	proclaim_bloodline_thief = {
+		is_high_prio = yes
+		only_independent = no
+		
+		potential = {
+			has_submenu_open = no
+			trait = agent_5
+			NOT = { has_flag = create_bloodline_thief }
+			NOT = { has_flag = create_bloodline_assassin }
+		}
+		
+		allow = {
+			prestige = 5000
+			trait = agent_5
+			trait = thief_3
+			trait = acrobat_3
+		}
+		
+		effect = {
+			give_nickname = nick_the_unseen
+			
+			set_flag = create_bloodline_thief
+
+			create_bloodline = { type = bloodline_intrigue_thief }
+			
+			prestige = -5000
+			
+			add_trait=lucky
+			
+			}
+			ai_will_do - {
+			        factor = 1
+			}
+		}
+}
+
+decisions = {
+	proclaim_bloodline_assassin = {
+		is_high_prio = yes
+		only_independent = no
+		
+		potential = {
+			has_submenu_open = no
+			trait = agent_5
+			NOT = { has_flag = create_bloodline_assassin }
+			NOT = { has_flag = create_bloodline_thief }
+		}
+		
+		allow = {
+			prestige = 5000
+			trait = agent_5
+			trait = assassin_3
+			trait = nightblade_3
+		}
+		
+		effect = {
+			give_nickname = nick_the_black_drake
+			
+			set_flag = create_bloodline_assassin
+
+			create_bloodline = { type = bloodline_intrigue_assassin }
+			
+			prestige = -5000
+			
+			add_trait=agile
+			add_trait=perceptive
+			
+			}
+			ai_will_do - {
+			        factor = 1
+			}
+		}
+}
+
+decisions = {
+	proclaim_bloodline_raw_magicka = {
+		is_high_prio = yes
+		only_independent = no
+		
+		potential = {
+			has_submenu_open = no
+			trait = mage_5
+			NOT = { has_flag = create_bloodline_raw_magicka }
+			NOT = { has_flag = create_bloodline_restoration }
+			NOT = { has_flag = create_bloodline_destruction }
+		}
+		
+		allow = {
+			prestige = 15000
+			trait = mage_5
+            trait = sorcerer_3
+			trait = savant_3
+			wealth = 1500
+		}
+		
+		effect = {
+			give_nickname = nick_the_divine
+			
+			prestige -15000
+			piety = -1000
+			wealth = -1500
+			
+			set_flag = create_bloodline_raw_magicka
+			set_flag = immortal_no_cheat
+
+			create_bloodline = { type = bloodline_learning_raw_magicka }
+			
+			add_trait=immortal
+			
+			}
+			ai_will_do - {
+			        factor = 1
+			}
+		}
+}
+
+decisions = {
+	proclaim_bloodline_restoration = {
+		is_high_prio = yes
+		only_independent = no
+		
+		potential = {
+			has_submenu_open = no
+			trait = mage_5
+			NOT = { has_flag = create_bloodline_restoration }
+			NOT = { has_flag = create_bloodline_raw_magicka }
+			NOT = { has_flag = create_bloodline_destruction }
+		}
+		
+		allow = {
+			prestige = 17500
+			trait = mage_5
+			trait = priest_3
+			trait = healer_3
+			wealth = 1000
+		}
+		
+		effect = {
+			give_nickname = nick_the_undying
+			
+			wealth = -1000
+			prestige -17500
+			
+			set_flag = create_bloodline_restoration
+			set_flag = immortal_no_cheat
+
+			create_bloodline = { type = bloodline_learning_restoration }
+			
+			add_trait=immortal
+			
+			}
+			ai_will_do - {
+			        factor = 1
+			}
+		}
+}
+
+decisions = {
+	proclaim_bloodline_destruction = {
+		is_high_prio = yes
+		only_independent = no
+		
+		potential = {
+			has_submenu_open = no
+			trait = mage_5
+			NOT = { has_flag = create_bloodline_destruction }
+			NOT = { has_flag = create_bloodline_restoration }
+			NOT = { has_flag = create_bloodline_raw_magicka }
+		}
+		
+		allow = {
+			prestige = 7500
+			trait = mage_5
+			trait = battlemage_3
+			trait = spellsword_3
+		}
+		
+		effect = {
+			give_nickname = nick_the_battlemage
+			
+			set_flag = create_bloodline_destruction
+
+			create_bloodline = { type = bloodline_learning_destruction }
+			
+		    prestige = -7500
+			
+			}
+			ai_will_do - {
+			        factor = 1
+			}
+		}
+}
+
+decisions = {
+	proclaim_bloodline_forbidden_magic = {
+		is_high_prio = yes
+		only_independent = no
+		
+		potential = {
+			has_submenu_open = no
+		OR = {
+			trait = mage_5
+			trait = mage_4
+		}
+			NOT = { has_flag = create_bloodline_forbidden_magic }
+		}
+		
+		allow = {
+		trait = necromancer
+		prestige = 10000
+		}
+		OR = {
+			trait = mage_5
+			trait = mage_4
+		}
+		
+		effect = {
+			give_nickname = nick_the_gravesinger
+			
+			set_flag = create_bloodline_forbidden_magic
+
+			create_bloodline = { type = bloodline_learning_forbidden_magic }
+			
+		prestige = -10000
+			
+			}
+			ai_will_do - {
+			        factor = 1
+			}
+		}
+}
+
+decisions = {
+	proclaim_bloodline_daedric_taint_blood = {
+		is_high_prio = yes
+		only_independent = no
+		
+		potential = {
+			has_submenu_open = no
+			religion_group = daedra
+			NOT = { has_flag = create_bloodline_daedric_taint_blood }
+		}
+		
+		allow = {
+		prestige = 7500
+		piety = 2500
+		wealth = 1000
+	}
+		
+		effect = {
+			give_nickname = nick_the_princdaedra
+			
+			wealth = -1000
+			
+			set_flag = create_bloodline_daedric_taint_blood
+
+			create_bloodline = { type = bloodline_daedric_taint_blood }
+			
+			prestige = -7500
+		    piety = -2500
+			
+			add_trait=dremora
+			culture = dremora
+			
+			}
+			ai_will_do - {
+			        factor = 1
+			}
+		}
+}
+
+decisions = {
+	proclaim_bloodline_werewolf_lord = {
+		is_high_prio = yes
+		only_independent = no
+		
+		potential = {
+			has_submenu_open = no
+			trait = lycan
+			trait = known_lycan
+			NOT = { has_flag = create_bloodline_werewolf_lord }
+		}
+		
+		allow = {
+		prestige = 5000
+	}
+		
+		effect = {
+			give_nickname = nick_the_werwolfalfa
+			
+			set_flag = create_bloodline_werewolf_lord
+
+			create_bloodline = { type = bloodline_werewolf_lord }
+			
+			add_trait=strong
+			
+			prestige = -5000
+			
+			}
+			ai_will_do - {
+			        factor = 1
+			}
+		}
+}
+
+decisions = {
+	proclaim_bloodline_vampire_lord = {
+		is_high_prio = yes
+		only_independent = no
+		
+		potential = {
+			has_submenu_open = no
+			trait = vampire
+			trait = known_vampire
+			NOT = { has_flag = create_bloodline_vampire_lord }
+		}
+		
+		allow = {
+		prestige = 5000
+	}
+		
+		effect = {
+			give_nickname = nick_the_vampirelord
+			
+			set_flag = create_bloodline_vampire_lord
+
+			create_bloodline = { type = bloodline_vampire_lord }
+			
+			add_trait=agile
+			add_trait=perceptive
+			
+			prestige = -5000
+			
+			}
+			ai_will_do - {
+			        factor = 1
+			}
+		}
+}

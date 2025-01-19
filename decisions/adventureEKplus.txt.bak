@@ -1,0 +1,38 @@
+decisions = {
+    be_adventure = {
+	potential = {
+	has_character_flag = title_open
+	NOT = { has_character_flag = adventurerplus }
+	}
+	allow = {
+			prestige = 500
+			}	
+	effect = {
+	        add_trait=adventurer
+			prestige = -500
+	        set_character_flag = evtestadventuring
+			set_character_flag = adventurerplus
+			}	
+	ai_will_do = {
+	        factor = 0
+			}
+	    }
+}	
+
+decisions = {
+    dont_be_adventure = {
+	potential = {
+	has_character_flag = title_open
+	has_character_flag = adventurerplus
+	}
+	allow = {}	
+	effect = {
+	        remove_trait=adventurer
+	        clr_character_flag = evtestadventuring
+			clr_character_flag = adventurerplus
+			}	
+	ai_will_do = {
+	        factor = 0
+			}
+	    }
+}	

@@ -1,0 +1,339 @@
+decisions = {
+    change_religion_azura = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { secret_religion = daedra_azura }
+		NOT = { religion = daedra_azura }
+		}
+	allow = {
+	piety = 550
+			}	
+	effect = {
+	piety = -550
+	set_secret_religion = daedra_azura
+		}
+	ai_will_do = {
+	        factor = 0
+			}
+		}
+	}
+	
+decisions = {
+    change_religion_boethiah = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { secret_religion = daedra_boethiah }
+		NOT = { religion = daedra_boethiah }
+		}
+	allow = {
+	piety = 550
+			}	
+	effect = {
+	piety = -550
+	set_secret_religion = daedra_boethiah
+		}
+	ai_will_do = {
+	        factor = 0
+			}
+		}
+	}
+	
+decisions = {
+    change_religion_clavicus = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { secret_religion = daedra_clavicus }
+		NOT = { religion = daedra_clavicus }
+		}
+	allow = {
+	piety = 550
+			}	
+	effect = {
+	piety = -550
+	set_secret_religion = daedra_clavicus
+		}
+	ai_will_do = {
+	        factor = 0
+			}
+		}
+	}
+	
+decisions = {
+    change_religion_hermaeus = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { secret_religion = daedra_hermaeus }
+		NOT = { religion = daedra_hermaeus }
+		}
+	allow = {
+	piety = 550
+			}	
+	effect = {
+	piety = -550
+	set_secret_religion = daedra_hermaeus
+		}
+	ai_will_do = {
+	        factor = 0
+			}
+		}
+	}
+	
+decisions = {
+    change_religion_hircine = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { secret_religion = daedra_hircine }
+		NOT = { religion = daedra_hircine }
+		}
+	allow = {
+	piety = 550
+			}	
+	effect = {
+	piety = -550
+	set_secret_religion = daedra_hircine
+		}
+	ai_will_do = {
+	        factor = 0
+			}
+		}
+	}
+	
+decisions = {
+    change_religion_mehrunes = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { secret_religion = daedra_mehrunes }
+		NOT = { religion = daedra_mehrunes }
+		}
+	allow = {
+	piety = 550
+			}	
+	effect = {
+	piety = -550
+	set_secret_religion = daedra_mehrunes
+		}
+	ai_will_do = {
+	        factor = 0
+			}
+		}
+	}
+	
+decisions = {
+    change_religion_mephala = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { secret_religion = daedra_mephala }
+		NOT = { religion = daedra_mephala }
+		}
+	allow = {
+	piety = 550
+			}	
+	effect = {
+	piety = -550
+	set_secret_religion = daedra_mephala
+		}
+	ai_will_do = {
+	        factor = 0
+			}
+		}
+	}
+	
+decisions = {
+    change_religion_meridia = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { secret_religion = daedra_meridia }
+		NOT = { religion = daedra_meridia }
+		}
+	allow = {
+	piety = 550
+			}	
+	effect = {
+	piety = -550
+	set_secret_religion = daedra_meridia
+		}
+	ai_will_do = {
+	        factor = 0
+			}
+		}
+	}
+	
+decisions = {
+    change_religion_molag = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { secret_religion = daedra_molag }
+		NOT = { religion = daedra_molag }
+		}
+	allow = {
+	piety = 750
+			}	
+	effect = {
+	piety = -750
+	set_secret_religion = daedra_molag
+		}
+	ai_will_do = {
+	        factor = 0
+			}
+		}
+	}
+	
+decisions = {
+    change_religion_namira = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { secret_religion = daedra_namira }
+		NOT = { religion = daedra_namira }
+		}
+	allow = {
+	piety = 550
+			}	
+	effect = {
+	piety = -550
+	set_secret_religion = daedra_namira
+		}
+	ai_will_do = {
+	        factor = 0
+			}
+		}
+	}
+	
+decisions = {
+    change_religion_nocturnal = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { secret_religion = daedra_nocturnal }
+		NOT = { religion = daedra_nocturnal }
+		}
+	allow = {
+	piety = 550
+			}	
+	effect = {
+	piety = -550
+	set_secret_religion = daedra_nocturnal
+		}
+	ai_will_do = {
+	        factor = 0
+			}
+		}
+	}
+	
+decisions = {
+    change_religion_peryite = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { secret_religion = daedra_peryite }
+		NOT = { religion = daedra_peryite }
+		}
+	allow = {
+	piety = 550
+			}	
+	effect = {
+	piety = -550
+	set_secret_religion = daedra_peryite
+		}
+	ai_will_do = {
+	        factor = 0
+			}
+		}
+	}
+	
+decisions = {
+    change_religion_sanguine = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { secret_religion = daedra_sanguine }
+		NOT = { religion = daedra_sanguine }
+		}
+	allow = {
+	piety = 550
+			}	
+	effect = {
+	piety = -550
+	set_secret_religion = daedra_sanguine
+		}
+	ai_will_do = {
+	        factor = 0
+			}
+		}
+	}
+	
+decisions = {
+    change_religion_sheogorath = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { secret_religion = daedra_sheogorath }
+		NOT = { religion = daedra_sheogorath }
+		}
+	allow = {
+	piety = 750
+			}	
+	effect = {
+	piety = -750
+	set_secret_religion = daedra_sheogorath
+		}
+	ai_will_do = {
+	        factor = 0
+			}
+		}
+	}
+	
+decisions = {
+    change_religion_vaermina = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { secret_religion = daedra_vaermina }
+		NOT = { religion = daedra_vaermina }
+		}
+	allow = {
+	piety = 550
+			}	
+	effect = {
+	piety = -550
+	set_secret_religion = daedra_vaermina
+		}
+	ai_will_do = {
+	        factor = 0
+			}
+		}
+	}
+	
+decisions = {
+    change_religion_malacath = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { secret_religion = daedra_malacath }
+		NOT = { religion = daedra_malacath }
+		}
+	allow = {
+		piety = 750
+		}	
+	effect = {
+		piety = -750
+		set_secret_religion = daedra_malacath
+		}
+	ai_will_do = {
+	        factor = 0
+			}
+		}
+	}
+	
+decisions = {
+    change_religion_jyggalag = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { secret_religion = daedra_jyggalag }
+		NOT = { religion = daedra_jyggalag }
+		}
+	allow = {
+	piety = 550
+			}	
+	effect = {
+	piety = -550
+	set_secret_religion = daedra_jyggalag
+		}
+	ai_will_do = {
+	        factor = 0
+			}
+		}
+	}

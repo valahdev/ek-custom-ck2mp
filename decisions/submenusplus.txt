@@ -1,0 +1,17 @@
+decisions = {
+	open_smithing = { #Adventuring - Sub of Market
+		ai_check_interval = 6000
+		potential = {
+			has_character_flag = smithing #Not ready yet! :)
+			ai = no
+			has_character_flag = marketplace_open
+		}
+		allow = {}
+		effect = {
+			clr_character_flag = marketplace_open
+			set_character_flag = ev_visit_blacksmith
+		}
+		ai_will_do = { factor = 0 }
+		
+	}
+}	

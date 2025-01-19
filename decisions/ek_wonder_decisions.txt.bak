@@ -33,14 +33,11 @@ decisions = {
 		potential = {
 			is_playable = yes
 			has_submenu_open = no
-			OR = {
-			has_artifact = head_crown_aetherial
 			any_realm_wonder_upgrade = {
 				has_wonder_upgrade = upgrade_runestones
 				is_active = yes
 			}
 		}
-	}
 		allow = {
 			has_birthsign = yes
 			custom_tooltip = {

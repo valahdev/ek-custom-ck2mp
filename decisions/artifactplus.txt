@@ -1,0 +1,1388 @@
+## Sword
+decisions = {
+    weapon_chrysamere_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { trait = vampire }
+		NOT = { trait = lycan }
+		NOT = { has_global_flag = weapon_chrysamere }
+		culture_group = nedic
+		}
+	allow = {
+			prestige = 10000
+			wealth = 500
+			piety = 300
+			religion_group = human_pantheon
+			}	
+	effect = {
+	        add_artifact=weapon_chrysamere
+			prestige = -10000
+			wealth = -500
+			piety = -300
+			set_global_flag = weapon_chrysamere
+		    }
+	ai_will_do = {
+	        factor = 1
+			}
+		}
+	}	
+	
+
+decisions = {
+    weapon_scimitar_bloodscythe_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = weapon_scimitar_bloodscythe }
+		culture_group = yokudan_group
+		}
+	allow = {
+			prestige = 2000
+			wealth = 100
+			piety = 50
+			}	
+	effect = {
+	        add_artifact=weapon_scimitar_bloodscythe
+			prestige = -2000
+			wealth = -100
+			piety = -50
+			set_global_flag = weapon_scimitar_bloodscythe
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+	}	
+
+decisions = {
+    weapon_scimitar_soulrend_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = weapon_scimitar_soulrend }
+		culture_group = yokudan_group
+		}
+	allow = {
+			prestige = 2000
+			wealth = 100
+			piety = 50
+			}	
+	effect = {
+	        add_artifact=weapon_scimitar_soulrend
+			prestige = -2000
+			wealth = -100
+			piety = -50
+			set_global_flag = weapon_scimitar_soulrend
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+	}	
+
+decisions = {
+    weapon_chillrend_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = weapon_chillrend }
+		religion_group = mer_pantheon
+		}
+	allow = {
+			wealth = 500
+			}	
+	effect = {
+	        add_artifact=weapon_chillrend
+			wealth = -500
+			set_global_flag = weapon_chillrend
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+	}	
+
+decisions = {
+    weapon_windshear_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = weapon_windshear }
+		culture_group = yokudan_group
+		}
+	allow = {
+			prestige = 1000
+			wealth = 300
+			}	
+	effect = {
+	        add_artifact=weapon_windshear
+			prestige = -1000
+			wealth = -300
+			set_global_flag = weapon_windshear
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+	}	
+
+decisions = {
+    weapon_stormfang_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = weapon_stormfang }
+		culture = nord
+		}
+	allow = {
+			prestige = 1000
+			wealth = 500
+			}	
+	effect = {
+	        add_artifact=weapon_stormfang
+			prestige = -1000
+			wealth = -500
+			set_global_flag = weapon_stormfang
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+	}	
+
+decisions = {
+    weapon_sword_sinweaver_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = weapon_sword_sinweaver }
+		}
+	allow = {
+			prestige = 800
+			wealth = 400
+			}	
+	effect = {
+	        add_artifact=weapon_sword_sinweaver
+			prestige = -800
+			wealth = -400
+			set_global_flag = weapon_sword_sinweaver
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+	}	
+
+decisions = {
+    weapon_sword_thornblade_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = weapon_sword_thornblade }
+		has_landed_title = c_cheydinhal
+		}
+	allow = {
+			prestige = 1200
+			wealth = 300
+			}	
+	effect = {
+	        add_artifact=weapon_sword_thornblade
+			prestige = -1200
+			wealth = -300
+			set_global_flag = weapon_sword_thornblade
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+	}	
+
+decisions = {
+    weapon_spiriteater_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = weapon_spiriteater }
+		}
+	allow = {
+			prestige = 600
+			wealth = 200
+			}	
+	effect = {
+	        add_artifact=weapon_spiriteater
+			prestige = -600
+			wealth = -200
+			set_global_flag = weapon_spiriteater
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}	
+
+decisions = {
+    weapon_icicle_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = weapon_icicle }
+		}
+	allow = {
+			prestige = 1500
+			wealth = 200
+			}	
+	effect = {
+	        add_artifact=weapon_icicle
+			prestige = -1500
+			wealth = -200
+			set_global_flag = weapon_icicle
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    weapon_sword_spiderbite_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = weapon_sword_spiderbite }
+		}
+	allow = {
+			prestige = 1000
+			wealth = 150
+			}	
+	effect = {
+	        add_artifact=weapon_sword_spiderbite
+			prestige = -1000
+			wealth = -150
+			set_global_flag = weapon_sword_spiderbite
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    weapon_magebane_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = weapon_magebane }
+		culture_group = aldmeris
+		}
+	allow = {
+			prestige = 2500
+			wealth = 500
+			}	
+	effect = {
+	        add_artifact=weapon_magebane
+			prestige = -2500
+			wealth = -500
+			set_global_flag = weapon_magebane
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    weapon_iceblademonarch_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = weapon_iceblademonarch }
+		}
+	allow = {
+			prestige = 2700
+			wealth = 450
+			}	
+	effect = {
+	        add_artifact=weapon_iceblademonarch
+			prestige = -2700
+			wealth = -450
+			set_global_flag = weapon_iceblademonarch
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    weapon_foeburner_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = weapon_foeburner }
+		}
+	allow = {
+			prestige = 3000
+			wealth = 800
+			}	
+	effect = {
+	        add_artifact=weapon_foeburner
+			prestige = -3000
+			wealth = -800
+			set_global_flag = weapon_foeburner
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    weapon_sword_of_edge_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = weapon_sword_of_edge }
+		}
+	allow = {
+			prestige = 2000
+			wealth = 500
+			}	
+	effect = {
+	        add_artifact=weapon_sword_of_edge
+			prestige = -2000
+			wealth = -500
+			set_global_flag = weapon_sword_of_edge
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	  }
+}
+
+##HAMMERS
+
+decisions = {
+    weapon_clutterbane_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = weapon_clutterbane }
+		culture_group = chimeris
+		}
+	allow = {
+			prestige = 800
+			wealth = 250
+			}	
+	effect = {
+	        add_artifact=weapon_clutterbane
+			prestige = -800
+			wealth = -250
+			set_global_flag = weapon_clutterbane
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    weapon_sunder_false_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = weapon_sunder_false }
+		culture_group = chimeris
+		}
+	allow = {
+			prestige = 10
+			wealth = 1000
+			}	
+	effect = {
+	        add_artifact=weapon_sunder_false
+			prestige = -10
+			wealth = -1000
+			set_global_flag = weapon_sunder_false
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+##STAVES
+
+decisions = {
+    weapon_staff_llothis_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = weapon_staff_llothis }
+		culture_group = chimeris
+		}
+	allow = {
+			prestige = 1000
+			wealth = 100
+			piety = 500
+			}	
+	effect = {
+	        add_artifact=weapon_staff_llothis
+			prestige = -1000
+			wealth = -100
+			piety = -500
+			set_global_flag = weapon_staff_llothis
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+## AEDRA
+
+decisions = {
+    amulet_of_akatosh_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = amulet_of_akatosh }
+		trait = p_akatosh
+		}
+	allow = {
+			piety = 50
+			wealth = 10
+			trait = p_akatosh
+			}	
+	effect = {
+	        add_artifact=amulet_of_akatosh
+			piety = -50
+			wealth = -10
+			set_global_flag = amulet_of_akatosh
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    amulet_of_arkay_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = amulet_of_arkay }
+		trait = p_arkay
+		}
+	allow = {
+			piety = 50
+			wealth = 10
+			trait = p_arkay
+			}	
+	effect = {
+	        add_artifact=amulet_of_arkay
+			piety = -50
+			wealth = -10
+			set_global_flag = amulet_of_arkay
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    amulet_of_dibella_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = amulet_of_dibella }
+		trait = p_dibella
+		}
+	allow = {
+			piety = 50
+			wealth = 10
+			trait = p_dibella
+			}	
+	effect = {
+	        add_artifact=amulet_of_dibella
+			piety = -50
+			wealth = -10
+			set_global_flag = amulet_of_dibella
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    amulet_of_julianos_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = amulet_of_julianos }
+		trait = p_julianos
+		}
+	allow = {
+			piety = 50
+			wealth = 10
+			trait = p_julianos
+			}	
+	effect = {
+	        add_artifact=amulet_of_julianos
+			piety = -50
+			wealth = -10
+			set_global_flag = amulet_of_julianos
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    amulet_of_kynareth_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = amulet_of_kynareth }
+		trait = p_kynareth
+		}
+	allow = {
+			piety = 50
+			wealth = 10
+			trait = p_kynareth
+			}	
+	effect = {
+	        add_artifact=amulet_of_kynareth
+			piety = -50
+			wealth = -10
+			set_global_flag = amulet_of_kynareth
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    amulet_of_mara_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = amulet_of_mara }
+		trait = p_mara
+		}
+	allow = {
+			piety = 50
+			wealth = 10
+			trait = p_mara
+			}	
+	effect = {
+	        add_artifact=amulet_of_mara
+			piety = -50
+			wealth = -10
+			set_global_flag = amulet_of_mara
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    amulet_of_stendarr_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = amulet_of_stendarr }
+		trait = p_stendarr
+		}
+	allow = {
+			piety = 50
+			wealth = 10
+			trait = p_stendarr
+			}	
+	effect = {
+	        add_artifact=amulet_of_stendarr
+			piety = -50
+			wealth = -10
+			set_global_flag = amulet_of_stendarr
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    amulet_of_zenithar_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = amulet_of_zenithar }
+		trait = p_zenithar
+		}
+	allow = {
+			piety = 50
+			wealth = 10
+			trait = p_zenitar
+			}	
+	effect = {
+	        add_artifact=amulet_of_zenithar
+			piety = -50
+			wealth = -10
+			set_global_flag = amulet_of_zenithar
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    armor_lordsmail_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = armor_lordsmail }
+		trait = p_kynareth
+		}
+	allow = {
+			piety = 2000
+			trait = p_kynareth
+			}	
+	effect = {
+	        add_artifact=armor_lordsmail
+			piety = -2000
+			set_global_flag = armor_lordsmail
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    maras_raiment_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = maras_raiment }
+		trait = p_mara
+		}
+	allow = {
+			piety = 200
+			trait = p_mara
+			}	
+	effect = {
+	        add_artifact=maras_raiment
+			piety = -200
+			set_global_flag = maras_raiment
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    gloves_zenithar_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = gloves_zenithar }
+		trait = p_zenithar
+		}
+	allow = {
+			piety = 500
+			trait = p_zenithar
+			}	
+	effect = {
+	        add_artifact=gloves_zenithar
+			piety = -500
+			set_global_flag = gloves_zenithar
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    ring_of_the_wind_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = ring_of_the_wind }
+		culture_group = khajiiit
+		}
+	allow = {
+			piety = 800
+			}	
+	effect = {
+	        add_artifact=ring_of_the_wind
+			piety = -800
+			set_global_flag = ring_of_the_wind
+			add_trait=lucky
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    shield_auriel_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = shield_auriel }
+		trait = p_auriel
+		}
+	allow = {
+			piety = 500
+			}	
+	effect = {
+	        add_artifact=shield_auriel
+			piety = -500
+			set_global_flag = shield_auriel
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    brush_of_truepaint_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = brush_of_truepaint }
+		trait = p_dibella
+		}
+	allow = {
+			piety = 500
+			}	
+	effect = {
+	        add_artifact=brush_of_truepaint
+			piety = -500
+			set_global_flag = brush_of_truepaint
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    weapon_stendarrshammer_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = weapon_stendarrshammer }
+		trait = p_stendarr
+		}
+	allow = {
+			piety = 2000
+			}	
+	effect = {
+	        add_artifact=weapon_stendarrshammer
+			piety = -2000
+			set_global_flag = weapon_stendarrshammer
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    weapon_bow_auriel_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = weapon_bow_auriel }
+		trait = p_auriel
+		}
+	allow = {
+			piety = 2000
+			trait = p_auriel
+			}	
+	effect = {
+	        add_artifact=weapon_bow_auriel
+			piety = -2000
+			set_global_flag = weapon_bow_auriel
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+##AMULET
+
+decisions = {
+    amulet_draconian_madstone_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = amulet_draconian_madstone }
+		}
+	allow = {
+			prestige = 3000
+			wealth = 300
+			}	
+	effect = {
+	        add_artifact=amulet_draconian_madstone
+            prestige = -3000
+			wealth = -300
+			set_global_flag = amulet_draconian_madstone
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    amulet_of_infectious_charm_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = amulet_of_infectious_charm }
+		}
+	allow = {
+            prestige = 10000
+			wealth = 500
+			}	
+	effect = {
+	        add_artifact=amulet_of_infectious_charm
+			prestige = -10000
+			wealth = -500
+			set_global_flag = amulet_of_infectious_charm
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    amulet_of_necromancer_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = amulet_of_necromancer }
+		trait = necromancer
+		}
+	allow = {
+            prestige = 8000
+			}	
+	effect = {
+	        add_artifact=amulet_of_necromancer
+			prestige = -8000
+			set_global_flag = amulet_of_necromancer
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    amulet_of_zenithar_whispers_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = amulet_of_zenithar_whispers }
+		trait = p_zenithar
+		}
+	allow = {
+	        prestige = 1000
+			wealth = 300
+			piety = 100
+			}	
+	effect = {
+	        add_artifact=amulet_of_zenithar_whispers
+			piety = -100
+			prestige = -1000
+			wealth = -300
+			set_global_flag = amulet_of_zenithar_whispers
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    amulet_of_shadows_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = amulet_of_shadows }
+		}
+	allow = {
+			prestige = 2000
+			wealth = 400
+			}	
+	effect = {
+	        add_artifact=amulet_of_shadows
+			prestige = -2000
+			wealth = -400
+			set_global_flag = amulet_of_shadows
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    amulet_of_cruelty_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = amulet_of_cruelty }
+		}
+	allow = {
+			prestige = 1500
+			wealth = 300
+			}	
+	effect = {
+	        add_artifact=amulet_of_cruelty
+			prestige = -1500
+			wealth = -300
+			set_global_flag = amulet_of_cruelty
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    amulet_of_forgemaster_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = amulet_of_forgemaster }
+		}
+	allow = {
+			prestige = 4500
+			wealth = 300
+			}	
+	effect = {
+	        add_artifact=amulet_of_forgemaster
+			prestige = -4500
+			wealth = -300
+			set_global_flag = amulet_of_forgemaster
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+##ARMOR
+
+##BOOKS
+
+##HEAD
+
+decisions = {
+    head_crown_aetherial_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = head_crown_aetherial }
+		}
+	allow = {
+			prestige = 10000
+			wealth = 1000
+			has_artifact = dwemer_schematics
+			has_artifact = book_nchunaks_fire_and_faith
+			}	
+	effect = {
+	        add_artifact=head_crown_aetherial
+			prestige = -10000
+			wealth = -1000
+			set_global_flag = head_crown_aetherial
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    head_crown_jagged_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = head_crown_jagged }
+		culture = nord
+		}
+	allow = {
+			prestige = 10000
+			wealth = 1000
+			}	
+	effect = {
+	        add_artifact=head_crown_jagged
+			prestige = -10000
+			wealth = -1000
+			set_global_flag = head_crown_jagged
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+##RINGS
+
+decisions = {
+    ring_of_erudite_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = ring_of_erudite }
+		trait = vampire
+		}
+	allow = {
+			prestige = 7000
+			wealth = 500
+			}	
+	effect = {
+	        add_artifact=ring_of_erudite
+			prestige = -7000
+			wealth = -500
+			set_global_flag = ring_of_erudite
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    ring_of_beast_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = ring_of_beast }
+		trait = vampire
+		}
+	allow = {
+			prestige = 7000
+			wealth = 500
+			}	
+	effect = {
+	        add_artifact=ring_of_beast
+			prestige = -7000
+			wealth = -500
+			set_global_flag = ring_of_beast
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    ring_of_nightweaver_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = ring_of_nightweaver }
+		}
+	allow = {
+			prestige = 5000
+			wealth = 500
+			}	
+	effect = {
+	        add_artifact=ring_of_nightweaver
+			prestige = -5000
+			wealth = -500
+			set_global_flag = ring_of_nightweaver
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    ring_of_moon_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = ring_of_moon }
+		trait = lycan
+		}
+	allow = {
+			prestige = 5000
+			wealth = 500
+			}	
+	effect = {
+	        add_artifact=ring_of_moon
+			presitge = -5000
+			wealth = -500
+			set_global_flag = ring_of_moon
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    ring_eidolon_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = ring_eidolon }
+		}
+	allow = {
+			prestige = 3000
+			wealth = 1000
+			}	
+	effect = {
+	        add_artifact=ring_eidolon
+			piety = -500
+			prestige = -3000
+			wealth = -1000
+			set_global_flag = ring_eidolon
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    ring_phynaster_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = ring_phynaster }
+		}
+	allow = {
+			prestige = 2500
+			wealth = 400
+			}	
+	effect = {
+	        add_artifact=ring_phynaster
+			prestige = -2500
+			wealth = -400
+			set_global_flag = ring_phynaster
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    warlocks_ring_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = warlocks_ring }
+		}
+	allow = {
+			prestige = 5000
+			wealth = 500
+			}	
+	effect = {
+	        add_artifact=warlocks_ring
+			prestige = -5000
+			wealth = -500
+			set_global_flag = warlocks_ring
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    ring_rumare_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = ring_rumare }
+		}
+	allow = {
+			prestige = 2500
+			wealth = 250
+			}	
+	effect = {
+	        add_artifact=ring_rumare
+			prestige = -2500
+			wealth = -250
+			set_global_flag = ring_rumare
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+##SHIETLDS
+
+decisions = {
+    shield_eleidon_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = shield_eleidon }
+		culture = breton
+		}
+	allow = {
+			prestige = 5000
+			wealth = 500
+			}	
+	effect = {
+	        add_artifact=shield_eleidon
+			prestige = -5000
+			wealth = -500
+			set_global_flag = shield_eleidon
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    shield_ysgramor_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = shield_ysgramor }
+		culture = nord
+		}
+	allow = {
+			prestige = 2000
+			wealth = 200
+			}	
+	effect = {
+	        add_artifact=shield_ysgramor
+			prestige = -2000
+			wealth = -200
+			set_global_flag = shield_ysgramor
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    weapon_axe_wuuthrad_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = weapon_axe_wuuthrad }
+		culture = nord
+		}
+	allow = {
+			presitge = 10000
+			wealth = 2000
+			}	
+	effect = {
+	        add_artifact=weapon_axe_wuuthrad
+			prestige = -10000
+			wealth = -2000
+			set_global_flag = weapon_axe_wuuthrad
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+##DAGGERS
+
+decisions = {
+    weapon_dagger_witsplinter_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = weapon_dagger_witsplinter }
+		}
+	allow = {
+			prestige = 3000
+			wealth = 300
+			}	
+	effect = {
+	        add_artifact=weapon_dagger_witsplinter
+			prestige = -3000
+			wealth = -300
+			set_global_flag = weapon_dagger_witsplinter
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    weapon_dagger_bladeofwoe_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = weapon_dagger_bladeofwoe }
+		society_member_of = dark_brotherhood_tamriel
+		}
+	allow = {
+			prestige = 4000
+			wealth = 400
+			}	
+	effect = {
+	        add_artifact=weapon_dagger_bladeofwoe
+			prestige = -4000
+			wealth = -400
+			set_global_flag = weapon_dagger_bladeofwoe
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    weapon_dagger_judgement_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = weapon_dagger_judgement }
+		}
+	allow = {
+			prestige = 3000
+			wealth = 200
+			}	
+	effect = {
+	        add_artifact=weapon_dagger_judgement
+			prestige = -3000
+			wealth = -200
+			set_global_flag = weapon_dagger_judgement
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    weapon_dagger_enamor_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = weapon_dagger_enamor }
+		}
+	allow = {
+			prestige = 5000
+			wealth = 500
+			}	
+	effect = {
+	        add_artifact=weapon_dagger_enamor
+			prestige = -5000
+			wealth = -500
+			set_global_flag = weapon_dagger_enamor
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    weapon_dagger_haynekh_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = weapon_dagger_haynekh }
+		culture_group = argonian
+		}
+	allow = {
+			prestige = 4000
+			wealth = 400
+			}	
+	effect = {
+	        add_artifact=weapon_dagger_haynekh
+			prestige = -4000
+			wealth = -400
+			set_global_flag = weapon_dagger_haynekh
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
+
+decisions = {
+    weapon_dagger_souldrink_get = {
+	potential = {
+		has_character_flag = adventuring_open
+		NOT = { has_global_flag = weapon_dagger_souldrink }
+		}
+	allow = {
+			prestige = 6000
+			wealth = 600
+			}	
+	effect = {
+	        add_artifact=weapon_dagger_souldrink
+			prestige = -6000
+			wealth = -600
+			set_global_flag = weapon_dagger_souldrink
+			}	
+	ai_will_do = {
+	        factor = 1
+			}
+	    }
+}
