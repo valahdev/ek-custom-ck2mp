@@ -1,0 +1,72 @@
+lmmcxp_royal_councillor_1 = {
+	random = no	
+	diplomacy = 1
+	general_opinion = 2
+	
+	opposites = {
+		lmmcxp_royal_councillor_2
+		lmmcxp_royal_councillor_3
+	}
+}
+
+lmmcxp_royal_councillor_2 = {
+	random = no
+	diplomacy = 1
+	intrigue = 1	
+	general_opinion = 3
+	
+	opposites = {
+		lmmcxp_royal_councillor_1
+		lmmcxp_royal_councillor_2
+	}
+}
+
+lmmcxp_royal_councillor_3 = {
+	random = no
+	diplomacy = 2
+	intrigue = 2
+	learning = 1	
+	general_opinion = 4
+	
+	opposites = {
+		lmmcxp_royal_councillor_1
+		lmmcxp_royal_councillor_2
+	}
+}
+
+lmmcxp_imperial_councillor_1 = {
+	random = no
+	diplomacy = 1		
+	general_opinion = 2
+	
+	opposites = {
+		lmmcxp_imperial_councillor_2
+		lmmcxp_imperial_councillor_3
+	}
+}
+
+lmmcxp_imperial_councillor_2 = {
+	random = no
+	diplomacy = 2
+	intrigue = 1
+	learning = 1
+	general_opinion = 4
+	
+	opposites = {
+		lmmcxp_imperial_councillor_1
+		lmmcxp_imperial_councillor_3
+	}
+}
+
+lmmcxp_imperial_councillor_3 = {
+	random = no
+	diplomacy = 3
+	intrigue = 2
+	learning = 2
+	general_opinion = 6
+	
+	opposites = {
+		lmmcxp_imperial_councillor_1
+		lmmcxp_imperial_councillor_2
+	}
+}

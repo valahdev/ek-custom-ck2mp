@@ -1,0 +1,189 @@
+defined_text = {
+	name = lmmcxp_GetXPGainAsChancellor
+	
+	text = {
+		trigger = { 
+			has_job_title = job_chancellor
+			liege = { real_tier = count } 			
+		}
+		localisation_key = lmmcxp_XPGain_Count
+	}
+	
+	text = {
+		trigger = { 
+			has_job_title = job_chancellor
+			liege = { real_tier = duke } 			
+		}
+		localisation_key = lmmcxp_XPGain_Duke
+	}
+	
+	text = {
+		trigger = { 
+			has_job_title = job_chancellor
+			liege = { real_tier = king } 			
+		}
+		localisation_key = lmmcxp_XPGain_King
+	}
+	
+	text = {
+		trigger = { 
+			has_job_title = job_chancellor
+			liege = { real_tier = emperor } 			
+		}
+		localisation_key = lmmcxp_XPGain_Emperor
+	}
+	
+	fallback_text = { localisation_key = lmmcxp_XPGain_Zero }
+}
+
+defined_text = {
+	name = lmmcxp_GetXPGainAsMarshal
+	
+	text = {
+		trigger = { 
+			has_job_title = job_marshal
+			liege = { real_tier = count } 			
+		}
+		localisation_key = lmmcxp_XPGain_Count
+	}
+	
+	text = {
+		trigger = { 
+			has_job_title = job_marshal
+			liege = { real_tier = duke } 			
+		}
+		localisation_key = lmmcxp_XPGain_Duke
+	}
+	
+	text = {
+		trigger = { 
+			has_job_title = job_marshal
+			liege = { real_tier = king } 			
+		}
+		localisation_key = lmmcxp_XPGain_King
+	}
+	
+	text = {
+		trigger = { 
+			has_job_title = job_marshal
+			liege = { real_tier = emperor } 			
+		}
+		localisation_key = lmmcxp_XPGain_Emperor
+	}
+	
+	fallback_text = { localisation_key = lmmcxp_XPGain_Zero }
+}
+
+defined_text = {
+	name = lmmcxp_GetXPGainAsTreasurer
+	
+	text = {
+		trigger = { 
+			has_job_title = job_treasurer
+			liege = { real_tier = count } 			
+		}
+		localisation_key = lmmcxp_XPGain_Count
+	}
+	
+	text = {
+		trigger = { 
+			has_job_title = job_treasurer
+			liege = { real_tier = duke } 			
+		}
+		localisation_key = lmmcxp_XPGain_Duke
+	}
+	
+	text = {
+		trigger = { 
+			has_job_title = job_treasurer
+			liege = { real_tier = king } 			
+		}
+		localisation_key = lmmcxp_XPGain_King
+	}
+	
+	text = {
+		trigger = { 
+			has_job_title = job_treasurer
+			liege = { real_tier = emperor } 			
+		}
+		localisation_key = lmmcxp_XPGain_Emperor
+	}
+	
+	fallback_text = { localisation_key = lmmcxp_XPGain_Zero }
+}
+
+defined_text = {
+	name = lmmcxp_GetXPGainAsSpymaster
+	
+	text = {
+		trigger = { 
+			has_job_title = job_spymaster
+			liege = { real_tier = count } 			
+		}
+		localisation_key = lmmcxp_XPGain_Count
+	}
+	
+	text = {
+		trigger = { 
+			has_job_title = job_spymaster
+			liege = { real_tier = duke } 			
+		}
+		localisation_key = lmmcxp_XPGain_Duke
+	}
+	
+	text = {
+		trigger = { 
+			has_job_title = job_spymaster
+			liege = { real_tier = king } 			
+		}
+		localisation_key = lmmcxp_XPGain_King
+	}
+	
+	text = {
+		trigger = { 
+			has_job_title = job_spymaster
+			liege = { real_tier = emperor } 			
+		}
+		localisation_key = lmmcxp_XPGain_Emperor
+	}
+	
+	fallback_text = { localisation_key = lmmcxp_XPGain_Zero }
+}
+
+defined_text = {
+	name = lmmcxp_GetXPGainAsSpiritual
+	
+	text = {
+		trigger = { 
+			has_job_title = job_spiritual
+			liege = { real_tier = count } 			
+		}
+		localisation_key = lmmcxp_XPGain_Count
+	}
+	
+	text = {
+		trigger = { 
+			has_job_title = job_spiritual
+			liege = { real_tier = duke } 			
+		}
+		localisation_key = lmmcxp_XPGain_Duke
+	}
+	
+	text = {
+		trigger = { 
+			has_job_title = job_spiritual
+			liege = { real_tier = king } 			
+		}
+		localisation_key = lmmcxp_XPGain_King
+	}
+	
+	text = {
+		trigger = { 
+			has_job_title = job_spiritual
+			liege = { real_tier = emperor } 			
+		}
+		localisation_key = lmmcxp_XPGain_Emperor
+	}
+	
+	fallback_text = { localisation_key = lmmcxp_XPGain_Zero }
+}

@@ -1,0 +1,28 @@
+on_startup = {
+	effect = {
+		if = {
+			limit = { NOT = { has_global_flag = lmmcxp_startup_config_flag } }
+			set_global_flag = lmmcxp_startup_config_flag
+			set_variable = { which = global_lmmcxp_xp_gain_per_year_count value = 6.25 }
+			set_variable = { which = global_lmmcxp_xp_gain_per_year_duke value = 12.5 }
+			set_variable = { which = global_lmmcxp_xp_gain_per_year_king value = 25 }
+			set_variable = { which = global_lmmcxp_xp_gain_per_year_emperor value = 50 }
+			set_variable = { which = global_lmmcxp_xp_for_level_1 value = 50 } # num years: count 5, duke 4, king 2, emperor 1
+			set_variable = { which = global_lmmcxp_xp_for_level_2 value = 100 } # num years: count 10, duke 8, king 4, emperor 2
+			set_variable = { which = global_lmmcxp_xp_for_level_3 value = 200 } # num years: count 20, duke 16, king 8, emperor 4
+			set_variable = { which = global_lmmcxp_xp_for_level_4 value = 400 } # num years: count 40, duke 32, king 16, emperor 8
+			set_variable = { which = global_lmmcxp_xp_for_level_5 value = 800 } # num years: count 80, duke 64, king 32, emperor 16	
+			set_variable = { which = global_lmmcxp_years_for_councillor_trait_1 value = 5 }
+			set_variable = { which = global_lmmcxp_years_for_councillor_trait_2 value = 10 }
+			set_variable = { which = global_lmmcxp_years_for_councillor_trait_3 value = 15 }
+			set_variable = { which = global_lmmcxp_years_for_gain_diplomacy_1 value = 5 }
+			set_variable = { which = global_lmmcxp_years_for_gain_diplomacy_2 value = 10 }
+		}
+	}
+}
+
+on_yearly_pulse = {
+	events = {
+		lmmcxp.1001 # Yearly event to give XP etc. and fire other related events
+	}
+}

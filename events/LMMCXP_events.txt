@@ -1,0 +1,403 @@
+namespace = lmmcxp
+
+# Fires at startup to set global variables
+character_event = {
+	id = lmmcxp.0001
+	hide_window = yes
+	is_triggered_only = yes
+	
+	only_playable = yes
+	
+	trigger = {
+		is_multiplayer_host_character = yes
+		NOT = { has_global_flag = lmmcxp_startup_config_flag }
+	}
+	
+	immediate = {
+		set_global_flag = lmmcxp_startup_config_flag
+		set_variable = { which = global_lmmcxp_xp_gain_per_year_count value = 6.25 }
+		set_variable = { which = global_lmmcxp_xp_gain_per_year_duke value = 12.5 }
+		set_variable = { which = global_lmmcxp_xp_gain_per_year_king value = 25 }
+		set_variable = { which = global_lmmcxp_xp_gain_per_year_emperor value = 50 }
+		set_variable = { which = global_lmmcxp_xp_for_level_1 value = 50 } # num years: count 5, duke 4, king 2, emperor 1
+		set_variable = { which = global_lmmcxp_xp_for_level_2 value = 100 } # num years: count 10, duke 8, king 4, emperor 2
+		set_variable = { which = global_lmmcxp_xp_for_level_3 value = 200 } # num years: count 20, duke 16, king 8, emperor 4
+		set_variable = { which = global_lmmcxp_xp_for_level_4 value = 400 } # num years: count 40, duke 32, king 16, emperor 8
+		set_variable = { which = global_lmmcxp_xp_for_level_5 value = 800 } # num years: count 80, duke 64, king 32, emperor 16	
+		set_variable = { which = global_lmmcxp_years_for_councillor_trait_1 value = 5 }
+		set_variable = { which = global_lmmcxp_years_for_councillor_trait_2 value = 10 }
+		set_variable = { which = global_lmmcxp_years_for_councillor_trait_3 value = 15 }
+		set_variable = { which = global_lmmcxp_years_for_gain_diplomacy_1 value = 5 }
+		set_variable = { which = global_lmmcxp_years_for_gain_diplomacy_2 value = 10 }
+	}	
+}
+
+# Fires every year
+character_event = {
+	id = lmmcxp.1001
+	hide_window = yes
+	is_triggered_only = yes
+	
+	only_playable = yes
+	
+	immediate = {
+		character_event = { id = lmmcxp.1002 }
+		if = {
+			limit = {
+				NOR = {
+					is_tribal = yes
+					is_nomadic = yes					
+				}
+			}
+			character_event = { id = lmmcxp.1005 }
+		}
+	}
+}
+
+# Fires every year to check if character has been on the council for the past year, if yes then grants XP.
+character_event = {
+	id = lmmcxp.1002
+	hide_window = yes
+	is_triggered_only = yes
+	
+	only_playable = yes	
+	
+	immediate = {
+		job_chancellor = {			
+			lmmcxp_check_and_set_up_new_councillor_effect = yes
+			lmmcxp_clear_flags_except_chancellor_effect = yes			
+			if = {
+				limit = { has_character_flag = lmmcxp_chancellor_flag }
+				lmmcxp_gain_chancellor_xp_effect = yes
+				change_variable = { which = lmmcxp_chancellor_xp which = global_lmmcxp_xp_gain_per_year }
+				lmmcxp_check_xp_and_level_up_effect = yes
+			}
+			else = {
+				set_character_flag = lmmcxp_chancellor_flag
+			}
+		}
+		
+		job_marshal = {
+			lmmcxp_check_and_set_up_new_councillor_effect = yes
+			lmmcxp_clear_flags_except_marshal_effect = yes
+			if = {
+				limit = { has_character_flag = lmmcxp_marshal_flag }
+				change_variable = { which = lmmcxp_marshal_xp which = global_lmmcxp_xp_gain_per_year }
+				lmmcxp_gain_marshal_xp_effect = yes
+				lmmcxp_check_xp_and_level_up_effect = yes
+			}
+			else = {
+				set_character_flag = lmmcxp_marshal_flag
+			}
+		}
+		
+		job_treasurer = {
+			lmmcxp_check_and_set_up_new_councillor_effect = yes
+			lmmcxp_clear_flags_except_treasurer_effect = yes
+			if = {
+				limit = { has_character_flag = lmmcxp_treasurer_flag }
+				change_variable = { which = lmmcxp_treasurer_xp which = global_lmmcxp_xp_gain_per_year }
+				lmmcxp_gain_treasurer_xp_effect = yes
+				lmmcxp_check_xp_and_level_up_effect = yes
+			}
+			else = {
+				set_character_flag = lmmcxp_treasurer_flag
+			}
+		}
+		
+		job_spymaster = {
+			lmmcxp_check_and_set_up_new_councillor_effect = yes
+			lmmcxp_clear_flags_except_spymaster_effect = yes
+			if = {
+				limit = { has_character_flag = lmmcxp_spymaster_flag }
+				change_variable = { which = lmmcxp_spymaster_xp which = global_lmmcxp_xp_gain_per_year }
+				lmmcxp_gain_spymaster_xp_effect = yes
+				lmmcxp_check_xp_and_level_up_effect = yes
+			}
+			else = {
+				set_character_flag = lmmcxp_spymaster_flag
+			}
+		}
+		
+		job_spiritual = {
+			lmmcxp_check_and_set_up_new_councillor_effect = yes
+			lmmcxp_clear_flags_except_spiritual_effect = yes
+			if = {
+				limit = { has_character_flag = lmmcxp_spiritual_flag }
+				change_variable = { which = lmmcxp_spiritual_xp which = global_lmmcxp_xp_gain_per_year }
+				lmmcxp_gain_spiritual_xp_effect = yes
+				lmmcxp_check_xp_and_level_up_effect = yes
+			}
+			else = {
+				set_character_flag = lmmcxp_spiritual_flag
+			}
+		}
+	}
+}
+
+# Ping event to get the desired character in FROM scope
+character_event = {
+	id = lmmcxp.10021
+	is_triggered_only = yes
+	hide_window = yes
+	
+	option = {
+		character_event = { id = lmmcxp.1003 }
+	}
+}
+
+# Level up and increase attribute
+character_event = {
+	id = lmmcxp.1003
+	is_triggered_only = yes
+	notification = yes
+	
+	desc = {
+		trigger = { has_character_flag = lmmcxp_chancellor_flag }
+		text = EVTDESC_chancellor_levelup
+	}
+	desc = {
+		trigger = { has_character_flag = lmmcxp_marshal_flag }
+		text = EVTDESC_marshal_levelup
+	}
+	desc = {
+		trigger = { has_character_flag = lmmcxp_treasurer_flag }
+		text = EVTDESC_treasurer_levelup
+	}	
+	desc = {
+		trigger = { has_character_flag = lmmcxp_spymaster_flag }
+		text = EVTDESC_spymaster_levelup
+	}
+	desc = {
+		trigger = { has_character_flag = lmmcxp_spiritual_flag }
+		text = EVTDESC_spiritual_levelup
+	}
+	
+	immediate = {
+		#name = EVTOPT_levelup
+		
+		trigger_switch = {
+			on_trigger = has_character_flag
+			
+			lmmcxp_chancellor_flag = { change_diplomacy = 1 }
+			lmmcxp_marshal_flag = { change_martial = 1 }
+			lmmcxp_treasurer_flag = { change_stewardship = 1 }
+			lmmcxp_spymaster_flag = { change_intrigue = 1 }
+			lmmcxp_spiritual_flag = { change_learning = 1 }
+		}
+	}
+	
+	option = {
+	}
+}
+
+# Gain diplomacy and intrigue as applicable after many years of being a councillor
+character_event = {
+	id = lmmcxp.1004
+	is_triggered_only = yes
+	notification = yes
+	
+	desc = { 
+		trigger = { 
+			NOT = { is_variable_equal = { which = lmmcxp_councillor_years which = global_lmmcxp_years_for_gain_diplomacy_2 } }
+		}
+		text = EVTDESC_councillor_gain_diplomacy
+	}
+	desc = {
+		trigger = { is_variable_equal = { which = lmmcxp_councillor_years which = global_lmmcxp_years_for_gain_diplomacy_2 } }
+		text = EVTDESC_councillor_gain_diplomacy_and_intrigue
+	}
+	
+	immediate = {
+		#name = EVTOPT_councillor_gain_diplomacy
+		
+		change_diplomacy = 1
+		if = {
+			limit = { is_variable_equal = { which = lmmcxp_councillor_years which = global_lmmcxp_years_for_gain_diplomacy_2 } }
+			change_intrigue = 1
+		}
+	}
+	
+	option = {
+	}
+}
+
+# Fires every year to check if the character has been a royal or imperial councillor for the past year
+character_event = {
+	id = lmmcxp.1005
+	hide_window = yes
+	is_triggered_only = yes
+	
+	only_playable = yes
+	
+	trigger = {
+		NOR = {
+			is_tribal = yes
+			is_nomadic = yes			
+		}
+	}
+	
+	immediate = {
+		any_courtier = {
+			limit = { is_councillor = yes }
+			if = {
+				limit = { has_character_flag = lmmcxp_councillor_flag }
+				
+				change_variable = { which = lmmcxp_councillor_years value = 1 }				
+				if = {
+					limit = { 
+						OR = {
+							is_variable_equal = { which = lmmcxp_councillor_years which = global_lmmcxp_years_for_gain_diplomacy_1 }
+							is_variable_equal = { which = lmmcxp_councillor_years which = global_lmmcxp_years_for_gain_diplomacy_2 }
+						}
+					}
+					character_event = { id = lmmcxp.1004 } # Gain diplomacy
+				}
+				
+				if = {
+					limit = { liege = { real_tier = king } }
+					change_variable = { which = lmmcxp_royal_councillor_years value = 1 }
+					if = {
+						limit = { 
+							OR = {
+								is_variable_equal = { which = lmmcxp_royal_councillor_years which = global_lmmcxp_years_for_councillor_trait_1 }
+								is_variable_equal = { which = lmmcxp_royal_councillor_years which = global_lmmcxp_years_for_councillor_trait_2 }
+								is_variable_equal = { which = lmmcxp_royal_councillor_years which = global_lmmcxp_years_for_councillor_trait_3 }
+							}
+						}
+						character_event = { id = lmmcxp.1006 } # Add councillor trait as applicable
+					}
+				}
+				else_if = {
+					limit = { liege = { real_tier = emperor } }
+					change_variable = { which = lmmcxp_imperial_councillor_years value = 1 }
+					if = {
+						limit = { 
+							OR = {
+								is_variable_equal = { which = lmmcxp_imperial_councillor_years which = global_lmmcxp_years_for_councillor_trait_1 }
+								is_variable_equal = { which = lmmcxp_imperial_councillor_years which = global_lmmcxp_years_for_councillor_trait_2 }
+								is_variable_equal = { which = lmmcxp_imperial_councillor_years which = global_lmmcxp_years_for_councillor_trait_3 }
+							}							
+						}
+						character_event = { id = lmmcxp.1006 } # Add councillor trait as applicable
+					}
+				}
+			}
+			else = {
+				set_character_flag = lmmcxp_councillor_flag
+			}
+		}
+	}
+}
+
+# Add councillor trait as applicable
+character_event = {
+	id = lmmcxp.1006
+	picture = GFX_evt_council
+	is_triggered_only = yes
+	
+	desc = {
+		trigger = { has_character_flag = lmmcxp_add_trait_royal_councillor_1_flag }
+		text = EVTDESC_add_trait_royal_councillor_1
+	}
+	desc = {
+		trigger = { has_character_flag = lmmcxp_add_trait_royal_councillor_2_flag }
+		text = EVTDESC_add_trait_royal_councillor_2
+	}
+	desc = {
+		trigger = { has_character_flag = lmmcxp_add_trait_royal_councillor_3_flag }
+		text = EVTDESC_add_trait_royal_councillor_3
+	}
+	desc = {
+		trigger = { has_character_flag = lmmcxp_add_trait_imperial_councillor_1_flag }
+		text = EVTDESC_add_trait_imperial_councillor_1
+	}
+	desc = {
+		trigger = { has_character_flag = lmmcxp_add_trait_imperial_councillor_2_flag }
+		text = EVTDESC_add_trait_imperial_councillor_2
+	}
+	desc = {
+		trigger = { has_character_flag = lmmcxp_add_trait_imperial_councillor_3_flag }
+		text = EVTDESC_add_trait_imperial_councillor_3
+	}
+	
+	immediate = {
+		if = {
+			limit = { 
+				is_variable_equal = { which = lmmcxp_royal_councillor_years which = global_lmmcxp_years_for_councillor_trait_1 } 
+				NOT = { trait = lmmcxp_royal_councillor_1 }
+			}
+			set_character_flag = lmmcxp_add_trait_royal_councillor_1_flag
+		}
+		else_if = {
+			limit = { 
+				is_variable_equal = { which = lmmcxp_royal_councillor_years which = global_lmmcxp_years_for_councillor_trait_2 } 
+				NOT = { trait = lmmcxp_royal_councillor_2 }
+			}
+			set_character_flag = lmmcxp_add_trait_royal_councillor_2_flag
+		}
+		else_if = {
+			limit = { 
+				is_variable_equal = { which = lmmcxp_royal_councillor_years which = global_lmmcxp_years_for_councillor_trait_3 } 
+				NOT = { trait = lmmcxp_royal_councillor_3 }
+			}
+			set_character_flag = lmmcxp_add_trait_royal_councillor_3_flag
+		}
+		
+		if = {
+			limit = { 
+				is_variable_equal = { which = lmmcxp_imperial_councillor_years which = global_lmmcxp_years_for_councillor_trait_1 } 
+				NOT = { trait = lmmcxp_imperial_councillor_1 }
+			}
+			set_character_flag = lmmcxp_add_trait_imperial_councillor_1_flag
+		}
+		else_if = {
+			limit = { 
+				is_variable_equal = { which = lmmcxp_imperial_councillor_years which = global_lmmcxp_years_for_councillor_trait_2 } 
+				NOT = { trait = lmmcxp_imperial_councillor_2 }
+			}
+			set_character_flag = lmmcxp_add_trait_imperial_councillor_2_flag
+		}
+		else_if = {
+			limit = { 
+				is_variable_equal = { which = lmmcxp_imperial_councillor_years which = global_lmmcxp_years_for_councillor_trait_3 } 
+				NOT = { trait = lmmcxp_imperial_councillor_3 }
+			}
+			set_character_flag = lmmcxp_add_trait_imperial_councillor_3_flag
+		}
+	}
+	
+	option = {
+		name = EVTOPT_councillor_add_trait
+		
+		if = {
+			limit = { has_character_flag = lmmcxp_add_trait_royal_councillor_1_flag }
+			add_trait = lmmcxp_royal_councillor_1
+		}
+		else_if = {
+			limit = { has_character_flag = lmmcxp_add_trait_royal_councillor_2_flag }
+			add_trait = lmmcxp_royal_councillor_2
+		}
+		else_if = {
+			limit = { has_character_flag = lmmcxp_add_trait_royal_councillor_3_flag }
+			add_trait = lmmcxp_royal_councillor_3
+		}
+		
+		if = {
+			limit = { has_character_flag = lmmcxp_add_trait_imperial_councillor_1_flag }
+			add_trait = lmmcxp_imperial_councillor_1
+		}
+		else_if = {
+			limit = { has_character_flag = lmmcxp_add_trait_imperial_councillor_2_flag }
+			add_trait = lmmcxp_imperial_councillor_2
+		}
+		else_if = {
+			limit = { has_character_flag = lmmcxp_add_trait_imperial_councillor_3_flag }
+			add_trait = lmmcxp_imperial_councillor_3
+		}
+	}
+	
+	after = {
+		clear_flags_with_prefix = lmmcxp_add_trait_
+	}
+}

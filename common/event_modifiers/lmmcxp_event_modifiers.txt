@@ -1,0 +1,3 @@
+lmmcxp_xp_display_modifier = {
+	icon = 18
+}

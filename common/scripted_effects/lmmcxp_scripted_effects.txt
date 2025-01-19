@@ -1,0 +1,361 @@
+lmmcxp_clear_flags_except_chancellor_effect = {
+	clr_character_flag = lmmcxp_marshal_flag
+	clr_character_flag = lmmcxp_treasurer_flag
+	clr_character_flag = lmmcxp_spymaster_flag
+	clr_character_flag = lmmcxp_spiritual_flag
+}
+
+lmmcxp_clear_flags_except_marshal_effect = {
+	clr_character_flag = lmmcxp_chancellor_flag
+	clr_character_flag = lmmcxp_treasurer_flag
+	clr_character_flag = lmmcxp_spymaster_flag
+	clr_character_flag = lmmcxp_spiritual_flag
+}
+
+lmmcxp_clear_flags_except_treasurer_effect = {
+	clr_character_flag = lmmcxp_chancellor_flag
+	clr_character_flag = lmmcxp_marshal_flag
+	clr_character_flag = lmmcxp_spymaster_flag
+	clr_character_flag = lmmcxp_spiritual_flag
+}
+
+lmmcxp_clear_flags_except_spymaster_effect = {
+	clr_character_flag = lmmcxp_chancellor_flag
+	clr_character_flag = lmmcxp_marshal_flag
+	clr_character_flag = lmmcxp_treasurer_flag	
+	clr_character_flag = lmmcxp_spiritual_flag
+}
+
+lmmcxp_clear_flags_except_spiritual_effect = {
+	clr_character_flag = lmmcxp_chancellor_flag
+	clr_character_flag = lmmcxp_marshal_flag
+	clr_character_flag = lmmcxp_treasurer_flag
+	clr_character_flag = lmmcxp_spymaster_flag	
+}
+
+lmmcxp_check_xp_and_level_up_effect = {
+	trigger_switch = {
+		on_trigger = has_character_flag
+		
+		lmmcxp_chancellor_flag = {
+			if = {
+				limit = { is_variable_equal = { which = lmmcxp_chancellor_level value = 5 } }				
+				# Do nothing
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = lmmcxp_chancellor_level value = 4 } }				
+				if = {
+					limit = { check_variable = { which = lmmcxp_chancellor_xp which = global_lmmcxp_xp_for_level_5 } }
+					change_variable = { which = lmmcxp_chancellor_level value = 1 }					
+					set_character_flag = lmmcxp_levelup_flag
+				}
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = lmmcxp_chancellor_level value = 3 } }				
+				if = {
+					limit = { check_variable = { which = lmmcxp_chancellor_xp which = global_lmmcxp_xp_for_level_4 } }
+					change_variable = { which = lmmcxp_chancellor_level value = 1 }
+					set_character_flag = lmmcxp_levelup_flag
+				}
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = lmmcxp_chancellor_level value = 2 } }				
+				if = {
+					limit = { check_variable = { which = lmmcxp_chancellor_xp which = global_lmmcxp_xp_for_level_3 } }
+					change_variable = { which = lmmcxp_chancellor_level value = 1 }
+					set_character_flag = lmmcxp_levelup_flag
+				}
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = lmmcxp_chancellor_level value = 1 } }				
+				if = {
+					limit = { check_variable = { which = lmmcxp_chancellor_xp which = global_lmmcxp_xp_for_level_2 } }
+					change_variable = { which = lmmcxp_chancellor_level value = 1 }
+					set_character_flag = lmmcxp_levelup_flag
+				}
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = lmmcxp_chancellor_level value = 0 } }				
+				if = {
+					limit = { check_variable = { which = lmmcxp_chancellor_xp which = global_lmmcxp_xp_for_level_1 } }
+					change_variable = { which = lmmcxp_chancellor_level value = 1 }
+					set_character_flag = lmmcxp_levelup_flag
+				}
+			}
+		}
+		
+		lmmcxp_marshal_flag = {
+			if = {
+				limit = { is_variable_equal = { which = lmmcxp_marshal_level value = 5 } }				
+				# Do nothing
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = lmmcxp_marshal_level value = 4 } }				
+				if = {
+					limit = { check_variable = { which = lmmcxp_marshal_xp which = global_lmmcxp_xp_for_level_5 } }
+					change_variable = { which = lmmcxp_marshal_level value = 1 }
+					set_character_flag = lmmcxp_levelup_flag
+				}
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = lmmcxp_marshal_level value = 3 } }				
+				if = {
+					limit = { check_variable = { which = lmmcxp_marshal_xp which = global_lmmcxp_xp_for_level_4 } }
+					change_variable = { which = lmmcxp_marshal_level value = 1 }
+					set_character_flag = lmmcxp_levelup_flag
+				}
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = lmmcxp_marshal_level value = 2 } }				
+				if = {
+					limit = { check_variable = { which = lmmcxp_marshal_xp which = global_lmmcxp_xp_for_level_3 } }
+					change_variable = { which = lmmcxp_marshal_level value = 1 }
+					set_character_flag = lmmcxp_levelup_flag
+				}
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = lmmcxp_marshal_level value = 1 } }				
+				if = {
+					limit = { check_variable = { which = lmmcxp_marshal_xp which = global_lmmcxp_xp_for_level_2 } }
+					change_variable = { which = lmmcxp_marshal_level value = 1 }
+					set_character_flag = lmmcxp_levelup_flag
+				}
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = lmmcxp_marshal_level value = 0 } }				
+				if = {
+					limit = { check_variable = { which = lmmcxp_marshal_xp which = global_lmmcxp_xp_for_level_1 } }
+					change_variable = { which = lmmcxp_marshal_level value = 1 }
+					set_character_flag = lmmcxp_levelup_flag
+				}
+			}
+		}
+		
+		lmmcxp_treasurer_flag = {
+			if = {
+				limit = { is_variable_equal = { which = lmmcxp_treasurer_level value = 5 } }				
+				# Do nothing
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = lmmcxp_treasurer_level value = 4 } }				
+				if = {
+					limit = { check_variable = { which = lmmcxp_treasurer_xp which = global_lmmcxp_xp_for_level_5 } }
+					change_variable = { which = lmmcxp_treasurer_level value = 1 }
+					set_character_flag = lmmcxp_levelup_flag
+				}
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = lmmcxp_treasurer_level value = 3 } }				
+				if = {
+					limit = { check_variable = { which = lmmcxp_treasurer_xp which = global_lmmcxp_xp_for_level_4 } }
+					change_variable = { which = lmmcxp_treasurer_level value = 1 }
+					set_character_flag = lmmcxp_levelup_flag
+				}
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = lmmcxp_treasurer_level value = 2 } }				
+				if = {
+					limit = { check_variable = { which = lmmcxp_treasurer_xp which = global_lmmcxp_xp_for_level_3 } }
+					change_variable = { which = lmmcxp_treasurer_level value = 1 }
+					set_character_flag = lmmcxp_levelup_flag
+				}
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = lmmcxp_treasurer_level value = 1 } }				
+				if = {
+					limit = { check_variable = { which = lmmcxp_treasurer_xp which = global_lmmcxp_xp_for_level_2 } }
+					change_variable = { which = lmmcxp_treasurer_level value = 1 }
+					set_character_flag = lmmcxp_levelup_flag
+				}
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = lmmcxp_treasurer_level value = 0 } }				
+				if = {
+					limit = { check_variable = { which = lmmcxp_treasurer_xp which = global_lmmcxp_xp_for_level_1 } }
+					change_variable = { which = lmmcxp_treasurer_level value = 1 }
+					set_character_flag = lmmcxp_levelup_flag
+				}
+			}
+		}
+		
+		lmmcxp_spymaster_flag = {
+			if = {
+				limit = { is_variable_equal = { which = lmmcxp_spymaster_level value = 5 } }				
+				# Do nothing
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = lmmcxp_spymaster_level value = 4 } }				
+				if = {
+					limit = { check_variable = { which = lmmcxp_spymaster_xp which = global_lmmcxp_xp_for_level_5 } }
+					change_variable = { which = lmmcxp_spymaster_level value = 1 }					
+					set_character_flag = lmmcxp_levelup_flag
+				}
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = lmmcxp_spymaster_level value = 3 } }				
+				if = {
+					limit = { check_variable = { which = lmmcxp_spymaster_xp which = global_lmmcxp_xp_for_level_4 } }
+					change_variable = { which = lmmcxp_spymaster_level value = 1 }					
+					set_character_flag = lmmcxp_levelup_flag
+				}
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = lmmcxp_spymaster_level value = 2 } }				
+				if = {
+					limit = { check_variable = { which = lmmcxp_spymaster_xp which = global_lmmcxp_xp_for_level_3 } }
+					change_variable = { which = lmmcxp_spymaster_level value = 1 }
+					set_character_flag = lmmcxp_levelup_flag
+				}
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = lmmcxp_spymaster_level value = 1 } }				
+				if = {
+					limit = { check_variable = { which = lmmcxp_spymaster_xp which = global_lmmcxp_xp_for_level_2 } }
+					change_variable = { which = lmmcxp_spymaster_level value = 1 }
+					set_character_flag = lmmcxp_levelup_flag
+				}
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = lmmcxp_spymaster_level value = 0 } }				
+				if = {
+					limit = { check_variable = { which = lmmcxp_spymaster_xp which = global_lmmcxp_xp_for_level_1 } }
+					change_variable = { which = lmmcxp_spymaster_level value = 1 }
+					set_character_flag = lmmcxp_levelup_flag
+				}
+			}
+		}
+		
+		lmmcxp_spiritual_flag = {
+			if = {
+				limit = { is_variable_equal = { which = lmmcxp_spiritual_level value = 5 } }				
+				# Do nothing
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = lmmcxp_spiritual_level value = 4 } }				
+				if = {
+					limit = { check_variable = { which = lmmcxp_spiritual_xp which = global_lmmcxp_xp_for_level_5 } }
+					change_variable = { which = lmmcxp_spiritual_level value = 1 }
+					set_character_flag = lmmcxp_levelup_flag
+				}
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = lmmcxp_spiritual_level value = 3 } }				
+				if = {
+					limit = { check_variable = { which = lmmcxp_spiritual_xp which = global_lmmcxp_xp_for_level_4 } }
+					change_variable = { which = lmmcxp_spiritual_level value = 1 }
+					set_character_flag = lmmcxp_levelup_flag
+				}
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = lmmcxp_spiritual_level value = 2 } }				
+				if = {
+					limit = { check_variable = { which = lmmcxp_spiritual_xp which = global_lmmcxp_xp_for_level_3 } }
+					change_variable = { which = lmmcxp_spiritual_level value = 1 }
+					set_character_flag = lmmcxp_levelup_flag
+				}
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = lmmcxp_spiritual_level value = 1 } }				
+				if = {
+					limit = { check_variable = { which = lmmcxp_spiritual_xp which = global_lmmcxp_xp_for_level_2 } }
+					change_variable = { which = lmmcxp_spiritual_level value = 1 }
+					set_character_flag = lmmcxp_levelup_flag
+				}
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = lmmcxp_spiritual_level value = 0 } }				
+				if = {
+					limit = { check_variable = { which = lmmcxp_spiritual_xp which = global_lmmcxp_xp_for_level_1 } }
+					change_variable = { which = lmmcxp_spiritual_level value = 1 }
+					set_character_flag = lmmcxp_levelup_flag
+				}
+			}
+		}
+	}
+	
+	if = {
+		limit = { has_character_flag = lmmcxp_levelup_flag }
+		clr_character_flag = lmmcxp_levelup_flag
+		character_event = { id = lmmcxp.10021 } # Notify of levelup
+	}
+}
+
+lmmcxp_gain_chancellor_xp_effect = {
+	liege = {
+		trigger_switch = {
+			on_trigger = real_tier
+			
+			count	= { PREV = { change_variable = { which = lmmcxp_chancellor_xp which = global_lmmcxp_xp_gain_per_year_count } } }
+			duke	= { PREV = { change_variable = { which = lmmcxp_chancellor_xp which = global_lmmcxp_xp_gain_per_year_duke } } }
+			king	= { PREV = { change_variable = { which = lmmcxp_chancellor_xp which = global_lmmcxp_xp_gain_per_year_king } } }
+			emperor	= { PREV = { change_variable = { which = lmmcxp_chancellor_xp which = global_lmmcxp_xp_gain_per_year_emperor } } }
+		}
+	}
+}
+
+lmmcxp_gain_marshal_xp_effect = {
+	liege = {
+		trigger_switch = {
+			on_trigger = real_tier
+			
+			count	= { PREV = { change_variable = { which = lmmcxp_marshal_xp which = global_lmmcxp_xp_gain_per_year_count } } }
+			duke	= { PREV = { change_variable = { which = lmmcxp_marshal_xp which = global_lmmcxp_xp_gain_per_year_duke } } }
+			king	= { PREV = { change_variable = { which = lmmcxp_marshal_xp which = global_lmmcxp_xp_gain_per_year_king } } }
+			emperor	= { PREV = { change_variable = { which = lmmcxp_marshal_xp which = global_lmmcxp_xp_gain_per_year_emperor } } }
+		}
+	}
+}
+
+lmmcxp_gain_treasurer_xp_effect = {
+	liege = {
+		trigger_switch = {
+			on_trigger = real_tier
+			
+			count	= { PREV = { change_variable = { which = lmmcxp_treasurer_xp which = global_lmmcxp_xp_gain_per_year_count } } }
+			duke	= { PREV = { change_variable = { which = lmmcxp_treasurer_xp which = global_lmmcxp_xp_gain_per_year_duke } } }
+			king	= { PREV = { change_variable = { which = lmmcxp_treasurer_xp which = global_lmmcxp_xp_gain_per_year_king } } }
+			emperor	= { PREV = { change_variable = { which = lmmcxp_treasurer_xp which = global_lmmcxp_xp_gain_per_year_emperor } } }
+		}
+	}
+}
+
+lmmcxp_gain_spymaster_xp_effect = {
+	liege = {
+		trigger_switch = {
+			on_trigger = real_tier
+			
+			count	= { PREV = { change_variable = { which = lmmcxp_spymaster_xp which = global_lmmcxp_xp_gain_per_year_count } } }
+			duke	= { PREV = { change_variable = { which = lmmcxp_spymaster_xp which = global_lmmcxp_xp_gain_per_year_duke } } }
+			king	= { PREV = { change_variable = { which = lmmcxp_spymaster_xp which = global_lmmcxp_xp_gain_per_year_king } } }
+			emperor	= { PREV = { change_variable = { which = lmmcxp_spymaster_xp which = global_lmmcxp_xp_gain_per_year_emperor } } }
+		}
+	}
+}
+
+lmmcxp_gain_spiritual_xp_effect = {
+	liege = {
+		trigger_switch = {
+			on_trigger = real_tier
+			
+			count	= { PREV = { change_variable = { which = lmmcxp_spiritual_xp which = global_lmmcxp_xp_gain_per_year_count } } }
+			duke	= { PREV = { change_variable = { which = lmmcxp_spiritual_xp which = global_lmmcxp_xp_gain_per_year_duke } } }
+			king	= { PREV = { change_variable = { which = lmmcxp_spiritual_xp which = global_lmmcxp_xp_gain_per_year_king } } }
+			emperor	= { PREV = { change_variable = { which = lmmcxp_spiritual_xp which = global_lmmcxp_xp_gain_per_year_emperor } } }
+		}
+	}
+}
+
+lmmcxp_check_and_set_up_new_councillor_effect = {
+	if = {
+		limit = { NOT = { has_character_modifier = lmmcxp_xp_display_modifier } }
+		add_character_modifier = { modifier = lmmcxp_xp_display_modifier duration = -1 }
+		set_variable = { which = lmmcxp_chancellor_xp value = 0 }
+		set_variable = { which = lmmcxp_marshal_xp value = 0 }
+		set_variable = { which = lmmcxp_treasurer_xp value = 0 }
+		set_variable = { which = lmmcxp_spymaster_xp value = 0 }
+		set_variable = { which = lmmcxp_spiritual_xp value = 0 }
+		set_variable = { which = lmmcxp_councillor_years value = 0 }
+		set_variable = { which = lmmcxp_royal_councillor_years value = 0 }
+		set_variable = { which = lmmcxp_imperial_councillor_years value = 0 }
+	}
+}

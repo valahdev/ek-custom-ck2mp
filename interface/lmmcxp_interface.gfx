@@ -1,0 +1,59 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_trait_lmmcxp_royal_councillor_1
+		textureFile = "gfx/traits/lmmcxp_royal_councillor_1.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = GFX_trait_lmmcxp_royal_councillor_2
+		textureFile = "gfx/traits/lmmcxp_royal_councillor_2.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = GFX_trait_lmmcxp_royal_councillor_3
+		textureFile = "gfx/traits/lmmcxp_royal_councillor_3.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = GFX_trait_lmmcxp_imperial_councillor_1
+		textureFile = "gfx/traits/lmmcxp_imperial_councillor_1.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = GFX_trait_lmmcxp_imperial_councillor_2
+		textureFile = "gfx/traits/lmmcxp_imperial_councillor_2.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = GFX_trait_lmmcxp_imperial_councillor_3
+		textureFile = "gfx/traits/lmmcxp_imperial_councillor_3.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}

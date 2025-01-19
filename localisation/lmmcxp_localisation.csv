@@ -1,0 +1,51 @@
+#;;;;;;;;;;;;;;x
+#§
+
+############
+## TRAITS ##
+############
+lmmcxp_royal_councillor_1;Royal Councillor;;;;;;;;;;;;;x
+lmmcxp_royal_councillor_1_desc;This character has served for some time as the councillor of a king. (Tier 1 of 3);;;;;;;;;;;;;x
+lmmcxp_royal_councillor_2;Famous Royal Councillor;;;;;;;;;;;;;x
+lmmcxp_royal_councillor_2_desc;This character has served for a significant amount of time as the councillor of a king. (Tier 2 of 3);;;;;;;;;;;;;x
+lmmcxp_royal_councillor_3;Renowned Royal Councillor;;;;;;;;;;;;;x
+lmmcxp_royal_councillor_3_desc;This character has served for a long time as the councillor of a king. (Tier 3 of 3);;;;;;;;;;;;;x
+lmmcxp_imperial_councillor_1;Imperial Councillor;;;;;;;;;;;;;x
+lmmcxp_imperial_councillor_1_desc;This character has served for some time as the councillor of an emperor. (Tier 1 of 3);;;;;;;;;;;;;x
+lmmcxp_imperial_councillor_2;Famous Imperial Councillor;;;;;;;;;;;;;x
+lmmcxp_imperial_councillor_2_desc;This character has served for a significant amount of time as the councillor of an emperor. (Tier 2 of 3);;;;;;;;;;;;;x
+lmmcxp_imperial_councillor_3;Renowned Imperial Councillor;;;;;;;;;;;;;x
+lmmcxp_imperial_councillor_3_desc;This character has served for a long time as the councillor of an emperor. (Tier 3 of 3);;;;;;;;;;;;;x
+###############
+## MODIFIERS ##
+###############
+lmmcxp_xp_display_modifier;Councillor Experience;;;;;;;;;;;;;x
+lmmcxp_xp_display_modifier_desc;This character has earned experience serving on a realm's council as:\n\n§YChancellor§!: [lmmcxp_chancellor_xp.GetValue] / 800 [lmmcxp_GetXPGainAsChancellor]\n§YMarshal§!: [lmmcxp_marshal_xp.GetValue] / 800 [lmmcxp_GetXPGainAsMarshal]\n§YSteward§!: [lmmcxp_treasurer_xp.GetValue] / 800 [lmmcxp_GetXPGainAsTreasurer]\n§YSpymaster§!: [lmmcxp_spymaster_xp.GetValue] / 800 [lmmcxp_GetXPGainAsSpymaster]\n§YCourt Chaplain§!: [lmmcxp_spiritual_xp.GetValue] / 800 [lmmcxp_GetXPGainAsSpiritual];;;;;;;;;;;;;x
+############
+## EVENTS ##
+############
+EVTDESC_add_trait_royal_councillor_1;The royal council is a busy and prestigious place. Spending several years in the company of my [From.GetTitle] and the other councillors has increased my prestige and standing among the nobility.;;;;;;;;;;;;;x
+EVTDESC_add_trait_royal_councillor_2;It has now been [global_lmmcxp_years_for_councillor_trait_2.GetValue] years since I first became a royal councillor. Throughout these years I have learned much about dealing with other lords and ladies as well as gained a level of prestige in the eyes of my peers.;;;;;;;;;;;;;x
+EVTDESC_add_trait_royal_councillor_3;I can hardly remember my first day in the royal council chamber. It seems like a lifetime ago. I have come far since then and have learned many things about men and the meanings hidden behind their charming words. Wherever I go, people welcome me vigorously and treat me with respect worthy of a [From.GetTitle]'s councillor.;;;;;;;;;;;;;x
+EVTDESC_add_trait_imperial_councillor_1;The imperial council has been an experience so deep and vast that I could write an entire book about it if I had the time! I have learned many things and have gained a status of respect among people.;;;;;;;;;;;;;x
+EVTDESC_add_trait_imperial_councillor_2;It has been a long time that I have served on the [From.GetTitle]'s council but every moment has been exhilirating and full of life. I have gained deep insights into the inner workings of such a prestigious court and people everywhere look up to me and my accomplishments.;;;;;;;;;;;;;x
+EVTDESC_add_trait_imperial_councillor_3;The council of the [From.GetTitle] is practically my second home now. I have served the crown all these years and have been part of some of the most important decisions for the realm. People treat me like a close companion of the [From.GetTitle] [From.GetHerselfHimself]. It is an honor and privilege most can only dream of!;;;;;;;;;;;;;x
+EVTOPT_councillor_add_trait;I deserve it.;;;;;;;;;;;;;x
+###################
+## NOTIFICATIONS ##
+###################
+EVTDESC_chancellor_levelup;Serving as my liege's [Root.GetJobTitle], I have gained new insights. (§YDiplomacy§! increased by §G1§!);;;;;;;;;;;;;x
+EVTDESC_marshal_levelup;Serving as my liege's [Root.GetJobTitle], I have gained new insights. (§YMartial§! increased by §G1§!);;;;;;;;;;;;;x
+EVTDESC_treasurer_levelup;Serving as my liege's [Root.GetJobTitle], I have gained new insights. (§YStewardship§! increased by §G1§!);;;;;;;;;;;;;x
+EVTDESC_spymaster_levelup;Serving as my liege's [Root.GetJobTitle], I have gained new insights. (§YIntrigue§! increased by §G1§!);;;;;;;;;;;;;x
+EVTDESC_spiritual_levelup;Serving as my liege's [Root.GetJobTitle], I have gained new insights. (§YLearning§! increased by §G1§!);;;;;;;;;;;;;x
+EVTDESC_councillor_gain_diplomacy;Being a councillor for some time, I have gained new insights. (§YDiplomacy§! increased by §G1§!);;;;;;;;;;;;;x
+EVTDESC_councillor_gain_diplomacy_and_intrigue;Being a councillor for a long time, I have gained new insights. (§YDiplomacy§! and §YIntrigue§! increased by §G1§!);;;;;;;;;;;;;x
+################
+## CUSTOM LOC ##
+################
+lmmcxp_XPGain_Count;(§G+[global_lmmcxp_xp_gain_per_year_count.GetValue]§! per year);;;;;;;;;;;;;x
+lmmcxp_XPGain_Duke;(§G+[global_lmmcxp_xp_gain_per_year_duke.GetValue]§! per year);;;;;;;;;;;;;x
+lmmcxp_XPGain_King;(§G+[global_lmmcxp_xp_gain_per_year_king.GetValue]§! per year);;;;;;;;;;;;;x
+lmmcxp_XPGain_Emperor;(§G+[global_lmmcxp_xp_gain_per_year_emperor.GetValue]§! per year);;;;;;;;;;;;;x
+lmmcxp_XPGain_Zero; ;;;;;;;;;;;;;x
