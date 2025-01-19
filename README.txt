@@ -1,4 +1,4 @@
-Custom Elder Kangz Modpack 0.1
+Custom Elder Kangz Modpack Fork 0.1
 
 Compatible for CK2 version 3.3.X
 
@@ -27,16 +27,10 @@ Direct steam workshop link - https://steamcommunity.com/sharedfiles/filedetails/
 Creators - squirrel
 -------------------------------------------------------------------------------------------------------------
 
-Family Heirlooms
+Dungeon Master: Final Edition
 -------------------------------------------------------------------------------------------------------------
-Direct steam workshop link - https://steamcommunity.com/sharedfiles/filedetails/?id=1217852056
-Creators - Gnark7
--------------------------------------------------------------------------------------------------------------
-
-Less Random Deadly Duels
--------------------------------------------------------------------------------------------------------------
-Direct steam workshop link - https://steamcommunity.com/sharedfiles/filedetails/?id=1880498534
-Creators - Dragatus
+Direct steam workshop link - https://steamcommunity.com/sharedfiles/filedetails/?id=2202847461
+Creators - Kekvit Irae, Mr Samuel Streamer
 -------------------------------------------------------------------------------------------------------------
 
 Rich Childhood
@@ -51,14 +45,14 @@ Direct steam workshop link - https://steamcommunity.com/sharedfiles/filedetails/
 Creators - Sketchy
 -------------------------------------------------------------------------------------------------------------
 
-VIET Events Reborn - A Flavor Event Mod
+[LMM] Spouse Empowerment
 -------------------------------------------------------------------------------------------------------------
-Direct steam workshop link - https://steamcommunity.com/sharedfiles/filedetails/?id=1601402546
-Creators - cybrxkhan
+Direct steam workshop link - https://steamcommunity.com/sharedfiles/filedetails/?id=2058326015
+Creators - LordMidasTM
 -------------------------------------------------------------------------------------------------------------
 
-Your Personal Castle
+[LMM] Councillor XP
 -------------------------------------------------------------------------------------------------------------
-Direct steam workshop link - https://steamcommunity.com/sharedfiles/filedetails/?id=246520516
-Creators - Nuubialainen, BigPharma
+Direct steam workshop link - https://steamcommunity.com/sharedfiles/filedetails/?id=2024763516
+Creators - LordMidasTM
 -------------------------------------------------------------------------------------------------------------
