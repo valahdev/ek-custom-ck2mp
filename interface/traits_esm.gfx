@@ -1621,6 +1621,71 @@ spriteTypes = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+
+  	spriteType = {
+		name = "GFX_trait_barren"
+		texturefile = "gfx/traits/health/barren.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile= "gfx/FX/buttonstate.lua"
+	}
+
+  	spriteType = {
+		name = "GFX_trait_fertile"
+		texturefile = "gfx/traits/health/fertile.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+   }
+
+     spriteType = {
+   		name = "GFX_trait_creative"
+   		texturefile = "gfx/traits/personality/creative.dds"
+   		noOfFrames = 1
+   		norefcount = yes
+   		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+  	spriteType = {
+		name = "GFX_trait_independent"
+		texturefile = "gfx/traits/personality/independent.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+	spriteType = {
+   		name = "GFX_trait_obedient"
+   		texturefile = "gfx/traits/personality/obedient.dds"
+   		noOfFrames = 1
+   		norefcount = yes
+   		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+  	spriteType = {
+   		name = "GFX_trait_family_oriented"
+   		texturefile = "gfx/traits/personality/family_oriented.dds"
+   		noOfFrames = 1
+   		norefcount = yes
+   		effectFile = "gfx/FX/buttonstate.lua"
+  	}
+
+  	spriteType = {
+   		name = "GFX_trait_romantic"
+   		texturefile = "gfx/traits/personality/romantic.dds"
+   		noOfFrames = 1
+   		norefcount = yes
+   		effectFile = "gfx/FX/buttonstate.lua"
+  	}
+
+	spriteType = {
+   		name = "GFX_trait_frugal"
+   		texturefile = "gfx/traits/personality/frugal.dds"
+   		noOfFrames = 1
+   		norefcount = yes
+   		effectFile = "gfx/FX/buttonstate.lua"
+  	}
+
 	spriteType = {
 		name = "GFX_trait_knahaten_immune"
 		texturefile = "gfx/traits/health/knahaten_immune.tga"
