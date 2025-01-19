@@ -3,7 +3,7 @@ song = {
 	song_name = "A Venerable Dynasty"
 	
 	chance = {
-		factor = 1
+		factor = 0.5
 		modifier = {
 			factor = 1.5
 			OR = {
@@ -23,7 +23,7 @@ song = {
 	song_name = "Green Valley"
 	
 	chance = {
-		factor = 1
+		factor = 0.5
 		modifier = {
 			factor = 1.5
 			OR = {
@@ -44,7 +44,7 @@ song = {
 	song_name = "The Way Of The Dragon"
 	
 	chance = {
-		factor = 1
+		factor = 0.5
 		modifier = {
 			factor = 1.5
 			OR = {

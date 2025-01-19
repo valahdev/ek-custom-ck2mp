@@ -3,7 +3,7 @@ song = {
 	song_name = "Reign of the Septims"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -13,7 +13,7 @@ song = {
 	song_name = "Through the Valleys"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -23,7 +23,7 @@ song = {
 	song_name = "Nerevar Rising"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -33,7 +33,7 @@ song = {
 	song_name = "Harvest Dawn"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}	
 	volume = 0.70
 }
@@ -43,7 +43,7 @@ song = {
 	song_name = "King and Country"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -53,7 +53,7 @@ song = {
 	song_name = "Wings of Kynareth"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -63,7 +63,7 @@ song = {
 	song_name = "All's Well"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -73,7 +73,7 @@ song = {
 	song_name = "Watchman's Ease"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -83,7 +83,7 @@ song = {
 	song_name = "Glory of Cyrodiil"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -93,7 +93,7 @@ song = {
 	song_name = "Ministrel's Lament"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -103,7 +103,7 @@ song = {
 	song_name = "Auriel's Ascension"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -113,7 +113,7 @@ song = {
 	song_name = "Sunrise of Flutes"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -123,7 +123,7 @@ song = {
 	song_name = "Dusk At the Market"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -133,7 +133,7 @@ song = {
 	song_name = "Peace of Akatosh"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -143,7 +143,7 @@ song = {
 	song_name = "Peaceful Waters"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -167,7 +167,7 @@ song = {
 	song_name = "Over the Next Hill"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -191,7 +191,7 @@ song = {
 	song_name = "The Road Most Travelled"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -215,7 +215,7 @@ song = {
 	song_name = "Blessing of Vivec"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -225,7 +225,7 @@ song = {
 	song_name = "Silt Sunrise"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -235,7 +235,7 @@ song = {
 	song_name = "Shed Your Travails"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -245,7 +245,7 @@ song = {
 	song_name = "Caprice"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -269,7 +269,7 @@ song = {
 	song_name = "Awake"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -279,7 +279,7 @@ song = {
 	song_name = "From Past to Present"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -289,7 +289,7 @@ song = {
 	song_name = "Unbroken Road"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -299,7 +299,7 @@ song = {
 	song_name = "Ancient Stones"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -309,7 +309,7 @@ song = {
 	song_name = "The City Gates"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -319,7 +319,7 @@ song = {
 	song_name = "Silent Footsteps"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -329,7 +329,7 @@ song = {
 	song_name = "Dragonsreach"'
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -339,7 +339,7 @@ song = {
 	song_name = "Under an Ancient Sun"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -349,7 +349,7 @@ song = {
 	song_name = "Masser"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -359,7 +359,7 @@ song = {
 	song_name = "Distant Horizons"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -369,7 +369,7 @@ song = {
 	song_name = "Dawn"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -379,7 +379,7 @@ song = {
 	song_name = "The Jerall Mountains"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -389,7 +389,7 @@ song = {
 	song_name = "Secunda"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -399,7 +399,7 @@ song = {
 	song_name = "Imperial Throne"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -409,7 +409,7 @@ song = {
 	song_name = "Frostfall"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -419,7 +419,7 @@ song = {
 	song_name = "Kyne's Peace"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -429,7 +429,7 @@ song = {
 	song_name = "Far Horizons"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -439,7 +439,7 @@ song = {
 	song_name = "A Winter's Tale"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -449,7 +449,7 @@ song = {
 	name_song = "The Bannered Mare"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -459,7 +459,7 @@ song = {
 	song_name = "The Streets of Whiterun"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -483,7 +483,7 @@ song = {
 	song_name = "The White River"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -493,7 +493,7 @@ song = {
 	song_name = "Standing Stones"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -503,7 +503,7 @@ song = {
 	song_name = "Tundra"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -513,7 +513,7 @@ song = {
 	song_name = "Out of the Cold"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -523,7 +523,7 @@ song = {
 	song_name = "Around the Fire"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -533,7 +533,7 @@ song = {
 	song_name = "Aurora"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -543,7 +543,7 @@ song = {
 	song_name = "Solitude"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -567,7 +567,7 @@ song = {
 	song_name = "The Gathering Storm"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
@@ -591,7 +591,7 @@ song = {
 	song_name = "Wind Guide You"
 
 	chance = {
-		factor = 1
+		factor = 1.5
 	}
 	volume = 0.70
 }
