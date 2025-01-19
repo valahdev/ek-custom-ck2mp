@@ -1,0 +1,46 @@
+lmmse_rule_availability = {
+	name = lmmse_rule_availability_name
+	group = lmmse_rules_group_name
+	
+	option = {
+		name = lmmse_rule_option_restricted
+		text = lmmse_rule_option_restricted_name
+		desc = lmmse_rule_option_restricted_desc
+	}
+	
+	option = {
+		name = lmmse_rule_option_council_laws_only
+		text = lmmse_rule_option_council_laws_only_name
+		desc = lmmse_rule_option_council_laws_only_desc
+	}
+	
+	option = {
+		name = lmmse_rule_option_succ_laws_only
+		text = lmmse_rule_option_succ_laws_only_name
+		desc = lmmse_rule_option_succ_laws_only_desc
+	}
+	
+	option = {
+		name = lmmse_rule_option_unrestricted
+		text = lmmse_rule_option_unrestricted_name
+		desc = lmmse_rule_option_unrestricted_desc
+	}
+}
+
+lmmse_rule_voting_rights = {
+	name = lmmse_rule_voting_rights_name
+	dlc = "Conclave"
+	group = lmmse_rules_group_name	
+	
+	option = {
+		name = lmmse_rule_option_enabled
+		text = lmmse_rule_option_enabled_name
+		desc = lmmse_rule_option_enabled_desc
+	}
+	
+	option = {
+		name = lmmse_rule_option_disabled
+		text = lmmse_rule_option_disabled_name
+		desc = lmmse_rule_option_disabled_desc
+	}
+}

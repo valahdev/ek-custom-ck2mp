@@ -1,0 +1,8 @@
+#;;;;;;;;;;;;;;x
+#§
+
+###############
+## MODIFIERS ##
+###############
+lmmse_spouse_support_modifier;Spouse Support;;;;;;;;;;;;;x
+lmmse_spouse_support_modifier_desc;This character's [From.lmmse_my_empowered_spouse.GetHusbandWife], §Y[From.lmmse_my_empowered_spouse.GetTitledName]§!, is supporting [From.GetHerHim] in rulership.\nDiplomacy: §G+[lmmse_spouse_diplomacy_bonus.GetValue]§!\nMartial: §G+[lmmse_spouse_martial_bonus.GetValue]§!\nStewardship: §G+[lmmse_spouse_stewardship_bonus.GetValue]§!\nIntrigue: §G+[lmmse_spouse_intrigue_bonus.GetValue]§!\nLearning: §G+[lmmse_spouse_learning_bonus.GetValue]§!;;;;;;;;;;;;;x

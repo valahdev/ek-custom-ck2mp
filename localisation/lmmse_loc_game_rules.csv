@@ -1,0 +1,20 @@
+#;;;;;;;;;;;;;;x
+#§
+################
+## GAME RULES ##
+################
+lmmse_rules_group_name;LMM Spouse Empowerment;;;;;;;;;;;;;x
+lmmse_rule_availability_name;§ZLMM Spouse Empowerment:§! Availability;;;;;;;;;;;;;x
+lmmse_rule_option_restricted_name;Restricted (Default);;;;;;;;;;;;;x
+lmmse_rule_option_restricted_desc;Spouse empowerment laws cannot be changed if the succession law is agnatic or enatic. The laws will depend on the level of council empowerment (with Conclave) OR Legalism & Tolerance.;;;;;;;;;;;;;x
+lmmse_rule_option_council_laws_only_name;Council Laws Only;;;;;;;;;;;;;x
+lmmse_rule_option_council_laws_only_desc;Spouse empowerment laws will depend on the level of council empowerment (with Conclave) OR Legalism and Tolerance (without Conclave).;;;;;;;;;;;;;x
+lmmse_rule_option_succ_laws_only_name;Succession Laws Only;;;;;;;;;;;;;x
+lmmse_rule_option_succ_laws_only_desc;Spouse empowerment laws cannot be changed if the succession law is agnatic or enatic.;;;;;;;;;;;;;x
+lmmse_rule_option_unrestricted_name;Unrestricted;;;;;;;;;;;;;x
+lmmse_rule_option_unrestricted_desc;Spouse empowerment laws can be changed regardless of council empowerment, technology or succession law.;;;;;;;;;;;;;x
+lmmse_rule_voting_rights_name;§ZLMM Spouse Empowerment:§! Voting Rights;;;;;;;;;;;;;x
+lmmse_rule_option_enabled_name;Enabled (Default);;;;;;;;;;;;;x
+lmmse_rule_option_enabled_desc;The empowered spouse is considered a voter on the council.;;;;;;;;;;;;;x
+lmmse_rule_option_disabled_name;Disabled;;;;;;;;;;;;;x
+lmmse_rule_option_disabled_desc;The empowered spouse is NOT considered a voter on the council.;;;;;;;;;;;;;x

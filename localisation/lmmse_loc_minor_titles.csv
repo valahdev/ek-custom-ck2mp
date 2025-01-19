@@ -1,0 +1,14 @@
+#;;;;;;;;;;;;;;x
+#§
+
+##################
+## MINOR TITLES ##
+##################
+title_lmmse_empowered_spouse;Empowered Spouse;;;;;;;;;;;;;x
+title_lmmse_empowered_spouse_desc;This title designates the ruler's spouse who has been empowered to take part in the management of different aspects of the realm.;;;;;;;;;;;;;x
+title_lmmse_empowered_spouse_voter;Empowered Spouse;;;;;;;;;;;;;x
+title_lmmse_empowered_spouse_voter_desc;This title designates the ruler's spouse who has been empowered to take part in the management of different aspects of the realm.;;;;;;;;;;;;;x
+lmmse_ctt_is_primary_spouse;Is the primary spouse AND is eligible to hold the title.;;;;;;;;;;;;;x
+lmmse_ctt_is_not_primary_spouse;Is NOT primary spouse.;;;;;;;;;;;;;x
+lmmse_ctt_primary_spouse_is_not_eligible;Primary spouse is NOT eligible to hold the title.;;;;;;;;;;;;;x
+lmmse_ctt_title_vacant_or_held_by_ineligible;Title is currently vacant or is held by an ineligible character.;;;;;;;;;;;;;x

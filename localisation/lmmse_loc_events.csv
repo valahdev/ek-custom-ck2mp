@@ -1,0 +1,16 @@
+#;;;;;;;;;;;;;;x
+#§
+
+############
+## EVENTS ##
+############
+# lmmse.1
+EVTDESC_SetSpouseFocus;A realm can hardly function at its optimum without strong contribution from the ruler's spouse. I can delegate some of the tasks of rulership to my [empowered_spouse.GetHusbandWife], thereby allowing me more time to focus on other tasks. I believe [empowered_spouse.GetSheHe] will do best to focus on...;;;;;;;;;;;;;x
+EVTOPT_FocusDiplomacy_lmmse.1;Matters of diplomacy and politics;;;;;;;;;;;;;x
+EVTOPT_FocusMartial_lmmse.1;Overseeing the realm's military;;;;;;;;;;;;;x
+EVTOPT_FocusStewardship_lmmse.1;The management of land and coffers;;;;;;;;;;;;;x
+EVTOPT_FocusIntrigue_lmmse.2;Plots and intrigue in the court and beyond;;;;;;;;;;;;;x
+EVTOPT_FocusLearning_lmmse.2;Matters of technological or religious import;;;;;;;;;;;;;x
+EVTOPT_FocusEverything_lmmse.2;A little bit of everything;;;;;;;;;;;;;x
+EVTOPT_OtherOptions;Something else;;;;;;;;;;;;;x
+lmmse_ctt_choosing_focus_when_spouse_not_empowered_anymore;As §Y[empowered_spouse.GetTitledFirstName]§! §Rno longer§! holds the §YEmpowered Spouse§! title, I will gain no support from [empowered_spouse.GetHerHim].;;;;;;;;;;;;;x

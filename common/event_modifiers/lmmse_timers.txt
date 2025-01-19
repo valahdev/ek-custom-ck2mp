@@ -1,0 +1,3 @@
+lmmse_focus_change_cooldown = {
+	icon = 1
+}

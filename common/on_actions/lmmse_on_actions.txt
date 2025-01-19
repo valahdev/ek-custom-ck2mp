@@ -1,0 +1,45 @@
+on_startup = {
+	events = {
+		lmmse_maintenance.1
+	}
+}
+	
+on_divorce = {
+	events = {
+		lmmse_maintenance.3 # Remove empowered spouse title
+	}
+}
+
+on_new_holder = {
+	events = {
+		lmmse_maintenance.3 # Remove empowered spouse title
+		lmmse_maintenance.5 # Remove modifiers from old holder if he is no longer landed
+	}
+}
+
+on_new_holder_inheritance = {
+	events = {
+		lmmse_maintenance.3 # Remove empowered spouse title
+		lmmse_maintenance.5 # Remove modifiers from old holder if he is no longer landed
+	}
+}
+
+on_new_holder_usurpation = {
+	events = {
+		lmmse_maintenance.3 # Remove empowered spouse title
+		lmmse_maintenance.5 # Remove modifiers from old holder if he is no longer landed
+	}
+}
+
+on_become_imprisoned_any_reason = {
+	events = {
+		lmmse_maintenance.3 # Remove empowered spouse title
+	}
+}
+
+on_death = {
+	events = {
+		lmmse_maintenance.4 # Remove empowered spouse title from spouse
+		lmmse_maintenance.6 # Remove modifier and bonuses from ruler
+	}
+}

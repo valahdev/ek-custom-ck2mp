@@ -1,0 +1,12 @@
+#;;;;;;;;;;;;;;x
+#§
+###############
+## DECISIONS ##
+###############
+lmmse_change_spouse_focus;Change Spouse Focus;;;;;;;;;;;;;x
+lmmse_change_spouse_focus_desc;Ask your [Root.GetHusbandWife], §Y[Root.GetFirstName]§!, to help you in another aspect of rulership.;;;;;;;;;;;;;x
+lmmse_empower_spouse;Empower Spouse;;;;;;;;;;;;;x
+lmmse_empower_spouse_desc;Empower §Y[Root.GetFirstName]§!.;;;;;;;;;;;;;x
+lmmse_empower_spouse_voter;Empower Spouse;;;;;;;;;;;;;x
+lmmse_empower_spouse_voter_desc;Empower §Y[Root.GetFirstName]§!.;;;;;;;;;;;;;x
+lmmse_ctt_has_not_changed_focus_recently;Has not changed the spouse's focus in the past 2 years.;;;;;;;;;;;;;x

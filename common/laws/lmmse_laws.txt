@@ -1,0 +1,619 @@
+law_groups = {
+	lmmse_spouse_empowerment = {
+		law_type = realm
+	}
+}
+
+laws = {
+	# None
+	lmmse_spouse_empowerment_0 = {
+		group = lmmse_spouse_empowerment
+		
+		default = yes
+		
+		allow = {
+			trigger_if = {
+				limit = {
+					NOT = { has_law = lmmse_spouse_empowerment_0 }
+					NOT = { has_law = lmmse_spouse_empowerment_1 }
+					NOT = { has_law = lmmse_spouse_empowerment_2 }
+					NOT = { has_law = lmmse_spouse_empowerment_3 }
+					NOT = { has_law = lmmse_spouse_empowerment_4 }
+				}
+			}
+			trigger_else = {
+				has_law = lmmse_spouse_empowerment_1					
+				NOT = { has_law = law_voting_power_1 }
+			}
+		}
+		
+		potential = {			
+			lmmse_can_use_spouse_empowerment_laws_trigger = yes
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				
+				has_law = lmmse_spouse_empowerment_1
+			}
+		}
+		
+		ai_will_revoke = {
+			factor = 0
+		}
+		
+		pass_effect = {
+			
+		}
+		
+		effect = {
+			hidden_tooltip = {
+				revoke_law = lmmse_spouse_empowerment_1
+				revoke_law = lmmse_spouse_empowerment_2
+				revoke_law = lmmse_spouse_empowerment_3
+				revoke_law = lmmse_spouse_empowerment_4
+			}
+			holder_scope = {
+				show_scope_change = no
+				log = "LMMSE: [This.GetTitledName] enacted law: lmmse_spouse_empowerment_0"
+				any_spouse = {
+					if = {
+						limit = { has_minor_title = title_lmmse_empowered_spouse }
+						remove_title = title_lmmse_empowered_spouse
+					}
+					else_if = {
+						limit = { has_minor_title = title_lmmse_empowered_spouse_voter }
+						remove_title = title_lmmse_empowered_spouse_voter
+					}
+				}
+			}
+		}
+	}
+	
+	# Low
+	lmmse_spouse_empowerment_1 = {
+		group = lmmse_spouse_empowerment
+		
+		default_selection = {
+			factor = 0
+			
+			additive_modifier = { 
+				value = 10			
+				year = 850
+				holder_scope = {
+					religion = catholic
+					is_feudal = yes
+				}	
+			}
+			additive_modifier = { 
+				value = 10			
+				title = e_hre	
+			}
+			additive_modifier = { 
+				value = 10			
+				title = e_byzantium	
+			}			
+		}
+		
+		allow = {
+			OR = {
+				has_law = lmmse_spouse_empowerment_0
+				has_law = lmmse_spouse_empowerment_2
+			}
+			trigger_if = {
+				limit = { 					
+					OR = {
+						has_game_rule = { name = "lmmse_rule_availability" value = "lmmse_rule_option_restricted" }
+						has_game_rule = { name = "lmmse_rule_availability" value = "lmmse_rule_option_council_laws_only" }
+					}															
+				}
+				trigger_if = {
+					limit = { has_dlc = "Zeus" }
+					has_law = law_voting_power_1
+				}
+				trigger_else = {
+					capital_scope = {
+						show_scope_change = no
+						TECH_CULTURE_FLEX = 1
+						TECH_LEGALISM = 2
+					}
+				}
+			}
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = { name = "lmmse_rule_availability" value = "lmmse_rule_option_restricted" }
+						has_game_rule = { name = "lmmse_rule_availability" value = "lmmse_rule_option_succ_laws_only" }
+					}
+				}
+				NOR = { 
+					has_law = agnatic_succession
+					has_law = enatic_succession
+				}
+			}
+			trigger_if = {
+				limit = { 
+					holder_scope = { ai = yes }
+				}
+				holder_scope = {
+					OR = {
+						can_marry = yes
+						spouse = { always = yes }
+					}
+				}				
+			}
+		}
+		
+		potential = {			
+			lmmse_can_use_spouse_empowerment_laws_trigger = yes
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0				
+				has_law = lmmse_spouse_empowerment_2				
+			}
+			
+			modifier = {
+				factor = 0.01
+				holder_scope = {
+					trait = proud
+				}
+				
+			}
+			
+			modifier = {
+				factor = 0.2
+				holder_scope = {
+					spouse = {
+						reverse_opinion = { who = PREV value = 10 }
+					}
+				}
+			}
+		}
+		
+		ai_will_revoke = {
+			factor = 0
+		}
+		
+		pass_effect = {
+			
+		}
+		
+		effect = {
+			custom_tooltip = {
+				text = lmmse_ctt_spouse_bonus_modifier_law_1
+			}			
+			hidden_tooltip = {
+				revoke_law = lmmse_spouse_empowerment_0
+				revoke_law = lmmse_spouse_empowerment_2
+				revoke_law = lmmse_spouse_empowerment_3
+				revoke_law = lmmse_spouse_empowerment_4
+				holder_scope = {
+					log = "LMMSE: [This.GetTitledName] enacted law: lmmse_spouse_empowerment_1"
+					if = {
+						limit = { persistent_event_target:lmmse_my_empowered_spouse = { always = yes } }
+						character_event = { id = lmmse.1 } # Choose focus and readjust bonuses
+					}
+				}
+			}
+		}
+	}
+	
+	# Medium
+	lmmse_spouse_empowerment_2 = {
+		group = lmmse_spouse_empowerment
+		
+		default_selection = {
+			factor = 0
+			
+			additive_modifier = { 
+				value = 10			
+				year = 1100
+				holder_scope = { 
+					religion = catholic
+					is_feudal = yes
+				}	
+			}
+		}
+		
+		allow = {
+			OR = {
+				has_law = lmmse_spouse_empowerment_1
+				has_law = lmmse_spouse_empowerment_3
+			}
+			trigger_if = {
+				limit = { 					
+					OR = {
+						has_game_rule = { name = "lmmse_rule_availability" value = "lmmse_rule_option_restricted" }
+						has_game_rule = { name = "lmmse_rule_availability" value = "lmmse_rule_option_council_laws_only" }
+					}															
+				}	
+				trigger_if = {
+					limit = { has_dlc = "Zeus" }
+					has_law = law_voting_power_1
+					# If playing with HIP
+					trigger_if = {
+						limit = { has_global_flag = EMF }						
+						has_law = war_voting_power_1
+					}
+					trigger_else = {						
+						has_law = revoke_title_voting_power_1
+					}
+				}
+				trigger_else = {
+					capital_scope = {
+						show_scope_change = no
+						TECH_CULTURE_FLEX = 2
+						TECH_LEGALISM = 3
+					}
+				}
+			}
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = { name = "lmmse_rule_availability" value = "lmmse_rule_option_restricted" }
+						has_game_rule = { name = "lmmse_rule_availability" value = "lmmse_rule_option_succ_laws_only" }
+					}
+				}
+				NOR = { 
+					has_law = agnatic_succession
+					has_law = enatic_succession
+				}
+			}
+			trigger_if = {
+				limit = { 
+					holder_scope = { ai = yes }
+				}
+				holder_scope = {
+					OR = {
+						can_marry = yes
+						spouse = { always = yes }
+					}
+				}				
+			}
+		}
+		
+		potential = {			
+			lmmse_can_use_spouse_empowerment_laws_trigger = yes
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0				
+				has_law = lmmse_spouse_empowerment_3				
+			}
+			
+			modifier = {
+				factor = 0.01
+				holder_scope = {
+					trait = proud
+				}
+				
+			}
+			
+			modifier = {
+				factor = 0.2
+				holder_scope = {
+					spouse = {
+						reverse_opinion = { who = PREV value = 10 }
+					}
+				}
+			}
+		}
+		
+		ai_will_revoke = {
+			factor = 0
+		}
+		
+		pass_effect = {
+			
+		}
+		
+		effect = {
+			custom_tooltip = {
+				text = lmmse_ctt_spouse_bonus_modifier_law_2
+			}
+			hidden_tooltip = {
+				revoke_law = lmmse_spouse_empowerment_0
+				revoke_law = lmmse_spouse_empowerment_1
+				revoke_law = lmmse_spouse_empowerment_3
+				revoke_law = lmmse_spouse_empowerment_4
+				holder_scope = {
+					log = "LMMSE: [This.GetTitledName] enacted law: lmmse_spouse_empowerment_2"
+					if = {
+						limit = { persistent_event_target:lmmse_my_empowered_spouse = { always = yes } }
+						character_event = { id = lmmse.1 } # Choose focus and readjust bonuses
+					}
+				}
+			}
+		}
+	}
+	
+	# High
+	lmmse_spouse_empowerment_3 = {
+		group = lmmse_spouse_empowerment
+		
+		default_selection = {
+			factor = 0
+			
+			additive_modifier = { 
+				value = 10			
+				year = 1200
+				holder_scope = { 
+					religion = catholic
+					is_feudal = yes
+				}	
+			}
+		}
+		
+		allow = {
+			OR = {
+				has_law = lmmse_spouse_empowerment_2
+				has_law = lmmse_spouse_empowerment_4
+			}
+			trigger_if = {
+				limit = { 					
+					OR = {
+						has_game_rule = { name = "lmmse_rule_availability" value = "lmmse_rule_option_restricted" }
+						has_game_rule = { name = "lmmse_rule_availability" value = "lmmse_rule_option_council_laws_only" }
+					}															
+				}
+				trigger_if = {
+					limit = { has_dlc = "Zeus" }
+					has_law = law_voting_power_1
+					trigger_if = {
+						limit = { has_global_flag = EMF }
+						has_law = war_voting_power_1
+						has_law = titles_voting_power_1
+					}
+					trigger_else = {						
+						has_law = revoke_title_voting_power_1
+						has_law = grant_title_voting_power_1
+					}
+				}
+				trigger_else = {
+					capital_scope = {
+						show_scope_change = no
+						TECH_CULTURE_FLEX = 3
+						TECH_LEGALISM = 4
+					}
+				}
+			}
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = { name = "lmmse_rule_availability" value = "lmmse_rule_option_restricted" }
+						has_game_rule = { name = "lmmse_rule_availability" value = "lmmse_rule_option_succ_laws_only" }
+					}
+				}
+				NOR = { 
+					has_law = agnatic_succession
+					has_law = enatic_succession
+				}
+			}
+			trigger_if = {
+				limit = { 
+					holder_scope = { ai = yes }
+				}
+				holder_scope = {
+					OR = {
+						can_marry = yes
+						spouse = { always = yes }
+					}
+				}				
+			}
+		}
+		
+		potential = {			
+			lmmse_can_use_spouse_empowerment_laws_trigger = yes
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0				
+				has_law = lmmse_spouse_empowerment_4				
+			}
+			
+			modifier = {
+				factor = 0.01
+				holder_scope = {
+					trait = proud
+				}
+				
+			}
+			
+			modifier = {
+				factor = 0.2
+				holder_scope = {
+					spouse = {
+						reverse_opinion = { who = PREV value = 10 }
+					}
+				}
+			}
+		}
+		
+		ai_will_revoke = {
+			factor = 0
+		}
+		
+		pass_effect = {
+			
+		}
+		
+		effect = {
+			custom_tooltip = {
+				text = lmmse_ctt_spouse_bonus_modifier_law_3
+			}
+			hidden_tooltip = {
+				revoke_law = lmmse_spouse_empowerment_0
+				revoke_law = lmmse_spouse_empowerment_1
+				revoke_law = lmmse_spouse_empowerment_2
+				revoke_law = lmmse_spouse_empowerment_4
+				holder_scope = {					
+					log = "LMMSE: [This.GetTitledName] enacted law: lmmse_spouse_empowerment_3"
+					if = {
+						limit = { persistent_event_target:lmmse_my_empowered_spouse = { always = yes } }
+						character_event = { id = lmmse.1 } # Choose focus and readjust bonuses
+					}
+				}
+			}
+		}
+	}
+	
+	# Max
+	lmmse_spouse_empowerment_4 = {
+		group = lmmse_spouse_empowerment
+		
+		default_selection = {
+			factor = 0
+			
+			additive_modifier = { 
+				value = 10			
+				year = 1200
+				holder_scope = { 
+					religion = catholic
+					is_feudal = yes
+				}	
+			}
+		}
+		
+		allow = {
+			has_law = lmmse_spouse_empowerment_3
+			trigger_if = {
+				limit = { 					
+					OR = {
+						has_game_rule = { name = "lmmse_rule_availability" value = "lmmse_rule_option_restricted" }
+						has_game_rule = { name = "lmmse_rule_availability" value = "lmmse_rule_option_council_laws_only" }
+					}								
+				}				
+				trigger_if = {
+					limit = { has_dlc = "Zeus" }
+					has_law = law_voting_power_1
+					trigger_if = {
+						limit = { has_global_flag = EMF }
+						has_law = war_voting_power_1
+						has_law = titles_voting_power_1
+						has_law = justice_voting_power_1
+					}
+					trigger_else = {
+						has_law = revoke_title_voting_power_1
+						has_law = grant_title_voting_power_1
+						has_law = execution_voting_power_1	
+					}
+				}
+				trigger_else = {
+					capital_scope = {
+						show_scope_change = no
+						TECH_CULTURE_FLEX = 4
+						TECH_LEGALISM = 5
+					}
+				}				
+			}
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = { name = "lmmse_rule_availability" value = "lmmse_rule_option_restricted" }
+						has_game_rule = { name = "lmmse_rule_availability" value = "lmmse_rule_option_succ_laws_only" }
+					}
+				}
+				NOR = { 
+					has_law = agnatic_succession
+					has_law = enatic_succession
+				}
+			}
+			trigger_if = {
+				limit = { 
+					holder_scope = { ai = yes }
+				}
+				holder_scope = {
+					OR = {
+						can_marry = yes
+						spouse = { always = yes }
+					}
+				}				
+			}
+		}
+		
+		potential = {			
+			lmmse_can_use_spouse_empowerment_laws_trigger = yes
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0.01
+				holder_scope = {
+					trait = proud
+				}
+				
+			}
+			
+			modifier = {
+				factor = 0.2
+				holder_scope = {
+					spouse = {
+						reverse_opinion = { who = PREV value = 10 }
+					}
+				}
+			}
+		}
+		
+		ai_will_revoke = {
+			factor = 0
+		}
+		
+		pass_effect = {
+			
+		}
+		
+		effect = {
+			custom_tooltip = {
+				text = lmmse_ctt_spouse_bonus_modifier_law_4
+			}
+			hidden_tooltip = {
+				revoke_law = lmmse_spouse_empowerment_0
+				revoke_law = lmmse_spouse_empowerment_1
+				revoke_law = lmmse_spouse_empowerment_2
+				revoke_law = lmmse_spouse_empowerment_3
+				holder_scope = {
+					log = "LMMSE: [This.GetTitledName] enacted law: lmmse_spouse_empowerment_4"
+					if = {
+						limit = { persistent_event_target:lmmse_my_empowered_spouse = { always = yes } }
+						character_event = { id = lmmse.1 } # Choose focus and readjust bonuses
+					}
+				}				
+			}
+		}
+	}
+}

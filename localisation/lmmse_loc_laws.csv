@@ -1,0 +1,29 @@
+#;;;;;;;;;;;;;;x
+#§
+##########
+## LAWS ##
+##########
+lmmse_spouse_empowerment;Spouse Empowerment;;;;;;;;;;;;;x
+lmmse_spouse_empowerment_desc;A ruler's spouse can be a powerful asset in the management of the realm. However, the extent to which a spouse holds powers must be carefully and precisely defined.;;;;;;;;;;;;;x
+lmmse_spouse_empowerment_0;Minium Spouse Empowerment;;;;;;;;;;;;;x
+lmmse_spouse_empowerment_0_option;Min;;;;;;;;;;;;;x
+lmmse_spouse_empowerment_0_desc;The spouse plays a very minor role in the realm, contributing only with a few words of advice here and there.;;;;;;;;;;;;;x
+lmmse_spouse_empowerment_1;Low Spouse Empowerment;;;;;;;;;;;;;x
+lmmse_spouse_empowerment_1_option;Low;;;;;;;;;;;;;x
+lmmse_spouse_empowerment_1_desc;The ruler delegates some minor tasks to the spouse thereby increasing the efficiency with which the realm can be managed.;;;;;;;;;;;;;x
+lmmse_spouse_empowerment_2;Medium Spouse Empowerment;;;;;;;;;;;;;x
+lmmse_spouse_empowerment_2_option;Medium;;;;;;;;;;;;;x
+lmmse_spouse_empowerment_2_desc;The powers of the spouse increase, allowing the spouse to lend a hand in a much more effective manner.;;;;;;;;;;;;;x
+lmmse_spouse_empowerment_3;High Spouse Empowerment;;;;;;;;;;;;;x
+lmmse_spouse_empowerment_3_option;High;;;;;;;;;;;;;x
+lmmse_spouse_empowerment_3_desc;The spouse takes part in, and manages, delegated aspects of rulership with more autonomy. Allowing the ruler to focus on other tasks not only longer, but also with increased vigor.;;;;;;;;;;;;;x
+lmmse_spouse_empowerment_4;Max Spouse Empowerment;;;;;;;;;;;;;x
+lmmse_spouse_empowerment_4_option;Max;;;;;;;;;;;;;x
+lmmse_spouse_empowerment_4_desc;The realm can hardly function without the support and advice from a competent spouse who takes a lot of the stress of managing the realm off from the shoulders of the ruler.;;;;;;;;;;;;;x
+#####################
+## CUSTOM TOOLTIPS ##
+#####################
+lmmse_ctt_spouse_bonus_modifier_law_1;Ruler gains spouse's attribute:\nFocus a Specific Area: §G20%§!\nFocus Everything: §G5%§!;;;;;;;;;;;;;;x
+lmmse_ctt_spouse_bonus_modifier_law_2;Ruler gains spouse's attribute:\nFocus a Specific Area: §G40%§!\nFocus Everything: §G10%§!;;;;;;;;;;;;;;x
+lmmse_ctt_spouse_bonus_modifier_law_3;Ruler gains spouse's attribute:\nFocus a Specific Area: §G60%§!\nFocus Everything: §G15%§!;;;;;;;;;;;;;;x
+lmmse_ctt_spouse_bonus_modifier_law_4;Ruler gains spouse's attribute:\nFocus a Specific Area: §G80%§!\nFocus Everything: §G20%§!;;;;;;;;;;;;;;x

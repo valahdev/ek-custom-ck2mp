@@ -1,0 +1,10 @@
+#;;;;;;;;;;;;;;x
+#§
+############
+## EVENTS ##
+############
+# lmmse_maintenance.7
+EVTDESC_SpouseNoLongerProvidingBonuses_lmmse_maintenance.7;As I have abolished the power of the council completely, my [empowered_spouse.GetHusbandWife] is no longer able to support me in the matters of rulership. [empowered_spouse.GetSheHeCap] is clearly upset about this matter.;;;;;;;;;;;;;x
+EVTOPT_Bad_lmmse_maintenance.7;Unfortunate, but necessary;;;;;;;;;;;;;x
+EVTDESC_SpouseNoLongerProvidingBonuses_lmmse_maintenance.8;As I have enacted a one-gender only succession law, the dynamics of the realm have become such that my [empowered_spouse.GetHusbandWife] is no longer able to support me in the matters of rulership. [empowered_spouse.GetSheHeCap] is clearly upset about this matter.;;;;;;;;;;;;;x
+EVTOPT_Bad_lmmse_maintenance.8;Unfortunate, but necessary;;;;;;;;;;;;;x

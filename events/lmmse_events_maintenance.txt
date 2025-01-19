@@ -1,0 +1,363 @@
+namespace = lmmse_maintenance
+
+character_event = {
+	id = lmmse_maintenance.1
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	only_playable = yes
+	ai = no
+	
+	trigger = {
+		is_multiplayer_host_character = yes
+	}
+	
+	option = {
+		set_variable = { which = global_lmmse_bonus_for_law_1 value = 0.2 }
+		set_variable = { which = global_lmmse_bonus_for_law_2 value = 0.4 }
+		set_variable = { which = global_lmmse_bonus_for_law_3 value = 0.6 }
+		set_variable = { which = global_lmmse_bonus_for_law_4 value = 0.8 }
+		set_variable = { which = global_lmmse_penalty_for_everything  value = 0.25 }
+	}
+}
+
+character_event = {
+	id = lmmse_maintenance.2
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	only_playable = yes
+	
+	trigger = {
+		event_target:empowered_spouse = { 
+			OR = {
+				has_minor_title = title_lmmse_empowered_spouse 
+				has_minor_title = title_lmmse_empowered_spouse_voter
+			}
+		}
+	}
+	
+	option = {
+		if = {
+			limit = {
+				has_dlc = "Zeus"
+				OR = {
+					has_game_rule = { name = "lmmse_rule_availability" value = "lmmse_rule_option_restricted" }
+					has_game_rule = { name = "lmmse_rule_availability" value = "lmmse_rule_option_council_laws_only" }
+				}			
+				NOT = { primary_title = { has_law = law_voting_power_1	} }
+			}						
+			character_event = { id = lmmse_maintenance.7 }  # Inform that spouse is no longer providing bonuses
+			clr_character_flag = lmmse_yearly_event_called_by_@event_target:empowered_spouse
+			break = yes # Stop everything
+		}
+		if = {
+			limit = {
+				OR = {
+					has_game_rule = { name = "lmmse_rule_availability" value = "lmmse_rule_option_restricted" }
+					has_game_rule = { name = "lmmse_rule_availability" value = "lmmse_rule_option_succ_laws_only" }
+				}
+				OR = { 
+					has_law = agnatic_succession
+					has_law = enatic_succession
+				}					
+			}
+			character_event = { id = lmmse_maintenance.8 }  # Inform that spouse is no longer providing bonuses
+			clr_character_flag = lmmse_yearly_event_called_by_@event_target:empowered_spouse
+			break = yes	# Stop everything
+		}
+		
+		trigger_switch = {
+			on_trigger = has_character_flag
+				
+			lmmse_spouse_focus_diplomacy = {
+				lmmse_clear_bonus_if_spouse_diplomacy_changed_effect = yes
+			}
+			
+			lmmse_spouse_focus_martial = {
+				lmmse_clear_bonus_if_spouse_martial_changed_effect = yes
+			}
+			
+			lmmse_spouse_focus_stewardship = {
+				lmmse_clear_bonus_if_spouse_stewardship_changed_effect = yes
+			}
+			
+			lmmse_spouse_focus_intrigue = {
+				lmmse_clear_bonus_if_spouse_intrigue_changed_effect = yes
+			}
+			
+			lmmse_spouse_focus_learning = {
+				lmmse_clear_bonus_if_spouse_learning_changed_effect = yes
+			}
+			
+			lmmse_spouse_focus_everything = {
+				lmmse_clear_bonus_if_spouse_diplomacy_changed_effect = yes
+				lmmse_clear_bonus_if_spouse_martial_changed_effect = yes
+				lmmse_clear_bonus_if_spouse_stewardship_changed_effect = yes
+				lmmse_clear_bonus_if_spouse_intrigue_changed_effect = yes
+				lmmse_clear_bonus_if_spouse_learning_changed_effect = yes
+			}
+		}
+		
+		trigger_switch = {
+			on_trigger = has_character_flag
+			
+			lmmse_spouse_diplomacy_changed = {
+				clr_character_flag = lmmse_spouse_diplomacy_changed
+				set_variable = { which = local_spouse_diplomacy_bonus which = lmmse_spouse_diplomacy }
+				primary_title = {
+					trigger_switch = {
+						on_trigger = has_law
+						
+						lmmse_spouse_empowerment_1 = { multiply_variable = { which = local_spouse_diplomacy_bonus which = global_lmmse_bonus_for_law_1 } }
+						lmmse_spouse_empowerment_2 = { multiply_variable = { which = local_spouse_diplomacy_bonus which = global_lmmse_bonus_for_law_2 } }
+						lmmse_spouse_empowerment_3 = { multiply_variable = { which = local_spouse_diplomacy_bonus which = global_lmmse_bonus_for_law_3 } }
+						lmmse_spouse_empowerment_4 = { multiply_variable = { which = local_spouse_diplomacy_bonus which = global_lmmse_bonus_for_law_4 } }							
+					}
+				}
+				if = {
+					limit = { has_character_flag = lmmse_spouse_focus_everything }
+					multiply_variable = { which = local_spouse_diplomacy_bonus which = global_lmmse_penalty_for_everything }
+				}
+				if = {
+					limit = { NOT = { check_variable = { which = local_spouse_diplomacy_bonus value = 1 } } }
+					set_variable = { which = local_spouse_diplomacy_bonus value = 1 }
+				}
+				lmmse_apply_diplomacy_bonus_effect = yes			
+			}
+			
+			lmmse_spouse_martial_changed = {
+				clr_character_flag = lmmse_spouse_martial_changed
+				set_variable = { which = local_spouse_martial_bonus which = lmmse_spouse_martial }					
+				primary_title = {
+					trigger_switch = {
+						on_trigger = has_law
+						
+						lmmse_spouse_empowerment_1 = { multiply_variable = { which = local_spouse_martial_bonus which = global_lmmse_bonus_for_law_1 } }
+						lmmse_spouse_empowerment_2 = { multiply_variable = { which = local_spouse_martial_bonus which = global_lmmse_bonus_for_law_2 } }
+						lmmse_spouse_empowerment_3 = { multiply_variable = { which = local_spouse_martial_bonus which = global_lmmse_bonus_for_law_3 } }
+						lmmse_spouse_empowerment_4 = { multiply_variable = { which = local_spouse_martial_bonus which = global_lmmse_bonus_for_law_4 } }							
+					}
+				}
+				if = {
+					limit = { has_character_flag = lmmse_spouse_focus_everything }
+					multiply_variable = { which = local_spouse_martial_bonus which = global_lmmse_penalty_for_everything }
+				}
+				if = {
+					limit = { NOT = { check_variable = { which = local_spouse_martial_bonus value = 1 } } }
+					set_variable = { which = local_spouse_martial_bonus value = 1 }
+				}
+				lmmse_apply_martial_bonus_effect = yes				
+			}
+			
+			lmmse_spouse_stewardship_changed = {
+				clr_character_flag = lmmse_spouse_stewardship_changed
+				set_variable = { which = local_spouse_stewardship_bonus which = lmmse_spouse_stewardship }					
+				primary_title = {
+					trigger_switch = {
+						on_trigger = has_law
+						
+						lmmse_spouse_empowerment_1 = { multiply_variable = { which = local_spouse_stewardship_bonus which = global_lmmse_bonus_for_law_1 } }
+						lmmse_spouse_empowerment_2 = { multiply_variable = { which = local_spouse_stewardship_bonus which = global_lmmse_bonus_for_law_2 } }
+						lmmse_spouse_empowerment_3 = { multiply_variable = { which = local_spouse_stewardship_bonus which = global_lmmse_bonus_for_law_3 } }
+						lmmse_spouse_empowerment_4 = { multiply_variable = { which = local_spouse_stewardship_bonus which = global_lmmse_bonus_for_law_4 } }							
+					}
+				}
+				if = {
+					limit = { has_character_flag = lmmse_spouse_focus_everything }
+					multiply_variable = { which = local_spouse_stewardship_bonus which = global_lmmse_penalty_for_everything }
+				}
+				if = {
+					limit = { NOT = { check_variable = { which = local_spouse_stewardship_bonus value = 1 } } }
+					set_variable = { which = local_spouse_stewardship_bonus value = 1 }
+				}
+				lmmse_apply_stewardship_bonus_effect = yes			
+			}
+			
+			lmmse_spouse_intrigue_changed = {	
+				clr_character_flag = lmmse_spouse_intrigue_changed
+				set_variable = { which = local_spouse_intrigue_bonus which = lmmse_spouse_intrigue }					
+				primary_title = {
+					trigger_switch = {
+						on_trigger = has_law
+						
+						lmmse_spouse_empowerment_1 = { multiply_variable = { which = local_spouse_intrigue_bonus which = global_lmmse_bonus_for_law_1 } }
+						lmmse_spouse_empowerment_2 = { multiply_variable = { which = local_spouse_intrigue_bonus which = global_lmmse_bonus_for_law_2 } }
+						lmmse_spouse_empowerment_3 = { multiply_variable = { which = local_spouse_intrigue_bonus which = global_lmmse_bonus_for_law_3 } }
+						lmmse_spouse_empowerment_4 = { multiply_variable = { which = local_spouse_intrigue_bonus which = global_lmmse_bonus_for_law_4 } }							
+					}
+				}
+				if = {
+					limit = { has_character_flag = lmmse_spouse_focus_everything }
+					multiply_variable = { which = local_spouse_intrigue_bonus which = global_lmmse_penalty_for_everything }
+				}
+				if = {
+					limit = { NOT = { check_variable = { which = local_spouse_intrigue_bonus value = 1 } } }
+					set_variable = { which = local_spouse_intrigue_bonus value = 1 }
+				}
+				lmmse_apply_intrigue_bonus_effect = yes				
+			}
+			
+			lmmse_spouse_learning_changed = {	
+				clr_character_flag = lmmse_spouse_learning_changed
+				set_variable = { which = local_spouse_learning_bonus which = lmmse_spouse_learning }					
+				primary_title = {
+					trigger_switch = {
+						on_trigger = has_law
+						
+						lmmse_spouse_empowerment_1 = { multiply_variable = { which = local_spouse_learning_bonus which = global_lmmse_bonus_for_law_1 } }
+						lmmse_spouse_empowerment_2 = { multiply_variable = { which = local_spouse_learning_bonus which = global_lmmse_bonus_for_law_2 } }
+						lmmse_spouse_empowerment_3 = { multiply_variable = { which = local_spouse_learning_bonus which = global_lmmse_bonus_for_law_3 } }
+						lmmse_spouse_empowerment_4 = { multiply_variable = { which = local_spouse_learning_bonus which = global_lmmse_bonus_for_law_4 } }							
+					}
+				}
+				if = {
+					limit = { has_character_flag = lmmse_spouse_focus_everything }
+					multiply_variable = { which = local_spouse_learning_bonus which = global_lmmse_penalty_for_everything }
+				}
+				if = {
+					limit = { NOT = { check_variable = { which = local_spouse_learning_bonus value = 1 } } }
+					set_variable = { which = local_spouse_learning_bonus value = 1 }
+				}
+				lmmse_apply_learning_bonus_effect = yes
+			}
+		}
+		
+		repeat_event = { id = lmmse_maintenance.2 days = 365 }
+	}
+}
+
+# Remove empowered spouse title
+character_event = {
+	id = lmmse_maintenance.3
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			has_minor_title = title_lmmse_empowered_spouse 
+			has_minor_title = title_lmmse_empowered_spouse_voter
+		}
+	}
+	
+	option = {
+		log = "LMMSE: [This.GetTitledName] lost empowered spouse title. lmmse_maintenance.3"
+		lmmse_remove_empowered_spouse_title_effect = yes
+	}
+}
+
+# Remove empowered spouse title from spouse on liege death (on_death)
+character_event = {
+	id = lmmse_maintenance.4
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	only_playable = yes
+	
+	trigger = {
+		any_spouse = {
+			OR = {
+				has_minor_title = title_lmmse_empowered_spouse 
+				has_minor_title = title_lmmse_empowered_spouse_voter
+			}
+		}
+	}
+	
+	option = {
+		any_spouse = {
+			limit = {
+				OR = {
+					has_minor_title = title_lmmse_empowered_spouse 
+					has_minor_title = title_lmmse_empowered_spouse_voter
+				}
+			}
+			log = "LMMSE: [This.GetTitledName] lost empowered spouse title because of liege death. lmmse_maintenance.4"
+			lmmse_remove_empowered_spouse_title_effect = yes
+		}
+	}
+}
+
+# Remove modifiers from old holder if he is no longer landed (on_new_holder type)
+character_event = {
+	id = lmmse_maintenance.5
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROMFROM = {
+			is_alive = yes
+			OR = {
+				is_landed = no
+				NOT = { higher_tier_than = baron }
+			}
+			has_character_modifier = lmmse_spouse_support_modifier
+		}
+	}
+	
+	option = {		
+		FROMFROM = {
+			log = "LMMSE: Resetting [This.GetTitledName] on_new_holder type. lmmse_maintenance.5"
+			lmmse_reset_liege_effect = yes
+		}
+	}
+}
+
+# Remove modifiers from liege on death (on_death)
+character_event = {
+	id = lmmse_maintenance.6
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	only_playable = yes
+	
+	trigger = {
+		has_character_modifier = lmmse_spouse_support_modifier
+	}
+	
+	option = {
+		log = "LMMSE: Resetting [This.GetTitledName] on_death. lmmse_maintenance.6"
+		lmmse_reset_liege_effect = yes
+	}
+}
+
+# Remove all bonuses if the council power is abolished
+character_event = {
+	id = lmmse_maintenance.7
+	picture = GFX_evt_daughter_asking_father
+	desc = EVTDESC_SpouseNoLongerProvidingBonuses_lmmse_maintenance.7
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPT_Bad_lmmse_maintenance.7
+		# set_character_flag = lmmse_debug_maintenance_7
+		# set_global_flag = lmmse_debug_maintenance_7
+		event_target:empowered_spouse = { 
+			log = "LMMSE: [This.GetTitledName] is no longer empowered spouse because council power was abolished. lmmse_maintenance.7"
+			lmmse_remove_empowered_spouse_title_effect = yes 
+		}
+	}
+}
+
+# Remove all bonuses if the gender law is incompatible
+character_event = {
+	id = lmmse_maintenance.8
+	picture = GFX_evt_daughter_asking_father
+	desc = EVTDESC_SpouseNoLongerProvidingBonuses_lmmse_maintenance.8
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPT_Bad_lmmse_maintenance.8
+		event_target:empowered_spouse = { 
+			log = "LMMSE: [This.GetTitledName] is no longer empowered spouse because gender succession law was incompatible. lmmse_maintenance.8"
+			lmmse_remove_empowered_spouse_title_effect = yes 
+		}
+	}
+}

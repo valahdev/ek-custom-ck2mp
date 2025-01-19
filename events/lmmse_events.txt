@@ -1,0 +1,514 @@
+namespace = lmmse
+
+character_event = {
+	id = lmmse.1
+	picture = GFX_evt_princess_byzantine
+	desc = EVTDESC_SetSpouseFocus
+	
+	is_triggered_only = yes
+	
+	trigger = {		
+		event_target:empowered_spouse = {
+			always = yes
+		}
+		NOT = { has_character_flag = lmmse_choosing_spouse_focus }
+		primary_title = {						
+			OR = {
+				has_law = lmmse_spouse_empowerment_1
+				has_law = lmmse_spouse_empowerment_2
+				has_law = lmmse_spouse_empowerment_3
+				has_law = lmmse_spouse_empowerment_4
+			}
+		}		
+	}
+	
+	immediate = {
+		set_character_flag = lmmse_choosing_spouse_focus
+		remove_character_modifier = lmmse_spouse_support_modifier
+		
+		multiply_variable = { which = lmmse_spouse_diplomacy_bonus value = -1 }
+		multiply_variable = { which = lmmse_spouse_martial_bonus value = -1 }
+		multiply_variable = { which = lmmse_spouse_stewardship_bonus value = -1 }			
+		multiply_variable = { which = lmmse_spouse_intrigue_bonus value = -1 }
+		multiply_variable = { which = lmmse_spouse_learning_bonus value = -1 }
+		
+		change_diplomacy	= lmmse_spouse_diplomacy_bonus
+		change_martial		= lmmse_spouse_martial_bonus
+		change_stewardship	= lmmse_spouse_stewardship_bonus
+		change_intrigue		= lmmse_spouse_intrigue_bonus
+		change_learning		= lmmse_spouse_learning_bonus
+		
+		clr_character_flag = lmmse_spouse_focus_diplomacy
+		clr_character_flag = lmmse_spouse_focus_martial
+		clr_character_flag = lmmse_spouse_focus_stewardship
+		clr_character_flag = lmmse_spouse_focus_intrigue
+		clr_character_flag = lmmse_spouse_focus_learning
+		
+		export_to_variable = { which = lmmse_spouse_diplomacy value = diplomacy who = event_target:empowered_spouse }
+		export_to_variable = { which = lmmse_spouse_martial value = martial who = event_target:empowered_spouse }
+		export_to_variable = { which = lmmse_spouse_stewardship value = stewardship who = event_target:empowered_spouse }
+		export_to_variable = { which = lmmse_spouse_intrigue value = intrigue who = event_target:empowered_spouse }
+		export_to_variable = { which = lmmse_spouse_learning value = learning who = event_target:empowered_spouse }
+		
+		set_variable = { which = lmmse_spouse_diplomacy_bonus value = 0 }
+		set_variable = { which = lmmse_spouse_martial_bonus value = 0 }
+		set_variable = { which = lmmse_spouse_stewardship_bonus value = 0 }
+		set_variable = { which = lmmse_spouse_intrigue_bonus value = 0 }
+		set_variable = { which = lmmse_spouse_learning_bonus value = 0 }
+		
+		set_variable = { which = local_spouse_diplomacy_bonus which = lmmse_spouse_diplomacy }
+		set_variable = { which = local_spouse_martial_bonus which = lmmse_spouse_martial }
+		set_variable = { which = local_spouse_stewardship_bonus which = lmmse_spouse_stewardship }
+		set_variable = { which = local_spouse_intrigue_bonus which = lmmse_spouse_intrigue }
+		set_variable = { which = local_spouse_learning_bonus which = lmmse_spouse_learning }
+		
+		primary_title = {
+			trigger_switch = {
+				on_trigger = has_law
+				
+				lmmse_spouse_empowerment_1 = { 
+					multiply_variable = { which = local_spouse_diplomacy_bonus which = global_lmmse_bonus_for_law_1 }
+					multiply_variable = { which = local_spouse_martial_bonus which = global_lmmse_bonus_for_law_1 }
+					multiply_variable = { which = local_spouse_stewardship_bonus which = global_lmmse_bonus_for_law_1 }
+					multiply_variable = { which = local_spouse_intrigue_bonus which = global_lmmse_bonus_for_law_1 }
+					multiply_variable = { which = local_spouse_learning_bonus which = global_lmmse_bonus_for_law_1 }
+				}
+				lmmse_spouse_empowerment_2 = { 
+					multiply_variable = { which = local_spouse_diplomacy_bonus which = global_lmmse_bonus_for_law_2 } 
+					multiply_variable = { which = local_spouse_martial_bonus which = global_lmmse_bonus_for_law_2 }
+					multiply_variable = { which = local_spouse_stewardship_bonus which = global_lmmse_bonus_for_law_2 }
+					multiply_variable = { which = local_spouse_intrigue_bonus which = global_lmmse_bonus_for_law_2 }
+					multiply_variable = { which = local_spouse_learning_bonus which = global_lmmse_bonus_for_law_2 }
+				}
+				lmmse_spouse_empowerment_3 = { 
+					multiply_variable = { which = local_spouse_diplomacy_bonus which = global_lmmse_bonus_for_law_3 } 
+					multiply_variable = { which = local_spouse_martial_bonus which = global_lmmse_bonus_for_law_3 }
+					multiply_variable = { which = local_spouse_stewardship_bonus which = global_lmmse_bonus_for_law_3 }
+					multiply_variable = { which = local_spouse_intrigue_bonus which = global_lmmse_bonus_for_law_3 }
+					multiply_variable = { which = local_spouse_learning_bonus which = global_lmmse_bonus_for_law_3 }
+				}				
+				lmmse_spouse_empowerment_4 = { 
+					multiply_variable = { which = local_spouse_diplomacy_bonus which = global_lmmse_bonus_for_law_4 } 
+					multiply_variable = { which = local_spouse_martial_bonus which = global_lmmse_bonus_for_law_4 }
+					multiply_variable = { which = local_spouse_stewardship_bonus which = global_lmmse_bonus_for_law_4 }
+					multiply_variable = { which = local_spouse_intrigue_bonus which = global_lmmse_bonus_for_law_4 }
+					multiply_variable = { which = local_spouse_learning_bonus which = global_lmmse_bonus_for_law_4 }
+				}						
+			}
+		}
+		
+		set_variable = { which = local_spouse_diplomacy_bonus_everything which = local_spouse_diplomacy_bonus }
+		set_variable = { which = local_spouse_martial_bonus_everything which = local_spouse_martial_bonus }
+		set_variable = { which = local_spouse_stewardship_bonus_everything which = local_spouse_stewardship_bonus }
+		set_variable = { which = local_spouse_intrigue_bonus_everything which = local_spouse_intrigue_bonus }
+		set_variable = { which = local_spouse_learning_bonus_everything which = local_spouse_learning_bonus }
+		
+		if = {
+			limit = { NOT = { check_variable = { which = local_spouse_diplomacy_bonus value = 1 } } }
+			set_variable = { which = local_spouse_diplomacy_bonus value = 1 }
+		}
+		if = {
+			limit = { NOT = { check_variable = { which = local_spouse_martial_bonus value = 1 } } }
+			set_variable = { which = local_spouse_martial_bonus value = 1 }
+		}
+		if = {
+			limit = { NOT = { check_variable = { which = local_spouse_stewardship_bonus value = 1 } } }
+			set_variable = { which = local_spouse_stewardship_bonus value = 1 }
+		}
+		if = {
+			limit = { NOT = { check_variable = { which = local_spouse_intrigue_bonus value = 1 } } }
+			set_variable = { which = local_spouse_intrigue_bonus value = 1 }
+		}
+		if = {
+			limit = { NOT = { check_variable = { which = local_spouse_learning_bonus value = 1 } } }
+			set_variable = { which = local_spouse_learning_bonus value = 1 }
+		}
+		
+		# AI will never choose the focus "everything" so we don't need these calculations
+		if = {
+			limit = { ai = no }
+			multiply_variable = { which = local_spouse_diplomacy_bonus_everything which = global_lmmse_penalty_for_everything }
+			multiply_variable = { which = local_spouse_martial_bonus_everything which = global_lmmse_penalty_for_everything }
+			multiply_variable = { which = local_spouse_stewardship_bonus_everything which = global_lmmse_penalty_for_everything }
+			multiply_variable = { which = local_spouse_intrigue_bonus_everything which = global_lmmse_penalty_for_everything }
+			multiply_variable = { which = local_spouse_learning_bonus_everything which = global_lmmse_penalty_for_everything }
+			
+			if = {
+				limit = { NOT = { check_variable = { which = local_spouse_diplomacy_bonus_everything value = 1 } } }
+				set_variable = { which = local_spouse_diplomacy_bonus_everything value = 1 }
+			}
+			if = {
+				limit = { NOT = { check_variable = { which = local_spouse_martial_bonus_everything value = 1 } } }
+				set_variable = { which = local_spouse_martial_bonus_everything value = 1 }
+			}
+			if = {
+				limit = { NOT = { check_variable = { which = local_spouse_stewardship_bonus_everything value = 1 } } }
+				set_variable = { which = local_spouse_stewardship_bonus_everything value = 1 }
+			}
+			if = {
+				limit = { NOT = { check_variable = { which = local_spouse_intrigue_bonus_everything value = 1 } } }
+				set_variable = { which = local_spouse_intrigue_bonus_everything value = 1 }
+			}
+			if = {
+				limit = { NOT = { check_variable = { which = local_spouse_learning_bonus_everything value = 1 } } }
+				set_variable = { which = local_spouse_learning_bonus_everything value = 1 }
+			}
+		}		
+	}
+	
+	option = {
+		name = EVTOPT_FocusDiplomacy_lmmse.1
+		trigger = {
+			ai = no
+			#event_target:empowered_spouse = { diplomacy = 1 }
+		}
+		
+		clr_character_flag = lmmse_choosing_spouse_focus		
+		if = {
+			limit = {
+				event_target:empowered_spouse = {
+					OR = {
+						has_minor_title = title_lmmse_empowered_spouse 
+						has_minor_title = title_lmmse_empowered_spouse_voter
+					}
+				}
+			}			
+			lmmse_apply_diplomacy_bonus_effect = yes
+			hidden_tooltip = {
+				add_character_modifier = { modifier = lmmse_spouse_support_modifier duration = -1 }
+			}
+		}
+		else = {
+			custom_tooltip = {
+				text = lmmse_ctt_choosing_focus_when_spouse_not_empowered_anymore
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPT_FocusMartial_lmmse.1		
+		trigger = {
+			ai = no			
+			#event_target:empowered_spouse = { martial = 1 }
+		}
+		
+		clr_character_flag = lmmse_choosing_spouse_focus		
+		if = {
+			limit = {
+				event_target:empowered_spouse = {
+					OR = {
+						has_minor_title = title_lmmse_empowered_spouse 
+						has_minor_title = title_lmmse_empowered_spouse_voter
+					}
+				}
+			}			
+			lmmse_apply_martial_bonus_effect = yes
+			hidden_tooltip = {
+				add_character_modifier = { modifier = lmmse_spouse_support_modifier duration = -1 }
+			}
+		}
+		else = {
+			custom_tooltip = {
+				text = lmmse_ctt_choosing_focus_when_spouse_not_empowered_anymore
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPT_FocusStewardship_lmmse.1
+		trigger = {
+			ai = no			
+			#event_target:empowered_spouse = { stewardship = 1 }
+		}
+		
+		clr_character_flag = lmmse_choosing_spouse_focus		
+		if = {
+			limit = {
+				event_target:empowered_spouse = {
+					OR = {
+						has_minor_title = title_lmmse_empowered_spouse 
+						has_minor_title = title_lmmse_empowered_spouse_voter
+					}
+				}
+			}			
+			lmmse_apply_stewardship_bonus_effect = yes
+			hidden_tooltip = {
+				add_character_modifier = { modifier = lmmse_spouse_support_modifier duration = -1 }
+			}
+		}
+		else = {
+			custom_tooltip = {
+				text = lmmse_ctt_choosing_focus_when_spouse_not_empowered_anymore
+			}
+		}
+	}
+	
+	option = {		
+		name = EVTOPT_OtherOptions
+		trigger = { ai = no }		
+		if = {
+			limit = {
+				event_target:empowered_spouse = {
+					OR = {
+						has_minor_title = title_lmmse_empowered_spouse 
+						has_minor_title = title_lmmse_empowered_spouse_voter
+					}
+				}
+			}
+			character_event = { id = lmmse.2 } # Other options
+		}
+		else = {
+			custom_tooltip = {
+				text = lmmse_ctt_choosing_focus_when_spouse_not_empowered_anymore
+			}
+		}
+	}
+	
+	# AI gets no option, instead all AI logic is in this option.
+	option = {
+		name = OK
+		trigger = { ai = yes }		
+		
+		clr_character_flag = lmmse_choosing_spouse_focus
+		add_character_modifier = { modifier = lmmse_spouse_support_modifier duration = -1 }
+		set_variable = { which = local_spouse_preferred_focus value = 1 }		
+		
+		if = {
+			limit = {								
+				check_variable = { which = lmmse_spouse_martial which = lmmse_spouse_diplomacy }					
+			}
+			set_variable = { which = local_spouse_preferred_focus value = 2 }
+		}
+		if = {
+			limit = {
+				check_variable = { which = lmmse_spouse_stewardship which = lmmse_spouse_diplomacy }
+				check_variable = { which = lmmse_spouse_stewardship which = lmmse_spouse_martial }				
+			}
+			set_variable = { which = local_spouse_preferred_focus value = 3 }
+		}
+		if = {
+			limit = {
+				check_variable = { which = lmmse_spouse_intrigue which = lmmse_spouse_diplomacy }
+				check_variable = { which = lmmse_spouse_intrigue which = lmmse_spouse_martial }
+				check_variable = { which = lmmse_spouse_intrigue which = lmmse_spouse_stewardship }				
+			}
+			set_variable = { which = local_spouse_preferred_focus value = 4 }
+		}
+		if = {
+			limit = {
+				check_variable = { which = lmmse_spouse_learning which = lmmse_spouse_diplomacy }
+				check_variable = { which = lmmse_spouse_learning which = lmmse_spouse_martial }
+				check_variable = { which = lmmse_spouse_learning which = lmmse_spouse_stewardship }
+				check_variable = { which = lmmse_spouse_learning which = lmmse_spouse_intrigue }				
+			}
+			set_variable = { which = local_spouse_preferred_focus value = 5 }
+		}
+
+		if = {
+			limit = {
+				is_variable_equal = { which = local_spouse_preferred_focus value = 1 }
+			}				
+			lmmse_apply_diplomacy_bonus_effect = yes
+		}
+		else_if = {
+			limit = {
+				is_variable_equal = { which = local_spouse_preferred_focus value = 2 }
+			}			
+			lmmse_apply_martial_bonus_effect = yes
+		}
+		else_if = {
+			limit = {
+				is_variable_equal = { which = local_spouse_preferred_focus value = 3 }
+			}
+			lmmse_apply_stewardship_bonus_effect = yes
+		}
+		else_if = {
+			limit = {
+				is_variable_equal = { which = local_spouse_preferred_focus value = 4 }
+			}
+			lmmse_apply_intrigue_bonus_effect = yes
+		}
+		else_if = {
+			limit = {
+				is_variable_equal = { which = local_spouse_preferred_focus value = 5 }
+			}
+			lmmse_apply_learning_bonus_effect = yes
+		}		
+	}
+}
+
+character_event = {
+	id = lmmse.2
+	picture = GFX_evt_princess_byzantine
+	desc = EVTDESC_SetSpouseFocus
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPT_FocusIntrigue_lmmse.2
+		trigger = {
+			#event_target:empowered_spouse = { intrigue = 1 }
+		}
+		
+		clr_character_flag = lmmse_choosing_spouse_focus		
+		if = {
+			limit = {
+				event_target:empowered_spouse = {
+					OR = {
+						has_minor_title = title_lmmse_empowered_spouse 
+						has_minor_title = title_lmmse_empowered_spouse_voter
+					}
+				}
+			}			
+			lmmse_apply_intrigue_bonus_effect = yes
+			hidden_tooltip = {
+				add_character_modifier = { modifier = lmmse_spouse_support_modifier duration = -1 }
+			}
+		}
+		else = {
+			custom_tooltip = {
+				text = lmmse_ctt_choosing_focus_when_spouse_not_empowered_anymore
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPT_FocusLearning_lmmse.2
+		trigger = {
+			#event_target:empowered_spouse = { learning = 1 }
+		}
+		
+		clr_character_flag = lmmse_choosing_spouse_focus		
+		if = {
+			limit = {
+				event_target:empowered_spouse = {
+					OR = {
+						has_minor_title = title_lmmse_empowered_spouse 
+						has_minor_title = title_lmmse_empowered_spouse_voter
+					}
+				}
+			}			
+			lmmse_apply_learning_bonus_effect = yes
+			hidden_tooltip = {
+				add_character_modifier = { modifier = lmmse_spouse_support_modifier duration = -1 }
+			}
+		}
+		else = {
+			custom_tooltip = {
+				text = lmmse_ctt_choosing_focus_when_spouse_not_empowered_anymore
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPT_FocusEverything_lmmse.2
+		
+		clr_character_flag = lmmse_choosing_spouse_focus
+		if = {
+			limit = {
+				event_target:empowered_spouse = {
+					OR = {
+						has_minor_title = title_lmmse_empowered_spouse 
+						has_minor_title = title_lmmse_empowered_spouse_voter
+					}
+				}
+			}
+			
+			hidden_tooltip = {
+				add_character_modifier = { modifier = lmmse_spouse_support_modifier duration = -1 }
+			}
+			
+			hidden_tooltip = {
+				export_to_variable = { which = local_my_old_diplomacy value = diplomacy }
+			}
+			
+			change_diplomacy = local_spouse_diplomacy_bonus_everything
+			
+			hidden_tooltip = {
+				set_character_flag = lmmse_spouse_focus_diplomacy
+				export_to_variable = { which = local_my_new_diplomacy value = diplomacy }
+				subtract_variable = { which = local_my_new_diplomacy which = local_my_old_diplomacy }
+				set_variable = { which = lmmse_spouse_diplomacy_bonus which = local_my_new_diplomacy }			
+			}
+			
+			hidden_tooltip = {
+				export_to_variable = { which = local_my_old_martial value = martial }
+			}
+			
+			change_martial = local_spouse_martial_bonus_everything
+			
+			hidden_tooltip = {
+				set_character_flag = lmmse_spouse_focus_martial
+				export_to_variable = { which = local_my_new_martial value = martial }
+				subtract_variable = { which = local_my_new_martial which = local_my_old_martial }
+				set_variable = { which = lmmse_spouse_martial_bonus which = local_my_new_martial }
+			}
+			
+			hidden_tooltip = {
+				export_to_variable = { which = local_my_old_stewardship value = stewardship }
+			}
+			
+			change_stewardship = local_spouse_stewardship_bonus_everything
+			
+			hidden_tooltip = {
+				set_character_flag = lmmse_spouse_focus_stewardship
+				export_to_variable = { which = local_my_new_stewardship value = stewardship }
+				subtract_variable = { which = local_my_new_stewardship which = local_my_old_stewardship }
+				set_variable = { which = lmmse_spouse_stewardship_bonus which = local_my_new_stewardship }
+			}
+			
+			hidden_tooltip = {
+				export_to_variable = { which = local_my_old_intrigue value = intrigue }
+			}
+			
+			change_intrigue = local_spouse_intrigue_bonus_everything
+			
+			hidden_tooltip = {
+				set_character_flag = lmmse_spouse_focus_intrigue
+				export_to_variable = { which = local_my_new_intrigue value = intrigue }
+				subtract_variable = { which = local_my_new_intrigue which = local_my_old_intrigue }
+				set_variable = { which = lmmse_spouse_intrigue_bonus which = local_my_new_intrigue }
+			}
+			
+			hidden_tooltip = {
+				export_to_variable = { which = local_my_old_learning value = learning }
+			}
+			
+			change_learning = local_spouse_learning_bonus_everything
+			
+			hidden_tooltip = {
+				set_character_flag = lmmse_spouse_focus_learning
+				export_to_variable = { which = local_my_new_learning value = learning }
+				subtract_variable = { which = local_my_new_learning which = local_my_old_learning }
+				set_variable = { which = lmmse_spouse_learning_bonus which = local_my_new_learning }
+			}
+		}
+		else = {
+			custom_tooltip = {
+				text = lmmse_ctt_choosing_focus_when_spouse_not_empowered_anymore
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPT_OtherOptions		
+		
+		clr_character_flag = lmmse_choosing_spouse_focus		
+		if = {
+			limit = {
+				event_target:empowered_spouse = {
+					OR = {
+						has_minor_title = title_lmmse_empowered_spouse 
+						has_minor_title = title_lmmse_empowered_spouse_voter
+					}
+				}
+			}
+			repeat_event = { id = lmmse.1 } # Go back to first event
+		}
+		else = {
+			custom_tooltip = {
+				text = lmmse_ctt_choosing_focus_when_spouse_not_empowered_anymore
+			}
+		}
+	}
+}

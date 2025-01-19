@@ -1,0 +1,183 @@
+# In ruler scope
+lmmse_reset_liege_effect = {
+	remove_character_modifier = lmmse_spouse_support_modifier
+			
+	multiply_variable = { which = lmmse_spouse_diplomacy_bonus value = -1 }
+	multiply_variable = { which = lmmse_spouse_martial_bonus value = -1 }
+	multiply_variable = { which = lmmse_spouse_stewardship_bonus value = -1 }			
+	multiply_variable = { which = lmmse_spouse_intrigue_bonus value = -1 }
+	multiply_variable = { which = lmmse_spouse_learning_bonus value = -1 }
+	
+	change_diplomacy	= lmmse_spouse_diplomacy_bonus
+	change_martial		= lmmse_spouse_martial_bonus
+	change_stewardship	= lmmse_spouse_stewardship_bonus
+	change_intrigue		= lmmse_spouse_intrigue_bonus
+	change_learning		= lmmse_spouse_learning_bonus
+	
+	set_variable = { which = lmmse_spouse_diplomacy_bonus value = 0 }
+	set_variable = { which = lmmse_spouse_martial_bonus value = 0 }
+	set_variable = { which = lmmse_spouse_stewardship_bonus value = 0 }			
+	set_variable = { which = lmmse_spouse_intrigue_bonus value = 0 }
+	set_variable = { which = lmmse_spouse_learning_bonus value = 0 }
+}
+
+# In empowered spouse scope
+lmmse_remove_empowered_spouse_title_effect = {
+	if = {
+		limit = { has_minor_title = title_lmmse_empowered_spouse }
+		remove_title = title_lmmse_empowered_spouse
+	}
+	else = {
+		remove_title = title_lmmse_empowered_spouse_voter
+	}
+}
+
+# In ruler scope
+lmmse_clear_bonus_if_spouse_diplomacy_changed_effect = {
+	set_variable = { which = global_lmmse_spouse_diplomacy_old which = lmmse_spouse_diplomacy }
+	export_to_variable = { which = lmmse_spouse_diplomacy value = diplomacy who = event_target:empowered_spouse }
+	if = {
+		limit = {
+			NOT = {	is_variable_equal = { which = lmmse_spouse_diplomacy which = global_lmmse_spouse_diplomacy_old } }
+		}
+		set_character_flag = lmmse_spouse_diplomacy_changed
+		multiply_variable = { which = lmmse_spouse_diplomacy_bonus value = -1 }
+		change_diplomacy = lmmse_spouse_diplomacy_bonus					
+	}
+}
+
+# In ruler scope
+lmmse_clear_bonus_if_spouse_martial_changed_effect = {
+	set_variable = { which = global_lmmse_spouse_martial_old which = lmmse_spouse_martial }
+	export_to_variable = { which = lmmse_spouse_martial value = martial who = event_target:empowered_spouse }
+	if = {
+		limit = {
+			NOT = {	is_variable_equal = { which = lmmse_spouse_martial which = global_lmmse_spouse_martial_old } }
+		}
+		set_character_flag = lmmse_spouse_martial_changed
+		multiply_variable = { which = lmmse_spouse_martial_bonus value = -1 }
+		change_martial = lmmse_spouse_martial_bonus
+	}
+}
+
+# In ruler scope
+lmmse_clear_bonus_if_spouse_stewardship_changed_effect = {
+	set_variable = { which = global_lmmse_spouse_stewardship_old which = lmmse_spouse_stewardship }
+	export_to_variable = { which = lmmse_spouse_stewardship value = stewardship who = event_target:empowered_spouse }
+	if = {
+		limit = {
+			NOT = {	is_variable_equal = { which = lmmse_spouse_stewardship which = global_lmmse_spouse_stewardship_old } }
+		}
+		set_character_flag = lmmse_spouse_stewardship_changed
+		multiply_variable = { which = lmmse_spouse_stewardship_bonus value = -1 }
+		change_stewardship = lmmse_spouse_stewardship_bonus	
+	}
+}
+
+# In ruler scope
+lmmse_clear_bonus_if_spouse_intrigue_changed_effect = {
+	set_variable = { which = global_lmmse_spouse_intrigue_old which = lmmse_spouse_intrigue }
+	export_to_variable = { which = lmmse_spouse_intrigue value = intrigue who = event_target:empowered_spouse }
+	if = {
+		limit = {
+			NOT = {	is_variable_equal = { which = lmmse_spouse_intrigue which = global_lmmse_spouse_intrigue_old } }
+		}
+		set_character_flag = lmmse_spouse_intrigue_changed
+		multiply_variable = { which = lmmse_spouse_intrigue_bonus value = -1 }
+		change_intrigue = lmmse_spouse_intrigue_bonus		
+	}
+}
+
+# In ruler scope
+lmmse_clear_bonus_if_spouse_learning_changed_effect = {
+	set_variable = { which = global_lmmse_spouse_learning_old which = lmmse_spouse_learning }
+	export_to_variable = { which = lmmse_spouse_learning value = learning who = event_target:empowered_spouse }
+	if = {
+		limit = {
+			NOT = {	is_variable_equal = { which = lmmse_spouse_learning which = global_lmmse_spouse_learning_old } }
+		}
+		set_character_flag = lmmse_spouse_learning_changed
+		multiply_variable = { which = lmmse_spouse_learning_bonus value = -1 }
+		change_learning = lmmse_spouse_learning_bonus
+	}
+}
+
+# In ruler scope
+lmmse_apply_diplomacy_bonus_effect = {
+	hidden_tooltip = {
+		export_to_variable = { which = local_my_old_diplomacy value = diplomacy }
+	}
+	
+	change_diplomacy = local_spouse_diplomacy_bonus
+	
+	hidden_tooltip = {
+		set_character_flag = lmmse_spouse_focus_diplomacy
+		export_to_variable = { which = local_my_new_diplomacy value = diplomacy }
+		subtract_variable = { which = local_my_new_diplomacy which = local_my_old_diplomacy }
+		set_variable = { which = lmmse_spouse_diplomacy_bonus which = local_my_new_diplomacy }			
+	}
+}
+
+# In ruler scope
+lmmse_apply_martial_bonus_effect = {
+	hidden_tooltip = {
+		export_to_variable = { which = local_my_old_martial value = martial }
+	}
+	
+	change_martial = local_spouse_martial_bonus
+	
+	hidden_tooltip = {
+		set_character_flag = lmmse_spouse_focus_martial
+		export_to_variable = { which = local_my_new_martial value = martial }
+		subtract_variable = { which = local_my_new_martial which = local_my_old_martial }
+		set_variable = { which = lmmse_spouse_martial_bonus which = local_my_new_martial }
+	}
+}
+
+# In ruler scope
+lmmse_apply_stewardship_bonus_effect = {
+	hidden_tooltip = {
+		export_to_variable = { which = local_my_old_stewardship value = stewardship }
+	}
+	
+	change_stewardship = local_spouse_stewardship_bonus
+	
+	hidden_tooltip = {
+		set_character_flag = lmmse_spouse_focus_stewardship
+		export_to_variable = { which = local_my_new_stewardship value = stewardship }
+		subtract_variable = { which = local_my_new_stewardship which = local_my_old_stewardship }
+		set_variable = { which = lmmse_spouse_stewardship_bonus which = local_my_new_stewardship }
+	}
+}
+
+# In ruler scope
+lmmse_apply_intrigue_bonus_effect = {
+	hidden_tooltip = {
+		export_to_variable = { which = local_my_old_intrigue value = intrigue }
+	}
+	
+	change_intrigue = local_spouse_intrigue_bonus
+	
+	hidden_tooltip = {
+		set_character_flag = lmmse_spouse_focus_intrigue
+		export_to_variable = { which = local_my_new_intrigue value = intrigue }
+		subtract_variable = { which = local_my_new_intrigue which = local_my_old_intrigue }
+		set_variable = { which = lmmse_spouse_intrigue_bonus which = local_my_new_intrigue }
+	}
+}
+
+# In ruler scope
+lmmse_apply_learning_bonus_effect = { 
+	hidden_tooltip = {
+		export_to_variable = { which = local_my_old_learning value = learning }
+	}
+	
+	change_learning = local_spouse_learning_bonus
+	
+	hidden_tooltip = {
+		set_character_flag = lmmse_spouse_focus_learning
+		export_to_variable = { which = local_my_new_learning value = learning }
+		subtract_variable = { which = local_my_new_learning which = local_my_old_learning }
+		set_variable = { which = lmmse_spouse_learning_bonus which = local_my_new_learning }
+	}
+}

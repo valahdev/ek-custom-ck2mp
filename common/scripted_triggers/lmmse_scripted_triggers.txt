@@ -1,0 +1,18 @@
+# In ruler scope
+lmmse_can_use_spouse_empowerment_laws_trigger = {	
+	holder_scope = {		
+		NOR = {
+			is_nomadic = yes
+			is_tribal = yes
+			is_republic = yes
+		}
+	}
+}
+
+# In candidate for empowered spouse scope
+lmmse_basic_eligibility_for_holding_title_trigger = {
+	is_adult = yes
+	prisoner = no
+	is_incapable = no
+	is_ruler = no	
+}

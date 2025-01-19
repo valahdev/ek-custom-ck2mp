@@ -1,0 +1,341 @@
+title_lmmse_empowered_spouse = {
+	is_high_prio = yes
+	show_as_title = no
+		
+	dignity = 0.10
+	
+	grant_limit = 1
+	
+	opinion_effect = 10
+	
+	monthly_prestige = 1.00
+	
+	is_unique = no
+	
+	# ROOT is candidate, FROM is title granter
+	allowed_to_hold = {
+		lmmse_basic_eligibility_for_holding_title_trigger = yes
+		spouse = { character = FROM }
+		OR = {
+			custom_tooltip = {
+				text = lmmse_ctt_is_primary_spouse
+				FROM = {
+					spouse = {
+						character = ROOT
+					}
+				}
+			}
+			AND = {
+				custom_tooltip = {
+					text = lmmse_ctt_is_not_primary_spouse
+					NOT = { FROM = { spouse = { character = ROOT } } }
+				}
+				custom_tooltip = {
+					text = lmmse_ctt_primary_spouse_is_not_eligible
+					FROM = { 
+						spouse = { 
+							OR = {
+								lmmse_basic_eligibility_for_holding_title_trigger = no 
+								NOT = { is_vassal_or_below_of = PREV }
+							}							
+						}
+					}
+				}
+				custom_tooltip = {
+					text = lmmse_ctt_title_vacant_or_held_by_ineligible
+					FROM = {					
+						OR = {
+							NOT = { 
+								persistent_event_target:lmmse_my_empowered_spouse = {
+									always = yes
+								}
+							}
+							persistent_event_target:lmmse_my_empowered_spouse = {
+								lmmse_basic_eligibility_for_holding_title_trigger = no
+							}
+						}
+					}				
+				}
+			}
+		}
+	}
+	
+	# ROOT is title granter
+	allowed_to_grant = {
+		OR = {
+			NOT = { has_dlc = "Zeus" }
+			has_game_rule = { name = "lmmse_rule_voting_rights" value = lmmse_rule_option_disabled }			
+		}
+		OR = {
+			NOT = { has_dlc = "Zeus" }
+			NOR = {
+				has_game_rule = { name = "lmmse_rule_availability" value = "lmmse_rule_option_restricted" }
+				has_game_rule = { name = "lmmse_rule_availability" value = "lmmse_rule_option_council_laws_only" }
+			}
+			primary_title = { has_law = law_voting_power_1 }			
+		}
+		OR = {
+			NOR = {
+				has_game_rule = { name = "lmmse_rule_availability" value = "lmmse_rule_option_restricted" }
+				has_game_rule = { name = "lmmse_rule_availability" value = "lmmse_rule_option_succ_laws_only" }
+			}
+			NOR = { 
+				has_law = agnatic_succession
+				has_law = enatic_succession
+			}
+		}
+		primary_title = {						
+			OR = {
+				has_law = lmmse_spouse_empowerment_1
+				has_law = lmmse_spouse_empowerment_2
+				has_law = lmmse_spouse_empowerment_3
+				has_law = lmmse_spouse_empowerment_4
+			}
+		}
+		# OR = {
+			# # If primary spouse is eligible to hold the title
+			# spouse = {
+				# lmmse_basic_eligibility_for_holding_title_trigger = yes
+				# is_vassal_or_below_of = PREV
+			# }
+			# # If secondary spouse is eligible to hold the title
+			# any_spouse = {
+				# NOT = { ROOT = { spouse = { character = PREVPREV } } }
+				# lmmse_basic_eligibility_for_holding_title_trigger = yes
+				# is_vassal_or_below_of = PREV
+			# }
+		# }
+		any_spouse = {
+			lmmse_basic_eligibility_for_holding_title_trigger = yes
+			is_vassal_or_below_of = PREV
+		}
+	}
+	
+	gain_effect = {		
+		hidden_tooltip = {			
+			save_event_target_as = empowered_spouse
+			liege = {
+				log = "LMMSE: [This.GetTitledName] gave title title_lmmse_empowered_spouse to [empowered_spouse.GetTitledName]"
+				save_persistent_event_target = { name = lmmse_my_empowered_spouse scope = PREV }
+				character_event = { id = lmmse.1 } # Ask liege to set focus for spouse
+				if = {
+					limit = {
+						NOT = { has_character_flag = lmmse_yearly_event_called_by_@event_target:empowered_spouse }
+					}
+					set_character_flag = lmmse_yearly_event_called_by_@event_target:empowered_spouse
+					character_event = { id = lmmse_maintenance.2 days = 365 } # Check spouse attributes next year and adjust modifier 
+				}
+			}
+		}
+	}
+	
+	lose_effect = {
+		log = "LMMSE: [This.GetTitledName] is no longer Empowered Spouse: lose_effect"
+		hidden_tooltip = {			
+			liege = {								
+				clear_persistent_event_target = lmmse_my_empowered_spouse
+				clr_character_flag = lmmse_yearly_event_called_by_@event_target:empowered_spouse
+				lmmse_reset_liege_effect = yes
+			}
+		}
+	}
+	
+	retire_effect = {
+		log = "LMMSE: [This.GetTitledName] is no longer Empowered Spouse: retire_effect"
+		hidden_tooltip = {			
+			liege = {								
+				clear_persistent_event_target = lmmse_my_empowered_spouse
+				clr_character_flag = lmmse_yearly_event_called_by_@event_target:empowered_spouse
+				lmmse_reset_liege_effect = yes
+			}
+		}
+	}
+	
+	revoke_trigger = {
+		always = no
+	}
+	
+	death_effect = {
+		log = "LMMSE: [This.GetTitledName] is no longer Empowered Spouse: death_effect"
+		hidden_tooltip = {			
+			liege = {								
+				clear_persistent_event_target = lmmse_my_empowered_spouse
+				clr_character_flag = lmmse_yearly_event_called_by_@event_target:empowered_spouse
+				lmmse_reset_liege_effect = yes
+			}
+		}
+	}
+	
+	message = no
+}
+
+title_lmmse_empowered_spouse_voter = {
+	is_high_prio = yes
+	show_as_title = no
+	
+	is_voter = yes
+	
+	dignity = 0.10
+	
+	grant_limit = 1
+	
+	opinion_effect = 10
+	
+	monthly_prestige = 1.00
+	
+	is_unique = no
+	
+	# ROOT is candidate, FROM is title granter
+	allowed_to_hold = {
+		lmmse_basic_eligibility_for_holding_title_trigger = yes
+		spouse = { character = FROM }
+		OR = {
+			custom_tooltip = {
+				text = lmmse_ctt_is_primary_spouse
+				FROM = {
+					spouse = {
+						character = ROOT
+					}
+				}
+			}
+			AND = {
+				custom_tooltip = {
+					text = lmmse_ctt_is_not_primary_spouse
+					NOT = { FROM = { spouse = { character = ROOT } } }
+				}
+				custom_tooltip = {
+					text = lmmse_ctt_primary_spouse_is_not_eligible
+					FROM = { 
+						spouse = { 
+							OR = {
+								lmmse_basic_eligibility_for_holding_title_trigger = no 
+								NOT = { is_vassal_or_below_of = PREV }
+							}							
+						}
+					}
+				}
+				custom_tooltip = {
+					text = lmmse_ctt_title_vacant_or_held_by_ineligible
+					FROM = {					
+						OR = {
+							NOT = { 
+								persistent_event_target:lmmse_my_empowered_spouse = {
+									always = yes
+								}
+							}
+							persistent_event_target:lmmse_my_empowered_spouse = {
+								lmmse_basic_eligibility_for_holding_title_trigger = no
+							}
+						}
+					}				
+				}
+			}
+		}
+	}
+	
+	# ROOT is title granter
+	allowed_to_grant = {		
+		has_dlc = "Zeus"
+		has_game_rule = { name = "lmmse_rule_voting_rights" value = lmmse_rule_option_enabled }		
+		primary_title = {
+			#has_law = law_voting_power_1
+			OR = {
+				has_law = lmmse_spouse_empowerment_1
+				has_law = lmmse_spouse_empowerment_2
+				has_law = lmmse_spouse_empowerment_3
+				has_law = lmmse_spouse_empowerment_4
+			}
+		}
+		OR = {			
+			NOR = {
+				has_game_rule = { name = "lmmse_rule_availability" value = "lmmse_rule_option_restricted" }
+				has_game_rule = { name = "lmmse_rule_availability" value = "lmmse_rule_option_council_laws_only" }
+			}
+			primary_title = { has_law = law_voting_power_1 }			
+		}
+		OR = {
+			NOR = {
+				has_game_rule = { name = "lmmse_rule_availability" value = "lmmse_rule_option_restricted" }
+				has_game_rule = { name = "lmmse_rule_availability" value = "lmmse_rule_option_succ_laws_only" }
+			}
+			NOR = { 
+				has_law = agnatic_succession
+				has_law = enatic_succession
+			}
+		}
+		# OR = {
+			# # If primary spouse is eligible to hold the title
+			# spouse = {
+				# lmmse_basic_eligibility_for_holding_title_trigger = yes
+				# is_vassal_or_below_of = PREV
+			# }
+			# # If secondary spouse is eligible to hold the title
+			# any_spouse = {
+				# NOT = { ROOT = { spouse = { character = PREVPREV } } }
+				# lmmse_basic_eligibility_for_holding_title_trigger = yes
+				# is_vassal_or_below_of = PREV
+			# }
+		# }
+		any_spouse = {
+			lmmse_basic_eligibility_for_holding_title_trigger = yes
+			is_vassal_or_below_of = PREV
+		}
+	}
+	
+	gain_effect = {
+		hidden_tooltip = {					
+			save_event_target_as = empowered_spouse
+			liege = {
+				log = "LMMSE: [This.GetTitledName] gave title title_lmmse_empowered_spouse_voter to [empowered_spouse.GetTitledName]"
+				save_persistent_event_target = { name = lmmse_my_empowered_spouse scope = PREV }
+				character_event = { id = lmmse.1 } # Ask liege to set focus for spouse
+				if = {
+					limit = {
+						NOT = { has_character_flag = lmmse_yearly_event_called_by_@event_target:empowered_spouse }
+					}
+					set_character_flag = lmmse_yearly_event_called_by_@event_target:empowered_spouse
+					character_event = { id = lmmse_maintenance.2 days = 365 } # Check spouse attributes next year and adjust modifier 
+				}
+			}
+		}
+	}
+	
+	lose_effect = {
+		log = "LMMSE: [This.GetTitledName] is no longer Empowered Spouse: lose_effect"
+		hidden_tooltip = {						
+			liege = {								
+				clear_persistent_event_target = lmmse_my_empowered_spouse
+				clr_character_flag = lmmse_yearly_event_called_by_@event_target:empowered_spouse
+				lmmse_reset_liege_effect = yes
+			}
+		}
+	}
+	
+	retire_effect = {
+		log = "LMMSE: [This.GetTitledName] is no longer Empowered Spouse: retire_effect"
+		hidden_tooltip = {			
+			liege = {								
+				clear_persistent_event_target = lmmse_my_empowered_spouse
+				clr_character_flag = lmmse_yearly_event_called_by_@event_target:empowered_spouse
+				lmmse_reset_liege_effect = yes
+			}
+		}
+	}
+	
+	revoke_trigger = {
+		always = no
+	}
+	
+	death_effect = {
+		log = "LMMSE: [This.GetTitledName] is no longer Empowered Spouse: death_effect"
+		hidden_tooltip = {			
+			liege = {								
+				clear_persistent_event_target = lmmse_my_empowered_spouse
+				clr_character_flag = lmmse_yearly_event_called_by_@event_target:empowered_spouse
+				lmmse_reset_liege_effect = yes
+			}
+		}
+	}
+	
+	message = no
+}
