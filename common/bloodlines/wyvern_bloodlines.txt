@@ -1,0 +1,9 @@
+wyvern_bloodline = {
+	inheritance = patrilineal
+	allow_bastards = yes
+	monthly_character_piety = 0.5
+	monthly_character_prestige = 0.5
+	combat_rating = 5
+	bloodline_effect_sky_burial = 1
+	flags = { bloodline_wyvern_ball }
+}

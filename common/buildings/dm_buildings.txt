@@ -1,0 +1,30 @@
+city = {
+	city_of_gold = { 
+		desc = city_of_gold_desc
+		potential = { FROMFROM = { has_building = city_of_gold } }
+		trigger = { always = no }
+		gold_cost = 750
+		build_time = 1250
+		tech_growth_modifier = 0.15
+		economy_techpoints = 0.2
+		tax_income = 5.0
+		tradevalue = 5
+		max_tradeposts = 2
+	}
+}
+
+temple = {
+	fountain_of_youth = {
+		desc = fountain_of_youth_desc
+		potential = { FROMFROM = { has_building = fountain_of_youth } }
+		trigger = { always = no }
+		gold_cost = 750
+		build_time = 1250
+		levy_size = 0.25
+		garrison_size = 0.25
+		liege_piety = 0.25
+		hospital_level = 3		#might work?
+		disease_defence = 0.5
+		#gives random event adding +1 health but -5 age
+	}
+}

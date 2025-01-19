@@ -1,0 +1,537 @@
+decisions = {
+
+	dm_doot_doot = {
+		is_high_prio = yes
+		potential = {
+			ai = no
+			in_battle = yes
+			in_command = yes
+			has_character_modifier = dm_dootdoot
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+			any_current_enemy = {
+				limit = { 
+					at_location = ROOT
+					in_command = yes
+					prisoner = no
+				}
+				morale = -0.75
+			}
+			any_current_enemy = {
+				any_realm_character = {
+					limit = { 
+						at_location = ROOT
+						in_command = yes
+						prisoner = no
+					}
+					morale = -0.75
+				}
+			}
+			remove_character_modifier = dm_dootdoot			
+		}
+		ai_will_do = {
+			factor = 0 
+		}
+	}
+
+	dm_put_on_cursed_ring = {			#attempt to remove ring
+		is_high_prio = yes
+		ai_check_interval = 12
+		potential = {
+			any_artifact = {
+				artifact_type = cursed_ring
+			}
+			has_character_modifier = dm_resisted_ring
+			NOT = {
+				trait = dm_nazgul_trait
+			}
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+			remove_character_modifier = dm_resisted_ring
+		}
+
+		ai_will_do = {
+			factor = 1 
+		}
+	}
+
+	dm_resist_cursed_ring = {
+		is_high_prio = yes
+		ai_check_interval = 12
+		potential = {
+			any_artifact = {
+				artifact_type = cursed_ring
+			}
+			NOR = {
+				trait = dm_nazgul_trait
+				has_character_modifier = dm_resisted_ring
+			}
+		}
+
+		allow = {
+			always = yes
+			NOT = { has_character_modifier = dm_recently_resisted_ring }
+		}
+
+		effect = {
+			random_list = {
+				30 = {
+					custom_tooltip = {
+						text = DMCoreFollowTooltip28Chance
+					}
+					character_event = { id = DMCoreFollow.28 } #success
+					modifier = {
+						trait = humble
+						factor = 1.1
+					}
+					modifier = {
+						trait = content
+						factor = 1.1
+					}
+					modifier = {
+						trait = kind
+						factor = 1.1
+					}
+					modifier = {
+						trait = zealous
+						factor = 1.1
+					}
+					modifier = {
+						trait = chaste
+						factor = 1.1
+					}
+					modifier = {
+						trait = mystic		
+						factor = 1.2
+					}
+					modifier = {
+						trait = celibate	#good discipline
+						factor = 1.2
+					}
+				}
+				70 = {
+					custom_tooltip = {
+						text = DMCoreFollowTooltip29Chance
+					}
+					character_event = { id = DMCoreFollow.29 } #failure
+					modifier = {
+						trait = greedy
+						factor = 1.1
+					}
+					modifier = {
+						trait = shy
+						factor = 1.1
+					}
+					modifier = {
+						trait = slothful
+						factor = 1.1
+					}
+					modifier = {
+						trait = ambitious
+						factor = 1.1
+					}
+					modifier = {
+						trait = cynical
+						factor = 1.1
+					}
+					modifier = {
+						trait = gluttonous		#addictive personality
+						factor = 1.1
+					}
+					modifier = {
+						trait = drunkard		#addictive personality
+						factor = 1.1
+					}
+					modifier = {
+						trait = lustful		#addictive personality
+						factor = 1.1
+					}
+					modifier = {
+						trait = paranoid
+						factor = 1.1
+					}
+					modifier = {
+						trait = possessed
+						factor = 1.2
+					}
+					modifier = {
+						trait = lunatic
+						factor = 1.3
+					}
+					modifier = {
+						trait = depressed
+						factor = 1.3
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				trait = greedy
+				factor = 0.9
+			}
+			modifier = {
+				trait = shy
+				factor = 0.9
+			}
+			modifier = {
+				trait = slothful
+				factor = 0.9
+			}
+			modifier = {
+				trait = ambitious
+				factor = 0.9
+			}
+			modifier = {
+				trait = cynical
+				factor = 0.9
+			}
+			modifier = {
+				trait = gluttonous		#addictive personality
+				factor = 0.9
+			}
+			modifier = {
+				trait = drunkard		#addictive personality
+				factor = 0.9
+			}
+			modifier = {
+				trait = lustful		#addictive personality
+				factor = 0.9
+			}
+			modifier = {
+				trait = paranoid
+				factor = 0.9
+			}
+			modifier = {
+				trait = possessed
+				factor = 0.8
+			}
+			modifier = {
+				trait = lunatic
+				factor = 0.7
+			}
+			modifier = {
+				trait = depressed
+				factor = 0.7
+			}
+		}
+	}
+	
+	dm_upgrade_network = {
+		is_high_prio = yes
+		only_playable = yes
+		ai_check_interval = 12
+		potential = {
+			any_demesne_province = {
+				OR = {
+					has_province_modifier = dm_1G_tower
+					has_province_modifier = dm_2G_tower
+					has_province_modifier = dm_3G_tower
+					has_province_modifier = dm_4G_tower
+				}
+				NOT = {
+					has_province_modifier = dm_cows_working
+				}
+			}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			any_demesne_province = {
+				trigger_switch = {
+					on_trigger = has_province_modifier
+					dm_1G_tower = {
+						add_province_modifier = {
+							name = dm_cows_working
+							duration = 365
+						}
+						province_event = {
+							id = DMCoreFollow.22
+							days = 365
+						}
+					}
+					dm_2G_tower = {
+						add_province_modifier = {
+							name = dm_cows_working
+							duration = 365
+						}
+						province_event = {
+							id = DMCoreFollow.22
+							days = 365
+						}
+					}
+					dm_3G_tower = {
+						add_province_modifier = {
+							name = dm_cows_working
+							duration = 365
+						}
+						province_event = {
+							id = DMCoreFollow.22
+							days = 365
+						}
+					}
+					dm_4G_tower = {
+						add_province_modifier = {
+							name = dm_cows_working
+							duration = 365
+						}
+						province_event = {
+							id = DMCoreFollow.22
+							days = 365
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+
+	dm_unleash_the_5G = {
+		is_high_prio = yes
+		only_playable = yes
+		ai_check_interval = 12
+		potential = {
+			any_demesne_province = {
+				has_province_modifier = dm_5G_tower
+			}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			any_demesne_province = {
+				limit = {
+					has_province_modifier = dm_5G_tower
+				}
+				hidden_tooltip = {
+					location = {
+						activate_disease = dm_bovid19_disease
+						spawn_disease = dm_bovid19_disease
+					}
+				}
+				remove_province_modifier = dm_5G_tower
+			}
+			character_event = { id = DMCoreFollow.23 }
+		}
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+		
+
+	unite_the_wyvernballs = {
+		is_high_prio = yes
+		potential = {
+			has_global_flag = wyvernballs_launched
+			any_artifact = { has_artifact_flag = wyvernball }
+		}
+		allow = {
+			prisoner = no
+			NOT = { is_inaccessible_trigger = yes }
+			age = 16
+			custom_tooltip = {
+				text = collected_all_wyvernballs
+				any_artifact = { has_artifact_flag = wyvernball_1 }
+				any_artifact = { has_artifact_flag = wyvernball_2 }
+				any_artifact = { has_artifact_flag = wyvernball_3 }
+				any_artifact = { has_artifact_flag = wyvernball_4 }
+				any_artifact = { has_artifact_flag = wyvernball_5 }
+				any_artifact = { has_artifact_flag = wyvernball_6 }
+				any_artifact = { has_artifact_flag = wyvernball_7 }
+			}
+		}
+		effect = {
+			character_event = { id = DMCoreFollow.13 }
+		}
+	}
+	show_wyvernballs = {
+		is_high_prio = yes
+		potential = {
+			ai = no
+			has_global_flag = wyvernballs_launched
+			any_artifact = { has_artifact_flag = wyvernball }
+		}
+		allow = {
+			NOT = { has_character_flag = wyvernball_list }
+		}
+		effect = {
+			character_event = { id = DMCoreFollow.16 }
+			set_character_flag = wyvernball_list
+		}
+	}
+}
+
+targeted_decisions = {
+	death_note_decision = {
+		
+		only_playable = yes
+		ai_target_filter = all
+		ai_check_interval = 6
+
+		from_potential = {
+			has_character_flag = deathnote
+		}
+		
+		potential = {
+			
+		}
+		
+		allow = {
+			ROOT = {
+				NOT = {
+					has_character_flag = dungeon_master #no killing the DM
+				}
+			}
+			FROM = {
+				prisoner = no
+				NOT = { trait = incapable }
+				NOT = { is_inaccessible_trigger = yes }
+				opinion = {
+					who = ROOT
+					value <= 0
+				}
+			}
+		}
+		
+		effect = {
+			ROOT = {
+				death = {
+					death_reason = death_execution
+					killer = FROM
+				}
+			}
+			FROM = {
+				clr_character_flag = deathnote
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	get_out_of_jail_free = {
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 1
+
+		potential = {
+			is_adult = yes
+			has_character_flag = get_out_of_jail_free
+		}
+		allow = {
+			prisoner = yes
+		}
+		effect = {
+			imprison = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	dm_kidnap_into_dynasty = {
+		filter = all
+		ai_target_filter = none
+		from_potential = {
+			ai = no
+			has_character_flag = dm_can_kidnap
+		}
+		potential = {
+			is_adult = no
+			NOT = {
+				dynasty = FROM
+			}
+		}
+		allow = {
+			FROM = {
+				is_adult = yes
+			}
+			is_within_diplo_range = FROM
+			OR = {
+				NOT = { is_heir = yes }
+				any_player = {
+					is_parent_of = ROOT
+					any_child = {
+						is_pretender = yes
+						NOT = { character = ROOT }
+					}
+				}
+			}	
+			NOT = {
+				is_ruler = yes
+			}
+		}
+		effect = {
+			save_event_target_as = dm_kidnapped
+			FROM = {
+				save_event_target_as = dm_kidnapper
+			}
+			liege = {
+				save_event_target_as = dm_kidnapped_liege
+			}
+			FROM = {
+				clr_character_flag = dm_can_kidnap
+			}
+			dynasty = FROM
+			if = {
+				limit = {
+					trait = bastard
+				}
+				remove_trait = bastard
+			}
+			else_if = {
+				limit = {
+					trait = legit_bastard
+				}
+				remove_trait = legit_bastard
+			}
+			move_character = FROM
+			hidden_tooltip = {
+				if = {
+					limit = {
+						FROM = {
+							is_female = yes
+						}
+					}
+					set_mother = FROM
+					set_father = 0
+				}
+				else = {
+					set_father = FROM
+					set_mother = 0
+				}
+			}
+			random_list = {
+				50 = {
+					custom_tooltip = {
+						text = DMEventTooltip49Safe
+					}
+				}
+				50 = {
+					custom_tooltip = {
+						text = DMEventTooltip49Caught
+						event_target:dm_kidnapped_liege = {
+							character_event = { id = DMCoreFollow.19 }
+						}
+					}
+				}
+			}
+		}
+	}
+	
+}

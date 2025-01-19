@@ -1,0 +1,30 @@
+696969 = {
+	name="Master"
+	culture="dm_culture"
+	religion="dungeon_religion"
+}
+700000 = {
+	name="XIX"
+	culture="coptic"
+}
+700001 = {
+	name="Gary"
+	culture="gary_culture"
+}
+
+700002 = {
+	name = "Bonson"
+	culture = "bodpa"
+    coat_of_arms = {
+		religion = buddhist
+        template = 0
+        layer = {
+           texture = 0
+           texture_internal = 16
+           emblem = 0
+           color = 8
+           color = 7
+			color = 1
+        }
+    }	
+}

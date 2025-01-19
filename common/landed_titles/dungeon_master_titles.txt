@@ -1,0 +1,142 @@
+e_dungeon_master_governor = { 
+	color={ 245 240 10 }
+	color2={ 220 220 0 }
+	
+	capital = 1460 # Baygal, most characters wont be in diplomatic range
+	
+	title_female = "e_dungeon_master_governor_female"
+	title = "e_dungeon_master_governor_male"
+	short_name = yes	
+	# Always exists
+	landless = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	
+	purple_born_heirs = yes
+	religion = dungeon_master
+	can_be_claimed = no
+	can_be_usurped = no
+	name_tier = king
+	culture = dm_culture
+	mercenary = no
+
+}
+
+k_dungeon = {
+	color = { 1 1 1 }
+	color2 = { 1 1 1 }
+
+	culture = roman
+	religion = dungeon_religion
+
+	controls_religion = dungeon_religion
+
+	title = dungeon_master_title
+	title_female = dungeon_master_title
+	foa = dungeon_master_title_foa
+
+	primary = yes
+	landless = yes
+	dynasty_title_names = no
+	can_be_usurped = no
+	can_be_claimed = no
+
+	allow = { always = no }
+}
+
+k_kemet = {
+	color = { 1 1 1 }
+	color2 = { 1 1 1 }
+
+	culture = coptic
+	religion = kemetic
+
+	controls_religion = kemetic
+
+	title = pharoah
+	title_female = pharoah
+	foa = pharoah
+
+	primary = yes
+	landless = yes
+	dynasty_title_names = yes
+	can_be_usurped = no
+	can_be_claimed = no
+
+	allow = { always = no }
+}
+
+e_horse_lord = {
+	color = { 1 1 1 }
+	color2 = { 1 1 1 }
+
+	capital = 1925
+
+	culture = ROOT
+	religion = dungeon_religion
+
+	title = horse_lord
+	title_female = horse_lord
+	foa = horse_lord
+
+	primary = yes
+	landless = no
+	dynasty_title_names = no
+	can_be_usurped = no
+	can_be_claimed = no
+
+	allow = { always = no }
+}
+
+e_gary = {
+	color = { 0 0.1 1 }
+	color2 = { 1 1 0 }
+
+	capital = 1925
+
+	culture = ROOT
+	religion = ROOT
+
+	title = gary_lord
+	title_female = gary_lord
+	foa = gary_lord
+
+	primary = yes
+	landless = no
+	dynasty_title_names = no
+	can_be_usurped = no
+	can_be_claimed = no
+
+	allow = { always = no }
+}
+
+k_slave_master1 = {
+	color={ 255 255 255 }
+	
+	short_name = yes
+	
+	primary = yes
+	landless = yes
+	dynasty_title_names = no
+	allow = {
+		always = no
+	}
+}
+
+k_slave_master2 = {
+	color={ 0 0 0 }
+	
+	short_name = yes
+	
+	primary = yes
+	landless = yes
+	dynasty_title_names = no
+	allow = {
+		always = no
+	}
+}

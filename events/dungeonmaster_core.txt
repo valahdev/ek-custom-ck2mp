@@ -1,0 +1,764 @@
+namespace = DMCore
+
+character_event = {
+	id = DMCore.999
+	title = DMCoretitle1
+	desc = DMCoredesc1
+	picture = GFX_evt_lunatic
+	is_triggered_only = yes # on_yearly_pulse
+	offmap = allow
+	trigger = {
+		trait = dungeon_master
+		e_dungeon_master_governor = {
+			owner = {
+				character = ROOT
+			}
+		}
+		NOT = { has_global_flag = dungeon_master_working }
+		NOT = {
+			has_game_rule = {
+				name = dungeon_master_frequency
+				value = dm_freq_none
+			}
+		}
+	}
+	immediate = {
+		set_global_flag = dungeon_master_working
+		if = {
+			limit = {
+				has_game_rule = {
+					name = dungeon_master_frequency
+					value = dm_freq_5
+				}
+			}
+			offmap_dungeon_master = {
+				offmap_ruler = {
+					character_event = { id = DMCore.1 years = 4 random = 365 } # Four years minumum, five years maximum.
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					name = dungeon_master_frequency
+					value = dm_freq_30
+				}
+			}
+			offmap_dungeon_master = {
+				offmap_ruler = {
+					character_event = { id = DMCore.1 years = 29 random = 365 } # 29 years minumum, 30 years maximum.
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					name = dungeon_master_frequency
+					value = dm_freq_true_random
+				}
+			}
+			offmap_dungeon_master = {
+				offmap_ruler = {
+					character_event = { id = DMCore.1 years = 1 random = 3650 } # One year minumum, 10 years maximum.
+				}
+			}
+		}
+		else = {
+			offmap_dungeon_master = {
+				offmap_ruler = {
+					character_event = { id = DMCore.1 years = 14 random = 365 } # 14 years minumum, 15 years maximum.
+				}
+			}
+		}
+	}
+	option = {
+		name = "OK"
+	}
+}
+
+character_event = {
+	id = DMCore.998
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		offmap_dungeon_master = {
+			offmap_ruler = {
+				character_event = { id = DMCore.1 days = 5 }
+			}
+		}
+	}
+}
+
+character_event = {					#This is a system with a lot of stuff baked in, no repeated events, etc, 
+	id = DMCore.1
+	title = DMCoretitle1
+	desc = DMCoredesc1
+	picture = GFX_evt_lunatic
+	offmap = allow
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		clr_global_flag = dungeon_master_working
+		dm_duplicate_check = yes
+	}
+	
+	option = {
+		name = DMCore1OptA
+		custom_tooltip = {
+			text = dungeon_master_rolls
+			random_list = {
+				1 = {			#event 1
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent1
+						}
+					}
+					character_event = { id = DMCoreEvt.1 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent1
+				}
+				1 = {			#event 2
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent2
+						}
+					}
+					character_event = { id = DMCoreEvt.2 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent2
+				}
+				1 = {			#event 3
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent3
+						}
+					}
+					character_event = { id = DMCoreEvt.3 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent3
+				}
+				1 = {			#event 4
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent4
+						}
+					}
+					character_event = { id = DMCoreEvt.4 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent4
+				}
+				1 = {			#event 5
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent5
+						}
+					}
+					character_event = { id = DMCoreEvt.5 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent5
+				}
+				1 = {			#event 6
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent6
+						}
+					}
+					character_event = { id = DMCoreEvt.6 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent6
+				}
+				1 = {			#event 7
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent7
+						}
+					}
+					character_event = { id = DMCoreEvt.7 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent7
+				}
+				1 = {			#event 8
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent8
+						}
+					}
+					character_event = { id = DMCoreEvt.8 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent8
+				}
+				1 = {			#event 9
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent9
+						}
+					}
+					character_event = { id = DMCoreEvt.9 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent9
+				}
+				1 = {			#event 10
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent10
+						}
+					}
+					character_event = { id = DMCoreEvt.10 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent10
+				}
+				1 = {			#event 11
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent11
+						}
+					}
+					character_event = { id = DMCoreEvt.11 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent11
+				}
+				1 = {			#event 12
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent12
+						}
+					}
+					character_event = { id = DMCoreEvt.12 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent12
+				}
+				1 = {			#event 13
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent13
+						}
+					}
+					character_event = { id = DMCoreEvt.13 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent13
+				}
+				1 = {			#event 14
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent14
+						}
+					}
+					character_event = { id = DMCoreEvt.14 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent14
+				}
+				1 = {			#event 15
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent15
+						}
+					}
+					character_event = { id = DMCoreEvt.15 }
+					set_global_flag = DMEvent15
+				}
+				1 = {			#event 16
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent16
+						}
+					}
+					character_event = { id = DMCoreEvt.16 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent16
+				}
+				1 = {			#event 17
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent17
+						}
+					}
+					character_event = { id = DMCoreEvt.17 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent17
+				}
+				1 = {			#event 18
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent18
+						}
+					}
+					character_event = { id = DMCoreEvt.18 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent18
+				}
+				1 = {			#event 19
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent19
+						}
+					}
+					character_event = { id = DMCoreEvt.19 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent19
+				}
+				1 = {			#event 20
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent20
+						}
+					}
+					character_event = { id = DMCoreEvt.20 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent20
+				}
+				1 = {			#event 21
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent21
+						}
+					}
+					character_event = { id = DMCoreEvt.21 }
+					set_global_flag = DMEvent21
+				}
+				1 = {			#event 22
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent22
+						}
+					}
+					character_event = { id = DMCoreEvt.22 }
+					set_global_flag = DMEvent22
+				}
+				1 = {			#event 23
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent23
+						}
+					}
+					character_event = { id = DMCoreEvt.23 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent23
+				}
+				1 = {			#event 24
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent24
+						}
+					}
+					character_event = { id = DMCoreEvt.24 }
+					set_global_flag = DMEvent24
+				}
+				1 = {			#event 25
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent25
+						}
+					}
+					character_event = { id = DMCoreEvt.25 }
+					set_global_flag = DMEvent25
+				}
+				1 = {			#event 26
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent26
+						}
+					}
+					character_event = { id = DMCoreEvt.26 }
+					set_global_flag = DMEvent26
+				}
+				1 = {			#event 27
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent27
+						}
+					}
+					character_event = { id = DMCoreEvt.27 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent27
+				}
+				1 = {			#event 28
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent28
+						}
+					}
+					character_event = { id = DMCoreEvt.28 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent28
+				}
+				1 = {			#event 29
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent29
+						}
+					}
+					character_event = { id = DMCoreEvt.29 }
+					set_global_flag = DMEvent29
+				}
+				1 = {			#event 30
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent30
+						}
+					}
+					character_event = { id = DMCoreEvt.30 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent30
+				}
+				1 = {			#event 31
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent31
+						}
+					}
+					character_event = { id = DMCoreEvt.31 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent31
+				}
+				1 = {			#event 32
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent32
+						}
+					}
+					character_event = { id = DMCoreEvt.32 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent32
+				}
+				1 = {			#event 33
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent33
+						}
+					}
+					narrative_event = { id = DMCoreEvt.33}
+					set_global_flag = DMEvent33
+				}
+				1 = {			#event 34
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent34
+						}
+					}
+					character_event = { id = DMCoreEvt.34 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent34
+				}
+				1 = {			#event 35
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent35
+						}
+					}
+					character_event = { id = DMCoreEvt.35 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent35
+				}
+				1 = {			#event 36
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent36
+						}
+					}
+					character_event = { id = DMCoreEvt.36 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent36
+				}
+				1 = {			#event 37
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent37
+						}
+					}
+					character_event = { id = DMCoreEvt.37 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent37
+				}
+				1 = {			#event 38
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent38
+						}
+					}
+					character_event = { id = DMCoreEvt.38 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent38
+				}
+				1 = {			#event 39
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent39
+						}
+					}
+					character_event = { id = DMCoreEvt.39 }
+					set_global_flag = DMEvent39
+				}
+				1 = {			#event 40
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent40
+						}
+					}
+					character_event = { id = DMCoreEvt.40 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent40
+				}
+				1 = {			#event 41
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent41
+						}
+					}
+					character_event = { id = DMCoreEvt.41 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent41
+				}
+				1 = {			#event 42
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent42
+						}
+					}
+					character_event = { id = DMCoreEvt.42 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent42
+				}
+				1 = {			#event 43
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent43
+						}
+					}
+					character_event = { id = DMCoreEvt.43 }
+					set_global_flag = DMEvent43
+				}
+				1 = {			#event 44
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent44
+						}
+					}
+					character_event = { id = DMCoreEvt.44 }
+					set_global_flag = DMEvent44
+				}
+				1 = {			#event 45
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent45
+						}
+					}
+					character_event = { id = DMCoreEvt.45 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent45
+				}
+				1 = {			#event 46
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent46
+						}
+					}
+					character_event = { id = DMCoreEvt.46 }
+					set_global_flag = DMEvent46
+				}
+				1 = {			#event 47
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent47
+						}
+					}
+					character_event = { id = DMCoreEvt.47 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent47
+				}
+				1 = {			#event 48
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent48
+						}
+					}
+					character_event = { id = DMCoreEvt.48 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent48
+				}
+				1 = {			#event 49
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent49
+						}
+					}
+					long_character_event = { id = DMCoreEvt.49 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent49
+				}
+				1 = {			#event 50
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent50
+						}
+					}
+					character_event = { id = DMCoreEvt.50 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent50
+				}
+				1 = {			#event 51
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent51
+						}
+					}
+					character_event = { id = DMCoreEvt.51 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent51
+				}				
+				1 = {			#event 52
+					trigger = {
+						has_dlc = "Holy Fury"
+						NOT = {
+							has_global_flag = DMEvent52
+						}
+					}
+					character_event = { id = DMCoreEvt.52 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent52
+				}
+				1 = {			#event 53
+					trigger = {
+						has_dlc = "Holy Fury"
+						NOT = {
+							has_global_flag = DMEvent53
+						}
+					}
+					character_event = { id = DMCoreEvt.53 }
+					set_global_flag = DMEvent53 
+				}
+				1 = {			#event 54
+					trigger = {
+						has_dlc = "Reapers"
+						NOT = {
+							has_global_flag = DMEvent54
+						}
+					}
+					character_event = { id = DMCoreEvt.54 }
+					set_global_flag = DMEvent54 
+				}
+				1 = {			#event 55
+					trigger = {
+						has_dlc = "Mystics"
+						NOT = {
+							has_global_flag = DMEvent55
+						}
+					}
+					character_event = { id = DMCoreEvt.55 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent55
+				}				
+				1 = {			#event 56
+					trigger = {
+						has_dlc = "Mystics"
+						NOT = {
+							has_global_flag = DMEvent56
+						}
+					}
+					character_event = { id = DMCoreEvt.56 }
+					set_global_flag = DMEvent56
+				}
+				1 = {			#event 57
+					trigger = {
+						has_dlc = "Mystics"
+						NOT = {
+							has_global_flag = DMEvent57
+						}
+					}
+					character_event = { id = DMCoreEvt.57 }
+					change_variable = { which = global_tombola_var value = 1 }
+					set_global_flag = DMEvent57
+				}				
+				1 = {			#event 58
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent58
+						}
+					}
+					character_event = { id = DMCoreEvt.58 }
+					set_global_flag = DMEvent58
+				}
+				1 = {			#event 59
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent59
+						}
+					}
+					character_event = { id = DMCoreEvt.59 }
+					set_global_flag = DMEvent59
+				}
+				1 = {
+					trigger = {
+						NOT = {
+							has_global_flag = DMEvent60
+						}
+					}
+					character_event = { id = DMCoreEvt.60 }
+					set_global_flag = DMEvent60
+				}
+			}
+		}
+	}
+}
+
+#character_event = {			#work out if the map is modded or not#
+#	id = DMCore.2
+#
+#	hide_window = yes
+#
+#	is_triggered_only = yes
+#	
+#	trigger = {
+#		NOR = {
+#			has_global_flag = base_game_enough
+#			has_global_flag = not_base_game
+#		}
+#	}
+#
+#	immediate = {
+#		if = {
+#			limit = {
+#				k_papal_state = {
+#					has_holder = yes
+#					region = world_europe_south_italy
+#				}
+#			}
+#			set_global_flag = base_game_enough
+#			any_player = {
+#				character_event = { id = DMCore.3 }
+#			}
+#		}
+#		else = {
+#			set_global_flag = not_base_game
+#			any_player = {
+#				character_event = { id = DMCore.4 }
+#			}
+#		}
+#	}
+#}
+
+character_event = {			#Base game confirmation#
+	id = DMCore.3
+	title = DMCoretitle3
+	desc = DMCoredesc3
+	picture = GFX_evt_lunatic
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = DMCore3OptA
+	}
+}
+
+character_event = {			#Non base game confirmed#
+	id = DMCore.4
+	title = DMCoretitle4
+	desc = DMCoredesc4
+	picture = GFX_evt_lunatic
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = DMCore4OptA
+	}
+}

@@ -1,0 +1,154 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_cursed_ring"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\cursed_ring.dds"
+	}
+	spriteType = {
+		name = "GFX_cursed_ring_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\cursed_ring_small.dds"
+	}
+	spriteType = {
+		name = "GFX_cursed_ring_of_one"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\cursed_ring_of_one.dds"
+	}
+	spriteType = {
+		name = "GFX_cursed_ring_of_one_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\cursed_ring_of_one_small.dds"
+	}
+	spriteType = {
+		name = "GFX_fishk_weapon"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\fishk.dds"
+	}
+	spriteType = {
+		name = "GFX_fishk_weapon_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\fishk_small.dds"
+	}
+	spriteType = {
+		name = "GFX_fishk_armour"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\suit_of_fish_armour.dds"
+	}
+	spriteType = {
+		name = "GFX_fishk_armour_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\suit_of_fish_armour_small.dds"
+	}
+	spriteType = {
+		name = "GFX_wyvernball_1"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\wyvernball_1.dds"
+	}
+	spriteType = {
+		name = "GFX_wyvernball_1_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\wyvernball_1_small.dds"
+	}
+	spriteType = {
+		name = "GFX_wyvernball_2"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\wyvernball_2.dds"
+	}
+	spriteType = {
+		name = "GFX_wyvernball_2_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\wyvernball_2_small.dds"
+	}
+	spriteType = {
+		name = "GFX_wyvernball_3"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\wyvernball_3.dds"
+	}
+	spriteType = {
+		name = "GFX_wyvernball_3_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\wyvernball_3_small.dds"
+	}
+	spriteType = {
+		name = "GFX_wyvernball_4"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\wyvernball_4.dds"
+	}
+	spriteType = {
+		name = "GFX_wyvernball_4_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\wyvernball_4_small.dds"
+	}
+	spriteType = {
+		name = "GFX_wyvernball_5"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\wyvernball_5.dds"
+	}
+	spriteType = {
+		name = "GFX_wyvernball_5_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\wyvernball_5_small.dds"
+	}
+	spriteType = {
+		name = "GFX_wyvernball_6"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\wyvernball_6.dds"
+	}
+	spriteType = {
+		name = "GFX_wyvernball_6_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\wyvernball_6_small.dds"
+	}
+	spriteType = {
+		name = "GFX_wyvernball_7"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\wyvernball_7.dds"
+	}
+	spriteType = {
+		name = "GFX_wyvernball_7_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\wyvernball_7_small.dds"
+	}
+	spriteType = {
+		name = "GFX_dm_fedora"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\dm_fedora.dds"
+	}
+	spriteType = {
+		name = "GFX_dm_fedora_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\dm_fedora_small.dds"
+	}
+	spriteType = {
+		name = "GFX_dm_inept_tea"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\dm_inept_tea.dds"
+	}
+	spriteType = {
+		name = "GFX_dm_inept_tea_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\dm_inept_tea_small.dds"
+	}
+	spriteType = {
+		name = "GFX_dm_mind_pebble"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\mind_pebble.dds"
+	}
+	spriteType = {
+		name = "GFX_dm_mind_pebble_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\mind_pebble_small.dds"
+	}
+	spriteType = {
+		name = "GFX_dm_power_pebble"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\power_pebble.dds"
+	}
+	spriteType = {
+		name = "GFX_dm_power_pebble_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\power_pebble_small.dds"
+	}
+	spriteType = {
+		name = "GFX_dm_reality_pebble"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\reality_pebble.dds"
+	}
+	spriteType = {
+		name = "GFX_dm_reality_pebble_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\reality_pebble_small.dds"
+	}
+	spriteType = {
+		name = "GFX_dm_soul_pebble"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\soul_pebble.dds"
+	}
+	spriteType = {
+		name = "GFX_dm_soul_pebble_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\soul_pebble_small.dds"
+	}
+	spriteType = {
+		name = "GFX_dm_space_pebble"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\space_pebble.dds"
+	}
+	spriteType = {
+		name = "GFX_dm_space_pebble_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\space_pebble_small.dds"
+	}
+	spriteType = {
+		name = "GFX_dm_time_pebble"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\time_pebble.dds"
+	}
+	spriteType = {
+		name = "GFX_dm_time_pebble_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\time_pebble_small.dds"
+	}
+}

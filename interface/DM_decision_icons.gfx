@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_show_wyvernballs"
+		texturefile = "gfx\\interface\\show_wyvernballs.dds"
+	}
+	spriteType = {
+		name = "GFX_unite_the_wyvernballs"
+		texturefile = "gfx\\interface\\unite_the_wyvernballs.dds"
+	}
+}

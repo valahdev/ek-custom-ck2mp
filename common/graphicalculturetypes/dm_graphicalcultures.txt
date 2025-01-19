@@ -1,0 +1,3 @@
+bovinegfx = {
+	skin_tone = 0
+}

@@ -1,0 +1,18 @@
+is_valid_target_for_tomfoolery = {
+	NOR = {
+		trait = ruin
+		culture = ruin
+	}
+}
+
+dm_has_dog = {
+	OR = {
+		has_character_modifier = guard_dogs
+		has_character_modifier = pet_hunting_dog
+		has_character_modifier = guide_dog
+		has_character_modifier = lost_dog
+		has_character_modifier = masterless_dog
+		has_character_modifier = pet_masterless_dog
+		has_character_modifier = pet_house_dog
+	}
+}

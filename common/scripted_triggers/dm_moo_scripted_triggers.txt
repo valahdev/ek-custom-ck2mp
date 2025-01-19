@@ -1,0 +1,29 @@
+has_enough_milk_minor = {
+	check_variable = { 
+		which = current_milk
+		value >= 10
+	}
+}
+
+has_enough_milk_moderate = {
+	check_variable = { 
+		which = current_milk
+		value >= 25
+	}
+}
+
+has_enough_milk_major = {
+	check_variable = { 
+		which = current_milk
+		value >= 50
+	}
+}
+
+dm_is_true_cow = {
+	culture = dm_cow_culture
+	graphical_culture = bovinegfx
+}
+
+dm_is_cow = {
+	graphical_culture = bovinegfx
+}	

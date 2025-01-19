@@ -1,0 +1,53 @@
+on_death = {
+	events = {
+		DMmanagement.2
+		DMCoreFollow.18 # Remove dwarves
+		DMCoreFollow.26 # Doot :(
+	}
+}
+
+on_chronicle_start = {
+	events = {
+		DMmanagement.1
+		DMmanagement.100
+	}
+}
+
+on_yearly_pulse = {
+	events = {
+		DMmanagement.3 # Clean up previous versions tombola variables
+		DMCore.999
+		DMCoremajor.1000
+		DMmanagement.500 # Forces DM and governor out of societies
+		DMmanagement.601 # Adults get milky
+		DMmanagement.602 # Soul Pebble trait check
+		DMmanagement.603 # Time Pebble add immortal
+		DMmanagement.604 # Time Pebble remove immortal
+		DMmanagement.605 # Kill Nazgul without Ring
+	}
+}
+
+on_new_holder = {
+	events = {
+		DMCoreFollow.9 # Gaaaaaaaaaary
+		# DMmanagement.300 # DM refuses any title he gets other than his DM title
+	}
+}
+
+on_host_change = {
+	events = {
+		DMmanagement.200 # Prevents newly spawned courtiers of the DM from being invited by players or AI
+	}
+}
+
+on_become_imprisoned_any_reason = {
+	events = {
+		# DMManagement.6 # DM breaks free
+	}
+}
+
+on_adulthood = {
+	events = {
+		DMmanagement.600 # Children get milky
+	}
+}

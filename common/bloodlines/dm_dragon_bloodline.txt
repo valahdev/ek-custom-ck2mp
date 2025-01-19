@@ -1,0 +1,13 @@
+dm_dragon_bloodline = {
+	general_opinion = -10
+	inheritance = no_inheritance
+	matrilineal_override = yes
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_technology
+	flags = { historical_bloodline dm_dragon }
+	active = {
+		NOT = {
+			trait = dungeon_master
+		}
+	}
+}

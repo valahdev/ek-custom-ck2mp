@@ -1,0 +1,42 @@
+#696969 = {
+#	name = "Dungeon Master"
+#	female = no
+#
+#	dynasty = 696969
+#	religion = dungeon_religion		#also religious head
+#	culture = dm_culture		#placeholder
+#
+#	diplomacy = 99
+#	martial = 99
+#	stewardship = 99
+#	intrigue = 99
+#	learning = 99
+#
+#	historical = yes 
+#
+#	easter_egg = yes	#society blocking
+#
+#	disallow_random_traits = yes
+#
+#	1.1.1 = {
+#		birth = yes
+#		effect = {
+#			set_character_flag = dungeon_master
+#			grant_title = {
+#				target = k_dungeon
+#			}
+#		}
+#	}
+#	60.1.1 = {
+#		trait = dungeon_master
+#		immortal_age = 60		#perma oldman
+#		add_character_modifier = {
+#			modifier = mother_minor_rest
+#			duration = -1
+#			hidden = yes
+#		}
+#	}
+#	9999.1.1={
+#		death=yes
+#	}
+#}

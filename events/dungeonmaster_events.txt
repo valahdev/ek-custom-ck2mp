@@ -1,0 +1,4791 @@
+namespace = DMCoreEvt
+
+character_event = {			#Pauper Mode#
+	id = DMCoreEvt.1
+	title = DMCoreEvttitle1
+	desc = DMCoreEvtdesc1
+	picture = GFX_evt_stressed_ruler
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	option = {
+		name = DMCoreEvt1OptA
+		any_playable_ruler = {
+			limit = {
+				NOT = { ai = no }
+			}
+			clear_wealth = yes
+			scaled_wealth = -10
+		}
+		any_player = {
+			character_event = { id = DMPlay.1 }
+		}
+	}
+}
+
+character_event = {
+	id = DMCoreEvt.2			#Lover's Lab# 
+	title = DMCoreEvttitle2
+	desc = DMCoreEvtdesc2
+	picture = GFX_evt_lovers
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	option = {
+		name = DMCoreEvt2OptA
+		any_playable_ruler = {
+			add_trait = lustful
+			add_trait = hedonist
+		}
+		any_player = {
+			character_event = { id = DMPlay.2 }
+		}	
+	}
+}
+
+character_event = {
+	id = DMCoreEvt.3			#Father to All#
+	title = DMCoreEvttitle3
+	desc = DMCoreEvtdesc3
+	picture = GFX_evt_pregnancy
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		random_playable_ruler = {
+			limit = {
+				is_female = no
+				age = 18
+				NOT = { trait = eunuch }
+			}
+			save_event_target_as = king_fuck	#All-Father, DEFINITELY not king fuck
+			remove_trait = celibate
+			add_trait = lustful
+			add_trait = strong
+			add_trait = seducer
+			add_trait = fair
+			add_trait = kf_trait	#All-Father
+		}
+	}
+
+	option = {
+		name = DMCoreEvt3OptA
+		while = {
+			count = 30
+			random_character = {
+				limit = {
+					is_female = yes
+					age = 16
+					NOT = { age = 45 }
+					is_pregnant = no
+					is_married = yes
+				}
+				preferred_limit = {
+					NOT = { same_realm = event_target:king_fuck }
+				}
+				preferred_limit = {
+					any_spouse = {
+						is_landed = true
+					}
+				}
+				unsafe_impregnate = event_target:king_fuck
+			}
+		}
+		any_player = {
+			character_event = { id = DMPlay.3 }
+		}
+	}
+}
+
+character_event = {
+	id = DMCoreEvt.4			#Rise of the Immortals#
+	title = DMCoreEvttitle4
+	desc = DMCoreEvtdesc4
+	picture = GFX_evt_comet
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		set_variable = {
+			which = LOOP
+			value = 20
+		}
+		any_character = {			#safety
+			limit = {
+				trait = immortal
+			}
+			save_event_target_as = last_immortal
+		}
+		while = {
+			limit = {
+				check_variable = {
+					which = LOOP
+					value >= 1
+				}
+			}
+			subtract_variable = {
+				which = LOOP
+				value = 1
+			}
+			random_playable_ruler = {
+				limit = {
+					demesne_size = 1
+				}
+				add_rival = event_target:last_immortal
+				clear_education_trait = yes
+				add_trait = immortal
+				add_trait = adult_of_destiny
+				add_trait = wroth
+				add_trait = brilliant_strategist
+				add_trait = inspiring_leader 
+				save_event_target_as = child_of_destiny
+				set_character_flag = is_child_of_destiny
+
+				add_character_modifier = {
+					modifier = strangled_snake
+					duration = -1
+				}
+				add_character_modifier = {
+					modifier = child_of_mithridates
+					duration = -1
+				}
+				add_character_modifier = {
+					modifier = strange_mind
+					duration = -1
+				}
+				add_character_modifier = {
+					modifier = aspiring_for_godhood
+					duration = -1
+				}
+				add_character_modifier = {
+					modifier = tenacious_duelist
+					duration = -1
+				}
+				add_character_modifier = {
+					modifier = clever_planner
+					duration = -1
+				}
+				add_character_modifier = {
+					modifier = inspiring_presence
+					duration = -1
+				}
+				add_character_modifier = {
+					modifier = motivated_ruler
+					duration = -1
+				}
+				add_character_modifier = {
+					modifier = irresistible
+					duration = -1
+				}
+				add_character_modifier = {
+					modifier = lightning_reflexes
+					duration = -1
+				}
+				add_character_modifier = {
+					modifier = protected_from_evil
+					duration = -1
+				}
+				add_character_modifier = {
+					modifier = slain_legendary_beast
+					duration = -1
+				}
+				add_character_modifier = {
+					modifier = charismatic_leader
+					duration = -1
+				}
+				add_character_modifier = {
+					modifier = ruthless_commander
+					duration = -1
+				}
+				save_event_target_as = last_immortal
+			}
+			spawn_unit = {
+				owner = event_target:last_immortal
+				province = event_target:last_immortal
+				home = event_target:last_immortal
+			  
+				troops = {
+				archers = { 5000 5000 }
+				light_infantry = { 15000 15000 }
+				heavy_infantry = { 3000 3000 }
+				light_cavalry = { 2000 2000 }
+				}
+			
+				attrition = 1.0
+				disband_on_peace = no
+				maintenance_multiplier = 0.1
+			}
+		}
+	}
+
+	option = {
+		name = DMCoreEvt4OptA
+		any_player = {
+			character_event = { id = DMPlay.4 }
+		}
+	}
+}
+
+character_event = {			#Happy Birthday - credit to Big_Weeb#
+	id = DMCoreEvt.5
+	title = DMCoreEvttitle5
+	desc = DMCoreEvtdesc5
+	picture = GFX_evt_guardian
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		set_variable = {
+			which = loop
+			value = 25 
+		}		
+		while = {
+			count = 20
+			limit = {
+				check_variable = {
+					which = loop
+					value >= 1
+				}
+			}
+			subtract_variable = {
+				which = loop
+				value = 1
+			}
+			random_age_mod = yes
+			random_character = {
+				limit = { 
+					is_ruler = yes 
+					is_offmap_governor = no
+				}
+				preferred_limit = { 
+					tier = KING 
+				}
+				preferred_limit = { 
+					real_tier = DUKE 
+				}
+				preferred_limit = { 
+					demesne_size = 3 
+				}
+				add_trait = age_shifted
+				add_age = global_add_age
+			}
+		}
+	}
+
+	option = {
+		name = DMCoreEvt5OptA
+		any_player = {
+			character_event = { id = DMPlay.5 }
+		}
+	}
+}
+
+character_event = {			#Purge - Credit to Slippy Nips#
+	id = DMCoreEvt.6
+	title = DMCoreEvttitle6
+	desc = DMCoreEvtdesc6
+	picture = GFX_evt_hiding_from_pursuers
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		any_playable_ruler = {
+			add_character_modifier = {
+				name = the_purge
+				months = 60
+			}
+		}
+	}
+
+	option = {
+		name = DMCoreEvt6OptA
+		any_player = {
+			character_event = { id = DMPlay.6 }
+		}
+	}
+}
+
+character_event = {			#Dwarf Fortress - Dante Mordicain#
+	id = DMCoreEvt.7
+	title = DMCoreEvttitle7
+	desc = DMCoreEvtdesc7
+	picture = GFX_evt_magnificent_castle
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		set_variable = {
+			which = loop
+			value = 25 
+		}		
+		while = {
+			count = 20
+			limit = {
+				check_variable = {
+					which = loop
+					value >= 1
+				}
+			}
+			subtract_variable = {
+				which = loop
+				value = 1
+			}
+			random_playable_ruler = {
+				add_character_modifier = {
+					name = dwarf_fortress
+					days = -1
+				}
+				add_trait = dwarf
+				add_trait = defensive_leader
+				add_trait = genius
+				add_trait = stubborn
+				add_trait = architect 
+			}
+		}
+	}
+
+	option = {
+		name = DMCoreEvt7OptA
+		any_player = {
+			character_event = { id = DMPlay.7 }
+		}
+	}
+}
+
+character_event = {			#Thigh Rendering#
+	id = DMCoreEvt.8
+	title = DMCoreEvttitle8
+	desc = DMCoreEvtdesc8
+	picture = GFX_evt_mysterious_forest
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	option = {
+		name = DMCoreEvt8OptA
+		while = {
+			count = 20
+			any_playable_ruler = {
+				limit = {
+					NOT = {
+						any_artifact = {
+							has_artifact_flag = fish_item
+						}
+					}
+				}
+				random_list = {
+					5 = {
+						add_artifact = stinkrot_reaver
+					}
+					5 = {
+						add_artifact = blackfish_scale
+					}
+				}
+			}
+		}
+		any_player = {
+			character_event = { id = DMPlay.8 }
+		}
+	}
+}
+
+character_event = {			#Latrine Disaster#
+	id = DMCoreEvt.9
+	title = DMCoreEvttitle9
+	desc = DMCoreEvtdesc9
+	picture = GFX_evt_plague_spreading
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		if = {
+			limit = {
+				has_global_flag = base_game_enough
+			}
+			random_province = {
+				limit = {
+					region = world_europe_west_germania		#Duchy of Thuringia IRL
+				}
+				save_event_target_as = poopy
+			}
+		}
+		else = {
+			random_playable_ruler = {
+				capital_scope = {
+					save_event_target_as = poopy
+				}
+			}
+		}
+	}
+
+	option = {
+		name = DMCoreEvt9OptA
+		any_player = {
+			character_event = { id = DMPlay.9 }
+		}
+		event_target:poopy = {
+			owner = {
+				any_courtier = {
+					death = {
+						death_reason = death_accident
+					}
+				}
+				death = {
+					death_reason = death_accident
+				}
+			}
+		}
+	}
+}
+
+character_event = {			#Death Note#
+	id = DMCoreEvt.10
+	title = DMCoreEvttitle10
+	desc = DMCoreEvtdesc10
+	picture = GFX_potato_chip
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		any_playable_ruler = {
+			set_character_flag = deathnote
+		}
+	}
+
+	option = {
+		name = DMCoreEvt10OptA
+		any_player = {
+			character_event = { id = DMPlay.10 }
+		}
+	}
+}
+
+character_event = {			#Matters of Life and Death..?#
+	id = DMCoreEvt.11
+	title = DMCoreEvttitle11
+	desc = DMCoreEvtdesc11
+	picture = GFX_evt_state_diplomacy
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	option = {
+		name = DMCoreEvt11OptA
+		any_player = {
+			character_event = { id = DMPlay.11 days = 500 random = 500 }
+		}
+	}
+}
+
+character_event = {			#Potion Seller#
+	id = DMCoreEvt.12
+	title = DMCoreEvttitle12
+	desc = DMCoreEvtdesc12
+	picture = GFX_potion_seller
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	option = {
+		name = DMCoreEvt12OptA
+		any_player = {
+			character_event = { id = DMPlay.12 }
+		}
+	}
+}
+
+character_event = {			#Second Education#
+	id = DMCoreEvt.13
+	title = DMCoreEvttitle13
+	desc = DMCoreEvtdesc13
+	picture = GFX_evt_stressed_ruler
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		any_playable_ruler = {
+			limit = {
+				ai = yes		#player is notified in separate event
+			}
+			if = {
+				limit = {
+					has_global_flag = house_veloth_extinct			#ek specific fix for non-standard education
+				}
+				random_list = {
+					1 = {
+						add_trait = diplomat_3
+						modifier = {
+							factor = 0
+							OR = {
+								trait = diplomat_1
+								trait = diplomat_2
+								trait = diplomat_3
+								trait = diplomat_4
+								trait = diplomat_5
+							}
+						}
+					}
+					1 = {
+						add_trait = warrior_3
+						modifier = {
+							factor = 0
+							OR = {
+								trait = warrior_1
+								trait = warrior_2
+								trait = warrior_3
+								trait = warrior_4
+								trait = warrior_5
+							}
+						}
+					}
+					1 = {
+						add_trait = magistrate_3
+						modifier = {
+							factor = 0
+							OR = {
+								trait = magistrate_1
+								trait = magistrate_2
+								trait = magistrate_3
+								trait = magistrate_4
+								trait = magistrate_5
+							}
+						}
+					}
+					1 = {
+						add_trait = agent_3
+						modifier = {
+							factor = 0
+							OR = {
+								trait = agent_1
+								trait = agent_2
+								trait = agent_3
+								trait = agent_4
+								trait = agent_5
+							}
+						}
+					}
+					1 = {
+						add_trait = mage_1
+						modifier = {
+							factor = 0
+							OR = {
+								trait = mage_1
+								trait = mage_2
+								trait = mage_3
+								trait = mage_4
+								trait = mage_5
+							}
+						}
+					}
+				}
+			}
+			else = {
+				random_list = {
+					1 = {
+						add_trait = charismatic_negotiator
+						modifier = {
+							factor = 0
+							OR = {
+								trait = grey_eminence
+								trait = underhanded_rogue
+								trait = charismatic_negotiator
+								trait = naive_appeaser
+							}
+						}
+					}
+					1 = {
+						add_trait = skilled_tactician
+						modifier = {
+							factor = 0
+							OR = {
+								trait = misguided_warrior
+								trait = tough_soldier
+								trait = skilled_tactician
+								trait = brilliant_strategist
+							}
+						}
+					}
+					1 = {
+						add_trait = fortune_builder
+						modifier = {
+							factor = 0
+							OR = {
+								trait = indulgent_wastrel
+								trait = thrifty_clerk
+								trait = fortune_builder
+								trait = midas_touched
+							}
+						}
+					}
+					1 = {
+						add_trait = intricate_webweaver
+						modifier = {
+							factor = 0
+							OR = {
+								trait = amateurish_plotter
+								trait = flamboyant_schemer
+								trait = intricate_webweaver
+								trait = elusive_shadow
+							}
+						}
+					}
+					1 = {
+						add_trait = scholarly_theologian
+						modifier = {
+							factor = 0
+							OR = {
+								trait = detached_priest
+								trait = martial_cleric 
+								trait = scholarly_theologian
+								trait = mastermind_theologian
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = DMCoreEvt13OptA
+		any_player = {
+			character_event = { id = DMPlay.13 }
+		}
+	}
+}
+
+character_event = {			#Mrs Doubtfire#
+	id = DMCoreEvt.14
+	title = DMCoreEvttitle14
+	desc = DMCoreEvtdesc14
+	picture = GFX_evt_bad_news_female
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		any_playable_ruler = {
+			limit = {
+				age = 16
+				ai = yes
+			}
+			set_gender = opposite
+			if = {
+				limit = {
+					trait = homosexual
+				}
+				remove_trait = homosexual
+				set_character_flag = previously_homosexual # In case of this event happening again
+			}
+			if = {
+				limit = {
+					has_character_flag = previously_homosexual # In case of this event happening again
+				}
+				add_trait = homosexual
+				clr_character_flag = previously_homosexual
+			}
+		}
+	}
+
+	option = {
+		name = DMCoreEvt14OptA
+		any_player = {
+			character_event = { id = DMPlay.14 }
+		}
+	}
+}
+
+character_event = {			#Religion Proven Wrong with Facts and Logic#
+	id = DMCoreEvt.15
+	title = DMCoreEvttitle15
+	desc = DMCoreEvtdesc15
+	picture = GFX_evt_catching_heretic
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		if = {
+			limit = {
+				has_global_flag = base_game_enough
+			}
+			random_list = {
+				1 = {
+					catholic = { save_event_target_as = religion_destroyed }
+					any_character = {
+						limit = {
+							religion = catholic
+						}
+						random_list = {
+							1 = {
+								religion = orthodox
+							}
+							1 = {
+								religion = miaphysite
+							}
+							1 = {
+								religion = nestorian
+							}
+							1 = {
+								religion = cathar
+							}
+							1 = {
+								religion = fraticelli
+							}
+							1 = {
+								religion = waldensian
+							}
+							1 = {
+								religion = lollard
+							}
+						}
+					}
+				}
+				1 = {
+					orthodox = { save_event_target_as = religion_destroyed }
+					any_character = {
+						limit = {
+							religion = orthodox
+						}
+						random_list = {
+							1 = {
+								religion = catholic
+							}
+							1 = {
+								religion = miaphysite
+							}
+							1 = {
+								religion = nestorian
+							}
+							1 = {
+								religion = bogomilist
+							}
+							1 = {
+								religion = monothelite
+							}
+							1 = {
+								religion = iconoclast
+							}
+							1 = {
+								religion = paulician
+							}
+						}
+					}
+				}
+				1 = {
+					miaphysite = { save_event_target_as = religion_destroyed }
+					any_character = {
+						limit = {
+							religion = miaphysite
+						}
+						random_list = {
+							1 = {
+								religion = catholic
+							}
+							1 = {
+								religion = orthodox
+							}
+							1 = {
+								religion = monophysite
+							}
+						}
+					}
+				}
+				1 = {
+					nestorian = { save_event_target_as = religion_destroyed }
+					any_character = {
+						limit = {
+							religion = nestorian
+						}
+						random_list = {
+							1 = {
+								religion = catholic
+							}
+							1 = {
+								religion = orthodox
+							}
+							1 = {
+								religion = miaphysite
+							}
+							1 = {
+								religion = messalian
+							}
+						}
+					}
+				}
+				1 = {
+					sunni = { save_event_target_as = religion_destroyed }
+					any_character = {
+						limit = {
+							religion = sunni
+						}
+						random_list = {
+							1 = {
+								religion = shiite
+							}
+							1 = {
+								religion = ibadi
+							}
+							1 = {
+								religion = zikri
+							}
+							1 = {
+								religion = yazidi
+							}
+						}
+					}
+				}
+				1 = {
+					shiite = { save_event_target_as = religion_destroyed }
+					any_character = {
+						limit = {
+							religion = shiite
+						}
+						random_list = {
+							1 = {
+								religion = ibadi
+							}
+							1 = {
+								religion = sunni
+							}
+							1 = {
+								religion = druze
+							}
+							1 = {
+								religion = hurufi
+							}
+							1 = {
+								religion = qarmatian
+							}
+						}
+					}
+				}
+				1 = {
+					ibadi = { save_event_target_as = religion_destroyed }
+					any_character = {
+						limit = {
+							religion = ibadi
+						}
+						random_list = {
+							1 = {
+								religion = shiite
+							}
+							1 = {
+								religion = sunni
+							}
+							1 = {
+								religion = kharijite
+							}
+						}
+					}
+				}
+				1 = {
+					jewish = { save_event_target_as = religion_destroyed }
+					any_character = {
+						limit = {
+							religion = jewish
+						}
+						random_list = {
+							1 = {
+								religion = samaritan
+							}
+							1 = {
+								religion = karaite
+							}
+						}
+					}
+				}
+				1 = {
+					zoroastrian = { save_event_target_as = religion_destroyed }
+					any_character = {
+						limit = {
+							religion = zoroastrian
+						}
+						random_list = {
+							1 = {
+								religion = mazdaki
+							}
+							1 = {
+								religion = manichean
+							}
+							1 = {
+								religion = khurmazta
+							}
+						}
+					}
+				}
+				1 = {
+					hindu = { save_event_target_as = religion_destroyed }
+					any_character = {
+						limit = {
+							religion = hindu
+						}
+						random_list = {
+							1 = {
+								religion = buddhist
+							}
+							1 = {
+								religion = jain
+							}
+							1 = {
+								religion = taoist
+							}
+						}
+					}
+				}
+				1 = {
+					buddhist = { save_event_target_as = religion_destroyed }
+					any_character = {
+						limit = {
+							religion = buddhist
+						}
+						random_list = {
+							1 = {
+								religion = hindu
+							}
+							1 = {
+								religion = jain
+							}
+							1 = {
+								religion = taoist
+							}
+						}
+					}
+				}
+				1 = {
+					jain = { save_event_target_as = religion_destroyed }
+					any_character = {
+						limit = {
+							religion = jain
+						}
+						random_list = {
+							1 = {
+								religion = hindu
+							}
+							1 = {
+								religion = buddhist
+							}
+							1 = {
+								religion = taoist
+							}
+						}
+					}
+				}
+				1 = {
+					taoist = { save_event_target_as = religion_destroyed }
+					any_character = {
+						limit = {
+							religion = taoist
+						}
+						random_list = {
+							1 = {
+								religion = hindu
+							}
+							1 = {
+								religion = buddhist
+							}
+							1 = {
+								religion = jain
+							}
+						}
+					}
+				}
+				1 = {
+					norse_pagan = { save_event_target_as = religion_destroyed }
+					any_character = {
+						limit = {
+							religion = norse_pagan
+						}
+						random_list = {
+							1 = {
+								religion = slavic_pagan
+							}
+							1 = {
+								religion = tengri_pagan
+							}
+							1 = {
+								religion = baltic_pagan
+							}
+							1 = {
+								religion = finnish_pagan
+							}
+							1 = {
+								religion = west_african_pagan
+							}
+							1 = {
+								religion = aztec
+							}
+							1 = {
+								religion = zun_pagan
+							}
+							1 = {
+								religion = bon
+							}
+							1 = {
+								religion = hellenic_pagan
+							}
+						}
+					}
+				}
+				1 = {
+					slavic_pagan = { save_event_target_as = religion_destroyed }
+					any_character = {
+						limit = {
+							religion = slavic_pagan
+						}
+						random_list = {
+							1 = {
+								religion = norse_pagan
+							}
+							1 = {
+								religion = tengri_pagan
+							}
+							1 = {
+								religion = baltic_pagan
+							}
+							1 = {
+								religion = finnish_pagan
+							}
+							1 = {
+								religion = west_african_pagan
+							}
+							1 = {
+								religion = aztec
+							}
+							1 = {
+								religion = zun_pagan
+							}
+							1 = {
+								religion = bon
+							}
+							1 = {
+								religion = hellenic_pagan
+							}
+						}
+					}
+				}
+				1 = {
+					tengri_pagan = { save_event_target_as = religion_destroyed }
+					any_character = {
+						limit = {
+							religion = tengri_pagan
+						}
+						random_list = {
+							1 = {
+								religion = norse_pagan
+							}
+							1 = {
+								religion = slavic_pagan
+							}
+							1 = {
+								religion = baltic_pagan
+							}
+							1 = {
+								religion = finnish_pagan
+							}
+							1 = {
+								religion = west_african_pagan
+							}
+							1 = {
+								religion = aztec
+							}
+							1 = {
+								religion = zun_pagan
+							}
+							1 = {
+								religion = bon
+							}
+							1 = {
+								religion = hellenic_pagan
+							}
+						}
+					}
+				}
+				1 = {
+					baltic_pagan = { save_event_target_as = religion_destroyed }
+					any_character = {
+						limit = {
+							religion = baltic_pagan
+						}
+						random_list = {
+							1 = {
+								religion = norse_pagan
+							}
+							1 = {
+								religion = slavic_pagan
+							}
+							1 = {
+								religion = tengri_pagan
+							}
+							1 = {
+								religion = finnish_pagan
+							}
+							1 = {
+								religion = west_african_pagan
+							}
+							1 = {
+								religion = aztec
+							}
+							1 = {
+								religion = zun_pagan
+							}
+							1 = {
+								religion = bon
+							}
+							1 = {
+								religion = hellenic_pagan
+							}
+						}
+					}
+				}
+				1 = {
+					finnish_pagan = { save_event_target_as = religion_destroyed }
+					any_character = {
+						limit = {
+							religion = finnish_pagan
+						}
+						random_list = {
+							1 = {
+								religion = norse_pagan
+							}
+							1 = {
+								religion = slavic_pagan
+							}
+							1 = {
+								religion = tengri_pagan
+							}
+							1 = {
+								religion = baltic_pagan
+							}
+							1 = {
+								religion = west_african_pagan
+							}
+							1 = {
+								religion = aztec
+							}
+							1 = {
+								religion = zun_pagan
+							}
+							1 = {
+								religion = bon
+							}
+							1 = {
+								religion = hellenic_pagan
+							}
+						}
+					}
+				}
+				1 = {
+					west_african_pagan = { save_event_target_as = religion_destroyed }
+					any_character = {
+						limit = {
+							religion = west_african_pagan
+						}
+						random_list = {
+							1 = {
+								religion = norse_pagan
+							}
+							1 = {
+								religion = slavic_pagan
+							}
+							1 = {
+								religion = tengri_pagan
+							}
+							1 = {
+								religion = baltic_pagan
+							}
+							1 = {
+								religion = finnish_pagan
+							}
+							1 = {
+								religion = aztec
+							}
+							1 = {
+								religion = zun_pagan
+							}
+							1 = {
+								religion = bon
+							}
+							1 = {
+								religion = hellenic_pagan
+							}
+						}
+					}
+				}
+				1 = {
+					aztec = { save_event_target_as = religion_destroyed }
+					any_character = {
+						limit = {
+							religion = aztec
+						}
+						random_list = {
+							1 = {
+								religion = norse_pagan
+							}
+							1 = {
+								religion = slavic_pagan
+							}
+							1 = {
+								religion = tengri_pagan
+							}
+							1 = {
+								religion = baltic_pagan
+							}
+							1 = {
+								religion = finnish_pagan
+							}
+							1 = {
+								religion = west_african_pagan
+							}
+							1 = {
+								religion = zun_pagan
+							}
+							1 = {
+								religion = bon
+							}
+							1 = {
+								religion = hellenic_pagan
+							}
+						}
+					}
+				}
+				1 = {
+					zun_pagan = { save_event_target_as = religion_destroyed }
+					any_character = {
+						limit = {
+							religion = zun_pagan
+						}
+						random_list = {
+							1 = {
+								religion = norse_pagan
+							}
+							1 = {
+								religion = slavic_pagan
+							}
+							1 = {
+								religion = tengri_pagan
+							}
+							1 = {
+								religion = baltic_pagan
+							}
+							1 = {
+								religion = finnish_pagan
+							}
+							1 = {
+								religion = west_african_pagan
+							}
+							1 = {
+								religion = aztec
+							}
+							1 = {
+								religion = bon
+							}
+							1 = {
+								religion = hellenic_pagan
+							}
+						}
+					}
+				}
+				1 = {
+					bon = { save_event_target_as = religion_destroyed }
+					any_character = {
+						limit = {
+							religion = bon
+						}
+						random_list = {
+							1 = {
+								religion = norse_pagan
+							}
+							1 = {
+								religion = slavic_pagan
+							}
+							1 = {
+								religion = tengri_pagan
+							}
+							1 = {
+								religion = baltic_pagan
+							}
+							1 = {
+								religion = finnish_pagan
+							}
+							1 = {
+								religion = west_african_pagan
+							}
+							1 = {
+								religion = aztec
+							}
+							1 = {
+								religion = zun_pagan
+							}
+							1 = {
+								religion = hellenic_pagan
+							}
+						}
+					}
+				}
+				1 = {
+					hellenic_pagan = { save_event_target_as = religion_destroyed }
+					any_character = {
+						limit = {
+							religion = hellenic_pagan
+						}
+						random_list = {
+							1 = {
+								religion = norse_pagan
+							}
+							1 = {
+								religion = slavic_pagan
+							}
+							1 = {
+								religion = tengri_pagan
+							}
+							1 = {
+								religion = baltic_pagan
+							}
+							1 = {
+								religion = finnish_pagan
+							}
+							1 = {
+								religion = west_african_pagan
+							}
+							1 = {
+								religion = aztec
+							}
+							1 = {
+								religion = zun_pagan
+							}
+							1 = {
+								religion = bon
+							}
+						}
+					}
+				}
+			}
+		}
+		else = {
+			random_character = {
+				religion_scope = {
+					save_event_target_as = religion_destroyed
+				}
+			}
+			random_character = {
+				limit = {
+					NOT = {
+						religion = event_target:religion_destroyed
+					}
+				}
+				religion_scope = {
+					save_event_target_as = control_religion1
+				}
+			}
+			random_character = {
+				limit = {
+					NOR = {
+						religion = event_target:religion_destroyed
+						religion = event_target:control_religion1
+					}
+				}
+				religion_scope = {
+					save_event_target_as = control_religion2
+				}
+			}
+			random_character = {
+				limit = {
+					NOR = {
+						religion = event_target:religion_destroyed
+						religion = event_target:control_religion1
+						religion = event_target:control_religion2
+					}
+				}
+				religion_scope = {
+					save_event_target_as = control_religion3
+				}
+			}
+			any_character = {
+				limit = {
+					religion = event_target:religion_destroyed
+				}
+				random_list = {
+					1 = {
+						religion = event_target:control_religion1
+					}
+					1 = {
+						religion = event_target:control_religion2
+					}
+					1 = {
+						religion = event_target:control_religion3
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = DMCoreEvt15OptA
+		any_player = {
+			character_event = { id = DMPlay.15 }
+		}
+	}
+}
+
+character_event = {			#Battle Royale#
+	id = DMCoreEvt.16
+	title = DMCoreEvttitle16
+	desc = DMCoreEvtdesc16
+	picture = GFX_evt_battle
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		random_landed_title = {
+			limit = {
+				holding_type = castle
+			}
+			save_event_target_as = battle_royale
+		}
+	}
+
+	option = {
+		name = DMCoreEvt16OptA
+		custom_tooltip = {
+			text = DMEventTooltip16
+		}
+		any_playable_ruler = {
+			add_claim = event_target:battle_royale
+		}
+		any_player = {
+			character_event = { id = DMPlay.16 }
+		}
+		character_event = { id = DMCoreFollow.3 days = 1825 }		#event end
+	}
+}
+
+character_event = {			#Senate - rewrite this whole event at some point#
+	id = DMCoreEvt.17
+	title = DMCoreEvttitle17
+	desc = DMCoreEvtdesc17
+	picture = GFX_senate
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		while = {
+			count = 20
+			limit = {
+				any_character = {
+					is_ruler = no
+					has_job_title = job_chancellor
+					OR = {
+						trait = ambitious
+						trait = brave
+						trait = wroth
+					}
+				}
+			}
+			any_character = {
+				limit = {
+					is_ruler = no
+					has_job_title = job_chancellor
+					OR = {
+						trait = ambitious
+						trait = brave
+						trait = wroth
+					}
+				}
+				save_event_target_as = palpatine
+				if = {
+					limit = {
+						top_liege = {
+							NOT = { ai = no }
+						}
+					}
+					abdicate_to = event_target:palpatine
+				}
+				else_if = {
+					limit = {
+						top_liege = {
+							ai = no
+							higher_tier_than = COUNT
+							any_demesne_title = {
+								count >= 2
+								tier = COUNT
+								NOT = { higher_tier_than = COUNT }
+							}
+						}
+					}
+					random_demesne_title = {
+						limit = {
+							tier = COUNT
+							is_capital = no
+						}
+						grant_title_no_opinion = event_target:palpatine
+					}
+					primary_title = {
+						grant_title_no_opinion = event_target:palpatine
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = DMCoreEvt17OptA
+		any_player = {
+			character_event = { id = DMPlay.17 }
+		}
+	}
+}
+
+character_event = {			#Capital Swap#
+	id = DMCoreEvt.18
+	title = DMCoreEvttitle18
+	desc = DMCoreEvtdesc18
+	picture = GFX_evt_battle
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		while = {
+			count = 50
+			random_playable_ruler = {
+				save_event_target_as = ruler1
+				capital_holding = {
+					save_event_target_as = capital1
+				}
+			}
+			random_playable_ruler = {
+				save_event_target_as = ruler2
+				capital_holding = {
+					save_event_target_as = capital2
+				}
+			}
+			event_target:ruler1 = {
+				event_target:capital2 = {
+					grant_title = PREV
+				}
+			}
+			event_target:ruler2 = {
+				event_target:capital1 = {
+					grant_title = PREV
+				}
+			}
+		}
+	}
+
+	option = {
+		name = DMCoreEvt18OptA
+		any_player = {
+			character_event = { id = DMPlay.18 }
+		}
+	}
+}
+
+character_event = {			#Friends in low places#
+	id = DMCoreEvt.19
+	title = DMCoreEvttitle19
+	desc = DMCoreEvtdesc19
+	picture = GFX_potion_seller
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		any_character = {
+			limit = {
+				controls_religion = yes
+			}
+			random = {
+				chance = 50
+				add_trait = lunatic
+			}
+			random = {
+				chance = 50
+				add_trait = paranoid
+			}
+			random = {
+				chance = 50
+				add_trait = possessed
+			}
+			random = {
+				chance = 50
+				add_trait = wroth
+			}
+			random = {
+				chance = 50
+				add_trait = cruel
+			}
+			random = {
+				chance = 50
+				add_trait = arbitrary
+			}
+			random = {
+				chance = 50
+				add_trait = impaler
+			}
+			random = {
+				chance = 50
+				add_trait = hedonist
+			}
+			set_character_flag = demon_child_non_pagan
+			add_trait = lefthanded
+			add_character_modifier = {
+				name = demon_child_non_pagan
+				hidden = yes
+				days = -1
+			}
+		}
+	}
+
+	option = {
+		name = DMCoreEvt19OptA
+		any_player = {
+			character_event = { id = DMPlay.19 }
+		}
+	}
+}
+
+character_event = {			#Trait flip#
+	id = DMCoreEvt.20
+	title = DMCoreEvttitle20
+	desc = DMCoreEvtdesc20
+	picture = GFX_evt_jugglers
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		any_character = {
+			limit = {
+				ai = yes
+				trait = genius
+			}
+			set_character_flag = was_genius
+		}
+		any_character = {
+			limit = {
+				ai = yes
+				trait = fair
+			}
+			set_character_flag = was_fair
+		}
+		any_character = {
+			limit = {
+				ai = yes
+				trait = quick
+			}
+			set_character_flag = was_quick
+		}
+		any_character = {
+			limit = {
+				ai = yes
+				trait = strong
+			}
+			set_character_flag = was_strong
+		}
+		any_character = {
+			limit = {
+				ai = yes
+				trait = weak
+			}
+			set_character_flag = was_weak
+		}
+		any_character = {
+			limit = {
+				ai = yes
+				trait = imbecile
+			}
+			set_character_flag = was_imbecile
+		}
+		any_character = {
+			limit = {
+				ai = yes
+				trait = ugly
+			}
+			set_character_flag = was_ugly
+		}
+		any_character = {
+			limit = {
+				ai = yes
+				trait = slow
+			}
+			set_character_flag = was_slow
+		}
+		any_character = {
+			limit = {
+				ai = yes
+				has_character_flag = was_genius
+			}
+			add_trait = imbecile
+		}
+		any_character = {
+			limit = {
+				ai = yes
+				has_character_flag = was_fair
+			}
+			add_trait = ugly
+		}
+		any_character = {
+			limit = {
+				ai = yes
+				has_character_flag = was_quick
+			}
+			add_trait = slow
+		}
+		any_character = {
+			limit = {
+				ai = yes
+				has_character_flag = was_strong
+			}
+			add_trait = weak
+		}
+		any_character = {
+			limit = {
+				ai = yes
+				has_character_flag = was_weak
+			}
+			add_trait = strong
+		}
+		any_character = {
+			limit = {
+				ai = yes
+				has_character_flag = was_imbecile
+			}
+			add_trait = genius
+		}
+		any_character = {
+			limit = {
+				ai = yes
+				has_character_flag = was_ugly
+			}
+			add_trait = fair
+		}
+		any_character = {
+			limit = {
+				ai = yes
+				has_character_flag = was_slow
+			}
+			add_trait = quick
+		}
+	}
+
+	option = {
+		name = DMCoreEvt20OptA
+		any_player = {
+			character_event = { id = DMPlay.20 }
+		}
+	}
+}
+
+character_event = {			#Horse Lords#
+	id = DMCoreEvt.21
+	title = DMCoreEvttitle21
+	desc = DMCoreEvtdesc21
+	picture = GFX_evt_battle
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		if = {
+			limit = {
+				has_global_flag = base_game_enough
+			}
+			e_dungeon_master_governor = {
+				holder_scope = {
+					create_character = {
+						random_traits = no
+						name = "Glitterstomp"
+						dynasty = random
+						religion = tengri_pagan
+						culture = horse
+						female = no
+						age = 18
+						health = 20
+						fertility = 5.0
+						
+						attributes = {
+							martial = 26
+							diplomacy = 18
+							stewardship = 19
+							intrigue = 12
+							learning = 12
+						}
+					
+						add_trait = brilliant_strategist
+						add_trait = scarred_high
+						add_trait = wroth
+						add_trait = cruel
+						add_trait = brave
+						add_trait = immortal
+						add_trait = genius
+						add_trait = fair
+						add_trait = strong
+						add_trait = robust
+						add_trait = duelist
+						add_trait = strategist
+						add_trait = falconer
+						add_trait = proud
+						add_trait = lustful
+						add_trait = ambitious
+						add_trait = zealous
+						add_trait = holy_warrior
+						add_trait = cavalry_leader
+						add_trait = flat_terrain_leader
+						add_trait = tengri_leader
+						add_trait = tengri_warrior
+						add_trait = reincarnation
+						add_trait = glitterstomp_trait
+					}
+					new_character = {
+						if = {
+							limit = {
+								has_dlc = "Holy Fury"
+								NOT = {
+									any_owned_bloodline = {
+										has_bloodline_flag = genghis_khan_line
+									}
+								}
+							}
+							create_bloodline = {
+								type = genghis_khan
+							}
+						}
+						set_character_flag = no_court_invites
+						save_event_target_as = child_of_destiny
+						set_character_flag = is_child_of_destiny
+						set_character_flag = is_temujin
+						set_government_type = nomadic_government
+						set_character_flag = horde_invader
+						save_event_target_as = mongol_china_invader
+						save_event_target_as = horse_lord
+						set_character_flag = horse_lord
+						e_horse_lord = {
+							grant_title = PREV
+						}
+						c_delgerkhangai = {
+							grant_title = PREV
+						}
+						spawn_unit = {
+							owner = PREV
+							province = PREV
+							home = PREV
+						
+							troops = {
+								light_cavalry = { 14000 14000 }
+								heavy_cavalry = { 2000 2000 }
+								horse_archers = { 6000 6000 }
+							}
+						
+							attrition = 0.0
+							disband_on_peace = no
+							maintenance_multiplier = 0.0
+						}
+						character_event = { id = DMmanagement.5 }
+					}
+				}
+			}
+		}
+		else = {
+			random_playable_ruler = {
+				limit = {
+					is_feudal = yes
+					ai = yes
+					demesne_size = 3
+					NOR = {
+						tier = EMPEROR
+						tier = KING
+					}
+				}
+				capital_scope = {
+					save_event_target_as = horselord_capital
+				}
+				save_event_target_as = abdicated
+			}
+			create_character = {
+				random_traits = no
+				name = "Glitterstomp"
+				dynasty = random
+				religion = random
+				culture = random
+				female = no
+				age = 18
+				health = 20
+				fertility = 5.0
+				
+				attributes = {
+					martial = 26
+					diplomacy = 18
+					stewardship = 19
+					intrigue = 12
+					learning = 12
+				}
+			
+				add_random_education_trait = martial
+				add_trait = scarred_high
+				add_trait = wroth
+				add_trait = cruel
+				add_trait = brave
+				add_trait = immortal
+				add_trait = genius
+				add_trait = fair
+				add_trait = strong
+				add_trait = robust
+				add_trait = duelist
+				add_trait = strategist
+				add_trait = falconer
+				add_trait = proud
+				add_trait = lustful
+				add_trait = ambitious
+				add_trait = zealous
+				add_trait = holy_warrior
+				add_trait = cavalry_leader
+				add_trait = flat_terrain_leader
+				add_trait = tengri_leader
+				add_trait = tengri_warrior
+				add_trait = reincarnation
+				add_trait = glitterstomp_trait
+			}
+			new_character = {
+				if = {
+					limit = {
+						has_dlc = "Holy Fury"
+						NOT = {
+							any_owned_bloodline = {
+								has_bloodline_flag = genghis_khan_line
+							}
+						}
+					}
+					create_bloodline = {
+						type = genghis_khan
+					}
+				}
+				set_character_flag = no_court_invites
+				save_event_target_as = horse_squared
+				save_event_target_as = child_of_destiny
+				set_character_flag = is_child_of_destiny
+				set_character_flag = is_temujin
+				set_government_type = nomadic_government
+				set_character_flag = horde_invader
+				save_event_target_as = mongol_china_invader
+				save_event_target_as = horse_lord
+				set_character_flag = horse_lord
+				event_target:abdicated = {
+					abdicate_to = event_target:horse_squared 
+				}
+				new_character = {			#just a failsafe
+					spawn_unit = {
+						owner = event_target:horse_squared
+						province = event_target:horselord_capital
+						home = event_target:horselord_capital
+					
+						troops = {
+							light_cavalry = { 14000 14000 }
+							heavy_cavalry = { 2000 2000 }
+							horse_archers = { 6000 6000 }
+						}
+					
+						attrition = 0.0
+						disband_on_peace = no
+						maintenance_multiplier = 0.0
+					}
+					e_horse_lord = {
+						grant_title = PREV
+					}
+				}
+				character_event = { id = DMmanagement.5 }
+			}
+		}
+	}
+
+	option = {
+		name = DMCoreEvt21OptA
+		any_player = {
+			narrative_event = { id = DMPlay.21 }
+		}
+	}
+}
+
+character_event = {			#Religion Proven Right with Facts and Logic#
+	id = DMCoreEvt.22
+	title = DMCoreEvttitle22
+	desc = DMCoreEvtdesc22
+	picture = GFX_evt_catching_heretic
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		if = {
+			limit = {
+				has_global_flag = base_game_enough
+			}
+			random_list = {
+				1 = {
+					catholic = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = catholic			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					orthodox = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = orthodox			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					miaphysite = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = miaphysite			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					nestorian = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = nestorian			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						has_dlc = "The Sword of Islam"
+					}
+					sunni = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = sunni			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						has_dlc = "The Sword of Islam"
+					}
+					shiite = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = shiite			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						has_dlc = "The Sword of Islam"
+					}
+					ibadi = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = ibadi			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						has_dlc = "Sons of Abraham"
+					}
+					jewish = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = jewish			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						has_dlc = "The Old Gods"
+					}
+					zoroastrian = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = zoroastrian			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						has_dlc = "Rajas of India"
+					}
+					hindu = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = hindu			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						has_dlc = "Rajas of India"
+					}
+					buddhist = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = buddhist			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						has_dlc = "Rajas of India"
+					}
+					jain = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = jain			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						has_dlc = "Jade Dragon"
+					}
+					taoist = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = taoist			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						OR = {
+							has_dlc = "The Old Gods"
+							has_dlc = "Holy Fury"
+						}
+					}
+					norse_pagan = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = norse_pagan			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						OR = {
+							has_dlc = "The Old Gods"
+							has_dlc = "Holy Fury"
+						}
+					}
+					slavic_pagan = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = slavic_pagan			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						OR = {
+							has_dlc = "The Old Gods"
+							has_dlc = "Holy Fury"
+						}
+					}
+					tengri_pagan = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = tengri_pagan			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						OR = {
+							has_dlc = "The Old Gods"
+							has_dlc = "Holy Fury"
+						}
+					}
+					baltic_pagan = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = baltic_pagan			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						OR = {
+							has_dlc = "The Old Gods"
+							has_dlc = "Holy Fury"
+						}
+					}
+					finnish_pagan = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = finnish_pagan			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						OR = {
+							has_dlc = "The Old Gods"
+							has_dlc = "Holy Fury"
+						}
+					}
+					west_african_pagan = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = west_african_pagan			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						OR = {
+							has_dlc = "The Old Gods"
+							has_dlc = "Holy Fury"
+						}
+					}
+					aztec = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = aztec			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						OR = {
+							has_dlc = "The Old Gods"
+							has_dlc = "Holy Fury"
+						}
+					}
+					zun_pagan = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = zun_pagan			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						OR = {
+							has_dlc = "The Old Gods"
+							has_dlc = "Holy Fury"
+							has_dlc = "Jade Dragon"
+						}
+					}
+					bon = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = bon			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						OR = {
+							has_dlc = "The Old Gods"
+							has_dlc = "Holy Fury"
+						}
+					}
+					hellenic_pagan = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = hellenic_pagan			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					cathar = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = cathar			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					fraticelli = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = fraticelli			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					waldensian = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = waldensian			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					lollard = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = lollard			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					monophysite = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = monophysite			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					messalian = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = messalian			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					bogomilist = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = bogomilist			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					monothelite = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = monothelite			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					iconoclast = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = iconoclast			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					paulician = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = paulician			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						has_dlc = "The Sword of Islam"
+					}
+					zikri = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = zikri			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						has_dlc = "The Sword of Islam"
+					}
+					yazidi = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = yazidi			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						has_dlc = "The Sword of Islam"
+					}
+					kharijite = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = kharijite			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						has_dlc = "The Sword of Islam"
+					}
+					druze = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = druze			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						has_dlc = "The Sword of Islam"
+					}
+					hurufi = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = hurufi			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						has_dlc = "The Sword of Islam"
+					}
+					qarmatian = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = qarmatian			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						has_dlc = "The Old Gods"
+					}
+					mazdaki = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = mazdaki			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						has_dlc = "The Old Gods"
+					}
+					manichean = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = manichean			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						has_dlc = "Jade Dragon"
+					}
+					khurmazta = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = khurmazta			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						has_dlc = "Sons of Abraham"
+					}
+					samaritan = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = samaritan			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+				1 = {
+					trigger = {
+						has_dlc = "Sons of Abraham"
+					}
+					karaite = { save_event_target_as = religion_proven }
+					any_playable_ruler = {
+						random_list = {
+							1 = {
+								religion = karaite			#convert to new religion
+							}
+							1 = {
+								add_trait = cynical	
+							}
+							1 = {
+								add_trait = zealous
+							}
+						}
+					}
+				}
+			}
+		}
+		else = {
+			any_character = {
+				limit = {
+					NOT = { religion = dungeon_religion }
+				}
+				religion_scope = {
+					save_event_target_as = religion_proven
+				}
+			}
+			any_playable_ruler = {
+				random_list = {
+					1 = {
+						religion = event_target:religion_proven
+					}
+					1 = {
+						add_trait = cynical	
+					}
+					1 = {
+						add_trait = zealous
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = DMCoreEvt22OptA
+		any_player = {
+			character_event = { id = DMPlay.22 }
+		}
+	}
+}
+
+character_event = {			#City of Gold!#
+	id = DMCoreEvt.23
+	title = DMCoreEvttitle23
+	desc = DMCoreEvtdesc23
+	picture = GFX_evt_mysterious_forest
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		random_province = {
+			limit = {
+				has_city = yes
+			}
+			random_province_holding = {
+				limit = {
+					holding_type = city
+				}
+				add_building = city_of_gold
+				save_event_target_as = lost_city_of_gold
+			}
+			save_event_target_as = lost_province_of_gold
+			save_persistent_event_target = { name = lost_province_of_gold scope = event_target:lost_province_of_gold }		#unused
+			spawn_disease = midas_plague
+		}
+		set_global_flag = city_of_gold_uncovered
+	}
+
+	option = {
+		name = DMCoreEvt23OptA
+		any_player = {
+			narrative_event = { id = DMPlay.23 }
+		}
+	}
+}
+
+character_event = {			#The Snap#
+	id = DMCoreEvt.24
+	title = DMCoreEvttitle24
+	desc = DMCoreEvtdesc24
+	picture = GFX_evt_mysterious_forest
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	option = {
+		name = DMCoreEvt24OptA
+		any_player = {
+			narrative_event = { id = DMPlay.24 }
+		}
+		e_dungeon_master_governor = {
+			holder_scope = {
+				any_independent_ruler = {
+					limit = {				#Limited now to prevent horrible horrible lag#
+						NOR = {				#No lowborns or dungeon masters, characters of significant only#
+							trait = dungeon_master
+							dynasty = none
+							has_character_flag = special_npc # Compatibility with certain mods
+							AND = {
+								ai = no
+								NOT = {
+									any_child = {
+										is_heir = PREV
+									}
+								}
+							}
+						}
+					}
+					random = {
+						chance = 50
+						death = {
+							death_reason = death_missing
+							killer = PREV
+						}
+					}
+					any_realm_characters = {
+						limit = {
+							NOT = { has_character_flag = special_npc } # Compatibility with certain mods 
+							NAND = {
+								ai = no
+								NOT = {
+									any_child = {
+										is_heir = PREV
+									}
+								}
+							}
+						}
+						random = {
+							chance = 50
+							death = {
+								death_reason = death_missing
+								killer = PREV
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+character_event = {			#Angel of Death (not the slayer song obviously it's a text document)#
+	id = DMCoreEvt.25
+	title = DMCoreEvttitle25
+	desc = DMCoreEvtdesc25
+	picture = GFX_evt_mysterious_forest
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		ROOT = {
+			save_event_target_as = dungeon_master
+		}
+	}
+
+	option = {
+		name = DMCoreEvt25OptA
+		any_player = {
+			character_event = { id = DMPlay.25 }
+		}
+		any_playable_ruler = {
+			limit = {
+				ai = yes
+			}
+			random_child  = {
+				limit = {
+					any_sibling = {
+						NOT = {
+							is_older_than = PREV
+						}
+					}
+				}
+				death = {
+					death_reason = death_execution
+					killer = event_target:dungeon_master
+				}
+			}
+		}
+	}
+}
+
+character_event = {			#Pharaohs Return#
+	id = DMCoreEvt.26
+	title = DMCoreEvttitle26
+	desc = DMCoreEvtdesc26
+	picture = GFX_evt_battle
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		if = {
+			limit = {
+				has_global_flag = base_game_enough
+			}
+			e_dungeon_master_governor = {
+				holder_scope = {
+					create_character = {
+						random_traits = no
+						name = "Ramesses II"
+						dynasty = 700000
+						religion = kemetic
+						culture = coptic
+						female = no
+						age = 2173
+						health = 20
+						fertility = 0.0
+						
+						attributes = {
+							martial = 30
+							diplomacy = 28
+							stewardship = 25
+							intrigue = 27
+							learning = 26
+						}
+					
+						add_trait = brilliant_strategist
+						add_trait = scarred_high
+						add_trait = genius
+						add_trait = feeble
+						add_trait = shrewd
+						add_trait = uncouth
+						add_trait = reincarnation
+						add_trait = strategist
+						add_trait = diligent
+						add_trait = proud
+						add_trait = ambitious
+						add_trait = brave
+						add_trait = zealous
+						add_trait = inspiring_leader
+						add_trait = zun_leader
+						add_trait = sun_warrior
+						add_trait = immortal
+						add_trait = ozyman_trait
+					}
+					new_character = {
+						set_character_flag = no_court_invites
+						save_event_target_as = child_of_destiny
+						set_character_flag = is_child_of_destiny
+						save_event_target_as = ozymandius
+						set_character_flag = ozymandius
+						k_kemet = {
+							grant_title = PREV
+						}
+						d_cairo = {
+							grant_title = PREV
+						}
+						c_gizeh = {
+							grant_title = PREV
+						}
+						c_cairo = {
+							grant_title = PREV
+						}
+						c_sarqihya = {
+							grant_title = PREV
+						}
+						c_kharibta = {
+							grant_title = PREV
+						}
+						set_government_type = theocratic_feudal_government		#I think this is culture specific so will probably default to feudal#
+						spawn_unit = {
+							owner = event_target:ozymandius			#PREV didn't work?#
+							province = c_gizeh
+							home = c_gizeh
+							troops = {
+								light_infantry = { 14000 14000 }
+								heavy_infantry = { 2000 2000 }
+								horse_archers = { 6000 6000 }			#chariots?
+							}
+							attrition = 0.0
+							disband_on_peace = no
+							maintenance_multiplier = 0.0
+						}
+						character_event = { id = DMmanagement.4 }			#prevent multiple ozymandiuses 
+					}
+				}
+			}
+		}
+		else = {
+			random_playable_ruler = {
+				limit = {
+					is_feudal = yes
+					ai = yes
+					demesne_size = 3
+				}
+				save_event_target_as = abdicated
+			}
+			create_character = {
+				random_traits = no
+				name = "Ramesses II"
+				dynasty = 700000
+				religion = kemetic
+				culture = random
+				female = no
+				age = 2173
+				health = 20
+				fertility = 0.0
+				
+				attributes = {
+					martial = 30
+					diplomacy = 28
+					stewardship = 25
+					intrigue = 27
+					learning = 26
+				}
+				add_trait = scarred_high
+				add_trait = genius
+				add_trait = feeble
+				add_trait = shrewd
+				add_trait = uncouth
+				add_trait = reincarnation
+				add_trait = strategist
+				add_trait = diligent
+				add_trait = proud
+				add_trait = ambitious
+				add_trait = brave
+				add_trait = zealous
+				add_trait = inspiring_leader
+				add_trait = zun_leader
+				add_trait = sun_warrior
+				add_trait = immortal
+				add_trait = ozyman_trait
+			}
+			new_character = {
+				set_character_flag = no_court_invites
+				add_random_education_trait = martial
+				save_event_target_as = child_of_destiny
+				set_character_flag = is_child_of_destiny
+				save_event_target_as = ozymandius
+				set_character_flag = ozymandius
+				set_government_type = theocratic_feudal_government		#I think this is culture specific so will probably default to feudal#
+				spawn_unit = {
+					owner = event_target:ozymandius			#PREV didn't work?#
+					province = event_target:ozymandius_domain
+					home = event_target:ozymandius_domain
+					troops = {
+						light_infantry = { 14000 14000 }
+						heavy_infantry = { 2000 2000 }
+						horse_archers = { 6000 6000 }			#chariots?
+					}
+					attrition = 0.0
+					disband_on_peace = no
+					maintenance_multiplier = 0.0
+				}
+			}
+			event_target:abdicated = {
+				abdicate_to = event_target:ozymandius 
+			}
+			new_character = {
+				set_defacto_liege = THIS
+				k_kemet = {
+					grant_title = PREV
+				}
+				character_event = { id = DMmanagement.4 }			#prevent multiple ozymandiuses 
+			}
+		}
+	}
+
+	option = {
+		name = DMCoreEvt26OptA
+		any_player = {
+			narrative_event = { id = DMPlay.26 }
+		}
+	}
+}
+
+character_event = {			#Cursed Rings#
+	id = DMCoreEvt.27
+	title = DMCoreEvttitle27
+	desc = DMCoreEvtdesc27
+	picture = GFX_evt_mysterious_forest
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	option = {
+		name = DMCoreEvt27OptA
+		e_dungeon_master_governor = {
+			holder_scope = {
+				add_artifact = cursed_ring_of_one
+			}
+		}
+		while = {
+			count = 9
+			random_playable_ruler = {
+				limit = {
+					NOT = {
+						any_artifact = {
+							has_artifact_flag = dungeon_master_ring
+						}
+					}
+				}
+				add_artifact = cursed_ring
+			}
+		}
+		random = {
+			chance = 5
+			any_player = {
+				limit = {
+					NOT = {
+						any_artifact = {
+							has_artifact_flag = dungeon_master_ring
+						}
+					}
+				}
+				add_artifact = cursed_ring
+			}
+		}
+		any_player = {
+			character_event = { id = DMPlay.27 }
+		}
+	}
+}
+
+character_event = {			#Cultural Exchange#
+	id = DMCoreEvt.28
+	title = DMCoreEvttitle28
+	desc = DMCoreEvtdesc28
+	picture = GFX_evt_mysterious_forest
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		random_playable_ruler = {
+			culture_scope = {
+				save_event_target_as = culture1
+			}
+		}
+		random_playable_ruler = {
+			limit = {
+				NOT = {
+					culture = event_target:culture1
+				}
+			}
+			culture_scope = {
+				save_event_target_as = culture2
+			}
+		}
+	}
+
+	option = {
+		name = DMCoreEvt28OptA
+		any_character = {
+			limit = {
+				culture = event_target:culture1
+			}
+			culture = event_target:culture2 	
+			set_character_flag = noconvertthanks
+		}
+		any_character = {
+			limit = {
+				culture = event_target:culture2
+				NOT = { has_character_flag = noconvertthanks }
+			}
+			culture = event_target:culture1
+		}
+		any_province = {
+			limit = {
+				culture = event_target:culture1
+			}
+			culture = event_target:culture2
+			set_province_flag = noconvertthanks
+		}
+		any_province = {
+			limit = {
+				culture = event_target:culture2
+				NOT = { has_province_flag = noconvertthanks }
+			}
+			culture = event_target:culture1
+		}
+		any_player = {
+			character_event = { id = DMPlay.28 }
+		}
+	}
+}
+
+character_event = {			#Religious Tomfoolery#
+	id = DMCoreEvt.29
+	title = DMCoreEvttitle29
+	desc = DMCoreEvtdesc29
+	picture = GFX_evt_mysterious_forest
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		while = {
+			count = 20			#we could limit this but CHAOS
+			random_character = {
+				limit = {
+					NOR = {
+						religion = dungeon_religion
+						religion = kemetic
+						religion = lf_custom_religion
+						religion = lf_custom_religion_reformed
+					}
+				}
+				religion_scope = {
+					religion_tomfoolery = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		name = DMCoreEvt29OptA
+		any_player = {
+			character_event = { id = DMPlay.29 }
+		}
+	}
+}
+
+character_event = {			#Reverse Byzantine, stable empire#
+	id = DMCoreEvt.30
+	title = DMCoreEvttitle30
+	desc = DMCoreEvtdesc30
+	picture = GFX_evt_mysterious_forest
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		any_playable_ruler = {
+			limit = { 
+				tier = EMPEROR 
+			}
+			add_character_modifier = {
+				name = endearing_peasants
+				days = -1
+			}
+			add_character_modifier = {
+				name = crushed_major_revolt
+				days = -1
+			}
+			add_character_modifier = {
+				name = gave_funny_speech
+				days = -1
+			}
+			add_trait = just
+			add_trait = gregarious
+			change_diplomacy = 5
+			any_vassal = {
+				add_trait = content
+			}
+		}
+	}
+
+	option = {
+		name = DMCoreEvt30OptA
+		any_player = {
+			character_event = { id = DMPlay.30 }
+		}
+	}
+}
+
+character_event = {			#Perfectly Normal Men#
+	id = DMCoreEvt.31
+	title = DMCoreEvttitle31
+	desc = DMCoreEvtdesc31
+	picture = GFX_evt_mysterious_forest
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		any_playable_ruler = {
+			limit = {
+				NOT = { ai = no }
+			}
+			create_character = {
+				random_traits = yes
+				name = "Joris"
+				dynasty = random
+				religion = ROOT
+				culture = ROOT
+				female = 50
+				age = 18
+				health = 6
+				fertility = 5.0
+				
+				attributes = {
+					martial = 8
+					diplomacy = 8
+					stewardship = 8
+					intrigue = 8
+					learning = 8
+				}
+				add_trait = strong
+				add_trait = robust
+				add_trait = joris_trait
+			}
+			new_character = {
+				set_character_flag = no_court_invites
+				set_graphical_culture = bear			#probably wont work in total conversions?
+			}
+		}
+	}
+
+	option = {
+		name = DMCoreEvt31OptA
+		any_player = {
+			long_character_event = { id = DMPlay.31 }
+		}
+	}
+}
+
+character_event = {			#Fountain of Youth#
+	id = DMCoreEvt.32
+	title = DMCoreEvttitle32
+	desc = DMCoreEvtdesc32
+	picture = GFX_evt_mysterious_forest
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		random_province = {
+			limit = {
+				has_temple = yes
+			}
+			random_province_holding = {
+				limit = {
+					holding_type = temple
+				}
+				add_building = fountain_of_youth
+				save_event_target_as = fountain_of_youth_holding
+			}
+			save_event_target_as = fountain_of_youth_province
+			save_persistent_event_target = { name = fountain_of_youth_province scope = event_target:fountain_of_youth_province }
+		}
+	}
+
+	option = {
+		name = DMCoreEvt32OptA
+		any_player = {
+			narrative_event = { id = DMPlay.32 }
+		}
+	}
+}
+
+narrative_event = {			#Gary#
+	id = DMCoreEvt.33
+	title = DMCoreEvttitle33
+	desc = DMCoreEvtdesc33
+	picture = GFX_evt_battle
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		e_dungeon_master_governor = {
+			holder_scope = {
+				create_character = {			#father of gary
+					random_traits = no
+					name = "Gary Prime"
+					dynasty = 700001
+					religion = ROOT
+					culture = gary_culture
+					female = no
+					age = 69
+					health = 20
+					fertility = 5.0
+					
+					attributes = {
+						martial = 30
+						diplomacy = 28
+						stewardship = 25
+						intrigue = 27
+						learning = 26
+					}
+					add_trait = grey_eminence
+					add_trait = seducer
+					add_trait = fair
+					add_trait = strong
+					add_trait = robust
+					add_trait = lustful
+					add_trait = hedonist
+					add_trait = immortal
+				}
+				new_character = {
+					random_list = {
+						10 = {
+							add_trait = slow
+						}
+						10 = {
+							add_trait = dwarf
+							give_nickname = nick_coleman
+							if = {
+								limit = {
+									has_global_flag = base_game_enough
+								}
+								set_graphical_culture = manden
+							}
+						}
+						1 = {
+							add_artifact = hermetic_handgun
+							add_artifact = hermetic_compass
+							add_artifact = radius_astronomicus
+							add_artifact = hermetic_cypher_machine
+							add_artifact = hermetic_plate_armor
+							add_artifact = hermetic_glasses
+							give_nickname = nick_cleptomaniac
+						}
+						1000 = { }
+					}
+					save_event_target_as = gary_prime
+					set_character_flag = no_court_invites
+					opinion = {
+						modifier = opinion_loyal_servant
+						who = ROOT
+						years = 999
+					}
+				}
+			}
+		}
+		while = {
+			count = 50
+			random_playable_ruler = {
+				limit = {
+					demesne_size = 1
+					NOT = { 
+						any_courtier = {
+							has_character_flag = gary
+						}
+					}
+				}
+				create_character = {
+					random_traits = no
+					name = "Gary"
+					dynasty = 700001
+					religion = ROOT
+					culture = gary_culture
+					female = no
+					age = 21
+					health = 6
+					fertility = 0.75
+					
+					attributes = {
+						martial = 4
+						diplomacy = 16
+						stewardship = 6
+						intrigue = 20
+						learning = 6
+					}
+				
+					add_trait = elusive_shadow
+					add_trait = genius
+					add_trait = shrewd
+					add_trait = ambitious
+					add_trait = cruel
+					add_trait = schemer
+					add_trait = paranoid
+					add_trait = cynical
+					add_trait = proud
+					add_trait = socializer
+					add_trait = gregarious
+					add_trait = diligent
+					add_trait = patient
+					add_trait = envious
+					add_trait = arbitrary
+					add_trait = deceitful
+					add_trait = adventurer
+					add_trait = inbred
+			
+				}
+				new_character = {
+					set_character_flag = no_court_invites
+					save_event_target_as = gary
+					set_character_flag = gary
+					set_father = event_target:gary_prime
+					add_claim = location
+					religion = location
+				}
+			}
+		}
+	}
+
+	option = {
+		name = DMCoreEvt33OptA
+		any_player = {
+			narrative_event = { id = DMPlay.33 }
+		}
+	}
+}
+
+character_event = {			#Get out of jail free card#
+	id = DMCoreEvt.34
+	title = DMCoreEvttitle34
+	desc = DMCoreEvtdesc34
+	picture = GFX_potato_chip
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		any_playable_ruler = {
+			set_character_flag = get_out_of_jail_free
+		}
+	}
+
+	option = {
+		name = DMCoreEvt34OptA
+		any_player = {
+			long_character_event = { id = DMPlay.34 }
+		}
+	}
+}
+
+character_event = {			#Prisoners freed#
+	id = DMCoreEvt.35
+	title = DMCoreEvttitle35
+	desc = DMCoreEvtdesc35
+	picture = GFX_potato_chips
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		any_character = {
+			limit = {
+				prisoner = yes
+			}
+			add_rival = host
+			imprison = no
+		}
+	}
+
+	option = {
+		name = DMCoreEvt35OptA
+		any_player = {
+			character_event = { id = DMPlay.35 }
+		}
+	}
+}
+
+character_event = {			#Gavelkind#
+	id = DMCoreEvt.36
+	title = DMCoreEvttitle36
+	desc = DMCoreEvtdesc36
+	picture = GFX_potato_chips
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		any_playable_ruler = {
+			limit = {
+				NOT = { 
+					ai = no 
+					has_law = succ_gavelkind
+				}
+				OR = {
+					trait = impaler
+					trait = kinslayer
+					trait = familial_kinslayer
+					trait = dynastic_kinslayer
+					has_character_modifier = rampant_sinner_christian
+					has_character_modifier = rampant_sinner_dharmic
+					has_character_modifier = known_satanist
+					has_character_modifier = known_witch
+					has_character_modifier = known_murderer
+				}
+			}
+			primary_title = { 
+				add_law = succ_gavelkind
+			}
+			recalc_succession = yes
+		}
+	}
+
+	option = {
+		name = DMCoreEvt36OptA
+		any_player = {
+			character_event = { id = DMPlay.36 }
+		}
+	}
+}
+
+character_event = {			#Spa Day#
+	id = DMCoreEvt.37
+	title = DMCoreEvttitle37
+	desc = DMCoreEvtdesc37
+	picture = GFX_potato_chips
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		any_playable_ruler = {
+			limit = {
+				NOT = { ai = no }
+			}
+			random_list = {
+				1 = {
+					add_character_modifier = {
+						name = sacrifices_for_beauty
+						months = 6
+					}
+				}
+				1 = {
+					add_character_modifier = {
+						name = mud_wraps
+						months = 6
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = DMCoreEvt37OptA
+		any_player = {
+			character_event = { id = DMPlay.37 }
+		}
+	}
+}
+
+character_event = {			#Bob Ross#
+	id = DMCoreEvt.38
+	title = DMCoreEvttitle38
+	desc = DMCoreEvtdesc38
+	picture = GFX_evt_council_speaker
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	immediate = {
+		any_playable_ruler = {
+			limit = {
+				NOT = { ai = no }
+			}
+			create_character = {
+				random_traits = no
+				name = "Bob Ross"
+				dynasty = none
+				religion = ROOT
+				culture = ROOT
+				female = no
+				age = 52
+				health = 5
+				fertility = 0.5
+				
+				attributes = {
+					martial = 8
+					diplomacy = 28
+					stewardship = 24
+					intrigue = 2
+					learning = 12
+				}
+			
+				add_trait = charismatic_negotiator
+				add_trait = quick
+				add_trait = gardener
+				add_trait = socializer
+				add_trait = charitable
+				add_trait = diligent
+				add_trait = patient
+				add_trait = kind
+				add_trait = humble 
+				add_trait = content
+				add_trait = erudite
+				add_trait = gregarious
+				add_trait = trusting
+				add_trait = inspiring_leader
+				add_trait = bobross_trait
+			}
+			new_character = {
+				set_character_flag = bob_ross
+			}
+		}
+	}
+
+	option = {
+		name = DMCoreEvt38OptA
+		any_player = {
+			character_event = { id = DMPlay.38 }
+		}
+	}
+}
+
+character_event = {			#EU4#
+	id = DMCoreEvt.39
+	title = DMCoreEvttitle39
+	desc = DMCoreEvtdesc39
+	picture = GFX_evt_comet
+	is_triggered_only = yes	
+	offmap = allow
+
+	option = {
+		name = DMCoreEvt39OptA
+		any_player = {
+			character_event = { id = DMPlay.39 }
+		}
+	}
+}
+
+character_event = {			#Duke Nukem - all dukes destroyed#
+	id = DMCoreEvt.40
+	title = DMCoreEvttitle40
+	desc = DMCoreEvtdesc40
+	picture = GFX_evt_comet
+	is_triggered_only = yes	
+	offmap = allow
+	
+	immediate = {
+		any_title = {
+			limit = {
+				tier = DUKE
+				NOR = { 
+                    controls_religion = yes
+                    mercenary = yes
+                    is_merchant_republic = yes
+                    temporary = yes
+					holder_scope = {
+						is_offmap_governor = yes
+					}
+                }
+			}
+			unsafe_destroy_landed_title = THIS
+		}
+	}
+
+	option = {
+		name = DMCoreEvt40OptA
+		any_player = {
+			character_event = { id = DMPlay.40 }
+		}
+	}
+}
+
+character_event = {			#Genius...?#
+	id = DMCoreEvt.41
+	title = DMCoreEvttitle41
+	desc = DMCoreEvtdesc41
+	picture = GFX_evt_comet
+	is_triggered_only = yes	
+	offmap = allow
+	
+	immediate = {
+		any_character = {
+			limit = {
+				NOT = { trait = genius }
+			}
+			add_trait = genius_fake
+		}
+	}
+
+	option = {
+		name = DMCoreEvt41OptA
+		any_player = {
+			character_event = { id = DMPlay.41 }
+		}
+	}
+}
+
+character_event = {			#Crab Rave - Cancer for all#
+	id = DMCoreEvt.42
+	title = DMCoreEvttitle42
+	desc = DMCoreEvtdesc42
+	picture = GFX_evt_comet
+	is_triggered_only = yes	
+	offmap = allow
+	
+	immediate = {
+		any_playable_ruler = {
+			limit = {
+				NOT = { ai = no }
+			}
+			add_trait = cancer
+		}
+	}
+
+	option = {
+		name = DMCoreEvt42OptA
+		any_player = {
+			character_event = { id = DMPlay.42 }
+		}
+	}
+}
+
+character_event = {			#Meek Inherit the Earth#
+	id = DMCoreEvt.43
+	title = DMCoreEvttitle43
+	desc = DMCoreEvtdesc43
+	picture = GFX_evt_comet
+	is_triggered_only = yes	
+	offmap = allow
+	
+	immediate = {
+		any_character = {
+			limit = {
+				ai = yes
+				is_ruler = yes
+				is_adult = yes
+				is_offmap_governor = no
+			}
+			if = {
+				limit = {
+					current_heir = {
+						dynasty = ROOT
+						age < 12
+					}
+				}
+				death = {
+					death_reason = death_missing
+					killer = FROM
+				}
+			}
+			else = {
+				set_variable = { # Clearing out previous variables
+				which = ending_age
+				value = 0
+				}
+				export_to_variable = {
+					which = current_age
+					value = age
+				}
+				subtract_variable = {
+					which = ending_age
+					which = current_age
+				}
+				add_age = ending_age
+				add_age = 12
+				clear_education_trait = yes
+			}
+			any_dynasty_member = {
+				if = {
+					limit = {
+						current_heir = {
+							dynasty = ROOT
+							age < 12
+						}
+					}
+					death = {
+						death_reason = death_missing
+						killer = FROM
+					}
+				}
+				else = {
+					set_variable = { # Clearing out previous variables
+					which = ending_age
+					value = 0
+					}
+					export_to_variable = {
+						which = current_age
+						value = age
+					}
+					subtract_variable = {
+						which = ending_age
+						which = current_age
+					}
+					add_age = ending_age
+					add_age = 12
+					clear_education_trait = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		name = DMCoreEvt43OptA
+		any_player = {
+			character_event = { id = DMPlay.43 }
+		}
+	}
+}
+
+character_event = {			# Wyvernballs Landed #
+	id = DMCoreEvt.44
+	title = DMCoreEvttitle44
+	desc = DMCoreEvtdesc44
+	picture = GFX_evt_comet
+	is_triggered_only = yes	
+	offmap = allow
+	
+	immediate = {
+		random_character = {
+			limit = {
+				is_offmap_governor = no
+				NOT = {
+					any_artifact = { has_artifact_flag = wyvernball }
+				}
+			}
+			add_artifact = wyvernball_1
+		}
+		random_character = {
+			limit = {
+				is_offmap_governor = no
+				NOT = {
+					any_artifact = { has_artifact_flag = wyvernball }
+				}
+			}
+			add_artifact = wyvernball_2
+		}
+		random_character = {
+			limit = {
+				is_offmap_governor = no
+				NOT = {
+					any_artifact = { has_artifact_flag = wyvernball }
+				}
+			}
+			add_artifact = wyvernball_3
+		}
+		random_character = {
+			limit = {
+				is_offmap_governor = no
+				NOT = {
+					any_artifact = { has_artifact_flag = wyvernball }
+				}
+			}
+			add_artifact = wyvernball_4
+		}
+		random_character = {
+			limit = {
+				is_offmap_governor = no
+				NOT = {
+					any_artifact = { has_artifact_flag = wyvernball }
+				}
+			}
+			add_artifact = wyvernball_5
+		}
+		random_character = {
+			limit = {
+				is_offmap_governor = no
+				NOT = {
+					any_artifact = { has_artifact_flag = wyvernball }
+				}
+			}
+			add_artifact = wyvernball_6
+		}
+		random_character = {
+			limit = {
+				is_offmap_governor = no
+				NOT = {
+					any_artifact = { has_artifact_flag = wyvernball }
+				}
+			}
+			add_artifact = wyvernball_7
+		}
+	}
+
+	option = {
+		name = DMCoreEvt44OptA
+		set_global_flag = wyvernballs_landed
+		any_player = {
+			character_event = { id = DMPlay.44 }
+		}
+	}
+}
+
+character_event = {			#Marks and Angels#
+	id = DMCoreEvt.45
+	title = DMCoreEvttitle45
+	desc = DMCoreEvtdesc45
+	picture = GFX_evt_comet
+	is_triggered_only = yes	
+	offmap = allow
+	
+	immediate = {
+		any_playable_ruler = {
+			limit = {
+				ai = yes
+			}
+			clear_wealth = yes
+			wealth = 50
+		}
+	}
+
+	option = {
+		name = DMCoreEvt45OptA
+		any_player = {
+			character_event = { id = DMPlay.45 }
+		}
+	}
+}
+
+character_event = { 	# The Chessboard
+	id = DMCoreEvt.46
+	title = DMCoreEvttitle46
+	desc = DMCoreEvtdesc46
+	picture = GFX_evt_war_planning
+	is_triggered_only = yes	
+	offmap = allow
+	immediate = {
+		random_independent_ruler = {
+			limit = {
+				NOR = {
+					has_character_flag = dm_battle_royale_1
+					has_character_flag = dm_battle_royale_2
+					has_character_flag = dm_battle_royale_3
+					controls_religion = yes
+					mercenary = yes
+					ai = no
+					tier = EMPEROR
+					capital_scope = {
+						is_island = yes
+					}
+					is_offmap_governor = no
+					is_landed = no
+				}
+			}
+			set_character_flag = dm_battle_royale_1
+			save_event_target_as = slave_master1
+			activate_title = {
+				title = k_slave_master1
+				status = yes
+			}
+			grant_title = k_slave_master1
+			k_slave_master1 = { make_primary_title = yes }
+		}
+		random_independent_ruler = {
+			limit = {
+				NOR = {
+					has_character_flag = dm_battle_royale_1
+					has_character_flag = dm_battle_royale_2
+					has_character_flag = dm_battle_royale_3
+					controls_religion = yes
+					mercenary = yes
+					ai = no
+					tier = EMPEROR
+					capital_scope = {
+						is_island = yes
+					}
+					is_offmap_governor = no
+					is_landed = no
+				}
+			}
+			set_character_flag = dm_battle_royale_2
+			save_event_target_as = slave_master2
+			activate_title = {
+				title = k_slave_master2
+				status = yes
+			}
+			grant_title = k_slave_master2
+			k_slave_master2 = { make_primary_title = yes }
+		}
+		any_independent_ruler = {
+			limit = {
+				NOR = {
+					has_character_flag = dm_battle_royale_1
+					has_character_flag = dm_battle_royale_2
+					has_character_flag = dm_chose_side
+					controls_religion = yes
+					mercenary = yes
+					ai = no
+					tier = EMPEROR
+					capital_scope = {
+						is_island = yes
+					}
+					is_offmap_governor = no
+					is_landed = no
+				}
+			}
+			random_list = {
+				33 = {
+					trigger = {
+						is_within_diplo_range = event_target:slave_master1
+					}
+					event_target:slave_master1 = {
+						make_tributary = {
+							who = PREV
+							percentage = 0.01
+							tributary_type = default
+						}
+					}
+					set_character_flag = dm_chose_side
+				}
+				33 = {
+					trigger = {
+						is_within_diplo_range = event_target:slave_master2
+					}
+					event_target:slave_master2 = {
+						make_tributary = {
+							who = PREV
+							percentage = 0.01
+							tributary_type = default
+						}
+					}
+					set_character_flag = dm_chose_side
+				}
+			}
+		}
+	}
+	option = {
+		name = DMCoreEvt46OptA
+		event_target:slave_master1 = {
+			primary_title = {
+				reverse_unsafe_war = {
+					target = event_target:slave_master2
+					casus_belli = chessboard_invasion
+					infamy = 0
+				}
+			}
+		}
+		any_player = {
+			narrative_event = { id = DMPlay.46 }
+		}
+	}
+}
+
+character_event = { 	# Pet Shop
+	id = DMCoreEvt.47
+	title = DMCoreEvttitle47
+	desc = DMCoreEvtdesc47
+	picture = GFX_evt_cat
+	is_triggered_only = yes	
+	offmap = allow
+	immediate = {
+		any_playable_ruler = {
+			limit = {
+				NOR = {
+					has_character_modifier = dm_petshop_cat
+					has_character_modifier = dm_petshop_dog
+					has_character_modifier = dm_petshop_snake
+					has_character_modifier = dm_petshop_pony
+					has_character_modifier = dm_petshop_bear
+					has_character_modifier = dm_petshop_hamster
+					has_character_modifier = dm_petshop_rat
+					ai = no
+				}
+			}
+			random_list = {
+				25 = {
+					wealth = -50
+					add_character_modifier = {
+						name = dm_petshop_cat
+						duration = -1
+					}
+				}
+				25 = {
+					wealth = -50
+					add_character_modifier = {
+						name = dm_petshop_dog
+						duration = -1
+					}
+				}
+				25 = {
+					wealth = -50
+					add_character_modifier = {
+						name = dm_petshop_snake
+						duration = -1
+					}
+				}
+				25 = {
+					wealth = -50
+					add_character_modifier = {
+						name = dm_petshop_bear
+						duration = -1
+					}
+				}
+				25 = {
+					wealth = -50
+					add_character_modifier = {
+						name = dm_petshop_pony
+						duration = -1
+					}
+				}
+				25 = {
+					wealth = -50
+					add_character_modifier = {
+						name = dm_petshop_hamster
+						duration = -1
+					}
+				}
+				25 = {
+					wealth = -50
+					add_character_modifier = {
+						name = dm_petshop_rat
+						duration = -1
+					}
+					character_event = { id = DMCoreFollow.17 }
+				}
+				200 = { }
+			}
+		}
+	}
+	option = {
+		name = DMCoreEvt47OptA
+		any_player = {
+			character_event = { id = DMPlay.47 }
+		}
+	}
+}
+
+character_event = { 	# Snow White
+	id = DMCoreEvt.48
+	title = DMCoreEvttitle48
+	desc = DMCoreEvtdesc48
+	picture = GFX_evt_homage_hf
+	portrait = event_target:dm_snow_white
+	is_triggered_only = yes	
+	offmap = allow
+	immediate = {
+		random_playable_ruler = {
+			limit = {
+				NOT = {
+					has_character_flag = dm_snow_white
+				}
+				is_female = yes
+			}
+			set_character_flag = dm_snow_white
+			save_event_target_as = dm_snow_white
+			dm_make_seven_dwarves = yes
+		}
+	}
+	option = {
+		name = DMCoreEvt48OptA
+		any_player = {
+			character_event = { id = DMPlay.48 }
+		}
+	}
+}
+
+long_character_event = {
+	id = DMCoreEvt.49			# Kidnapping 
+	title = DMCoreEvttitle49
+	desc = DMCoreEvtdesc49
+	picture = GFX_evt_guardian
+	offmap = allow
+	
+	is_triggered_only = yes	
+
+	option = {
+		name = DMCoreEvt49OptA
+		any_player = {
+			long_character_event = { id = DMPlay.49 }
+		}	
+	}
+}
+
+character_event = {
+	id = DMCoreEvt.50			# Vassal/Liege 
+	title = DMCoreEvttitle50
+	desc = DMCoreEvtdesc50
+	picture = GFX_evt_homage_hf
+	portrait = event_target:dm_vassal
+	offmap = allow
+	
+	is_triggered_only = yes	
+	immediate = {
+		random_independent_ruler = {
+			limit = {
+				is_offmap_governor = no
+				higher_tier_than = COUNT
+				NOR = {
+					mercenary = yes
+					is_merchant_republic = yes
+					controls_religion = yes
+					is_nomadic = yes # Fuck these guys
+				}
+			}
+			save_event_target_as = dm_liege
+			any_demesne_title = {
+				set_title_flag = liege_title
+			}
+			random_vassal = {
+				limit = {
+					higher_tier_than = BARON
+					NOR = {
+						mercenary = yes
+						is_merchant_republic = yes
+						controls_religion = yes
+					}
+				}
+				any_demesne_title = {
+					set_title_flag = vassal_title
+				}
+				save_event_target_as = dm_vassal
+			}
+		}
+		if = {
+			limit = {
+				event_target:dm_vassal = {
+					ai = no
+				}
+			}
+			event_target:dm_liege = {
+				any_demesne_title = {
+					limit = {
+						has_title_flag = liege_title
+					}
+					grant_title_no_opinion = event_target:dm_vassal
+				}
+			}
+			event_target:dm_vassal = {
+				any_demesne_title = {
+					limit = {
+						has_title_flag = vassal_title
+					}
+					grant_title_no_opinion = event_target:dm_liege
+				}
+			}
+		}
+		else = {
+			event_target:dm_vassal = {
+				any_demesne_title = {
+					limit = {
+						has_title_flag = vassal_title
+					}
+					grant_title_no_opinion = event_target:dm_liege
+				}
+			}	
+			event_target:dm_liege = {
+				any_demesne_title = {
+					limit = {
+						has_title_flag = liege_title
+					}
+					grant_title_no_opinion = event_target:dm_vassal
+				}
+				any_realm_title = {
+					limit = {
+						OR = {
+							has_title_flag = liege_title
+							has_title_flag = vassal_title
+						}
+					}
+					clr_title_flag = liege_title
+					clr_title_flag = vassal_title
+				}
+			}
+		}
+	}
+
+	option = {
+		name = DMCoreEvt50OptA
+		any_player = {
+			character_event = { id = DMPlay.50 }
+		}	
+	}
+}
+
+character_event = {			# To Dream of Death
+	id = DMCoreEvt.51
+	title = DMCoreEvttitle51
+	desc = DMCoreEvtdesc51
+	picture = GFX_evt_stressed_ruler
+	is_triggered_only = yes	
+	offmap = allow
+	
+	option = {
+		name = DMCoreEvt51OptA
+		any_player = {
+			narrative_event = { id = DMPlay.51 }
+		}
+	}
+	
+}
+
+character_event = {			# Blood of the Dragon
+	id = DMCoreEvt.52
+	title = DMCoreEvttitle52
+	desc = DMCoreEvtdesc52
+	picture = GFX_evt_stressed_ruler
+	is_triggered_only = yes	
+	offmap = allow
+	immediate = {
+		any_bloodline = {
+			limit = {
+				has_bloodline_flag = dm_dragon
+			}
+			destroy_bloodline = yes
+		}
+		create_bloodline = {
+			type = dm_dragon_bloodline
+		}
+		any_playable_ruler = {
+			random_list = {
+				25 = {
+					any_bloodline = {
+						limit = {
+							has_bloodline_flag = dm_dragon
+						}
+						add_bloodline_member = PREV
+					}
+				}
+				75 = {}
+			}
+		}
+	}
+	
+	option = {
+		name = DMCoreEvt52OptA
+		any_player = {
+			character_event = { id = DMPlay.52 }
+		}
+	}
+	
+}
+
+character_event = {			# Animal Kingdom
+	id = DMCoreEvt.53
+	title = DMCoreEvttitle53
+	desc = DMCoreEvtdesc53
+	picture = GFX_evt_kitten_shadow
+	is_triggered_only = yes	
+	offmap = allow
+	
+	immediate = {
+		e_dungeon_master_governor = {
+			holder_scope = {
+				unleash_the_joris = yes
+				set_global_flag = joris_unleashed
+			}
+		}
+	}
+	
+	option = {
+		name = DMCoreEvt53OptA
+		any_player = {
+			narrative_event = { id = DMPlay.53 }
+		}
+	}
+}
+
+character_event = {			# 5G Unleashed
+	id = DMCoreEvt.54
+	offmap = allow
+	title = DMCoreEvttitle54
+	desc = DMCoreEvtdesc54
+	picture = GFX_dm_herd_of_cows
+	is_triggered_only = yes	
+	
+	immediate = {
+		set_global_flag = 5G_network_created
+		e_dungeon_master_governor = {
+			holder_scope = {
+				dm_can_you_hear_me_now = yes
+			}
+		}
+	}
+	option = {
+		name = DMCoreEvtdesc54TTANoTower
+		any_player = {
+			narrative_event = { id = DMPlay.54 }
+		}
+	}
+}
+
+character_event = {			# Inept Tea
+	id = DMCoreEvt.55
+	offmap = allow
+	title = DMCoreEvttitle55
+	desc = DMCoreEvtdesc55
+	picture = GFX_evt_lunatic
+	is_triggered_only = yes	
+	
+	option = {
+		name = DMCoreEvtdesc55TTA
+		any_player = {
+			character_event = { id = DMPlay.55 }
+		}
+	}
+}
+
+character_event = {			# It Belongs In A Museum
+	id = DMCoreEvt.56
+	offmap = allow
+	title = DMCoreEvttitle56
+	desc = DMCoreEvtdesc56
+	picture = GFX_evt_council_speaker
+	is_triggered_only = yes	
+	
+	immediate = {
+		dm_belongs_in_a_museum = yes
+	}
+	
+	option = {
+		name = DMCoreEvtdesc56TTA
+		any_player = {
+			character_event = { id = DMPlay.56 }
+		}
+	}
+}
+
+character_event = {			# For Whom The Horn Doots
+	id = DMCoreEvt.57
+	offmap = allow
+	title = DMCoreEvttitle57
+	desc = DMCoreEvtdesc57
+	picture = GFX_evt_danse_macabre
+	is_triggered_only = yes	
+	
+	option = {
+		name = DMCoreEvtdesc57TTA
+		any_player = {
+			character_event = { id = DMPlay.57 }
+		}
+	}
+}
+
+character_event = {			# Eternity Stones
+	id = DMCoreEvt.58
+	offmap = allow
+	title = DMCoreEvttitle58
+	desc = DMCoreEvtdesc58
+	picture = GFX_evt_council_speaker
+	is_triggered_only = yes	
+	
+	immediate = {
+		random_playable_ruler = {
+			limit = {
+				NOT = {
+					any_artifact = {
+						has_artifact_flag = eternity_pebble
+					}
+				}
+			}
+			add_artifact = dm_mind_pebble
+		}
+		random_playable_ruler = {
+			limit = {
+				NOT = {
+					any_artifact = {
+						has_artifact_flag = eternity_pebble
+					}
+				}
+			}
+			add_artifact = dm_power_pebble
+		}
+		random_playable_ruler = {
+			limit = {
+				NOT = {
+					any_artifact = {
+						has_artifact_flag = eternity_pebble
+					}
+				}
+			}
+			add_artifact = dm_reality_pebble
+		}
+		random_playable_ruler = {
+			limit = {
+				NOT = {
+					any_artifact = {
+						has_artifact_flag = eternity_pebble
+					}
+				}
+			}
+			add_artifact = dm_soul_pebble
+		}
+		random_playable_ruler = {
+			limit = {
+				NOT = {
+					any_artifact = {
+						has_artifact_flag = eternity_pebble
+					}
+				}
+			}
+			add_artifact = dm_space_pebble
+		}
+		random_playable_ruler = {
+			limit = {
+				NOT = {
+					any_artifact = {
+						has_artifact_flag = eternity_pebble
+					}
+				}
+			}
+			add_artifact = dm_time_pebble
+		}
+	}
+	
+	option = {
+		name = DMCoreEvtdesc58TTA
+		any_player = {
+			character_event = { id = DMPlay.58 }
+		}
+	}
+}
+
+character_event = {			# Rabies
+	id = DMCoreEvt.59
+	offmap = allow
+	title = DMCoreEvttitle59
+	desc = DMCoreEvtdesc59
+	picture = GFX_evt_wolf
+	is_triggered_only = yes	
+	
+	immediate = {
+		any_playable_ruler = {
+			limit = {
+				ai = yes
+				dm_has_dog = yes
+			}
+			add_trait_silently_wounded_effect = yes
+			character_event = { id = RIP.5024 days = 14 random = 14 }
+			dm_remove_dog = yes
+		}
+	}
+	
+	option = {
+		name = DMCoreEvtdesc59TTA
+		any_player = {
+			character_event = { id = DMPlay.59 }
+		}
+	}
+}
+
+character_event = {		# Ruina Imperii
+	id = DMCoreEvt.60
+	offmap = allow
+	title = DMCoreEvttitle60
+	desc = DMCoreEvtdesc60
+	picture = GFX_evt_lunatic
+	is_triggered_only = yes	
+	
+	immediate = {
+		any_landed_title = {
+			limit = {
+				tier = EMPEROR
+				holder_scope = {
+					NOR = {
+						is_offmap_ruler = yes
+						is_offmap_governor = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					holder_scope = {
+						ai = no
+					}
+				}
+				holder_scope = {
+					set_character_flag = dm_got_wrecked_lol
+				}
+			}		
+			unsafe_destroy_landed_title = THIS
+		}
+		any_player = {
+			character_event = { id = DMPlay.60 }
+		}
+	}
+}
+			

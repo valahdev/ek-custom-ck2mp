@@ -1,0 +1,42 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_potion_seller"
+		texturefile = "gfx\\event_pictures\potion_seller.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_potato_chip"
+		texturefile = "gfx\\event_pictures\potato_chip.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_senate"
+		texturefile = "gfx\\event_pictures\senate.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_wyvernballs_land"
+		texturefile = "gfx\\event_pictures\wyvernballs_land.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_dm_to_dream_of_death"
+		texturefile = "gfx\\event_pictures\dm_todreamofdeath.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_dm_sick_cow"
+		texturefile = "gfx\\event_pictures\dm_sickcow.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_dm_herd_of_cows"
+		texturefile = "gfx\\event_pictures\dm_herdofcows.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_dm_eternity_pebbles"
+		texturefile = "gfx\\event_pictures\dm_eternity_pebbles.dds"
+		allwaystransparent = yes
+	}
+}

@@ -1,0 +1,49 @@
+dungeon_master_cycle = {
+	name = "DM_CYCLE"
+	group = "RULE_DUNGEON_MASTER"
+	option = {
+		name = dm_cycle_normal
+		text = "DM_CYCLE_NORMAL"
+		desc = "DM_CYCLE_NORMAL_DESC"
+	}
+	option = {
+		name = dm_cycle_double
+		text = "DM_CYCLE_DOUBLE"
+		desc = "DM_CYCLE_DOUBLE_DESC"
+	}
+	option = {
+		name = dm_cycle_half
+		text = "DM_CYCLE_HALF"
+		desc = "DM_CYCLE_HALF_DESC"
+	}
+}
+
+dungeon_master_frequency = {
+	name = "DM_FREQ"
+	group = "RULE_DUNGEON_MASTER"
+	option = {
+		name = dm_freq_15
+		text = "DM_FREQ_15"
+		desc = "DM_FREQ_15_DESC"
+	}
+	option = {
+		name = dm_freq_5
+		text = "DM_FREQ_5"
+		desc = "DM_FREQ_5_DESC"
+	}
+	option = {
+		name = dm_freq_30
+		text = "DM_FREQ_30"
+		desc = "DM_FREQ_30_DESC"
+	}
+	option = {
+		name = dm_freq_none
+		text = "DM_FREQ_NONE"
+		desc = "DM_FREQ_NONE_DESC"
+	}
+	option = {
+		name = dm_freq_true_random
+		text = "DM_FREQ_TRUE_RANDOM"
+		desc = "DM_FREQ_TRUE_RANDOM_DESC"
+	}
+}

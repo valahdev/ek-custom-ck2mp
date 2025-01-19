@@ -1,0 +1,46 @@
+namespace = dm_disease
+
+character_event = {
+	id = dm_disease.100
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_character_flag = got_bovid19
+	}
+	immediate = {
+		character_event = { id = dm_disease.101 }
+	}
+}
+	
+character_event = {
+	id = dm_disease.101
+	picture = GFX_dm_sick_cow
+	desc = dm_disease101
+	is_triggered_only = yes
+	immediate = {
+		culture = dm_cow_culture
+		set_graphical_culture = dm_cow_culture
+		if = {
+			limit = {
+				is_adult = yes
+			}
+			set_max_milk = yes
+		}
+	}
+	option = {
+		name = dm_disease101TTA
+		add_trait = dm_bovid19_trait
+		character_event = { id = dm_disease.102 years = 5 }
+	}
+}
+
+character_event = {
+	id = dm_disease.102
+	picture = GFX_evt_plague_doctor
+	desc = dm_disease102
+	is_triggered_only = yes
+	option = {
+		name = dm_disease101TTA
+		remove_trait = dm_bovid19_trait
+	}
+}

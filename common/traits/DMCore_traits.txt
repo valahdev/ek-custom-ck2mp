@@ -1,0 +1,139 @@
+adult_of_destiny = {
+	random = no 
+	customizer = no
+
+	vassal_opinion = 15
+	same_religion_opinion = 35
+	general_opinion = -50
+	same_opinion = -500
+	
+	ai_zeal = -50	#no holy wars, save troops
+	ai_greed = 50	#accept ransoms, bribes, etc
+	ai_honor = -50  	#no wasting troops on helping allies
+	ai_ambition = 50	#SLAY
+	
+	male_insult = INSULT_LUNATIC
+	female_insult = INSULT_BAT
+	male_insult_adj = INSULT_DEMENTED
+	female_insult_adj = INSULT_CRAZED
+	child_insult_adj = INSULT_CRAZY
+}
+
+age_shifted = {
+	customizer = no
+	random = no 
+	diplomacy = -2
+}
+
+dungeon_master = { 	
+	general_opinion = 500
+	combat_rating = 666
+	sex_appeal_opinion = 74
+	christian_church_opinion = -5
+	ai_ambition = 40
+	ai_zeal = 10
+	immortal = yes
+	random = no 
+	customizer = no
+	cannot_marry = yes
+}
+
+midas_plague = { 
+	customizer = no
+	general_opinion = -15
+	stewardship = 2
+	is_epidemic = yes 
+}
+
+kf_trait = {
+	intrigue = 2
+	diplomacy = 1
+	sex_appeal_opinion = 50
+	fertility = 0.5
+	random = no 
+	customizer = no 
+}
+
+joris_trait = {
+	general_opinion = 5
+	hunter_opinion = 5
+	random = no 
+	customizer = no 
+}
+
+glitterstomp_trait = {
+	combat_rating = 150 
+	command_modifier = {
+		speed = 0.5
+	}
+	ai_zeal = 50	#no holy wars, save troops
+	ai_greed = 50	#accept ransoms, bribes, etc
+	ai_ambition = 50	#SLAY
+	random = no 
+	customizer = no 
+}
+
+ozyman_trait = {
+	combat_rating = 150 
+	monthly_character_wealth = 8.50
+	ai_zeal = 50	#no holy wars, save troops
+	ai_greed = 50	#accept ransoms, bribes, etc
+	ai_ambition = 50	#SLAY
+	random = no 
+	customizer = no 
+}
+
+bobross_trait = {
+	random = no 
+	ai_greed = -50	#accept ransoms, bribes, etc
+	customizer = no 
+}
+
+genius_fake = {
+	random = no
+	customizer = no
+	inherit_chance = 5
+	
+	opposites =  {
+		genius
+		quick
+		imbecile
+		slow
+	}
+}
+
+dm_deaths_deal = {
+	hidden = yes
+	random = no
+	customizer = no
+	immortal = yes
+}
+
+dm_bovid19_trait = { 
+	customizer = no
+	random = no
+	general_opinion = -5
+	health = -1
+	is_epidemic = yes 
+}
+
+dm_nazgul_trait = {
+	diplomacy = -15
+	martial = 15
+	intrigue = 10
+	combat_rating = 250 
+	general_opinion = -100
+	same_opinion = 200
+	health = 10
+	command_modifier = {
+		speed = 0.25
+	}
+	ai_zeal = 50
+	ai_greed = 50	
+	ai_ambition = 50	
+	immortal = yes
+	cannot_marry = yes
+	cannot_inherit = yes
+	random = no 
+	customizer = no 
+}

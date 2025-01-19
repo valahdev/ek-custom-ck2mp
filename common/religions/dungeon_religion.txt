@@ -1,0 +1,88 @@
+dungeon_religion_group = {
+	has_coa_on_barony_only = yes
+	graphical_culture = westerngfx
+	playable = yes
+	ai_peaceful = yes 
+
+	ai_convert_same_group = 1
+	ai_convert_other_group = 1
+
+	color = { 0.8 0.8 0.6 }
+
+	male_names = {
+	}
+	
+	female_names = {
+	}
+	
+	dungeon_religion = {
+		graphical_culture = pagangfx
+		alternate_start = { always = no }
+		icon = 1
+		heresy_icon = 1
+		color = { 0.1 0.1 0.1 }
+
+		god_names = {
+			dungeon_master
+		}
+
+		evil_god_names = {
+			god_rng
+		}
+
+		religious_clothing_head = 1
+		religious_clothing_priest = 1
+
+		scripture_name = dungeon_guide
+		priest_title = master
+		piety_name = cruelty
+
+		dynamic_cult = no
+		secret_religion = no
+	}
+
+	kemetic = {
+		graphical_culture = muslimgfx
+		alternate_start = { always = no }
+		interface_skin = { zun_interface zoroastrian_interface muslim_interface }
+
+		icon = 49
+		heresy_icon = 50
+
+		ai_convert_other_group = 2 
+		
+		color = { 0.9 1.0 0.0 }
+		
+		high_god_name = AMUN_RA
+		
+		god_names = {
+			MUT OSIRIS ANUBIS HORUS THOTH HATHOR SEKHMET GEB
+		}
+		evil_god_names = {
+			APEP SETH 
+		}
+
+		unit_modifier = {
+			levy_size = 0.3
+			
+			heavy_infantry_offensive = 0.2
+			heavy_infantry_defensive = 0.2
+			
+			key = "OFF_RELIGION"
+		}
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priest_title = PRIEST
+
+		priests_can_marry = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		max_consorts = 3
+		
+		religious_clothing_head = 5
+		religious_clothing_priest = 4
+		
+		allow_in_ruler_designer = no
+	}
+}

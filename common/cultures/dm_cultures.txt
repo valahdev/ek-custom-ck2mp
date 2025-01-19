@@ -1,0 +1,108 @@
+dm_culture_group = {
+	graphical_cultures = { westerngfx }
+	alternate_start = { always = no }
+		
+	dm_culture = {
+		alternate_start = { always = no }
+		graphical_cultures = { westerngfx }
+		color = { 0.6 0.2 1 }
+		founder_named_dynasties = no
+
+		male_names = {
+			Bob
+		}
+		female_names = {
+			Karen
+		}
+		
+		prefix = no
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 30
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 50
+		mother_name_chance = 30
+
+		used_for_random = no
+		allow_in_ruler_designer = no
+
+		modifier = default_culture_modifier
+		
+	}
+	
+	gary_culture = {
+		alternate_start = { always = no }
+		graphical_cultures = { westerngfx }
+		color = { 0.6 0.2 1 }
+		founder_named_dynasties = no
+
+		male_names = {
+			Gary
+		}
+		female_names = {
+			Gary
+		}
+		
+		prefix = no
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 30
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 50
+		mother_name_chance = 30
+
+		used_for_random = no
+		allow_in_ruler_designer = no
+
+		modifier = default_culture_modifier
+		
+	}
+	
+	dm_cow_culture = {
+		alternate_start = { always = no }
+		graphical_cultures = { bovinegfx }
+		color = { 0.6 0.2 1 }
+		founder_named_dynasties = no
+
+		male_names = {
+			Angus Blackjack Ebony Emery Espresso Guinness Magic Midnight Onyx Shadow Smokey Storm Thunder
+			Angel Bianca Coconut Crystal Diamond Ivory Marshmallow Milky Pearl Popcorn Snowball Snowflake Snowy Sugar
+		}
+		female_names = {
+			Bessie Brownie Clarabelle Dottie Guinness Magic Nellie Penelope Penny Rosie Snowflake Sprinkles Sugar
+			Arabella Buttercup Chloe Ella Emma Maggie Melody Millie Minnie Muffin Phoebe Princess Sadie Sweetie
+		}
+		
+		prefix = no
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 30
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 50
+		mother_name_chance = 30
+
+		used_for_random = no
+		allow_in_ruler_designer = no
+
+		modifier = default_culture_modifier
+		
+		character_modifier = {
+			health = 1
+			dm_milky = 0.20
+			dm_moo = 10
+		}
+	}
+	
+}

@@ -1,0 +1,3 @@
+dm_stable = {
+	frame = 1
+}

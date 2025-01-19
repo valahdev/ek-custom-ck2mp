@@ -1,0 +1,244 @@
+midas_plague = {
+	rip = yes
+	contagiousness = 0.125
+	outbreak_chance = 0.0005
+	effect = {
+		city_tax_modifier = 1.5
+		local_tax_modifier = 1.2
+	}
+	yearly_province_pulse = {
+		
+	}
+	icon = 7
+	tooltip = MIDAS_PLAGUE_INFO
+	months = 12
+	trait = midas_plague
+	character_infection_chances = {
+		months = 3
+	}
+	on_character_infection = {
+		if = {
+			limit = {
+				age = 12
+				NOR = {
+					has_character_flag = immune_midas_plague
+					has_character_flag = got_midas_plague
+					trait = midas_plague
+					trait = horse
+					trait = cat
+					trait = incapable
+				}
+			}			
+			random_list = {
+				7 = { # Get the disease
+					modifier = {
+						factor = 5
+						trait = greedy
+					}
+					modifier = {
+						factor = 5
+						has_focus = focus_business
+					}
+					modifier = {
+						factor = 0.5
+						trait = charitable
+					}
+					modifier = {
+						factor = 0.5
+						trait = temperate
+					}
+					modifier = {
+						factor = 50
+						is_unimportant_trigger = yes
+					}
+					set_character_flag = got_midas_plague
+					character_event = { id = DMCoreFollow.5 }
+				}
+				3 = { # Nothing happens
+					set_character_flag = immune_midas_plague
+				}
+			}
+		}
+	}
+	on_province_infection = {
+		#province_event = {
+		#	id = RIP.11703 #prosperity ended by epidemic
+		#}
+	}
+	always_get_message = yes
+	color = { 255 234 0 }
+	
+	timeperiod = {
+		start_date = 769.1.1
+		end_date = 1452.1.1
+		
+		can_outbreak = {
+			has_dlc = "Reapers"
+			has_global_flag = city_of_gold_uncovered
+		}
+		
+		max_total_provinces = 10
+		
+		spread_through_water = yes
+		
+		min_nb_province = 1	#
+		max_nb_province = 1
+
+		one_only = no
+		
+	}
+	disease_gfx = disease_gfx_measles		#untouched for compatibility reasons
+}
+
+dm_bovid19_disease = {
+	contagiousness = 0.25
+	outbreak_chance = 0
+	effect = {
+		local_tax_modifier = -0.1
+		supply_limit = -2
+		max_attrition = 0.025
+		disease_defence = 0.2
+	}
+	yearly_province_pulse = {
+		random_list = {		
+			95 = {
+				modifier = {
+					factor = 1.1
+					hospital_level = 1
+				}
+				modifier = {
+					factor = 1.1
+					hospital_level = 2
+				}
+				modifier = {
+					factor = 1.1
+					hospital_level = 3
+				}
+				modifier = {
+					factor = 1.1
+					hospital_level = 4
+				}
+				modifier = {
+					factor = 1.1
+					hospital_level = 5
+				}
+				modifier = {
+					factor = 1.1
+					hospital_level = 6
+				}
+			}
+			5 = {
+				increase_depopulation_effect = yes
+			}
+		}
+	}
+	icon = 5
+	tooltip = BOVID19_INFO
+	months = 12
+	trait = dm_bovid19_trait
+	character_infection_chances = {
+		months = 3
+	}
+	on_character_infection = {
+		if = {
+			limit = {
+				NOR = {
+					has_character_flag = immune_bovid19
+					has_character_flag = got_bovid19
+					trait = dm_bovid19_trait
+					trait = horse
+					trait = cat
+					graphical_culture = bovinegfx
+					
+					has_character_flag = got_bubonic_plague
+					has_character_flag = got_aztec_disease
+					has_character_flag = got_smallpox
+					has_character_flag = got_typhus
+					has_character_flag = got_typhoid_fever
+					has_character_flag = got_tuberculosis
+					has_character_flag = got_syphilis
+					has_character_flag = got_pneumonia
+					has_character_flag = got_cancer
+					has_character_flag = got_rabies
+					has_character_flag = got_gout
+					has_character_flag = got_flu
+					has_character_flag = got_dysentery
+					has_character_flag = got_food_poisoning
+					has_character_flag = got_measles
+				}
+			}			
+			random_list = {
+				10 = { # Get the disease
+					modifier = {
+						factor = 0.5 # Nobody is safe
+						has_character_modifier = in_seclusion
+					}
+					modifier = {
+						factor = 0.5
+						is_nomadic = yes
+						NOT = { is_unimportant_trigger = yes }
+					}
+					modifier = {
+						factor = 0.5
+						is_tribal = yes
+						NOT = { is_unimportant_trigger = yes }
+					}
+					modifier = {
+						factor = 50
+						is_unimportant_trigger = yes
+					}
+					clr_character_flag = disease_not_serious
+					set_character_flag = got_bovid19
+					character_event = { id = dm_disease.100 }
+				}
+				80 = { # Nothing happens
+					modifier = { # Will always happen to those with the cow culture but not race
+						factor = 0
+						culture = dm_cow_culture
+						NOT = { graphical_culture = bovinegfx }
+					}
+					set_character_flag = immune_bovid19
+				}
+				 10 = { # Immunity granted
+					modifier = { # Will always happen to those with the cow culture but not race
+						factor = 0
+						culture = dm_cow_culture
+						NOT = { graphical_culture = bovinegfx }
+					}
+					set_character_flag = immune_bovid19
+				}
+			}
+		}
+	}
+	on_province_infection = {
+		province_event = {
+			id = RIP.11703 #prosperity ended by epidemic
+		}
+	}
+	always_get_message = no
+	color = { 201 111 112 }
+	
+	active = no
+	timeperiod = {
+		start_date = 1.1.1
+		end_date = 9999.1.1
+		
+		months = 12
+		
+		outbreak_chance = 0
+		
+		can_outbreak = {
+			has_dlc = "Reapers"
+			has_global_flag = 5G_unleashed
+		}
+		
+		min_nb_province = 0		# ignored if 0
+		max_nb_province = 0		# ignored if 0
+
+		one_only = no
+		spread_through_water = yes
+
+		province_infection_duration = 24
+	}
+	disease_gfx = disease_gfx_measles
+}

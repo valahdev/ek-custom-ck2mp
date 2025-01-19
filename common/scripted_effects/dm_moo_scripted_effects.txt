@@ -1,0 +1,146 @@
+#
+# Copied from Luxuria Fantasia mana system with permission
+#
+
+dm_use_minor_milk = {
+	subtract_variable = {
+		which = current_milk
+		value = 10
+	}
+}
+dm_use_moderate_milk = {
+	subtract_variable = {
+		which = current_milk
+		value = 25
+	}
+}
+dm_use_major_milk = {
+	subtract_variable = {
+		which = current_milk
+		value = 50
+	}
+}
+
+yearly_milk_increase = {
+	set_variable = {
+		which = milk_increase
+		which = max_milk
+	}
+	divide_variable = {
+		which = milk_increase
+		value = 10
+	}
+	change_variable = {
+		which = current_milk
+		which = milk_increase
+	}
+	
+	if = {
+		limit = {
+			check_variable = {
+				which = current_milk
+				which >= max_milk
+			}
+		}
+		set_variable = {
+			which = current_milk
+			which = max_milk
+		}
+	}
+}
+
+set_max_milk = {
+	set_variable = {
+		which = max_milk
+		value = 0
+	}
+	
+	if = {
+		limit = {
+			is_female = yes
+		}
+		change_variable = {
+			which = max_milk
+			value = 50
+		}
+	}
+	else = {
+		change_variable = {
+			which = max_milk
+			value = 25
+		}
+	}
+	if = {
+		limit = {
+			dm_is_true_cow = yes
+		}
+		multiply_variable = {
+			which = max_milk
+			value = 1.2
+		}
+	}
+	
+	if = {
+		limit = {
+			NOT = {
+				has_character_flag = dm_milk_set
+			}
+		}
+		set_variable = {
+			which = starting_milk
+			which = max_milk
+		}
+		divide_variable = {
+			which = starting_milk
+			value = 2
+		}
+		set_variable = {
+			which = current_milk
+			which = starting_milk
+		}
+		set_character_flag = dm_milk_set
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_character_modifier = dm_milk_stores
+			}
+		}
+		add_character_modifier = {
+			name = dm_milk_stores
+			duration = -1
+		}
+	}
+}
+
+dm_can_you_hear_me_now = {
+	set_variable = {
+		which = dm_moo_count
+		value = 20
+	}
+	while = {
+		limit = {
+			check_variable = {
+				which = dm_moo_count
+				value >= 1
+			}
+		}
+		random_playable_ruler = {
+			limit = {
+				any_demesne_province = {
+					NOT = { has_province_modifier = dm_1G_tower }
+				}
+			}
+			capital_scope = {
+				add_province_modifier = {
+					name = dm_1G_tower
+					duration = -1
+				}
+			}
+		}
+		subtract_variable = {
+			which = dm_moo_count
+			value = 1
+		}
+	}
+}

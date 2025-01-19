@@ -1,0 +1,536 @@
+namespace = DMmanagement
+
+character_event = {
+	id = DMmanagement.1
+	hide_window = yes
+	offmap = allow
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_global_flag = dungeon_master_lives
+		}
+    }
+
+	immediate = {
+		set_global_flag = dungeon_master_lives
+		any_player = {
+			character_event = { id = DMmanagement.1011 }
+		}
+	}
+}
+
+character_event = {
+	id = DMmanagement.1011
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		is_multiplayer_host_character = yes
+		NOR = {
+			has_global_flag = base_game_enough
+			has_global_flag = not_base_game
+		}
+    }
+	immediate = {
+		dm_create = yes
+		dm_gov_create = yes
+		if = {
+			limit = {
+				k_papal_state = {
+					has_holder = yes
+					region = world_europe_south_italy
+				}
+			}
+			set_global_flag = base_game_enough
+			any_player = {
+				character_event = { id = DMCore.3 }
+			}
+		}
+		else = {
+			set_global_flag = not_base_game
+			any_player = {
+				character_event = { id = DMCore.4 }
+			}
+		}
+	}
+}
+
+
+
+character_event = {
+	id = DMmanagement.2			#Fired on dungeon masters death, if it happens#
+	offmap = allow
+
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		trait = dungeon_master
+	}
+
+	immediate = {
+		dm_recreate_gov = yes
+	}
+}
+
+character_event = {
+	id = DMmanagement.3
+	ai = no
+	hide_window = yes
+	trigger = {
+		has_global_flag = dm_cleaned_up_prev_tombola
+	}
+	immediate = {
+		set_variable  = { which = global_eventA value = 0 }
+		set_variable  = { which = global_eventB value = 0 }
+		set_variable  = { which = global_eventC value = 0 }
+		set_variable  = { which = global_eventD value = 0 }
+		set_variable  = { which = global_eventE value = 0 }
+		set_variable  = { which = global_eventF value = 0 }
+		set_variable  = { which = global_eventG value = 0 }
+		set_variable  = { which = global_eventH value = 0 }
+		set_variable  = { which = global_eventI value = 0 }
+		set_variable  = { which = global_eventJ value = 0 }
+		set_variable  = { which = global_eventK value = 0 }
+		set_variable  = { which = global_eventL value = 0 }
+		set_variable  = { which = global_eventA_major value = 0 }
+		set_variable  = { which = global_eventB_major value = 0 }
+		set_variable  = { which = global_eventC_major value = 0 }
+		set_variable  = { which = global_eventD_major value = 0 }
+		set_variable  = { which = global_eventE_major value = 0 }
+		set_variable  = { which = global_eventF_major value = 0 }
+		set_variable  = { which = global_eventG_major value = 0 }
+		set_variable  = { which = global_eventH_major value = 0 }
+		set_variable  = { which = global_eventI_major value = 0 }
+		set_variable  = { which = global_eventJ_major value = 0 }
+		set_variable  = { which = global_eventK_major value = 0 }
+		set_variable  = { which = global_eventL_major value = 0 }
+		set_global_flag = dm_cleaned_up_prev_tombola
+	}
+}
+			
+
+character_event = {
+	id = DMmanagement.4			#To deal with the false ramesses and tidy titles in event of two spawning, this is all just emergency code#
+	offmap = allow
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		has_character_flag = ozymandius				#If a new ozy spawns without kemet, or if one exists without kemet (usurped, lost in war, whatever)
+		NOT = {
+			has_landed_title = e_kemet
+		}
+	}
+
+	immediate = {
+		if = {					#if Ozymandius already exists, kill the newly spawned and grant REAL ozymandius new FAKE ozymandius' titles
+			limit = {
+				e_kemet = {
+					owner = {
+						has_character_flag = ozymandius
+					}
+				}
+				save_event_target_as = real_ozymandius
+			}
+			ROOT = {
+				abdicate_to = event_target:real_ozymandius
+				death = {
+					death_reason = death_execution
+					killer = event_target:real_ozymandius
+				}
+			}
+		}
+		else = {					#if there is no Ozymandius, give e_kemet to the new guy/bugged guy/dethroned ozymandius
+			e_kemet = {
+				grant_title = ROOT
+			}
+		}
+	}
+
+	option = {
+		name = DMCore4OptA
+	}
+}
+
+character_event = {
+	id = DMmanagement.5			#To deal with the false horselords and tidy titles in event of two spawning, this is all just emergency code#
+	offmap = allow
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		has_character_flag = horse_lord				#If a new horselords spawns without e_horse, or if one exists without e_horse (usurped, lost in war, whatever)
+		NOT = {
+			has_landed_title = e_horse_lord
+		}
+	}
+
+	immediate = {
+		if = {					#if horselords already exists, kill the newly spawned and grant REAL horselords new FAKE horselords' titles
+			limit = {
+				e_horse_lord = {
+					owner = {
+						has_character_flag = horse_lord
+					}
+				}
+				save_event_target_as = real_horse_lord
+			}
+			ROOT = {
+				abdicate_to = event_target:real_horse_lord
+				death = {
+					death_reason = death_execution
+					killer = event_target:real_horse_lord
+				}
+			}
+		}
+		else = {					#if there is no horse_lord, give e_kemet to the new guy/bugged guy/dethroned horse_lord
+		e_horse_lord = {
+				grant_title = ROOT
+			}
+		}
+	}
+
+	option = {
+		name = DMCore4OptA
+	}
+}
+
+#character_event = {
+#	id = DMmanagement.6
+#	hide_window = yes
+#	is_triggered_only = yes
+#	offmap = allow
+#	trigger = {
+#		OR = {
+#			has_character_flag = dungeon_master
+#			trait = dungeon_master
+#		}
+#	}
+#	immediate = {
+#		imprison = no
+#	}
+#}
+
+### Mod Incompatibilities ###
+
+character_event = {
+	id = DMmanagement.100
+	hide_window = yes
+	offmap = allow
+	
+	ai = no
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_global_flag = complained_about_ate_fan_fork }
+    }
+
+	option = {
+		name = DMCore1OptA
+		any_player = {
+			character_event = { id = DMmanagement.101 days = 1 }
+		}
+	}
+}
+
+character_event = {
+	id = DMmanagement.101
+	title = DMmanagementtitle101
+	desc = DMmanagementdesc101
+	picture = GFX_evt_stressed_ruler
+	offmap = allow
+	
+	ai = no
+
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_global_flag = complained_about_ate_fan_fork }
+		has_global_flag = scenario_initialized   #no empire tiers in ATE: Fan Fork
+    }
+	immediate = {
+		set_global_flag = complained_about_ate_fan_fork
+	}
+	
+	option = {
+		name = DMmanagementOptA
+		custom_tooltip = {
+			text = DMmanagementTooltip1
+		}	
+	}
+}
+
+### DM Courtier Maint ###
+
+character_event = {
+	id = DMmanagement.200
+	hide_window = yes
+	offmap = allow
+	is_triggered_only = yes # on_host_change
+	trigger = {
+		FROM = { # Ensures this is just for newly spawned characters
+			character = no
+		}
+		liege = {
+			title = e_dungeon_master_governor
+		}
+	}
+	immediate = {
+		set_character_flag = no_court_invites
+	}
+}
+
+### DM Title Maint ###
+#
+#character_event = {
+#	id = DMmanagement.300
+#	hide_window = yes
+#	offmap = allow
+#	is_triggered_only = yes # on_new_holder
+#	trigger = {
+#		FROM = {
+#			NOT = { title = k_dungeon }
+#		}
+#		trait = dungeon_master
+#	}
+#	immediate = {
+#		FROM = {
+#			grant_title_no_opinion = FROMFROM
+#		}
+#	}
+#}
+
+### DM Debug ###
+
+character_event = { # Recreate DM
+	id = DMmanagement.400
+	hide_window = yes
+	offmap = allow
+	is_triggered_only = yes
+	immediate = {
+		dm_create = yes
+	}
+}
+
+character_event = { # Recreate governor
+	id = DMmanagement.4001
+	hide_window = yes
+	offmap = allow
+	is_triggered_only = yes
+	immediate = {
+		e_dungeon_master_governor = {
+			holder_scope = {
+				dm_gov_create = yes
+			}
+		}
+	}
+}
+character_event = { # Debug for dm_immortal_good
+	id = DMmanagement.401
+	hide_window = yes
+	offmap = allow
+	is_triggered_only = yes
+	immediate = {
+		remove_character_modifier = dm_immortal_good
+		remove_character_modifier = dm_immortal_neutral
+		remove_character_modifier = dm_immortal_bad
+		remove_trait = dm_deaths_deal
+		add_character_modifier = {
+			name = dm_immortal_good
+			years = 10
+		}
+	}
+}
+	
+character_event = { # Debug for dm_immortal_neutral
+	id = DMmanagement.402
+	hide_window = yes
+	offmap = allow
+	is_triggered_only = yes
+	immediate = {
+		remove_character_modifier = dm_immortal_good
+		remove_character_modifier = dm_immortal_neutral
+		remove_character_modifier = dm_immortal_bad
+		remove_trait = dm_deaths_deal
+		add_character_modifier = {
+			name = dm_immortal_neutral
+			years = 25
+		}
+	}
+}
+
+character_event = { # Debug for dm_immortal_bad
+	id = DMmanagement.403
+	hide_window = yes
+	offmap = allow
+	is_triggered_only = yes
+	immediate = {
+		remove_character_modifier = dm_immortal_good
+		remove_character_modifier = dm_immortal_neutral
+		remove_character_modifier = dm_immortal_bad
+		remove_trait = dm_deaths_deal
+		add_character_modifier = {
+			name = dm_immortal_bad
+			years = 50
+		}
+	}
+}
+
+#
+# Yearly fix for the DM joining societies
+#
+
+character_event = {
+	id = DMmanagement.500
+	hide_window = yes
+	offmap = allow
+	ai = yes
+	is_in_society = yes
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			is_offmap_ruler = yes
+			e_dungeon_master_governor = {
+				owner = {
+					character = ROOT
+				}
+			}
+		}
+		is_in_society = yes
+	}
+	immediate = {
+		leave_society = yes
+		set_character_flag = society_join_block
+	}
+}
+
+#
+# Moo
+#
+
+# Sets the maximum milk upon adulthood for cows
+character_event = {
+	id = DMmanagement.600
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		dm_is_cow = yes
+	}
+	immediate = {
+		set_max_milk = yes
+	}
+}
+
+# Yearly mana increase
+character_event = {
+	id = DMmanagement.601
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_adult = yes
+		dm_is_cow = yes
+	}
+	immediate = {
+		yearly_milk_increase = yes
+	}
+}
+
+# Soul Pebble Soul Check #
+character_event = {
+	id = DMmanagement.602
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		if = {
+        	 limit = {
+                any_artifact = {
+                    artifact_type = dm_soul_pebble
+                    is_artifact_equipped = yes
+                }
+				OR = {
+					trait = stressed
+					trait = depressed
+					trait = lunatic
+					trait = posessed
+				}
+            }
+        }
+	}
+	immediate = {
+		remove_trait = stressed
+		remove_trait = depressed
+		remove_trait = lunatic
+		remove_trait = posessed
+	}
+}
+
+# Time Pebble Add Immortal #
+character_event = {
+	id = DMmanagement.603
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		if = {
+        	 limit = {
+                any_artifact = {
+                    artifact_type = dm_time_pebble
+                    is_artifact_equipped = yes
+                }
+				NOT = { trait = time_pebble_immortal }
+            }
+        }
+	}
+	immediate = {
+		add_trait = time_pebble_immortal
+	}
+}
+
+# Time Pebble Remove Immortal #
+character_event = {
+	id = DMmanagement.604
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		if = {
+        	 limit = {
+                any_artifact = {
+                    artifact_type = dm_time_pebble
+                    is_artifact_equipped = no
+				}
+				trait = time_pebble_immortal 
+            }
+        }
+	}
+	immediate = {
+		remove_trait = time_pebble_immortal
+	}
+}
+
+# Kill Extraneous Nazgul #
+character_event = {
+	id = DMmanagement.605
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		AND = {
+			trait = dm_nazgul_trait 
+			any_artifact = {
+				artifact_type = dm_time_pebble
+				is_artifact_equipped = no
+			}
+		}
+	}
+	immediate = {
+		ROOT = {
+			death = {
+				death_reason = dm_nazgul_withering
+			}
+		}
+	}
+}

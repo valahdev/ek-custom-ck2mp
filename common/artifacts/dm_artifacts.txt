@@ -1,0 +1,294 @@
+### Nazgul Event ###
+
+cursed_ring = {
+	monthly_character_prestige = 0.5
+	martial = 4
+	combat_rating = 25
+	global_levy_size = 0.15
+	health = -1
+	quality = 4
+	command_modifier = {
+		morale_offence = 0.5
+	}
+	indestructible = yes
+	active = {
+		NOT = { has_character_modifier = dm_resisted_ring }
+		OR = {
+			is_ruler = yes
+			trait = dm_nazgul_trait
+		}
+	}
+	allowed_gift = {
+		always = no
+	}
+	flags = { ring curse dungeon_master_ring }
+	stacking = no
+	picture = "GFX_cursed_ring"
+}
+
+cursed_ring_of_one = {
+	monthly_character_prestige = 1.5
+	martial = 8
+	intrigue = 12
+	combat_rating = 55
+	global_levy_size = 0.15
+	health = 15
+	quality = 5
+	command_modifier = {
+		morale_offence = 1.5
+	}
+	indestructible = yes
+	active = {
+		has_character_flag = dungeon_master
+	}
+	allowed_gift = {
+		always = no
+	}
+	flags = { ring curse dungeon_master_ring }
+	stacking = no
+	picture = "GFX_cursed_ring_of_one"
+	
+	slot = wrist
+}
+
+### Renderer Thigh ###
+
+stinkrot_reaver = {
+	martial = 3 #intimidating 
+	combat_rating = 4
+	quality = 2
+	flags = { combat_weapon easter_egg fish_item }
+	stacking = no
+	picture = "GFX_fishk_weapon"
+	slot = weapon
+}
+
+blackfish_scale = {
+	learning = 1
+	general_opinion = 7
+	combat_rating = 13 #probably better than nothing
+	sex_appeal_opinion = -10 #stinky
+	monthly_character_prestige = 0.25
+	command_modifier = { morale_offence = 0.05 }
+	quality = 2
+	flags = { armor fish_item }
+	picture = "GFX_fishk_armour"
+	stacking = no
+	slot = torso
+}
+
+### Wyvernball ###
+
+wyvernball_1 = {
+	monthly_character_prestige = 0.5
+	quality = 5
+	flags = { wyvernball wyvernball_1 very_rare }
+	stacking = no
+	picture = "GFX_wyvernball_1"
+}
+wyvernball_2 = {
+	monthly_character_prestige = 0.5
+	quality = 5
+	flags = { wyvernball wyvernball_2 very_rare }
+	stacking = no
+	picture = "GFX_wyvernball_2"
+}
+wyvernball_3 = {
+	monthly_character_prestige = 0.5
+	quality = 5
+	flags = { wyvernball wyvernball_3 very_rare }
+	stacking = no
+	picture = "GFX_wyvernball_3"
+}
+wyvernball_4 = {
+	monthly_character_prestige = 0.5
+	quality = 5
+	flags = { wyvernball wyvernball_4 very_rare }
+	stacking = no
+	picture = "GFX_wyvernball_4"
+}
+wyvernball_5 = {
+	monthly_character_prestige = 0.5
+	quality = 5
+	flags = { wyvernball wyvernball_5  very_rare }
+	stacking = no
+	picture = "GFX_wyvernball_5"
+}
+wyvernball_6 = {
+	monthly_character_prestige = 0.5
+	quality = 5
+	flags = { wyvernball wyvernball_6 very_rare }
+	stacking = no
+	picture = "GFX_wyvernball_6"
+}
+wyvernball_7 = {
+	monthly_character_prestige = 0.5
+	quality = 5
+	flags = { wyvernball wyvernball_7 very_rare }
+	stacking = no
+	picture = "GFX_wyvernball_7"
+}
+
+### Reward Artifacts ###
+
+wyvern_armour = {
+	martial = 2
+	combat_rating = 35
+	monthly_character_prestige = 0.25
+	command_modifier = { morale_offence = 0.15 }
+	quality = 5
+	active = {
+		OR = {
+			trait = genius
+			trait = quick
+			trait = shrewd
+			trait = strong
+			trait = robust
+		}
+	}
+	flags = { armor wyvernball_armour very_rare }
+	picture = "GFX_suit_of_armor_gold"
+	stacking = no
+	slot = torso
+}
+
+wyvern_sword = {
+	monthly_character_prestige = 1.5
+	martial = 4
+	combat_rating = 45
+	command_modifier = {
+		heavy_infantry = 0.15
+		actual_light_infantry = 0.2
+	}
+	quality = 5
+	active = {
+		is_adult = yes
+	}
+	flags = { combat_weapon sword created wyvernball_sword very_rare }
+	stacking = no
+	picture = "GFX_blue_glowing_sword"
+	slot = weapon
+}
+
+wyvern_helmet = { 
+	monthly_character_prestige = 0.5
+	combat_rating = 25
+	quality = 5
+	command_modifier = {
+		religious_enemy = 0.15
+	}
+	active = {
+		is_adult = yes
+	}
+	flags = { crown wyvernball_helmet very_rare }
+	stacking = no
+	picture = "GFX_crown_unicorn_helmet"
+	slot = crown
+}
+
+wyvern_amulet = {
+	monthly_character_prestige = 1.0
+	health = 2.5
+	global_tax_modifier = 0.5
+	quality = 5
+	flags = { wyvernball_necklace necklace jewelry }
+	picture = "GFX_dragon_amulet"
+	stacking = no
+	slot = neck
+}
+
+### Indiana Jones ###
+
+dm_fedora = {
+	monthly_character_prestige = 0.5
+	quality = 2
+	flags = { dungeon_master_hat cursed }
+	picture = "GFX_dm_fedora"
+	stacking = no
+	slot = crown
+}
+
+### NFT ###
+
+dm_inept_tea = {
+	dm_laundering_modifier = 0.15
+	dm_cryptic = 0.1
+	dm_inept_tea_respect = -15
+	quality = 1
+	flags = { cursed }
+	picture = "GFX_dm_inept_tea"
+	stacking = no
+}	
+
+### Eternity Pebbles ###
+
+dm_mind_pebble = {
+	monthly_character_prestige = 1
+	vassal_opinion = 60
+	global_revolt_risk = -0.5
+	diplomacy = 5
+	quality = 5
+	flags = { cursed eternity_pebble mind_pebble }
+	picture = "GFX_dm_mind_pebble"
+	stacking = no
+}	
+
+dm_power_pebble = {
+	monthly_character_prestige = 1
+	combat_rating = 200
+	health = 10
+	command_modifier = {
+		morale_offence = 0.25
+		morale_defence = 0.25
+	}
+	quality = 5
+	flags = { cursed eternity_pebble power_pebble }
+	picture = "GFX_dm_power_pebble"
+	stacking = no
+}	
+
+dm_reality_pebble = {
+	monthly_character_prestige = 1
+	build_cost_modifier = -0.5
+	global_tax_modifier = 0.5
+	health = 3
+	stewardship = 5
+	quality = 5
+	flags = { cursed eternity_pebble reality_pebble }
+	picture = "GFX_dm_reality_pebble"
+	stacking = no
+}	
+
+dm_soul_pebble = {
+	monthly_character_prestige = 1
+	same_religion_opinion = 15
+	dm_soul_pebble_modifier = 1 	#never get lunatic, stressed, posessed, depressed, etc
+	intrigue = 5
+	quality = 5
+	flags = { cursed eternity_pebble soul_pebble }
+	picture = "GFX_dm_soul_pebble"
+	stacking = no
+}	
+
+dm_space_pebble = {
+	monthly_character_prestige = 1
+	martial = 5
+	combat_rating = 50
+	command_modifier = {
+		speed = 0.25		#extremely fast
+	}
+	quality = 5
+	flags = { cursed eternity_pebble space_pebble }
+	picture = "GFX_dm_space_pebble"
+	stacking = no
+}	
+
+dm_time_pebble = {
+	monthly_character_prestige = 1
+	dm_time_pebble_modifier = 1  #gives immortal
+	learning = 5
+	quality = 5
+	flags = { cursed eternity_pebble time_pebble }
+	picture = "GFX_dm_time_pebble"
+	stacking = no
+}	

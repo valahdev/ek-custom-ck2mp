@@ -1,0 +1,122 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_offmap_bg_dungeon_master"
+		texturefile = "gfx\\interface\\offmap_screen\\dungeon_master_background.dds"
+	}
+	spriteType = {
+		name = "GFX_offmap_banner_dungeon_master"
+		texturefile = "gfx\\interface\\offmap_screen\\dungeon_master_main_title.dds"
+	}
+	spriteType = {
+		name = "GFX_offmap_top_embellishment_dungeon_master"
+		texturefile = "gfx\\interface\\offmap_screen\\dungeon_master_dragons.dds"
+	}
+	spriteType = {
+		name = "GFX_offmap_bottom_embellishment_dungeon_master"
+		texturefile = "gfx\\interface\\offmap_screen\\dungeon_master_lionmonsterdragon.dds"
+	}
+	spriteType = {
+		name = "GFX_offmap_ruler_banner_dungeon_master"
+		texturefile = "gfx\\interface\\offmap_screen\\dungeon_master_emperor_dungeon_master_banner.dds"
+	}
+	spriteType = {
+		name = "GFX_offmap_dungeon_master_portrait_frame"
+		texturefile = "gfx\\interface\\offmap_screen\\dungeon_master_offmap_portrait_frame.dds"
+	}
+	spriteType = {
+		name = "GFX_offmap_gift_button_dungeon_master"
+		texturefile = "gfx\\interface\\offmap_screen\\dungeon_master_give_gift_button.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_offmap_money_button_dungeon_master"
+		texturefile = "gfx\\interface\\offmap_screen\\dungeon_master_give_money_button.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_offmap_topic_button_dungeon_master"
+		texturefile = "gfx\\interface\\offmap_screen\\dungeon_master_topic_button.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_offmap_boon_button_dungeon_master"
+		texturefile = "gfx\\interface\\offmap_screen\\dungeon_master_recieve_gift_button.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_offmap_hostile_button_dungeon_master"
+		texturefile = "gfx\\interface\\offmap_screen\\dungeon_master_hostile_action_button.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_offmap_currency_background_dungeon_master"
+		texturefile = "gfx\\interface\\offmap_screen\\dungeon_master_grace_dungeon_master_banner.dds"
+	}
+	spriteType = {
+		name = "GFX_dungeon_master_policy"
+		texturefile = "gfx\\interface\\offmap_screen\\dungeon_master_policy.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_dungeon_master_status"
+		texturefile = "gfx\\interface\\offmap_screen\\dungeon_master_status.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_offmap_symbol_dungeon_master"
+		texturefile = "gfx\\interface\\offmap_screen\\dungeon_master_symbol_frame.dds"
+	}
+	spriteType = {
+		name = "GFX_offmap_dungeon_master_proposal"
+		texturefile = "gfx\\interface\\offmap_screen\\dungeon_master_proposal_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_offmap_dungeon_master_deal"
+		texturefile = "gfx\\interface\\offmap_screen\\dungeon_master_deal_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_offmap_dungeon_master_info"
+		texturefile = "gfx\\interface\\offmap_screen\\dungeon_master_help_button.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_offmap_dungeon_master_blood"
+		texturefile = "gfx\\interface\\offmap_screen\\dungeon_master_blood_btn.dds"
+		noOfFrames = 2
+	}
+
+
+	spriteType = {
+		name = "GFX_offmap_dungeon_master_likes"
+		texturefile = "gfx\\interface\\offmap_screen\\dungeon_master_like_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_offmap_dungeon_master_dislikes"
+		texturefile = "gfx\\interface\\offmap_screen\\dungeon_master_dislike_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_offmap_dungeon_master_divider"
+		texturefile = "gfx\\interface\\offmap_screen\\dungeon_master_divider.dds"
+	}
+	spriteType = {
+		name = "GFX_offmap_dungeon_master_dynasty_frame"
+		texturefile = "gfx\\interface\\offmap_screen\\dungeon_master_dynasty_frame.dds"
+	}
+	spriteType = {
+		name = "GFX_offmap_dungeon_master_mapmode_button"
+		texturefile = "gfx\\interface\\offmap_screen\\mapmode_button_dungeon_master_sphere.dds"
+	}
+	spriteType = {
+		name = "GFX_dungeon_master_screen_button"
+		texturefile = "gfx\\interface\\offmap_screen\\dungeon_master_screen_button.dds"
+	}
+	spriteType = {
+		name = "GFX_offmap_dungeon_master_history_button"
+		texturefile = "gfx\\interface\\offmap_screen\\button_dungeon_master_history.dds"
+	}
+}

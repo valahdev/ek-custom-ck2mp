@@ -1,0 +1,23 @@
+dm_deaths_deal_death = {
+	long_desc = "DEATH_DEATHS_DEAL"
+	sound_list = {
+		female = {
+			"death_female_illness_01"
+		}
+		male = {
+			"death_male_illness_01"
+		}
+	}
+}
+
+dm_nazgul_withering = {
+	long_desc = "DEATH_DM_NAZGUL_WITHER"
+	sound_list = {
+		female = {
+			"death_female_illness_01"
+		}
+		male = {
+			"death_male_illness_01"
+		}
+	}
+}

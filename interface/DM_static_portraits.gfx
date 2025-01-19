@@ -1,0 +1,586 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_DM_portrait"
+		texturefile = "gfx/portraits/DM_portrait.dds"
+		noOfFrames = 1
+		norefcount = yes
+      can_be_lowres = yes
+   }
+
+	spriteType = {
+		name = "GFX_cow_base"
+		texturefile = "gfx/portraits/dm_cow_transparent.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_bovine_female_headgear"
+		texturefile = "gfx/portraits/bovine_female_headgear.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	
+	# children
+	spriteType = {
+		name = "PORTRAIT_bovinegfx_child_male"
+		texturefile = "gfx/portraits/dm_cow_child.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	
+	spriteType = {
+		name = "PORTRAIT_bovinegfx_child_female"
+		texturefile = "gfx/portraits/dm_cow_child_female.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+   spriteType = {
+      name = "GFX_joris_portrait"
+		texturefile = "gfx/portraits/joris_portrait.dds"
+		noOfFrames = 1
+		norefcount = yes
+      can_be_lowres = yes
+   }
+
+   spriteType = {
+      name = "GFX_kf_portrait"
+		texturefile = "gfx/portraits/kf_portrait.dds"
+		noOfFrames = 1
+		norefcount = yes
+      can_be_lowres = yes
+   }
+
+   spriteType = {
+      name = "GFX_ozyman_portrait"
+		texturefile = "gfx/portraits/ozyman_portrait.dds"
+		noOfFrames = 1
+		norefcount = yes
+      can_be_lowres = yes
+   }
+
+   spriteType = {
+      name = "GFX_glitterstomp_portrait"
+		texturefile = "gfx/portraits/glitterstomp_portrait.dds"
+		noOfFrames = 1
+		norefcount = yes
+      can_be_lowres = yes
+   }
+
+   spriteType = {
+      name = "GFX_bobross_portrait"
+		texturefile = "gfx/portraits/bobross_portrait.dds"
+		noOfFrames = 1
+		norefcount = yes
+      can_be_lowres = yes
+   }
+
+   spriteType = {
+	name = "GFX_nazgul_portrait"
+	  texturefile = "gfx/portraits/nazgul_portrait.dds"
+	  noOfFrames = 1
+	  norefcount = yes
+	can_be_lowres = yes
+ }
+
+   portraitType = {
+      name = "DM_portrait_1"
+		effectFile = "gfx/FX/portrait.lua"
+      weight = {
+         additive_modifier = {
+            value = 1000000
+            portrait_clothing = yes
+			   portrait_has_trait = dungeon_master
+	 		}
+      }
+
+      layer = {
+         "GFX_empty:c0" # ie. GFX_empty means it's disabling the c0 layer, so c0, c2, c3, c1, and c4 are all disabled!
+         "GFX_empty:c2"
+         "GFX_empty:c3"
+         "GFX_empty:c1"
+         "GFX_empty:c4"
+         "GFX_empty:p1:h:y"
+         "GFX_DM_portrait:c5"
+			"GFX_character_imprisoned:p6"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+      }
+
+      allow_property_values = {
+         1 = {
+				0  = { always = yes }
+         }
+         19 = {
+				0  = { always = yes }
+         }
+			33 = {
+				0  = { always = yes }
+         }
+         34 = {
+				0  = { always = yes }
+         }
+         35 = {
+				0  = { always = yes }
+         }
+         36 = {
+				0  = { always = yes }
+         }
+			6 = {
+				0 = { always = yes }
+         }
+         5 = {
+				0 = { always = no }
+			   1 = { portrait_has_trait = dungeon_master }
+			}
+		}
+   }
+
+#
+# Bovines
+#
+
+	portraitType = {
+		name = "PORTRAIT_bovinegfx_male"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = { # GFX_TYPE:[d|p]INDEX:COLOR_LINK:DONT_REFRESH_IF_VALID:CULTURE_INDEX
+			"GFX_character_background:p0"
+			"GFX_western_male_headgear_behind:p5:c1"
+			"GFX_character_special_crowns_behind:p18"
+			"GFX_cow_base:d0"
+			"GFX_western_male_headgear_mid:p5:c3"		
+			"GFX_western_male_headgear:p5:c5"
+			"GFX_character_special_crowns:p19"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_imprisoned:p6"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+		}
+	}
+	
+	portraitType = {
+		name = "PORTRAIT_bovinegfx_male1"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = { # GFX_TYPE:[d|p]INDEX:COLOR_LINK:DONT_REFRESH_IF_VALID:CULTURE_INDEX
+			"GFX_character_background:p0"
+			"GFX_western_male_headgear_behind:p5:c1"
+			"GFX_character_special_crowns_behind:p18"
+			"GFX_cow_base:d0"
+			"GFX_western_male_headgear_mid:p5:c3"		
+			"GFX_western_male_headgear:p5:c5"
+			"GFX_character_special_crowns:p19"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_imprisoned:p6"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+		}
+	}
+	
+	portraitType = {
+		name = "PORTRAIT_bovinegfx_male2"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = { # GFX_TYPE:[d|p]INDEX:COLOR_LINK:DONT_REFRESH_IF_VALID:CULTURE_INDEX
+			"GFX_character_background:p0"
+			"GFX_western_male_headgear_behind:p5:c1"
+			"GFX_character_special_crowns_behind:p18"
+			"GFX_cow_base:d0"
+			"GFX_western_male_headgear_mid:p5:c3"		
+			"GFX_western_male_headgear:p5:c5"
+			"GFX_character_special_crowns:p19"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_imprisoned:p6"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+		}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_bovinegfx_female"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = { # GFX_TYPE:[d|p]INDEX:COLOR_LINK:DONT_REFRESH_IF_VALID:CULTURE_INDEX
+			"GFX_character_background:p0"
+			"GFX_western_female_headgear_behind:p5:c1"
+			"GFX_character_special_crowns_behind:p18"
+			"GFX_cow_base:d0"
+			"GFX_western_female_headgear_mid:p5:c3"		
+			"GFX_bovine_female_headgear:p5:c5"
+			"GFX_character_special_crowns:p19"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_imprisoned:p6"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"		}
+	}
+	portraitType = {
+		name = "PORTRAIT_bovinegfx_female1"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = { # GFX_TYPE:[d|p]INDEX:COLOR_LINK:DONT_REFRESH_IF_VALID:CULTURE_INDEX
+			"GFX_character_background:p0"
+			"GFX_western_female_headgear_behind:p5:c1"
+			"GFX_character_special_crowns_behind:p18"
+			"GFX_cow_base:d0"
+			"GFX_western_female_headgear_mid:p5:c3"		
+			"GFX_bovine_female_headgear:p5:c5"
+			"GFX_character_special_crowns:p19"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_imprisoned:p6"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"		}
+	}
+	portraitType = {
+		name = "PORTRAIT_bovinegfx_female2"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = { # GFX_TYPE:[d|p]INDEX:COLOR_LINK:DONT_REFRESH_IF_VALID:CULTURE_INDEX
+			"GFX_character_background:p0"
+			"GFX_western_female_headgear_behind:p5:c1"
+			"GFX_character_special_crowns_behind:p18"
+			"GFX_cow_base:d0"
+			"GFX_western_female_headgear_mid:p5:c3"		
+			"GFX_bovine_female_headgear:p5:c5"
+			"GFX_character_special_crowns:p19"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_imprisoned:p6"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+		}
+	}
+
+#
+#
+#
+   
+   portraitType = {
+      name = "joris_portrait_1"
+		effectFile = "gfx/FX/portrait.lua"
+      weight = {
+         additive_modifier = {
+            value = 1000000
+            portrait_clothing = yes
+			   portrait_has_trait = joris_trait
+	 		}
+      }
+
+      layer = {
+         "GFX_empty:c0" # ie. GFX_empty means it's disabling the c0 layer, so c0, c2, c3, c1, and c4 are all disabled!
+         "GFX_empty:c2"
+         "GFX_empty:c3"
+         "GFX_empty:c1"
+         "GFX_empty:c4"
+         "GFX_empty:p1:h:y"
+         "GFX_joris_portrait:c5"
+			"GFX_character_imprisoned:p6"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+      }
+
+      allow_property_values = {
+         1 = {
+				0  = { always = yes }
+         }
+         19 = {
+				0  = { always = yes }
+         }
+			33 = {
+				0  = { always = yes }
+         }
+         34 = {
+				0  = { always = yes }
+         }
+         35 = {
+				0  = { always = yes }
+         }
+         36 = {
+				0  = { always = yes }
+         }
+			6 = {
+				0 = { always = yes }
+         }
+         5 = {
+				0 = { always = no }
+			   1 = { portrait_has_trait = joris_trait }
+			}
+		}
+   }
+   
+   portraitType = {
+      name = "kf_portrait_1"
+		effectFile = "gfx/FX/portrait.lua"
+      weight = {
+         additive_modifier = {
+            value = 1000000
+            portrait_clothing = yes
+			   portrait_has_trait = kf_trait
+	 		}
+      }
+
+      layer = {
+         "GFX_empty:c0" # ie. GFX_empty means it's disabling the c0 layer, so c0, c2, c3, c1, and c4 are all disabled!
+         "GFX_empty:c2"
+         "GFX_empty:c3"
+         "GFX_empty:c1"
+         "GFX_empty:c4"
+         "GFX_empty:p1:h:y"
+         "GFX_kf_portrait:c5"
+			"GFX_character_imprisoned:p6"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+      }
+
+      allow_property_values = {
+         1 = {
+				0  = { always = yes }
+         }
+         19 = {
+				0  = { always = yes }
+         }
+			33 = {
+				0  = { always = yes }
+         }
+         34 = {
+				0  = { always = yes }
+         }
+         35 = {
+				0  = { always = yes }
+         }
+         36 = {
+				0  = { always = yes }
+         }
+			6 = {
+				0 = { always = yes }
+         }
+         5 = {
+				0 = { always = no }
+			   1 = { portrait_has_trait = kf_trait }
+			}
+		}
+   }
+   
+   portraitType = {
+      name = "ozyman_portrait_1"
+		effectFile = "gfx/FX/portrait.lua"
+      weight = {
+         additive_modifier = {
+            value = 1000000
+            portrait_clothing = yes
+			   portrait_has_trait = ozyman_trait
+	 		}
+      }
+
+      layer = {
+         "GFX_empty:c0" # ie. GFX_empty means it's disabling the c0 layer, so c0, c2, c3, c1, and c4 are all disabled!
+         "GFX_empty:c2"
+         "GFX_empty:c3"
+         "GFX_empty:c1"
+         "GFX_empty:c4"
+         "GFX_empty:p1:h:y"
+         "GFX_ozyman_portrait:c5"
+ 			"GFX_character_imprisoned:p6"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+     }
+
+      allow_property_values = {
+         1 = {
+				0  = { always = yes }
+         }
+         19 = {
+				0  = { always = yes }
+         }
+			33 = {
+				0  = { always = yes }
+         }
+         34 = {
+				0  = { always = yes }
+         }
+         35 = {
+				0  = { always = yes }
+         }
+         36 = {
+				0  = { always = yes }
+         }
+			6 = {
+				0 = { always = yes }
+         }
+         5 = {
+				0 = { always = no }
+			   1 = { portrait_has_trait = ozyman_trait }
+			}
+		}
+   }
+   
+   portraitType = {
+      name = "glitterstomp_portrait_1"
+		effectFile = "gfx/FX/portrait.lua"
+      weight = {
+         additive_modifier = {
+            value = 1000000
+            portrait_clothing = yes
+			   portrait_has_trait = glitterstomp_trait
+	 		}
+      }
+
+      layer = {
+         "GFX_empty:c0" # ie. GFX_empty means it's disabling the c0 layer, so c0, c2, c3, c1, and c4 are all disabled!
+         "GFX_empty:c2"
+         "GFX_empty:c3"
+         "GFX_empty:c1"
+         "GFX_empty:c4"
+         "GFX_empty:p1:h:y"
+         "GFX_glitterstomp_portrait:c5"
+			"GFX_character_imprisoned:p6"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+      }
+
+      allow_property_values = {
+         1 = {
+				0  = { always = yes }
+         }
+         19 = {
+				0  = { always = yes }
+         }
+			33 = {
+				0  = { always = yes }
+         }
+         34 = {
+				0  = { always = yes }
+         }
+         35 = {
+				0  = { always = yes }
+         }
+         36 = {
+				0  = { always = yes }
+         }
+			6 = {
+				0 = { always = yes }
+         }
+         5 = {
+				0 = { always = no }
+			   1 = { portrait_has_trait = glitterstomp_trait }
+			}
+		}
+   }
+   
+   portraitType = {
+      name = "bobross_portrait_1"
+		effectFile = "gfx/FX/portrait.lua"
+      weight = {
+         additive_modifier = {
+            value = 1000000
+            portrait_clothing = yes
+			   portrait_has_trait = bobross_trait
+	 		}
+      }
+
+      layer = {
+         "GFX_empty:c0" # ie. GFX_empty means it's disabling the c0 layer, so c0, c2, c3, c1, and c4 are all disabled!
+         "GFX_empty:c2"
+         "GFX_empty:c3"
+         "GFX_empty:c1"
+         "GFX_empty:c4"
+         "GFX_empty:p1:h:y"
+         "GFX_bobross_portrait:c5"
+			"GFX_character_imprisoned:p6"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+      }
+
+      allow_property_values = {
+         1 = {
+				0  = { always = yes }
+         }
+         19 = {
+				0  = { always = yes }
+         }
+			33 = {
+				0  = { always = yes }
+         }
+         34 = {
+				0  = { always = yes }
+         }
+         35 = {
+				0  = { always = yes }
+         }
+         36 = {
+				0  = { always = yes }
+         }
+			6 = {
+				0 = { always = yes }
+         }
+         5 = {
+				0 = { always = no }
+			   1 = { portrait_has_trait = bobross_trait }
+			}
+		}
+	}
+
+	portraitType = {
+		name = "nazgul_portrait_1"
+		  effectFile = "gfx/FX/portrait.lua"
+		weight = {
+		   additive_modifier = {
+			  value = 1000000
+			  portrait_clothing = yes
+				 portrait_has_trait = nazgul_trait
+			   }
+		}
+  
+		layer = {
+		   "GFX_empty:c0" # ie. GFX_empty means it's disabling the c0 layer, so c0, c2, c3, c1, and c4 are all disabled!
+		   "GFX_empty:c2"
+		   "GFX_empty:c3"
+		   "GFX_empty:c1"
+		   "GFX_empty:c4"
+		   "GFX_empty:p1:h:y"
+		   "GFX_nazgul_portrait:c5"
+			  "GFX_character_imprisoned:p6"
+			  "GFX_lover_overlay:p37"
+			  "GFX_player_overlay:p11"
+		}
+  
+		allow_property_values = {
+		   1 = {
+				  0  = { always = yes }
+		   }
+		   19 = {
+				  0  = { always = yes }
+		   }
+			  33 = {
+				  0  = { always = yes }
+		   }
+		   34 = {
+				  0  = { always = yes }
+		   }
+		   35 = {
+				  0  = { always = yes }
+		   }
+		   36 = {
+				  0  = { always = yes }
+		   }
+			  6 = {
+				  0 = { always = yes }
+		   }
+		   5 = {
+				  0 = { always = no }
+				 1 = { portrait_has_trait = nazgul_trait }
+			  }
+		  }
+	  }
+}
