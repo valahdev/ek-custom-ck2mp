@@ -1,0 +1,597 @@
+song = {
+	name = "crusaderkings2_maintitle.ogg"
+	song_name = "Reign of the Septims"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "ThroughtheValleys.ogg"
+	song_name = "Through the Valleys"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "NerevarRising.ogg"
+	song_name = "Nerevar Rising"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "HarvestDawn.ogg"
+	song_name = "Harvest Dawn"
+
+	chance = {
+		factor = 1
+	}	
+	volume = 0.70
+}
+
+song = {
+	name = "KingandCountry.ogg"
+	song_name = "King and Country"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "WingsofKynareth.ogg"
+	song_name = "Wings of Kynareth"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "AllsWell.ogg" 
+	song_name = "All's Well"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "WatchmansEase.ogg"
+	song_name = "Watchman's Ease"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "GloryofCyrodiil.ogg"
+	song_name = "Glory of Cyrodiil"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "MinistrelsLament.ogg"
+	song_name = "Ministrel's Lament"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "AurielsAscension.ogg"
+	song_name = "Auriel's Ascension"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "SunriseofFlutes.ogg"
+	song_name = "Sunrise of Flutes"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "DuskAttheMarket.ogg"
+	song_name = "Dusk At the Market"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "PeaceofAkatosh.ogg"
+	song_name = "Peace of Akatosh"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "PeacefulWaters.ogg"
+	song_name = "Peaceful Waters"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "KnightsCharge.ogg"
+	song_name = "Knight's Charge"
+
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 0
+			war = no
+		}
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "OvertheNextHill.ogg"
+	song_name = "Over the Next Hill"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "BrightSpearsDarkBlood.ogg"
+	song_name = "Bright Spears Dark Blood"
+
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 0
+			war = no
+		}
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "TheRoadMostTravelled"
+	song_name = "The Road Most Travelled"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "DanceofSwords.ogg"
+	song_name = "Dance of Swords"
+
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 0
+			war = no
+		}
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "BlessingofVivec"
+	song_name = "Blessing of Vivec"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "SiltSunrise.ogg"
+	song_name = "Silt Sunrise"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "ShedYourTravails.ogg"
+	song_name = "Shed Your Travails"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "Caprice.ogg"
+	song_name = "Caprice"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "Dragonborn.ogg"
+	song_name = "Dragonborn"
+
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 0
+			war = no
+		}
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "Awake.ogg"
+	song_name = "Awake"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "FromPasttoPresent.ogg"
+	song_name = "From Past to Present"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "UnbrokenRoad.ogg"
+	song_name = "Unbroken Road"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "AncientStones.ogg"
+	song_name = "Ancient Stones"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "TheCityGates.ogg"
+	song_name = "The City Gates"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "SilentFootsteps.ogg"
+	song_name = "Silent Footsteps"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "Dragonsreach.ogg"
+	song_name = "Dragonsreach"'
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "UnderanAncientSun.ogg"
+	song_name = "Under an Ancient Sun"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "Masser.ogg"
+	song_name = "Masser"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "DistantHorizons.ogg"
+	song_name = "Distant Horizons"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "Dawn.ogg"
+	song_name = "Dawn"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "TheJerallMountains.ogg"
+	song_name = "The Jerall Mountains"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "Secunda.ogg"
+	song_name = "Secunda"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "ImperialThrone.ogg"
+	song_name = "Imperial Throne"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "Frostfall.ogg"
+	song_name = "Frostfall"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "KynesPeace.ogg"
+	song_name = "Kyne's Peace"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "FarHorizons.ogg"
+	song_name = "Far Horizons"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "AWintersTale.ogg"
+	song_name = "A Winter's Tale"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "TheBanneredMare.ogg"
+	name_song = "The Bannered Mare"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "TheStreetsofWhiterun.ogg"
+	song_name = "The Streets of Whiterun"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "OneTheyFear.ogg"
+	song_name = "One They Fear"
+
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 0
+			war = no
+		}
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "TheWhiteRiver.ogg"
+	song_name = "The White River"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "StandingStones.ogg"
+	song_name = "Standing Stones"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "Tundra.ogg"
+	song_name = "Tundra"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "OutoftheCold.ogg"
+	song_name = "Out of the Cold"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "AroundtheFire.ogg"
+	song_name = "Around the Fire"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "Aurora.ogg"
+	song_name = "Aurora"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "Solitude.ogg"
+	song_name = "Solitude"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "WatchtheSkies.ogg"
+	song_name = "Watch the Skies"
+
+	chance = {
+		factor = 2
+		modifier =  {
+			factor = 0
+			war = no
+		}
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "TheGatheringStorm.ogg"
+	song_name = "The Gathering Storm"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "Sovngarde.ogg"
+	song_name = "Sovngarde"
+
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 0
+			war = no
+		}
+	}
+	volume = 0.70
+}
+
+song = {
+	name = "WindGuideYou.ogg"
+	song_name = "Wind Guide You"
+
+	chance = {
+		factor = 1
+	}
+	volume = 0.70
+}

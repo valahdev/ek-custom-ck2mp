@@ -69,6 +69,7 @@ replace_path="interface/portrait_properties"
 replace_path="localisation/customizable_localisation"
 replace_path="map"
 replace_path="map/statics"
+replace_path="music"
 user_dir="custom_ekm01"
 tags=
 {
