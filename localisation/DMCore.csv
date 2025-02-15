@@ -1,804 +1,804 @@
-### Traits ###,,,,,,,,,,
-,,,,,,,,,,
-adult_of_destiny;Adult of Destiny;;;;;;;;;;;;;x,,,,,,,,,,
-adult_of_destiny_desc;Even though this character had a particularly mediocre childhood, they were thrust into the limelight overnight, and they didn't even have to be go through all the trouble of killing snakes and reading books.;;;;;;;;;;;;;x,,,,,,,,
-,,,,,,,,,,
-age_shifted;Age Shifted;;;;;;;;;;;;;x,,,,,,,,,,
-age_shifted_desc;This character had their age shifted, and as a result their diplomatic skills have suffered greatly.;;;;;;;;;;;;;x,,,,,,,,,
-,,,,,,,,,,
-dungeon_master;Dungeon Master;;;;;;;;;;;;;x,,,,,,,,,,
-dungeon_master_desc;The Dungeon Master, mighty dice roller and occasional controller of destiny.;;;;;;;;;;;;;x,,,,,,,,,
-,,,,,,,,,,
-midas_plague;Midas Plague;;;;;;;;;;;;;x,,,,,,,,,,
-midas_plague_desc;This character has the Midas Plague, a terrifying affliction which slowly turns the infected into solid gold!;;;;;;;;;;;;;x,,,,,,,,,
-,,,,,,,,,,
-ozyman_trait;Ozymandias;;;;;;;;;;;;;x,,,,,,,,,,
-ozyman_trait_desc;This character is an ancient king risen again to reclaim the lands lost to the ravages of time.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-glitterstomp_trait;Glitterstomp;;;;;;;;;;;;;x,,,,,,,,,,
-glitterstomp_trait_desc;The horse-horse lord, 60ft tall and a destructive force unlike any other.;;;;;;;;;;;;;x ,,,,,,,,,
-,,,,,,,,,,
-joris_trait;A Perfectly Normal Man;;;;;;;;;;;;;x,,,,,,,,,,
-joris_trait_desc;This is a perfectly normal man, despite what you believe. Would you rather this said 'Genius' or 'Proud', I don't understand, it's just a regular guy.;;;;;;;;;;;;;x,,,,,,,
-,,,,,,,,,,
-kf_trait;Super Seducer;;;;;;;;;;;;;x,,,,,,,,,,
-kf_trait_desc;This character was selected as the super seducer, a man destined to father a thousand children, or, perhaps, just as many as the game can handle without crashing.;;;;;;;;;;;;;x,,,,,,
-,,,,,,,,,,
-bobross_trait;Bob Ross;;;;;;;;;;;;;x,,,,,,,,,,
-bobross_trait_desc;This man spends his time painting happy little trees and lulling those around him into a deep, comfortable sleep with his voice.;;;;;;;;;;;;;x,,,,,,,,,
-,,,,,,,,,,
-genius_fake;Genius;;;;;;;;;;;;;x,,,,,,,,,,
-genius_fake_desc;This character is blessed with a towering intellect.\nMartial: §G+5§!\nIntrigue: §G+5§!\nDiplomacy: §G+5§!\nStewardship: §G+5§!\nLearning: §G+5§!\nPersonal Combat Skill: §G+10§!\nVassal Opinion: §G+5§!;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-dm_deaths_deal;Death's Deal;;;;;;;;;;;;;x,,,,,,,,,,
-dm_deaths_deal_desc;This character has made a pact with Death, and is fated to not live beyond a specific date.;;;;;;;;;;;;;x,,,,,,,,,
-,,,,,,,,,,
-dm_nazgul_trait;Black Rider;;;;;;;;;;;;;x,,,,,,,,,,
-dm_nazgul_trait;This character accepted a dark gift and succumbed to its temptations...;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-### Dungeon Master Character Misc ###,,,,,,,,,,
-,,,,,,,,,,
-e_dungeon;The Grand Dungeon;;;;;;;;;;;;;x,,,,,,,,,,
-k_dungeon;The Grand Dungeon;;;;;;;;;;;;;x,,,,,,,,,,
-dungeon_master;DM;;;;;;;;;;;;;x,,,,,,,,,,
-dungeon_master_title;DM;;;;;;;;;;;;;x,,,,,,,,,,
-god_rng;RNG;;;;;;;;;;;;;x,,,,,,,,,,
-dungeon_religion;Dungeon Mastery;;;;;;;;;;;;;x,,,,,,,,,,
-dungeon_religion_DESC;Dungeon Mastery is the ancient and formidable art of manipulating the luck of the foolhardy into interesting and cruel outcomes.;;;;;;;;;;;;;x,,,,,,,,,,
-dungeon_religion_group;DM Group;;;;;;;;;;;;;x,,,,,,,,,,
-dungeon_guide;Dungeon Master's Guide;;;;;;;;;;;;;x,,,,,,,,,,
-master;Master;;;;;;;;;;;;;x,,,,,,,,,,
-cruelty;Cruelty;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-dm_culture_group;Dungeon Mastery;;;;;;;;;;;;;x,,,,,,,,,,
-dm_culture;Chaotic Neutral;;;;;;;;;;;;;x,,,,,,,,,,
-dm_culture_adj;Chaotic;;;;;;;;;;;;;x,,,,,,,,,,
-dm_cow_culture;Cow;;;;;;;;;;;;;x,,,,,,,,,,
-dm_cow_culture_adj;Bovine;;;;;;;;;;;;;x,,,,,,,,,,
-gary_culture;Gary;;;;;;;;;;;;;x,,,,,,,,,,
-gary_culture_adj;Gary;;;;;;;;;;;;;x,,,,,,,,,,
-gary_prime_2_point_oh;Gary Prime 2.0;;;;;;;;;;;;;x,,,,,,,,,,
-gary_prime_2_point_oh_desc;This Gary has ascended. He is no longer Gary. He is... GARY.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-e_horse_lord;Horse Lord's Horse-Horde;;;;;;;;;;;;;x,,,,,,,,,,
-horse_lord;Horse Lord;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-e_gary;Gary;;;;;;;;;;;;;x,,,,,,,,,,
-gary_lord;Gary;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-k_kemet;Kemet;;;;;;;;;;;;;x,,,,,,,,,,
-pharoah;Pharoah;;;;;;;;;;;;;x,,,,,,,,,,
-kemetic;Kemetic;;;;;;;;;;;;;x,,,,,,,,,,
-kemetic_desc;Kemeticism is the ancient religion of the Old Kingdom of Egypt, spanning through to Egypt's fall to the Roman Empire. As the mythology spans across nearly three millennia, the myths and gods of the faith vary, however there is a common thread of Maat, Ra, Osiris, and others, throughout the entire history of the faith.;;;;;;;;;;;;;x,,,
-AMUN_RA;Amun-Ra;;;;;;;;;;;;;x,,,,,,,,,,
-MUT;Mut;;;;;;;;;;;;;x,,,,,,,,,,
-OSIRIS;Osiris;;;;;;;;;;;;;x,,,,,,,,,,
-ANUBIS;Anubis;;;;;;;;;;;;;x,,,,,,,,,,
-HORUS;Horus;;;;;;;;;;;;;x,,,,,,,,,,
-THOTH;Thoth;;;;;;;;;;;;;x,,,,,,,,,,
-HATHOR;Hathor;;;;;;;;;;;;;x,,,,,,,,,,
-SEKHMET;Sekhmet;;;;;;;;;;;;;x,,,,,,,,,,
-GEB;Geb;;;;;;;;;;;;;x,,,,,,,,,,
-APEP;Apep;;;;;;;;;;;;;x,,,,,,,,,,
-SETH;Seth;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-city_of_gold;Legendary City of Gold;;;;;;;;;;;;;x,,,,,,,,,,
-MIDAS_PLAGUE_INFO;This province has been struck with the Midas Plague - an incredibly deadly disease that either leaves the afflicted horribly maimed by only transforming extremities, or spreads from the torso until it leaves a statue of solid gold.;;;;;;;;;;;;;x,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-k_slave_master1;White Queen;;;;;;;;;;;;;x,,,,,,,,,,
-k_slave_master1_adj;Chess;;;;;;;;;;;;;x,,,,,,,,,,
-k_slave_master2;Black Queen;;;;;;;;;;;;;x,,,,,,,,,,
-k_slave_master2_adj;Chess;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-### Deaths ###,,,,,,,,,,
-,,,,,,,,,,
-DEATH_DEATHS_DEAL;made a bargain with Death;;;;;;;;;;;;;x,,,,,,,,,,
-DEATH_DM_NAZGUL_WITHER;withered after being separated from their cursed ring;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-### buildings ###,,,,,,,,,,
-,,,,,,,,,,
-city_of_gold;Lost City of Gold;;;;;;;;;;;;;x,,,,,,,,,,
-city_of_gold_desc;After a run-in with the Dungeon Master, this city found itself built on the sight of inexhaustible gold mines, and a deadly and terrible disease.;;;;;;;;;;;;;x,,,,,,,,
-,,,,,,,,,,
-fountain_of_youth;Fountain of Youth;;;;;;;;;;;;;x,,,,,,,,,,
-fountain_of_youth_desc;The mythical Fountain of Youth was discovered in the foundations of a temple in this very province. Naturally, the ruler of the province takes a great interest in such a find...;;;;;;;;;;;;;x,,,,,,,,,
-,,,,,,,,,,
-### Artifacts ###,,,,,,,,,,
-,,,,,,,,,,
-cursed_ring;Cursed Ring;;;;;;;;;;;;;x,,,,,,,,,,
-cursed_ring_desc;This is one of the nine cursed rings given out by the Dungeon Master's good friend to the mortal rulers of kingdoms.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-cursed_ring_of_one;Cursed Ring of One;;;;;;;;;;;;;x,,,,,,,,,,
-cursed_ring_of_one_desc;A strange glowing ring owned by the Dungeon Master, it bears a striking resemblance to the other cursed rings.;;;;;;;;;;;;;x,,,,,,,,,
-,,,,,,,,,,
-stinkrot_reaver;Fish;;;;;;;;;;;;;x,,,,,,,,,,
-stinkrot_reaver_desc;This is a fish, you could potentially hit people with it, or use it as a makeshift mining tool, but it has feelings too.;;;;;;;;;;;;;x,,,,,,,
-,,,,,,,,,,
-blackfish_scale;Fish;;;;;;;;;;;;;x,,,,,,,,,,
-blackfish_scale_desc;From a distance this armour looks to be oddly coloured chainmail, until you get close enough to realise that it is simply fish scales, haphazardly crafted to mimic the appearance of chainmail, with absolutely none of the benefits.;;;;;;;;;;;;;x,,,,,,,
-,,,,,,,,,,
-wyvernball_1;One-Star Wyvernball;;;;;;;;;;;;;x,,,,,,,,,,
-wyvernball_2;Two-Star Wyvernball;;;;;;;;;;;;;x,,,,,,,,,,
-wyvernball_3;Three-Star Wyvernball;;;;;;;;;;;;;x,,,,,,,,,,
-wyvernball_4;Four-Star Wyvernball;;;;;;;;;;;;;x,,,,,,,,,,
-wyvernball_5;Five-Star Wyvernball;;;;;;;;;;;;;x,,,,,,,,,,
-wyvernball_6;Six-Star Wyvernball;;;;;;;;;;;;;x,,,,,,,,,,
-wyvernball_7;Seven-Star Wyvernball;;;;;;;;;;;;;x,,,,,,,,,,
-wyvernball_1_desc;The One-Star Wyvernball, collect all seven for a mythical gift from the heavens!;;;;;;;;;;;;;x,,,,,,,,,
-wyvernball_2_desc;The Two-Star Wyvernball, collect all seven for a mythical gift from the heavens!;;;;;;;;;;;;;x,,,,,,,,,
-wyvernball_3_desc;The Three-Star Wyvernball, collect all seven for a mythical gift from the heavens!;;;;;;;;;;;;;x,,,,,,,,,
-wyvernball_4_desc;The Four-Star Wyvernball, collect all seven for a mythical gift from the heavens!;;;;;;;;;;;;;x,,,,,,,,,
-wyvernball_5_desc;The Five-Star Wyvernball, collect all seven for a mythical gift from the heavens!;;;;;;;;;;;;;x,,,,,,,,,
-wyvernball_6_desc;The Six-Star Wyvernball, collect all seven for a mythical gift from the heavens!;;;;;;;;;;;;;x,,,,,,,,,
-wyvernball_7_desc;The Seven-Star Wyvernball, collect all seven for a mythical gift from the heavens!;;;;;;;;;;;;;x,,,,,,,,,
-,,,,,,,,,,
-wyvern_armour;Wyvern Armour;;;;;;;;;;;;;x,,,,,,,,,,
-wyvern_sword;Wyvern Sword;;;;;;;;;;;;;x,,,,,,,,,,
-wyvern_helmet;Wyvern Helmet;;;;;;;;;;;;;x,,,,,,,,,,
-wyvern_amulet;Wyvern Amulet;;;;;;;;;;;;;x,,,,,,,,,,
-wyvern_armour_desc;A powerful set of mythical Wyvern Armour given as a gift to one who was able to unify all seven of the Wyvernballs.;;;;;;;;;;;;;x,,,,,,,,,,
-wyvern_sword_desc;The mighty Wyvern Sword gifted to the person who united the Wyvernballs. It still glows with the might of the skies.;;;;;;;;;;;;;x,,,,,,,,,,
-wyvern_helmet_desc;The Helmet of the unicorn gifted to its friend, the Wyvern, who in turn gifted it to the one who collected all of the Wyvernballs.;;;;;;;;;;;;;x,,,,,,,,
-wyvern_amulet_desc;The original dragon amulet of the Wyvern, copied meticulously by Chinese jewelers throughout the ages.;;;;;;;;;;;;;x,,,,,,,,,
-,,,,,,,,,,
-dm_inept_tea;Inept Tea;;;;;;;;;;;;;x,,,,,,,,,,
-dm_inept_tea_desc;This weird monkey is a receipt for blackmarket tea. You own neither the tea nor the monkey.;;;;;;;;;;;;;x,,,,,,,,,,
-dm_laundering_modifier;Money Laundering: ;;;;;;;;;;;;;x,,,,,,,,,,
-dm_cryptic;Cryptic Currencies: ;;;;;;;;;;;;;x,,,,,,,,,,
-dm_inept_tea_respect;Respect: ;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-dm_fedora;Fedora;;;;;;;;;;;;;x,,,,,,,,,,
-dm_fedora_desc;Not to be confused with a trilby, the fedora is a symbol of adventure and pairs great with a whip. Warning: keep out of reach of creepy virgin men.;;;;;;;;;;;;;x,,,,,,,,,
-,,,,,,,,,,
-dm_mind_pebble;Mind Pebble;;;;;;;;;;;;;x,,,,,,,,,,
-dm_mind_pebble_desc;One of the six Eternity Pebbles. This Pebble gives mastery over the minds of yourself and others.;;;;;;;;;;;;;x,,,,,,,,,,
-dm_power_pebble;Power Pebble;;;;;;;;;;;;;x,,,,,,,,,,
-dm_power_pebble_desc;One of the six Eternity Pebbles. This Pebble gives the user unrivaled physical power.;;;;;;;;;;;;;x,,,,,,,,,,
-dm_reality_pebble;Reality Pebble;;;;;;;;;;;;;x,,,,,,,,,,
-dm_reality_pebble_desc;One of the six Eternity Pebbles. This Pebble gives the user control over tangible objects, such as gold or stone.;;;;;;;;;;;;;x,,,,,,,,,
-dm_soul_pebble;Soul Pebble;;;;;;;;;;;;;x,,,,,,,,,,
-dm_soul_pebble_desc;One of the six Eternity Pebbles. This Pebble gives the user domination of their very own soul.;;;;;;;;;;;;;x,,,,,,,,,,
-dm_space_pebble;Space Pebble;;;;;;;;;;;;;x,,,,,,,,,,
-dm_space_pebble_desc;One of the six Eternity Pebbles. This Pebble gives the user the ability to manipulate the space around them.;;;;;;;;;;;;;x,,,,,,,,,,
-dm_time_pebble;Time Pebble;;;;;;;;;;;;;x,,,,,,,,,,
-dm_time_pebble_desc;One of the six Eternity Pebbles. This Pebble grants the user the power to guide time itself.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-dm_time_pebble_modifier;Imbues the user with §GImmortality§!;;;;;;;;;;;;;x,,,,,,,,,,
-dm_soul_pebble_modifier;Will remove §RStressed§!, §RDepressed§!, §RLunatic§!, or §RPossessed§!!;;;;;;;;;;;;;x,,,,,,,
-,,,,,,,,,,
-dm_resisted_ring;Has Previously Resisted The Ring's Influence;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-### Event Modifiers ###,,,,,,,,,,
-,,,,,,,,,,
-the_purge;The Purge;;;;;;;;;;;;;x,,,,,,,,,,
-the_purge_desc;For 12 months everyone has decided to turn a blind eye to crimes and atrocities.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-dwarf_fortress;Dwarf Fortress;;;;;;;;;;;;;x,,,,,,,,,,
-dwarf_fortress_desc;For some strange reason, this person seems to have some extremely skilled defenders.;;;;;;;;;;;;;x,,,,,,,,,
-,,,,,,,,,,
-mud_wraps;Mud Wraps;;;;;;;;;;;;;x,,,,,,,,,,
-mud_wraps_desc;This character decided that health was more important than appearances.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-sacrifices_for_beauty;Sore and Sweaty;;;;;;;;;;;;;x,,,,,,,,,,
-sacrifices_for_beauty_desc;After a spar day this character decided that sometimes looking good is better than feeling good.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-dm_petshop_cat;Pet Shop: Cat;;;;;;;;;;;;;x,,,,,,,,,,
-dm_petshop_cat_desc;This character was given a cat as a pet by the Dungeon Master.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-dm_petshop_dog;Pet Shop: Dog;;;;;;;;;;;;;x,,,,,,,,,,
-dm_petshop_dog_desc;This character was given a dog as a pet by the Dungeon Master.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-dm_petshop_snake;Pet Shop: Snake;;;;;;;;;;;;;x,,,,,,,,,,
-dm_petshop_snake_desc;This character was given a snake as a pet by the Dungeon Master.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-dm_petshop_bear;Pet Shop: Bear;;;;;;;;;;;;;x,,,,,,,,,,
-dm_petshop_bear_desc;This character was given a bear as a pet by the Dungeon Master. Yes, really.;;;;;;;;;;;;;x,,,,,,,,,
-,,,,,,,,,,
-dm_petshop_pony;Pet Shop: Pony;;;;;;;;;;;;;x,,,,,,,,,,
-dm_petshop_pony_desc;This character was given a pony as a pet by the Dungeon Master.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-dm_petshop_hamster;Pet Shop: Hamster;;;;;;;;;;;;;x,,,,,,,,,,
-dm_petshop_hamster_desc;This character was given a hamster as a pet by the Dungeon Master. Not a miniature giant space hamster, sadly, just a normal hamster.;;;;;;;;;;;;;x,,,,,,,,
-,,,,,,,,,,
-dm_petshop_rat;Pet Shop: Rat;;;;;;;;;;;;;x,,,,,,,,,,
-dm_petshop_rat_desc;This character was given a rat as a pet by the Dungeon Master.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-dm_immortal_good;Death's Deal;;;;;;;;;;;;;x,,,,,,,,,,
-dm_immortal_good_desc;This character has made a deal with Death.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-dm_immortal_neutral;Death's Deal;;;;;;;;;;;;;x,,,,,,,,,,
-dm_immortal_neutral_desc;This character has made a deal with Death.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-dm_immortal_bad;Death's Deal;;;;;;;;;;;;;x,,,,,,,,,,
-dm_immortal_bad_desc;This character has made a deal with Death.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-dm_dootdoot;The Horn of Dootage;;;;;;;;;;;;;x,,,,,,,,,,
-dm_dootdoot_desc;This character can doot the horn once while in combat to almost immediately route the enemy.\nOr they can save it. Who knows what might happen?;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-### Decisions ###,,,,,,,,,,
-,,,,,,,,,,
-begin_DMCore;Awaken the Dungeon Master!;;;;;;;;;;;;;x,,,,,,,,,,
-begin_DMCore_desc;The Dungeon Master will awaken. Every 15 years he will present the world with an event ranging from amusing to downright catastrophic.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-death_note_decision;Tell Name to the Dungeon Master;;;;;;;;;;;;;x,,,,,,,,,,
-death_note_decision_desc;You can speak this characters name to the Dungeon Master, who in turn will write their name in the Murder Book, resulting in the characters death. There family wont be best pleased by this...;;;;;;;;;;;;;x,,,,,,,,
-,,,,,,,,,,
-get_out_of_jail_free;Use Get Out of Jail Free Card;;;;;;;;;;;;;x,,,,,,,,,,
-get_out_of_jail_free_desc;Use the Get Out of Jail Free Card given to you by the Dungeon Master to guarantee your freedom. Warning: This is a single-use item and will be consumed!;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-unite_the_wyvernballs;Unite the Wyvernballs;;;;;;;;;;;;;x,,,,,,,,,,
-unite_the_wyvernballs_desc;Myths say when all seven Wyvernballs are united then a great power will be granted to the owner.;;;;;;;;;;;;;x,,,,,,,,,,
-show_wyvernballs;Display the Wyvernballs;;;;;;;;;;;;;x,,,,,,,,,,
-show_wyvernballs_desc;Show the current owners of the seven Wyvernballs.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-dm_kidnap_into_dynasty;Kidnap [Root.GetFirstName];;;;;;;;;;;;;x,,,,,,,,,,
-dm_kidnap_into_dynasty_desc;The Dungeon Master has graced you with the ability to kidnap [Root.GetFirstName] and force [Root.GetHerHim] into your dynasty.\nYou can perform this action only once. Choose wisely.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-dm_doot_doot;Doot Doot!;;;;;;;;;;;;;x,,,,,,,,,,
-dm_doot_doot_desc;Ask not for whom the horn doots. It doots for thee.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-dm_put_on_cursed_ring;Put on the Cursed Ring;;;;;;;;;;;;;x,,,,,,,,,,
-dm_put_on_cursed_ring_desc;So small, and so shiny - it's precious to me.;;;;;;;;;;;;;x,,,,,,,,,
-dm_resist_cursed_ring;Resist the Cursed Ring;;;;;;;;;;;;;x,,,,,,,,,,
-dm_resist_cursed_ring_desc;Remove the Cursed Ring and stop it gnawing at your will and reason.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-### Bloodlines ###,,,,,,,,,,
-,,,,,,,,,,
-wyvern_bloodline;Wyvern Blood;;;;;;;;;;;;;x,,,,,,,,,,
-wyvern_bloodline_desc;This character carries the blood of [target_bloodline_founder.GetHerHim] who united the Wyvernballs against all odds.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-dm_dragon_bloodline;Blood of the Dragon;;;;;;;;;;;;;x,,,,,,,,,,
-dm_dragon_bloodline_desc;Dragon deez nuts across your face! Ha! Gottem!;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-### Tombola Mechanics ###,,,,,,,,,,
-,,,,,,,,,,
-DMCoretitle1;Dungeon Master Cometh;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoredesc1;""Mortals", it is time once again for my influence to help shape this world! Brace yourself for the mediocre, or the insane. The unbalanced," or the overpowered!""\nRandom Number of the Day is: [global_eventTombola.GetValue];;;;;;;;;;;;;x",,,,,,,
-"DMCore1OptA;""Brace yourselves!"";;;;;;;;;;;;;x",,,,,,,,,,
-,,,,,,,,,,
-### Custom Tooltip ###,,,,,,,,,,
-,,,,,,,,,,
-DMAwakens;The Dungeon Master awakens...;;;;;;;;;;;;;x,,,,,,,,,,
-DMMultiplayer;In §GMultiplayer§!, one player will be the messenger of the Dungeon Master, this will be the player that fires the decision.;;;;;;;;;;;;;x,,,,,,,,
-DMWarning;§RWarning§!: The first event will fire immediately, be prepared!;;;;;;;;;;;;;x,,,,,,,,,
-dungeon_master_rolls;Dungeon Master rolls his dice...;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-wyvernballs_are_scattered;§KWarning§!: The Wyvernballs will be scattered throughout the world once again!;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-remove_illness;All §GPhysical§! and §GMental illnesses§! will be cured!;;;;;;;;;;;;;x,,,,,,,,,,
-remove_genetic_issues;All §GGenetic Abnormalities§! will be removed!;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-collected_all_wyvernballs;Has collected all seven Wyvernballs;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-### Mechanics ###,,,,,,,,,,
-,,,,,,,,,,
-DMmanagementtitle101;After the End?!;;;;;;;;;;;;;x,,,,,,,,,,
-"DMmanagementdesc101;""Well", well, well, this is not quite right is it?\nAmerica? That's going to stop things working properly. Not my jurisdiction you see. Already enough chaos there to last a life time. Look, I can offer you the usual chaos, here and there," but that's it."";;;;;;;;;;;;;x",,,,
-"DMmanagementOptA;""Oh"," nevermind then."";;;;;;;;;;;;;x",,,,,,,,,
-DMmanagementTooltip1;Certain events have been disabled to allow for compatibility with After the Ends wacky Empire mechanics!;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-### Events ###,,,,,,,,,,
-,,,,,,,,,,
-DMCoretitle3;Dungeon Master Awakens;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoredesc3;""Greetings players of the game", I am the Dungeon Master, guider of destiny and occasional roller of dice. What a boring player - you're playing the regular game this time around I see? I have adjusted the dice rolls and outcomes to fit a base game map," or at least a map that is fairly close to that. Good luck..."";;;;;;;;;;;;;x",,,,,,,
-"DMCore3OptA;""What did he call me?"";;;;;;;;;;;;;x",,,,,,,,,,
-,,,,,,,,,,
-DMCoretitle4;Dungeon Master Awakens;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoredesc4;""Greetings players of the game", I am the Dungeon Master, guider of destiny and occasional roller of dice.\nA contrarian not happy with the base game? Fine. I have adjusted the dice rolls and outcomes to fit your total conversion mod," or at least a map that is fairly close to that. Good luck..."";;;;;;;;;;;;;x",,,,,,,
-"DMCore4OptA;""What did he call me?"";;;;;;;;;;;;;x",,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle1;Prince and the Pauper;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreEvtdesc1;The Dungeon Master has decided to redistribute the world's wealth equally - unfortunately, he himself is in a staggering amount of debt due to his crippling addiction to mobile games. After the money is gathered up and equalised the grand total is... less than what everyone expected.;;;;;;;;;;;;;x,,,,,,,,,
-"DMCoreEvt1OptA;""How many lootboxes!?"";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip1;All landed rulers fall into debt equal to their average earnings.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle2;Lover's Lab;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc2;""I've recently concocted a new potion!"" cries the Dungeon Master"," ""Okay", fine," it's my bathwater - but I've been told it's incredibly potent stuff! I call it ""Gamer Guy Bathwater"" and my favourite game is getting you all to take a sip!"";;;;;;;;;;;;;x",,,,,,,
-"DMCoreEvt2OptA;""There's something floating in it!"";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip2;All landed rulers become Lustful Hedonists.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle3;The All Father...?;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreEvtdesc3;It's no secret that the Dungeon Master, like most Dungeon Masters, is an incredibly lonely and isolated man," living out his fantasies by controlling the lives of characters all day for his sadistic enjoyment. ""I just wish I could have a family of my own..."" says the Dungeon Master with a solemn sigh"," ""Wait a minute! That's it! Oh"," ladies!"";;;;;;;;;;;;;x",,,,,
-"DMCoreEvt3OptA;""What do you mean 'he called it his special move'!?"";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip3;All married ruler's wives become mysteriously pregnant.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle4;There Can Be Only One;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc4;""Sometimes it's not fun being the only omnipotent immortal being in this realm", well besides all those characters that conveniently became immortal gods through some convoluted event chain. Anyway," let's sprinkle some more deus ex machina out there and see what chaos they can cause!"";;;;;;;;;;;;;x",,,,,,,,
-"DMCoreEvt4OptA;""This is the end of civilisation as we know it..."";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip4;Twenty rulers ascend to become Immortal rulers of Destiny, who are rivals with one another.;;;;;;;;;;;;;x,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle5;Happy Birthday!;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc5;""You mortals", always growing old and dying and having your children cry or complain about whatever the hell 'gavelkind' is, it's such a dull affair - let's speed it up! Or reverse it! Now if I could get some volunteers... how about you," with the fancy hat!"";;;;;;;;;;;;;x",,,,,,,
-"DMCoreEvt5OptA;""Fetch a priest... or a doctor! Or both!"";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip5;Kings ages will adjust randomly anywhere between minus 30 to plus 30 years of age. Affected characters will be given the §RAge Shifted§! trait.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle6;Chaos Reigns!;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc6;""You with your fancy chairs and castles", you make rules for other people and don't follow them yourselves! It makes me sick, playing with peoples lives like that. Well we're taking away the rules, morality is out the window. Do whatever you want," good luck with your squishy moral existence now it's an equal playing field!"";;;;;;;;;;;;;x",,,,,,
-"DMCoreEvt6OptA;""You're telling me people have just... stopped caring?"";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip6;All landed rules have become morally flexible, §Garrests§! and §Gplots§! will be far easier for the next year!;;;;;;;;;;;;;x,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle7;Short Fortress;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc7;""This is gonna be sweet"" mutters the Dungeon Master as he clicks his fingers. Reports of rulers drastically shrinking", becoming stubborn, and gaining the uncanny ability of defence become known far and wide. No one quite understands why.;;;;;;;;;;;;;x,,,,,,,,
-"DMCoreEvt7OptA;""These bastions of short men make for formidable defenders."";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip7;Some lucky rulers lose height but make up for it in their defensive skills.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle8;Renderer Thigh;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc8;""The greatest mystery of all!"" proclaims the Dungeon Master ""Long ago my brother died horribly in a fish related incident"," and as the river became stained with his blood he cried out ""RENDERER THIGH!"" and still to this day I have no idea what the hell he was talking about. For whoever solves the challenge of the Renderer Thigh"," I will grant you a gift beyond even those of your wildest dreams and fantasies!"";;;;;;;;;;;;;x",,,,,,,,
-"DMCoreEvt8OptA;""A... what?"";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip8;Everyone becomes more confused.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle9;[poopy.GetName] Latrine Disaster;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreEvtdesc9;Your spymaster receives word of a castle in [poopy.GetName] that suffered a terrible tragedy - the ruler was hosting a gathering for all the lords and ladies of the realm. Unfortunately, the weight was too much for the castle to bear and the entire dining area fell into a latrine pit, causing all who attended to drown horribly in the remains of the feasts from the week prior...;;;;;;;;;;;;;x,,,,,,,,
-"DMCoreEvt9OptA;""I think I'm going to be sick..."";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip9;The provincial ruler, and all courtiers, drown horrible in a fecal related accident.;;;;;;;;;;;;;x,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle10;Murder Book;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc10;""You know", around here somewhere I have a very magic book," and on each page I can write the name of my enemies and they just seem to disappear! I'll do you all a favour - you tell me a name and I'll write it down on your behalf! And people say I never do anything nice around here."";;;;;;;;;;;;;x",,,,,,,,
-"DMCoreEvt10OptA;""Maybe we should post some more guards..."";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip10;Every character gets a permanent, single-use, decision that will instantly kill one their enemies. Be warned - this murder will be publicly known by the person's surviving family.;;;;;;;;;;;;;x,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle11;The Greatest Gift;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc11;""Sometimes I think I am far too cruel. Today is your lucky day my friend"," to you I give the greatest gift of all. It might help you against some of my... other plans."";;;;;;;;;;;;;x",,,,,,,,,
-"DMCoreEvt11OptA;""I feel... strange...?"";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip11;You sense a great adventure approaching...;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreFollowTooltip1;You hear cackling off in the distance...;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle12;Plague Inc.;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc12;""I have a friend I want to introduce you to"" begins the Dungeon Master ""He is very dear to me"," and very very skilled with alchemy. I think you'll both get along well!"";;;;;;;;;;;;;x",,,,,,,,,
-"DMCoreEvt12OptA;""This could be useful"," I am going into battle..."";;;;;;;;;;;;;x",,,,,,,,,
-DMEventTooltip12;A man approaches...;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle13;Mature Student;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc13;""You know", I didn't actually train to be a Dungeon Master until late into my 600s, before then I was a maths teacher," but I didn't want to be that cruel my entire life. I think you all deserve a second chance as well!"";;;;;;;;;;;;;x",,,,,,,
-"DMCoreEvt13OptA;""My head..."";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip13;All rulers gain a second education.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle14;Mrs Doubtfire.;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc14;""One my favourite movies"," begins the Dungeon Master, is Lethal weapon two. Anyway", I'm flipping all your sexes," enjoy!"";;;;;;;;;;;;;x",,,,,,,
-"DMCoreEvt14OptA;""Wait wha.. AGH!"";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip14;All landed rulers and their spouses flip sex, forever.;;;;;;;;;;;;;x,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle15;Facts and Logic;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc15;""I've been doing some science recently", and I have discovered that actually [religion_destroyed.GetName] is wrong. All wrong. It always has been. Here's my notes," do with it what you will."";;;;;;;;;;;;;x",,,,,,,,
-"DMCoreEvt15OptA;""Is he allowed to say that?"";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip15;All [religion_destroyed.GetName] rulers will convert to a heresy or other religion of the same group.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle16;Player's Well Known Battlegrounds;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc16;""I get a strange feeling that some of you really like going out there and killing each other just for the sport of it. Well all good sports deserve a trophy! Whoever holds [battle_royale.GetName] by the end of 6 years will be given a prize worthy of such bloodshed!"";;;;;;;;;;;;;x",,,,,,,,,,
-"DMCoreEvt16OptA;""Ready the troops...?"";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip16;All rulers are given a claim on [battle_royale.GetName] and whoever holds the province after six years have elapsed will be granted massive amounts of gold, prestige, and piety!;;;;;;;;;;;;;x,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle17;Thunderous Applause;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc17;""It's like the old expression goes 'Never trust an ambitious chancellor who has his eyes on your primary title and wants to usurp the republic'... wait no"," I just made that up..."";;;;;;;;;;;;;x",,,,,,,,,
-"DMCoreEvt17OptA;""So this is how democracy dies..."";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip17;All unlanded, ambitious chancellors will usurp their lieges primary title!;;;;;;;;;;;;;x,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle18;Home Sweet Home..?;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc18;""Does it not get boring sitting around in your big fancy castle", with all your nice furniture," and your nice servants speaking your nice language?"" asks the Dungeon Master"," ""You need to try something different! Spice up your life a little!"";;;;;;;;;;;;;x",,,,,,,
-"DMCoreEvt18OptA;""There's no place like... home?"";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip18;Rulers selected at random will have their capital swapped with another random ruler!;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle19;Friends in Low Places;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc19;""I know a guy", a really good guy," a great friend of mine..."" says the Dungeon Master", peering over his shoulder as if he's expecting someone," ""And I sort of owe him. In exchange for not interrupting with my meddling", I promised I'd help him out with a small thing that's been bothering him a few... thousand years. A small, popey," problem..."";;;;;;;;;;;;;x",,,
-"DMCoreEvt19OptA;""You're saying they've all gone a bit strange?"";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip19;All religious heads seems to fall under a strange influence...;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle20;Lobotomiser!;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc20;""I've been working on a machine in my spare time", it's nothing too impressive, just do me a favour and put your face on it... right there," that's it! Now you might feel a slight tingle in your nervous system..."";;;;;;;;;;;;;x",,,,,,,
-"DMCoreEvt20OptA;""Please stop milling about. Really."";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip20;All positive congenital traits become negative congenital traits, and vice versa!;;;;;;;;;;;;;x,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle21;The Horse² Lord;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreEvtdesc21;The Dungeon Master appears, points right at you, and laughs like a madman. Suddenly a great flash of lightning strikes the sky followed shortly by a deafening horn. Some of your soldiers drop the floor screaming, your diplomat has an instant heart attack and grandma's head explodes," painting the castle walls the colour of bingo and sherry.\n""MORTALS""", a voice neighs from a great distance, or perhaps not if you're living in a realm where horses might appear suddenly," ""I AM THE HORSE HORSE-LORD", ENDER OF THIS EARTH AND SCORCHER OF MAN," SCOURGE OF GLUE FACTORIES AND CHEAP FROZEN LASANGA!""",
-A great flash of light appears in the sky, this time taking the form of the Horse Horse-Lord, and great trepidation takes hold.;;;;;;;;;;;;;x,,,,,,,,
-"DMCoreEvt21OptA;""We're going to need a bigger saddle..."";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip21;A great Khan of Khan of Khan's appears intent on the destruction of man.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle22;Divine Intervention;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc22;""I've been doing some MORE science recently", and I have discovered that actually [religion_proven.GetName] is probably right! I can't guarantee it," but I've just casually slid the important documents under every rulers door. It's up to them what they do with it - I'm not their mother."";;;;;;;;;;;;;x",,,,,,,,
-"DMCoreEvt22OptA;""My god... he's right."";;;;;;;;;;;;;x",,,,,,,,,,
-"DMCoreEvt22OptB;""My god"," he's gone completely mad..."";;;;;;;;;;;;;x",,,,,,,,,
-"DMCoreEvt22OptC;""This is... interesting..."";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip22;Some rulers may convert to [religion_proven.GetName]!;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle23;Lost City of Gold Uncovered!;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreEvtdesc23;Rumours have always persisted around [lost_province_of_gold.GetName] speaking of the lost city of gold, but many dismissed it as the dreams of a desperately poor people. The Dungeon Master, feeling a great pity for the people in [lost_city_of_gold.GetName] decided to make all of their dreams come true and transformed the whole city, including it's foundations, and natural resources, into solid gold!\nUnfortunately, the tricky caused by the Dungeon Master had an unintended side effect - people were randomly turning to gold and infecting others with the same curse!;;;;;;;;;;;;;x,,,,
-"DMCoreEvt23OptA;""To own such a city... but the risk is too great!"";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip23B;Random characters have a chance of turning into solid gold.;;;;;;;;;;;;;x,,,,,,,,,,
-DMEventTooltip23;The owner of [lost_city_of_gold.GetName] will be tremendously wealthy.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle24;Balance;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreEvtdesc24;The Dungeon Master appears in front of you.\nHe raises his hand and snaps his fingers.;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvt24OptA;""Wha..."";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip24;Half of all living people die.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle25;A Rose by Any Other Name;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc25;""Hello!"" shouts the Dungeon Master", scaring courtiers and priests alike," ""I've had quite a few names given to me by frightened men", some scarier than others. One of the most memorable was a few years back - the locals used to call me the Angel of... something, but that's not important. The point is it was incredibly rude of them, I mean," all I did was this!"";;;;;;;;;;;;;x",,,,
-"DMCoreEvt25OptA;""What did you do...?"";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip25;The oldest child of each ruler dies!;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle26;King of Kings;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc26;""I've lived a very long life and met some interesting fellows - Oh! I know"," I'll introduce you to one now!"" You turn and try and tell the Dungeon Master to stop"," but he had already disappeared in a cloud of... sand?\n\nA great voice echoes around the halls speaking a foreign tongue that slowly begins to fade into your own language:\n\n""My name is Ozymandias", king of kings:\nLook on my works, ye Mighty," and despair!"";;;;;;;;;;;;;x",,,,,
-"DMCoreEvt26OptA;""Batten down the hatches! Quickly!"";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip26;An ancient king stirs...;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle27;Ruler of the Jewels;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc27;""I'm friends with a great jeweler", he's quite a tame guy by my standards," but he has a real talent when it comes to making rings - pretty generous too! He gave me a whole bunch of rings to hand out to lucky people! I'll see if I have one for you here."";;;;;;;;;;;;;x",,,,,,,,
-"DMCoreEvt27OptA;""This doesn't sound suspicious in the least!"";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip27;Nine for Mortal Men...;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle28;Cultural Exchange;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc28;""I've decided that [culture1.GetName] and [culture2.GetName] are both very backwards cultures. I've decided that both of you horribly boring people are going to speak each others languages", eat each others disgusting foods," and wear each others stupid shoes."";;;;;;;;;;;;;x",,,,,,,,
-"DMCoreEvt28OptA;""Well that's not very sensitive"," this is a civilised time!"";;;;;;;;;;;;;x",,,,,,,,,
-DMEventTooltip28;All characters of the two cultures switch.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle29;Blessing in Disguise...?;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc29;""I've been doing a bit of poking around and at the bottom of a lake I found a age-old container filled to the brim with religious texts! I have no idea who put those there but", in my usually helpful nature," I've decided to forward a copy to the relevant religious heads so they can study and make the changes that their religion must have conveniently forgotten about!"";;;;;;;;;;;;;x",,,,,,,,
-"DMCoreEvt29OptA;""We have to do WHAT now?!"";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip29;Random religions randomly gain random alterations from a random list.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle30;Realm fit for a King;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc30;""Maybe I've been looking at it all wrong..."" says the Dungeon Master", stroking his beard," ""You sick people. You actually ENJOY this don't you? This is all game to you isn't it. Unbelievable. Well"," I know exactly what will solve that problem!"";;;;;;;;;;;;;x",,,,,,,
-"DMCoreEvt30OptA;""There's... nothing left to do..."";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip30;Empires are stabilised and vassals become content.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle31;Perfectly Normal Man;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc31;""What is WRONG with you people!?"" screams the Dungeon Master"," ""Look at this person"," this person RIGHT HERE"" he says"," gesturing to a perfectly normal person standing in your court. You don't recognise them but they certainly look very normal to you. ""NOTHING at ALL looks strange about this person here?!"" You gesture to your guards to have the Dungeon Master removed", clearly he has lost his mind.;;;;;;;;;;;;;x,,,,,,
-"DMCoreEvt31OptA;""My apologies my perfectly normal friend"," welcome!"";;;;;;;;;;;;;x",,,,,,,,,
-DMEventTooltip31;A perfectly normal person joins your court.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle32;Fountain of Youth Uncovered!;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreEvtdesc32;During routine maintenance in the temple of [fountain_of_youth_holding.GetName] in [fountain_of_youth_province.GetName] a great wellspring was discovered unlike any other - through the rockface beneath the foundation flows a seemingly unlimited source of crystal clear, glowing, water. Believing it to be a divine gift, the local ruler of the province bathed in the waters and drank deeply, only to discover that their strength grew rapidly and the ravages of time seemed to be reversed!\nThe local holy man has declared the site as sacred, with only the blessed ruler being allowed entrance into the divine fountain. Though for some jealous rulers perhaps, this may not be enough to prevent their curiosity...;;;;;;;;;;;;;x,,,,
-"DMCoreEvt32OptA;""Bountiful health and long life...?"";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip32;The Fountain of Youth is discovered!;;;;;;;;;;;;;x,,,,,,,,,,
-DMEventTooltip32B;The owner of the province will occasionally gain health and grow younger!;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle33;Gary;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc33;""Let me introduce you to my friend Gary. Gary loves playing my games"," don't you Gary?"" asks the Dungeon Master as he slaps a timid and shellshocked man on the back"," who in turn audibly squeaks. ""See Gary has always dreamt big", but he never quite made it, so I'm going to let him live vicariously! Every court throughout the land will get their very own Gary," fruit directly from the loin's of Gary Prime!""\nSuddenly a nefarious looking copy of Gary pops into your court"," ""Buuuut..."" continues the Dungeon Master"," ""These Gary's will be slightly amped up. Much more ambitious and skilled than the original"," so watch your back!"";;;;;;;;;;;;;x",,
-"DMCoreEvt33OptA;""Erm... welcome... Gary?"";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip33;Gary.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle34;Friends in High Places;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc34;""I basically only exist to watch the suffering of others"," but you people just do suffering so much more efficiently. There are the occasional occasions where occasionally you do take things a bit too far. Ruin the fun entirely. Here."" the Dungeon Master fishes around into his pocket before handing you a small paper card - 'Get out of Jail Free' is written on it"," ""Just so that the suffering isn't interrupted too much..."";;;;;;;;;;;;;x",,,,,,,,
-"DMCoreEvt34OptA;""This could come in handy..."";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip34;All rulers gain a single-use 'Get Out of Jail Free' allowing for instant release from imprisonment.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle35;Prison Riot!;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc35;""I've been doing some snooping around and noticed there were some people stuck in your basement behind bars"," and try as they might they just couldn't find a way out!"" You take a sharp breath and brace yourself.\n""So"," I happily showed the the way out! You don't have to thank me!"";;;;;;;;;;;;;x",,,,,,,,
-"DMCoreEvt35OptA;""Fetch my guards..."";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip35;All imprisoned characters are released and become rivals with their jailer!;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle36;Gavelkindness;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc36;The Dungeon Master appears looking pensive ""I have no idea what this Gavelkind is but every time I bring it up you land owners always turn a funny colour."" You feel your stomach turn at the sound of the forbidden word. ""I've decided that a punishment for all those naughty rulers will be this 'Gavelkind' thing... whatever it is."";;;;;;;;;;;;;x",,,,,,,,,,
-"DMCoreEvt36OptA;""No... he wouldn't...?"";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip36;All characters with serious crimes such as §PImpalers§! or §RKinslayers§! will be forced into Gavelkind.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle37;Spa Day!;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc37;""I've got plans today"," can't do any of the usual evil!"" says the Dungeon Master", dashing through your court with a suitcase," ""A Hotelier friend of mine gave me these tickets", claimed he was a huge fan of my work, but the hotel is all the way in the north west of Britainia," wherever that is. They're yours if you want them!"";;;;;;;;;;;;;x",,,,
-"DMCoreEvt37OptA;""Free Personal Trainer?"";;;;;;;;;;;;;x",,,,,,,,,,
-"DMCoreEvt37OptB;""Free Mud Baths?"";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip37A;You push yourself in a work out.;;;;;;;;;;;;;x,,,,,,,,,,
-DMEventTooltip37B;You cover yourself in mud.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle38;Happy Little Accident;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc38;""I was visiting a friend of mine and it turns out he had someone there that definitely fit in with his... regular crowd. Anyway he's far too nice to be left down there so I'm putting him under your care. He tells me he's quite talented!"";;;;;;;;;;;;;x",,,,,,,,,,
-"DMCoreEvt38OptA;""Welcome Mr... Ross was it?"";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip38;A talented courtier arrives in your court who will produce happy little accidents while he's around.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle39;Everyone's Under 4;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc39;""I just found a brilliant new game to play! It's called EU4. You take control of a kingdom somewhere in the world"," and then you 'paint the map' as all my friends would say. Would you like to give it a go?"";;;;;;;;;;;;;x",,,,,,,,,
-"DMCoreEvt39OptA;""I have a bad feeling about this..."";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip39A;playing a nice game of EU4 with the Dungeon Master.;;;;;;;;;;;;;x,,,,,,,,,,
-DMEventTooltip39B;playing a nice game of EU4 with the Dungeon Master, but you cant help but wonder why he's smirking...\n;;;;;;;;;;;;;x,,,,,,,,,
-DMEventTooltip39C;All playable rulers are forced to play.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle40;Duke Nukem;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc40;""I've never understood Dukes", they're just Counts but with vassals, like Kings, or Emperors, but smaller. And don't even get me started on Petty Kings, or Dukes called Kings, or Dukes formally known as Prince? None of this makes any sense! I'm simplifying the entire system - Dukes are now banned. Emperors are next," mark my words."";;;;;;;;;;;;;x",,,
-"DMCoreEvt40OptA;""Nobody steals our titles... and lives!"";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip40;All Duke tier titles are destroyed!;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle41;Stroke of Genius;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc41;""It's always the same with you people"" begins a very judgemental Dungeon Master"," ""It's always genius", strong, fair, claims, whatever with you people, never what's on the INSIDE. And that's all that counts. Well, in hindsight, I guess genius is on the inside," now that I think about it... and claims too... Well don't think you're getting away with it that easily!"";;;;;;;;;;;;;x",
-"DMCoreEvt41OptA;""You seem... different?"";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip41;Everyone becomes Genius...?;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle42;Crab Rave;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc42;""Look", your other options are Scorpion rave, Lion rave, or Goat rave. I think your life expectancy is much better with this," trust me."";;;;;;;;;;;;;x",,,,,,
-"DMCoreEvt42OptA;""I was born in September!"";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip42;Everyone gains Cancer!;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle43;Meek will Inherit;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc43;""You've all had your chance and really blown it. Just absolutely ruined this earth. Temperatures are increasing", the world economy is in absolute shambles, and your kids are never going to be able to afford housing at this rate. And before you start complaining," the alternate name for this event was 'Okay Boomer' so be glad you're not going out with a bang."";;;;;;;;;;;;;x",,,,,,,
-"DMCoreEvt43OptA;""The nanny raised the children"," not us!"";;;;;;;;;;;;;x",,,,,,,,,
-DMEventTooltip43;Rulers over 12 die a horrible death, unless players have no valid heir under 12 at which point a different fate befalls them...;;;;;;;;;;;;;x,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle44;Wyvernballs Arrive!;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreEvtdesc44;Across the known world great lights have been spotted falling from the sky. Though there are many records of rocks descending from the heavens, this time their descent is seen from every corner of the known world. Priests and holy men claim that the rocks are messages from their gods," while treasure hunters and fortune finders gear up for great expeditions to find the fallen stars.\n""I know"," I know"" begins the Dungeon Master ""We agreed no references"," but this one I've had ready for a long time and I thought I'd better put it to good use."";;;;;;;;;;;;;x",,,,,,
-"DMCoreEvt44OptA;""I... I must collect more!"";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip44;Rulers over 12 die a horrible death, unless players have no valid heir under 12 at which point a different fate befalls them...;;;;;;;;;;;;;x,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle45;Marks and Angels;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc45;""So I've been reading some of the works of some fine lads called Charles Marks and Fred Angels"," the Dungeon Master says, looking up from a little red book. Their ideas of wealth redistrubution has given me an idea..."";;;;;;;;;;;;;x",,,,,,,,,
-"DMCoreEvt45OptA;""Uh oh."";;;;;;;;;;;;;x",,,,,,,,,,
-"DMCoreEvt45OptB;""NO"," MY PRECIOUS MONEY!"";;;;;;;;;;;;;x",,,,,,,,,
-"DMCoreEvt45OptC;""Oh"," this benefits me!"";;;;;;;;;;;;;x",,,,,,,,,
-DMEventTooltip45;All playable rulers will have their wealth taken from them and redistributed evenly. As a side note, the Dungeon Master doesn't know what 'redistributed' means.;;;;;;;;;;;;;x,,,,,,,,,
-,,,,,,,,,,
-"DMCoreEvtdesc46;""Do you like chess?"" the Dungeon Master asks with a wide"," sinister grin on his face. ""I do! In fact", I love it so much that I've invited a friend over to play with me. I forgot to bring the chess pieces," but no matter! We'll be using you lot!""\nThe Dungeon Master scratches his chin in thought and smirks. ""So", tell me," what colour do you like?"";;;;;;;;;;;;;x",,,,,
-DMCoreEvttitle46;The Chessboard;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvt46OptA;""I like all colours!"";;;;;;;;;;;;;x",,,,,,,,,,
-"DMCoreEvt46OptB;""Uhh... white?"";;;;;;;;;;;;;x",,,,,,,,,,
-"DMCoreEvt46OptC;""Uhh... black?"";;;;;;;;;;;;;x",,,,,,,,,,
-"DMCoreEvt46OptD;""Pink!"";;;;;;;;;;;;;x",,,,,,,,,,
-DMCoreEvt46CustomTooltip;This option is available because you are within diplomatic range of one of the Queens in this conflict.;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreEvt46CustomTooltip2;This option is available because you are not within diplomatic range of one of the Queens in this conflict.;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreEvt46Tooltip;Two random rulers will become the White Queen and the Black Queen, and all other rulers around them will be their tributaries. The tributaries on the losing side will suffer dire consequences for their failure. Knight to King 4.;;;;;;;;;;;;;x,,,,,,,,,
-,,,,,,,,,,
-"DMCoreEvtdesc47;""I simply adore animals!"" exclaims the Dungeon Master while playing around with a kitten"," making it chase a peacock feather. ""The tiny ones", the big ones," the ones with sharp teeth that will eviscerate you in a moments notice..."" He looks up at you and smirks wildly. ""Would you like your own pet? Only 50 coins"," and it can be yours! And I promise it wont die!"";;;;;;;;;;;;;x",,,,,,
-DMCoreEvttitle47;Pet Shop;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvt47OptA;""Sure"," I'll buy one!"";;;;;;;;;;;;;x",,,,,,,,,
-"DMCoreEvt47OptB;""Eh", another time," perhaps."";;;;;;;;;;;;;x",,,,,,,,
-"DMCoreEvt47OptC;""But you already sold me one before..."";;;;;;;;;;;;;x",,,,,,,,,,
-DMCoreEvt47TooltipA;A randomly-chosen pet will appear on your character screen as a character modifier. All are permanent and beneficial.;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreEvt47TooltipB;All rulers will be given the option to buy a pet of their own.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-"DMCoreEvtdesc48;""I've recently come across seven strange men", the Dungeon Master quips. They are a quirky bunch, all of them are dwarves," singing while they work in the salt mines. But they do seem lonely. They have expressed their desire to join the court of a delightfully-female ruler. Don't ask me how delightfully-female is different from regular female."";;;;;;;;;;;;;x",,,,,,,
-DMCoreEvttitle48;Snow White;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvt48OptA;""Seven dwarves? What is this"," a fairy tale?"";;;;;;;;;;;;;x",,,,,,,,,
-DMEventTooltip48;One playable female ruler in the world will receive a gift of seven dwarves of varying usefulness.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-"DMCoreEvtdesc49;""Family is the most important thing in the world", quips the Dungeon Master while stroking his chin. But you also know what's just as important? Congenital traits and bloodlines. Trying to get them is such a hassle," so I'm going to be nice and let you kidnap any one child of your choosing.""\nThe Dungeon Master lifts up a finger to silence your forthcoming questions"," ""There are stipulations", however. No rulers, no AI heirs," and no heirs of players unless they have a spare. Don't say I didn't do anything nice for you!"";;;;;;;;;;;;;x",,,,
-DMCoreEvttitle49;Kidnapping;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvt49OptA;""Only one?"";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip49;You are given a single-use targeted decision against any child within diplomatic range. This child will move to your court and join your dynasty.;;;;;;;;;;;;;x,,,,,,,,,,
-DMEventTooltip49Safe;nobody finding out;;;;;;;;;;;;;x,,,,,,,,,,
-DMEventTooltip49Caught;the prior liege of the child is notified;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-"DMCoreEvtdesc50;""Humility is a weird concept", muses the Dungeon Master as he surveys the land. I prefer fear when keeping people in line. Oh," and speaking of fear and humility..."" The Dungeon Master grins from ear to ear and snaps his fingers.;;;;;;;;;;;;;x",,,,,,,,
-DMCoreEvttitle50;Vassal/Liege Swap;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvt50OptA;""Wha...?"";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip50;A random independent ruler and one of their vassals will trade titles.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvtdesc51;\n\nEverything is eerily silent. The leaves do not rustle in the wind, the birds are quiet, even your own footsteps as you walk into the forest grove are muted.\nBefore you is a woman with pale skin and raven black hair," dressed only in a robe that matches her hair color. The scythe she wields gives you no doubt as to her identity.\n\n""Be not afraid", mortal," she speaks, nary an emotion crosses her lips, you are fast asleep in the real world. I have come to offer you a deal."" She extends a hand out"," waiting for you to take it into yours. ""I will grant you a longer lifespan"," but in return you will die on a specific date.""\n\nDeath is offering you a choice to live another 10 years as an exceptional [GetManWoman]", 25 years as you are, or 50 as an inferior [GetManWoman]. But at the end of those years, Death will come back to claim you. This also does not prevent your death from the sword or the dagger.;;;;;;;;;;;;;x
-DMCoreEvttitle51;To Dream of Death;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvt51OptA;""10 years."";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip51A;Choose to live another 10 years in glory. After 10 years, you will die.;;;;;;;;;;;;;x,,,,,,,,,
-"DMCoreEvt51OptB;""25 years."";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip51B;Choose to live another 25 years. After 25 years, you will die.;;;;;;;;;;;;;x,,,,,,,,,
-"DMCoreEvt51OptC;""50 years."";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip51C;Choose to live another 50 years in mediocrity. After 50 years, you will die.;;;;;;;;;;;;;x,,,,,,,,,
-"DMCoreEvt51OptD;""I refuse your deal."";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip51D;You wake up in bed. Was it just a dream, or was it real?;;;;;;;;;;;;;x,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvtdesc5101;You find yourself back in the familiar forest grove," lit only by the full moon. ""It is time", mortal," speaks the pale reaper. Your time on this mortal world has come to an end."";;;;;;;;;;;;;x",,,,,,,
-DMCoreEvttitle5101;To Dream of Death;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreEvt5101OptA;It's a sad thing that your adventures have ended here.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-"DMCoreEvtdesc52;""People tell me I'm not kind", muses the Dungeon Master. Well," I'll show them! BEHOLD! I shall grant a fourth of the populace the power of my dragon!"";;;;;;;;;;;;;x",,,,,,,,
-DMCoreEvttitle52;Blood of the Dragon;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvt52OptA;""Your dragon?"";;;;;;;;;;;;;x",,,,,,,,,,
-DMEventTooltip52A;Every playable ruler will have a 25% chance of getting a non-inheritable bloodline.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvtdesc53;The DM appears before you with an animal cage in hand," looking worried. ""I"," uh..."" he fidgets"," ""may have accidentally loosed some animals into the world. And given them sentience. And titles. Whoops."";;;;;;;;;;;;;x",,,,,,,
-DMCoreEvttitle53;Animal Kingdom;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvt53OptA;""What do you mean"," 'whoops'?"";;;;;;;;;;;;;x",,,,,,,,,
-DMEventTooltip53A;An animal kingdom has appeared on the map.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle54;The Network;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc54NoTower;""5G!"" the Dungeon Master exclaims happily. ""Such a wonderful technology! It was given to me by the Lizard People"," and will prooooo-"" he stops to clear his throat before continuing"," ""...prove to be a real game changer."";;;;;;;;;;;;;x",,,,,,,,
-"DMCoreEvtdesc54TTANoTower;""Five... gee...? What?"";;;;;;;;;;;;;x",,,,,,,,,,
-DMCoreEvtdesc54;While walking through your demense one day, you come across the damnest sight: a herd of cows- all dressed like human laborers- building a giant metal tower of some kind. You suspect it's time to take up drinking as a hobbby.;;;;;;;;;;;;;x,,,,,,,,,
-"DMCoreEvtdesc54TTA;""This is such a mooving sight to see."";;;;;;;;;;;;;x",,,,,,,,,,
-"DMCoreEvtdesc54TTAQueen;""COW!"";;;;;;;;;;;;;x",,,,,,,,,,
-DMCoreEvtdesc54TTAQueenTT;You are given this option because you are the Queen of England.;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreEvtdesc54TTACustomTT;20 random rulers will have 1G towers build in their capital province.\nThese towers levy a hefty cost on the populace, but can be upgraded to reduce the penalties.\n§GYou were not chosen.§!;;;;;;;;;;;;;x,,,,,,,,,
-DMCoreEvtdesc54TTACustomTTTower;20 random rulers will have 1G towers build in their capital province.\nThese towers levy a hefty cost on the populace, but can be upgraded to reduce the penalties.\n§RYou were chosen.§!;;;;;;;;;;;;;x,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle55;Inept Tea;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc55;The Dungeon Master runs up to you with a wide grin on his face and a badly-dressed primate in his arms. ""I've got a shipment of inept tea coming in"," and I want you to be the first to buy in to this new craze! Here's the proof of purchase! Thanks!"" He tosses the confused ape at you and steals your gold before leaving.;;;;;;;;;;;;;x",,,,,,,,,
-"DMCoreEvtdesc55TTA;""Inept tea? What?"";;;;;;;;;;;;;x",,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle56;It Belongs In A Museum;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc56;The Dungeon Master barges into your throneroom dressed in a leather jacket and carrying a bullwhip. ""Treasures! They belong in a museum"," he rants. But don't worry. We've got top men working on it. Top men."" He gives you a wide grin and places a hat on your head. ""Fortune and glory"," kid. Fortune and glory."";;;;;;;;;;;;;x",,,,,,,,
-"DMCoreEvtdesc56TTA;""You mean YOUR fortune and glory."";;;;;;;;;;;;;x",,,,,,,,,,
-DMCoreEvtdesc56TTACustom;Despite the obvious risk of a copyright lawsuit, the Dungeon Master has taken it up upon himself to liberate valuable artifacts from around the world. Though, some of them may get lost in transport.;;;;;;;;;;;;;x,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle57;For Whom The Horn Doots;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreEvtdesc57;No man is an island, entire of itself. Each is a piece of the continent, a part of the main. If a clod be washed away by the sea, Europe is the less. As well as if a promontory were. As well as if a manor of thine own or of thine friend's were. Each man's death diminishes me, for I am involved in mankind. Therefore, send not to know for whom the horn doots, It doots for thee.;;;;;;;;;;;;;x,,,,
-"DMCoreEvtdesc57TTA;""Thank you"," Mr Skeltal."";;;;;;;;;;;;;x",,,,,,,,,
-DMCoreEvtdesc57TTACustom;You are granted a one-time useage of the Horn of Dootage during battle. From peasants to emperors, all tremble at the sound of the mighty doot doot!;;;;;;;;;;;;;x,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle58;Eternity Battle;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreEvtdesc58;The Dungeon Master suddenly appears in front of you looking exasperated and almost... scared? ""Listen", these are your problem now," he begins, as he opens his hand revealing six bright stones of various colours, Fight", bribe," kill each other over them - I don't care."" He begins to run out of the room"," but suddenly snaps back to face you. ""Just don't let HIM get them."";;;;;;;;;;;;;x",,,,,
-"DMCoreEvtdesc58TTA;""All of that over brightly coloured rocks?"";;;;;;;;;;;;;x",,,,,,,,,,
-DMCoreEvtdesc58TTACustom;The §BEternity Pebbles§! are now active in the world and have been randomly distributed to six rulers.;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreEvtdesc58TTBCustom;The §BEternity Pebbles§! are artifacts of unrivaled power, and a ruler who collects all six will unlock a §Munique decision§!. ;;;;;;;;;;;;;x,,,,,,,,,
-DMCoreEvtdesc58TTCCustom;Owners of the §BEternity Pebbles§! can be targeted by unique §GCasus Beli§! by others attempting to gain the Pebbles.;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreEvtdesc58TTDCustom;Owners of the §BEternity Pebbles§! may find themselves attracting the attention of an §Kunwanted guest§!...;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle59;Rabid Dog!;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreEvtdesc59;Lately, your dog has been acting strangely. It has become overly violent and refuses to drink water. Just as you were taking it out for a morning stroll, the damned thing bit you! You can see the dog foaming at the mouth.;;;;;;;;;;;;;x,,,,,,,,
-"DMCoreEvtdesc59TTA;""Oh no"," this can't be good!"";;;;;;;;;;;;;x",,,,,,,,,
-DMCoreEvtdesc59NoDog;The Dungeon Master bursts into the room wearing various furs," including a canine headdress that would look more at home on a shaman. ""Can I nuzzle wuzzle you? uwu you're so warm!"" he says"," playfully batting at you with his fake wolf paws. He suddenly sees a cat and starts chasing after it. ""SNUGGLE WUGGLE!"";;;;;;;;;;;;;x",,,,,,,,
-"DMCoreEvtdesc59TTB;""What."";;;;;;;;;;;;;x",,,,,,,,,,
-,,,,,,,,,,
-DMCoreEvttitle60;Ruina Imperii;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreEvtdesc60;The Dungeon Master reads through a scroll," mumbling to himself. ""Ruina Imperii? What kind of simpleton thought of something so stupid?!"" A twinge of horror creeps up your spine as he looks up at you with an evil grin on his face. ""It's perfect!"";;;;;;;;;;;;;x",,,,,,,,,
-"DMCoreEvtdesc60TTA;""MY CABBAGES!"";;;;;;;;;;;;;x",,,,,,,,,,
-"DMCoreEvtdesc60TTB;""Umm... neat? I guess?"";;;;;;;;;;;;;x",,,,,,,,,,
-DMCoreEvtdesc60TTCustom;All empire titles, except for offmaps, are immediately destroyed.;;;;;;;;;;;;;x,,,,,,,,
-DMCoreEvtdesc60TTCustomWrecked;All empire titles, except for offmaps, are immediately destroyed. §RINCLUDING YOURS.§!;;;;;;;;;;;;;x,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-### Follow-up Events ###,,,,,,,,,,
-,,,,,,,,,,
-DMCoreFollowtitle2;Potion Seller;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreFollowtitledesc2;You walk up to the man, who has just arrived in your court and proclaim that you are going into battle," and require his strongest potions. ""You don't know what you ask", traveler," he begins, My strongest potions will kill a dragon", let alone a man. You need a seller that sells weaker potions," because my potions are too strong!"";;;;;;;;;;;;;x",,,,
-"DMCoreFollow2OptA;""No respect for anything... except your potions!"";;;;;;;;;;;;;x",,,,,,,,,,
-DMCoreFollowTooltip2;You take one of the potions despite the warning...;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreFollowtitle3;Time's Up!;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreFollowtitledesc2;""Well done"," well done!"" exclaims the Dungeon Master"," ""you have all outdone yourselves again! Slaying", crushing, trampling, and impaling your way to victory, but of course the rules were whoever holds it now time is up! Congratulations to [winner_winner_chicken_meal.GetName]!;;;;;;;;;;;;;x,,,,
-"DMCoreFollow3OptA;""That's a lot of gold..."";;;;;;;;;;;;;x",,,,,,,,,,
-DMCoreFollowTooltip3;The ruler of [battle_royale.GetName] wins their victory purse.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreFollowtitle5;Midas Plague!;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreFollowtitledesc5;The Midas Plague has struck me and my body has started turning into gold!;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreFollow8OptA;""Help me!"";;;;;;;;;;;;;x",,,,,,,,,,
-DMCoreFollowTooltip5;The Midas Plague takes part of your body!;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreFollowtitle8;Sipping from the Fountain of Youth;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreFollowtitledesc8;You visit the Fountain of Youth at the local temple where it was uncovered. As the ruler of the province the local holy man believes you to have a divine blessing and lets you into the fountain. You drink from the fountain and feel reinvigorated!;;;;;;;;;;;;;x,,,,,,,,,,
-"DMCoreFollow8OptA;""I can feel the years slipping away!"";;;;;;;;;;;;;x",,,,,,,,,,
-,,,,,,,,,,
-DMCoreFollowtitle10;Empire of Gary;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreFollowtitledesc10;Empire of Gary has been formed by one ambitious Gary who rose above the rest! All Garys are rounded up and sent to the new Empire where it will stand, united in Garydom, for the rest of time!;;;;;;;;;;;;;x,,,,,,,,
-"DMCoreFollow10OptA;""They... what?"";;;;;;;;;;;;;x",,,,,,,,,,
-,,,,,,,,,,
-DMCoreFollowtitle11;Happy Little Accident;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreFollowtitledesc11;Bob Ross, your local painter, gardener, and all round nice guy, has once again blessed your court with some kind gifts and warm feelings!;;;;;;;;;;;;;x,,,,,,
-"DMCoreFollow11OptA;""Wow"," that's really great!"";;;;;;;;;;;;;x",,,,,,,,,
-,,,,,,,,,,
-DMCoreFollowtitle12;Hunting Accident;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreFollowdesc12;[dead_heir.GetHerHisCap] body has been draped, by whom you do not know, in a white cloth now stained red by [dead_heir.GetHerHis] lost vitae. They say [dead_heir.GetSheHe] was found by [dead_heir.GetHerHis] horse, in a clearing in the woods. You know the place they speak of. [dead_heir.GetHerHisCap] face is calm, almost serene. You reach out to touch [dead_heir.GetHerHim]. The terrible reality of the situation dawns on you. The cold you feel is that of death.;;;;;;;;;;;;;x,,,,,,
-DMCoreFollow12OptA;Sorrow overtakes you.;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreFollow12OptATooltip;Lose §R1§! stability;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreFollow12OptB;Oh well...;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreFollow12OptBTooltip;Lose §R10§! prestige;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreFollowtitle13;Unity;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreFollowdesc13;At long last, you have collected all seven of the Wyvernballs. Now all that remains is to bring them together before moonlight and wait.;;;;;;;;;;;;;x,,,,,,,,,
-"DMCoreFollow13OptA;""I wish to conquer age and become undying!"";;;;;;;;;;;;;x",,,,,,,,,,
-"DMCoreFollow13OptB;""I wish to become perfect"," above all else!"";;;;;;;;;;;;;x",,,,,,,,,
-"DMCoreFollow13OptC;""I wish fame and gold"," more than any living man!"";;;;;;;;;;;;;x",,,,,,,,,
-"DMCoreFollow13OptD;""I wish for the greatest armaments the world has ever seen!"";;;;;;;;;;;;;x",,,,,,,,,,
-,,,,,,,,,,
-DMCoreFollowtitle14;Wyvern Arises!;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreFollowdesc14;Having unified all seven Wyvernballs you awaken the great power contained within. A huge wyvern, taller than any tower throughout the known world, erupts from the Wyvernballs. It begins to speak:,,,,,,,,
-"Greetings, I am the king of all lizards. Every single one of them. The ones on the flags, I knew them all, you know? He continues like this for some time before realising your increasing boredom. ""You're just like all the others", I thought coming to this place would finally give me someone to chat to who wasn't interested in just my power, but I see how it is. Fine. You get one wish," then I'm gone. You hear me? GONE."";;;;;;;;;;;;;x",,,,,,,
-"DMCoreFollow14OptA;""Unlimited Power!"";;;;;;;;;;;;;x",,,,,,,,,,
-"DMCoreFollow14OptB;""I'll wait..."";;;;;;;;;;;;;x",,,,,,,,,,
-,,,,,,,,,,
-DMCoreFollowtitle15;Wyvernballs United!;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreFollowdesc15;The Wyvernballs have been united and have left this jolly green earth to go onto a new world, unless of course the Dungeon Master decides to start the treasure hunt all over again!;;;;;;;;;;;;;x,,,,,,,,,
-"DMCoreFollow15OptA;""Not again..."";;;;;;;;;;;;;x",,,,,,,,,,
-,,,,,,,,,,
-DMCoreFollowtitle16;Wyvernball Owners;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreFollowdesc16;The current Wyvernball owners are as follows:;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreFollow16OptA;Fascinating!;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreFollowtitle19;Kidnapped;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreFollowdesc19;A child, [dm_kidnapped.GetFirstName], has been kidnapped from your very court by the sinister [dm_kidnapper.GetTitledName]!:;;;;;;;;;;;;;x,,,,,,,,
-DMCoreFollow19OptA1;That bitch!;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreFollow19OptA2;That bastard!;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreFollowtitle23;5G Unleashed!;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreFollowdesc23;With the completion of the 5G tower, the plans of the Lizard People have finally come to fruition!\n\nGENTLEMEN, BEHOLD!\n\nBOVID-19!;;;;;;;;;;;;;x,,,,,,,,
-"DMCoreFollow23TTA;""Oops."";;;;;;;;;;;;;x",,,,,,,,,,
-DMCoreFollow23TTACustomTT;The 5G tower explodes in a burst of energy, leaving behind a new and frightening disease.;;;;;;;;;;;;;x,,,,,,,,,
-,,,,,,,,,,
-DMCoreFollowtitle24;The Whispers in your Mind;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreFollowdesc24;Your cursed ring has imbued you with all sorts of power, and through it you have achieved great feats of glory. But some days a great whisper rattles in your skull and its lure is almost too difficult to resist.;;;;;;;;;;;;;x,,,,,,,,,
-"DMCoreFollow24a;""I... I am strong enough!"";;;;;;;;;;;;;x",,,,,,,,,,
-"DMCoreFollow24b;""I submit! No more"," please!"";;;;;;;;;;;;;x",,,,,,,,,
-curse_warning_tooltip;You feel as if you will not be able to resist the whispers any longer.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreFollowtitle25;Ash Nazg Durbatulûk;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreFollowdesc25;The whispers become all too much to bear. You collapse to your knees and cough up a pitch black fog which begins to engulf you. A face fills your mind, the face of the one who gifted you this ring all that time ago...;;;;;;;;;;;;;x,,,,,,,,,
-DMCoreFollow25;Agh burzum-ishi krimpatul!;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreFollowtitle27;The Last Doot;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreFollowdesc27;Oh dear. It seems [dm_dead_dooter.GetFirstNameWithNick] has dooted [dm_dead_dooter.GetHerHis] last doot. On the bright side, [dm_dead_dooter.GetSheHe] had a stockpile of calcium you inherited.;;;;;;;;;;;;;x,,,,,,,,,
-DMCoreFollow27TTA;Doot?;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreFollow27TTB;Doot!;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreFollow27TTC;DOOT DOOT!;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreFollowtitle28;Fading Whispers;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreFollowdesc28;Having suffered the constant dark words in your mind for too long you grab at your finger and yank the ring from it with all of your might. Though it grips to your skin at first, eventually the ring relents, and with a solid thud, it hits the ground.;;;;;;;;;;;;;x,,,,,,,
-DMCoreFollow28OptA;I will put this away, but perhaps not too far.;;;;;;;;;;;;;x,,,,,,,,,
-DMCoreFollowTooltip28;You successfully remove the ring, though you could wear it again at any time.;;;;;;;;;;;;;x,,,,,,,,,
-DMCoreFollowTooltip28Chance;resisting the ring;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-DMCoreFollowtitle29;Darkness Binds Them;;;;;;;;;;;;;x,,,,,,,,,,
-DMCoreFollowdesc29;In a mad fit of desperation you take hold of the cursed ring that sits on your finger and try to pull it off with all of your strength. Thought you try with all your might, you find yourself thinking... it is your ring. Afterall, why shouldn't you keep it? It has already gotten you so far!;;;;;;;;;;;;;x,,,,,,,,
-DMCoreFollow29OptA;Silly me, what was I thinking?;;;;;;;;;;;;;x,,,,,,,,,
-DMCoreFollowTooltip29;Characters with more morally good traits, and self-control, will have a higher chance of the resisting the ring!;;;;;;;;;;;;;x,,,,,,,,
-DMCoreFollowTooltip29Chance;being ensnared by the ring;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-### Game Rules ###,,,,,,,,,,
-,,,,,,,,,,
-RULE_DUNGEON_MASTER;Dungeon Master;;;;;;;;;;;;;x,,,,,,,,,,
-DM_CYCLE;§KDM:§! Event Cycling;;;;;;;;;;;;;x,,,,,,,,,,
-DM_CYCLE_NORMAL;Normal;;;;;;;;;;;;;x,,,,,,,,,,
-DM_CYCLE_NORMAL_DESC;The Dungeon Master will cycle through six events before previously-seen events will be available again.;;;;;;;;;;;;;x,,,,,,,,,,
-DM_CYCLE_DOUBLE;Double;;;;;;;;;;;;;x,,,,,,,,,,
-DM_CYCLE_DOUBLE_DESC;The Dungeon Master will cycle through twelve events before previously-seen events will be available again.;;;;;;;;;;;;;x,,,,,,,,,,
-DM_CYCLE_HALF;Half;;;;;;;;;;;;;x,,,,,,,,,,
-DM_CYCLE_HALF_DESC;The Dungeon Master will cycle through three events before previously-seen events will be available again.;;;;;;;;;;;;;x,,,,,,,,,,
-DM_FREQ;§KDM:§! Event Frequency;;;;;;;;;;;;;x,,,,,,,,,,
-DM_FREQ_15;Normal - 15 Years;;;;;;;;;;;;;x,,,,,,,,,,
-DM_FREQ_15_DESC;The Dungeon Master will cause chaos roughly once every 15 years.;;;;;;;;;;;;;x,,,,,,,,,,
-DM_FREQ_30;Slow - 30 Years;;;;;;;;;;;;;x,,,,,,,,,,
-DM_FREQ_30_DESC;The Dungeon Master will give the world time to breathe by causing chaos roughly once every thirty years.;;;;;;;;;;;;;x,,,,,,,,,,
-DM_FREQ_5;Chaos - 5 Years;;;;;;;;;;;;;x,,,,,,,,,,
-DM_FREQ_5_DESC;The Dungeon Master just wants to see the world burn with events happening roughly every five years.;;;;;;;;;;;;;x,,,,,,,,,,
-DM_FREQ_TRUE_RANDOM;Normal - No Cooldown;;;;;;;;;;;;;x,,,,,,,,,,
-DM_FREQ_TRUE_RANDOM_DESC;Events have no minimum time and could fire randomly!;;;;;;;;;;;;;x,,,,,,,,,,
-DM_FREQ_NONE;Disabled;;;;;;;;;;;;;x,,,,,,,,,,
-DM_FREQ_NONE_DESC;Events will be §Rdisabled§!.;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-### Nicknames ###,,,,,,,,,,
-,,,,,,,,,,
-nick_coleman;the Coal Man;;;;;;;;;;;;;x,,,,,,,,,,
-nick_cleptomaniac;the Kleptomaniac;;;;;;;;;;;;;x,,,,,,,,,,
-nick_the_black_rider;the Black Rider;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-### Offmap ###,,,,,,,,,,
-,,,,,,,,,,
-dungeon_master_name;Dungeon Master;;;;;;;;;;;;;x,,,,,,,,,,
-dungeon_master_favor;Favor;;;;;;;;;;;;;x,,,,,,,,,,
-monthly_dungeon_master_favor;Monthly Favor;;;;;;;;;;;;;x,,,,,,,,,,
-e_dungeon_master_governor;Dungeon Master;;;;;;;;;;;;;x,,,,,,,,,,
-e_dungeon_master_governor_adj;Chaotic;;;;;;;;;;;;;x,,,,,,,,,,
-e_dungeon_master_governor_female;Dungeon Mistress;;;;;;;;;;;;;x,,,,,,,,,,
-e_dungeon_master_governor_male;Dungeon Master;;;;;;;;;;;;;x,,,,,,,,,,
-,,,,,,,,,,
-### Moo ###,,,,,,,,,,
-,,,,,,,,,,
-dm_milky;Milk;;;;;;;;;;;;;x,,,,,,,,,,
-dm_moo;Moo;;;;;;;;;;;;;x,,,,,,,,,,
-dm_milk_stores;Milk Stores;;;;;;;;;;;;;x,,,,,,,,,,
-dm_milk_stores_desc;Current milk: [current_milk.GetValue]/[max_milk.GetValue]\nMilk is regained little by little each year.;;;;;;;;;;;;;x,,,,,,,,,,
-current_milk;current milk;;;;;;;;;;;;;x,,,,,,,,,,
-max_milk;maximum milk;;;;;;;;;;;;;x,,,,,,,,,,
-tt_has_enough_milk_minor;Has 10 milk.;;;;;;;;;;;;;x,,,,,,,,,,
-tt_has_enough_milk_moderate;Has 25 milk.;;;;;;;;;;;;;x,,,,,,,,,,
-tt_has_enough_milk_major;Has 50 milk.;;;;;;;;;;;;;x,,,,,,,,,,
-dm_bovid19_disease;BOVID-19;;;;;;;;;;;;;x,,,,,,,,,,
-dm_bovid19_trait;BOVID-19;;;;;;;;;;;;;x,,,,,,,,,,
-dm_bovid19_trait_desc;This character forgot to wear a mask out in public and has contracted BOVID-19. On the bright side, their milk is delicious.;;;;;;;;;;;;;x,,,,,,,,,
-BOVID19_INFO;5G towers have unleashed the power of BOVID-19 in this province.;;;;;;;;;;;;;x,,,,,,,,,,
-dm_disease101;Oh dear. Apparently you've contracted BOVID-19. Next time, trust in your alchemically-certified plague doctor and don't believe dumb shit posted on Facescroll. ;;;;;;;;;;;;;x,,,,,,,,,
-dm_disease101TTA;Moo.;;;;;;;;;;;;;x,,,,,,,,,,
-dm_disease102;Your bout of BOVID-19 has cleared up. You're still a cow, however.;;;;;;;;;;;;;x,,,,,,,,,
-dm_1G_tower;1G Tower;;;;;;;;;;;;;x,,,,,,,,,,
-dm_1G_tower_desc;A large tower. Despite it not doing anything, the populace considers it an extremely bad omen.;;;;;;;;;;;;;x,,,,,,,,,
-dm_2G_tower;2G Tower;;;;;;;;;;;;;x,,,,,,,,,,
-dm_2G_tower_desc;A large tower with twice the G's. Despite it not doing anything, the populace considers it a bad omen.;;;;;;;;;;;;;x,,,,,,,,,
-dm_3G_tower;3G Tower;;;;;;;;;;;;;x,,,,,,,,,,
-dm_3G_tower_desc;A large tower with three times the G's. Despite it not doing anything, the populace finds it uncomfortable to look at.;;;;;;;;;;;;;x,,,,,,,,,
-dm_4G_tower;4G Tower;;;;;;;;;;;;;x,,,,,,,,,,
-dm_4G_tower_desc;A large tower with four times the G's. Despite it not doing anything, the populace finds it very confusing.;;;;;;;;;;;;;x,,,,,,,,,
-dm_5G_tower;5G Tower;;;;;;;;;;;;;x,,,,,,,,,,
-dm_5G_tower_desc;A large tower with five times the G's. Despite it not doing anything, the populace finds it very intriguing.;;;;;;;;;;;;;x,,,,,,,,,
-dm_cows_working;Cows Working;;;;;;;;;;;;;x,,,,,,,,,,
-dm_cows_working_desc;A large herd of cows dressed in construction working clothes are busy upgrading the large tower.;;;;;;;;;;;;;x,,,,,,,,,,
-dm_upgrade_network;Upgrade Tower;;;;;;;;;;;;;x,,,,,,,,,,
-dm_upgrade_network_desc;Upgrade the large tower in your demesne.\n§YThis will take one year to complete and reduce the penalties of the tower.§!;;;;;;;;;;;;;x,,,,,,,,,,
-dm_unleash_the_5G;Unleash the 5G!,,,,,,,,,,
-dm_unleash_the_5G_desc;Unleash the power of the 5G towers!\n§YThis will destroy the tower and all penalties it brings.§!\n§RMoo.§!,,,,,,,,,,
+### Traits ###
+
+adult_of_destiny;Adult of Destiny;;;;;;;;;;;;;x
+adult_of_destiny_desc;Even though this character had a particularly mediocre childhood, they were thrust into the limelight overnight, and they didn't even have to be go through all the trouble of killing snakes and reading books.;;;;;;;;;;;;;x
+
+age_shifted;Age Shifted;;;;;;;;;;;;;x
+age_shifted_desc;This character had their age shifted, and as a result their diplomatic skills have suffered greatly.;;;;;;;;;;;;;x
+
+dungeon_master;Dungeon Master;;;;;;;;;;;;;x
+dungeon_master_desc;The Dungeon Master, mighty dice roller and occasional controller of destiny.;;;;;;;;;;;;;x
+
+midas_plague;Midas Plague;;;;;;;;;;;;;x
+midas_plague_desc;This character has the Midas Plague, a terrifying affliction which slowly turns the infected into solid gold!;;;;;;;;;;;;;x
+
+ozyman_trait;Ozymandias;;;;;;;;;;;;;x
+ozyman_trait_desc;This character is an ancient king risen again to reclaim the lands lost to the ravages of time.;;;;;;;;;;;;;x
+
+glitterstomp_trait;Glitterstomp;;;;;;;;;;;;;x
+glitterstomp_trait_desc;The horse-horse lord, 60ft tall and a destructive force unlike any other.;;;;;;;;;;;;;x 
+
+joris_trait;A Perfectly Normal Man;;;;;;;;;;;;;x
+joris_trait_desc;This is a perfectly normal man, despite what you believe. Would you rather this said 'Genius' or 'Proud', I don't understand, it's just a regular guy.;;;;;;;;;;;;;x
+
+kf_trait;Super Seducer;;;;;;;;;;;;;x
+kf_trait_desc;This character was selected as the super seducer, a man destined to father a thousand children, or, perhaps, just as many as the game can handle without crashing.;;;;;;;;;;;;;x
+
+bobross_trait;Bob Ross;;;;;;;;;;;;;x
+bobross_trait_desc;This man spends his time painting happy little trees and lulling those around him into a deep, comfortable sleep with his voice.;;;;;;;;;;;;;x
+
+genius_fake;Genius;;;;;;;;;;;;;x
+genius_fake_desc;This character is blessed with a towering intellect.\nMartial: §G+5§!\nIntrigue: §G+5§!\nDiplomacy: §G+5§!\nStewardship: §G+5§!\nLearning: §G+5§!\nPersonal Combat Skill: §G+10§!\nVassal Opinion: §G+5§!;;;;;;;;;;;;;x
+
+dm_deaths_deal;Death's Deal;;;;;;;;;;;;;x
+dm_deaths_deal_desc;This character has made a pact with Death, and is fated to not live beyond a specific date.;;;;;;;;;;;;;x
+
+dm_nazgul_trait;Black Rider;;;;;;;;;;;;;x
+dm_nazgul_trait;This character accepted a dark gift and succumbed to its temptations...;;;;;;;;;;;;;x
+
+### Dungeon Master Character Misc ###
+
+e_dungeon;The Grand Dungeon;;;;;;;;;;;;;x
+k_dungeon;The Grand Dungeon;;;;;;;;;;;;;x
+dungeon_master;DM;;;;;;;;;;;;;x
+dungeon_master_title;DM;;;;;;;;;;;;;x
+god_rng;RNG;;;;;;;;;;;;;x
+dungeon_religion;Dungeon Mastery;;;;;;;;;;;;;x
+dungeon_religion_DESC;Dungeon Mastery is the ancient and formidable art of manipulating the luck of the foolhardy into interesting and cruel outcomes.;;;;;;;;;;;;;x
+dungeon_religion_group;DM Group;;;;;;;;;;;;;x
+dungeon_guide;Dungeon Master's Guide;;;;;;;;;;;;;x
+master;Master;;;;;;;;;;;;;x
+cruelty;Cruelty;;;;;;;;;;;;;x
+
+dm_culture_group;Dungeon Mastery;;;;;;;;;;;;;x
+dm_culture;Chaotic Neutral;;;;;;;;;;;;;x
+dm_culture_adj;Chaotic;;;;;;;;;;;;;x
+dm_cow_culture;Cow;;;;;;;;;;;;;x
+dm_cow_culture_adj;Bovine;;;;;;;;;;;;;x
+gary_culture;Gary;;;;;;;;;;;;;x
+gary_culture_adj;Gary;;;;;;;;;;;;;x
+gary_prime_2_point_oh;Gary Prime 2.0;;;;;;;;;;;;;x
+gary_prime_2_point_oh_desc;This Gary has ascended. He is no longer Gary. He is... GARY.;;;;;;;;;;;;;x
+
+e_horse_lord;Horse Lord's Horse-Horde;;;;;;;;;;;;;x
+horse_lord;Horse Lord;;;;;;;;;;;;;x
+
+e_gary;Gary;;;;;;;;;;;;;x
+gary_lord;Gary;;;;;;;;;;;;;x
+
+
+k_kemet;Kemet;;;;;;;;;;;;;x
+pharoah;Pharoah;;;;;;;;;;;;;x
+kemetic;Kemetic;;;;;;;;;;;;;x
+kemetic_desc;Kemeticism is the ancient religion of the Old Kingdom of Egypt, spanning through to Egypt's fall to the Roman Empire. As the mythology spans across nearly three millennia, the myths and gods of the faith vary, however there is a common thread of Maat, Ra, Osiris, and others, throughout the entire history of the faith.;;;;;;;;;;;;;x
+AMUN_RA;Amun-Ra;;;;;;;;;;;;;x
+MUT;Mut;;;;;;;;;;;;;x
+OSIRIS;Osiris;;;;;;;;;;;;;x
+ANUBIS;Anubis;;;;;;;;;;;;;x
+HORUS;Horus;;;;;;;;;;;;;x
+THOTH;Thoth;;;;;;;;;;;;;x
+HATHOR;Hathor;;;;;;;;;;;;;x
+SEKHMET;Sekhmet;;;;;;;;;;;;;x
+GEB;Geb;;;;;;;;;;;;;x
+APEP;Apep;;;;;;;;;;;;;x
+SETH;Seth;;;;;;;;;;;;;x
+
+city_of_gold;Legendary City of Gold;;;;;;;;;;;;;x
+MIDAS_PLAGUE_INFO;This province has been struck with the Midas Plague - an incredibly deadly disease that either leaves the afflicted horribly maimed by only transforming extremities, or spreads from the torso until it leaves a statue of solid gold.;;;;;;;;;;;;;x
+
+
+k_slave_master1;White Queen;;;;;;;;;;;;;x
+k_slave_master1_adj;Chess;;;;;;;;;;;;;x
+k_slave_master2;Black Queen;;;;;;;;;;;;;x
+k_slave_master2_adj;Chess;;;;;;;;;;;;;x
+
+### Deaths ###
+
+DEATH_DEATHS_DEAL;made a bargain with Death;;;;;;;;;;;;;x
+DEATH_DM_NAZGUL_WITHER;withered after being separated from their cursed ring;;;;;;;;;;;;;x
+
+### buildings ###
+
+city_of_gold;Lost City of Gold;;;;;;;;;;;;;x
+city_of_gold_desc;After a run-in with the Dungeon Master, this city found itself built on the sight of inexhaustible gold mines, and a deadly and terrible disease.;;;;;;;;;;;;;x
+
+fountain_of_youth;Fountain of Youth;;;;;;;;;;;;;x
+fountain_of_youth_desc;The mythical Fountain of Youth was discovered in the foundations of a temple in this very province. Naturally, the ruler of the province takes a great interest in such a find...;;;;;;;;;;;;;x
+
+### Artifacts ###
+
+cursed_ring;Cursed Ring;;;;;;;;;;;;;x
+cursed_ring_desc;This is one of the nine cursed rings given out by the Dungeon Master's good friend to the mortal rulers of kingdoms.;;;;;;;;;;;;;x
+
+cursed_ring_of_one;Cursed Ring of One;;;;;;;;;;;;;x
+cursed_ring_of_one_desc;A strange glowing ring owned by the Dungeon Master, it bears a striking resemblance to the other cursed rings.;;;;;;;;;;;;;x
+
+stinkrot_reaver;Fish;;;;;;;;;;;;;x
+stinkrot_reaver_desc;This is a fish, you could potentially hit people with it, or use it as a makeshift mining tool, but it has feelings too.;;;;;;;;;;;;;x
+
+blackfish_scale;Fish;;;;;;;;;;;;;x
+blackfish_scale_desc;From a distance this armour looks to be oddly coloured chainmail, until you get close enough to realise that it is simply fish scales, haphazardly crafted to mimic the appearance of chainmail, with absolutely none of the benefits.;;;;;;;;;;;;;x
+
+wyvernball_1;One-Star Wyvernball;;;;;;;;;;;;;x
+wyvernball_2;Two-Star Wyvernball;;;;;;;;;;;;;x
+wyvernball_3;Three-Star Wyvernball;;;;;;;;;;;;;x
+wyvernball_4;Four-Star Wyvernball;;;;;;;;;;;;;x
+wyvernball_5;Five-Star Wyvernball;;;;;;;;;;;;;x
+wyvernball_6;Six-Star Wyvernball;;;;;;;;;;;;;x
+wyvernball_7;Seven-Star Wyvernball;;;;;;;;;;;;;x
+wyvernball_1_desc;The One-Star Wyvernball, collect all seven for a mythical gift from the heavens!;;;;;;;;;;;;;x
+wyvernball_2_desc;The Two-Star Wyvernball, collect all seven for a mythical gift from the heavens!;;;;;;;;;;;;;x
+wyvernball_3_desc;The Three-Star Wyvernball, collect all seven for a mythical gift from the heavens!;;;;;;;;;;;;;x
+wyvernball_4_desc;The Four-Star Wyvernball, collect all seven for a mythical gift from the heavens!;;;;;;;;;;;;;x
+wyvernball_5_desc;The Five-Star Wyvernball, collect all seven for a mythical gift from the heavens!;;;;;;;;;;;;;x
+wyvernball_6_desc;The Six-Star Wyvernball, collect all seven for a mythical gift from the heavens!;;;;;;;;;;;;;x
+wyvernball_7_desc;The Seven-Star Wyvernball, collect all seven for a mythical gift from the heavens!;;;;;;;;;;;;;x
+
+wyvern_armour;Wyvern Armour;;;;;;;;;;;;;x
+wyvern_sword;Wyvern Sword;;;;;;;;;;;;;x
+wyvern_helmet;Wyvern Helmet;;;;;;;;;;;;;x
+wyvern_amulet;Wyvern Amulet;;;;;;;;;;;;;x
+wyvern_armour_desc;A powerful set of mythical Wyvern Armour given as a gift to one who was able to unify all seven of the Wyvernballs.;;;;;;;;;;;;;x
+wyvern_sword_desc;The mighty Wyvern Sword gifted to the person who united the Wyvernballs. It still glows with the might of the skies.;;;;;;;;;;;;;x
+wyvern_helmet_desc;The Helmet of the unicorn gifted to its friend, the Wyvern, who in turn gifted it to the one who collected all of the Wyvernballs.;;;;;;;;;;;;;x
+wyvern_amulet_desc;The original dragon amulet of the Wyvern, copied meticulously by Chinese jewelers throughout the ages.;;;;;;;;;;;;;x
+
+dm_inept_tea;Inept Tea;;;;;;;;;;;;;x
+dm_inept_tea_desc;This weird monkey is a receipt for blackmarket tea. You own neither the tea nor the monkey.;;;;;;;;;;;;;x
+dm_laundering_modifier;Money Laundering: ;;;;;;;;;;;;;x
+dm_cryptic;Cryptic Currencies: ;;;;;;;;;;;;;x
+dm_inept_tea_respect;Respect: ;;;;;;;;;;;;;x
+
+dm_fedora;Fedora;;;;;;;;;;;;;x
+dm_fedora_desc;Not to be confused with a trilby, the fedora is a symbol of adventure and pairs great with a whip. Warning: keep out of reach of creepy virgin men.;;;;;;;;;;;;;x
+
+dm_mind_pebble;Mind Pebble;;;;;;;;;;;;;x
+dm_mind_pebble_desc;One of the six Eternity Pebbles. This Pebble gives mastery over the minds of yourself and others.;;;;;;;;;;;;;x
+dm_power_pebble;Power Pebble;;;;;;;;;;;;;x
+dm_power_pebble_desc;One of the six Eternity Pebbles. This Pebble gives the user unrivaled physical power.;;;;;;;;;;;;;x
+dm_reality_pebble;Reality Pebble;;;;;;;;;;;;;x
+dm_reality_pebble_desc;One of the six Eternity Pebbles. This Pebble gives the user control over tangible objects, such as gold or stone.;;;;;;;;;;;;;x
+dm_soul_pebble;Soul Pebble;;;;;;;;;;;;;x
+dm_soul_pebble_desc;One of the six Eternity Pebbles. This Pebble gives the user domination of their very own soul.;;;;;;;;;;;;;x
+dm_space_pebble;Space Pebble;;;;;;;;;;;;;x
+dm_space_pebble_desc;One of the six Eternity Pebbles. This Pebble gives the user the ability to manipulate the space around them.;;;;;;;;;;;;;x
+dm_time_pebble;Time Pebble;;;;;;;;;;;;;x
+dm_time_pebble_desc;One of the six Eternity Pebbles. This Pebble grants the user the power to guide time itself.;;;;;;;;;;;;;x
+
+dm_time_pebble_modifier;Imbues the user with §GImmortality§!;;;;;;;;;;;;;x
+dm_soul_pebble_modifier;Will remove §RStressed§!, §RDepressed§!, §RLunatic§!, or §RPossessed§!!;;;;;;;;;;;;;x
+
+dm_resisted_ring;Has Previously Resisted The Ring's Influence;;;;;;;;;;;;;x
+
+### Event Modifiers ###
+
+the_purge;The Purge;;;;;;;;;;;;;x
+the_purge_desc;For 12 months everyone has decided to turn a blind eye to crimes and atrocities.;;;;;;;;;;;;;x
+
+dwarf_fortress;Dwarf Fortress;;;;;;;;;;;;;x
+dwarf_fortress_desc;For some strange reason, this person seems to have some extremely skilled defenders.;;;;;;;;;;;;;x
+
+mud_wraps;Mud Wraps;;;;;;;;;;;;;x
+mud_wraps_desc;This character decided that health was more important than appearances.;;;;;;;;;;;;;x
+
+sacrifices_for_beauty;Sore and Sweaty;;;;;;;;;;;;;x
+sacrifices_for_beauty_desc;After a spar day this character decided that sometimes looking good is better than feeling good.;;;;;;;;;;;;;x
+
+dm_petshop_cat;Pet Shop: Cat;;;;;;;;;;;;;x
+dm_petshop_cat_desc;This character was given a cat as a pet by the Dungeon Master.;;;;;;;;;;;;;x
+
+dm_petshop_dog;Pet Shop: Dog;;;;;;;;;;;;;x
+dm_petshop_dog_desc;This character was given a dog as a pet by the Dungeon Master.;;;;;;;;;;;;;x
+
+dm_petshop_snake;Pet Shop: Snake;;;;;;;;;;;;;x
+dm_petshop_snake_desc;This character was given a snake as a pet by the Dungeon Master.;;;;;;;;;;;;;x
+
+dm_petshop_bear;Pet Shop: Bear;;;;;;;;;;;;;x
+dm_petshop_bear_desc;This character was given a bear as a pet by the Dungeon Master. Yes, really.;;;;;;;;;;;;;x
+
+dm_petshop_pony;Pet Shop: Pony;;;;;;;;;;;;;x
+dm_petshop_pony_desc;This character was given a pony as a pet by the Dungeon Master.;;;;;;;;;;;;;x
+
+dm_petshop_hamster;Pet Shop: Hamster;;;;;;;;;;;;;x
+dm_petshop_hamster_desc;This character was given a hamster as a pet by the Dungeon Master. Not a miniature giant space hamster, sadly, just a normal hamster.;;;;;;;;;;;;;x
+
+dm_petshop_rat;Pet Shop: Rat;;;;;;;;;;;;;x
+dm_petshop_rat_desc;This character was given a rat as a pet by the Dungeon Master.;;;;;;;;;;;;;x
+
+dm_immortal_good;Death's Deal;;;;;;;;;;;;;x
+dm_immortal_good_desc;This character has made a deal with Death.;;;;;;;;;;;;;x
+
+dm_immortal_neutral;Death's Deal;;;;;;;;;;;;;x
+dm_immortal_neutral_desc;This character has made a deal with Death.;;;;;;;;;;;;;x
+
+dm_immortal_bad;Death's Deal;;;;;;;;;;;;;x
+dm_immortal_bad_desc;This character has made a deal with Death.;;;;;;;;;;;;;x
+
+dm_dootdoot;The Horn of Dootage;;;;;;;;;;;;;x
+dm_dootdoot_desc;This character can doot the horn once while in combat to almost immediately route the enemy.\nOr they can save it. Who knows what might happen?;;;;;;;;;;;;;x
+
+### Decisions ###
+
+begin_DMCore;Awaken the Dungeon Master!;;;;;;;;;;;;;x
+begin_DMCore_desc;The Dungeon Master will awaken. Every 15 years he will present the world with an event ranging from amusing to downright catastrophic.;;;;;;;;;;;;;x
+
+death_note_decision;Tell Name to the Dungeon Master;;;;;;;;;;;;;x
+death_note_decision_desc;You can speak this characters name to the Dungeon Master, who in turn will write their name in the Murder Book, resulting in the characters death. There family wont be best pleased by this...;;;;;;;;;;;;;x
+
+get_out_of_jail_free;Use Get Out of Jail Free Card;;;;;;;;;;;;;x
+get_out_of_jail_free_desc;Use the Get Out of Jail Free Card given to you by the Dungeon Master to guarantee your freedom. Warning: This is a single-use item and will be consumed!;;;;;;;;;;;;;x
+
+unite_the_wyvernballs;Unite the Wyvernballs;;;;;;;;;;;;;x
+unite_the_wyvernballs_desc;Myths say when all seven Wyvernballs are united then a great power will be granted to the owner.;;;;;;;;;;;;;x
+show_wyvernballs;Display the Wyvernballs;;;;;;;;;;;;;x
+show_wyvernballs_desc;Show the current owners of the seven Wyvernballs.;;;;;;;;;;;;;x
+
+dm_kidnap_into_dynasty;Kidnap [Root.GetFirstName];;;;;;;;;;;;;x
+dm_kidnap_into_dynasty_desc;The Dungeon Master has graced you with the ability to kidnap [Root.GetFirstName] and force [Root.GetHerHim] into your dynasty.\nYou can perform this action only once. Choose wisely.;;;;;;;;;;;;;x
+
+dm_doot_doot;Doot Doot!;;;;;;;;;;;;;x
+dm_doot_doot_desc;Ask not for whom the horn doots. It doots for thee.;;;;;;;;;;;;;x
+
+dm_put_on_cursed_ring;Put on the Cursed Ring;;;;;;;;;;;;;x
+dm_put_on_cursed_ring_desc;So small, and so shiny - it's precious to me.;;;;;;;;;;;;;x
+dm_resist_cursed_ring;Resist the Cursed Ring;;;;;;;;;;;;;x
+dm_resist_cursed_ring_desc;Remove the Cursed Ring and stop it gnawing at your will and reason.;;;;;;;;;;;;;x
+
+
+
+### Bloodlines ###
+
+wyvern_bloodline;Wyvern Blood;;;;;;;;;;;;;x
+wyvern_bloodline_desc;This character carries the blood of [target_bloodline_founder.GetHerHim] who united the Wyvernballs against all odds.;;;;;;;;;;;;;x
+
+dm_dragon_bloodline;Blood of the Dragon;;;;;;;;;;;;;x
+dm_dragon_bloodline_desc;Dragon deez nuts across your face! Ha! Gottem!;;;;;;;;;;;;;x
+
+
+### Tombola Mechanics ###
+
+DMCoretitle1;Dungeon Master Cometh;;;;;;;;;;;;;x
+DMCoredesc1;"Mortals, it is time once again for my influence to help shape this world! Brace yourself for the mediocre, or the insane. The unbalanced, or the overpowered!"\nRandom Number of the Day is: [global_eventTombola.GetValue];;;;;;;;;;;;;x
+DMCore1OptA;"Brace yourselves!";;;;;;;;;;;;;x
+
+### Custom Tooltip ###
+
+DMAwakens;The Dungeon Master awakens...;;;;;;;;;;;;;x
+DMMultiplayer;In §GMultiplayer§!, one player will be the messenger of the Dungeon Master, this will be the player that fires the decision.;;;;;;;;;;;;;x
+DMWarning;§RWarning§!: The first event will fire immediately, be prepared!;;;;;;;;;;;;;x
+dungeon_master_rolls;Dungeon Master rolls his dice...;;;;;;;;;;;;;x
+
+wyvernballs_are_scattered;§KWarning§!: The Wyvernballs will be scattered throughout the world once again!;;;;;;;;;;;;;x
+
+remove_illness;All §GPhysical§! and §GMental illnesses§! will be cured!;;;;;;;;;;;;;x
+remove_genetic_issues;All §GGenetic Abnormalities§! will be removed!;;;;;;;;;;;;;x
+
+collected_all_wyvernballs;Has collected all seven Wyvernballs;;;;;;;;;;;;;x
+
+### Mechanics ###
+
+DMmanagementtitle101;After the End?!;;;;;;;;;;;;;x
+DMmanagementdesc101;"Well, well, well, this is not quite right is it?\nAmerica? That's going to stop things working properly. Not my jurisdiction you see. Already enough chaos there to last a life time. Look, I can offer you the usual chaos, here and there, but that's it.";;;;;;;;;;;;;x
+DMmanagementOptA;"Oh, nevermind then.";;;;;;;;;;;;;x
+DMmanagementTooltip1;Certain events have been disabled to allow for compatibility with After the Ends wacky Empire mechanics!;;;;;;;;;;;;;x
+
+### Events ###
+
+DMCoretitle3;Dungeon Master Awakens;;;;;;;;;;;;;x
+DMCoredesc3;"Greetings players of the game, I am the Dungeon Master, guider of destiny and occasional roller of dice. What a boring player - you're playing the regular game this time around I see? I have adjusted the dice rolls and outcomes to fit a base game map, or at least a map that is fairly close to that. Good luck...";;;;;;;;;;;;;x
+DMCore3OptA;"What did he call me?";;;;;;;;;;;;;x
+
+DMCoretitle4;Dungeon Master Awakens;;;;;;;;;;;;;x
+DMCoredesc4;"Greetings players of the game, I am the Dungeon Master, guider of destiny and occasional roller of dice.\nA contrarian not happy with the base game? Fine. I have adjusted the dice rolls and outcomes to fit your total conversion mod, or at least a map that is fairly close to that. Good luck...";;;;;;;;;;;;;x
+DMCore4OptA;"What did he call me?";;;;;;;;;;;;;x
+
+DMCoreEvttitle1;Prince and the Pauper;;;;;;;;;;;;;x
+DMCoreEvtdesc1;The Dungeon Master has decided to redistribute the world's wealth equally - unfortunately, he himself is in a staggering amount of debt due to his crippling addiction to mobile games. After the money is gathered up and equalised the grand total is... less than what everyone expected.;;;;;;;;;;;;;x
+DMCoreEvt1OptA;"How many lootboxes!?";;;;;;;;;;;;;x
+DMEventTooltip1;All landed rulers fall into debt equal to their average earnings.;;;;;;;;;;;;;x
+
+DMCoreEvttitle2;Lover's Lab;;;;;;;;;;;;;x
+DMCoreEvtdesc2;"I've recently concocted a new potion!" cries the Dungeon Master, "Okay, fine, it's my bathwater - but I've been told it's incredibly potent stuff! I call it "Gamer Guy Bathwater" and my favourite game is getting you all to take a sip!";;;;;;;;;;;;;x
+DMCoreEvt2OptA;"There's something floating in it!";;;;;;;;;;;;;x
+DMEventTooltip2;All landed rulers become Lustful Hedonists.;;;;;;;;;;;;;x
+
+DMCoreEvttitle3;The All Father...?;;;;;;;;;;;;;x
+DMCoreEvtdesc3;It's no secret that the Dungeon Master, like most Dungeon Masters, is an incredibly lonely and isolated man, living out his fantasies by controlling the lives of characters all day for his sadistic enjoyment. "I just wish I could have a family of my own..." says the Dungeon Master with a solemn sigh, "Wait a minute! That's it! Oh, ladies!";;;;;;;;;;;;;x
+DMCoreEvt3OptA;"What do you mean 'he called it his special move'!?";;;;;;;;;;;;;x
+DMEventTooltip3;All married ruler's wives become mysteriously pregnant.;;;;;;;;;;;;;x
+
+DMCoreEvttitle4;There Can Be Only One;;;;;;;;;;;;;x
+DMCoreEvtdesc4;"Sometimes it's not fun being the only omnipotent immortal being in this realm, well besides all those characters that conveniently became immortal gods through some convoluted event chain. Anyway, let's sprinkle some more deus ex machina out there and see what chaos they can cause!";;;;;;;;;;;;;x
+DMCoreEvt4OptA;"This is the end of civilisation as we know it...";;;;;;;;;;;;;x
+DMEventTooltip4;Twenty rulers ascend to become Immortal rulers of Destiny, who are rivals with one another.;;;;;;;;;;;;;x
+
+DMCoreEvttitle5;Happy Birthday!;;;;;;;;;;;;;x
+DMCoreEvtdesc5;"You mortals, always growing old and dying and having your children cry or complain about whatever the hell 'gavelkind' is, it's such a dull affair - let's speed it up! Or reverse it! Now if I could get some volunteers... how about you, with the fancy hat!";;;;;;;;;;;;;x
+DMCoreEvt5OptA;"Fetch a priest... or a doctor! Or both!";;;;;;;;;;;;;x
+DMEventTooltip5;Kings ages will adjust randomly anywhere between minus 30 to plus 30 years of age. Affected characters will be given the §RAge Shifted§! trait.;;;;;;;;;;;;;x
+
+DMCoreEvttitle6;Chaos Reigns!;;;;;;;;;;;;;x
+DMCoreEvtdesc6;"You with your fancy chairs and castles, you make rules for other people and don't follow them yourselves! It makes me sick, playing with peoples lives like that. Well we're taking away the rules, morality is out the window. Do whatever you want, good luck with your squishy moral existence now it's an equal playing field!";;;;;;;;;;;;;x
+DMCoreEvt6OptA;"You're telling me people have just... stopped caring?";;;;;;;;;;;;;x
+DMEventTooltip6;All landed rules have become morally flexible, §Garrests§! and §Gplots§! will be far easier for the next year!;;;;;;;;;;;;;x
+
+DMCoreEvttitle7;Short Fortress;;;;;;;;;;;;;x
+DMCoreEvtdesc7;"This is gonna be sweet" mutters the Dungeon Master as he clicks his fingers. Reports of rulers drastically shrinking, becoming stubborn, and gaining the uncanny ability of defence become known far and wide. No one quite understands why.;;;;;;;;;;;;;x
+DMCoreEvt7OptA;"These bastions of short men make for formidable defenders.";;;;;;;;;;;;;x
+DMEventTooltip7;Some lucky rulers lose height but make up for it in their defensive skills.;;;;;;;;;;;;;x
+
+DMCoreEvttitle8;Renderer Thigh;;;;;;;;;;;;;x
+DMCoreEvtdesc8;"The greatest mystery of all!" proclaims the Dungeon Master "Long ago my brother died horribly in a fish related incident, and as the river became stained with his blood he cried out "RENDERER THIGH!" and still to this day I have no idea what the hell he was talking about. For whoever solves the challenge of the Renderer Thigh, I will grant you a gift beyond even those of your wildest dreams and fantasies!";;;;;;;;;;;;;x
+DMCoreEvt8OptA;"A... what?";;;;;;;;;;;;;x
+DMEventTooltip8;Everyone becomes more confused.;;;;;;;;;;;;;x
+
+DMCoreEvttitle9;[poopy.GetName] Latrine Disaster;;;;;;;;;;;;;x
+DMCoreEvtdesc9;Your spymaster receives word of a castle in [poopy.GetName] that suffered a terrible tragedy - the ruler was hosting a gathering for all the lords and ladies of the realm. Unfortunately, the weight was too much for the castle to bear and the entire dining area fell into a latrine pit, causing all who attended to drown horribly in the remains of the feasts from the week prior...;;;;;;;;;;;;;x
+DMCoreEvt9OptA;"I think I'm going to be sick...";;;;;;;;;;;;;x
+DMEventTooltip9;The provincial ruler, and all courtiers, drown horrible in a fecal related accident.;;;;;;;;;;;;;x
+
+DMCoreEvttitle10;Murder Book;;;;;;;;;;;;;x
+DMCoreEvtdesc10;"You know, around here somewhere I have a very magic book, and on each page I can write the name of my enemies and they just seem to disappear! I'll do you all a favour - you tell me a name and I'll write it down on your behalf! And people say I never do anything nice around here.";;;;;;;;;;;;;x
+DMCoreEvt10OptA;"Maybe we should post some more guards...";;;;;;;;;;;;;x
+DMEventTooltip10;Every character gets a permanent, single-use, decision that will instantly kill one their enemies. Be warned - this murder will be publicly known by the person's surviving family.;;;;;;;;;;;;;x
+
+DMCoreEvttitle11;The Greatest Gift;;;;;;;;;;;;;x
+DMCoreEvtdesc11;"Sometimes I think I am far too cruel. Today is your lucky day my friend, to you I give the greatest gift of all. It might help you against some of my... other plans.";;;;;;;;;;;;;x
+DMCoreEvt11OptA;"I feel... strange...?";;;;;;;;;;;;;x
+DMEventTooltip11;You sense a great adventure approaching...;;;;;;;;;;;;;x
+DMCoreFollowTooltip1;You hear cackling off in the distance...;;;;;;;;;;;;;x
+
+DMCoreEvttitle12;Plague Inc.;;;;;;;;;;;;;x
+DMCoreEvtdesc12;"I have a friend I want to introduce you to" begins the Dungeon Master "He is very dear to me, and very very skilled with alchemy. I think you'll both get along well!";;;;;;;;;;;;;x
+DMCoreEvt12OptA;"This could be useful, I am going into battle...";;;;;;;;;;;;;x
+DMEventTooltip12;A man approaches...;;;;;;;;;;;;;x
+
+DMCoreEvttitle13;Mature Student;;;;;;;;;;;;;x
+DMCoreEvtdesc13;"You know, I didn't actually train to be a Dungeon Master until late into my 600s, before then I was a maths teacher, but I didn't want to be that cruel my entire life. I think you all deserve a second chance as well!";;;;;;;;;;;;;x
+DMCoreEvt13OptA;"My head...";;;;;;;;;;;;;x
+DMEventTooltip13;All rulers gain a second education.;;;;;;;;;;;;;x
+
+DMCoreEvttitle14;Mrs Doubtfire.;;;;;;;;;;;;;x
+DMCoreEvtdesc14;"One my favourite movies," begins the Dungeon Master, "is Lethal weapon two. Anyway, I'm flipping all your sexes, enjoy!";;;;;;;;;;;;;x
+DMCoreEvt14OptA;"Wait wha.. AGH!";;;;;;;;;;;;;x
+DMEventTooltip14;All landed rulers flip sex, forever.;;;;;;;;;;;;;x
+
+DMCoreEvttitle15;Facts and Logic;;;;;;;;;;;;;x
+DMCoreEvtdesc15;"I've been doing some science recently, and I have discovered that actually [religion_destroyed.GetName] is wrong. All wrong. It always has been. Here's my notes, do with it what you will.";;;;;;;;;;;;;x
+DMCoreEvt15OptA;"Is he allowed to say that?";;;;;;;;;;;;;x
+DMEventTooltip15;All [religion_destroyed.GetName] rulers will convert to a heresy or other religion of the same group.;;;;;;;;;;;;;x
+
+DMCoreEvttitle16;Player's Well Known Battlegrounds;;;;;;;;;;;;;x
+DMCoreEvtdesc16;"I get a strange feeling that some of you really like going out there and killing each other just for the sport of it. Well all good sports deserve a trophy! Whoever holds [battle_royale.GetName] by the end of 6 years will be given a prize worthy of such bloodshed!";;;;;;;;;;;;;x
+DMCoreEvt16OptA;"Ready the troops...?";;;;;;;;;;;;;x
+DMEventTooltip16;All rulers are given a claim on [battle_royale.GetName] and whoever holds the province after six years have elapsed will be granted massive amounts of gold, prestige, and piety!;;;;;;;;;;;;;x
+
+DMCoreEvttitle17;Thunderous Applause;;;;;;;;;;;;;x
+DMCoreEvtdesc17;"It's like the old expression goes 'Never trust an ambitious chancellor who has his eyes on your primary title and wants to usurp the republic'... wait no, I just made that up...";;;;;;;;;;;;;x
+DMCoreEvt17OptA;"So this is how democracy dies...";;;;;;;;;;;;;x
+DMEventTooltip17;All unlanded, ambitious chancellors will usurp their lieges primary title!;;;;;;;;;;;;;x
+
+DMCoreEvttitle18;Home Sweet Home..?;;;;;;;;;;;;;x
+DMCoreEvtdesc18;"Does it not get boring sitting around in your big fancy castle, with all your nice furniture, and your nice servants speaking your nice language?" asks the Dungeon Master, "You need to try something different! Spice up your life a little!";;;;;;;;;;;;;x
+DMCoreEvt18OptA;"There's no place like... home?";;;;;;;;;;;;;x
+DMEventTooltip18;Rulers selected at random will have their capital swapped with another random ruler!;;;;;;;;;;;;;x
+
+DMCoreEvttitle19;Friends in Low Places;;;;;;;;;;;;;x
+DMCoreEvtdesc19;"I know a guy, a really good guy, a great friend of mine..." says the Dungeon Master, peering over his shoulder as if he's expecting someone, "And I sort of owe him. In exchange for not interrupting with my meddling, I promised I'd help him out with a small thing that's been bothering him a few... thousand years. A small, popey, problem...";;;;;;;;;;;;;x
+DMCoreEvt19OptA;"You're saying they've all gone a bit strange?";;;;;;;;;;;;;x
+DMEventTooltip19;All religious heads seems to fall under a strange influence...;;;;;;;;;;;;;x
+
+DMCoreEvttitle20;Lobotomiser!;;;;;;;;;;;;;x
+DMCoreEvtdesc20;"I've been working on a machine in my spare time, it's nothing too impressive, just do me a favour and put your face on it... right there, that's it! Now you might feel a slight tingle in your nervous system...";;;;;;;;;;;;;x
+DMCoreEvt20OptA;"Please stop milling about. Really.";;;;;;;;;;;;;x
+DMEventTooltip20;All positive congenital traits become negative congenital traits, and vice versa!;;;;;;;;;;;;;x
+
+DMCoreEvttitle21;The Horse² Lord;;;;;;;;;;;;;x
+DMCoreEvtdesc21;The Dungeon Master appears, points right at you, and laughs like a madman. Suddenly a great flash of lightning strikes the sky followed shortly by a deafening horn. Some of your soldiers drop the floor screaming, your diplomat has an instant heart attack and grandma's head explodes, painting the castle walls the colour of bingo and sherry.\n"MORTALS", a voice neighs from a great distance, or perhaps not if you're living in a realm where horses might appear suddenly, "I AM THE HORSE HORSE-LORD, ENDER OF THIS EARTH AND SCORCHER OF MAN, SCOURGE OF GLUE FACTORIES AND CHEAP FROZEN LASANGA!"
+A great flash of light appears in the sky, this time taking the form of the Horse Horse-Lord, and great trepidation takes hold.;;;;;;;;;;;;;x
+DMCoreEvt21OptA;"We're going to need a bigger saddle...";;;;;;;;;;;;;x
+DMEventTooltip21;A great Khan of Khan of Khan's appears intent on the destruction of man.;;;;;;;;;;;;;x
+
+DMCoreEvttitle22;Divine Intervention;;;;;;;;;;;;;x
+DMCoreEvtdesc22;"I've been doing some MORE science recently, and I have discovered that actually [religion_proven.GetName] is probably right! I can't guarantee it, but I've just casually slid the important documents under every rulers door. It's up to them what they do with it - I'm not their mother.";;;;;;;;;;;;;x
+DMCoreEvt22OptA;"My god... he's right.";;;;;;;;;;;;;x
+DMCoreEvt22OptB;"My god, he's gone completely mad...";;;;;;;;;;;;;x
+DMCoreEvt22OptC;"This is... interesting...";;;;;;;;;;;;;x
+DMEventTooltip22;Some rulers may convert to [religion_proven.GetName]!;;;;;;;;;;;;;x
+
+DMCoreEvttitle23;Lost City of Gold Uncovered!;;;;;;;;;;;;;x
+DMCoreEvtdesc23;Rumours have always persisted around [lost_province_of_gold.GetName] speaking of the lost city of gold, but many dismissed it as the dreams of a desperately poor people. The Dungeon Master, feeling a great pity for the people in [lost_city_of_gold.GetName] decided to make all of their dreams come true and transformed the whole city, including it's foundations, and natural resources, into solid gold!\nUnfortunately, the tricky caused by the Dungeon Master had an unintended side effect - people were randomly turning to gold and infecting others with the same curse!;;;;;;;;;;;;;x
+DMCoreEvt23OptA;"To own such a city... but the risk is too great!";;;;;;;;;;;;;x
+DMEventTooltip23B;Random characters have a chance of turning into solid gold.;;;;;;;;;;;;;x
+DMEventTooltip23;The owner of [lost_city_of_gold.GetName] will be tremendously wealthy.;;;;;;;;;;;;;x
+
+DMCoreEvttitle24;Balance;;;;;;;;;;;;;x
+DMCoreEvtdesc24;The Dungeon Master appears in front of you.\nHe raises his hand and snaps his fingers.;;;;;;;;;;;;;x
+DMCoreEvt24OptA;"Wha...";;;;;;;;;;;;;x
+DMEventTooltip24;Half of all living people die.;;;;;;;;;;;;;x
+
+DMCoreEvttitle25;A Rose by Any Other Name;;;;;;;;;;;;;x
+DMCoreEvtdesc25;"Hello!" shouts the Dungeon Master, scaring courtiers and priests alike, "I've had quite a few names given to me by frightened men, some scarier than others. One of the most memorable was a few years back - the locals used to call me the Angel of... something, but that's not important. The point is it was incredibly rude of them, I mean, all I did was this!";;;;;;;;;;;;;x
+DMCoreEvt25OptA;"What did you do...?";;;;;;;;;;;;;x
+DMEventTooltip25;The oldest child of each ruler dies!;;;;;;;;;;;;;x
+
+DMCoreEvttitle26;King of Kings;;;;;;;;;;;;;x
+DMCoreEvtdesc26;"I've lived a very long life and met some interesting fellows - Oh! I know, I'll introduce you to one now!" You turn and try and tell the Dungeon Master to stop, but he had already disappeared in a cloud of... sand?\n\nA great voice echoes around the halls speaking a foreign tongue that slowly begins to fade into your own language:\n\n"My name is Ozymandias, king of kings:\nLook on my works, ye Mighty, and despair!";;;;;;;;;;;;;x
+DMCoreEvt26OptA;"Batten down the hatches! Quickly!";;;;;;;;;;;;;x
+DMEventTooltip26;An ancient king stirs...;;;;;;;;;;;;;x
+
+DMCoreEvttitle27;Ruler of the Jewels;;;;;;;;;;;;;x
+DMCoreEvtdesc27;"I'm friends with a great jeweler, he's quite a tame guy by my standards, but he has a real talent when it comes to making rings - pretty generous too! He gave me a whole bunch of rings to hand out to lucky people! I'll see if I have one for you here.";;;;;;;;;;;;;x
+DMCoreEvt27OptA;"This doesn't sound suspicious in the least!";;;;;;;;;;;;;x
+DMEventTooltip27;Nine for Mortal Men...;;;;;;;;;;;;;x
+
+DMCoreEvttitle28;Cultural Exchange;;;;;;;;;;;;;x
+DMCoreEvtdesc28;"I've decided that [culture1.GetName] and [culture2.GetName] are both very backwards cultures. I've decided that both of you horribly boring people are going to speak each others languages, eat each others disgusting foods, and wear each others stupid shoes.";;;;;;;;;;;;;x
+DMCoreEvt28OptA;"Well that's not very sensitive, this is a civilised time!";;;;;;;;;;;;;x
+DMEventTooltip28;All characters of the two cultures switch.;;;;;;;;;;;;;x
+
+DMCoreEvttitle29;Blessing in Disguise...?;;;;;;;;;;;;;x
+DMCoreEvtdesc29;"I've been doing a bit of poking around and at the bottom of a lake I found a age-old container filled to the brim with religious texts! I have no idea who put those there but, in my usually helpful nature, I've decided to forward a copy to the relevant religious heads so they can study and make the changes that their religion must have conveniently forgotten about!";;;;;;;;;;;;;x
+DMCoreEvt29OptA;"We have to do WHAT now?!";;;;;;;;;;;;;x
+DMEventTooltip29;Random religions randomly gain random alterations from a random list.;;;;;;;;;;;;;x
+
+DMCoreEvttitle30;Realm fit for a King;;;;;;;;;;;;;x
+DMCoreEvtdesc30;"Maybe I've been looking at it all wrong..." says the Dungeon Master, stroking his beard, "You sick people. You actually ENJOY this don't you? This is all game to you isn't it. Unbelievable. Well, I know exactly what will solve that problem!";;;;;;;;;;;;;x
+DMCoreEvt30OptA;"There's... nothing left to do...";;;;;;;;;;;;;x
+DMEventTooltip30;Empires are stabilised and vassals become content.;;;;;;;;;;;;;x
+
+DMCoreEvttitle31;Perfectly Normal Man;;;;;;;;;;;;;x
+DMCoreEvtdesc31;"What is WRONG with you people!?" screams the Dungeon Master, "Look at this person, this person RIGHT HERE" he says, gesturing to a perfectly normal person standing in your court. You don't recognise them but they certainly look very normal to you. "NOTHING at ALL looks strange about this person here?!" You gesture to your guards to have the Dungeon Master removed, clearly he has lost his mind.;;;;;;;;;;;;;x
+DMCoreEvt31OptA;"My apologies my perfectly normal friend, welcome!";;;;;;;;;;;;;x
+DMEventTooltip31;A perfectly normal person joins your court.;;;;;;;;;;;;;x
+
+DMCoreEvttitle32;Fountain of Youth Uncovered!;;;;;;;;;;;;;x
+DMCoreEvtdesc32;During routine maintenance in the temple of [fountain_of_youth_holding.GetName] in [fountain_of_youth_province.GetName] a great wellspring was discovered unlike any other - through the rockface beneath the foundation flows a seemingly unlimited source of crystal clear, glowing, water. Believing it to be a divine gift, the local ruler of the province bathed in the waters and drank deeply, only to discover that their strength grew rapidly and the ravages of time seemed to be reversed!\nThe local holy man has declared the site as sacred, with only the blessed ruler being allowed entrance into the divine fountain. Though for some jealous rulers perhaps, this may not be enough to prevent their curiosity...;;;;;;;;;;;;;x
+DMCoreEvt32OptA;"Bountiful health and long life...?";;;;;;;;;;;;;x
+DMEventTooltip32;The Fountain of Youth is discovered!;;;;;;;;;;;;;x
+DMEventTooltip32B;The owner of the province will occasionally gain health and grow younger!;;;;;;;;;;;;;x
+
+DMCoreEvttitle33;Gary;;;;;;;;;;;;;x
+DMCoreEvtdesc33;"Let me introduce you to my friend Gary. Gary loves playing my games, don't you Gary?" asks the Dungeon Master as he slaps a timid and shellshocked man on the back, who in turn audibly squeaks. "See Gary has always dreamt big, but he never quite made it, so I'm going to let him live vicariously! Every court throughout the land will get their very own Gary, fruit directly from the loin's of Gary Prime!"\nSuddenly a nefarious looking copy of Gary pops into your court, "Buuuut..." continues the Dungeon Master, "These Gary's will be slightly amped up. Much more ambitious and skilled than the original, so watch your back!";;;;;;;;;;;;;x
+DMCoreEvt33OptA;"Erm... welcome... Gary?";;;;;;;;;;;;;x
+DMEventTooltip33;Gary.;;;;;;;;;;;;;x
+
+DMCoreEvttitle34;Friends in High Places;;;;;;;;;;;;;x
+DMCoreEvtdesc34;"I basically only exist to watch the suffering of others, but you people just do suffering so much more efficiently. There are the occasional occasions where occasionally you do take things a bit too far. Ruin the fun entirely. Here." the Dungeon Master fishes around into his pocket before handing you a small paper card - 'Get out of Jail Free' is written on it, "Just so that the suffering isn't interrupted too much...";;;;;;;;;;;;;x
+DMCoreEvt34OptA;"This could come in handy...";;;;;;;;;;;;;x
+DMEventTooltip34;All rulers gain a single-use 'Get Out of Jail Free' allowing for instant release from imprisonment.;;;;;;;;;;;;;x
+
+DMCoreEvttitle35;Prison Riot!;;;;;;;;;;;;;x
+DMCoreEvtdesc35;"I've been doing some snooping around and noticed there were some people stuck in your basement behind bars, and try as they might they just couldn't find a way out!" You take a sharp breath and brace yourself.\n"So, I happily showed the the way out! You don't have to thank me!";;;;;;;;;;;;;x
+DMCoreEvt35OptA;"Fetch my guards...";;;;;;;;;;;;;x
+DMEventTooltip35;All imprisoned characters are released and become rivals with their jailer!;;;;;;;;;;;;;x
+
+DMCoreEvttitle36;Gavelkindness;;;;;;;;;;;;;x
+DMCoreEvtdesc36;The Dungeon Master appears looking pensive "I have no idea what this Gavelkind is but every time I bring it up you land owners always turn a funny colour." You feel your stomach turn at the sound of the forbidden word. "I've decided that a punishment for all those naughty rulers will be this 'Gavelkind' thing... whatever it is.";;;;;;;;;;;;;x
+DMCoreEvt36OptA;"No... he wouldn't...?";;;;;;;;;;;;;x
+DMEventTooltip36;All characters with serious crimes such as §PImpalers§! or §RKinslayers§! will be forced into Gavelkind.;;;;;;;;;;;;;x
+
+DMCoreEvttitle37;Spa Day!;;;;;;;;;;;;;x
+DMCoreEvtdesc37;"I've got plans today, can't do any of the usual evil!" says the Dungeon Master, dashing through your court with a suitcase, "A Hotelier friend of mine gave me these tickets, claimed he was a huge fan of my work, but the hotel is all the way in the north west of Britainia, wherever that is. They're yours if you want them!";;;;;;;;;;;;;x
+DMCoreEvt37OptA;"Free Personal Trainer?";;;;;;;;;;;;;x
+DMCoreEvt37OptB;"Free Mud Baths?";;;;;;;;;;;;;x
+DMEventTooltip37A;You push yourself in a work out.;;;;;;;;;;;;;x
+DMEventTooltip37B;You cover yourself in mud.;;;;;;;;;;;;;x
+
+DMCoreEvttitle38;Happy Little Accident;;;;;;;;;;;;;x
+DMCoreEvtdesc38;"I was visiting a friend of mine and it turns out he had someone there that definitely fit in with his... regular crowd. Anyway he's far too nice to be left down there so I'm putting him under your care. He tells me he's quite talented!";;;;;;;;;;;;;x
+DMCoreEvt38OptA;"Welcome Mr... Ross was it?";;;;;;;;;;;;;x
+DMEventTooltip38;A talented courtier arrives in your court who will produce happy little accidents while he's around.;;;;;;;;;;;;;x
+
+DMCoreEvttitle39;Everyone's Under 4;;;;;;;;;;;;;x
+DMCoreEvtdesc39;"I just found a brilliant new game to play! It's called EU4. You take control of a kingdom somewhere in the world, and then you 'paint the map' as all my friends would say. Would you like to give it a go?";;;;;;;;;;;;;x
+DMCoreEvt39OptA;"I have a bad feeling about this...";;;;;;;;;;;;;x
+DMEventTooltip39A;playing a nice game of EU4 with the Dungeon Master.;;;;;;;;;;;;;x
+DMEventTooltip39B;playing a nice game of EU4 with the Dungeon Master, but you cant help but wonder why he's smirking...\n;;;;;;;;;;;;;x
+DMEventTooltip39C;All playable rulers are forced to play.;;;;;;;;;;;;;x
+
+DMCoreEvttitle40;Duke Nukem;;;;;;;;;;;;;x
+DMCoreEvtdesc40;"I've never understood Dukes, they're just Counts but with vassals, like Kings, or Emperors, but smaller. And don't even get me started on Petty Kings, or Dukes called Kings, or Dukes formally known as Prince? None of this makes any sense! I'm simplifying the entire system - Dukes are now banned. Emperors are next, mark my words.";;;;;;;;;;;;;x
+DMCoreEvt40OptA;"Nobody steals our titles... and lives!";;;;;;;;;;;;;x
+DMEventTooltip40;All Duke tier titles are destroyed!;;;;;;;;;;;;;x
+
+DMCoreEvttitle41;Stroke of Genius;;;;;;;;;;;;;x
+DMCoreEvtdesc41;"It's always the same with you people" begins a very judgemental Dungeon Master, "It's always genius, strong, fair, claims, whatever with you people, never what's on the INSIDE. And that's all that counts. Well, in hindsight, I guess genius is on the inside, now that I think about it... and claims too... Well don't think you're getting away with it that easily!";;;;;;;;;;;;;x
+DMCoreEvt41OptA;"You seem... different?";;;;;;;;;;;;;x
+DMEventTooltip41;Everyone becomes Genius...?;;;;;;;;;;;;;x
+
+DMCoreEvttitle42;Crab Rave;;;;;;;;;;;;;x
+DMCoreEvtdesc42;"Look, your other options are Scorpion rave, Lion rave, or Goat rave. I think your life expectancy is much better with this, trust me.";;;;;;;;;;;;;x
+DMCoreEvt42OptA;"I was born in September!";;;;;;;;;;;;;x
+DMEventTooltip42;Everyone gains Cancer!;;;;;;;;;;;;;x
+
+DMCoreEvttitle43;Meek will Inherit;;;;;;;;;;;;;x
+DMCoreEvtdesc43;"You've all had your chance and really blown it. Just absolutely ruined this earth. Temperatures are increasing, the world economy is in absolute shambles, and your kids are never going to be able to afford housing at this rate. And before you start complaining, the alternate name for this event was 'Okay Boomer' so be glad you're not going out with a bang.";;;;;;;;;;;;;x
+DMCoreEvt43OptA;"The nanny raised the children, not us!";;;;;;;;;;;;;x
+DMEventTooltip43;Rulers over 12 die a horrible death, unless players have no valid heir under 12 at which point a different fate befalls them...;;;;;;;;;;;;;x
+
+DMCoreEvttitle44;Wyvernballs Arrive!;;;;;;;;;;;;;x
+DMCoreEvtdesc44;Across the known world great lights have been spotted falling from the sky. Though there are many records of rocks descending from the heavens, this time their descent is seen from every corner of the known world. Priests and holy men claim that the rocks are messages from their gods, while treasure hunters and fortune finders gear up for great expeditions to find the fallen stars.\n"I know, I know" begins the Dungeon Master "We agreed no references, but this one I've had ready for a long time and I thought I'd better put it to good use.";;;;;;;;;;;;;x
+DMCoreEvt44OptA;"I... I must collect more!";;;;;;;;;;;;;x
+DMEventTooltip44;Rulers over 12 die a horrible death, unless players have no valid heir under 12 at which point a different fate befalls them...;;;;;;;;;;;;;x
+
+DMCoreEvttitle45;Marks and Angels;;;;;;;;;;;;;x
+DMCoreEvtdesc45;"So I've been reading some of the works of some fine lads called Charles Marks and Fred Angels," the Dungeon Master says, looking up from a little red book. "Their ideas of wealth redistrubution has given me an idea...";;;;;;;;;;;;;x
+DMCoreEvt45OptA;"Uh oh.";;;;;;;;;;;;;x
+DMCoreEvt45OptB;"NO, MY PRECIOUS MONEY!";;;;;;;;;;;;;x
+DMCoreEvt45OptC;"Oh, this benefits me!";;;;;;;;;;;;;x
+DMEventTooltip45;All playable rulers will have their wealth taken from them and redistributed evenly. As a side note, the Dungeon Master doesn't know what 'redistributed' means.;;;;;;;;;;;;;x
+
+DMCoreEvtdesc46;"Do you like chess?" the Dungeon Master asks with a wide, sinister grin on his face. "I do! In fact, I love it so much that I've invited a friend over to play with me. I forgot to bring the chess pieces, but no matter! We'll be using you lot!"\nThe Dungeon Master scratches his chin in thought and smirks. "So, tell me, what colour do you like?";;;;;;;;;;;;;x
+DMCoreEvttitle46;The Chessboard;;;;;;;;;;;;;x
+DMCoreEvt46OptA;"I like all colours!";;;;;;;;;;;;;x
+DMCoreEvt46OptB;"Uhh... white?";;;;;;;;;;;;;x
+DMCoreEvt46OptC;"Uhh... black?";;;;;;;;;;;;;x
+DMCoreEvt46OptD;"Pink!";;;;;;;;;;;;;x
+DMCoreEvt46CustomTooltip;This option is available because you are within diplomatic range of one of the Queens in this conflict.;;;;;;;;;;;;;x
+DMCoreEvt46CustomTooltip2;This option is available because you are not within diplomatic range of one of the Queens in this conflict.;;;;;;;;;;;;;x
+DMCoreEvt46Tooltip;Two random rulers will become the White Queen and the Black Queen, and all other rulers around them will be their tributaries. The tributaries on the losing side will suffer dire consequences for their failure. Knight to King 4.;;;;;;;;;;;;;x
+
+DMCoreEvtdesc47;"I simply adore animals!" exclaims the Dungeon Master while playing around with a kitten, making it chase a peacock feather. "The tiny ones, the big ones, the ones with sharp teeth that will eviscerate you in a moments notice..." He looks up at you and smirks wildly. "Would you like your own pet? Only 50 coins, and it can be yours! And I promise it wont die!";;;;;;;;;;;;;x
+DMCoreEvttitle47;Pet Shop;;;;;;;;;;;;;x
+DMCoreEvt47OptA;"Sure, I'll buy one!";;;;;;;;;;;;;x
+DMCoreEvt47OptB;"Eh, another time, perhaps.";;;;;;;;;;;;;x
+DMCoreEvt47OptC;"But you already sold me one before...";;;;;;;;;;;;;x
+DMCoreEvt47TooltipA;A randomly-chosen pet will appear on your character screen as a character modifier. All are permanent and beneficial.;;;;;;;;;;;;;x
+DMCoreEvt47TooltipB;All rulers will be given the option to buy a pet of their own.;;;;;;;;;;;;;x
+
+DMCoreEvtdesc48;"I've recently come across seven strange men," the Dungeon Master quips. "They are a quirky bunch, all of them are dwarves, singing while they work in the salt mines. But they do seem lonely. They have expressed their desire to join the court of a delightfully-female ruler. Don't ask me how delightfully-female is different from regular female.";;;;;;;;;;;;;x
+DMCoreEvttitle48;Snow White;;;;;;;;;;;;;x
+DMCoreEvt48OptA;"Seven dwarves? What is this, a fairy tale?";;;;;;;;;;;;;x
+DMEventTooltip48;One playable female ruler in the world will receive a gift of seven dwarves of varying usefulness.;;;;;;;;;;;;;x
+
+DMCoreEvtdesc49;"Family is the most important thing in the world," quips the Dungeon Master while stroking his chin. "But you also know what's just as important? Congenital traits and bloodlines. Trying to get them is such a hassle, so I'm going to be nice and let you kidnap any one child of your choosing."\nThe Dungeon Master lifts up a finger to silence your forthcoming questions, "There are stipulations, however. No rulers, no AI heirs, and no heirs of players unless they have a spare. Don't say I didn't do anything nice for you!";;;;;;;;;;;;;x
+DMCoreEvttitle49;Kidnapping;;;;;;;;;;;;;x
+DMCoreEvt49OptA;"Only one?";;;;;;;;;;;;;x
+DMEventTooltip49;You are given a single-use targeted decision against any child within diplomatic range. This child will move to your court and join your dynasty.;;;;;;;;;;;;;x
+DMEventTooltip49Safe;nobody finding out;;;;;;;;;;;;;x
+DMEventTooltip49Caught;the prior liege of the child is notified;;;;;;;;;;;;;x
+
+DMCoreEvtdesc50;"Humility is a weird concept," muses the Dungeon Master as he surveys the land. "I prefer fear when keeping people in line. Oh, and speaking of fear and humility..." The Dungeon Master grins from ear to ear and snaps his fingers.;;;;;;;;;;;;;x
+DMCoreEvttitle50;Vassal/Liege Swap;;;;;;;;;;;;;x
+DMCoreEvt50OptA;"Wha...?";;;;;;;;;;;;;x
+DMEventTooltip50;A random independent ruler and one of their vassals will trade titles.;;;;;;;;;;;;;x
+
+DMCoreEvtdesc51;\n\nEverything is eerily silent. The leaves do not rustle in the wind, the birds are quiet, even your own footsteps as you walk into the forest grove are muted.\nBefore you is a woman with pale skin and raven black hair, dressed only in a robe that matches her hair color. The scythe she wields gives you no doubt as to her identity.\n\n"Be not afraid, mortal," she speaks, nary an emotion crosses her lips, "you are fast asleep in the real world. I have come to offer you a deal." She extends a hand out, waiting for you to take it into yours. "I will grant you a longer lifespan, but in return you will die on a specific date."\n\nDeath is offering you a choice to live another 10 years as an exceptional [GetManWoman], 25 years as you are, or 50 as an inferior [GetManWoman]. But at the end of those years, Death will come back to claim you. This also does not prevent your death from the sword or the dagger.;;;;;;;;;;;;;x
+DMCoreEvttitle51;To Dream of Death;;;;;;;;;;;;;x
+DMCoreEvt51OptA;"10 years.";;;;;;;;;;;;;x
+DMEventTooltip51A;Choose to live another 10 years in glory. After 10 years, you will die.;;;;;;;;;;;;;x
+DMCoreEvt51OptB;"25 years.";;;;;;;;;;;;;x
+DMEventTooltip51B;Choose to live another 25 years. After 25 years, you will die.;;;;;;;;;;;;;x
+DMCoreEvt51OptC;"50 years.";;;;;;;;;;;;;x
+DMEventTooltip51C;Choose to live another 50 years in mediocrity. After 50 years, you will die.;;;;;;;;;;;;;x
+DMCoreEvt51OptD;"I refuse your deal.";;;;;;;;;;;;;x
+DMEventTooltip51D;You wake up in bed. Was it just a dream, or was it real?;;;;;;;;;;;;;x
+
+DMCoreEvtdesc5101;You find yourself back in the familiar forest grove, lit only by the full moon. "It is time, mortal," speaks the pale reaper. "Your time on this mortal world has come to an end.";;;;;;;;;;;;;x
+DMCoreEvttitle5101;To Dream of Death;;;;;;;;;;;;;x
+DMCoreEvt5101OptA;It's a sad thing that your adventures have ended here.;;;;;;;;;;;;;x
+
+DMCoreEvtdesc52;"People tell me I'm not kind," muses the Dungeon Master. "Well, I'll show them! BEHOLD! I shall grant a fourth of the populace the power of my dragon!";;;;;;;;;;;;;x
+DMCoreEvttitle52;Blood of the Dragon;;;;;;;;;;;;;x
+DMCoreEvt52OptA;"Your dragon?";;;;;;;;;;;;;x
+DMEventTooltip52A;Every playable ruler will have a 25% chance of getting a non-inheritable bloodline.;;;;;;;;;;;;;x
+
+DMCoreEvtdesc53;The DM appears before you with an animal cage in hand, looking worried. "I, uh..." he fidgets, "may have accidentally loosed some animals into the world. And given them sentience. And titles. Whoops.";;;;;;;;;;;;;x
+DMCoreEvttitle53;Animal Kingdom;;;;;;;;;;;;;x
+DMCoreEvt53OptA;"What do you mean, 'whoops'?";;;;;;;;;;;;;x
+DMEventTooltip53A;An animal kingdom has appeared on the map.;;;;;;;;;;;;;x
+
+DMCoreEvttitle54;The Network;;;;;;;;;;;;;x
+DMCoreEvtdesc54NoTower;"5G!" the Dungeon Master exclaims happily. "Such a wonderful technology! It was given to me by the Lizard People, and will prooooo-" he stops to clear his throat before continuing, "...prove to be a real game changer.";;;;;;;;;;;;;x
+DMCoreEvtdesc54TTANoTower;"Five... gee...? What?";;;;;;;;;;;;;x
+DMCoreEvtdesc54;While walking through your demense one day, you come across the damnest sight: a herd of cows- all dressed like human laborers- building a giant metal tower of some kind. You suspect it's time to take up drinking as a hobbby.;;;;;;;;;;;;;x
+DMCoreEvtdesc54TTA;"This is such a mooving sight to see.";;;;;;;;;;;;;x
+DMCoreEvtdesc54TTAQueen;"COW!";;;;;;;;;;;;;x
+DMCoreEvtdesc54TTAQueenTT;You are given this option because you are the Queen of England.;;;;;;;;;;;;;x
+DMCoreEvtdesc54TTACustomTT;20 random rulers will have 1G towers build in their capital province.\nThese towers levy a hefty cost on the populace, but can be upgraded to reduce the penalties.\n§GYou were not chosen.§!;;;;;;;;;;;;;x
+DMCoreEvtdesc54TTACustomTTTower;20 random rulers will have 1G towers build in their capital province.\nThese towers levy a hefty cost on the populace, but can be upgraded to reduce the penalties.\n§RYou were chosen.§!;;;;;;;;;;;;;x
+
+DMCoreEvttitle55;Inept Tea;;;;;;;;;;;;;x
+DMCoreEvtdesc55;The Dungeon Master runs up to you with a wide grin on his face and a badly-dressed primate in his arms. "I've got a shipment of inept tea coming in, and I want you to be the first to buy in to this new craze! Here's the proof of purchase! Thanks!" He tosses the confused ape at you and steals your gold before leaving.;;;;;;;;;;;;;x
+DMCoreEvtdesc55TTA;"Inept tea? What?";;;;;;;;;;;;;x
+
+DMCoreEvttitle56;It Belongs In A Museum;;;;;;;;;;;;;x
+DMCoreEvtdesc56;The Dungeon Master barges into your throneroom dressed in a leather jacket and carrying a bullwhip. "Treasures! They belong in a museum," he rants. "But don't worry. We've got top men working on it. Top men." He gives you a wide grin and places a hat on your head. "Fortune and glory, kid. Fortune and glory.";;;;;;;;;;;;;x
+DMCoreEvtdesc56TTA;"You mean YOUR fortune and glory.";;;;;;;;;;;;;x
+DMCoreEvtdesc56TTACustom;Despite the obvious risk of a copyright lawsuit, the Dungeon Master has taken it up upon himself to liberate valuable artifacts from around the world. Though, some of them may get lost in transport.;;;;;;;;;;;;;x
+
+DMCoreEvttitle57;For Whom The Horn Doots;;;;;;;;;;;;;x
+DMCoreEvtdesc57;No man is an island, entire of itself. Each is a piece of the continent, a part of the main. If a clod be washed away by the sea, Europe is the less. As well as if a promontory were. As well as if a manor of thine own or of thine friend's were. Each man's death diminishes me, for I am involved in mankind. Therefore, send not to know for whom the horn doots, It doots for thee.;;;;;;;;;;;;;x
+DMCoreEvtdesc57TTA;"Thank you, Mr Skeltal.";;;;;;;;;;;;;x
+DMCoreEvtdesc57TTACustom;You are granted a one-time useage of the Horn of Dootage during battle. From peasants to emperors, all tremble at the sound of the mighty doot doot!;;;;;;;;;;;;;x
+
+DMCoreEvttitle58;Eternity Battle;;;;;;;;;;;;;x
+DMCoreEvtdesc58;The Dungeon Master suddenly appears in front of you looking exasperated and almost... scared? "Listen, these are your problem now," he begins, as he opens his hand revealing six bright stones of various colours, "Fight, bribe, kill each other over them - I don't care." He begins to run out of the room, but suddenly snaps back to face you. "Just don't let HIM get them.";;;;;;;;;;;;;x
+DMCoreEvtdesc58TTA;"All of that over brightly coloured rocks?";;;;;;;;;;;;;x
+DMCoreEvtdesc58TTACustom;The §BEternity Pebbles§! are now active in the world and have been randomly distributed to six rulers.;;;;;;;;;;;;;x
+DMCoreEvtdesc58TTBCustom;The §BEternity Pebbles§! are artifacts of unrivaled power, and a ruler who collects all six will unlock a §Munique decision§!. ;;;;;;;;;;;;;x
+DMCoreEvtdesc58TTCCustom;Owners of the §BEternity Pebbles§! can be targeted by unique §GCasus Beli§! by others attempting to gain the Pebbles.;;;;;;;;;;;;;x
+DMCoreEvtdesc58TTDCustom;Owners of the §BEternity Pebbles§! may find themselves attracting the attention of an §Kunwanted guest§!...;;;;;;;;;;;;;x
+
+DMCoreEvttitle59;Rabid Dog!;;;;;;;;;;;;;x
+DMCoreEvtdesc59;Lately, your dog has been acting strangely. It has become overly violent and refuses to drink water. Just as you were taking it out for a morning stroll, the damned thing bit you! You can see the dog foaming at the mouth.;;;;;;;;;;;;;x
+DMCoreEvtdesc59TTA;"Oh no, this can't be good!";;;;;;;;;;;;;x
+DMCoreEvtdesc59NoDog;The Dungeon Master bursts into the room wearing various furs, including a canine headdress that would look more at home on a shaman. "Can I nuzzle wuzzle you? uwu you're so warm!" he says, playfully batting at you with his fake wolf paws. He suddenly sees a cat and starts chasing after it. "SNUGGLE WUGGLE!";;;;;;;;;;;;;x
+DMCoreEvtdesc59TTB;"What.";;;;;;;;;;;;;x
+
+DMCoreEvttitle60;Ruina Imperii;;;;;;;;;;;;;x
+DMCoreEvtdesc60;The Dungeon Master reads through a scroll, mumbling to himself. "Ruina Imperii? What kind of simpleton thought of something so stupid?!" A twinge of horror creeps up your spine as he looks up at you with an evil grin on his face. "It's perfect!";;;;;;;;;;;;;x
+DMCoreEvtdesc60TTA;"MY CABBAGES!";;;;;;;;;;;;;x
+DMCoreEvtdesc60TTB;"Umm... neat? I guess?";;;;;;;;;;;;;x
+DMCoreEvtdesc60TTCustom;All empire titles, except for offmaps, are immediately destroyed.;;;;;;;;;;;;;x
+DMCoreEvtdesc60TTCustomWrecked;All empire titles, except for offmaps, are immediately destroyed. §RINCLUDING YOURS.§!;;;;;;;;;;;;;x
+
+
+### Follow-up Events ###
+
+DMCoreFollowtitle2;Potion Seller;;;;;;;;;;;;;x
+DMCoreFollowtitledesc2;You walk up to the man, who has just arrived in your court and proclaim that you are going into battle, and require his strongest potions. "You don't know what you ask, traveler," he begins, "My strongest potions will kill a dragon, let alone a man. You need a seller that sells weaker potions, because my potions are too strong!";;;;;;;;;;;;;x
+DMCoreFollow2OptA;"No respect for anything... except your potions!";;;;;;;;;;;;;x
+DMCoreFollowTooltip2;You take one of the potions despite the warning...;;;;;;;;;;;;;x
+
+DMCoreFollowtitle3;Time's Up!;;;;;;;;;;;;;x
+DMCoreFollowtitledesc2;"Well done, well done!" exclaims the Dungeon Master, "you have all outdone yourselves again! Slaying, crushing, trampling, and impaling your way to victory, but of course the rules were whoever holds it now time is up! Congratulations to [winner_winner_chicken_meal.GetName]!;;;;;;;;;;;;;x
+DMCoreFollow3OptA;"That's a lot of gold...";;;;;;;;;;;;;x
+DMCoreFollowTooltip3;The ruler of [battle_royale.GetName] wins their victory purse.;;;;;;;;;;;;;x
+
+DMCoreFollowtitle5;Midas Plague!;;;;;;;;;;;;;x
+DMCoreFollowtitledesc5;The Midas Plague has struck me and my body has started turning into gold!;;;;;;;;;;;;;x
+DMCoreFollow8OptA;"Help me!";;;;;;;;;;;;;x
+DMCoreFollowTooltip5;The Midas Plague takes part of your body!;;;;;;;;;;;;;x
+
+DMCoreFollowtitle8;Sipping from the Fountain of Youth;;;;;;;;;;;;;x
+DMCoreFollowtitledesc8;You visit the Fountain of Youth at the local temple where it was uncovered. As the ruler of the province the local holy man believes you to have a divine blessing and lets you into the fountain. You drink from the fountain and feel reinvigorated!;;;;;;;;;;;;;x
+DMCoreFollow8OptA;"I can feel the years slipping away!";;;;;;;;;;;;;x
+
+DMCoreFollowtitle10;Empire of Gary;;;;;;;;;;;;;x
+DMCoreFollowtitledesc10;Empire of Gary has been formed by one ambitious Gary who rose above the rest! All Garys are rounded up and sent to the new Empire where it will stand, united in Garydom, for the rest of time!;;;;;;;;;;;;;x
+DMCoreFollow10OptA;"They... what?";;;;;;;;;;;;;x
+
+DMCoreFollowtitle11;Happy Little Accident;;;;;;;;;;;;;x
+DMCoreFollowtitledesc11;Bob Ross, your local painter, gardener, and all round nice guy, has once again blessed your court with some kind gifts and warm feelings!;;;;;;;;;;;;;x
+DMCoreFollow11OptA;"Wow, that's really great!";;;;;;;;;;;;;x
+
+DMCoreFollowtitle12;Hunting Accident;;;;;;;;;;;;;x
+DMCoreFollowdesc12;[dead_heir.GetHerHisCap] body has been draped, by whom you do not know, in a white cloth now stained red by [dead_heir.GetHerHis] lost vitae. They say [dead_heir.GetSheHe] was found by [dead_heir.GetHerHis] horse, in a clearing in the woods. You know the place they speak of. [dead_heir.GetHerHisCap] face is calm, almost serene. You reach out to touch [dead_heir.GetHerHim]. The terrible reality of the situation dawns on you. The cold you feel is that of death.;;;;;;;;;;;;;x
+DMCoreFollow12OptA;Sorrow overtakes you.;;;;;;;;;;;;;x
+DMCoreFollow12OptATooltip;Lose §R1§! stability;;;;;;;;;;;;;x
+DMCoreFollow12OptB;Oh well...;;;;;;;;;;;;;x
+DMCoreFollow12OptBTooltip;Lose §R10§! prestige;;;;;;;;;;;;;x
+
+DMCoreFollowtitle13;Unity;;;;;;;;;;;;;x
+DMCoreFollowdesc13;At long last, you have collected all seven of the Wyvernballs. Now all that remains is to bring them together before moonlight and wait.;;;;;;;;;;;;;x
+DMCoreFollow13OptA;"I wish to conquer age and become undying!";;;;;;;;;;;;;x
+DMCoreFollow13OptB;"I wish to become perfect, above all else!";;;;;;;;;;;;;x
+DMCoreFollow13OptC;"I wish fame and gold, more than any living man!";;;;;;;;;;;;;x
+DMCoreFollow13OptD;"I wish for the greatest armaments the world has ever seen!";;;;;;;;;;;;;x
+
+DMCoreFollowtitle14;Wyvern Arises!;;;;;;;;;;;;;x
+DMCoreFollowdesc14;Having unified all seven Wyvernballs you awaken the great power contained within. A huge wyvern, taller than any tower throughout the known world, erupts from the Wyvernballs. It begins to speak:
+"Greetings, I am the king of all lizards. Every single one of them. The ones on the flags, I knew them all, you know?" He continues like this for some time before realising your increasing boredom. "You're just like all the others, I thought coming to this place would finally give me someone to chat to who wasn't interested in just my power, but I see how it is. Fine. You get one wish, then I'm gone. You hear me? GONE.";;;;;;;;;;;;;x
+DMCoreFollow14OptA;"Unlimited Power!";;;;;;;;;;;;;x
+DMCoreFollow14OptB;"I'll wait...";;;;;;;;;;;;;x
+
+DMCoreFollowtitle15;Wyvernballs United!;;;;;;;;;;;;;x
+DMCoreFollowdesc15;The Wyvernballs have been united and have left this jolly green earth to go onto a new world, unless of course the Dungeon Master decides to start the treasure hunt all over again!;;;;;;;;;;;;;x
+DMCoreFollow15OptA;"Not again...";;;;;;;;;;;;;x
+
+DMCoreFollowtitle16;Wyvernball Owners;;;;;;;;;;;;;x
+DMCoreFollowdesc16;The current Wyvernball owners are as follows:;;;;;;;;;;;;;x
+DMCoreFollow16OptA;Fascinating!;;;;;;;;;;;;;x
+
+DMCoreFollowtitle19;Kidnapped;;;;;;;;;;;;;x
+DMCoreFollowdesc19;A child, [dm_kidnapped.GetFirstName], has been kidnapped from your very court by the sinister [dm_kidnapper.GetTitledName]!:;;;;;;;;;;;;;x
+DMCoreFollow19OptA1;That bitch!;;;;;;;;;;;;;x
+DMCoreFollow19OptA2;That bastard!;;;;;;;;;;;;;x
+
+DMCoreFollowtitle23;5G Unleashed!;;;;;;;;;;;;;x
+DMCoreFollowdesc23;With the completion of the 5G tower, the plans of the Lizard People have finally come to fruition!\n\nGENTLEMEN, BEHOLD!\n\nBOVID-19!;;;;;;;;;;;;;x
+DMCoreFollow23TTA;"Oops.";;;;;;;;;;;;;x
+DMCoreFollow23TTACustomTT;The 5G tower explodes in a burst of energy, leaving behind a new and frightening disease.;;;;;;;;;;;;;x
+
+DMCoreFollowtitle24;The Whispers in your Mind;;;;;;;;;;;;;x
+DMCoreFollowdesc24;Your cursed ring has imbued you with all sorts of power, and through it you have achieved great feats of glory. But some days a great whisper rattles in your skull and its lure is almost too difficult to resist.;;;;;;;;;;;;;x
+DMCoreFollow24a;"I... I am strong enough!";;;;;;;;;;;;;x
+DMCoreFollow24b;"I submit! No more, please!";;;;;;;;;;;;;x
+curse_warning_tooltip;You feel as if you will not be able to resist the whispers any longer.;;;;;;;;;;;;;x
+
+DMCoreFollowtitle25;Ash Nazg Durbatulûk;;;;;;;;;;;;;x
+DMCoreFollowdesc25;The whispers become all too much to bear. You collapse to your knees and cough up a pitch black fog which begins to engulf you. A face fills your mind, the face of the one who gifted you this ring all that time ago...;;;;;;;;;;;;;x
+DMCoreFollow25;Agh burzum-ishi krimpatul!;;;;;;;;;;;;;x
+
+DMCoreFollowtitle27;The Last Doot;;;;;;;;;;;;;x
+DMCoreFollowdesc27;Oh dear. It seems [dm_dead_dooter.GetFirstNameWithNick] has dooted [dm_dead_dooter.GetHerHis] last doot. On the bright side, [dm_dead_dooter.GetSheHe] had a stockpile of calcium you inherited.;;;;;;;;;;;;;x
+DMCoreFollow27TTA;Doot?;;;;;;;;;;;;;x
+DMCoreFollow27TTB;Doot!;;;;;;;;;;;;;x
+DMCoreFollow27TTC;DOOT DOOT!;;;;;;;;;;;;;x
+
+DMCoreFollowtitle28;Fading Whispers;;;;;;;;;;;;;x
+DMCoreFollowdesc28;Having suffered the constant dark words in your mind for too long you grab at your finger and yank the ring from it with all of your might. Though it grips to your skin at first, eventually the ring relents, and with a solid thud, it hits the ground.;;;;;;;;;;;;;x
+DMCoreFollow28OptA;I will put this away, but perhaps not too far.;;;;;;;;;;;;;x
+DMCoreFollowTooltip28;You successfully remove the ring, though you could wear it again at any time.;;;;;;;;;;;;;x
+DMCoreFollowTooltip28Chance;resisting the ring;;;;;;;;;;;;;x
+
+DMCoreFollowtitle29;Darkness Binds Them;;;;;;;;;;;;;x
+DMCoreFollowdesc29;In a mad fit of desperation you take hold of the cursed ring that sits on your finger and try to pull it off with all of your strength. Thought you try with all your might, you find yourself thinking... it is your ring. Afterall, why shouldn't you keep it? It has already gotten you so far!;;;;;;;;;;;;;x
+DMCoreFollow29OptA;Silly me, what was I thinking?;;;;;;;;;;;;;x
+DMCoreFollowTooltip29;Characters with more morally good traits, and self-control, will have a higher chance of the resisting the ring!;;;;;;;;;;;;;x
+DMCoreFollowTooltip29Chance;being ensnared by the ring;;;;;;;;;;;;;x
+
+### Game Rules ###
+
+RULE_DUNGEON_MASTER;Dungeon Master;;;;;;;;;;;;;x
+DM_CYCLE;§KDM:§! Event Cycling;;;;;;;;;;;;;x
+DM_CYCLE_NORMAL;Normal;;;;;;;;;;;;;x
+DM_CYCLE_NORMAL_DESC;The Dungeon Master will cycle through six events before previously-seen events will be available again.;;;;;;;;;;;;;x
+DM_CYCLE_DOUBLE;Double;;;;;;;;;;;;;x
+DM_CYCLE_DOUBLE_DESC;The Dungeon Master will cycle through twelve events before previously-seen events will be available again.;;;;;;;;;;;;;x
+DM_CYCLE_HALF;Half;;;;;;;;;;;;;x
+DM_CYCLE_HALF_DESC;The Dungeon Master will cycle through three events before previously-seen events will be available again.;;;;;;;;;;;;;x
+DM_FREQ;§KDM:§! Event Frequency;;;;;;;;;;;;;x
+DM_FREQ_15;Normal - 15 Years;;;;;;;;;;;;;x
+DM_FREQ_15_DESC;The Dungeon Master will cause chaos roughly once every 15 years.;;;;;;;;;;;;;x
+DM_FREQ_30;Slow - 30 Years;;;;;;;;;;;;;x
+DM_FREQ_30_DESC;The Dungeon Master will give the world time to breathe by causing chaos roughly once every thirty years.;;;;;;;;;;;;;x
+DM_FREQ_5;Chaos - 5 Years;;;;;;;;;;;;;x
+DM_FREQ_5_DESC;The Dungeon Master just wants to see the world burn with events happening roughly every five years.;;;;;;;;;;;;;x
+DM_FREQ_TRUE_RANDOM;Normal - No Cooldown;;;;;;;;;;;;;x
+DM_FREQ_TRUE_RANDOM_DESC;Events have no minimum time and could fire randomly!;;;;;;;;;;;;;x
+DM_FREQ_NONE;Disabled;;;;;;;;;;;;;x
+DM_FREQ_NONE_DESC;Events will be §Rdisabled§!.;;;;;;;;;;;;;x
+
+### Nicknames ###
+
+nick_coleman;the Coal Man;;;;;;;;;;;;;x
+nick_cleptomaniac;the Kleptomaniac;;;;;;;;;;;;;x
+nick_the_black_rider;the Black Rider;;;;;;;;;;;;;x
+
+### Offmap ###
+
+dungeon_master_name;Dungeon Master;;;;;;;;;;;;;x
+dungeon_master_favor;Favor;;;;;;;;;;;;;x
+monthly_dungeon_master_favor;Monthly Favor;;;;;;;;;;;;;x
+e_dungeon_master_governor;Dungeon Master;;;;;;;;;;;;;x
+e_dungeon_master_governor_adj;Chaotic;;;;;;;;;;;;;x
+e_dungeon_master_governor_female;Dungeon Mistress;;;;;;;;;;;;;x
+e_dungeon_master_governor_male;Dungeon Master;;;;;;;;;;;;;x
+
+### Moo ###
+
+dm_milky;Milk;;;;;;;;;;;;;x
+dm_moo;Moo;;;;;;;;;;;;;x
+dm_milk_stores;Milk Stores;;;;;;;;;;;;;x
+dm_milk_stores_desc;Current milk: [current_milk.GetValue]/[max_milk.GetValue]\nMilk is regained little by little each year.;;;;;;;;;;;;;x
+current_milk;current milk;;;;;;;;;;;;;x
+max_milk;maximum milk;;;;;;;;;;;;;x
+tt_has_enough_milk_minor;Has 10 milk.;;;;;;;;;;;;;x
+tt_has_enough_milk_moderate;Has 25 milk.;;;;;;;;;;;;;x
+tt_has_enough_milk_major;Has 50 milk.;;;;;;;;;;;;;x
+dm_bovid19_disease;BOVID-19;;;;;;;;;;;;;x
+dm_bovid19_trait;BOVID-19;;;;;;;;;;;;;x
+dm_bovid19_trait_desc;This character forgot to wear a mask out in public and has contracted BOVID-19. On the bright side, their milk is delicious.;;;;;;;;;;;;;x
+BOVID19_INFO;5G towers have unleashed the power of BOVID-19 in this province.;;;;;;;;;;;;;x
+dm_disease101;Oh dear. Apparently you've contracted BOVID-19. Next time, trust in your alchemically-certified plague doctor and don't believe dumb shit posted on Facescroll. ;;;;;;;;;;;;;x
+dm_disease101TTA;Moo.;;;;;;;;;;;;;x
+dm_disease102;Your bout of BOVID-19 has cleared up. You're still a cow, however.;;;;;;;;;;;;;x
+dm_1G_tower;1G Tower;;;;;;;;;;;;;x
+dm_1G_tower_desc;A large tower. Despite it not doing anything, the populace considers it an extremely bad omen.;;;;;;;;;;;;;x
+dm_2G_tower;2G Tower;;;;;;;;;;;;;x
+dm_2G_tower_desc;A large tower with twice the G's. Despite it not doing anything, the populace considers it a bad omen.;;;;;;;;;;;;;x
+dm_3G_tower;3G Tower;;;;;;;;;;;;;x
+dm_3G_tower_desc;A large tower with three times the G's. Despite it not doing anything, the populace finds it uncomfortable to look at.;;;;;;;;;;;;;x
+dm_4G_tower;4G Tower;;;;;;;;;;;;;x
+dm_4G_tower_desc;A large tower with four times the G's. Despite it not doing anything, the populace finds it very confusing.;;;;;;;;;;;;;x
+dm_5G_tower;5G Tower;;;;;;;;;;;;;x
+dm_5G_tower_desc;A large tower with five times the G's. Despite it not doing anything, the populace finds it very intriguing.;;;;;;;;;;;;;x
+dm_cows_working;Cows Working;;;;;;;;;;;;;x
+dm_cows_working_desc;A large herd of cows dressed in construction working clothes are busy upgrading the large tower.;;;;;;;;;;;;;x
+dm_upgrade_network;Upgrade Tower;;;;;;;;;;;;;x
+dm_upgrade_network_desc;Upgrade the large tower in your demesne.\n§YThis will take one year to complete and reduce the penalties of the tower.§!;;;;;;;;;;;;;x
+dm_unleash_the_5G;Unleash the 5G!
+dm_unleash_the_5G_desc;Unleash the power of the 5G towers!\n§YThis will destroy the tower and all penalties it brings.§!\n§RMoo.§!
