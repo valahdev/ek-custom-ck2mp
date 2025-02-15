@@ -1,0 +1,14 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+player_gift_troops;Custom Gift;;;;;;;;;;;;;x
+player_gift_troops_desc;[Root.GetBestName] will give a custom sum of money to other n'wah rulers around Tamriel
+EVTDESCgift_troops_ai.0;[From.GetBestName] will give a custom sum of money to other n'wah rulers around Tamriel
+EVTOPTAgift_troops_ai.0;Gift 10 Gold;;;;;;;;;;;;;x
+EVTOPTBgift_troops_ai.0;Gift 20 Gold;;;;;;;;;;;;;x
+EVTOPTCgift_troops_ai.0;Gift 40 Gold;;;;;;;;;;;;;x
+EVTOPTDgift_troops_ai.0;EXIT;;;;;;;;;;;;;x
+EVTDESCgift_troops_ai.1;[From.GetBestName] has given you a gift of money to help boost your empty coffers.;;;;;;;;;;;;;x
+EVTOPTEgift_troops_ai.1;Gift 50 Gold;;;;;;;;;;;;;x
+EVTOPTFgift_troops_ai.1;Gift 100 Gold;;;;;;;;;;;;;x
+EVTOPTGgift_troops_ai.1;Gift 200 Gold;;;;;;;;;;;;;x
+EVTOPTHgift_troops_ai.1;EXIT;;;;;;;;;;;;;x
+EVTOPTCgift_troops_ai.1;You are a God!;;;;;;;;;;;;;x

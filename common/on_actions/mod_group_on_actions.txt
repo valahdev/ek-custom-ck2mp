@@ -1,0 +1,10 @@
+on_startup = {
+	events = {
+		mod_group.0
+	}
+}
+on_chronicle_start = {
+	events = {
+		mod_group.0
+	}
+}
