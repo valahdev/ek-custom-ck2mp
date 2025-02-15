@@ -39,81 +39,26 @@ character_event = {			#Potion Seller#
 
 	immediate = {
 		any_playable_ruler = {
-			random = {
-				chance = 5
-				add_trait = has_aztec_disease
-			}
-			random = {
-				chance = 5
-				add_trait = has_typhus
-			}
-			random = {
-				chance = 5
-				add_trait = cancer
-			}
-			random = {
-				chance = 5
-				add_trait = has_tuberculosis
-			}
-			random = {
-				chance = 5
-				add_trait = dancing_plague
-			}
-			random = {
-				chance = 5
-				add_trait = dysentery
-			}
-			random = {
-				chance = 5
-				add_trait = flu 
-			}
-			random = {
-				chance = 5
-				add_trait = food_poisoning
-			}
-			random = {
-				chance = 5
-				add_trait = gout
-			}
-			random = {
-				chance = 5
-				add_trait = syphilitic
-			}
-			random = {
-				chance = 5
-				add_trait = has_typhoid_fever
-			}
-			random = {
-				chance = 5
-				add_trait = leper 
-			}
-			random = {
-				chance = 5
-				add_trait = has_measles
-			}
-			random = {
-				chance = 5
-				add_trait = pneumonic
-			}
-			random = {
-				chance = 5
-				add_trait = rabies 
-			}
-			random = {
-				chance = 5
-				add_trait = scurvy 
-			}
-			random = {
-				chance = 5
-				add_trait = sickly 
-			}
-			random = {
-				chance = 5
-				add_trait = has_small_pox
-			}
-			random = {
-				chance = 5
-				add_trait = has_bubonic_plague
+			random_list = {
+				10 = { add_trait = has_aztec_disease }
+				10 = { add_trait = has_typhus }
+				10 = { add_trait = cancer }
+				10 = { add_trait = dancing_plague }
+				10 = { add_trait = dysentery }
+				10 = { add_trait = flu }
+				10 = { add_trait = food_poisoning }
+				10 = { add_trait = gout }
+				10 = { add_trait = syphilitic }
+				10 = { add_trait = has_typhoid_fever }
+				10 = { add_trait = leper }
+				10 = { add_trait = has_measles }
+				10 = { add_trait = pneumonic }
+				10 = { add_trait = rabies }
+				10 = { add_trait = scurvy }
+				10 = { add_trait = sickly }
+				10 = { add_trait = has_small_pox }
+				10 = { add_trait = has_bubonic_plague }
+
 			}
 		}
 	}
@@ -294,74 +239,6 @@ character_event = {			#Follow-up from DM_disease.txt - I have turned midas plagu
 		custom_tooltip = {
 			text = DMCoreFollowTooltip5
 		}	
-	}
-}
-
-character_event = {			#Follow-up from DMCoreEvt.21 - Horse Lord gets Troops#
-	id = DMCoreFollow.6
-	hide_window = yes
-	offmap = allow
-	
-	trigger = {
-		has_character_flag = horse_lord
-	}
-
-	mean_time_to_happen = {
-		months = 12
-	}
-
-	option = {
-		name = DMCoreFollow4OptA
-		spawn_unit = {
-			owner = ROOT
-			province = ROOT
-			home = ROOT
-		  
-			troops = {
-				light_cavalry = { 2500 2500 }
-				heavy_cavalry = { 1500 1500 }
-				horse_archers = { 2000 2000 }
-			}
-		
-			attrition = 0.3
-			disband_on_peace = no
-			maintenance_multiplier = 0.0
-		}
-	}
-}
-
-narrative_event = {			#Follow-up from DMCoreEvt.26 - Ozymandias#
-	id = DMCoreFollow.7
-	title = DMCoreFollowtitle7
-	picture = GFX_evt_recieve_letter
-	desc =  DMCoreFollowtitledesc7
-	offmap = allow
-
-	trigger = {
-		has_character_flag = ozymandius
-	}
-
-	mean_time_to_happen = {
-		months = 12
-	}
-
-	option = {
-		name = DMCoreFollow4OptA
-		spawn_unit = {
-			owner = ROOT
-			province = ROOT
-			home = ROOT
-		  
-			troops = {
-				light_infantry = { 2500 2500 }
-				light_cavalry = { 2500 2500 }
-				heavy_cavalry = { 1500 1500 }
-			}
-		
-			attrition = 0.3
-			disband_on_peace = no
-			maintenance_multiplier = 0.0
-		}
 	}
 }
 

@@ -108,16 +108,6 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 		custom_tooltip = {
 			text = dungeon_master_rolls
 			random_list = {
-				1 = {			#event 1
-					trigger = {
-						NOT = {
-							has_global_flag = DMEvent1
-						}
-					}
-					character_event = { id = DMCoreEvt.1 }
-					change_variable = { which = global_tombola_var value = 1 }
-					set_global_flag = DMEvent1
-				}
 				1 = {			#event 2
 					trigger = {
 						NOT = {
@@ -188,26 +178,6 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					change_variable = { which = global_tombola_var value = 1 }
 					set_global_flag = DMEvent8
 				}
-				1 = {			#event 9
-					trigger = {
-						NOT = {
-							has_global_flag = DMEvent9
-						}
-					}
-					character_event = { id = DMCoreEvt.9 }
-					change_variable = { which = global_tombola_var value = 1 }
-					set_global_flag = DMEvent9
-				}
-				1 = {			#event 10
-					trigger = {
-						NOT = {
-							has_global_flag = DMEvent10
-						}
-					}
-					character_event = { id = DMCoreEvt.10 }
-					change_variable = { which = global_tombola_var value = 1 }
-					set_global_flag = DMEvent10
-				}
 				1 = {			#event 11
 					trigger = {
 						NOT = {
@@ -248,15 +218,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					change_variable = { which = global_tombola_var value = 1 }
 					set_global_flag = DMEvent14
 				}
-				1 = {			#event 15
-					trigger = {
-						NOT = {
-							has_global_flag = DMEvent15
-						}
-					}
-					character_event = { id = DMCoreEvt.15 }
-					set_global_flag = DMEvent15
-				}
+
 				1 = {			#event 16
 					trigger = {
 						NOT = {
@@ -266,16 +228,6 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					character_event = { id = DMCoreEvt.16 }
 					change_variable = { which = global_tombola_var value = 1 }
 					set_global_flag = DMEvent16
-				}
-				1 = {			#event 17
-					trigger = {
-						NOT = {
-							has_global_flag = DMEvent17
-						}
-					}
-					character_event = { id = DMCoreEvt.17 }
-					change_variable = { which = global_tombola_var value = 1 }
-					set_global_flag = DMEvent17
 				}
 				1 = {			#event 18
 					trigger = {
@@ -307,15 +259,6 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					change_variable = { which = global_tombola_var value = 1 }
 					set_global_flag = DMEvent20
 				}
-				1 = {			#event 21
-					trigger = {
-						NOT = {
-							has_global_flag = DMEvent21
-						}
-					}
-					character_event = { id = DMCoreEvt.21 }
-					set_global_flag = DMEvent21
-				}
 				1 = {			#event 22
 					trigger = {
 						NOT = {
@@ -335,33 +278,6 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					change_variable = { which = global_tombola_var value = 1 }
 					set_global_flag = DMEvent23
 				}
-				1 = {			#event 24
-					trigger = {
-						NOT = {
-							has_global_flag = DMEvent24
-						}
-					}
-					character_event = { id = DMCoreEvt.24 }
-					set_global_flag = DMEvent24
-				}
-				1 = {			#event 25
-					trigger = {
-						NOT = {
-							has_global_flag = DMEvent25
-						}
-					}
-					character_event = { id = DMCoreEvt.25 }
-					set_global_flag = DMEvent25
-				}
-				1 = {			#event 26
-					trigger = {
-						NOT = {
-							has_global_flag = DMEvent26
-						}
-					}
-					character_event = { id = DMCoreEvt.26 }
-					set_global_flag = DMEvent26
-				}
 				1 = {			#event 27
 					trigger = {
 						NOT = {
@@ -371,16 +287,6 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					character_event = { id = DMCoreEvt.27 }
 					change_variable = { which = global_tombola_var value = 1 }
 					set_global_flag = DMEvent27
-				}
-				1 = {			#event 28
-					trigger = {
-						NOT = {
-							has_global_flag = DMEvent28
-						}
-					}
-					character_event = { id = DMCoreEvt.28 }
-					change_variable = { which = global_tombola_var value = 1 }
-					set_global_flag = DMEvent28
 				}
 				1 = {			#event 29
 					trigger = {
@@ -440,16 +346,6 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					change_variable = { which = global_tombola_var value = 1 }
 					set_global_flag = DMEvent34
 				}
-				1 = {			#event 35
-					trigger = {
-						NOT = {
-							has_global_flag = DMEvent35
-						}
-					}
-					character_event = { id = DMCoreEvt.35 }
-					change_variable = { which = global_tombola_var value = 1 }
-					set_global_flag = DMEvent35
-				}
 				1 = {			#event 36
 					trigger = {
 						NOT = {
@@ -489,16 +385,6 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					character_event = { id = DMCoreEvt.39 }
 					set_global_flag = DMEvent39
 				}
-				1 = {			#event 40
-					trigger = {
-						NOT = {
-							has_global_flag = DMEvent40
-						}
-					}
-					character_event = { id = DMCoreEvt.40 }
-					change_variable = { which = global_tombola_var value = 1 }
-					set_global_flag = DMEvent40
-				}
 				1 = {			#event 41
 					trigger = {
 						NOT = {
@@ -518,24 +404,6 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					character_event = { id = DMCoreEvt.42 }
 					change_variable = { which = global_tombola_var value = 1 }
 					set_global_flag = DMEvent42
-				}
-				1 = {			#event 43
-					trigger = {
-						NOT = {
-							has_global_flag = DMEvent43
-						}
-					}
-					character_event = { id = DMCoreEvt.43 }
-					set_global_flag = DMEvent43
-				}
-				1 = {			#event 44
-					trigger = {
-						NOT = {
-							has_global_flag = DMEvent44
-						}
-					}
-					character_event = { id = DMCoreEvt.44 }
-					set_global_flag = DMEvent44
 				}
 				1 = {			#event 45
 					trigger = {
@@ -636,28 +504,7 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					}
 					character_event = { id = DMCoreEvt.54 }
 					set_global_flag = DMEvent54 
-				}
-				1 = {			#event 55
-					trigger = {
-						has_dlc = "Mystics"
-						NOT = {
-							has_global_flag = DMEvent55
-						}
-					}
-					character_event = { id = DMCoreEvt.55 }
-					change_variable = { which = global_tombola_var value = 1 }
-					set_global_flag = DMEvent55
 				}				
-				1 = {			#event 56
-					trigger = {
-						has_dlc = "Mystics"
-						NOT = {
-							has_global_flag = DMEvent56
-						}
-					}
-					character_event = { id = DMCoreEvt.56 }
-					set_global_flag = DMEvent56
-				}
 				1 = {			#event 57
 					trigger = {
 						has_dlc = "Mystics"
@@ -686,15 +533,6 @@ character_event = {					#This is a system with a lot of stuff baked in, no repea
 					}
 					character_event = { id = DMCoreEvt.59 }
 					set_global_flag = DMEvent59
-				}
-				1 = {
-					trigger = {
-						NOT = {
-							has_global_flag = DMEvent60
-						}
-					}
-					character_event = { id = DMCoreEvt.60 }
-					set_global_flag = DMEvent60
 				}
 			}
 		}

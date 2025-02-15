@@ -1,25 +1,5 @@
 namespace = DMPlay
 
-character_event = {			#Pauper Mode#
-	id = DMPlay.1
-	title = DMCoreEvttitle1
-	desc = DMCoreEvtdesc1
-	picture = GFX_evt_stressed_ruler
-	
-	is_triggered_only = yes	
-
-	ai = no
-
-	option = {
-		name = DMCoreEvt1OptA
-		#clear_wealth = yes
-		scaled_wealth = -10
-		custom_tooltip = {
-			text = DMEventTooltip1
-		}	
-	}
-}
-
 character_event = {
 	id = DMPlay.2			#Lover's Lab#
 	title = DMCoreEvttitle2
@@ -170,43 +150,6 @@ long_character_event = {			#Thigh Rendering#
 				add_artifact = blackfish_scale
 			}
 			10 = { }
-		}
-	}
-}
-
-character_event = {			#Latrine Disaster#
-	id = DMPlay.9
-	title = DMCoreEvttitle9
-	desc = DMCoreEvtdesc9
-	picture = GFX_evt_plague_spreading
-	
-	is_triggered_only = yes	
-
-	ai = no
-
-	option = {
-		name = DMCoreEvt9OptA
-		custom_tooltip = {
-			text = DMEventTooltip9
-		}
-	}
-}
-
-character_event = {			#Death Note#
-	id = DMPlay.10
-	title = DMCoreEvttitle10
-	desc = DMCoreEvtdesc10
-	picture = GFX_potato_chip
-	
-	is_triggered_only = yes	
-
-	ai = no
-
-	option = {
-		name = DMCoreEvt10OptA
-		set_character_flag = deathnote
-		custom_tooltip = {
-			text = DMEventTooltip10
 		}
 	}
 }
@@ -398,34 +341,20 @@ character_event = {			#Mrs Doubtfire#
 	title = DMCoreEvttitle14
 	desc = DMCoreEvtdesc14
 	picture = GFX_evt_bad_news_female
-	
-	is_triggered_only = yes	
-
+	is_triggered_only = yes
 	ai = no
 
 	option = {
 		name = DMCoreEvt14OptA
 		set_gender = opposite
+		 any_spouse = {
+            if = {
+                limit = { gender = root }  # root = the player (after gender change)
+                set_gender = opposite     # Flip spouse's gender
+            }
+        }
 		custom_tooltip = {
 			text = DMEventTooltip14
-		}
-	}
-}
-
-character_event = {			#Religion Proven Wrong with Facts and Logic#
-	id = DMPlay.15
-	title = DMCoreEvttitle15
-	desc = DMCoreEvtdesc15
-	picture = GFX_evt_catching_heretic
-	
-	is_triggered_only = yes	
-
-	ai = no
-
-	option = {
-		name = DMCoreEvt15OptA
-		custom_tooltip = {
-			text = DMEventTooltip15
 		}
 	}
 }
@@ -447,24 +376,6 @@ character_event = {			#Battle Royale#
 		}
 		any_player = {
 			add_claim = event_target:battle_royale
-		}
-	}
-}
-
-character_event = {			#Senate - rewrite this whole event at some point#
-	id = DMPlay.17
-	title = DMCoreEvttitle17
-	desc = DMCoreEvtdesc17
-	picture = GFX_senate
-	
-	is_triggered_only = yes	
-
-	ai = no
-
-	option = {
-		name = DMCoreEvt17OptA
-		custom_tooltip = {
-			text = DMEventTooltip17
 		}
 	}
 }
@@ -628,48 +539,6 @@ character_event = {			#Trait flip#
 	}
 }
 
-narrative_event = {			#Horse Lords#
-	id = DMPlay.21
-	title = DMCoreEvttitle21
-	desc = DMCoreEvtdesc21
-	picture = GFX_evt_whispers
-	
-	is_triggered_only = yes	
-
-	ai = no
-
-	option = {
-		name = DMCoreEvt21OptA
-		any_character = {
-			limit = { 
-				has_character_flag = horse_lord
-			}
-			tooltip = { show_portrait = yes }
-		}
-		custom_tooltip = {
-			text = DMEventTooltip21
-		}
-		ROOT = {
-			job_chancellor = {
-				death = {
-					death_reason = death_execution
-					killer = event_target:horse_lord
-				}
-			}
-			random_courtier = {
-				limit = {
-					is_female = yes
-					age = 50
-				}
-				death = {
-					death_reason = death_execution
-					killer = event_target:horse_lord
-				}
-			}
-		}
-	}
-}
-
 character_event = {			#Religion Proven right with Facts and Logic#
 	id = DMPlay.22
 	title = DMCoreEvttitle22
@@ -724,81 +593,6 @@ narrative_event = {			#City of Gold!#
 	}
 }
 
-narrative_event = {			#Snap#
-	id = DMPlay.24
-	title = DMCoreEvttitle24
-	desc = DMCoreEvtdesc24
-	border = GFX_event_narrative_frame_religion
-	picture = GFX_evt_danse_macabre
-	
-	is_triggered_only = yes	
-
-	ai = no
-
-	option = {
-		name = DMCoreEvt24OptA
-		random = {
-			chance = 50
-			death = {
-				death_reason = death_snapped
-				killer = FROM
-			}
-		}
-		custom_tooltip = {
-			text = DMEventTooltip24
-		}
-	}
-}
-
-character_event = {			#Angel of Death (not the slayer song obviously it's a text document)#
-	id = DMPlay.25
-	title = DMCoreEvttitle25
-	desc = DMCoreEvtdesc25
-	picture = GFX_evt_danse_macabre
-	
-	is_triggered_only = yes	
-
-	ai = no
-
-	option = {
-		name = DMCoreEvt25OptA
-		random_child  = {
-			limit = {
-				any_sibling = {
-					NOT = {
-						is_older_than = PREV
-					}
-				}
-			}
-			death = {
-				death_reason = death_execution
-				killer = event_target:dungeon_master
-			}
-		}
-		custom_tooltip = {
-			text = DMEventTooltip25
-		}
-	}
-}
-
-narrative_event = {			#Pharoahs Return#
-	id = DMPlay.26
-	title = DMCoreEvttitle26
-	desc = DMCoreEvtdesc26
-	picture = GFX_evt_danse_macabre
-	
-	is_triggered_only = yes	
-
-	ai = no
-
-	option = {
-		name = DMCoreEvt26OptA
-		custom_tooltip = {
-			text = DMEventTooltip26
-		}
-	}
-}
-
 character_event = {			#Rings dished out#
 	id = DMPlay.27
 	title = DMCoreEvttitle27
@@ -813,24 +607,6 @@ character_event = {			#Rings dished out#
 		name = DMCoreEvt27OptA
 		custom_tooltip = {
 			text = DMEventTooltip27
-		}
-	}
-}
-
-character_event = {			#Cultural Exchange#
-	id = DMPlay.28
-	title = DMCoreEvttitle28
-	desc = DMCoreEvtdesc28
-	picture = GFX_evt_culture_change
-	
-	is_triggered_only = yes	
-
-	ai = no
-
-	option = {
-		name = DMCoreEvt28OptA
-		custom_tooltip = {
-			text = DMEventTooltip28
 		}
 	}
 }
@@ -994,34 +770,6 @@ long_character_event = {			#Get out of Jail Free#
 	}
 }
 
-character_event = {	
-	id = DMPlay.35
-	title = DMCoreEvttitle35
-	desc = DMCoreEvtdesc35
-	picture = GFX_evt_humiliation_prisoner
-	
-	is_triggered_only = yes	
-
-	ai = no
-
-	immediate = {
-		any_character = {
-			limit = {
-				prisoner = yes
-			}
-			add_rival = host
-			imprison = no
-		}
-	}
-
-	option = {
-		name = DMCoreEvt35OptA
-		custom_tooltip = {
-			text = DMEventTooltip35
-		}
-	}
-}
-
 character_event = {			#gavelkind
 	id = DMPlay.36
 	title = DMCoreEvttitle36
@@ -1046,7 +794,6 @@ character_event = {			#gavelkind
 					trait = impaler
 					trait = kinslayer
 					trait = familial_kinslayer
-					trait = dynastic_kinslayer
 					has_character_modifier = rampant_sinner_christian
 					has_character_modifier = rampant_sinner_dharmic
 					has_character_modifier = known_satanist
@@ -1229,24 +976,6 @@ character_event = {			# EU4 Dickery
 	}
 }
 
-character_event = {			#Duke nukem, all duke titles destroyed!
-	id = DMPlay.40
-	title = DMCoreEvttitle40
-	desc = DMCoreEvtdesc40
-	picture = GFX_evt_burning_castle_hf
-	
-	is_triggered_only = yes	
-
-	ai = no
-
-	option = {
-		name = DMCoreEvt40OptA
-		custom_tooltip = {
-			text = DMEventTooltip40
-		}
-	}
-}
-
 character_event = {			#Fake Genius
 	id = DMPlay.41
 	title = DMCoreEvttitle41
@@ -1273,84 +1002,17 @@ character_event = {			#Crab Rave - Cancer for all#
 	title = DMCoreEvttitle42
 	desc = DMCoreEvtdesc42
 	picture = GFX_evt_bring_out_your_dead
-	
 	is_triggered_only = yes	
-
 	ai = no
 
 	option = {
 		name = DMCoreEvt42OptA
-		add_trait = cancer
+        if = { # 20% chance for the PLAYER to get cancer
+            limit = { random = 20 }  # 20% chance
+            add_trait = cancer
+        }
 		custom_tooltip = {
 			text = DMEventTooltip42
-		}
-	}
-}
-
-character_event = {			#Children will inherit the earth#
-	id = DMPlay.43
-	title = DMCoreEvttitle43
-	desc = DMCoreEvtdesc43
-	picture = GFX_evt_childrens_crusade
-	
-	is_triggered_only = yes	
-
-	ai = no
-
-	immediate = {
-		if = {
-			limit = {
-				current_heir = {
-					dynasty = ROOT
-					age < 12
-				}
-			}
-			death = {
-				death_reason = death_missing
-				killer = FROM
-			}
-		}
-		else = {
-			set_variable = { # Clearing out previous variables
-            which = ending_age
-            value = 0
-			}
-			export_to_variable = {
-				which = current_age
-				value = age
-			}
-			subtract_variable = {
-				which = ending_age
-				which = current_age
-			}
-			add_age = ending_age
-			add_age = 12
-			clear_education_trait = yes
-		}
-	}
-
-	option = {
-		name = DMCoreEvt43OptA
-		custom_tooltip = {
-			text = DMEventTooltip43
-		}
-	}
-}
-
-character_event = {			#Wyvernballs Land#
-	id = DMPlay.44
-	title = DMCoreEvttitle44
-	desc = DMCoreEvtdesc44
-	picture = GFX_wyvernballs_land
-	
-	is_triggered_only = yes	
-
-	ai = no
-
-	option = {
-		name = DMCoreEvt44OptA
-		custom_tooltip = {
-			text = DMEventTooltip44
 		}
 	}
 }
@@ -1806,38 +1468,6 @@ narrative_event = {			# 5G Unleashed
 	}
 }
 
-character_event = {			# Inept Tea
-	id = DMPlay.55
-	offmap = allow
-	title = DMCoreEvttitle55
-	desc = DMCoreEvtdesc55
-	picture = GFX_evt_lunatic
-	is_triggered_only = yes	
-	
-	option = {
-		name = DMCoreEvtdesc55TTA
-		scaled_wealth = -5
-		add_artifact = dm_inept_tea
-	}
-}
-
-character_event = {			# It Belongs In A Museum
-	id = DMPlay.56
-	offmap = allow
-	title = DMCoreEvttitle56
-	desc = DMCoreEvtdesc56
-	picture = GFX_evt_council_speaker
-	is_triggered_only = yes	
-	
-	option = {
-		name = DMCoreEvtdesc56TTA
-		add_artifact = dm_fedora
-		custom_tooltip = {
-			text = DMCoreEvtdesc56TTACustom
-		}
-	}
-}
-
 character_event = {			# For Whom The Horn Doots
 	id = DMPlay.57
 	offmap = allow
@@ -1915,43 +1545,6 @@ character_event = {			# Rabies
 		name = DMCoreEvtdesc59TTB
 		trigger = {
 			dm_has_dog = no
-		}
-	}
-}
-
-character_event = {		# Ruina Imperii
-	id = DMPlay.60
-	offmap = allow
-	title = DMCoreEvttitle60
-	desc = DMCoreEvtdesc60
-	picture = GFX_evt_lunatic
-	is_triggered_only = yes	
-	option = {
-		name = {
-			trigger = {
-				has_character_flag = dm_got_wrecked_lol
-			}
-			text = DMCoreEvtdesc60TTA
-		}
-		name = {
-			trigger = {
-				NOT = { has_character_flag = dm_got_wrecked_lol }
-			}
-			text = DMCoreEvtdesc60TTB
-		}
-		if = {
-			limit = {
-				has_character_flag = dm_got_wrecked_lol
-			}
-			custom_tooltip = {
-				text = DMCoreEvtdesc60TTCustomWrecked
-				clr_character_flag = dm_got_wrecked_lol
-			}
-		}
-		else = {
-			custom_tooltip = {
-				text = DMCoreEvtdesc60TTCustom
-			}
 		}
 	}
 }
