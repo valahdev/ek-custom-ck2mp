@@ -133,20 +133,6 @@ character_event = {
 #
 
 character_event = {
-	id = dmdebug.1
-	hide_window = yes
-	is_triggered_only = yes
-	offmap = allow
-	immediate = {
-		offmap_dungeon_master = {
-			offmap_ruler = {
-				character_event = { id = DMCoreEvt.1 }
-			}
-		}
-	}
-}
-
-character_event = {
 	id = dmdebug.2
 	hide_window = yes
 	is_triggered_only = yes
@@ -245,34 +231,6 @@ character_event = {
 }
 
 character_event = {
-	id = dmdebug.9
-	hide_window = yes
-	is_triggered_only = yes
-	offmap = allow
-	immediate = {
-		offmap_dungeon_master = {
-			offmap_ruler = {
-				character_event = { id = DMCoreEvt.9 }
-			}
-		}
-	}
-}
-
-character_event = {
-	id = dmdebug.10
-	hide_window = yes
-	is_triggered_only = yes
-	offmap = allow
-	immediate = {
-		offmap_dungeon_master = {
-			offmap_ruler = {
-				character_event = { id = DMCoreEvt.10 }
-			}
-		}
-	}
-}
-
-character_event = {
 	id = dmdebug.11
 	hide_window = yes
 	is_triggered_only = yes
@@ -329,20 +287,6 @@ character_event = {
 }
 
 character_event = {
-	id = dmdebug.15
-	hide_window = yes
-	is_triggered_only = yes
-	offmap = allow
-	immediate = {
-		offmap_dungeon_master = {
-			offmap_ruler = {
-				character_event = { id = DMCoreEvt.15 }
-			}
-		}
-	}
-}
-
-character_event = {
 	id = dmdebug.16
 	hide_window = yes
 	is_triggered_only = yes
@@ -351,20 +295,6 @@ character_event = {
 		offmap_dungeon_master = {
 			offmap_ruler = {
 				character_event = { id = DMCoreEvt.16 }
-			}
-		}
-	}
-}
-
-character_event = {
-	id = dmdebug.17
-	hide_window = yes
-	is_triggered_only = yes
-	offmap = allow
-	immediate = {
-		offmap_dungeon_master = {
-			offmap_ruler = {
-				character_event = { id = DMCoreEvt.17 }
 			}
 		}
 	}
@@ -413,20 +343,6 @@ character_event = {
 }
 
 character_event = {
-	id = dmdebug.21
-	hide_window = yes
-	is_triggered_only = yes
-	offmap = allow
-	immediate = {
-		offmap_dungeon_master = {
-			offmap_ruler = {
-				character_event = { id = DMCoreEvt.21 }
-			}
-		}
-	}
-}
-
-character_event = {
 	id = dmdebug.22
 	hide_window = yes
 	is_triggered_only = yes
@@ -455,48 +371,6 @@ character_event = {
 }
 
 character_event = {
-	id = dmdebug.24
-	hide_window = yes
-	is_triggered_only = yes
-	offmap = allow
-	immediate = {
-		offmap_dungeon_master = {
-			offmap_ruler = {
-				character_event = { id = DMCoreEvt.24 }
-			}
-		}
-	}
-}
-
-character_event = {
-	id = dmdebug.25
-	hide_window = yes
-	is_triggered_only = yes
-	offmap = allow
-	immediate = {
-		offmap_dungeon_master = {
-			offmap_ruler = {
-				character_event = { id = DMCoreEvt.25 }
-			}
-		}
-	}
-}
-
-character_event = {
-	id = dmdebug.26
-	hide_window = yes
-	is_triggered_only = yes
-	offmap = allow
-	immediate = {
-		offmap_dungeon_master = {
-			offmap_ruler = {
-				character_event = { id = DMCoreEvt.26 }
-			}
-		}
-	}
-}
-
-character_event = {
 	id = dmdebug.27
 	hide_window = yes
 	is_triggered_only = yes
@@ -505,20 +379,6 @@ character_event = {
 		offmap_dungeon_master = {
 			offmap_ruler = {
 				character_event = { id = DMCoreEvt.27 }
-			}
-		}
-	}
-}
-
-character_event = {
-	id = dmdebug.28
-	hide_window = yes
-	is_triggered_only = yes
-	offmap = allow
-	immediate = {
-		offmap_dungeon_master = {
-			offmap_ruler = {
-				character_event = { id = DMCoreEvt.28 }
 			}
 		}
 	}
@@ -609,20 +469,6 @@ character_event = {
 }
 
 character_event = {
-	id = dmdebug.35
-	hide_window = yes
-	is_triggered_only = yes
-	offmap = allow
-	immediate = {
-		offmap_dungeon_master = {
-			offmap_ruler = {
-				character_event = { id = DMCoreEvt.35 }
-			}
-		}
-	}
-}
-
-character_event = {
 	id = dmdebug.36
 	hide_window = yes
 	is_triggered_only = yes
@@ -679,20 +525,6 @@ character_event = {
 }
 
 character_event = {
-	id = dmdebug.40
-	hide_window = yes
-	is_triggered_only = yes
-	offmap = allow
-	immediate = {
-		offmap_dungeon_master = {
-			offmap_ruler = {
-				character_event = { id = DMCoreEvt.40 }
-			}
-		}
-	}
-}
-
-character_event = {
 	id = dmdebug.41
 	hide_window = yes
 	is_triggered_only = yes
@@ -715,34 +547,6 @@ character_event = {
 		offmap_dungeon_master = {
 			offmap_ruler = {
 				character_event = { id = DMCoreEvt.42 }
-			}
-		}
-	}
-}
-
-character_event = {
-	id = dmdebug.43
-	hide_window = yes
-	is_triggered_only = yes
-	offmap = allow
-	immediate = {
-		offmap_dungeon_master = {
-			offmap_ruler = {
-				character_event = { id = DMCoreEvt.43 }
-			}
-		}
-	}
-}
-
-character_event = {
-	id = dmdebug.44
-	hide_window = yes
-	is_triggered_only = yes
-	offmap = allow
-	immediate = {
-		offmap_dungeon_master = {
-			offmap_ruler = {
-				character_event = { id = DMCoreEvt.44 }
 			}
 		}
 	}
@@ -889,34 +693,6 @@ character_event = {
 }
 
 character_event = {
-	id = dmdebug.55
-	hide_window = yes
-	is_triggered_only = yes
-	offmap = allow
-	immediate = {
-		offmap_dungeon_master = {
-			offmap_ruler = {
-				character_event = { id = DMCoreEvt.55 }
-			}
-		}
-	}
-}
-
-character_event = {
-	id = dmdebug.56
-	hide_window = yes
-	is_triggered_only = yes
-	offmap = allow
-	immediate = {
-		offmap_dungeon_master = {
-			offmap_ruler = {
-				character_event = { id = DMCoreEvt.56 }
-			}
-		}
-	}
-}
-
-character_event = {
 	id = dmdebug.57
 	hide_window = yes
 	is_triggered_only = yes
@@ -953,20 +729,6 @@ character_event = {
 		offmap_dungeon_master = {
 			offmap_ruler = {
 				character_event = { id = DMCoreEvt.59 }
-			}
-		}
-	}
-}
-
-character_event = {
-	id = dmdebug.60
-	hide_window = yes
-	is_triggered_only = yes
-	offmap = allow
-	immediate = {
-		offmap_dungeon_master = {
-			offmap_ruler = {
-				character_event = { id = DMCoreEvt.60 }
 			}
 		}
 	}

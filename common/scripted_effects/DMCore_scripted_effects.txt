@@ -112,7 +112,7 @@ dm_duplicate_check = {			#holds events in storage so they can't be reused too so
 	}
 }
 
-dm_flag_clear = {
+dm_flag_clear = { #TODO - edit this section to remove the flags for events that no longer exist
 	clr_global_flag = DMEvent1
 	clr_global_flag = DMEvent2
 	clr_global_flag = DMEvent3
@@ -697,94 +697,6 @@ unleash_the_joris = {
 			recalc_succession = yes
 		}
 		abdicate_to = event_target:perfectly_normal
-	}
-}
-
-dm_belongs_in_a_museum = {
-	any_character = {
-		limit = {
-			trait = dungeon_master
-			e_dungeon_master_governor = {
-				owner = {
-					character = PREVPREV
-				}
-			}
-		}
-		save_event_target_as = dungeon_master
-	}
-	any_playable_ruler = {
-		limit = {
-			any_artifact = {
-				count >= 2
-				quality >= 5
-				NOR = {
-					has_artifact_flag = cursed
-					has_artifact_flag = irae	# House Irae compatibility
-					# has_artifact_flag = XXX	# Add more flag conditions if needed
-				}
-			}
-		}
-		while = {
-			limit = {
-				any_artifact = {
-					count >= 2
-					limit = {
-						quality >= 5
-						NOR = {
-							has_artifact_flag = cursed
-							has_artifact_flag = irae	# House Irae compatibility
-							# has_artifact_flag = XXX	# Add more flag conditions if needed
-						}
-					}
-				}
-			}
-			random_artifact = {
-				limit = {
-					quality >= 5
-					NOR = {
-						has_artifact_flag = cursed
-						has_artifact_flag = irae	# House Irae compatibility
-						# has_artifact_flag = XXX	# Add more flag conditions if needed
-					}
-				}
-				random_list = {
-					95 = {
-						transfer_artifact = {
-							from = PREV
-							to = event_target:dungeon_master
-						}
-					}
-					5 = {
-						random_list = {
-							10 = {
-								random_player = {
-									save_event_target_as = dungeon_master_oopsy
-								}
-								transfer_artifact = {
-									from = PREV
-									to = event_target:dungeon_master_oopsy
-								}
-								event_target:dungeon_master_oopsy = {
-									clear_event_target = dungeon_master_oopsy
-								}
-							}
-							90 = {		
-								random_playable_ruler = {
-									save_event_target_as = dungeon_master_oopsy
-								}
-								transfer_artifact = {
-									from = PREV
-									to = event_target:dungeon_master_oopsy
-								}
-								event_target:dungeon_master_oopsy = {
-									clear_event_target = dungeon_master_oopsy
-								}
-							}
-						}
-					}
-				}
-			}
-		}
 	}
 }
 
