@@ -2,30 +2,30 @@ namespace = DMCoreEvt
 
 
 character_event = {
-	id = DMCoreEvt.2			#Lover's Lab# 
-	title = DMCoreEvttitle2
-	desc = DMCoreEvtdesc2
+	id = DMCoreEvt.1			#Lover's Lab# 
+	title = DMCoreEvttitle1
+	desc = DMCoreEvtdesc1
 	picture = GFX_evt_lovers
 	offmap = allow
 	
 	is_triggered_only = yes	
 
 	option = {
-		name = DMCoreEvt2OptA
+		name = DMCoreEvt1OptA
 		any_playable_ruler = {
 			add_trait = lustful
 			add_trait = hedonist
 		}
 		any_player = {
-			character_event = { id = DMPlay.2 }
+			character_event = { id = DMPlay.1 }
 		}	
 	}
 }
 
 character_event = {
-	id = DMCoreEvt.3			#Father to All#
-	title = DMCoreEvttitle3
-	desc = DMCoreEvtdesc3
+	id = DMCoreEvt.2			#Father to All#
+	title = DMCoreEvttitle2
+	desc = DMCoreEvtdesc2
 	picture = GFX_evt_pregnancy
 	offmap = allow
 	
@@ -49,7 +49,7 @@ character_event = {
 	}
 
 	option = {
-		name = DMCoreEvt3OptA
+		name = DMCoreEvt2OptA
 		while = {
 			count = 30
 			random_character = {
@@ -72,15 +72,15 @@ character_event = {
 			}
 		}
 		any_player = {
-			character_event = { id = DMPlay.3 }
+			character_event = { id = DMPlay.2 }
 		}
 	}
 }
 
 character_event = {
-	id = DMCoreEvt.4			#Rise of the Immortals#
-	title = DMCoreEvttitle4
-	desc = DMCoreEvtdesc4
+	id = DMCoreEvt.3			#Rise of the Immortals#
+	title = DMCoreEvttitle3
+	desc = DMCoreEvtdesc3
 	picture = GFX_evt_comet
 	offmap = allow
 	
@@ -199,17 +199,17 @@ character_event = {
 	}
 
 	option = {
-		name = DMCoreEvt4OptA
+		name = DMCoreEvt3OptA
 		any_player = {
-			character_event = { id = DMPlay.4 }
+			character_event = { id = DMPlay.3 }
 		}
 	}
 }
 
-character_event = {			#Happy Birthday - credit to Big_Weeb#
-	id = DMCoreEvt.5
-	title = DMCoreEvttitle5
-	desc = DMCoreEvtdesc5
+character_event = {			#4 Happy Birthday - credit to Big_Weeb#
+	id = DMCoreEvt.4
+	title = DMCoreEvttitle4
+	desc = DMCoreEvtdesc4
 	picture = GFX_evt_guardian
 	offmap = allow
 	
@@ -254,17 +254,17 @@ character_event = {			#Happy Birthday - credit to Big_Weeb#
 	}
 
 	option = {
-		name = DMCoreEvt5OptA
+		name = DMCoreEvt4OptA
 		any_player = {
-			character_event = { id = DMPlay.5 }
+			character_event = { id = DMPlay.4 }
 		}
 	}
 }
 
-character_event = {			#Purge - Credit to Slippy Nips#
-	id = DMCoreEvt.6
-	title = DMCoreEvttitle6
-	desc = DMCoreEvtdesc6
+character_event = {			#5 Purge - Credit to Slippy Nips#
+	id = DMCoreEvt.5
+	title = DMCoreEvttitle5
+	desc = DMCoreEvtdesc5
 	picture = GFX_evt_hiding_from_pursuers
 	offmap = allow
 	
@@ -280,17 +280,17 @@ character_event = {			#Purge - Credit to Slippy Nips#
 	}
 
 	option = {
-		name = DMCoreEvt6OptA
+		name = DMCoreEvt5OptA
 		any_player = {
-			character_event = { id = DMPlay.6 }
+			character_event = { id = DMPlay.5 }
 		}
 	}
 }
 
-character_event = {			#Dwarf Fortress - Dante Mordicain#
-	id = DMCoreEvt.7
-	title = DMCoreEvttitle7
-	desc = DMCoreEvtdesc7
+character_event = {			#6 Dwarf Fortress - Dante Mordicain#
+	id = DMCoreEvt.6
+	title = DMCoreEvttitle6
+	desc = DMCoreEvtdesc6
 	picture = GFX_evt_magnificent_castle
 	offmap = allow
 	
@@ -328,24 +328,24 @@ character_event = {			#Dwarf Fortress - Dante Mordicain#
 	}
 
 	option = {
-		name = DMCoreEvt7OptA
+		name = DMCoreEvt6OptA
 		any_player = {
-			character_event = { id = DMPlay.7 }
+			character_event = { id = DMPlay.6 }
 		}
 	}
 }
 
-character_event = {			#Thigh Rendering#
-	id = DMCoreEvt.8
-	title = DMCoreEvttitle8
-	desc = DMCoreEvtdesc8
+character_event = {			#7 Thigh Rendering#
+	id = DMCoreEvt.7
+	title = DMCoreEvttitle7
+	desc = DMCoreEvtdesc7
 	picture = GFX_evt_mysterious_forest
 	offmap = allow
 	
 	is_triggered_only = yes	
 
 	option = {
-		name = DMCoreEvt8OptA
+		name = DMCoreEvt7OptA
 		while = {
 			count = 20
 			any_playable_ruler = {
@@ -367,49 +367,49 @@ character_event = {			#Thigh Rendering#
 			}
 		}
 		any_player = {
-			character_event = { id = DMPlay.8 }
+			character_event = { id = DMPlay.7 }
 		}
 	}
 }
 
-character_event = {			#Matters of Life and Death..?#
-	id = DMCoreEvt.11
-	title = DMCoreEvttitle11
-	desc = DMCoreEvtdesc11
+character_event = {			#8 Matters of Life and Death..?#
+	id = DMCoreEvt.8
+	title = DMCoreEvttitle8
+	desc = DMCoreEvtdesc8
 	picture = GFX_evt_state_diplomacy
 	offmap = allow
 	
 	is_triggered_only = yes	
 
 	option = {
-		name = DMCoreEvt11OptA
+		name = DMCoreEvt8OptA
 		any_player = {
-			character_event = { id = DMPlay.11 days = 500 random = 500 }
+			character_event = { id = DMPlay.8 days = 500 random = 500 }
 		}
 	}
 }
 
-character_event = {			#Potion Seller#
-	id = DMCoreEvt.12
-	title = DMCoreEvttitle12
-	desc = DMCoreEvtdesc12
+character_event = {			#9 Potion Seller#
+	id = DMCoreEvt.9
+	title = DMCoreEvttitle9
+	desc = DMCoreEvtdesc9
 	picture = GFX_potion_seller
 	offmap = allow
 	
 	is_triggered_only = yes	
 
 	option = {
-		name = DMCoreEvt12OptA
+		name = DMCoreEvt9OptA
 		any_player = {
-			character_event = { id = DMPlay.12 }
+			character_event = { id = DMPlay.9 }
 		}
 	}
 }
 
-character_event = {			#Second Education#
-	id = DMCoreEvt.13
-	title = DMCoreEvttitle13
-	desc = DMCoreEvtdesc13
+character_event = {			#10 Second Education#
+	id = DMCoreEvt.10
+	title = DMCoreEvttitle10
+	desc = DMCoreEvtdesc10
 	picture = GFX_evt_stressed_ruler
 	offmap = allow
 	
@@ -560,17 +560,17 @@ character_event = {			#Second Education#
 	}
 
 	option = {
-		name = DMCoreEvt13OptA
+		name = DMCoreEvt10OptA
 		any_player = {
-			character_event = { id = DMPlay.13 }
+			character_event = { id = DMPlay.10 }
 		}
 	}
 }
 
 character_event = {			#Mrs Doubtfire#
-	id = DMCoreEvt.14
-	title = DMCoreEvttitle14
-	desc = DMCoreEvtdesc14
+	id = DMCoreEvt.11
+	title = DMCoreEvttitle11
+	desc = DMCoreEvtdesc11
 	picture = GFX_evt_bad_news_female
 	offmap = allow
 	is_triggered_only = yes	
@@ -578,43 +578,39 @@ character_event = {			#Mrs Doubtfire#
 	immediate = {
 		any_playable_ruler = {
 			limit = {
-				age = 16
+				NOT = { age < 16 }
 				ai = yes
+				is_ruler = yes
 			}
-			set_gender = opposite
-			any_spouse = {
-                if = {
-                    limit = { gender = root }  # root = the AI ruler (after gender change)
-                    set_gender = opposite       # Flip spouse's gender
-                }
-            }
-            # Existing logic for homosexual trait
-            if = {
-                limit = { trait = homosexual }
-                remove_trait = homosexual
-                set_character_flag = previously_homosexual
-            }
-            if = {
-                limit = { has_character_flag = previously_homosexual }
-                add_trait = homosexual
-                clr_character_flag = previously_homosexual
+			 any_spouse = { set_gender = opposite }
+			 set_gender = opposite
+			 if = {
+				limit = { trait = homosexual }
+				remove_trait = homosexual
+				set_character_flag = previously_homosexual
 				}
+			if = {
+				limit = { has_character_flag = previously_homosexual }
+				add_trait = homosexual
+				clr_character_flag = previously_homosexual
 			}
+			add_character_modifier = { name = debug_event_fired duration = 365 }
+			set_nickname = "DEBUG: Event Executed"
 		}
 	}
-
+	
 	option = {
-		name = DMCoreEvt14OptA
+		name = DMCoreEvt11OptA
 		any_player = {
-			character_event = { id = DMPlay.14 }
+			character_event = { id = DMPlay.11 }
 		}
 	}
 }
 
 character_event = {			#Battle Royale#
-	id = DMCoreEvt.16
-	title = DMCoreEvttitle16
-	desc = DMCoreEvtdesc16
+	id = DMCoreEvt.12
+	title = DMCoreEvttitle12
+	desc = DMCoreEvtdesc12
 	picture = GFX_evt_battle
 	offmap = allow
 	
@@ -630,24 +626,24 @@ character_event = {			#Battle Royale#
 	}
 
 	option = {
-		name = DMCoreEvt16OptA
+		name = DMCoreEvt12OptA
 		custom_tooltip = {
-			text = DMEventTooltip16
+			text = DMEventTooltip12
 		}
 		any_playable_ruler = {
 			add_claim = event_target:battle_royale
 		}
 		any_player = {
-			character_event = { id = DMPlay.16 }
+			character_event = { id = DMPlay.12 }
 		}
 		character_event = { id = DMCoreFollow.3 days = 1825 }		#event end
 	}
 }
 
 character_event = {			#Capital Swap#
-	id = DMCoreEvt.18
-	title = DMCoreEvttitle18
-	desc = DMCoreEvtdesc18
+	id = DMCoreEvt.13
+	title = DMCoreEvttitle13
+	desc = DMCoreEvtdesc13
 	picture = GFX_evt_battle
 	offmap = allow
 	
@@ -682,17 +678,17 @@ character_event = {			#Capital Swap#
 	}
 
 	option = {
-		name = DMCoreEvt18OptA
+		name = DMCoreEvt13OptA
 		any_player = {
-			character_event = { id = DMPlay.18 }
+			character_event = { id = DMPlay.13 }
 		}
 	}
 }
 
 character_event = {			#Friends in low places#
-	id = DMCoreEvt.19
-	title = DMCoreEvttitle19
-	desc = DMCoreEvtdesc19
+	id = DMCoreEvt.14
+	title = DMCoreEvttitle14
+	desc = DMCoreEvtdesc14
 	picture = GFX_potion_seller
 	offmap = allow
 	
@@ -746,17 +742,17 @@ character_event = {			#Friends in low places#
 	}
 
 	option = {
-		name = DMCoreEvt19OptA
+		name = DMCoreEvt14OptA
 		any_player = {
-			character_event = { id = DMPlay.19 }
+			character_event = { id = DMPlay.14 }
 		}
 	}
 }
 
 character_event = {			#Trait flip#
-	id = DMCoreEvt.20
-	title = DMCoreEvttitle20
-	desc = DMCoreEvtdesc20
+	id = DMCoreEvt.15
+	title = DMCoreEvttitle15
+	desc = DMCoreEvtdesc15
 	picture = GFX_evt_jugglers
 	offmap = allow
 	
@@ -878,17 +874,17 @@ character_event = {			#Trait flip#
 	}
 
 	option = {
-		name = DMCoreEvt20OptA
+		name = DMCoreEvt15OptA
 		any_player = {
-			character_event = { id = DMPlay.20 }
+			character_event = { id = DMPlay.15 }
 		}
 	}
 }
 
 character_event = {			#Religion Proven Right with Facts and Logic#
-	id = DMCoreEvt.22
-	title = DMCoreEvttitle22
-	desc = DMCoreEvtdesc22
+	id = DMCoreEvt.16
+	title = DMCoreEvttitle16
+	desc = DMCoreEvtdesc16
 	picture = GFX_evt_catching_heretic
 	offmap = allow
 	
@@ -1753,17 +1749,17 @@ character_event = {			#Religion Proven Right with Facts and Logic#
 	}
 
 	option = {
-		name = DMCoreEvt22OptA
+		name = DMCoreEvt16OptA
 		any_player = {
-			character_event = { id = DMPlay.22 }
+			character_event = { id = DMPlay.16 }
 		}
 	}
 }
 
 character_event = {			#City of Gold!#
-	id = DMCoreEvt.23
-	title = DMCoreEvttitle23
-	desc = DMCoreEvtdesc23
+	id = DMCoreEvt.17
+	title = DMCoreEvttitle17
+	desc = DMCoreEvtdesc17
 	picture = GFX_evt_mysterious_forest
 	offmap = allow
 	
@@ -1789,24 +1785,24 @@ character_event = {			#City of Gold!#
 	}
 
 	option = {
-		name = DMCoreEvt23OptA
+		name = DMCoreEvt17OptA
 		any_player = {
-			narrative_event = { id = DMPlay.23 }
+			narrative_event = { id = DMPlay.17 }
 		}
 	}
 }
 
 character_event = {			#Cursed Rings#
-	id = DMCoreEvt.27
-	title = DMCoreEvttitle27
-	desc = DMCoreEvtdesc27
+	id = DMCoreEvt.18
+	title = DMCoreEvttitle18
+	desc = DMCoreEvtdesc18
 	picture = GFX_evt_mysterious_forest
 	offmap = allow
 	
 	is_triggered_only = yes	
 
 	option = {
-		name = DMCoreEvt27OptA
+		name = DMCoreEvt18OptA
 		e_dungeon_master_governor = {
 			holder_scope = {
 				add_artifact = cursed_ring_of_one
@@ -1839,15 +1835,15 @@ character_event = {			#Cursed Rings#
 			}
 		}
 		any_player = {
-			character_event = { id = DMPlay.27 }
+			character_event = { id = DMPlay.18 }
 		}
 	}
 }
 
 character_event = {			#Religious Tomfoolery#
-	id = DMCoreEvt.29
-	title = DMCoreEvttitle29
-	desc = DMCoreEvtdesc29
+	id = DMCoreEvt.19
+	title = DMCoreEvttitle19
+	desc = DMCoreEvtdesc19
 	picture = GFX_evt_mysterious_forest
 	offmap = allow
 	
@@ -1873,17 +1869,17 @@ character_event = {			#Religious Tomfoolery#
 	}
 
 	option = {
-		name = DMCoreEvt29OptA
+		name = DMCoreEvt19OptA
 		any_player = {
-			character_event = { id = DMPlay.29 }
+			character_event = { id = DMPlay.19 }
 		}
 	}
 }
 
 character_event = {			#Reverse Byzantine, stable empire#
-	id = DMCoreEvt.30
-	title = DMCoreEvttitle30
-	desc = DMCoreEvtdesc30
+	id = DMCoreEvt.20
+	title = DMCoreEvttitle20
+	desc = DMCoreEvtdesc20
 	picture = GFX_evt_mysterious_forest
 	offmap = allow
 	
@@ -1916,17 +1912,17 @@ character_event = {			#Reverse Byzantine, stable empire#
 	}
 
 	option = {
-		name = DMCoreEvt30OptA
+		name = DMCoreEvt20OptA
 		any_player = {
-			character_event = { id = DMPlay.30 }
+			character_event = { id = DMPlay.20 }
 		}
 	}
 }
 
 character_event = {			#Perfectly Normal Men#
-	id = DMCoreEvt.31
-	title = DMCoreEvttitle31
-	desc = DMCoreEvtdesc31
+	id = DMCoreEvt.21
+	title = DMCoreEvttitle21
+	desc = DMCoreEvtdesc21
 	picture = GFX_evt_mysterious_forest
 	offmap = allow
 	
@@ -1967,17 +1963,17 @@ character_event = {			#Perfectly Normal Men#
 	}
 
 	option = {
-		name = DMCoreEvt31OptA
+		name = DMCoreEvt21OptA
 		any_player = {
-			long_character_event = { id = DMPlay.31 }
+			long_character_event = { id = DMPlay.21 }
 		}
 	}
 }
 
 character_event = {			#Fountain of Youth#
-	id = DMCoreEvt.32
-	title = DMCoreEvttitle32
-	desc = DMCoreEvtdesc32
+	id = DMCoreEvt.22
+	title = DMCoreEvttitle22
+	desc = DMCoreEvtdesc22
 	picture = GFX_evt_mysterious_forest
 	offmap = allow
 	
@@ -2001,17 +1997,17 @@ character_event = {			#Fountain of Youth#
 	}
 
 	option = {
-		name = DMCoreEvt32OptA
+		name = DMCoreEvt22OptA
 		any_player = {
-			narrative_event = { id = DMPlay.32 }
+			narrative_event = { id = DMPlay.22 }
 		}
 	}
 }
 
 narrative_event = {			#Gary#
-	id = DMCoreEvt.33
-	title = DMCoreEvttitle33
-	desc = DMCoreEvtdesc33
+	id = DMCoreEvt.23
+	title = DMCoreEvttitle23
+	desc = DMCoreEvtdesc23
 	picture = GFX_evt_battle
 	offmap = allow
 	
@@ -2146,17 +2142,17 @@ narrative_event = {			#Gary#
 	}
 
 	option = {
-		name = DMCoreEvt33OptA
+		name = DMCoreEvt23OptA
 		any_player = {
-			narrative_event = { id = DMPlay.33 }
+			narrative_event = { id = DMPlay.23 }
 		}
 	}
 }
 
 character_event = {			#Get out of jail free card#
-	id = DMCoreEvt.34
-	title = DMCoreEvttitle34
-	desc = DMCoreEvtdesc34
+	id = DMCoreEvt.24 
+	title = DMCoreEvttitle24 
+	desc = DMCoreEvtdesc24 
 	picture = GFX_potato_chip
 	offmap = allow
 	
@@ -2169,17 +2165,17 @@ character_event = {			#Get out of jail free card#
 	}
 
 	option = {
-		name = DMCoreEvt34OptA
+		name = DMCoreEvt24OptA
 		any_player = {
-			long_character_event = { id = DMPlay.34 }
+			long_character_event = { id = DMPlay.24 }
 		}
 	}
 }
 
 character_event = {			#Gavelkind#
-	id = DMCoreEvt.36
-	title = DMCoreEvttitle36
-	desc = DMCoreEvtdesc36
+	id = DMCoreEvt.25
+	title = DMCoreEvttitle25
+	desc = DMCoreEvtdesc25
 	picture = GFX_potato_chips
 	offmap = allow
 	
@@ -2211,17 +2207,17 @@ character_event = {			#Gavelkind#
 	}
 
 	option = {
-		name = DMCoreEvt36OptA
+		name = DMCoreEvt25OptA
 		any_player = {
-			character_event = { id = DMPlay.36 }
+			character_event = { id = DMPlay.25 }
 		}
 	}
 }
 
 character_event = {			#Spa Day#
-	id = DMCoreEvt.37
-	title = DMCoreEvttitle37
-	desc = DMCoreEvtdesc37
+	id = DMCoreEvt.26
+	title = DMCoreEvttitle26
+	desc = DMCoreEvtdesc26
 	picture = GFX_potato_chips
 	offmap = allow
 	
@@ -2250,17 +2246,17 @@ character_event = {			#Spa Day#
 	}
 
 	option = {
-		name = DMCoreEvt37OptA
+		name = DMCoreEvt26OptA
 		any_player = {
-			character_event = { id = DMPlay.37 }
+			character_event = { id = DMPlay.26 }
 		}
 	}
 }
 
 character_event = {			#Bob Ross#
-	id = DMCoreEvt.38
-	title = DMCoreEvttitle38
-	desc = DMCoreEvtdesc38
+	id = DMCoreEvt.27
+	title = DMCoreEvttitle27
+	desc = DMCoreEvtdesc27
 	picture = GFX_evt_council_speaker
 	offmap = allow
 	
@@ -2313,33 +2309,53 @@ character_event = {			#Bob Ross#
 	}
 
 	option = {
-		name = DMCoreEvt38OptA
+		name = DMCoreEvt27OptA
 		any_player = {
-			character_event = { id = DMPlay.38 }
+			character_event = { id = DMPlay.27 }
 		}
 	}
 }
 
 character_event = {			#EU4#
-	id = DMCoreEvt.39
-	title = DMCoreEvttitle39
-	desc = DMCoreEvtdesc39
+	id = DMCoreEvt.28
+	title = DMCoreEvttitle28
+	desc = DMCoreEvtdesc28
 	picture = GFX_evt_comet
 	is_triggered_only = yes	
 	offmap = allow
 
+	immediate = {
+		any_independent_ruler = {
+			limit = { ai = yes }
+			random_list = {
+				33 = {
+					current_heir = {
+						death = { death_reason = death_accident }
+					}
+				}
+				33 = {
+					current_heir = {
+						add_trait = severely_injured
+					}
+				}
+				34 = { #Does nothing
+				}
+			}
+		}
+	}
+
 	option = {
-		name = DMCoreEvt39OptA
+		name = DMCoreEvt28OptA
 		any_player = {
-			character_event = { id = DMPlay.39 }
+			character_event = { id = DMPlay.28 }
 		}
 	}
 }
 
 character_event = {			#Genius...?#
-	id = DMCoreEvt.41
-	title = DMCoreEvttitle41
-	desc = DMCoreEvtdesc41
+	id = DMCoreEvt.29
+	title = DMCoreEvttitle29
+	desc = DMCoreEvtdesc29
 	picture = GFX_evt_comet
 	is_triggered_only = yes	
 	offmap = allow`
@@ -2354,17 +2370,17 @@ character_event = {			#Genius...?#
 	}
 
 	option = {
-		name = DMCoreEvt41OptA
+		name = DMCoreEvt29OptA
 		any_player = {
-			character_event = { id = DMPlay.41 }
+			character_event = { id = DMPlay.29 }
 		}
 	}
 }
 
 character_event = {			#Crab Rave - Cancer for all#
-	id = DMCoreEvt.42
-	title = DMCoreEvttitle42
-	desc = DMCoreEvtdesc42
+	id = DMCoreEvt.30
+	title = DMCoreEvttitle30
+	desc = DMCoreEvtdesc30
 	picture = GFX_evt_comet
 	is_triggered_only = yes	
 	offmap = allow
@@ -2392,17 +2408,17 @@ character_event = {			#Crab Rave - Cancer for all#
 	}
 
 	option = {
-		name = DMCoreEvt42OptA
+		name = DMCoreEvt30OptA
 		any_player = {
-			character_event = { id = DMPlay.42 }
+			character_event = { id = DMPlay.30 }
 		}
 	}
 }
 
 character_event = {			#Marks and Angels#
-	id = DMCoreEvt.45
-	title = DMCoreEvttitle45
-	desc = DMCoreEvtdesc45
+	id = DMCoreEvt.31
+	title = DMCoreEvttitle31
+	desc = DMCoreEvtdesc31
 	picture = GFX_evt_comet
 	is_triggered_only = yes	
 	offmap = allow
@@ -2418,17 +2434,17 @@ character_event = {			#Marks and Angels#
 	}
 
 	option = {
-		name = DMCoreEvt45OptA
+		name = DMCoreEvt31OptA
 		any_player = {
-			character_event = { id = DMPlay.45 }
+			character_event = { id = DMPlay.31 }
 		}
 	}
 }
 
 character_event = { 	# The Chessboard
-	id = DMCoreEvt.46
-	title = DMCoreEvttitle46
-	desc = DMCoreEvtdesc46
+	id = DMCoreEvt.32
+	title = DMCoreEvttitle32
+	desc = DMCoreEvtdesc32
 	picture = GFX_evt_war_planning
 	is_triggered_only = yes	
 	offmap = allow
@@ -2533,7 +2549,7 @@ character_event = { 	# The Chessboard
 		}
 	}
 	option = {
-		name = DMCoreEvt46OptA
+		name = DMCoreEvt32OptA
 		event_target:slave_master1 = {
 			primary_title = {
 				reverse_unsafe_war = {
@@ -2544,15 +2560,15 @@ character_event = { 	# The Chessboard
 			}
 		}
 		any_player = {
-			narrative_event = { id = DMPlay.46 }
+			narrative_event = { id = DMPlay.32 }
 		}
 	}
 }
 
 character_event = { 	# Pet Shop
-	id = DMCoreEvt.47
-	title = DMCoreEvttitle47
-	desc = DMCoreEvtdesc47
+	id = DMCoreEvt.33
+	title = DMCoreEvttitle33
+	desc = DMCoreEvtdesc33
 	picture = GFX_evt_cat
 	is_triggered_only = yes	
 	offmap = allow
@@ -2626,17 +2642,17 @@ character_event = { 	# Pet Shop
 		}
 	}
 	option = {
-		name = DMCoreEvt47OptA
+		name = DMCoreEvt33OptA
 		any_player = {
-			character_event = { id = DMPlay.47 }
+			character_event = { id = DMPlay.33 }
 		}
 	}
 }
 
 character_event = { 	# Snow White
-	id = DMCoreEvt.48
-	title = DMCoreEvttitle48
-	desc = DMCoreEvtdesc48
+	id = DMCoreEvt.34
+	title = DMCoreEvttitle34
+	desc = DMCoreEvtdesc34
 	picture = GFX_evt_homage_hf
 	portrait = event_target:dm_snow_white
 	is_triggered_only = yes	
@@ -2655,34 +2671,34 @@ character_event = { 	# Snow White
 		}
 	}
 	option = {
-		name = DMCoreEvt48OptA
+		name = DMCoreEvt34OptA
 		any_player = {
-			character_event = { id = DMPlay.48 }
+			character_event = { id = DMPlay.34 }
 		}
 	}
 }
 
 long_character_event = {
-	id = DMCoreEvt.49			# Kidnapping 
-	title = DMCoreEvttitle49
-	desc = DMCoreEvtdesc49
+	id = DMCoreEvt.35			# Kidnapping 
+	title = DMCoreEvttitle35
+	desc = DMCoreEvtdesc35
 	picture = GFX_evt_guardian
 	offmap = allow
 	
 	is_triggered_only = yes	
 
 	option = {
-		name = DMCoreEvt49OptA
+		name = DMCoreEvt35OptA
 		any_player = {
-			long_character_event = { id = DMPlay.49 }
+			long_character_event = { id = DMPlay.35 }
 		}	
 	}
 }
 
 character_event = {
-	id = DMCoreEvt.50			# Vassal/Liege 
-	title = DMCoreEvttitle50
-	desc = DMCoreEvtdesc50
+	id = DMCoreEvt.36			# Vassal/Liege 
+	title = DMCoreEvttitle36	
+	desc = DMCoreEvtdesc36
 	picture = GFX_evt_homage_hf
 	portrait = event_target:dm_vassal
 	offmap = allow
@@ -2773,34 +2789,34 @@ character_event = {
 	}
 
 	option = {
-		name = DMCoreEvt50OptA
+		name = DMCoreEvt36OptA
 		any_player = {
-			character_event = { id = DMPlay.50 }
+			character_event = { id = DMPlay.36 }
 		}	
 	}
 }
 
 character_event = {			# To Dream of Death
-	id = DMCoreEvt.51
-	title = DMCoreEvttitle51
-	desc = DMCoreEvtdesc51
+	id = DMCoreEvt.37
+	title = DMCoreEvttitle37
+	desc = DMCoreEvtdesc37
 	picture = GFX_evt_stressed_ruler
 	is_triggered_only = yes	
 	offmap = allow
 	
 	option = {
-		name = DMCoreEvt51OptA
+		name = DMCoreEvt37OptA
 		any_player = {
-			narrative_event = { id = DMPlay.51 }
+			narrative_event = { id = DMPlay.37 }
 		}
 	}
 	
 }
 
 character_event = {			# Blood of the Dragon
-	id = DMCoreEvt.52
-	title = DMCoreEvttitle52
-	desc = DMCoreEvtdesc52
+	id = DMCoreEvt.38
+	title = DMCoreEvttitle38
+	desc = DMCoreEvtdesc38
 	picture = GFX_evt_stressed_ruler
 	is_triggered_only = yes	
 	offmap = allow
@@ -2830,18 +2846,18 @@ character_event = {			# Blood of the Dragon
 	}
 	
 	option = {
-		name = DMCoreEvt52OptA
+		name = DMCoreEvt38OptA
 		any_player = {
-			character_event = { id = DMPlay.52 }
+			character_event = { id = DMPlay.38 }
 		}
 	}
 	
 }
 
 character_event = {			# Animal Kingdom
-	id = DMCoreEvt.53
-	title = DMCoreEvttitle53
-	desc = DMCoreEvtdesc53
+	id = DMCoreEvt.39
+	title = DMCoreEvttitle39
+	desc = DMCoreEvtdesc39
 	picture = GFX_evt_kitten_shadow
 	is_triggered_only = yes	
 	offmap = allow
@@ -2856,18 +2872,18 @@ character_event = {			# Animal Kingdom
 	}
 	
 	option = {
-		name = DMCoreEvt53OptA
+		name = DMCoreEvt39OptA
 		any_player = {
-			narrative_event = { id = DMPlay.53 }
+			narrative_event = { id = DMPlay.39 }
 		}
 	}
 }
 
 character_event = {			# 5G Unleashed
-	id = DMCoreEvt.54
+	id = DMCoreEvt.40
 	offmap = allow
-	title = DMCoreEvttitle54
-	desc = DMCoreEvtdesc54
+	title = DMCoreEvttitle40
+	desc = DMCoreEvtdesc40
 	picture = GFX_dm_herd_of_cows
 	is_triggered_only = yes	
 	
@@ -2880,34 +2896,34 @@ character_event = {			# 5G Unleashed
 		}
 	}
 	option = {
-		name = DMCoreEvtdesc54TTANoTower
+		name = DMCoreEvtdesc40TTANoTower
 		any_player = {
-			narrative_event = { id = DMPlay.54 }
+			narrative_event = { id = DMPlay.40 }
 		}
 	}
 }
 
 character_event = {			# For Whom The Horn Doots
-	id = DMCoreEvt.57
+	id = DMCoreEvt.41
 	offmap = allow
-	title = DMCoreEvttitle57
-	desc = DMCoreEvtdesc57
+	title = DMCoreEvttitle41
+	desc = DMCoreEvtdesc41
 	picture = GFX_evt_danse_macabre
 	is_triggered_only = yes	
 	
 	option = {
-		name = DMCoreEvtdesc57TTA
+		name = DMCoreEvtdesc41TTA
 		any_player = {
-			character_event = { id = DMPlay.57 }
+			character_event = { id = DMPlay.41 }
 		}
 	}
 }
 
 character_event = {			# Eternity Stones
-	id = DMCoreEvt.58
+	id = DMCoreEvt.42
 	offmap = allow
-	title = DMCoreEvttitle58
-	desc = DMCoreEvtdesc58
+	title = DMCoreEvttitle42
+	desc = DMCoreEvtdesc42
 	picture = GFX_evt_council_speaker
 	is_triggered_only = yes	
 	
@@ -2975,18 +2991,18 @@ character_event = {			# Eternity Stones
 	}
 	
 	option = {
-		name = DMCoreEvtdesc58TTA
+		name = DMCoreEvtdesc42TTA
 		any_player = {
-			character_event = { id = DMPlay.58 }
+			character_event = { id = DMPlay.42 }
 		}
 	}
 }
 
 character_event = {			# Rabies
-	id = DMCoreEvt.59
+	id = DMCoreEvt.43
 	offmap = allow
-	title = DMCoreEvttitle59
-	desc = DMCoreEvtdesc59
+	title = DMCoreEvttitle43
+	desc = DMCoreEvtdesc43
 	picture = GFX_evt_wolf
 	is_triggered_only = yes	
 	
@@ -3003,9 +3019,9 @@ character_event = {			# Rabies
 	}
 	
 	option = {
-		name = DMCoreEvtdesc59TTA
+		name = DMCoreEvtdesc43TTA
 		any_player = {
-			character_event = { id = DMPlay.59 }
+			character_event = { id = DMPlay.43 }
 		}
 	}
 }
