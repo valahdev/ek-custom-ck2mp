@@ -519,12 +519,12 @@ targeted_decisions = {
 			random_list = {
 				50 = {
 					custom_tooltip = {
-						text = DMEventTooltip49Safe
+						text = DMEventTooltip35Safe
 					}
 				}
 				50 = {
 					custom_tooltip = {
-						text = DMEventTooltip49Caught
+						text = DMEventTooltip35Caught
 						event_target:dm_kidnapped_liege = {
 							character_event = { id = DMCoreFollow.19 }
 						}

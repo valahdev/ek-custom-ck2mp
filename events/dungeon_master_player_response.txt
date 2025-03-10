@@ -990,12 +990,16 @@ character_event = {			#Crab Rave - Cancer for all#
 
 	option = {
 		name = DMCoreEvt30OptA
-        if = { # 20% chance for the PLAYER to get cancer
-            limit = { random = 20 }  # 20% chance
-            add_trait = cancer
+        if = 
+		{
+             random = 
+			{ 
+				chance = 40
+				add_trait = cancer
+			} 
         }
 		custom_tooltip = {
-			text = DMEventTooltip30
+			text = DMEventTooltip30A
 		}
 	}
 }
@@ -1085,7 +1089,7 @@ narrative_event = {			# The Chessboard
 			}
 		}
 		custom_tooltip = {
-			text = DMCoreEvt30Tooltip
+			text = DMCoreEvt32Tooltip
 			set_character_flag = dm_chose_side
 			join_attacker_wars = event_target:slave_master2
 		}
@@ -1097,12 +1101,12 @@ narrative_event = {			# The Chessboard
 				is_within_diplo_range = event_target:slave_master2
 			}
 		}
-		name = DMCoreEvt30OptD
+		name = DMCoreEvt32OptD
 		custom_tooltip = {
-			text = DMCoreEvt30Tooltip
+			text = DMCoreEvt32Tooltip
 			set_character_flag = dm_chose_side
 		}
-		tooltip_info_custom = DMCoreEvt30CustomTooltip2
+		tooltip_info_custom = DMCoreEvt32CustomTooltip2
 	}
 }
 
@@ -1402,7 +1406,7 @@ narrative_event = {			# 5G Unleashed
 				NOT = { has_province_modifier = dm_1G_tower }
 			}
 		}
-		text = DMCoreEvtdesc54NoTower
+		text = DMCoreEvtdesc40NoTower
 	}
 			
 	picture = GFX_dm_herd_of_cows

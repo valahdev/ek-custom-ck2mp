@@ -2386,23 +2386,21 @@ character_event = {			#Crab Rave - Cancer for all#
 	offmap = allow
 	
 	immediate = {
-		# Attempt to target 50 characters
         while = {
-            count = 50  # Try 50 times (may not always find valid targets)
-            random_character = {
+            count = 50
+            random_playable_ruler = {
                 limit = {
-                    is_playable = yes  # Target playable rulers
-                    ai = yes           # Only AI characters
+                    ai = yes
                     NOR = {
-                        has_trait = cancer  # Exclude those already with cancer
-                        is_incapable = yes  # Exclude incapable characters
+                        has_trait = cancer
+                        is_incapable = yes
                     }
                 }
-                # 20% chance to apply cancer to this character
-                if = {
-                    limit = { random = 20 }  # 20% chance (1-100 roll ≤20)
-                    add_trait = cancer
-                }
+				random = 
+				{ 
+					chance = 40 
+					add_trait = cancer
+				} 
             }
         }
 	}

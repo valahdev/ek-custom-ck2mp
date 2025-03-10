@@ -474,7 +474,7 @@ character_event = {			#Bob Ross#
 	}
 }
 
-character_event = {			# Followup to EU4 Dickery
+character_event = {			# Followup to EU4 Dickery - death accident
 	id = DMCoreFollow.12
 	desc = DMCoreFollowdesc12
 	title = DMCoreFollowtitle12
@@ -503,7 +503,7 @@ character_event = {			# Followup to EU4 Dickery
 	}
 }
 
-character_event = {			# Followup to EU4 Dickery
+character_event = {			# Followup to EU4 Dickery - severely injured event
 	id = DMCoreFollow.13
 	desc = DMCoreFollowdesc13
 	title = DMCoreFollowtitle13
@@ -520,7 +520,7 @@ character_event = {			# Followup to EU4 Dickery
 	option = { # Oh no.
 		name = DMCoreFollow13OptB
 		custom_tooltip = {
-			text = DMCoreFollow13OptBTooltip
+			text = DMCoreFollow13OptDTooltip
 			add_trait = stressed
 		}
 	}
