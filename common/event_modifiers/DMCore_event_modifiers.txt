@@ -95,14 +95,14 @@ fountain_of_youth = {
 }
 
 sacrifices_for_beauty = {
-	health = -1
-	sex_appeal_opinion = 20
+	health = -2
+	sex_appeal_opinion = 35
 	icon = 40
 }
 
 mud_wraps = {
-	health = 1
-	sex_appeal_opinion = -20
+	health = 2
+	sex_appeal_opinion = -35
 	icon = 39
 }
 

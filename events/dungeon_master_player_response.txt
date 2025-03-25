@@ -1,9 +1,9 @@
 namespace = DMPlay
 
 character_event = {
-	id = DMPlay.2			#Lover's Lab#
-	title = DMCoreEvttitle2
-	desc = DMCoreEvtdesc2
+	id = DMPlay.1			#Lover's Lab#
+	title = DMCoreEvttitle1
+	desc = DMCoreEvtdesc1
 	picture = GFX_evt_lovers
 	
 	is_triggered_only = yes	
@@ -11,19 +11,19 @@ character_event = {
 	ai = no
 
 	option = {
-		name = DMCoreEvt2OptA
+		name = DMCoreEvt1OptA
 		add_trait = lustful
 		add_trait = hedonist
 		custom_tooltip = {
-			text = DMEventTooltip2
+			text = DMEventTooltip1
 		}	
 	}
 }
 
 character_event = {
-	id = DMPlay.3			#Father to All#
-	title = DMCoreEvttitle3
-	desc = DMCoreEvtdesc3
+	id = DMPlay.2			#Father to All#
+	title = DMCoreEvttitle2
+	desc = DMCoreEvtdesc2
 	picture = GFX_evt_pregnancy
 	
 	is_triggered_only = yes	
@@ -31,7 +31,7 @@ character_event = {
 	ai = no
 
 	option = {
-		name = DMCoreEvt3OptA
+		name = DMCoreEvt2OptA
 		if = {
 			limit = {
 				is_female = yes
@@ -39,15 +39,15 @@ character_event = {
 			unsafe_impregnate = event_target:king_fuck
 		}
 		custom_tooltip = {
-			text = DMEventTooltip3
+			text = DMEventTooltip2
 		}
 	}
 }
 
 character_event = {
-	id = DMPlay.4			#Rise of the Immortals#
-	title = DMCoreEvttitle4
-	desc = DMCoreEvtdesc4
+	id = DMPlay.3			#Rise of the Immortals#
+	title = DMCoreEvttitle3
+	desc = DMCoreEvtdesc3
 	picture = GFX_evt_comet
 	
 	is_triggered_only = yes	
@@ -55,17 +55,17 @@ character_event = {
 	ai = no
 
 	option = {
-		name = DMCoreEvt4OptA
+		name = DMCoreEvt3OptA
 		custom_tooltip = {
-			text = DMEventTooltip4
+			text = DMEventTooltip3
 		}
 	}
 }
 
 character_event = {			#Happy Birthday - credit to Big_Weeb#
-	id = DMPlay.5
-	title = DMCoreEvttitle5
-	desc = DMCoreEvtdesc5
+	id = DMPlay.4
+	title = DMCoreEvttitle4
+	desc = DMCoreEvtdesc4
 	picture = GFX_evt_guardian
 	
 	is_triggered_only = yes	
@@ -73,7 +73,7 @@ character_event = {			#Happy Birthday - credit to Big_Weeb#
 	ai = no
 
 	option = {
-		name = DMCoreEvt5OptA
+		name = DMCoreEvt4OptA
 		any_playable_ruler = {
 			limit = { 
 				trait = age_shifted
@@ -82,15 +82,15 @@ character_event = {			#Happy Birthday - credit to Big_Weeb#
 			tooltip = { show_portrait = yes }
 		}
 		custom_tooltip = {
-			text = DMEventTooltip5
+			text = DMEventTooltip4
 		}
 	}
 }
 
 character_event = {			#Purge - Credit to Slippy Nips#
-	id = DMPlay.6
-	title = DMCoreEvttitle6
-	desc = DMCoreEvtdesc6
+	id = DMPlay.5
+	title = DMCoreEvttitle5
+	desc = DMCoreEvtdesc5
 	picture = GFX_evt_hiding_from_pursuers
 	
 	is_triggered_only = yes	
@@ -98,22 +98,40 @@ character_event = {			#Purge - Credit to Slippy Nips#
 	ai = no
 
 	option = {
-		name = DMCoreEvt6OptA
+		name = DMCoreEvt5OptA
 		add_character_modifier = {
 			name = the_purge
 			months = 60
 		}
+		custom_tooltip = {
+			text = DMEventTooltip5
+		}
+	}
+}
+
+character_event = {			#Dwarf Fortress - Dante Mordicain#
+	id = DMPlay.6
+	title = DMCoreEvttitle6
+	desc = DMCoreEvtdesc6
+	picture = GFX_evt_magnificent_castle
+	
+	is_triggered_only = yes	
+
+	ai = no
+
+	option = {
+		name = DMCoreEvt6OptA
 		custom_tooltip = {
 			text = DMEventTooltip6
 		}
 	}
 }
 
-character_event = {			#Dwarf Fortress - Dante Mordicain#
+long_character_event = {			#Thigh Rendering#
 	id = DMPlay.7
 	title = DMCoreEvttitle7
 	desc = DMCoreEvtdesc7
-	picture = GFX_evt_magnificent_castle
+	picture = GFX_evt_mysterious_forest
 	
 	is_triggered_only = yes	
 
@@ -123,24 +141,6 @@ character_event = {			#Dwarf Fortress - Dante Mordicain#
 		name = DMCoreEvt7OptA
 		custom_tooltip = {
 			text = DMEventTooltip7
-		}
-	}
-}
-
-long_character_event = {			#Thigh Rendering#
-	id = DMPlay.8
-	title = DMCoreEvttitle8
-	desc = DMCoreEvtdesc8
-	picture = GFX_evt_mysterious_forest
-	
-	is_triggered_only = yes	
-
-	ai = no
-
-	option = {
-		name = DMCoreEvt8OptA
-		custom_tooltip = {
-			text = DMEventTooltip8
 		}
 		random_list = {
 			5 = {
@@ -155,9 +155,9 @@ long_character_event = {			#Thigh Rendering#
 }
 
 character_event = {			#Matters of Life and Death..?#
-	id = DMPlay.11
-	title = DMCoreEvttitle11
-	desc = DMCoreEvtdesc11
+	id = DMPlay.8
+	title = DMCoreEvttitle8
+	desc = DMCoreEvtdesc8
 	picture = GFX_evt_state_diplomacy
 	
 	is_triggered_only = yes	
@@ -165,18 +165,18 @@ character_event = {			#Matters of Life and Death..?#
 	ai = no
 
 	option = {
-		name = DMCoreEvt11OptA
+		name = DMCoreEvt8OptA
 		custom_tooltip = {
-			text = DMEventTooltip11
+			text = DMEventTooltip8
 		}
-		narrative_event = { id = DMCoreFollow.1 }
+		narrative_event = { id = DMCoreFollow.8 }
 	}
 }
 
 character_event = {			#Potion Seller#
-	id = DMPlay.12
-	title = DMCoreEvttitle12
-	desc = DMCoreEvtdesc12
+	id = DMPlay.9
+	title = DMCoreEvttitle9
+	desc = DMCoreEvtdesc9
 	picture = GFX_potion_seller
 	
 	is_triggered_only = yes	
@@ -184,18 +184,18 @@ character_event = {			#Potion Seller#
 	ai = no
 
 	option = {
-		name = DMCoreEvt12OptA
+		name = DMCoreEvt9OptA
 		custom_tooltip = {
-			text = DMEventTooltip12
+			text = DMEventTooltip9
 		}
 		character_event = { id = DMCoreFollow.2 }
 	}
 }
 
 character_event = {			#Second Education#
-	id = DMPlay.13
-	title = DMCoreEvttitle13
-	desc = DMCoreEvtdesc13
+	id = DMPlay.10
+	title = DMCoreEvttitle10
+	desc = DMCoreEvtdesc10
 	picture = GFX_evt_stressed_ruler
 	
 	is_triggered_only = yes	
@@ -203,9 +203,9 @@ character_event = {			#Second Education#
 	ai = no
 
 	option = {
-		name = DMCoreEvt13OptA
+		name = DMCoreEvt10OptA
 		custom_tooltip = {
-			text = DMEventTooltip13
+			text = DMEventTooltip10
 		}
 		if = {
 			limit = {
@@ -337,32 +337,31 @@ character_event = {			#Second Education#
 }
 
 character_event = {			#Mrs Doubtfire#
-	id = DMPlay.14
-	title = DMCoreEvttitle14
-	desc = DMCoreEvtdesc14
+	id = DMPlay.11
+	title = DMCoreEvttitle11
+	desc = DMCoreEvtdesc11
 	picture = GFX_evt_bad_news_female
+
 	is_triggered_only = yes
+
 	ai = no
+	
+	trigger = {
+		age > 15
+	}
 
 	option = {
-		name = DMCoreEvt14OptA
+		name = DMCoreEvt11OptA
 		set_gender = opposite
-		 any_spouse = {
-            if = {
-                limit = { gender = root }  # root = the player (after gender change)
-                set_gender = opposite     # Flip spouse's gender
-            }
-        }
-		custom_tooltip = {
-			text = DMEventTooltip14
-		}
+    	any_spouse = { set_gender = opposite }
+		custom_tooltip = { text = DMEventTooltip11 }
 	}
 }
 
 character_event = {			#Battle Royale#
-	id = DMPlay.16
-	title = DMCoreEvttitle16
-	desc = DMCoreEvtdesc16
+	id = DMPlay.12
+	title = DMCoreEvttitle12
+	desc = DMCoreEvtdesc12
 	picture = GFX_evt_battle
 	
 	is_triggered_only = yes	
@@ -370,9 +369,9 @@ character_event = {			#Battle Royale#
 	ai = no
 
 	option = {
-		name = DMCoreEvt16OptA
+		name = DMCoreEvt12OptA
 		custom_tooltip = {
-			text = DMEventTooltip16
+			text = DMEventTooltip12
 		}
 		any_player = {
 			add_claim = event_target:battle_royale
@@ -381,9 +380,9 @@ character_event = {			#Battle Royale#
 }
 
 character_event = {			#Capital Swap#
-	id = DMPlay.18
-	title = DMCoreEvttitle18
-	desc = DMCoreEvtdesc18
+	id = DMPlay.13
+	title = DMCoreEvttitle13
+	desc = DMCoreEvtdesc13
 	picture = GFX_evt_magnificent_castle
 	
 	is_triggered_only = yes	
@@ -391,17 +390,17 @@ character_event = {			#Capital Swap#
 	ai = no
 
 	option = {
-		name = DMCoreEvt18OptA
+		name = DMCoreEvt13OptA
 		custom_tooltip = {
-			text = DMEventTooltip18
+			text = DMEventTooltip13
 		}
 	}
 }
 
 character_event = {
-	id = DMPlay.19			#Friends in Low Places#
-	title = DMCoreEvttitle19
-	desc = DMCoreEvtdesc19
+	id = DMPlay.14			#Friends in Low Places#
+	title = DMCoreEvttitle14	
+	desc = DMCoreEvtdesc14	
 	picture = GFX_evt_whispers
 	
 	is_triggered_only = yes	
@@ -409,7 +408,7 @@ character_event = {
 	ai = no
 
 	option = {
-		name = DMCoreEvt19OptA
+		name = DMCoreEvt14OptA
 		any_character = {
 			limit = { 
 				controls_religion = yes
@@ -417,15 +416,15 @@ character_event = {
 			tooltip = { show_portrait = yes }
 		}
 		custom_tooltip = {
-			text = DMEventTooltip19
+			text = DMEventTooltip14
 		}
 	}
 }
 
 character_event = {			#Trait flip#
-	id = DMPlay.20
-	title = DMCoreEvttitle20
-	desc = DMCoreEvtdesc20
+	id = DMPlay.15
+	title = DMCoreEvttitle15
+	desc = DMCoreEvtdesc15
 	picture = GFX_evt_jugglers
 
 	is_triggered_only = yes	
@@ -484,7 +483,7 @@ character_event = {			#Trait flip#
 	}
 
 	option = {
-		name = DMCoreEvt20OptA
+		name = DMCoreEvt15OptA
 		if = {
 			limit = {
 				has_character_flag = was_genius
@@ -534,15 +533,15 @@ character_event = {			#Trait flip#
 			add_trait = quick
 		}
 		custom_tooltip = {
-			text = DMEventTooltip20
+			text = DMEventTooltip15
 		}
 	}
 }
 
 character_event = {			#Religion Proven right with Facts and Logic#
-	id = DMPlay.22
-	title = DMCoreEvttitle22
-	desc = DMCoreEvtdesc22
+	id = DMPlay.16
+	title = DMCoreEvttitle16
+	desc = DMCoreEvtdesc16
 	picture = GFX_evt_catching_heretic
 	
 	is_triggered_only = yes	
@@ -550,32 +549,32 @@ character_event = {			#Religion Proven right with Facts and Logic#
 	ai = no
 
 	option = {
-		name = DMCoreEvt22OptA
+		name = DMCoreEvt16OptA
 		custom_tooltip = {
-			text = DMEventTooltip22
+			text = DMEventTooltip16
 		}
 		religion = event_target:religion_proven
 	}
 	option = {
-		name = DMCoreEvt22OptB
+		name = DMCoreEvt16OptB
 		custom_tooltip = {
-			text = DMEventTooltip22
+			text = DMEventTooltip16
 		}
 		add_trait = zealous
 	}
 	option = {
-		name = DMCoreEvt22OptC
+		name = DMCoreEvt16OptC
 		custom_tooltip = {
-			text = DMEventTooltip22
+			text = DMEventTooltip16
 		}
 		add_trait = cynical
 	}
 }
 
 narrative_event = {			#City of Gold!#
-	id = DMPlay.23
-	title = DMCoreEvttitle23
-	desc = DMCoreEvtdesc23
+	id = DMPlay.17
+	title = DMCoreEvttitle17
+	desc = DMCoreEvtdesc17
 	picture = GFX_evt_sickness_hf
 	
 	is_triggered_only = yes	
@@ -583,20 +582,20 @@ narrative_event = {			#City of Gold!#
 	ai = no
 
 	option = {
-		name = DMCoreEvt23OptA
+		name = DMCoreEvt17OptA
 		custom_tooltip = {
-			text = DMEventTooltip23
+			text = DMEventTooltip17
 		}
 		custom_tooltip = {
-			text = DMEventTooltip23B
+			text = DMEventTooltip17B
 		}
 	}
 }
 
 character_event = {			#Rings dished out#
-	id = DMPlay.27
-	title = DMCoreEvttitle27
-	desc = DMCoreEvtdesc27
+	id = DMPlay.18
+	title = DMCoreEvttitle18
+	desc = DMCoreEvtdesc18
 	picture = GFX_evt_firey_silhouette_hf
 	
 	is_triggered_only = yes	
@@ -604,17 +603,17 @@ character_event = {			#Rings dished out#
 	ai = no
 
 	option = {
-		name = DMCoreEvt27OptA
+		name = DMCoreEvt18OptA
 		custom_tooltip = {
-			text = DMEventTooltip27
+			text = DMEventTooltip18
 		}
 	}
 }
 
 character_event = {			#Religious Tomfoolery#
-	id = DMPlay.29
-	title = DMCoreEvttitle29
-	desc = DMCoreEvtdesc29
+	id = DMPlay.19
+	title = DMCoreEvttitle19
+	desc = DMCoreEvtdesc19
 	picture = GFX_evt_gathering_of_minds
 	
 	is_triggered_only = yes	
@@ -622,17 +621,17 @@ character_event = {			#Religious Tomfoolery#
 	ai = no
 
 	option = {
-		name = DMCoreEvt29OptA
+		name = DMCoreEvt19OptA
 		custom_tooltip = {
-			text = DMEventTooltip29
+			text = DMEventTooltip19
 		}
 	}
 }
 
 character_event = {			#Stable Empire#
-	id = DMPlay.30
-	title = DMCoreEvttitle30
-	desc = DMCoreEvtdesc30
+	id = DMPlay.20
+	title = DMCoreEvttitle20
+	desc = DMCoreEvtdesc20
 	picture = GFX_evt_council_agreement
 	
 	is_triggered_only = yes	
@@ -640,9 +639,9 @@ character_event = {			#Stable Empire#
 	ai = no
 
 	option = {
-		name = DMCoreEvt30OptA
+		name = DMCoreEvt20OptA
 		custom_tooltip = {
-			text = DMEventTooltip30
+			text = DMEventTooltip20
 		}
 		if = {
 			limit = { 
@@ -671,9 +670,9 @@ character_event = {			#Stable Empire#
 }
 
 long_character_event = {			#Perfectly Normal Man#
-	id = DMPlay.31
-	title = DMCoreEvttitle31
-	desc = DMCoreEvtdesc31
+	id = DMPlay.21
+	title = DMCoreEvttitle21
+	desc = DMCoreEvtdesc21
 	picture = GFX_evt_gathering_of_minds
 	
 	is_triggered_only = yes	
@@ -681,9 +680,9 @@ long_character_event = {			#Perfectly Normal Man#
 	ai = no
 
 	option = {
-		name = DMCoreEvt31OptA
+		name = DMCoreEvt21OptA
 		custom_tooltip = {
-			text = DMEventTooltip31
+			text = DMEventTooltip21
 		}
 		create_character = {
 			random_traits = yes
@@ -713,9 +712,9 @@ long_character_event = {			#Perfectly Normal Man#
 }
 
 narrative_event = {			#Fountain of Youth#
-	id = DMPlay.32
-	title = DMCoreEvttitle32
-	desc = DMCoreEvtdesc32
+	id = DMPlay.22
+	title = DMCoreEvttitle22
+	desc = DMCoreEvtdesc22
 	picture = GFX_evt_fishing
 	
 	is_triggered_only = yes	
@@ -723,20 +722,20 @@ narrative_event = {			#Fountain of Youth#
 	ai = no
 
 	option = {
-		name = DMCoreEvt32OptA
+		name = DMCoreEvt22OptA
 		custom_tooltip = {
-			text = DMEventTooltip32
+			text = DMEventTooltip22
 		}
 		custom_tooltip = {
-			text = DMEventTooltip32B
+			text = DMEventTooltip22B
 		}
 	}
 }
 
 narrative_event = {			#Gary#
-	id = DMPlay.33
-	title = DMCoreEvttitle33
-	desc = DMCoreEvtdesc33
+	id = DMPlay.23
+	title = DMCoreEvttitle23
+	desc = DMCoreEvtdesc23
 	picture = GFX_evt_group_hf
 	
 	is_triggered_only = yes	
@@ -744,17 +743,17 @@ narrative_event = {			#Gary#
 	ai = no
 
 	option = {
-		name = DMCoreEvt33OptA
+		name = DMCoreEvt23OptA
 		custom_tooltip = {
-			text = DMEventTooltip33
+			text = DMEventTooltip23
 		}
 	}
 }
 
 long_character_event = {			#Get out of Jail Free#
-	id = DMPlay.34
-	title = DMCoreEvttitle34
-	desc = DMCoreEvtdesc34
+	id = DMPlay.24
+	title = DMCoreEvttitle24
+	desc = DMCoreEvtdesc24
 	picture = GFX_evt_accused
 	
 	is_triggered_only = yes	
@@ -762,18 +761,18 @@ long_character_event = {			#Get out of Jail Free#
 	ai = no
 
 	option = {
-		name = DMCoreEvt34OptA
+		name = DMCoreEvt24OptA
 		set_character_flag = get_out_of_jail_free
 		custom_tooltip = {
-			text = DMEventTooltip34
+			text = DMEventTooltip24
 		}
 	}
 }
 
 character_event = {			#gavelkind
-	id = DMPlay.36
-	title = DMCoreEvttitle36
-	desc = DMCoreEvtdesc36
+	id = DMPlay.25
+	title = DMCoreEvttitle25
+	desc = DMCoreEvtdesc25
 	picture = GFX_evt_bad_news
 	
 	is_triggered_only = yes	
@@ -781,9 +780,9 @@ character_event = {			#gavelkind
 	ai = no
 
 	option = {
-		name = DMCoreEvt36OptA
+		name = DMCoreEvt25OptA
 		custom_tooltip = {
-			text = DMEventTooltip36
+			text = DMEventTooltip25
 		}
 		if = {
 			limit = {
@@ -810,9 +809,9 @@ character_event = {			#gavelkind
 }
 
 character_event = {			#Spa Day
-	id = DMPlay.37
-	title = DMCoreEvttitle37
-	desc = DMCoreEvtdesc37
+	id = DMPlay.26
+	title = DMCoreEvttitle26
+	desc = DMCoreEvtdesc26
 	picture = GFX_evt_torture
 	
 	is_triggered_only = yes	
@@ -820,9 +819,9 @@ character_event = {			#Spa Day
 	ai = no
 
 	option = {
-		name = DMCoreEvt37OptA
+		name = DMCoreEvt26OptA
 		custom_tooltip = {
-			text = DMEventTooltip37A
+			text = DMEventTooltip26A
 		}
 		add_character_modifier = {
 			name = sacrifices_for_beauty
@@ -831,9 +830,9 @@ character_event = {			#Spa Day
 	}
 
 	option = {
-		name = DMCoreEvt37OptB
+		name = DMCoreEvt26OptB
 		custom_tooltip = {
-			text = DMEventTooltip37B
+			text = DMEventTooltip26B
 		}
 		add_character_modifier = {
 			name = mud_wraps
@@ -843,9 +842,9 @@ character_event = {			#Spa Day
 }
 
 character_event = {			#Bob Ross
-	id = DMPlay.38
-	title = DMCoreEvttitle38
-	desc = DMCoreEvtdesc38
+	id = DMPlay.27
+	title = DMCoreEvttitle27
+	desc = DMCoreEvtdesc27
 	picture = GFX_evt_council_speaker
 	
 	is_triggered_only = yes	
@@ -894,9 +893,9 @@ character_event = {			#Bob Ross
 	}
 
 	option = {
-		name = DMCoreEvt38OptA
+		name = DMCoreEvt27OptA
 		custom_tooltip = {
-			text = DMEventTooltip38
+			text = DMEventTooltip27
 		}
 		random_list = {
 			1 = {					#happy little accident
@@ -930,56 +929,46 @@ character_event = {			#Bob Ross
 }
 
 character_event = {			# EU4 Dickery
-	id = DMPlay.39
-	title = DMCoreEvttitle39
-	desc = DMCoreEvtdesc39
+	id = DMPlay.28
+	title = DMCoreEvttitle28
+	desc = DMCoreEvtdesc28
 	picture = GFX_evt_comet
 	
 	is_triggered_only = yes	
-
 	ai = no
-	immediate = {
-		any_playable_ruler = {
-			limit = {
-				NOT = { ai = no }
-			}
-			random_list = {
-				50 = {
-					current_heir = {
-						death = { death_reason = death_accident }
-					}
-				}
-				50 = {
-				}
-			}
-		}
-	}
 
 	option = {
-		name = DMCoreEvt39OptA
+		name = DMCoreEvt28OptA
 		random_list = {
-			50 = {
+			30 = {
 				custom_tooltip = {
-					text = DMEventTooltip39A
+					text = DMEventTooltip28A
 					character_event = { id = DMCoreFollow.12 }
 				}
 			}
-			50 = {
+			40 = {
 				custom_tooltip = {
-					text = DMEventTooltip39B
+					text = DMEventTooltip28A
+					character_event = { id = DMCoreFollow.13 }
+				}
+			}
+
+			30 = {
+				custom_tooltip = {
+					text = DMEventTooltip28B
 				}
 			}
 		}
 		custom_tooltip = {
-			text = DMEventTooltip39C
+			text = DMEventTooltip28C
 		}
 	}
 }
 
 character_event = {			#Fake Genius
-	id = DMPlay.41
-	title = DMCoreEvttitle41
-	desc = DMCoreEvtdesc41
+	id = DMPlay.29
+	title = DMCoreEvttitle29
+	desc = DMCoreEvtdesc29
 	picture = GFX_evt_court_physician
 	
 	is_triggered_only = yes	
@@ -987,40 +976,44 @@ character_event = {			#Fake Genius
 	ai = no
 
 	option = {
-		name = DMCoreEvt41OptA
+		name = DMCoreEvt29OptA
 		tooltip = {
 			add_trait = genius_fake
 		}
 		custom_tooltip = {
-			text = DMEventTooltip41
+			text = DMEventTooltip29
 		}
 	}
 }
 
 character_event = {			#Crab Rave - Cancer for all#
-	id = DMPlay.42
-	title = DMCoreEvttitle42
-	desc = DMCoreEvtdesc42
+	id = DMPlay.30
+	title = DMCoreEvttitle30
+	desc = DMCoreEvtdesc30
 	picture = GFX_evt_bring_out_your_dead
 	is_triggered_only = yes	
 	ai = no
 
 	option = {
-		name = DMCoreEvt42OptA
-        if = { # 20% chance for the PLAYER to get cancer
-            limit = { random = 20 }  # 20% chance
-            add_trait = cancer
+		name = DMCoreEvt30OptA
+        if = 
+		{
+             random = 
+			{ 
+				chance = 40
+				add_trait = cancer
+			} 
         }
 		custom_tooltip = {
-			text = DMEventTooltip42
+			text = DMEventTooltip30A
 		}
 	}
 }
 
 character_event = {			#Marks and Angels player response#
-	id = DMPlay.45
-	title = DMCoreEvttitle45
-	desc = DMCoreEvtdesc45
+	id = DMPlay.31
+	title = DMCoreEvttitle31
+	desc = DMCoreEvtdesc31
 	picture = GFX_potato_chip
 	
 	is_triggered_only = yes	
@@ -1045,16 +1038,16 @@ character_event = {			#Marks and Angels player response#
 			trigger = {
 				has_character_flag = wealth_oof
 			}
-			text = DMCoreEvt45OptB # MY CABBAGES!
+			text = DMCoreEvt31OptB # MY CABBAGES!
 		}
 		name = {
 			trigger = {
 				has_character_flag = wealth_ayy
 			}
-			text = DMCoreEvt45OptC # Ayyyy
+			text = DMCoreEvt31OptC # Ayyyy
 		}
 		custom_tooltip = {
-			text = DMEventTooltip45
+			text = DMEventTooltip31
 		}
 	}
 	after = {
@@ -1064,17 +1057,17 @@ character_event = {			#Marks and Angels player response#
 }
 
 narrative_event = {			# The Chessboard
-	id = DMPlay.46
-	title = DMCoreEvttitle46
-	desc = DMCoreEvtdesc46
+	id = DMPlay.32
+	title = DMCoreEvttitle32
+	desc = DMCoreEvtdesc32
 	picture = GFX_evt_war_planning
 	is_triggered_only = yes
 	option = { # White Queen
 		trigger = {
 			is_within_diplo_range = event_target:slave_master1
 		}
-		name = DMCoreEvt46OptB
-		tooltip_info_custom = DMCoreEvt46CustomTooltip
+		name = DMCoreEvt32OptB
+		tooltip_info_custom = DMCoreEvt32CustomTooltip
 		event_target:slave_master1 = {
 			make_tributary = {
 				who = PREV
@@ -1083,7 +1076,7 @@ narrative_event = {			# The Chessboard
 			}
 		}
 		custom_tooltip = {
-			text = DMCoreEvt46Tooltip
+			text = DMCoreEvt32Tooltip
 			set_character_flag = dm_chose_side
 			join_defender_wars = event_target:slave_master1
 		}
@@ -1092,8 +1085,8 @@ narrative_event = {			# The Chessboard
 		trigger = {
 			is_within_diplo_range = event_target:slave_master2
 		}
-		name = DMCoreEvt46OptC
-		tooltip_info_custom = DMCoreEvt46CustomTooltip
+		name = DMCoreEvt32OptC
+		tooltip_info_custom = DMCoreEvt32CustomTooltip
 		event_target:slave_master2 = {
 			make_tributary = {
 				who = PREV
@@ -1102,7 +1095,7 @@ narrative_event = {			# The Chessboard
 			}
 		}
 		custom_tooltip = {
-			text = DMCoreEvt46Tooltip
+			text = DMCoreEvt32Tooltip
 			set_character_flag = dm_chose_side
 			join_attacker_wars = event_target:slave_master2
 		}
@@ -1114,24 +1107,24 @@ narrative_event = {			# The Chessboard
 				is_within_diplo_range = event_target:slave_master2
 			}
 		}
-		name = DMCoreEvt46OptD
+		name = DMCoreEvt32OptD
 		custom_tooltip = {
-			text = DMCoreEvt46Tooltip
+			text = DMCoreEvt32Tooltip
 			set_character_flag = dm_chose_side
 		}
-		tooltip_info_custom = DMCoreEvt46CustomTooltip2
+		tooltip_info_custom = DMCoreEvt32CustomTooltip2
 	}
 }
 
 character_event = {			# Pet Shop
-	id = DMPlay.47
-	title = DMCoreEvttitle47
-	desc = DMCoreEvtdesc47
+	id = DMPlay.33
+	title = DMCoreEvttitle33
+	desc = DMCoreEvtdesc33
 	picture = GFX_evt_cat
 	is_triggered_only = yes
 	
 	option = { # I'll take one!
-		name = DMCoreEvt47OptA
+		name = DMCoreEvt33OptA
 		trigger = {
 			NOR = {
 				has_character_modifier = dm_petshop_cat
@@ -1145,7 +1138,7 @@ character_event = {			# Pet Shop
 		}
 		wealth = -50
 		custom_tooltip = {
-			text = DMCoreEvt47TooltipA
+			text = DMCoreEvt33TooltipA
 			random_list = {
 				25 = {
 					add_character_modifier = {
@@ -1193,11 +1186,11 @@ character_event = {			# Pet Shop
 			}
 		}
 		custom_tooltip = {
-			text = DMCoreEvt47TooltipB
+			text = DMCoreEvt33TooltipB
 		}
 	}
 	option = { # I'm good, thanks.
-		name = DMCoreEvt47OptB
+		name = DMCoreEvt33OptB
 		trigger = {
 			NOR = {
 				has_character_modifier = dm_petshop_cat
@@ -1210,11 +1203,11 @@ character_event = {			# Pet Shop
 			}
 		}
 		custom_tooltip = {
-			text = DMCoreEvt47TooltipB
+			text = DMCoreEvt33TooltipB
 		}
 	}
 	option = { # But I already have one.
-		name = DMCoreEvt47OptC
+		name = DMCoreEvt33OptC
 		trigger = {
 			OR = {
 				has_character_modifier = dm_petshop_cat
@@ -1227,15 +1220,15 @@ character_event = {			# Pet Shop
 			}
 		}
 		custom_tooltip = {
-			text = DMCoreEvt47TooltipB
+			text = DMCoreEvt33TooltipB
 		}
 	}
 }
 
 character_event = {			# Snow White
-	id = DMPlay.48
-	title = DMCoreEvttitle48
-	desc = DMCoreEvtdesc48
+	id = DMPlay.34
+	title = DMCoreEvttitle34
+	desc = DMCoreEvtdesc34
 	picture = GFX_evt_homage_hf
 	portrait = event_target:dm_snow_white
 	is_triggered_only = yes	
@@ -1243,61 +1236,61 @@ character_event = {			# Snow White
 	ai = no
 
 	option = {
-		name = DMCoreEvt48OptA
+		name = DMCoreEvt34OptA
 		custom_tooltip = {
-			text = DMEventTooltip48
+			text = DMEventTooltip34
 		}
 	}
 }
 
 long_character_event = {			# Kidnapping
-	id = DMPlay.49
-	title = DMCoreEvttitle49
-	desc = DMCoreEvtdesc49
+	id = DMPlay.35
+	title = DMCoreEvttitle35
+	desc = DMCoreEvtdesc35
 	picture = GFX_evt_guardian
 	is_triggered_only = yes	
 
 	ai = no
 
 	option = {
-		name = DMCoreEvt49OptA
+		name = DMCoreEvt35OptA
 		set_character_flag = dm_can_kidnap
 		custom_tooltip = {
-			text = DMEventTooltip49
+			text = DMEventTooltip35
 		}
 	}
 }
 
 character_event = {			# Vassal/Liege Swap
-	id = DMPlay.50
-	title = DMCoreEvttitle50
-	desc = DMCoreEvtdesc50
+	id = DMPlay.36
+	title = DMCoreEvttitle36
+	desc = DMCoreEvtdesc36
 	picture = GFX_evt_homage_hf
 	is_triggered_only = yes	
 	portrait = event_target:dm_vassal
 
 	ai = no
 	option = {
-		name = DMCoreEvt50OptA
+		name = DMCoreEvt36OptA
 		custom_tooltip = {
-			text = DMEventTooltip50
+			text = DMEventTooltip36
 		}
 	}
 }
 
 narrative_event = {			# To Dream of Death
-	id = DMPlay.51
-	title = DMCoreEvttitle51
-	desc = DMCoreEvtdesc51
+	id = DMPlay.37
+	title = DMCoreEvttitle37
+	desc = DMCoreEvtdesc37
 	picture = GFX_dm_to_dream_of_death
 	window = "dm_custom_narrative"
 	is_triggered_only = yes	
 	ai = no
 	
 	option = {
-		name = DMCoreEvt51OptA
+		name = DMCoreEvt37OptA
 		custom_tooltip = {
-			text = DMEventTooltip51A
+			text = DMEventTooltip37A
 		}
 		add_character_modifier = {
 			name = dm_immortal_good
@@ -1306,15 +1299,15 @@ narrative_event = {			# To Dream of Death
 		hidden_tooltip = {
 			add_trait = dm_deaths_deal
 			character_event = {
-				id = DMPlay.5101
+				id = DMPlay.3701
 				years = 10
 			}
 		}
 	}
 	option = {
-		name = DMCoreEvt51OptB
+		name = DMCoreEvt37OptB
 		custom_tooltip = {
-			text = DMEventTooltip51B
+			text = DMEventTooltip37B
 		}
 		add_character_modifier = {
 			name = dm_immortal_neutral
@@ -1323,15 +1316,15 @@ narrative_event = {			# To Dream of Death
 		hidden_tooltip = {
 			add_trait = dm_deaths_deal
 			character_event = {
-				id = DMPlay.5101
+				id = DMPlay.3701
 				years = 25
 			}
 		}
 	}
 	option = {
-		name = DMCoreEvt51OptC
+		name = DMCoreEvt37OptC
 		custom_tooltip = {
-			text = DMEventTooltip51C
+			text = DMEventTooltip37C
 		}
 		add_character_modifier = {
 			name = dm_immortal_bad
@@ -1340,15 +1333,15 @@ narrative_event = {			# To Dream of Death
 		hidden_tooltip = {
 			add_trait = dm_deaths_deal
 			character_event = {
-				id = DMPlay.5101
+				id = DMPlay.3701
 				years = 50
 			}
 		}
 	}
 	option = {
-		name = DMCoreEvt51OptD
+		name = DMCoreEvt37OptD
 		custom_tooltip = {
-			text = DMEventTooltip51D
+			text = DMEventTooltip37D
 		}
 		set_character_flag = dm_refused_death
 	}
@@ -1356,15 +1349,15 @@ narrative_event = {			# To Dream of Death
 }
 
 character_event = {			# To Dream of Death
-	id = DMPlay.5101
-	title = DMCoreEvttitle51
-	desc = DMCoreEvtdesc5101
+	id = DMPlay.3701
+	title = DMCoreEvttitle3701
+	desc = DMCoreEvtdesc3701
 	picture = GFX_evt_danse_macabre
 	is_triggered_only = yes	
 	ai = no
 	
 	option = {
-		name = DMCoreEvt5101OptA
+		name = DMCoreEvt3701OptA
 		death = {
 			death_reason = dm_deaths_deal_death
 		}
@@ -1372,46 +1365,46 @@ character_event = {			# To Dream of Death
 }
 
 character_event = {			# Blood of the Dragon
-	id = DMPlay.52
-	title = DMCoreEvttitle52
-	desc = DMCoreEvtdesc52
+	id = DMPlay.38
+	title = DMCoreEvttitle38
+	desc = DMCoreEvtdesc38
 	picture = GFX_evt_bloodlines
 	is_triggered_only = yes	
 	
 	option = {
-		name = DMCoreEvt52OptA
+		name = DMCoreEvt38OptA
 		custom_tooltip = {
-			text = DMEventTooltip52A
+			text = DMEventTooltip38A
 		}
 	}	
 }
 
 narrative_event = {			# Animal Kingdom
-	id = DMPlay.53
-	title = DMCoreEvttitle53
-	desc = DMCoreEvtdesc53
+	id = DMPlay.39
+	title = DMCoreEvttitle39
+	desc = DMCoreEvtdesc39
 	picture = GFX_evt_kitten_shadow
 	is_triggered_only = yes	
 	portrait = event_target:perfectly_normal
 	
 	option = {
-		name = DMCoreEvt53OptA
+		name = DMCoreEvt39OptA
 		custom_tooltip = {
-			text = DMEventTooltip53A
+			text = DMEventTooltip39A
 		}
 	}	
 }
 
 narrative_event = {			# 5G Unleashed
-	id = DMPlay.54
-	title = DMCoreEvttitle54
+	id = DMPlay.40
+	title = DMCoreEvttitle40
 	desc = { # Tower in your demense
 		trigger = {
 			any_demesne_province = {
 				has_province_modifier = dm_1G_tower
 			}
 		}
-		text = DMCoreEvtdesc54
+		text = DMCoreEvtdesc40
 	}
 	desc = { # No towers
 		trigger = {
@@ -1419,7 +1412,7 @@ narrative_event = {			# 5G Unleashed
 				NOT = { has_province_modifier = dm_1G_tower }
 			}
 		}
-		text = DMCoreEvtdesc54NoTower
+		text = DMCoreEvtdesc40NoTower
 	}
 			
 	picture = GFX_dm_herd_of_cows
@@ -1435,13 +1428,13 @@ narrative_event = {			# 5G Unleashed
 				has_province_modifier = dm_1G_tower
 			}
 		}
-		name = DMCoreEvtdesc54TTA
+		name = DMCoreEvtdesc40TTA
 		custom_tooltip = {
-			text = DMCoreEvtdesc54TTACustomTTTower
+			text = DMCoreEvtdesc40TTACustomTTTower
 		}
 	}
 	option = {
-		tooltip_info_custom = DMCoreEvtdesc54TTAQueenTT
+		tooltip_info_custom = DMCoreEvtdesc40TTAQueenTT
 		trigger = {
 			is_female = yes
 			has_title = k_england
@@ -1449,10 +1442,10 @@ narrative_event = {			# 5G Unleashed
 				has_province_modifier = dm_1G_tower
 			}
 		}
-		name = DMCoreEvtdesc54TTAQueen
+		name = DMCoreEvtdesc40TTAQueen
 		health = 0.5
 		custom_tooltip = {
-			text = DMCoreEvtdesc54TTACustomTTTower
+			text = DMCoreEvtdesc40TTACustomTTTower
 		}
 	}
 	option = {
@@ -1461,79 +1454,79 @@ narrative_event = {			# 5G Unleashed
 				NOT = { has_province_modifier = dm_1G_tower }
 			}
 		}
-		name = DMCoreEvtdesc54TTANoTower
+		name = DMCoreEvtdesc40TTANoTower
 		custom_tooltip = {
-			text = DMCoreEvtdesc54TTACustomTT
+			text = DMCoreEvtdesc40TTACustomTT
 		}
 	}
 }
 
 character_event = {			# For Whom The Horn Doots
-	id = DMPlay.57
+	id = DMPlay.41
 	offmap = allow
-	title = DMCoreEvttitle57
-	desc = DMCoreEvtdesc57
+	title = DMCoreEvttitle41
+	desc = DMCoreEvtdesc41
 	picture = GFX_evt_danse_macabre
 	is_triggered_only = yes	
 	
 	option = {
-		name = DMCoreEvtdesc57TTA
+		name = DMCoreEvtdesc41TTA
 		add_character_modifier = {
 			name = dm_dootdoot
 			duration = -1
 		}
 		custom_tooltip = {
-			text = DMCoreEvtdesc57TTACustom
+			text = DMCoreEvtdesc41TTACustom
 		}
 	}
 }
 
 character_event = {			# Eternity Pebbles
-	id = DMPlay.58
+	id = DMPlay.42
 	offmap = allow
-	title = DMCoreEvttitle58
-	desc = DMCoreEvtdesc58
+	title = DMCoreEvttitle42
+	desc = DMCoreEvtdesc42
 	picture = GFX_dm_eternity_pebbles
 	is_triggered_only = yes	
 	
 	option = {
-		name = DMCoreEvtdesc58TTA
+		name = DMCoreEvtdesc42TTA
 		custom_tooltip = {
-			text = DMCoreEvtdesc58TTACustom
+			text = DMCoreEvtdesc42TTACustom
 		}
 		custom_tooltip = {
-			text = DMCoreEvtdesc58TTBCustom
+			text = DMCoreEvtdesc42TTBCustom
 		}
 		custom_tooltip = {
-			text = DMCoreEvtdesc58TTCCustom
+			text = DMCoreEvtdesc42TTCCustom
 		}
 		custom_tooltip = {
-			text = DMCoreEvtdesc58TTDCustom
+			text = DMCoreEvtdesc42TTDCustom
 		}
 	}
 }
 
 character_event = {			# Rabies
-	id = DMPlay.59
+	id = DMPlay.43
 	offmap = allow
-	title = DMCoreEvttitle59
+	title = DMCoreEvttitle43
 	desc = {
 		trigger = {
 			dm_has_dog = yes
 		}
-		text = DMCoreEvtdesc59
+		text = DMCoreEvtdesc43
 	}
 	desc = {
 		trigger = {
 			dm_has_dog = no
 		}
-		text = DMCoreEvtdesc59NoDog
+		text = DMCoreEvtdesc43NoDog
 	}
 	picture = GFX_evt_wolf
 	is_triggered_only = yes	
 	
 	option = {
-		name = DMCoreEvtdesc59TTA
+		name = DMCoreEvtdesc43TTA
 		trigger = {
 			dm_has_dog = yes
 		}
@@ -1542,7 +1535,7 @@ character_event = {			# Rabies
 		dm_remove_dog = yes
 	}
 	option = {
-		name = DMCoreEvtdesc59TTB
+		name = DMCoreEvtdesc43TTB
 		trigger = {
 			dm_has_dog = no
 		}
