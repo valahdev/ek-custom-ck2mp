@@ -142,14 +142,13 @@ feudal_governments = {
 			#tribal_government
 		}
 		vassal_call_to_arms = {
-			orsimer_government
 			tribal_government
 		}
 		dukes_called_kings = yes
 		barons_need_dynasty = yes
 		uses_prestige_for_law_change = yes
 		can_build_city = no
-		can_build_tribal = yes
+		can_build_tribal = no
 		#can_build_hospitals = no
 		allow_looting = yes
 		ignores_de_jure_laws = yes

@@ -578,13 +578,12 @@ character_event = {			#Mrs Doubtfire#
 	immediate = {
 		any_playable_ruler = {
 			limit = {
-				NOT = { age < 16 }
 				ai = yes
-				is_ruler = yes
+				NOT = { age < 16 }
 			}
 			 any_spouse = { set_gender = opposite }
 			 set_gender = opposite
-			 if = {
+			if = {
 				limit = { trait = homosexual }
 				remove_trait = homosexual
 				set_character_flag = previously_homosexual
@@ -594,8 +593,6 @@ character_event = {			#Mrs Doubtfire#
 				add_trait = homosexual
 				clr_character_flag = previously_homosexual
 			}
-			add_character_modifier = { name = debug_event_fired duration = 365 }
-			set_nickname = "DEBUG: Event Executed"
 		}
 	}
 	

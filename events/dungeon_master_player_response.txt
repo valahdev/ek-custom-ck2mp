@@ -341,9 +341,15 @@ character_event = {			#Mrs Doubtfire#
 	title = DMCoreEvttitle11
 	desc = DMCoreEvtdesc11
 	picture = GFX_evt_bad_news_female
+
 	is_triggered_only = yes
+
 	ai = no
 	
+	trigger = {
+		age > 15
+	}
+
 	option = {
 		name = DMCoreEvt11OptA
 		set_gender = opposite
@@ -1132,7 +1138,7 @@ character_event = {			# Pet Shop
 		}
 		wealth = -50
 		custom_tooltip = {
-			text = DMCoreEvt47TooltipA
+			text = DMCoreEvt33TooltipA
 			random_list = {
 				25 = {
 					add_character_modifier = {

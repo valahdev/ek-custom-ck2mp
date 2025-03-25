@@ -520,7 +520,6 @@ character_event = {			# Followup to EU4 Dickery - severely injured event
 	option = { # Oh no.
 		name = DMCoreFollow13OptB
 		custom_tooltip = {
-			text = DMCoreFollow13OptDTooltip
 			add_trait = stressed
 		}
 	}
