@@ -34,3 +34,6 @@ The **Custom Elder Kangz Modpack Fork** is a collection of small to mid-sized mo
 
 ### 9. [[LMM] Councillor XP](https://steamcommunity.com/sharedfiles/filedetails/?id=2024763516)  
 **Creators**: LordMidasTM  
+
+### 10. [Custom Gift Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=1748375773)  
+**Creators**: LordHotspur  
