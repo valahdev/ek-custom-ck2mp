@@ -392,7 +392,7 @@ nedic = {
 			Grerid Greta Grete Grosta Gwendolyn Haelga Haema Hafjorg Hamal Haran Heddvild Hefid Hela Helga Helgi Helgird Hermir Hert Hestla Hidar Hild Hilde Hillevi Hjolfrodi Hjorta Hoddreid Holmgeira Horski Hrefna
 			Hreirek Hroa Hroki Hrordis Huki Hulda Hyring Iddra Idgrod Igna Ilfhild Illdi Imsin Inge Ingjard Ingokning Ingrid Ingun Iona Irgnir Jala Jensine Jolding Jolethe Jora Jordis Kar Karita Karoline Katla Kili
 			Kintyra Kirsten Kjolver Kolfinna Lailla Lami Leidela Liesl Lillith Lisaa Lisbet Lydia Lynly Lyris Mabjaarn Macalla Maeva Malene Maren Margarte Margret Matlara Maven Memna Mera Merete Merilis Merta Mette
-			Mildrith Minette Mjoll Narri Nilsine Njada Nura Nurnhilde Olava Olda Olfeigr Olfina Olfwenn Ondi Oriella Orla Petrine Rangela Reylia Rigmor Rikke Ringvild Risi Rona Rostlogi Ruki Runa Samar Serana Signy Sigrid
+			Mildrith Minette Mjoll Narri Nilsine Njada Nura Nurnhilde Olava Olda Olfeigr Olfina Ondi Oriella Orla Petrine Rangela Reylia Rigmor Rikke Ringvild Risi Rona Rostlogi Ruki Runa Samar Serana Signy Sigrid
 			Silda Siri Sissel Skjorta Sofie Sonir Sonje Sorli Sottilde Susanna Svana Svari Svenja Swanhvir Sylgja Tekla Temba Thaena Thalestris Thora Threki Throna Thunmund Thyra Tilde Tilma Tormir Tova Ulfrun Ulrika
 			Una Ursine Uthgerd Val Valerica_Valeria Vigdis Vori Wibke Ygfa Ysolda_Isabel Anka_Anka
 		}
@@ -610,6 +610,7 @@ nedic = {
 
 		from_dynasty_prefix = "nol "
 		dukes_called_kings = yes
+		
 		male_patronym = "sson"
 		female_patronym = "sdottir"
 		prefix = no # The patronym is added as a suffix
@@ -1153,7 +1154,7 @@ chimeris = {
 			Shufthakul Shuftharz Shuga Shugzar Shurkul Shuzrag Sloogolga Sloomalah Sluz Snagara Snaghusha Snak Snarataga Snarga Snargara Snaruga Sneehash Snilga Snoogh Snushbesh Solgra Stilga Stroda Stuga
 			Stughrush Stulga Tamozag Theg Thegbesh Thegshakul Thegshalash Theshaga Theshgoth Thishnaku Thoga Thogra Thrugrak Thugnekh Thulga Thushleg Tugha Ubzigub Udai Ufalga Ufgabesh Ufgaz Ufgel Ufgra Uftheg
 			Ugak Ugarnesh Ugduk Ugor Ugrash Ugrush Uldushna Ulfgalash Ulg Ulgush Uloth Ulsha Ulu Ulubesh Uluga Ulukhaz Ulumpha Umar Umbugbek Umgubesh Umog Umutha Umzolabesh Undorga Undush Undusha Uratag Urbzag
-			Urdboga Urgarlag Urog Urshra Uruka Urzoga Urzoth Urzul Urzula Usha Ushaga Ushenat Ushruka Urzikh Ushug Ushuta Uthik Uzka Voltha Vosh Vumnish Vush Yag Yakhu Yarlak Yarulorz Yatanakh Yatul Yatular Yatzog
+			Urdboga Urgarlag Urog Urshra Uruka Urzoga Urzoth Urzul Urzula Usha Ushaga Ushenat Ushruka Ushug Ushuta Uthik Uzka Voltha Vosh Vumnish Vush Yag Yakhu Yarlak Yarulorz Yatanakh Yatul Yatular Yatzog
 			Yazara Yazgash Yazgruga Yazoga Zaag Zagla Zagula Zubesha Zugh Zuugarz Zuuthag Zuuthusha 
 		}
 		
@@ -1357,6 +1358,33 @@ chimeris = {
 			Rasamsi Rawia Sakiran Samsi Santinti Seba Sen Senipu Shali Shallath-Piremus Shinammu Shishi Shulki Shullay Sinnammu Sonummu Tashpi
 			Tissamsi Tunipy Tussi Ulibabi Ulisamsi Urshamusa Vabbar Yanabani Yan-Ahhe Yanibi Yenabi Zaba Zabi Zanummu Zennammu Zula Manirai Manu
 			Nummu Shara Zebba Mamaea Tenaru Verara Tavi Kireth Nilae Vaama
+		}
+		
+		from_dynasty_prefix = "of "
+		
+		# Chance of male children being named after their paternal or maternal grandfather or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 20
+		mat_grf_name_chance = 10
+		father_name_chance = 10
+		
+		# Chance of female children being named after their paternal or maternal grandmother or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 20
+		mother_name_chance = 10
+
+		modifier = dunmer_culture_modifier
+	}
+	
+	vivec = {
+		graphical_cultures = { vivecgfx muslimgfx }
+
+		color = { 0.85 0.6953 0.0765 }
+		
+		male_names = {
+			Vivec
+		}
+		female_names = {
+			Vivec
 		}
 		
 		from_dynasty_prefix = "of "

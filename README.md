@@ -36,4 +36,7 @@ The **Custom Elder Kangz Modpack Fork** is a collection of small to mid-sized mo
 **Creators**: LordMidasTM  
 
 ### 10. [Custom Gift Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=1748375773)  
-**Creators**: LordHotspur  
+**Creators**: LordHotspur 
+
+### 11. [Dwemer Contingency 2.0](https://steamcommunity.com/sharedfiles/filedetails/?id=2145741418)  
+**Creators**: Mr Samuel Streamer, Nil 

@@ -7,8 +7,13 @@ max_settlements = 4
 b_alftand = castle
 
 # Misc
-culture = nord
-religion = eight_divines
+culture = dwemer
+religion = dwemer_religion
 terrain = mountain
 
 # History
+3369.1.1 = {
+	b_alftand = ca_dwemerdefensivetraps_0
+	b_alftand = ca_RetinueOrga_0
+	b_alftand = ca_RetinueOrga_1
+}

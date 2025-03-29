@@ -90,20 +90,20 @@ bm_interregnum = {
 		}
 	}
 	selectable_character = {
-		id = 120577 # Tsaesci Va'Tsii Iria of Gorling
-		name = ERA_CHAR_NAME_120577
-		age = 163
-		title = k_gorling
-		title_name = k_gorling
+		id = 9992130 # Rkungthunch
+		name = ERA_CHAR_NAME_9992130
+		age = 59
+		title = c_alftand
+		title_name = c_alftand
 		
 		character = {
-			female = yes
+			female = no
 			dna = "eedm0meab0"
 			properties="geaacd000000"
-			religion = five_courts
-			culture = tsaesci
-			government = matriarchy_government
-			dynasty = 240008
+			religion = dwemer_religion
+			culture = dwemer
+			government = technocratic_feudal
+			dynasty = 4449990
 		}
 	}
 	selectable_character = {

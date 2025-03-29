@@ -1,10 +1,9 @@
-416.1.1 = { liege = d_narsis }
 
 3250.1.1 = { holder = 48650 }
 
-3350.1.1 = { holder = 48651 }
-
-3390.1.1 = { holder = 48652 }
+3369.1.1 = { holder = 9992133
+			law  =  succ_tanistry
+			law  =  standing_army_law_1 }
 
 3490.1.1 = { holder = 48654 }
 3548.1.1 = { holder = 48655 }

@@ -1,5 +1,6 @@
-3370.1.1 = { liege = k_eastmarch }
-3370.1.1 = { holder = 10115 }
+3369.1.1 = { holder = 9992130
+			law  =  succ_tanistry
+			law  =  standing_army_law_1}
 3382.1.1 = { holder = 9176 }
 3388.1.1 = { holder = 9180 }
 3420.1.1 = { holder = 9182 }

@@ -35,6 +35,7 @@ feudal_governments = {
 			}
 			NOT = { is_government_potential = roman_imperial_government }
 			NOT = { is_government_potential = order_government }
+			NOT = { is_government_potential = technocratic_feudal }
 			is_patrician = no
 			NAND = {
 				culture = orsimer

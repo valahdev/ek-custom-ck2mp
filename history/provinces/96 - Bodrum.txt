@@ -9,8 +9,13 @@ b_greymist = temple
 b_aldalexa = city
 
 # Misc
-culture = dunmer
-religion = almsivi
+culture = dwemer
+religion = dwemer_religion
 terrain = hills
 
 # History
+3369.1.1 = {
+	b_bodrum = ca_dwemerdefensivetraps_0
+	b_bodrum = ca_RetinueOrga_0
+	b_bodrum = ca_RetinueOrga_1
+}

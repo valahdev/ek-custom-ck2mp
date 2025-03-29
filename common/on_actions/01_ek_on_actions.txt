@@ -1,7 +1,7 @@
 on_startup = {
 	effect = {
 		if = {
-			limit = { OR = { has_racial_trait = no } }
+			limit = { OR = { has_racial_trait = no is_mer = yes } }
 			assign_racial_trait = yes
 			if = {
 				limit = {
@@ -15,7 +15,7 @@ on_startup = {
 				character_event = { id = altmer.0 }
 			}
 			any_courtier_or_vassal = {
-				limit = { OR = { has_racial_trait = no } }
+				limit = { OR = { has_racial_trait = no is_mer = yes } }
 				assign_racial_trait = yes
 				if = {
 					limit = {
@@ -116,13 +116,14 @@ on_startup = {
 		story_wintersreturn.1
 		orgnum.19
 		relbeh.0 # Religious behaviour traits
+		DW.1
 	}
 }
 
 on_chronicle_start = {
 	effect = {
 		if = {
-			limit = { OR = { has_racial_trait = no } }
+			limit = { OR = { has_racial_trait = no is_mer = yes } }
 			assign_racial_trait = yes
 			if = {
 				limit = {
@@ -136,7 +137,7 @@ on_chronicle_start = {
 				character_event = { id = altmer.0 }
 			}
 			any_courtier_or_vassal = {
-				limit = { OR = { has_racial_trait = no } }
+				limit = { OR = { has_racial_trait = no is_mer = yes } }
 				assign_racial_trait = yes
 				if = {
 					limit = {
@@ -408,7 +409,7 @@ on_post_birth = {
 		}
 		if = {
 			limit = {
-				OR = { has_racial_trait = no }
+				OR = { has_racial_trait = no is_mer = yes }
 			}
 			assign_racial_trait = yes
 			if = {
@@ -490,7 +491,7 @@ on_adulthood = {
 
 on_yearly_pulse = {
 	effect = {
-		if = { limit = { has_racial_trait = no } assign_racial_trait = yes }
+		if = { limit = { OR = { has_racial_trait = no is_mer = yes } } assign_racial_trait = yes }
 		if = { limit = { has_birthsign = no } assign_birthsign = yes }
 		if = {
 			limit = {
@@ -695,7 +696,9 @@ on_new_holder = {
 		eldercouncil.800 # Death of a pretender
 		eldercouncil.1901 # Emperor trait
 		#ektrade.100 # Trade post maintenance
-		
+		eso.100 #Varen's Rebellion
+		eso.110 #Fortunata's Conquest
+		eso.120 #Ephrem's Conquest
 		orsimer.2 # Orsinium is destroyed if held by a non-Orc
 		
 		reach_flavour.16 #Awards the Faolan/Melka title
@@ -854,7 +857,7 @@ on_artifact_inheritance = {
 	effect = {
 		if = {
 			limit = { FROM = { artifact_type = ring_happiness } ROOT = { OR = { trait = depressed trait = stressed } } }
-			remove_trait = depressed remove_trait = stressed
+			if = { limit = { trait = depressed } remove_trait = depressed } if = { limit = { trait = stressed } remove_trait = stressed }
 		}
 	}
 	events = {
@@ -972,7 +975,7 @@ on_employer_change = {
 	effect = {
 		if = {
 			limit = {
-				OR = { has_racial_trait = no }
+				OR = { has_racial_trait = no is_mer = yes }
 			}
 			assign_racial_trait = yes
 			if = {
@@ -1014,7 +1017,7 @@ on_host_change = {
 	effect = {
 		if = {
 			limit = {
-				OR = { has_racial_trait = no }
+				OR = { has_racial_trait = no is_mer = yes }
 			}
 			assign_racial_trait = yes
 			if = {

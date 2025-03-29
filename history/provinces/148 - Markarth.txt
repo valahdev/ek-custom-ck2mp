@@ -13,12 +13,17 @@ b_wulfharth = temple
 #b_kurfyk = castle
 
 # Misc
-culture = reachmen
-religion = old_gods
+culture = dwemer
+religion = dwemer_religion
 terrain = mountain
 
 # History
 1.1.1 = {
+	b_understone = ca_dwemerdefensivetraps_0
 	build_wonder = wonder_understone
 	set_wonder_stage = 1
+}
+3369.1.1 = {
+	b_understone = ca_RetinueOrga_0
+	b_understone = ca_RetinueOrga_1
 }

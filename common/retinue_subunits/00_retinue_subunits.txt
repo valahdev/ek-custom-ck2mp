@@ -16,6 +16,7 @@ RETTYPE_INF1 = {
 
 	potential = {
 		is_nomadic = no
+		NOT = { culture = dwemer }
 	}
 	
 	modifier = {
@@ -31,6 +32,7 @@ RETTYPE_INF2 = {
 
 	potential = {
 		is_nomadic = no
+		NOT = { culture = dwemer }
 	}
 	
 	modifier = {
@@ -40,13 +42,14 @@ RETTYPE_INF2 = {
 	}
 }
 
-RETTYPE_INF3 = {
+RETTYPE_MAGE = {
 	first_type = 2
-	first_amount = 250
+	first_amount = 100
 	
 
 	potential = {
 		is_nomadic = no
+		NOT = { culture = dwemer }
 	}
 	
 	modifier = {
@@ -62,6 +65,7 @@ RETTYPE_CAV1 = {
 
 	potential = {
 		is_nomadic = no
+		NOT = { culture = dwemer }
 	}
 	
 	modifier = {
@@ -77,6 +81,7 @@ RETTYPE_CAV2 = {
 
 	potential = {
 		is_nomadic = no
+		NOT = { culture = dwemer }
 	}
 	
 	modifier = {
@@ -92,6 +97,7 @@ RETTYPE_SKIR1 = {
 
 	potential = {
 		is_nomadic = no
+		NOT = { culture = dwemer }
 	}
 	
 	modifier = {
@@ -100,6 +106,7 @@ RETTYPE_SKIR1 = {
 		archers_defensive = 0.1
 	}
 }
+
 
 RETTYPE_MAGES = {
 	first_type = 6
@@ -115,6 +122,7 @@ RETTYPE_MAGES = {
 			trait = lich
 			trait = briarheart
 		}
+		NOT = { culture = dwemer }
 	}
 	
 	modifier = {
@@ -200,6 +208,7 @@ RETTYPE_HORSEARCHERS = {
 			OR = {
 				culture_group = tsaesci_group
 				culture = akaviri
+				NOT = { culture = dwemer }
 			}
 		}
 	}
@@ -311,6 +320,43 @@ RETTYPE_WARWOOLIES = {
 		war_mammoths_defensive = 0.1
 	}
 }
+
+RETTYPE_SPHERE = {
+	first_type = 6
+	first_amount = 200
+	
+	special_troops = sphere
+
+	potential = {
+		is_nomadic = no
+		culture = dwemer
+	}
+	
+	modifier = {
+		sphere_morale = 0.1
+		sphere_offensive = 0.1
+		sphere_defensive = 0.1
+	}
+}
+
+RETTYPE_CENTURION = {
+	first_type = 6
+	first_amount = 50
+	
+	special_troops = centurion
+
+	potential = {
+		is_nomadic = no
+		culture = dwemer
+	}
+	
+	modifier = {
+		centurion_morale = 1
+		centurion_offensive = 1
+		centurion_defensive = 1
+	}
+}
+
 
 #Cultural
 #RETTYPE_IMPERIAL_1 = { # Imperial Auxilia

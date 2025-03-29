@@ -8380,7 +8380,8 @@ castle = {
 		
 		levy_reinforce_rate = 0.05
 		light_infantry = 25
-		heavy_infantry = 25
+		sphere = 25
+		retinuesize = 20
 		
 		ai_creation_factor = 92
 		
@@ -8403,7 +8404,8 @@ castle = {
 		
 		levy_reinforce_rate = 0.10
 		light_infantry = 25
-		heavy_infantry = 25
+		sphere = 25
+		retinuesize = 20
 		
 		ai_creation_factor = 92
 		
@@ -8426,7 +8428,8 @@ castle = {
 		
 		levy_reinforce_rate = 0.10
 		light_infantry = 25
-		heavy_infantry = 25
+		sphere = 25
+		retinuesize = 20
 		
 		ai_creation_factor = 92
 		
@@ -8449,7 +8452,8 @@ castle = {
 		build_time = 180
 		
 		garrison_size = 0.05
-		heavy_infantry = 50
+		sphere = 50
+		retinuesize = 5
 		
 		ai_creation_factor = 100
 		
@@ -8471,7 +8475,8 @@ castle = {
 		build_time = 180
 		
 		garrison_size = 0.05
-		heavy_infantry = 50
+		sphere = 50
+		retinuesize = 5
 		
 		ai_creation_factor = 92
 		
@@ -9172,6 +9177,7 @@ castle = {
 		
 		pikemen = 10 #Embassy Guards
 		liege_prestige = 0.30
+		vassal_opinion = 5
 		culture_techpoints = 0.01
 		garrison_size	= 0.05
 		

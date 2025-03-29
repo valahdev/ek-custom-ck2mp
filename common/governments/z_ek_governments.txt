@@ -49,6 +49,7 @@ feudal_governments = {
 				#has_law = succ_imperial_elder_council
 			}
 			NOT = { is_government_potential = undead_government }
+			NOT = { is_government_potential = technocratic_feudal }
 		}
 
 		color = { 100 15 255 }
@@ -62,11 +63,70 @@ feudal_governments = {
 		demesne_size = -1 # This is -really- incredibly punitive - especially only at the King level.
 		vassal_limit = 10 #So I'm buffing this.
 		commander_limit = 1
-		castle_vassal_tax_modifier = -0.25
-		city_vassal_tax_modifier = -0.25
-		temple_vassal_tax_modifier = -0.25
-		tribal_vassal_tax_modifier = -0.25 
+		 
+		character_modifier = {
+			castle_vassal_tax_modifier = -0.25
+			city_vassal_tax_modifier = -0.25
+			temple_vassal_tax_modifier = -0.25
+			tribal_vassal_tax_modifier = -0.25
+		}
+		ignore_in_vassal_limit_calculation = {
+			tribal_government
+		}
+		capital_move_delay = 600
+	}
+	technocratic_feudal = {
+		preferred_holdings = { CASTLE TEMPLE }
+		allowed_holdings = { 
+			CASTLE 
+			TEMPLE
+			FORT
+			HOSPITAL
+		}
+		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
+			TRIBAL
+		}
+		accepts_liege_governments = { # Gets the wrong religion modifier instead
+			muslim_government
+			theocracy_government
+			feudal_government
+		}
+		free_revoke_on_governments = { theocracy_government }
+		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
+			tribal_government
+		}
+		frame_suffix = "_technocratic"
+		title_prefix = "technocratic_"
+		potential = {
+			NOR = {
+				is_government_potential = roman_imperial_government
+				is_government_potential = order_government
+			} 
+			OR = {
+				culture = dwemer
+				religion = dwemer_religion
+			}
+			is_patrician = no
+		}
 		
+		color = { 255 187 0 }
+		
+		allow_looting = yes
+		ignores_de_jure_laws = yes
+		
+		can_imprison_without_reason = no
+		can_revoke_without_reason = yes
+		uses_prestige_for_law_change = yes
+		dukes_called_kings = yes
+		barons_need_dynasty = yes
+
+		can_build_tribal = no
+		character_modifier = {
+			city_vassal_tax_modifier = 0.05
+			temple_vassal_tax_modifier = 0.05
+			castle_vassal_tax_modifier = -0.05
+			retinuesize_perc = 0.05
+		}
 		ignore_in_vassal_limit_calculation = {
 			tribal_government
 		}

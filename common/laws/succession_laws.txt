@@ -953,6 +953,7 @@ succession_laws = {
 			}
 			NOT = { holder_scope = { government = confucian_bureaucracy } }
 			NOT = { holder_scope = { government = chinese_imperial_government } }
+			holder_scope = { government = technocratic_feudal }
 			is_dunmer_great_house_title = no
 		}
 		allow = {

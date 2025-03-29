@@ -1,4 +1,6 @@
-3364.1.1 = { holder = 15063 }
+3369.1.1 = { holder = 9992131
+			law  =  succ_tanistry
+			law  =  standing_army_law_1 }
 3398.1.1 = { holder = 15069 }
 3442.1.1 = { holder = 15070 }
 3447.1.1 = { holder = 16254 }

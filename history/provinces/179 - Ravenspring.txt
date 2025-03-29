@@ -8,8 +8,13 @@ b_ravenspring = castle
 b_coldperch = castle
 
 # Misc
-culture = reachmen
-religion = old_gods
+culture = dwemer
+religion = dwemer_religion
 terrain = mountain
 
 # History
+3369.1.1 = {
+	b_ravenspring = ca_dwemerdefensivetraps_0
+	b_ravenspring = ca_RetinueOrga_0
+	b_ravenspring = ca_RetinueOrga_1
+}
