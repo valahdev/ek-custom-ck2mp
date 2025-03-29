@@ -9404,6 +9404,7 @@ character_event = {
 				
 				FROM = {
 					add_trait = polymorph_chicken
+					add_character_modifier = { name = spell_ward duration = 1825 }
 					character_event = {
 						id = 126567
 						days = 365

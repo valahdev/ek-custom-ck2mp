@@ -1121,6 +1121,48 @@ modifier_potion_of_genderswap = {
 	icon = 159
 	health = -1 #Lasts for 5 years, more than -1 would be pretty punishing
 }
+
+#Custom made potions for EK fork#
+modifier_potion_of_dehomosexualised = {
+	icon = 158
+	health = +2 
+}
+modifier_potion_of_true_sight = { #Mimics Detec Life/Detect Dead spells
+	icon = 158
+	plot_discovery_chance = 0.5
+}
+modifier_potion_of_beast_form = { #similar idea to the lycanthropy in Skyrim
+	icon = 158
+	martial = 5
+	combat_rating = 10
+	diplomacy = -5
+	intrigue = -5
+	stewardship = -5
+}
+modifier_potion_of_shadow_embrace = { #Nightblade magic or the Shadowcloak of Nocturnal
+	icon = 158
+	intrigue = 3
+	assassinate_chance_modifier = 0.35
+	general_opinion = -20
+}
+modifier_potion_of_voice_of_emperor = { #mperial Charm racial ability
+	icon = 158
+	vassal_opinion = 15
+	global_revolt_risk = -0.3
+}
+modifier_potion_of_levitation = { #Levitation magic from TES3: Morrowind
+	icon = 158
+	siege_speed = 0.15
+	global_movement_speed = 0.15
+}
+#modifier_potion_dragonfire = { #Dragonborn’s fire breath or Destruction magic
+#	icon = 158
+#	siege_defence = 0.1
+#	siege_speed = 0.1
+#	land_morale = 0.15
+#	supply_limit = -0.35
+#}
+
 faction_succ_feudal_confirmation_ultimatum_timer = { icon = 1 }
 
 #Province modifier placeholders

@@ -3200,7 +3200,9 @@ targetted_decisions = {
 			}
 		}
 		effect = {
-			FROM = { character_event = { id = 600062 } }
+			FROM = { 
+				character_event = { id = 600062 } 
+				}
 		}
 
 		ai_will_do = {

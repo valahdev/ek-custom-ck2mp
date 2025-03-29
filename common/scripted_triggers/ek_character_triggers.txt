@@ -940,6 +940,13 @@ chugged_it_down_innit_bruv = { #Yes, this one.
 			has_character_modifier = modifier_potion_of_fortify_agility
 			has_character_modifier = modifier_potion_of_regeneration
 			has_character_modifier = modifier_potion_of_genderswap
+			has_character_modifier = modifier_potion_of_dehomosexualised
+			has_character_modifier = modifier_potion_of_true_sight
+			has_character_modifier = modifier_potion_of_beast_form
+			has_character_modifier = modifier_potion_of_shadow_embrace
+			has_character_modifier = modifier_potion_of_voice_of_emperor
+			has_character_modifier = modifier_potion_of_levitation
+			#has_character_modifier = modifier_potion_dragonfire
 		}
 	}
 }
@@ -1430,6 +1437,18 @@ is_undisciplined_commander = {
 }
 
 eligible_for_genderswap = {
+	is_adult = yes
+	NOR = {
+		is_pregnant = yes
+		trait = hagraven
+		trait = briarheart
+		government = orsimer_government #Needs to be made Egalitarian TODO
+		government = matriarchy_government
+		government = mane_government #Needs to be made Egalitarian TODO
+	}
+}
+
+eligible_for_dehomosexualised = {
 	is_adult = yes
 	NOR = {
 		is_pregnant = yes

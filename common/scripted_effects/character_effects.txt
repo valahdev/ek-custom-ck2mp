@@ -1167,6 +1167,11 @@ assign_sexual_orientation_all = {
 	}
 }
 
+assign_orientation_after_birthsex = {
+	remove_trait = homosexual
+	remove_trait = bisexual
+}
+
 swap_character_sex = { #Sets gender to opposite, fires rename event, swaps gendered versions of traits
 	set_gender = opposite
 	character_event = { id = eksexuality.21 }

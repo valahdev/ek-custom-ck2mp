@@ -20,6 +20,8 @@ alch_potion_of_regeneration;Draught of Regeneration;;;;;;;;;;;;;x
 alch_potion_of_regeneration_desc;Imbibe a Draught of Regeneration, encouraging much of your body's resources to mending your broken physique, but at great and lasting cost to your personal health.;;;;;;;;;;;;;x
 alch_potion_of_genderswap;Transformative Elixir;;;;;;;;;;;;;x
 alch_potion_of_genderswap_desc;Imbibe a Transformative Elixir, alchemically reconfiguring your body to that of the opposite sex. Be warned, such an advanced concoction comes with great risk. (Developer's note: This potion may undergo major revisions in the future. Current implementation should be considered a proof-of-concept, and feedback is appreciated. -Ev P.S. Yes this is lore-friendly.);;;;;;;;;;;;;x
+alch_potion_of_dehomosexualised;Dehomosexualised Elixir;;;;;;;;;;;;;x
+alch_potion_of_dehomosexualised_desc;Imbibe a Dehomosexualised Elixir, alchemically reconfiguring your mind to that of the birth sex.;;;;;;;;;;;;;x
 chugged_it_down_innit_bruv;Not under the effects of any other Potion;;;;;;;;;;;;;x
 underpotioneffect;Not under the effects of any other Potion;;;;;;;;;;;;;x
 modifier_bad_potion;Spoiled Potion;;;;;;;;;;;;;x
@@ -46,6 +48,8 @@ modifier_potion_of_regeneration;Draught of Regeneration;;;;;;;;;;;;;x
 modifier_potion_of_regeneration_desc;[Root.GetDynName] is experiencing the after-effects of a Draught of Regeneration, [Root.GetHerHis] body severely weakened after devoting extreme amounts of energy and resources to repairing major damage.;;;;;;;;;;;;;x
 modifier_potion_of_genderswap;Transformative Elixir;;;;;;;;;;;;;x
 modifier_potion_of_genderswap_desc;[Root.GetDynName] is experiencing the after-effects of a Transformative Elixir, [Root.GetHerHis] body severely weakened after devoting extreme amounts of energy and resources to major anatomical reconfiguration.;;;;;;;;;;;;;x
+modifier_potion_of_dehomosexualised;Dehomosexualised Elixir;;;;;;;;;;;;;x
+modifier_potion_of_dehomosexualised_desc;[Root.GetDynName] is experiencing the after-effects of a Dehomosexualised Elixir, [Root.GetHerHis] body and mind weakened after devoting large amounts of physical effort and mental strength to accept that perhaps it was just a phase.;;;;;;;;;;;;;x
 open_alchemist;Visit an Alchemist;;;;;;;;;;;;;x
 open_alchemist_desc;Enter the establishment of a local alchemist, who has a wide range of potions you may purchase with varying effects!;;;;;;;;;;;;;x
 market_leave_store;Return to the Market;;;;;;;;;;;;;x
