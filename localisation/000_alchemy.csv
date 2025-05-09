@@ -22,6 +22,16 @@ alch_potion_of_genderswap;Transformative Elixir;;;;;;;;;;;;;x
 alch_potion_of_genderswap_desc;Imbibe a Transformative Elixir, alchemically reconfiguring your body to that of the opposite sex. Be warned, such an advanced concoction comes with great risk. (Developer's note: This potion may undergo major revisions in the future. Current implementation should be considered a proof-of-concept, and feedback is appreciated. -Ev P.S. Yes this is lore-friendly.);;;;;;;;;;;;;x
 alch_potion_of_dehomosexualised;Dehomosexualised Elixir;;;;;;;;;;;;;x
 alch_potion_of_dehomosexualised_desc;Imbibe a Dehomosexualised Elixir, alchemically reconfiguring your mind to that of the birth sex.;;;;;;;;;;;;;x
+alch_potion_of_true_sight;Potion of True Sight;;;;;;;;;;;;;x  
+alch_potion_of_true_sight_desc;Imbibe a Potion of True Sight, temporarily increasing the likelihood of successfully discovering hostile schemes.;;;;;;;;;;;;;x  
+alch_potion_of_beast_form;Potion of Beast Form;;;;;;;;;;;;;x  
+alch_potion_of_beast_form_desc;Imbibe a Potion of Beast Form, temporarily enhancing raw physical power at the cost of diplomatic and strategic judgment.;;;;;;;;;;;;;x  
+alch_potion_of_shadow_embrace;Potion of Shadow Embrace;;;;;;;;;;;;;x  
+alch_potion_of_shadow_embrace_desc;Imbibe a Potion of Shadow Embrace, greatly improving stealth and assassination capability while fostering distrust.;;;;;;;;;;;;;x  
+alch_potion_of_voice_of_emperor;Potion of Voice of the Emperor;;;;;;;;;;;;;x  
+alch_potion_of_voice_of_emperor_desc;Imbibe a Potion of Voice of the Emperor, temporarily amplifying authority to quell dissent and secure loyalty.;;;;;;;;;;;;;x  
+alch_potion_of_levitation;Potion of Levitation;;;;;;;;;;;;;x  
+alch_potion_of_levitation_desc;Imbibe a Potion of Levitation, granting unnatural tactical mobility and siege speed for its duration.;;;;;;;;;;;;;x  
 chugged_it_down_innit_bruv;Not under the effects of any other Potion;;;;;;;;;;;;;x
 underpotioneffect;Not under the effects of any other Potion;;;;;;;;;;;;;x
 modifier_bad_potion;Spoiled Potion;;;;;;;;;;;;;x
@@ -50,6 +60,16 @@ modifier_potion_of_genderswap;Transformative Elixir;;;;;;;;;;;;;x
 modifier_potion_of_genderswap_desc;[Root.GetDynName] is experiencing the after-effects of a Transformative Elixir, [Root.GetHerHis] body severely weakened after devoting extreme amounts of energy and resources to major anatomical reconfiguration.;;;;;;;;;;;;;x
 modifier_potion_of_dehomosexualised;Dehomosexualised Elixir;;;;;;;;;;;;;x
 modifier_potion_of_dehomosexualised_desc;[Root.GetDynName] is experiencing the after-effects of a Dehomosexualised Elixir, [Root.GetHerHis] body and mind weakened after devoting large amounts of physical effort and mental strength to accept that perhaps it was just a phase.;;;;;;;;;;;;;x
+modifier_potion_of_true_sight;Potion of True Sight;;;;;;;;;;;;;x  
+modifier_potion_of_true_sight_desc;[Root.GetDynName] is under the effects of a Potion of True Sight, increasing the chances of discovering other plots.;;;;;;;;;;;;;x  
+modifier_potion_of_beast_form;Potion of Beast Form;;;;;;;;;;;;;x
+modifier_potion_of_beast_form_desc;[Root.GetDynName] is under the effects of a Potion of Beast Form, unleashing raw physical power at the cost of diplomatic and strategic judgment.;;;;;;;;;;;;;x
+modifier_potion_of_shadow_embrace;Potion of Shadow Embrace;;;;;;;;;;;;;x
+modifier_potion_of_shadow_embrace_desc;[Root.GetDynName] is under the effects of a Potion of Shadow Embrace, enhancing stealth and subtlety while breeding distrust among allies.;;;;;;;;;;;;;x
+modifier_potion_of_voice_of_emperor;Potion of the Imperial Voice;;;;;;;;;;;;;x
+modifier_potion_of_voice_of_emperor_desc;[Root.GetDynName] is under the effects of a Potion of the Imperial Voice, amplifying authoritative presence and subduing dissent.;;;;;;;;;;;;;x
+modifier_potion_of_levitation;Potion of Levitation;;;;;;;;;;;;;x
+modifier_potion_of_levitation_desc;[Root.GetDynName] is under the effects of a Potion of Levitation, granting unnatural swiftness and elevation for tactical advantage.;;;;;;;;;;;;;x
 open_alchemist;Visit an Alchemist;;;;;;;;;;;;;x
 open_alchemist_desc;Enter the establishment of a local alchemist, who has a wide range of potions you may purchase with varying effects!;;;;;;;;;;;;;x
 market_leave_store;Return to the Market;;;;;;;;;;;;;x

@@ -1,0 +1,640 @@
+namespace = racechange
+
+# ------ IMPERIAL ------ #
+
+character_event = {
+    id = racechange.1
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = imperial
+		culture = imperial
+		assign_racial_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+character_event = {
+    id = racechange.2
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = nibenean
+		culture = nibenean
+		assign_racial_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+character_event = {
+    id = racechange.3
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = colovian
+		culture = colovian
+		assign_racial_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+# ------ NORD ------ #
+
+character_event = {
+    id = racechange.4
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = nord
+		culture = nord
+		assign_racial_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+character_event = {
+    id = racechange.5
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = skaal
+		culture = skaal
+		assign_racial_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+character_event = {
+    id = racechange.6
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = atmoran
+		culture = atmoran
+		assign_racial_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+# ------ WESTERN ------ #
+
+character_event = {
+    id = racechange.7
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = breton
+		culture = breton
+		assign_racial_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+character_event = {
+    id = racechange.8
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = reachmen
+		culture = reachmen
+		assign_racial_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+# ------ REDGUARD ------ #
+
+character_event = {
+    id = racechange.9
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = forebear
+		culture = forebear
+		assign_racial_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+character_event = {
+    id = racechange.10
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = crown
+		culture = crown
+		assign_racial_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+character_event = {
+    id = racechange.11
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = yokudan
+		culture = yokudan
+		assign_racial_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+# ------ ALTMER ------ #
+
+character_event = {
+    id = racechange.12
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = altmer
+		culture = altmer
+		add_altmer_trait = yes
+		add_trait = impure_altmer
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+# ------ BOSMER ------ #
+
+character_event = {
+    id = racechange.13
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = bosmer
+		culture = bosmer
+		add_bosmer_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+# ------ MAOMER ------ #
+
+character_event = {
+    id = racechange.14
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = maormer
+		culture = maormer
+		add_maormer_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+# ------ AYLEID ------ #
+
+character_event = {
+    id = racechange.15
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = ayleid
+		culture = ayleid
+		add_ayleid_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+# ------ FALMER ------ #
+
+character_event = {
+    id = racechange.16
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = falmer
+		culture = falmer
+		add_falmer_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+# ------ DUNMER ------ #
+
+character_event = {
+    id = racechange.17
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = dunmer
+		culture = dunmer
+		add_dunmer_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+character_event = {
+    id = racechange.18
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = ashlander
+		culture = ashlander
+		add_dunmer_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+# ------ CHIMER ------ #
+
+character_event = {
+    id = racechange.19
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = chimer
+		culture = chimer
+		add_chimer_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+# ------ ORSIMER ------ #
+
+character_event = {
+    id = racechange.20
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = orsimer
+		culture = orsimer
+		assign_racial_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+# ------ KHAJIT ------ #
+
+character_event = {
+    id = racechange.21
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = pellitinian
+		culture = pellitinian
+		assign_racial_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+character_event = {
+    id = racechange.22
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = anequinan
+		culture = anequinan
+		assign_racial_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+# ------ SUNTHAY-RAHT ------ #
+
+character_event = {
+    id = racechange.23
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = pellitinian
+		culture = pellitinian
+		assign_racial_trait = yes
+		add_trait = raht
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+character_event = {
+    id = racechange.24
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = anequinan
+		culture = anequinan
+		assign_racial_trait = yes
+		add_trait = raht
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+# ------ ARGONIAN ------ #
+
+character_event = {
+    id = racechange.25
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = agaceph
+		culture = agaceph
+		assign_racial_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+character_event = {
+    id = racechange.26
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = archein
+		culture = archein
+		assign_racial_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+character_event = {
+    id = racechange.27
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = paatru
+		culture = paatru
+		assign_racial_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+character_event = {
+    id = racechange.28
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = sarpa
+		culture = sarpa
+		assign_racial_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+character_event = {
+    id = racechange.29
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = naga
+		culture = naga
+		assign_racial_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+character_event = {
+    id = racechange.30
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = lukiul
+		culture = lukiul
+		assign_racial_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+# ------ ISLANDER ------ #
+
+character_event = {
+    id = racechange.31
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = quey
+		culture = quey
+		assign_racial_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+# ------ AKAVIRI ------ #
+
+character_event = {
+    id = racechange.32
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = akaviri
+		culture = akaviri
+		assign_racial_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+# ------ PO-TUN ------ #
+
+character_event = {
+    id = racechange.33
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = potun
+		culture = potun
+		assign_racial_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+# ------ TANGMAO ------ #
+
+character_event = {
+    id = racechange.34
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = tangmo
+		culture = tangmo
+		assign_racial_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+# ------ TSAESCI ------ #
+
+character_event = {
+    id = racechange.35
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = tsaesci
+		culture = tsaesci
+		add_tsaesci_trait =  yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+# ------ KAMAL ------ #
+
+character_event = {
+    id = racechange.36
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = kamal
+		culture = kamal
+		assign_racial_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
+
+# ------ DWEMER ------ #
+
+character_event = {
+    id = racechange.37
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		remove_racial_trait = yes
+		set_graphical_culture = dwemer
+		culture = dwemer
+		assign_racial_trait = yes
+		set_character_flag = race_changer
+		remove_congenital_traits_racechange = yes
+		assign_random_congenital_racechange = yes
+	}
+}
