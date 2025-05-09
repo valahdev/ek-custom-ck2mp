@@ -18,14 +18,7 @@ amulet_of_charitymad = {
 	slot = neck
 	
 	active = {
-		OR = {
-			has_mental_disorder_trigger = yes
-			AND = {
-				worships_sheogorath = yes
-				has_secret_religion = no
-			}
-			is_dragonblood = yes
-		}
+		expd_pdxrptg_can_activate_daedric_artifact_sheogorath = yes
 	}
 	
 	allowed_gift = {
@@ -36,6 +29,7 @@ amulet_of_charitymad = {
 		unique
 		amulet
 		daedric_artifact
+		daedric_artifact_sheogorath
 		no_theft
 		no_inherit
 		#sheogorath_artifact_0
@@ -61,14 +55,7 @@ armor_saviors_hide = {
 	indestructible = yes
 	
 	active = {
-		OR = {
-			AND = {
-				worships_hircine = yes
-				has_secret_religion = no
-			}
-			is_lycan = yes
-			is_dragonblood = yes
-		}
+		expd_pdxrptg_can_activate_daedric_artifact_hircine = yes
 	}
 	
 	allowed_gift = {
@@ -78,6 +65,7 @@ armor_saviors_hide = {
 	flags = {
 		armor
 		daedric_artifact
+		daedric_artifact_hircine
 		no_theft
 		unique
 		medium_armor
@@ -103,13 +91,7 @@ armor_ebonymail = {
 	indestructible = yes
 			
 	active = {
-		OR = {
-			AND = {
-				has_secret_religion = no
-				worships_boethiah = yes
-			}
-			is_dragonblood = yes
-		}
+		expd_pdxrptg_can_activate_daedric_artifact_boethiah = yes
 	}
 	
 	allowed_gift = {
@@ -125,6 +107,7 @@ armor_ebonymail = {
 		quality_legendary
 		unique
 		daedric_artifact
+		daedric_artifact_boethiah
 		no_inherit
 		#boethiah_artifact_0
 	}
@@ -144,13 +127,7 @@ book_oghma_infinium = {
 	indestructible = yes
 			
 	active = {
-		OR = {
-			AND = {
-				has_secret_religion = no
-				worships_hermaeus = yes
-			}
-			is_dragonblood = yes
-		}
+		expd_pdxrptg_can_activate_daedric_artifact_hermaeus = yes
 	}
 	
 	allowed_gift = {
@@ -164,6 +141,7 @@ book_oghma_infinium = {
 		theft_dr_impossible
 		unique
 		daedric_artifact
+		daedric_artifact_hermaeus
 		no_inherit
 	}
 }
@@ -179,13 +157,7 @@ masque_of_clavicus_vile = {
 	general_opinion = 15
 	
 	active = {
-		OR = {
-			AND = {
-				has_secret_religion = no
-				worships_clavicus = yes
-			}
-			is_dragonblood = yes
-		}
+		expd_pdxrptg_can_activate_daedric_artifact_clavicus = yes
 	}
 	
 	allowed_gift = {
@@ -201,6 +173,7 @@ masque_of_clavicus_vile = {
 		unique
 		head
 		daedric_artifact
+		daedric_artifact_clavicus
 		no_theft
 		no_inherit
 		#clavicus_artifact_1
@@ -219,14 +192,7 @@ ring_of_hircine = {
 	gives_total_control_lycanthropy = 1
 	
 	active = {
-		OR = {
-			AND = {
-				worships_hircine = yes
-				has_secret_religion = no
-			}
-			is_lycan = yes
-			is_dragonblood = yes
-		}
+		expd_pdxrptg_can_activate_daedric_artifact_hircine = yes
 	}
 	
 	allowed_gift = {
@@ -242,6 +208,7 @@ ring_of_hircine = {
 		unique
 		ring
 		daedric_artifact
+		daedric_artifact_hircine
 		no_theft
 		no_inherit
 		#hircine_artifact_1
@@ -258,13 +225,7 @@ ring_of_khajiiti = {
 	#TODO: Increased chance of success when wearer is on assassination, kidnapping or theft quests.
 	
 	active = {
-		OR = {
-			AND = {
-				has_secret_religion = no
-				worships_mephala = yes
-			}
-			is_dragonblood = yes
-		}
+		expd_pdxrptg_can_activate_daedric_artifact_mephala = yes
 	}
 	
 	allowed_gift = {
@@ -280,6 +241,7 @@ ring_of_khajiiti = {
 		unique
 		ring
 		daedric_artifact
+		daedric_artifact_mephala
 		no_theft
 		no_inherit
 		#mephala_artifact_0
@@ -297,13 +259,7 @@ ring_of_namira = {
 	cannibalism_bonus = 1
 	
 	active = {
-		OR = {
-			AND = {
-				has_secret_religion = no
-				worships_namira = yes
-			}
-			is_dragonblood = yes
-		}
+		expd_pdxrptg_can_activate_daedric_artifact_namira = yes
 	}
 	
 	allowed_gift = {
@@ -319,11 +275,13 @@ ring_of_namira = {
 		unique
 		ring
 		daedric_artifact
+		daedric_artifact_namira
 		no_theft
 		no_inherit
 		#namira_artifact_0
 	}
 }
+
 ring_moonandstar = { #Todo: Event where the ring kills you if you aren't nerevar_reborn.
 	monthly_character_prestige = 0.25
 	diplomacy = 5
@@ -358,6 +316,7 @@ ring_moonandstar = { #Todo: Event where the ring kills you if you aren't nerevar
 		quality_legendary
 	}
 }
+
 #Weapons
 #Flawless Daedric Sword has 6 martial, 23 combat_rating, consider as a benchmark when balancing artifacts
 
@@ -373,13 +332,7 @@ weapon_mehrunes_razor = {
 	#TODO: Razor should increase assassination success. In encounters and duels it should functionally be a 1-hit kill weapon.
 	
 	active = {
-		OR = {
-			AND = {
-				has_secret_religion = no
-				worships_mehrunes = yes
-			}
-			is_dragonblood = yes
-		}
+		expd_pdxrptg_can_activate_daedric_artifact_mehrunes = yes
 	}
 	
 	allowed_gift = {
@@ -395,6 +348,7 @@ weapon_mehrunes_razor = {
 	flags = {
 		unique
 		daedric_artifact
+		daedric_artifact_mehrunes
 		combat_weapon
 		dagger
 		no_theft
@@ -416,13 +370,7 @@ weapon_mace_molag = {
 	}
 	
 	active = {
-		OR = {
-			AND = {
-				has_secret_religion = no
-				worships_molag = yes
-			}
-			is_dragonblood = yes
-		}
+		expd_pdxrptg_can_activate_daedric_artifact_molag = yes
 	}
 	
 	allowed_gift = {
@@ -438,6 +386,7 @@ weapon_mace_molag = {
 	flags = {
 		unique
 		daedric_artifact
+		daedric_artifact_molag
 		combat_weapon
 		drain_fatigue
 		mace
@@ -457,13 +406,7 @@ weapon_goldbrand = {
 	}
 	
 	active = {
-		OR = {
-			AND = {
-				has_secret_religion = no
-				worships_boethiah = yes
-			}
-			is_dragonblood = yes
-		}
+		expd_pdxrptg_can_activate_daedric_artifact_boethiah = yes
 	}
 	
 	allowed_gift = {
@@ -479,6 +422,7 @@ weapon_goldbrand = {
 	flags = {
 		unique
 		daedric_artifact
+		daedric_artifact_boethiah
 		combat_weapon
 		sword
 		no_theft
@@ -499,13 +443,7 @@ weapon_ebonyblade = {
 	#TODO: Add additional "levels" of the ebony blade. When owning it, allow duels with friends, lovers and family, each one killed will increase the "level" of the ebony blade.
 
 	active = {
-		OR = {
-			AND = {
-				has_secret_religion = no
-				worships_mephala = yes
-			}
-			is_dragonblood = yes
-		}
+		expd_pdxrptg_can_activate_daedric_artifact_mephala = yes
 	}
 	
 	allowed_gift = {
@@ -521,6 +459,7 @@ weapon_ebonyblade = {
 	flags = {
 		unique
 		daedric_artifact
+		daedric_artifact_mephala
 		combat_weapon
 		sword
 		no_theft
@@ -542,13 +481,7 @@ weapon_dawnbreaker = {
 	massive_bonus_against_undead = 1
 	
 	active = {
-		OR = {
-			AND = {
-				has_secret_religion = no
-				worships_meridia = yes
-			}
-			is_dragonblood = yes
-		}
+		expd_pdxrptg_can_activate_daedric_artifact_meridia = yes
 	}
 	
 	allowed_gift = {
@@ -564,6 +497,7 @@ weapon_dawnbreaker = {
 	flags = {
 		unique
 		daedric_artifact
+		daedric_artifact_meridia
 		combat_weapon
 		sword
 		no_theft
@@ -593,13 +527,7 @@ weapon_sword_jyggalag = {
 	indestructible = yes
 	
 	active = {
-		OR = {
-			AND = {
-				has_secret_religion = no
-				worships_jyggalag = yes
-			}
-			is_dragonblood = yes
-		}
+		expd_pdxrptg_can_activate_daedric_artifact_jyggalag = yes
 	}
 	
 	allowed_gift = {
@@ -609,6 +537,7 @@ weapon_sword_jyggalag = {
 	flags = {
 		unique
 		daedric_artifact
+		daedric_artifact_jyggalag
 		combat_weapon
 		sword
 		no_theft
@@ -634,13 +563,7 @@ weapon_umbra = {
 	#TODO Soul trap... >.>
 	
 	active = {
-		OR = {
-			AND = {
-				has_secret_religion = no
-				worships_clavicus = yes
-			}
-			is_dragonblood = yes
-		}
+		expd_pdxrptg_can_activate_daedric_artifact_clavicus = yes
 	}
 	
 	allowed_gift = {
@@ -656,6 +579,7 @@ weapon_umbra = {
 	flags = {
 		unique
 		daedric_artifact
+		daedric_artifact_clavicus
 		combat_weapon
 		sword
 		theft_dr_extreme
@@ -680,14 +604,7 @@ weapon_forkh = {
 	}
 	
 	active = {
-		OR = {
-			has_mental_disorder_trigger = yes
-			AND = {
-				worships_sheogorath = yes
-				has_secret_religion = no
-			}
-			is_dragonblood = yes
-		}
+		expd_pdxrptg_can_activate_daedric_artifact_sheogorath = yes
 	}
 	
 	allowed_gift = {
@@ -705,6 +622,7 @@ weapon_forkh = {
 	flags = {
 		unique
 		daedric_artifact
+		daedric_artifact_sheogorath
 		combat_weapon
 		dagger
 		theft_dr_easy
@@ -720,13 +638,7 @@ weapon_mace_scourge = {
 	combat_rating = 28
 	
 	active = {
-		OR = {
-			AND = {
-				has_secret_religion = no
-				worships_malacath = yes
-			}
-			is_dragonblood = yes
-		}
+		expd_pdxrptg_can_activate_daedric_artifact_malacath = yes
 	}
 	
 	allowed_gift = {
@@ -741,6 +653,7 @@ weapon_mace_scourge = {
 		combat_weapon
 		mace
 		daedric_artifact
+		daedric_artifact_malacath
 		theft_dr_extreme
 		quality_legendary
 		unique
@@ -799,13 +712,7 @@ weapon_sanguinerose = {
 	indestructible = yes
 	
 	active = {
-		OR = {
-			AND = {
-				has_secret_religion = no
-				worships_sanguine = yes
-			}
-			is_dragonblood = yes
-		}
+		expd_pdxrptg_can_activate_daedric_artifact_sanguine = yes
 	}
 	
 	allowed_gift = {
@@ -817,6 +724,7 @@ weapon_sanguinerose = {
 		staff
 		unique
 		daedric_artifact
+		daedric_artifact_sanguine
 		theft_dr_impossible
 		quality_legendary
 		no_inherit
@@ -846,13 +754,7 @@ weapon_skull_of_corruption = {
 	indestructible = yes
 	
 	active = {
-		OR = {
-			AND = {
-				has_secret_religion = no
-				worships_vaermina = yes
-			}
-			is_dragonblood = yes
-		}
+		expd_pdxrptg_can_activate_daedric_artifact_vaermina = yes
 	}
 	
 	allowed_gift = {
@@ -864,6 +766,7 @@ weapon_skull_of_corruption = {
 		staff
 		unique
 		daedric_artifact
+		daedric_artifact_vaermina
 		theft_dr_impossible
 		no_inherit
 		#vaermina_artifact_0
@@ -892,14 +795,7 @@ weapon_wabbajack = {
 	indestructible = yes
 	
 	active = {
-		OR = {
-			is_batshit_crazy = yes
-			AND = {
-				worships_sheogorath = yes
-				has_secret_religion = no
-			}
-			is_dragonblood = yes
-		}
+		expd_pdxrptg_can_activate_daedric_artifact_sheogorath_wabbajack = yes
 	}
 	
 	allowed_gift = {
@@ -911,6 +807,7 @@ weapon_wabbajack = {
 		staff
 		unique
 		daedric_artifact
+		daedric_artifact_sheogorath
 		theft_dr_impossible
 		quality_legendary
 		no_inherit
@@ -932,14 +829,7 @@ weapon_volendrung = {
 	quality = 10
 	
 	active = {
-		OR = {
-			AND = {
-				worships_malacath = yes
-				has_secret_religion = no
-			}
-			is_dwemer = yes
-			is_dragonblood = yes
-		}
+		expd_pdxrptg_can_activate_daedric_artifact_malacath_volendrung = yes
 	}
 	
 	allowed_gift = {
@@ -949,6 +839,7 @@ weapon_volendrung = {
 	flags = {
 		unique
 		daedric_artifact
+		daedric_artifact_malacath
 		combat_weapon
 		hammer
 		theft_dr_impossible
@@ -974,24 +865,16 @@ shield_spellbreaker = {
 	combat_rating = 8 #Lower bonus...but it's a shield
 	
 	active = {
-		custom_tooltip = { text = shield_equip_tt }
-		hidden_tooltip = {
+		custom_tooltip = {
+			text = shield_equip_tt
 			NOT = {
 				any_artifact = {
-					AND = {
-						is_artifact_equipped = yes
-						has_artifact_flag = no_shield
-					}
+					is_artifact_equipped = yes
+					has_artifact_flag = no_shield
 				}
 			}
 		}
-		OR = {
-			AND = {
-				has_secret_religion = no
-				worships_peryite = yes
-			}
-			is_dragonblood = yes
-		}
+		expd_pdxrptg_can_activate_daedric_artifact_peryite = yes
 	}
 	
 	allowed_gift = {
@@ -1007,6 +890,7 @@ shield_spellbreaker = {
 		unique
 		shield
 		daedric_artifact
+		daedric_artifact_peryite
 		no_theft
 		no_inherit
 		#peryite_artifact_0
@@ -1023,13 +907,7 @@ azuras_star = {
 	daedra_azura_opinion = 5
 	
 	active = {
-		OR = {
-			AND = {
-				has_secret_religion = no
-				worships_azura = yes
-			}
-			is_dragonblood = yes
-		}
+		expd_pdxrptg_can_activate_daedric_artifact_azura = yes
 	}
 	
 	allowed_gift = {
@@ -1045,6 +923,7 @@ azuras_star = {
 		unique
 		special
 		daedric_artifact
+		daedric_artifact_azura
 		no_theft
 		no_inherit
 		#azura_artifact_0
@@ -1059,13 +938,7 @@ skeleton_key = {
 	intrigue = 5
 	
 	active = {
-		OR = {
-			AND = {
-				has_secret_religion = no
-				worships_nocturnal = yes
-			}
-			is_dragonblood = yes
-		}
+		expd_pdxrptg_can_activate_daedric_artifact_nocturnal = yes
 	}
 	
 	allowed_gift = {
@@ -1081,6 +954,7 @@ skeleton_key = {
 		unique
 		special
 		daedric_artifact
+		daedric_artifact_nocturnal
 		no_theft
 		no_inherit
 		#nocturnal_artifact_0

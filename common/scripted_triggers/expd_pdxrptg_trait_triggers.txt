@@ -1,0 +1,71 @@
+expd_pdxrptg_this_character_has_trait_dragonborn = {
+	trait = dragonborn
+}
+
+expd_pdxrptg_this_character_has_trait_dragonborn_descendant = {
+	custom_tooltip = {
+		text = expd_pdxrptg_this_character_has_trait_dragonborn_descendant_tt
+		OR = {
+			trait = dragonborn_g_1
+			trait = dragonborn_g_2
+			trait = dragonborn_g_3
+			trait = dragonborn_g_4
+			trait = dragonborn_descendant
+			# Special trait added by this mod
+			trait = expd_pdxrptg_dragonborn_descendant_cosmetic
+		}
+	}
+}
+
+expd_pdxrptg_this_character_has_trait_dragonblood = {
+	OR = {
+		expd_pdxrptg_this_character_has_trait_dragonborn = yes
+		expd_pdxrptg_this_character_has_trait_dragonborn_descendant = yes
+	}
+}
+
+expd_pdxrptg_this_characters_actual_dragonblood_trait_will_be_publicly_visible = {
+	OR = {
+		AND = {
+			true_father_even_if_dead = { expd_pdxrptg_this_character_has_trait_dragonblood = yes }
+			NOT = { trait = bastard }
+		}
+		mother_even_if_dead = { expd_pdxrptg_this_character_has_trait_dragonblood = yes }
+	}
+}
+
+expd_pdxrptg_this_character_has_trait_lich = {
+	trait = lich
+}
+
+expd_pdxrptg_this_character_has_trait_mane = {
+	trait = mane
+}
+
+expd_pdxrptg_this_character_has_trait_skooma_addiction = {
+	trait = skooma_addiction
+}
+
+expd_pdxrptg_this_character_has_trait_chrondiasis = {
+	trait = chrondiasis
+}
+
+expd_pdxrptg_this_character_has_trait_mage_1 = {
+	trait = mage_1
+}
+
+expd_pdxrptg_this_character_has_trait_mage_2 = {
+	trait = mage_2
+}
+
+expd_pdxrptg_this_character_has_trait_mage_3 = {
+	trait = mage_3
+}
+
+expd_pdxrptg_this_character_has_trait_mage_4 = {
+	trait = mage_4
+}
+
+expd_pdxrptg_this_character_has_trait_mage_5 = {
+	trait = mage_5
+}

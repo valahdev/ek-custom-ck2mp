@@ -1,0 +1,6 @@
+modifier_potion_of_fortify_magicka = {
+	icon = 158
+}
+modifier_potion_of_magicka_regeneration = {
+	icon = 158
+}

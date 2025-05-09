@@ -134,97 +134,136 @@ warlord_conquest = {
 	
 	can_use = {
 		ROOT = {
-			#CB Specific Traits and things
+			
+			# Must have warlord trait or ambition
 			OR = {
 				trait = warlord
 				has_ambition = obj_warlord
 			}
+			
+			# Cannot be incapable
 			NOT = { trait = incapable }
-			NOT = { same_realm = FROM }	
-			#Undead Handling
-			NOT = { trait = undead } #Not as Undead
-			FROM = { NOT = { trait = undead } } #Not vs Undead
-			#Riddlethar vs. Mane
-			OR = {
-				ROOT = { NOT = { religion = riddlethar } }
-				AND = {
-					FROM = { NOT = { trait = mane } }
-					ROOT = { religion = riddlethar }
+			
+			# Cannot target same realm (obviously!)
+			NOT = { same_realm = FROM }
+			
+			# Undead Handling - cannot use this CB as undead or vs undead
+			NOR = {
+				trait = undead
+				FROM = {
+					trait = undead
 				}
 			}
-			#Almsivi Religion
-			OR = {
-				ROOT = { NOT = { religion = almsivi } }
-				AND = {
-					FROM = { 
-						NOT = { has_landed_title = k_almsivi } 
-						religion = almsivi
-					}
-					ROOT = { religion = almsivi }
+			
+			# Riddlethar characters cannot use warlord CB vs the Mane
+			NAND = {
+				FROM = {
+					trait = mane
 				}
-				AND = {
-					ROOT = { 
+				ROOT = {
+					religion = riddlethar
+				}
+			}
+			
+			# Almsivi cannot use warlord CB against their religious head, and he can't warlord them
+			NAND = {
+				ROOT = {
+					religion = almsivi
+				}
+				FROM = {
+					religion = almsivi
+				}
+				OR = {
+					ROOT = {
 						has_landed_title = k_almsivi
-						religion = almsivi 
 					}
-					FROM = { religion = almsivi }
-				}				
+					FROM = {
+						has_landed_title = k_almsivi
+					}
+				}
 			}
-			#Great House Titles
-			OR = {
-				ROOT = { has_house_trait = no }
-				FROM = { is_great_house_grandmaster = no }
+			
+			# Members of Dunmer Great Houses cannot use warlord CB vs Grandmasters of Great Houses
+			NAND = {
+				ROOT = {
+					has_house_trait = yes
+				}
+				FROM = {
+					is_great_house_grandmaster = yes
+				}
 			}
+			
 		}
 	}
 
 	on_add = {
 		hidden_tooltip = { fire_haruspicy_event_effect = yes }
-		# CB:CHINA
-		# if = {
-		# 	limit = { defender = { is_offmap_governor = offmap_china } }
-		# 	attacker = {  
-		# 		sound_effect = china_angered_emperor
-		# 		detract_grace_super_huge_effect = yes 
-		# 	}
-		# }
 	}
 	
 	can_use_title = {
 		# THIS is the high kingdom title
-
-		# The attacker needs at least one county in the target kingdom, or a border, or be only one sea zone away from one of your counties
-		any_direct_de_jure_vassal_title = {
+		
+		# [[[ MOD EDIT
+		# Bugfix: Now correctly looks for counties, not duchies.
+		# Bugfix: Defender cannot be a rebel against a Morrowind Great House
+		# Also, changed all is_liege_or_above to is_vassal_or_below_of, in line with recommended modding conventions.
+		# General code cleanup & added a few more explanations.
+		
+		# The attacker is "close enough" to the targeted kingdom
+		#  --- Owns at least one county in the target kingdom, or has a border, or is at most two sea zones away
+		any_de_jure_vassal_title = {
+			
+			tier = COUNT
+			
 			OR = {
+				
+				# Any county that is de jure part of the kingdom is owned by the attacker
 				holder_scope = {
 					OR = {
 						character = ROOT
-						is_liege_or_above = ROOT
+						is_vassal_or_below_of = ROOT
 					}
 				}
+				
+				# Attacker owns a province adjacent to the kingdom, or that is at most 2 sea zones away
+				# (2 sea zones is consistent with the "inquisition"/holy war CB - ie. allows High Rock vs Yokuda & Valenwood vs Pyandonea)
 				location = {
 					any_neighbor_province = {
 						OR = {
 							AND = {
+								is_land   = yes # Technically superfluous with has_owner = yes, but makes it clearer
 								has_owner = yes
 								owner = {
 									OR = {
 										character = ROOT
-										is_liege_or_above = ROOT
+										is_vassal_or_below_of = ROOT
 									}
 								}
 							}
 							AND = {
 								is_land = no
 								any_neighbor_province = {
-									OR = {
-										AND = {
-											has_owner = yes
-											owner = {
-												OR = {
-													character = ROOT
-													is_liege_or_above = ROOT
-												}
+									is_land   = yes # Technically superfluous with has_owner = yes, but makes it clearer
+									has_owner = yes
+									owner = {
+										OR = {
+											character = ROOT
+											is_vassal_or_below_of = ROOT
+										}
+									}
+								}
+							}
+							AND = {
+								is_land = no
+								any_neighbor_province = {
+									is_land = no
+									any_neighbor_province = {
+										is_land   = yes # Technically superfluous with has_owner = yes, but makes it clearer
+										has_owner = yes
+										owner = {
+											OR = {
+												character = ROOT
+												is_vassal_or_below_of = ROOT
 											}
 										}
 									}
@@ -235,56 +274,94 @@ warlord_conquest = {
 				}
 			}
 		}
-
+		
 		OR = {
 			# Target is neither de jure king nor emperor of the target kingdom
 			NOR = {
-				holder_scope = {
-					character = FROM
-				}
-				empire = {
-					holder_scope = {
-						character = FROM
-					}
-				}
+				holder_scope = { character = FROM }
+				empire = { holder_scope = { character = FROM } }
+				
 				# Special Case - Great Houses and the Tribunal Temple within Morrowind
+				#  --- They are treated as if they have de jure kingdoms, ie. they can't be targeted under normal circumstances.
 				AND = {
 					OR = {
 						title = k_morrowind
 						title = k_vvardenfell
 					}
+					
 					FROM = {
 						OR = {
+							
 							has_landed_title = k_almsivi
 							is_great_house_grandmaster = yes
+							
+							# Attempt to detect rebellions against Tribunal Temple / Grandmasters
+							# (eg. faction revolt; or anti-tyranny revolt due to failed imprisonment; or anti-tyranny revolt due to refused revocation)
+							# (because you shouldn't be allowed to use warlord CB on people simply because they are in revolt)
+							# Effectively: the target character is NOT the temple or a grandmaster, and {is primary attacker/defender} vs {{the temple or a grandmaster} {who is the primary defender/attacker}}
+							AND = {
+								NOR = {
+									has_landed_title = k_almsivi
+									is_great_house_grandmaster = yes
+								}
+								OR = {
+									AND = {
+										is_primary_war_attacker = yes
+										any_war = {
+											defender = {
+												OR = {
+													has_landed_title = k_almsivi
+													is_great_house_grandmaster = yes
+												}
+											}
+										}
+									}
+									AND = {
+										is_primary_war_defender = yes
+										any_war = {
+											attacker = {
+												OR = {
+													has_landed_title = k_almsivi
+													is_great_house_grandmaster = yes
+												}
+											}
+										}
+									}
+								}
+							}
+							
 						}
 					}
 				}
 			}
+			
+			# If attacker IS holder of the target title or its de jure empire, or is attacking into morrowind
+			# Then they can do so in the following situations:
+			
 			# Attacker is de jure king of the target kingdom
-			AND = {
-				holder_scope = {
-					character = ROOT
-				}
-			}
+			holder_scope = { character = ROOT }
+			
 			# Target is a de jure vassal of attacker's empire
+			empire = { holder_scope = { character = ROOT } }
+			
+			# Target is a Province being attacked by either Tamriel or the official pretender to Tamriel
 			AND = {
-				empire = {
-					holder_scope = {
-						character = ROOT
-					}
+				OR = {
+					is_imperial_province = yes
+					title = k_vvardenfell # Don't know why Vvardenfell is not considered an imperial province - seems like a bug
 				}
-			}
-			# Target is a Province being attacked by Tamriel
-			AND = {
-				is_imperial_province = yes
-				e_tamriel = {
-					holder_scope = {
-						character = ROOT
-					}
+				OR = {
+					e_tamriel          = { holder_scope = { character = ROOT } }
+					e_pretender_empire = { holder_scope = { character = ROOT } }
 				}
 			}
 		}
+		
+		
+		# END OF MOD EDITS ]]]
+		
+		
+		
 	}
 	
 	is_valid_title = {
@@ -302,7 +379,11 @@ warlord_conquest = {
 			participation_scaled_prestige = 100
 		}
 		if = {
-			limit = { ROOT = { has_ambition = obj_warlord } }
+			limit = {
+				ROOT = {
+					has_ambition = obj_warlord
+				}
+			}
 			ROOT = { set_character_flag = warlord_flg }
 		}
 		any_attacker = {

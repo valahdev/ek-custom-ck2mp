@@ -1,3 +1,9 @@
+# Most of the daedric decisions are not altered - re-include them here.
+
+
+
+
+
 #Special Decisions for Daedric Interaction, REQUIRES JADE DRAGON DLC
 
 #Efforts to earn Daedric support
@@ -125,7 +131,7 @@ offmap_decisions = {
 				
 				prisoner = no
 				NOT = { trait = incapable }
-				is_inaccessible_trigger = no
+				expd_pdxrptg_this_character_is_not_inaccessible = yes
 			}
 			# china_offmap_decisions_enabled_trigger = yes #leave in please, to be used if the tooltip for china_offmap_tribute_decisions_enabled_trigger changes and we need to reference things uniquely again
 			# china_offmap_tribute_decisions_enabled_trigger = yes
@@ -266,301 +272,7 @@ offmap_decisions = {
 		}
 	}
 	
-	chinese_grace_offer_artifact = {
-		only_playable = yes
-		button_name = offmap_gifts
-		
-		third_party_filter = artifacts
-		ai_third_party_filter = artifacts
-		third_party = FROM
-		ai_check_interval = 6
-		show_third_party_potential = yes
-	
-		from_potential = {
-			has_dlc = "Jade Dragon"
-			mercenary = no
-			holy_order = no
-			is_landed = yes
-			is_adult = yes
-		}
-
-		potential = {
-			OR = {
-				is_offmap_tag = oblivion_azura
-				is_offmap_tag = oblivion_boethiah
-				is_offmap_tag = oblivion_clavicus
-				is_offmap_tag = oblivion_hermaeus
-				is_offmap_tag = oblivion_hircine
-				is_offmap_tag = oblivion_malacath
-				is_offmap_tag = oblivion_mehrunes
-				is_offmap_tag = oblivion_mephala
-				is_offmap_tag = oblivion_meridia
-				is_offmap_tag = oblivion_molag
-				is_offmap_tag = oblivion_namira
-				is_offmap_tag = oblivion_nocturnal
-				is_offmap_tag = oblivion_peryite
-				is_offmap_tag = oblivion_sanguine
-				is_offmap_tag = oblivion_sheogorath
-				is_offmap_tag = oblivion_vaermina
-				is_offmap_tag = oblivion_ideal_masters
-			}
-		}
-
-		allow = {
-			show_only_failed_conditions = yes
-			FROM = {
-				show_scope_change = no
-				prisoner = no
-				NOT = { trait = incapable }
-				is_inaccessible_trigger = no
-				
-				trigger_if = {
-					limit = { ROOT = { is_offmap_tag = oblivion_azura } }
-					worships_azura = yes
-				}
-				trigger_else_if = {
-					limit = { ROOT = { is_offmap_tag = oblivion_boethiah } }
-					worships_boethiah = yes
-				}
-				trigger_else_if = {
-					limit = { ROOT = { is_offmap_tag = oblivion_clavicus } }
-					worships_clavicus = yes
-				}
-				trigger_else_if = {
-					limit = { ROOT = { is_offmap_tag = oblivion_hermaeus } }
-					worships_hermaeus = yes
-				}
-				trigger_else_if = {
-					limit = { ROOT = { is_offmap_tag = oblivion_hircine } }
-					worships_hircine = yes
-				}
-				trigger_else_if = {
-					limit = { ROOT = { is_offmap_tag = oblivion_malacath } }
-					worships_malacath = yes
-				}
-				trigger_else_if = {
-					limit = { ROOT = { is_offmap_tag = oblivion_mehrunes } }
-					worships_mehrunes = yes
-				}
-				trigger_else_if = {
-					limit = { ROOT = { is_offmap_tag = oblivion_mephala } }
-					worships_mephala = yes
-				}
-				trigger_else_if = {
-					limit = { ROOT = { is_offmap_tag = oblivion_meridia } }
-					worships_meridia = yes
-				}
-				trigger_else_if = {
-					limit = { ROOT = { is_offmap_tag = oblivion_molag } }
-					worships_molag = yes
-				}
-				trigger_else_if = {
-					limit = { ROOT = { is_offmap_tag = oblivion_namira } }
-					worships_namira = yes
-				}
-				trigger_else_if = {
-					limit = { ROOT = { is_offmap_tag = oblivion_nocturnal } }
-					worships_nocturnal = yes
-				}
-				trigger_else_if = {
-					limit = { ROOT = { is_offmap_tag = oblivion_sanguine } }
-					worships_sanguine = yes
-				}
-				trigger_else_if = {
-					limit = { ROOT = { is_offmap_tag = oblivion_sheogorath } }
-					worships_sheogorath = yes
-				}
-				trigger_else_if = {
-					limit = { ROOT = { is_offmap_tag = oblivion_vaermina } }
-					worships_vaermina = yes
-				}
-				trigger_else_if = {
-					limit = { ROOT = { is_offmap_tag = oblivion_ideal_masters } }
-					worships_ideal_masters = yes
-				}
-			}
-			# china_offmap_decisions_enabled_trigger = yes #leave in please, to be used if the tooltip for china_offmap_tribute_decisions_enabled_trigger changes and we need to reference things uniquely again
-			#china_offmap_tribute_decisions_enabled_trigger = yes
-		}
-		
-		third_party_potential = {
-			show_only_failed_conditions = yes
-			FROMFROM = {
-				show_scope_change = no
-				custom_tooltip = {
-					text = send_artifact_potential_tt
-					is_indestructible = no
-					NOR = {
-						has_artifact_flag = unique
-						has_artifact_flag = daedric_artifact
-						has_artifact_flag = aedric_artifact
-						has_artifact_flag = artifact_is_being_destroyed #An artifact being sold or sacrificed is a no-go
-						has_artifact_flag = force_sell #This artifact can only be sold
-						has_artifact_flag = summoned_creature #No more farming cats (or scamps, or what have you!)
-					}
-				}
-			}
-		}
-		
-		third_party_allow = {
-			
-		}
-		
-		third_party_score = {
-			factor = 100
-			
-			additive_modifier = {
-				value = 50
-				FROMFROM = {
-					quality == 2
-				}
-			}
-			
-			additive_modifier = {
-				value = 100
-				FROMFROM = {
-					quality == 3
-				}
-			}
-			
-			additive_modifier = {
-				value = 200
-				FROMFROM = {
-					quality == 4
-				}
-			}
-			additive_modifier = {
-				value = 300
-				FROMFROM = {
-					quality >= 5
-				}
-			}
-			additive_modifier = {
-				value = -50
-				FROMFROM = {
-					quality == 1
-					OR = {
-						has_artifact_flag = mount
-						has_artifact_flag = pet
-						has_artifact_flag = book
-					}
-				}
-			}
-			additive_modifier = {
-				value = -100
-				FROMFROM = {
-					quality == 2
-					OR = {
-						has_artifact_flag = mount
-						has_artifact_flag = pet
-						has_artifact_flag = book
-					}
-				}
-			}
-			additive_modifier = {
-				value = -150
-				FROMFROM = {
-					quality == 3
-					OR = {
-						has_artifact_flag = mount
-						has_artifact_flag = pet
-						has_artifact_flag = book
-					}
-				}
-			}
-			additive_modifier = {
-				value = -250
-				FROMFROM = {
-					quality == 4
-					OR = {
-						has_artifact_flag = mount
-						has_artifact_flag = pet
-						has_artifact_flag = book
-					}
-				}
-			}
-			additive_modifier = {
-				value = -350
-				FROMFROM = {
-					quality >= 5
-					OR = {
-						has_artifact_flag = mount
-						has_artifact_flag = pet
-						has_artifact_flag = book
-					}
-				}
-			}
-			additive_modifier = {
-				value = -50
-				FROMFROM = {
-					has_artifact_flag = stolen_artifact
-				}
-			}
-		}
-	
-		effect = {
-			FROMFROM = {
-				set_artifact_flag = artifact_is_being_destroyed
-			}
-			FROM = {
-				show_scope_change = no
-				add_offmap_currency = {
-					offmap = ROOT
-					value = local_third_party_score
-				}
-			}
-			
-			FROM = {
-				sound_effect = china_grace_gain
-				
-			}
-			FROMFROM = {
-				hidden_effect = { unsafe_destroy_artifact = yes }
-			}
-
-			hidden_effect = {
-				FROM = {
-					set_character_flag = jd_gifting_artifact
-					character_event = { id = ekardor.15 }
-				}
-			}
-		}
-	
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0.5
-				FROMFROM = {
-					quality >= 4
-				}
-			}
-			modifier = { #Super-high quality artifacts don't get offered. Characters also don't offer if they have few artifacts, or if they're bankrupt
-				factor = 0
-				OR = {
-					FROMFROM = {
-						quality > 8
-					}
-					FROMFROM = {
-						has_artifact_flag = force_sell #This artifact must be sold instead
-					}
-					FROMFROM = {
-						has_artifact_flag = mount #AI will not sacrifice mounts
-					}
-					FROMFROM = {
-						has_artifact_flag = pet #AI will not sacrifice pets
-					}
-					FROMFROM = {
-						has_artifact_flag = book #AI will not sacrifice books
-					}
-					num_of_artifacts < 4
-					NOT = { wealth = -25 }
-				}
-			}
-			modifier = {
-				factor = 0.1 # slow down
-			}
-		}
-	}
+	# MOD EDIT: Offer artifact decision removed (substantially altered)
 	
 	#Sacrifice Prisoner - Based on chinese_grace_offer_eunuch decision
 	chinese_grace_offer_eunuch = {
@@ -609,7 +321,7 @@ offmap_decisions = {
 				show_scope_change = no
 				prisoner = no
 				NOT = { trait = incapable }
-				is_inaccessible_trigger = no
+				expd_pdxrptg_this_character_is_not_inaccessible = yes
 				
 				### Hiding the "must officially worship X" behind a hidden tooltip left some players wondering why it didn't work
 				# Bless the trigger_if
@@ -1042,7 +754,7 @@ offmap_decisions = {
 				show_scope_change = no
 				prisoner = no
 				NOT = { trait = incapable }
-				is_inaccessible_trigger = no
+				expd_pdxrptg_this_character_is_not_inaccessible = yes
 				hidden_tooltip = {
 					AND = {
 						ROOT = { is_offmap_tag = oblivion_meridia }
@@ -1468,7 +1180,7 @@ offmap_decisions = {
 				show_scope_change = no
 				prisoner = no
 				NOT = { trait = incapable }
-				is_inaccessible_trigger = no
+				expd_pdxrptg_this_character_is_not_inaccessible = yes
 				hidden_tooltip = {
 					OR = {
 						# AND = {
@@ -1637,7 +1349,7 @@ offmap_decisions = {
 				
 				prisoner = no
 				NOT = { trait = incapable }
-				is_inaccessible_trigger = no
+				expd_pdxrptg_this_character_is_not_inaccessible = yes
 			}
 			can_get_boon_from_daedra = yes
 			# china_offmap_boon_decisions_enabled_trigger = yes
@@ -1726,7 +1438,7 @@ offmap_decisions = {
 				
 				prisoner = no
 				NOT = { trait = incapable }
-				is_inaccessible_trigger = no
+				expd_pdxrptg_this_character_is_not_inaccessible = yes
 			}
 			can_get_boon_from_daedra = yes
 			NOT = {
@@ -1831,7 +1543,7 @@ offmap_decisions = {
 				
 				prisoner = no
 				NOT = { trait = incapable }
-				is_inaccessible_trigger = no
+				expd_pdxrptg_this_character_is_not_inaccessible = yes
 			}
 			can_get_boon_from_daedra = yes
 			NOT = {
@@ -1936,7 +1648,7 @@ offmap_decisions = {
 					
 				prisoner = no
 				NOT = { trait = incapable }
-				is_inaccessible_trigger = no
+				expd_pdxrptg_this_character_is_not_inaccessible = yes
 			}
 			can_get_boon_from_daedra = yes
 			NOT = {
@@ -2042,7 +1754,7 @@ offmap_decisions = {
 				
 				prisoner = no
 				NOT = { trait = incapable }
-				is_inaccessible_trigger = no
+				expd_pdxrptg_this_character_is_not_inaccessible = yes
 			}
 			can_get_boon_from_daedra = yes
 			daedra_is_interventionist = yes
@@ -2164,7 +1876,7 @@ offmap_decisions = {
 				
 				prisoner = no
 				NOT = { trait = incapable }
-				is_inaccessible_trigger = no
+				expd_pdxrptg_this_character_is_not_inaccessible = yes
 			}
 			can_get_boon_from_daedra = yes
 			NOR = {
@@ -2291,7 +2003,7 @@ offmap_decisions = {
 				
 				prisoner = no
 				NOT = { trait = incapable }
-				is_inaccessible_trigger = no
+				expd_pdxrptg_this_character_is_not_inaccessible = yes
 			}
 			can_get_boon_from_daedra = yes
 			NOR = {

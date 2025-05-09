@@ -1,0 +1,241 @@
+##########################################################
+#                                                        #
+#          Daedric Artifact Activation Criteria          #
+#                                                        #
+##########################################################
+
+
+
+expd_pdxrptg_can_activate_daedric_artifact_azura = {
+	OR = {
+		officially_worships_azura = yes
+		expd_pdxrptg_this_character_has_trait_dragonblood = yes
+		expd_pdxrptg_daedric_favour_this_character_is_favoured_by_azura = yes
+	}
+}
+
+expd_pdxrptg_can_activate_daedric_artifact_boethiah = {
+	OR = {
+		officially_worships_boethiah = yes
+		expd_pdxrptg_this_character_has_trait_dragonblood = yes
+		expd_pdxrptg_daedric_favour_this_character_is_favoured_by_boethiah = yes
+	}
+}
+
+expd_pdxrptg_can_activate_daedric_artifact_clavicus = {
+	OR = {
+		officially_worships_clavicus = yes
+		expd_pdxrptg_this_character_has_trait_dragonblood = yes
+		expd_pdxrptg_daedric_favour_this_character_is_favoured_by_clavicus = yes
+	}
+}
+
+expd_pdxrptg_can_activate_daedric_artifact_hermaeus = {
+	OR = {
+		officially_worships_hermaeus = yes
+		expd_pdxrptg_this_character_has_trait_dragonblood = yes
+		expd_pdxrptg_daedric_favour_this_character_is_favoured_by_hermaeus = yes
+	}
+}
+
+expd_pdxrptg_can_activate_daedric_artifact_hircine = {
+	OR = {
+		officially_worships_hircine = yes
+		is_lycan = yes
+		expd_pdxrptg_this_character_has_trait_dragonblood = yes
+		expd_pdxrptg_daedric_favour_this_character_is_favoured_by_hircine = yes
+	}
+}
+
+expd_pdxrptg_can_activate_daedric_artifact_jyggalag = {
+	OR = {
+		officially_worships_jyggalag = yes
+		expd_pdxrptg_this_character_has_trait_dragonblood = yes
+		expd_pdxrptg_daedric_favour_this_character_is_favoured_by_jyggalag = yes
+	}
+}
+
+expd_pdxrptg_can_activate_daedric_artifact_malacath = {
+	OR = {
+		officially_worships_malacath = yes
+		expd_pdxrptg_this_character_has_trait_dragonblood = yes
+		expd_pdxrptg_daedric_favour_this_character_is_favoured_by_malacath = yes
+	}
+}
+
+expd_pdxrptg_can_activate_daedric_artifact_malacath_volendrung = {
+	OR = {
+		officially_worships_malacath = yes
+		is_dwemer = yes
+		expd_pdxrptg_this_character_has_trait_dragonblood = yes
+		expd_pdxrptg_daedric_favour_this_character_is_favoured_by_malacath = yes
+	}
+}
+
+expd_pdxrptg_can_activate_daedric_artifact_mehrunes = {
+	OR = {
+		officially_worships_mehrunes = yes
+		expd_pdxrptg_this_character_has_trait_dragonblood = yes
+		expd_pdxrptg_daedric_favour_this_character_is_favoured_by_mehrunes = yes
+	}
+}
+
+expd_pdxrptg_can_activate_daedric_artifact_mephala = {
+	OR = {
+		officially_worships_mephala = yes
+		expd_pdxrptg_this_character_has_trait_dragonblood = yes
+		expd_pdxrptg_daedric_favour_this_character_is_favoured_by_mephala = yes
+	}
+}
+
+expd_pdxrptg_can_activate_daedric_artifact_meridia = {
+	OR = {
+		officially_worships_meridia = yes
+		expd_pdxrptg_this_character_has_trait_dragonblood = yes
+		expd_pdxrptg_daedric_favour_this_character_is_favoured_by_meridia = yes
+	}
+}
+
+expd_pdxrptg_can_activate_daedric_artifact_molag = {
+	OR = {
+		officially_worships_molag = yes
+		expd_pdxrptg_this_character_has_trait_dragonblood = yes
+		expd_pdxrptg_daedric_favour_this_character_is_favoured_by_molag = yes
+	}
+}
+
+expd_pdxrptg_can_activate_daedric_artifact_namira = {
+	OR = {
+		officially_worships_namira = yes
+		expd_pdxrptg_this_character_has_trait_dragonblood = yes
+		expd_pdxrptg_daedric_favour_this_character_is_favoured_by_namira = yes
+	}
+}
+
+expd_pdxrptg_can_activate_daedric_artifact_nocturnal = {
+	OR = {
+		officially_worships_nocturnal = yes
+		expd_pdxrptg_this_character_has_trait_dragonblood = yes
+		expd_pdxrptg_daedric_favour_this_character_is_favoured_by_nocturnal = yes
+	}
+}
+
+expd_pdxrptg_can_activate_daedric_artifact_peryite = {
+	OR = {
+		officially_worships_peryite = yes
+		expd_pdxrptg_this_character_has_trait_dragonblood = yes
+		expd_pdxrptg_daedric_favour_this_character_is_favoured_by_peryite = yes
+	}
+}
+
+expd_pdxrptg_can_activate_daedric_artifact_sanguine = {
+	OR = {
+		officially_worships_sanguine = yes
+		expd_pdxrptg_this_character_has_trait_dragonblood = yes
+		expd_pdxrptg_daedric_favour_this_character_is_favoured_by_sanguine = yes
+	}
+}
+
+expd_pdxrptg_can_activate_daedric_artifact_sheogorath = {
+	OR = {
+		has_mental_disorder_trigger = yes
+		officially_worships_sheogorath = yes
+		expd_pdxrptg_this_character_has_trait_dragonblood = yes
+		expd_pdxrptg_daedric_favour_this_character_is_favoured_by_sheogorath = yes
+	}
+}
+
+expd_pdxrptg_can_activate_daedric_artifact_sheogorath_wabbajack = {
+	OR = {
+		is_batshit_crazy = yes
+		officially_worships_sheogorath = yes
+		expd_pdxrptg_this_character_has_trait_dragonblood = yes
+		expd_pdxrptg_daedric_favour_this_character_is_favoured_by_sheogorath = yes
+	}
+}
+
+expd_pdxrptg_can_activate_daedric_artifact_vaermina = {
+	OR = {
+		officially_worships_vaermina = yes
+		expd_pdxrptg_this_character_has_trait_dragonblood = yes
+		expd_pdxrptg_daedric_favour_this_character_is_favoured_by_vaermina = yes
+	}
+}
+
+
+
+
+
+expd_pdxrptg_this_character_has_enough_offmap_currency_to_purchase_daedric_artifact_from_root = {
+	trigger_if = {
+		limit = {
+			is_immortal = yes
+		}
+		has_offmap_currency = {
+			# ROOT is not recognised as a valid offmap_power by the Validator v1.38.3 - MANY false positives
+			offmap = ROOT
+			value = 7500
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			is_long_lived = yes
+		}
+		has_offmap_currency = {
+			# ROOT is not recognised as a valid offmap_power by the Validator v1.38.3 - MANY false positives
+			offmap = ROOT
+			value = 5000
+		}
+	}
+	trigger_else = {
+		has_offmap_currency = {
+			# ROOT is not recognised as a valid offmap_power by the Validator v1.38.3 - MANY false positives
+			offmap = ROOT
+			value = 2500
+		}
+	}
+}
+
+expd_pdxrptg_this_character_has_double_the_offmap_currency_needed_to_purchase_daedric_artifact_from_root = { # Used to slow down the AI
+	trigger_if = {
+		limit = {
+			is_immortal = yes
+		}
+		has_offmap_currency = {
+			# ROOT is not recognised as a valid offmap_power by the Validator v1.38.3 - MANY false positives
+			offmap = ROOT
+			value = 15000
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			is_long_lived = yes
+		}
+		has_offmap_currency = {
+			# ROOT is not recognised as a valid offmap_power by the Validator v1.38.3 - MANY false positives
+			offmap = ROOT
+			value = 10000
+		}
+	}
+	trigger_else = {
+		has_offmap_currency = {
+			# ROOT is not recognised as a valid offmap_power by the Validator v1.38.3 - MANY false positives
+			offmap = ROOT
+			value = 5000
+		}
+	}
+}
+
+expd_pdxrptg_this_character_really_wants_a_daedric_artifact = {
+	OR = {
+		trait = ambitious
+		trait = adventurer
+		expd_pdxrptg_this_character_has_trait_dragonborn_descendant = yes
+	}
+}
+
+expd_pdxrptg_this_daedric_lord_is_not_in_cataclysm = {
+	NOT = {
+		has_status = oblivion_cataclysm
+	}
+}

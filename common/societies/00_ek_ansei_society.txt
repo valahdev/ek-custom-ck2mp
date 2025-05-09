@@ -34,10 +34,7 @@ ansei_guild_tamriel = {
 		}
 		age = 16
 		controls_religion = no
-		OR = {
-			religion_group = yokudan_pantheon
-			culture_group = yokudan_group
-		}
+		expd_pdxrptg_this_character_satisfies_religiocultural_requirements_for_swordsingers = yes
 		martial = 8
 		OR = {
 			is_warrior = yes
@@ -59,30 +56,11 @@ ansei_guild_tamriel = {
 			trait = dragonborn
 		}
 		
-		trigger_if = {
-			limit = { is_ruler = no }
-			liege = {
-				capital_scope = {
-					OR = {
-						region = nirn_tamriel_hammerfell
-						region = nirn_yokuda
-					}
-				}
-			}
-		}
-		
-		trigger_else = {
-			capital_scope = {
-				OR = {
-					region = nirn_tamriel_hammerfell
-					region = nirn_yokuda
-				}
-			}
-		}
+		expd_pdxrtpg_this_character_can_join_yokudan_societies = yes
 		
 		NOT = { trait = sload }
 		NOT = { trait = necromancer }
-		is_inaccessible_trigger = no
+		expd_pdxrptg_this_character_is_not_inaccessible = yes
 		OR = {
 			is_not_undead = yes
 			is_unknown_vampire = yes
@@ -96,32 +74,8 @@ ansei_guild_tamriel = {
 		OR = {
 			society_member_of = ansei_guild_tamriel
 			AND = {
-				is_ruler = no
-				OR = {
-					religion_group = yokudan_pantheon
-					culture_group = yokudan_group
-				}
-				liege = {
-					capital_scope = {
-						OR = {
-							region = nirn_tamriel_hammerfell
-							region = nirn_yokuda
-						}
-					}
-				}
-			}
-			AND = {
-				is_ruler = yes
-				OR = {
-					religion_group = yokudan_pantheon
-					culture_group = yokudan_group
-				}
-				capital_scope = {
-					OR = {
-						region = nirn_tamriel_hammerfell
-						region = nirn_yokuda
-					}
-				}
+				expd_pdxrtpg_this_character_can_join_yokudan_societies = yes
+				expd_pdxrptg_this_character_satisfies_religiocultural_requirements_for_swordsingers = yes
 			}
 		}
 	}
@@ -141,10 +95,7 @@ ansei_guild_tamriel = {
 			mercenary = yes
 			trait = clone
 		}
-		OR = {
-			religion_group = yokudan_pantheon
-			culture_group = yokudan_group
-		}
+		expd_pdxrptg_this_character_satisfies_religiocultural_requirements_for_swordsingers = yes
 		NOT = { trait = necromancer }
 		controls_religion = no
 	}
@@ -228,9 +179,9 @@ ansei_guild_tamriel = {
 		name = currency_name_ansei_guild_tamriel
 		
 		per_attribute = {
-    		name = martial
-    		value = 0.5
-    	}
+			name = martial
+			value = 0.5
+		}
 		#Personality
 		has_trait = {
 			value = 1.5
@@ -517,9 +468,9 @@ ansei_guild_tamriel = {
 	}
 	
 	startup_populate = {
-	    trigger = {
+		trigger = {
 			ai = yes
-	    	controls_religion = no
+			controls_religion = no
 			NOR = {
 				higher_tier_than = DUKE
 				mercenary = yes
@@ -528,7 +479,7 @@ ansei_guild_tamriel = {
 			age = 16
 			is_in_society = no
 			is_dumb_trigger = no
-			is_inaccessible_trigger = no
+			expd_pdxrptg_this_character_is_not_inaccessible = yes
 			martial = 10
 			OR = {
 				is_warrior = yes

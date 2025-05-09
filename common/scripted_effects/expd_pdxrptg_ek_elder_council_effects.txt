@@ -1,0 +1,206 @@
+# Various different ways to show how the elder council members voted
+
+expd_pdxrptg_ec_show_votes_yes_only = {
+	elder_council = {
+		show_scope_change = no
+		any_society_member = {
+			limit = { has_character_flag = ec_vote_yes }
+			expd_pdxrptg_show_vote_for_this_councillor = yes
+		}
+	}
+}
+
+expd_pdxrptg_ec_show_votes_no_only = {
+	elder_council = {
+		show_scope_change = no
+		any_society_member = {
+			limit = { has_character_flag = ec_vote_no }
+			expd_pdxrptg_show_vote_for_this_councillor = yes
+		}
+	}
+}
+
+expd_pdxrptg_ec_show_votes_high_chancellor_only = {
+	elder_council = {
+		show_scope_change = no
+		any_society_member = {
+			limit = { is_society_grandmaster = yes }
+			expd_pdxrptg_show_vote_for_this_councillor = yes
+		}
+	}
+}
+
+expd_pdxrptg_ec_show_votes_yes_only_without_high_chancellor = {
+	elder_council = {
+		show_scope_change = no
+		any_society_member = {
+			limit = {
+				has_character_flag = ec_vote_yes
+				is_society_grandmaster = no
+			}
+			expd_pdxrptg_show_vote_for_this_councillor = yes
+		}
+	}
+}
+
+expd_pdxrptg_ec_show_votes_no_only_without_high_chancellor = {
+	elder_council = {
+		show_scope_change = no
+		any_society_member = {
+			limit = {
+				has_character_flag = ec_vote_no
+				is_society_grandmaster = no
+			}
+			expd_pdxrptg_show_vote_for_this_councillor = yes
+		}
+	}
+}
+
+expd_pdxrptg_show_vote_for_this_councillor = {
+	if = {
+		limit = { has_character_flag = ec_vote_yes }
+		if = {
+			limit = {
+				ec_imperialism_high = yes
+			}
+			custom_tooltip = {
+				text = voted_yes.imperialism.high
+			}
+		}
+		else_if = {
+			limit = {
+				ec_imperialism_high = no
+				ec_imperialism_med = yes
+			}
+			custom_tooltip = {
+				text = voted_yes.imperialism.med
+			}
+		}
+		else_if = {
+			limit = {
+				ec_imperialism_med = no
+				ec_imperialism_low = yes
+			}
+			custom_tooltip = {
+				text = voted_yes.imperialism.low
+			}
+		}
+		else_if = {
+			limit = {
+				ec_imperialism_low = no
+				trait = imperialist
+			}
+			custom_tooltip = {
+				text = voted_yes.imperialism.nominal
+			}
+		}
+		else_if = {
+			limit = {
+				ec_councilism_high = yes
+			}
+			custom_tooltip = {
+				text = voted_yes.councilism.high
+			}
+		}
+		else_if = {
+			limit = {
+				ec_councilism_high = no
+				ec_councilism_med = yes
+			}
+			custom_tooltip = {
+				text = voted_yes.councilism.med
+			}
+		}
+		else_if = {
+			limit = {
+				ec_councilism_med = no
+				ec_councilism_low = yes
+			}
+			custom_tooltip = {
+				text = voted_yes.councilism.low
+			}
+		}
+		else_if = {
+			limit = {
+				ec_councilism_low = no
+				trait = councilist
+			}
+			custom_tooltip = {
+				text = voted_yes.councilism.nominal
+			}
+		}
+	}
+	else_if = {
+		limit = { has_character_flag = ec_vote_no }
+		if = {
+			limit = {
+				ec_imperialism_high = yes
+			}
+			custom_tooltip = {
+				text = voted_no.imperialism.high
+			}
+		}
+		else_if = {
+			limit = {
+				ec_imperialism_high = no
+				ec_imperialism_med = yes
+			}
+			custom_tooltip = {
+				text = voted_no.imperialism.med
+			}
+		}
+		else_if = {
+			limit = {
+				ec_imperialism_med = no
+				ec_imperialism_low = yes
+			}
+			custom_tooltip = {
+				text = voted_no.imperialism.low
+			}
+		}
+		else_if = {
+			limit = {
+				ec_imperialism_low = no
+				trait = imperialist
+			}
+			custom_tooltip = {
+				text = voted_no.imperialism.nominal
+			}
+		}
+		else_if = {
+			limit = {
+				ec_councilism_high = yes
+			}
+			custom_tooltip = {
+				text = voted_no.councilism.high
+			}
+		}
+		else_if = {
+			limit = {
+				ec_councilism_high = no
+				ec_councilism_med = yes
+			}
+			custom_tooltip = {
+				text = voted_no.councilism.med
+			}
+		}
+		else_if = {
+			limit = {
+				ec_councilism_med = no
+				ec_councilism_low = yes
+			}
+			custom_tooltip = {
+				text = voted_no.councilism.low
+			}
+		}
+		else_if = {
+			limit = {
+				ec_councilism_low = no
+				trait = councilist
+			}
+			custom_tooltip = {
+				text = voted_no.councilism.nominal
+			}
+		}
+	}
+}

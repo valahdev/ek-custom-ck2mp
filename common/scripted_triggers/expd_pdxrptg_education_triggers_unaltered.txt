@@ -5,60 +5,6 @@
 #		is_agent = yes
 #	}
 
-has_two_specializations = {
-	calc_true_if = {
-		amount = 2
-		is_acrobat = yes
-		is_assassin = yes
-		is_barbarian = yes
-		is_bard = yes
-		is_battlemage = yes
-		is_crusader = yes
-		is_healer = yes
-		is_knight = yes
-		is_monk_education = yes
-		is_nightblade = yes
-		is_priest_education = yes
-		is_rogue = yes
-		is_savant = yes
-		is_scout = yes
-		is_sorcerer = yes
-		is_spellsword = yes
-		is_thief = yes
-		is_trader = yes
-		is_wayfarer = yes
-		is_witchhunter = yes
-	}
-}
-
-has_maxed_specializations = {
-	custom_tooltip = {
-		text = has_two_lvl_3_specialisation
-		calc_true_if = {
-			amount = 2
-			trait = acrobat_3
-			trait = assassin_3
-			trait = barbarian_3
-			trait = bard_3
-			trait = battlemage_3
-			trait = crusader_3
-			trait = healer_3
-			trait = knight_3
-			trait = monk_3
-			trait = nightblade_3
-			trait = priest_3
-			trait = rogue_3
-			trait = savant_3
-			trait = scout_3
-			trait = spellsword_3
-			trait = sorcerer_3
-			trait = thief_3
-			trait = trader_3
-			trait = wayfarer_3
-			trait = witchhunter_3
-		}
-	}
-}
 has_maxed_a_specialization = {
 	OR = {
 		trait = acrobat_3
