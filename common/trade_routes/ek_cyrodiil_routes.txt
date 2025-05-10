@@ -47,8 +47,8 @@ niben_river_route = {
 	path = { #Leyawiin - Topal Sea
 		13 528 1071 
 	}
-	path = {	# Topal Sea - Blackrose
-		1071 102 1065 119
+	path = {	# Topal Sea - Blackrose - Volatra
+		1071 102 1065 119 117 1050 1051 1179 1176 1053 1041 989
 	}
 	path = {	# Topal Sea - Haven Sea
 		1071 211 403 1064 1282 1075

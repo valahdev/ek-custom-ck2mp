@@ -1,0 +1,2 @@
+recently_improved_corprus = { icon = 1 }
+struggling_with_corprus = { icon = 1 }

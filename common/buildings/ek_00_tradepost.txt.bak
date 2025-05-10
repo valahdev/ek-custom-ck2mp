@@ -604,8 +604,6 @@ trade_post = {
 					trait = greedy
 					society_member_of = thieves_guild_tamriel
 					society_member_of = camonna_tong_tamriel
-					society_member_of = thieves_guild_akavir
-					society_member_of = assassin_guild_akavir
 				}
 			}
 		}
