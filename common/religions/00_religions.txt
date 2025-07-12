@@ -337,6 +337,7 @@ yokudan_pantheon = {
 		has_heir_designation = yes
 	}
 }
+
 ##MER PANTHEON##
 mer_pantheon = {
 	has_coa_on_barony_only = yes
@@ -512,6 +513,7 @@ mer_pantheon = {
 		intermarry = reclamationist
 	}
 }
+
 ##VELOTHIAN/TRIBUNAL RELIGIONS##
 tribunal = {
 	has_coa_on_barony_only = yes
@@ -583,6 +585,7 @@ tribunal = {
 			learning = 1
 		}
 	}
+	
 	nerevarine = {
 		graphical_culture = muslimgfx
 		
@@ -635,6 +638,7 @@ tribunal = {
 			morale_offence = 0.05
 		}
 	}
+
 	sixth_house = {
 		graphical_culture = muslimgfx
 		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
@@ -676,6 +680,7 @@ tribunal = {
 			disease_defence = 0.05
 		}
 	}
+
 	reclamationist = {
 		graphical_culture = muslimgfx
 		alternate_start = { always = no }		
@@ -724,6 +729,7 @@ tribunal = {
 		aggression = 0.75
 		has_heir_designation = yes
 	}
+
 	almsivi_old_velothi = {
 		graphical_culture = muslimgfx
 		
@@ -772,6 +778,7 @@ tribunal = {
 		}
 	}
 }
+
 ##DAEDRIC RELIGIONS##
 daedra = {
 	has_coa_on_barony_only = yes
@@ -842,6 +849,7 @@ daedra = {
 			diplomacy = 1
 		}
 	}
+
 	daedra_boethiah = {
 		graphical_culture = muslimgfx
 		merge_republic_interface = yes
@@ -907,6 +915,7 @@ daedra = {
 			diplomacy = -3
 		}
 	}
+	
 	daedra_clavicus = {
 		graphical_culture = muslimgfx
 		merge_republic_interface = yes
@@ -953,9 +962,10 @@ daedra = {
 
 		character_modifier = {
 			diplomacy  = 3
-			global_tax_modifier = -0.0125
+			global_tax_modifier = -0.015
 		}
 	}
+
 	daedra_hermaeus = {
 		graphical_culture = muslimgfx
 		merge_republic_interface = yes
@@ -1005,6 +1015,7 @@ daedra = {
 			health = -0.5
 		}
 	}
+
 	daedra_hircine = {
 		graphical_culture = muslimgfx
 		merge_republic_interface = yes
@@ -1056,6 +1067,7 @@ daedra = {
 			global_movement_speed = 0.01
 		}
 	}
+
 	daedra_mehrunes = {
 		graphical_culture = muslimgfx
 		merge_republic_interface = yes
@@ -1107,9 +1119,10 @@ daedra = {
 		character_modifier = {
 			martial = 2
 			siege_speed = 0.015
-			global_revolt_risk = 0.035
+			global_revolt_risk = 0.04
 		}
 	}
+
 	daedra_mephala = {
 		graphical_culture = muslimgfx
 		merge_republic_interface = yes
@@ -1164,6 +1177,7 @@ daedra = {
 			general_opinion = -10
 		}
 	}
+
 	daedra_meridia = {
 		graphical_culture = mesoamericangfx
 		merge_republic_interface = yes
@@ -1215,6 +1229,7 @@ daedra = {
 			disease_defence = 0.05
 		}
 	}
+
 	daedra_molag = {
 		graphical_culture = muslimgfx
 		merge_republic_interface = yes
@@ -1265,11 +1280,12 @@ daedra = {
 
 		character_modifier = {
 			arrest_chance_modifier = 0.025
-			levy_size = 0.010
+			levy_size = 0.0215
 			vassal_opinion = -15
 			same_religion_opinion = 5
 		}
 	}
+
 	daedra_namira = {
 		graphical_culture = muslimgfx
 		merge_republic_interface = yes
@@ -1319,6 +1335,7 @@ daedra = {
 			murder_plot_power_modifier = 0.075
 		}
 	}
+
 	daedra_nocturnal = {
 		graphical_culture = muslimgfx
 		merge_republic_interface = yes
@@ -1365,6 +1382,7 @@ daedra = {
 			stewardship = -2
 		}
 	}
+
 	daedra_peryite = {
 		graphical_culture = muslimgfx
 		merge_republic_interface = yes
@@ -1414,6 +1432,7 @@ daedra = {
 			global_garrison_size = 0.05
 		}
 	}
+
 	daedra_sanguine = {
 		graphical_culture = muslimgfx
 		merge_republic_interface = yes
@@ -1465,10 +1484,11 @@ daedra = {
 		aggression = 0.8
 	
 		character_modifier = {
-			fertility  = 0.1
+			fertility  = 0.05
 			diplomacy = 2
 		}
 	}
+
 	daedra_sheogorath = {
 		graphical_culture = muslimgfx
 		merge_republic_interface = yes
@@ -1514,10 +1534,12 @@ daedra = {
 
 		character_modifier = {
 			learning = 4
+			diplomacy = -1
 			build_time_modifier = 0.025
-			health = -1.2
+			health = -1.0
 		}
 	}
+
 	daedra_jyggalag = {
 		graphical_culture = muslimgfx
 		merge_republic_interface = yes
@@ -1567,6 +1589,7 @@ daedra = {
 			global_revolt_risk = -0.025
 		}
 	}
+
 	daedra_vaermina = {
 		graphical_culture = muslimgfx
 		merge_republic_interface = yes
@@ -1611,6 +1634,7 @@ daedra = {
 			health = -0.5
 		}
 	}
+
 	daedra_malacath = {
 		graphical_culture = muslimgfx
 		merge_republic_interface = yes
@@ -1668,10 +1692,7 @@ daedra = {
 
 		character_modifier = {
 			martial = 2
-		}
-
-		command_modifier = {
-			morale_offence = 0.05
+			combat_rating = 5
 		}
 	}
 }
@@ -1795,6 +1816,7 @@ khajiit_pantheon = {
 			martial = 1
 		}
 	}
+
 	baan_dar = {
 		graphical_culture = norsegfx
 		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
@@ -1842,6 +1864,7 @@ khajiit_pantheon = {
 		aggression = 1.0
 	}
 }
+
 
 ##HIST RELIGIONS##
 hist_group = {
@@ -1981,6 +2004,7 @@ reach_faiths = {
 			siege_defence = 0.025
 		}
 	}
+
 	forsworn_heresy = { #Hagraven Cults
 		graphical_culture = norsegfx
 
@@ -2033,6 +2057,7 @@ reach_faiths = {
 		rel_head_defense = yes
 	}
 }
+
 ##OLD FAITHS##
 old_faith = {
 	has_coa_on_barony_only = yes
@@ -2211,6 +2236,7 @@ atmoran_pantheon = {
 		#religious_clothing_head = 7
 		#religious_clothing_priest = 7
 	}
+
 	dragon_cult = {
 		graphical_culture = norsegfx
 
@@ -2264,6 +2290,7 @@ atmoran_pantheon = {
 		#religious_clothing_head = 8
 		#religious_clothing_priest = 8
 	}
+
 	anuic_skaal = {
 		graphical_culture = norsegfx
 
