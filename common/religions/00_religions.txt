@@ -109,6 +109,11 @@ human_pantheon = {
 		#religious_clothing_priest = 9
 		has_heir_designation = yes
 		rel_head_defense = yes
+
+		character_modifier = {
+			stewardship = 1
+  			vassal_opinion = 5
+		}
 	}
 	
 	maruhkati = { #Formerly a heresy of the Eight, now a standalone to reflect it more or less being dead as of the Second Era
@@ -274,6 +279,10 @@ yokudan_pantheon = {
 		#religious_clothing_head = 9
 		#religious_clothing_priest = 9
 		has_heir_designation = yes
+
+		character_modifier = { 
+			land_morale = 0.015
+		}
 	}
 	
 	satakal = {
@@ -390,6 +399,11 @@ mer_pantheon = {
 		
 		#religious_clothing_head = 11
 		#religious_clothing_priest = 11
+
+		character_modifier = { 
+			diplomacy = 1 
+			culture_techpoints = 0.03 
+		}
 	}
 	
 	green_pact = {
@@ -439,6 +453,11 @@ mer_pantheon = {
 		#religious_clothing_head = 11
 		#religious_clothing_priest = 11
 		has_heir_designation = yes
+
+		character_modifier = { 
+			global_movement_speed = 0.02
+			intrigue = 1
+		}
 	}
 	
 	blacksap = {
@@ -558,6 +577,11 @@ tribunal = {
 		
 		aggression = 0.5
 		has_heir_designation = yes
+
+		character_modifier = {
+			culture_techpoints = 0.02
+			learning = 1
+		}
 	}
 	nerevarine = {
 		graphical_culture = muslimgfx
@@ -605,6 +629,11 @@ tribunal = {
 		feminist = yes
 		aggression = 1.25
 		has_heir_designation = yes
+
+		character_modifier = {
+			monthly_character_prestige = 1.0 
+			morale_offence = 0.05
+		}
 	}
 	sixth_house = {
 		graphical_culture = muslimgfx
@@ -640,6 +669,12 @@ tribunal = {
 		priests_can_inherit = no
 		short_reign_opinion_year_mult = 4 # The default is 2
 		has_heir_designation = yes
+
+		character_modifier = { 
+			land_morale = 0.05
+			siege_speed = 0.025 
+			disease_defence = 0.05
+		}
 	}
 	reclamationist = {
 		graphical_culture = muslimgfx
@@ -730,6 +765,11 @@ tribunal = {
 		intermarry = daedra_azura
 		
 		has_heir_designation = yes
+
+		character_modifier = { 
+			learning = 1 
+			culture_techpoints = 0.03 
+		}
 	}
 }
 ##DAEDRIC RELIGIONS##
@@ -796,6 +836,11 @@ daedra = {
 		has_heir_designation = yes
 		
 		aggression = 1.25
+
+		character_modifier = {
+			monthly_character_prestige = 0.60
+			diplomacy = 1
+		}
 	}
 	daedra_boethiah = {
 		graphical_culture = muslimgfx
@@ -854,6 +899,13 @@ daedra = {
 		has_heir_designation = yes
 		
 		aggression = 1.5
+
+		character_modifier = {
+			intrigue = 2
+			murder_plot_power_modifier = 0.05
+			defensive_plot_power_modifier = 0.015
+			diplomacy = -3
+		}
 	}
 	daedra_clavicus = {
 		graphical_culture = muslimgfx
@@ -898,6 +950,11 @@ daedra = {
 		aggression = 0.8
 
 		intermarry = almsivi_old_velothi
+
+		character_modifier = {
+			diplomacy  = 3
+			global_tax_modifier = -0.0125
+		}
 	}
 	daedra_hermaeus = {
 		graphical_culture = muslimgfx
@@ -941,6 +998,12 @@ daedra = {
 		has_heir_designation = yes
 		
 		aggression = 0.75
+
+		character_modifier ={
+			learning = 1
+			tech_growth_modifier = 0.10
+			health = -0.5
+		}
 	}
 	daedra_hircine = {
 		graphical_culture = muslimgfx
@@ -987,6 +1050,11 @@ daedra = {
 		priests_can_inherit = no
 		
 		aggression = 1.25
+
+		character_modifier = {
+			combat_rating = 10
+			global_movement_speed = 0.01
+		}
 	}
 	daedra_mehrunes = {
 		graphical_culture = muslimgfx
@@ -1035,6 +1103,12 @@ daedra = {
 		can_retire_to_monastery = no
 		priests_can_inherit = yes
 		aggression = 3
+
+		character_modifier = {
+			martial = 2
+			siege_speed = 0.015
+			global_revolt_risk = 0.035
+		}
 	}
 	daedra_mephala = {
 		graphical_culture = muslimgfx
@@ -1083,7 +1157,12 @@ daedra = {
 		can_grant_invasion_cb = invasion
 		can_retire_to_monastery = yes
 		priests_can_inherit = no
-		
+
+		character_modifier = {
+			intrigue = 2
+			fertility = 0.1
+			general_opinion = -10
+		}
 	}
 	daedra_meridia = {
 		graphical_culture = mesoamericangfx
@@ -1130,6 +1209,11 @@ daedra = {
 		intermarry = green_pact
 		intermarry = blacksap
 		intermarry = daedra_azura
+
+		character_modifier = {
+			health = 0.5
+			disease_defence = 0.05
+		}
 	}
 	daedra_molag = {
 		graphical_culture = muslimgfx
@@ -1178,6 +1262,13 @@ daedra = {
 		can_retire_to_monastery = no
 		priests_can_inherit = yes
 		aggression = 2.5
+
+		character_modifier = {
+			arrest_chance_modifier = 0.025
+			levy_size = 0.010
+			vassal_opinion = -15
+			same_religion_opinion = 5
+		}
 	}
 	daedra_namira = {
 		graphical_culture = muslimgfx
@@ -1222,6 +1313,11 @@ daedra = {
 		can_retire_to_monastery = yes
 		priests_can_inherit = no
 		aggression = 1.15
+
+		character_modifier = {
+			intrigue = 1
+			murder_plot_power_modifier = 0.075
+		}
 	}
 	daedra_nocturnal = {
 		graphical_culture = muslimgfx
@@ -1262,6 +1358,12 @@ daedra = {
 		can_grant_invasion_cb = invasion
 		can_retire_to_monastery = yes
 		priests_can_inherit = no
+
+		character_modifier = {
+			intrigue = 4
+			build_cost_modifier = 0.02
+			stewardship = -2
+		}
 	}
 	daedra_peryite = {
 		graphical_culture = muslimgfx
@@ -1306,6 +1408,11 @@ daedra = {
 		can_retire_to_monastery = yes
 		priests_can_inherit = no
 		aggression = 1.25
+
+		character_modifier = {
+			disease_defence = 0.025
+			global_garrison_size = 0.05
+		}
 	}
 	daedra_sanguine = {
 		graphical_culture = muslimgfx
@@ -1356,6 +1463,11 @@ daedra = {
 		can_retire_to_monastery = no
 		priests_can_inherit = no
 		aggression = 0.8
+	
+		character_modifier = {
+			fertility  = 0.1
+			diplomacy = 2
+		}
 	}
 	daedra_sheogorath = {
 		graphical_culture = muslimgfx
@@ -1399,6 +1511,12 @@ daedra = {
 		can_grant_invasion_cb = invasion
 		can_retire_to_monastery = yes
 		priests_can_inherit = no
+
+		character_modifier = {
+			learning = 4
+			build_time_modifier = 0.025
+			health = -1.2
+		}
 	}
 	daedra_jyggalag = {
 		graphical_culture = muslimgfx
@@ -1443,6 +1561,11 @@ daedra = {
 		priests_can_inherit = no
 		
 		aggression = 2.0
+
+		character_modifier = {
+			stewardship = 2
+			global_revolt_risk = -0.025
+		}
 	}
 	daedra_vaermina = {
 		graphical_culture = muslimgfx
@@ -1481,6 +1604,12 @@ daedra = {
 		
 		can_retire_to_monastery = yes
 		priests_can_inherit = no
+
+		character_modifier = {
+			intrigue = 3
+			plot_discovery_chance = 0.05
+			health = -0.5
+		}
 	}
 	daedra_malacath = {
 		graphical_culture = muslimgfx
@@ -1536,6 +1665,14 @@ daedra = {
 		aggression = 2.0
 		
 		intermarry = daedra_mephala
+
+		character_modifier = {
+			martial = 2
+		}
+
+		command_modifier = {
+			morale_offence = 0.05
+		}
 	}
 }
 	
@@ -1603,6 +1740,10 @@ khajiit_pantheon = {
 		##religious_clothing_head = 12
 		##religious_clothing_priest = 12
 		#Mane won't wear his damn head dress
+
+		character_modifier = {
+			health = 0.5
+		}
 	}
 	
 	alkosh = {
@@ -1649,6 +1790,10 @@ khajiit_pantheon = {
 		short_reign_opinion_year_mult = 1 # The default is 2
 		
 		aggression = 1.25
+
+		character_modifier = {
+			martial = 1
+		}
 	}
 	baan_dar = {
 		graphical_culture = norsegfx
@@ -1755,6 +1900,11 @@ hist_group = {
 		has_heir_designation = yes
 		
 		aggression = 0.75
+
+		character_modifier = { 
+			global_movement_speed = 0.015 
+			health = 0.5 
+		}
 	}
 }
 ##REACH FAITHS##
@@ -1826,6 +1976,10 @@ reach_faiths = {
 		#religious_clothing_priest = 3
 		
 		has_heir_designation = yes
+
+		character_modifier = { 
+			siege_defence = 0.025
+		}
 	}
 	forsworn_heresy = { #Hagraven Cults
 		graphical_culture = norsegfx

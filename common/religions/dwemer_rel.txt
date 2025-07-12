@@ -56,10 +56,10 @@ dwemer_group = {
 		has_heir_designation = yes
 		
 		character_modifier = {
-			tech_growth_modifier = 0.3
-			economy_techpoints = 0.05
-			military_techpoints = 0.05
-			culture_techpoints = 0.05
+			tech_growth_modifier = 0.2
+			economy_techpoints = 0.025
+			military_techpoints = 0.025
+			culture_techpoints = 0.025
 		}
 	}
 }
