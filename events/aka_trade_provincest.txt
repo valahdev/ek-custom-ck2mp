@@ -89,6 +89,9 @@ character_event = {
 			owns = 595
 			owns = 528
 			owns = 119 #Blackrose
+			owns = 1041 # Bang Suan (Akavir)
+			owns = 989 # Lividur (Akavir)
+			owns = 973 # Qul (Akavir)
 		}
 		NOT = { has_global_flag = niben_poi_set }
 		

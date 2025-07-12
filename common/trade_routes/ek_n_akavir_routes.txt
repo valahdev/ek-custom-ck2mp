@@ -167,7 +167,6 @@ islander_trade = {
 	wealth = 28
 	trade_post_display_trigger = {
 		OR = {
-				province_id = 736 #Yntao
 				province_id = 873 # Pedraha
 				province_id = 735 # Esroniet
 				province_id = 731 # Yneslea
