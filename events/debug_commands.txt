@@ -1,9 +1,9 @@
-namespace = racechange
+namespace = debugcommand
 
 # ------ IMPERIAL ------ #
 
 character_event = {
-    id = racechange.1
+    id = debugcommand.1
     hide_window = yes
     is_triggered_only = yes
     
@@ -19,7 +19,7 @@ character_event = {
 }
 
 character_event = {
-    id = racechange.2
+    id = debugcommand.2
     hide_window = yes
     is_triggered_only = yes
     
@@ -35,7 +35,7 @@ character_event = {
 }
 
 character_event = {
-    id = racechange.3
+    id = debugcommand.3
     hide_window = yes
     is_triggered_only = yes
     
@@ -53,7 +53,7 @@ character_event = {
 # ------ NORD ------ #
 
 character_event = {
-    id = racechange.4
+    id = debugcommand.4
     hide_window = yes
     is_triggered_only = yes
     
@@ -69,7 +69,7 @@ character_event = {
 }
 
 character_event = {
-    id = racechange.5
+    id = debugcommand.5
     hide_window = yes
     is_triggered_only = yes
     
@@ -85,7 +85,7 @@ character_event = {
 }
 
 character_event = {
-    id = racechange.6
+    id = debugcommand.6
     hide_window = yes
     is_triggered_only = yes
     
@@ -103,7 +103,7 @@ character_event = {
 # ------ WESTERN ------ #
 
 character_event = {
-    id = racechange.7
+    id = debugcommand.7
     hide_window = yes
     is_triggered_only = yes
     
@@ -119,7 +119,7 @@ character_event = {
 }
 
 character_event = {
-    id = racechange.8
+    id = debugcommand.8
     hide_window = yes
     is_triggered_only = yes
     
@@ -137,7 +137,7 @@ character_event = {
 # ------ REDGUARD ------ #
 
 character_event = {
-    id = racechange.9
+    id = debugcommand.9
     hide_window = yes
     is_triggered_only = yes
     
@@ -153,7 +153,7 @@ character_event = {
 }
 
 character_event = {
-    id = racechange.10
+    id = debugcommand.10
     hide_window = yes
     is_triggered_only = yes
     
@@ -169,7 +169,7 @@ character_event = {
 }
 
 character_event = {
-    id = racechange.11
+    id = debugcommand.11
     hide_window = yes
     is_triggered_only = yes
     
@@ -187,7 +187,7 @@ character_event = {
 # ------ ALTMER ------ #
 
 character_event = {
-    id = racechange.12
+    id = debugcommand.12
     hide_window = yes
     is_triggered_only = yes
     
@@ -206,7 +206,7 @@ character_event = {
 # ------ BOSMER ------ #
 
 character_event = {
-    id = racechange.13
+    id = debugcommand.13
     hide_window = yes
     is_triggered_only = yes
     
@@ -224,7 +224,7 @@ character_event = {
 # ------ MAOMER ------ #
 
 character_event = {
-    id = racechange.14
+    id = debugcommand.14
     hide_window = yes
     is_triggered_only = yes
     
@@ -242,7 +242,7 @@ character_event = {
 # ------ AYLEID ------ #
 
 character_event = {
-    id = racechange.15
+    id = debugcommand.15
     hide_window = yes
     is_triggered_only = yes
     
@@ -260,7 +260,7 @@ character_event = {
 # ------ FALMER ------ #
 
 character_event = {
-    id = racechange.16
+    id = debugcommand.16
     hide_window = yes
     is_triggered_only = yes
     
@@ -278,7 +278,7 @@ character_event = {
 # ------ DUNMER ------ #
 
 character_event = {
-    id = racechange.17
+    id = debugcommand.17
     hide_window = yes
     is_triggered_only = yes
     
@@ -294,7 +294,7 @@ character_event = {
 }
 
 character_event = {
-    id = racechange.18
+    id = debugcommand.18
     hide_window = yes
     is_triggered_only = yes
     
@@ -312,7 +312,7 @@ character_event = {
 # ------ CHIMER ------ #
 
 character_event = {
-    id = racechange.19
+    id = debugcommand.19
     hide_window = yes
     is_triggered_only = yes
     
@@ -330,7 +330,7 @@ character_event = {
 # ------ ORSIMER ------ #
 
 character_event = {
-    id = racechange.20
+    id = debugcommand.20
     hide_window = yes
     is_triggered_only = yes
     
@@ -348,7 +348,7 @@ character_event = {
 # ------ KHAJIT ------ #
 
 character_event = {
-    id = racechange.21
+    id = debugcommand.21
     hide_window = yes
     is_triggered_only = yes
     
@@ -364,7 +364,7 @@ character_event = {
 }
 
 character_event = {
-    id = racechange.22
+    id = debugcommand.22
     hide_window = yes
     is_triggered_only = yes
     
@@ -382,7 +382,7 @@ character_event = {
 # ------ SUNTHAY-RAHT ------ #
 
 character_event = {
-    id = racechange.23
+    id = debugcommand.23
     hide_window = yes
     is_triggered_only = yes
     
@@ -399,7 +399,7 @@ character_event = {
 }
 
 character_event = {
-    id = racechange.24
+    id = debugcommand.24
     hide_window = yes
     is_triggered_only = yes
     
@@ -418,7 +418,7 @@ character_event = {
 # ------ ARGONIAN ------ #
 
 character_event = {
-    id = racechange.25
+    id = debugcommand.25
     hide_window = yes
     is_triggered_only = yes
     
@@ -434,7 +434,7 @@ character_event = {
 }
 
 character_event = {
-    id = racechange.26
+    id = debugcommand.26
     hide_window = yes
     is_triggered_only = yes
     
@@ -450,7 +450,7 @@ character_event = {
 }
 
 character_event = {
-    id = racechange.27
+    id = debugcommand.27
     hide_window = yes
     is_triggered_only = yes
     
@@ -466,7 +466,7 @@ character_event = {
 }
 
 character_event = {
-    id = racechange.28
+    id = debugcommand.28
     hide_window = yes
     is_triggered_only = yes
     
@@ -482,7 +482,7 @@ character_event = {
 }
 
 character_event = {
-    id = racechange.29
+    id = debugcommand.29
     hide_window = yes
     is_triggered_only = yes
     
@@ -498,7 +498,7 @@ character_event = {
 }
 
 character_event = {
-    id = racechange.30
+    id = debugcommand.30
     hide_window = yes
     is_triggered_only = yes
     
@@ -516,7 +516,7 @@ character_event = {
 # ------ ISLANDER ------ #
 
 character_event = {
-    id = racechange.31
+    id = debugcommand.31
     hide_window = yes
     is_triggered_only = yes
     
@@ -534,7 +534,7 @@ character_event = {
 # ------ AKAVIRI ------ #
 
 character_event = {
-    id = racechange.32
+    id = debugcommand.32
     hide_window = yes
     is_triggered_only = yes
     
@@ -552,7 +552,7 @@ character_event = {
 # ------ PO-TUN ------ #
 
 character_event = {
-    id = racechange.33
+    id = debugcommand.33
     hide_window = yes
     is_triggered_only = yes
     
@@ -570,7 +570,7 @@ character_event = {
 # ------ TANGMAO ------ #
 
 character_event = {
-    id = racechange.34
+    id = debugcommand.34
     hide_window = yes
     is_triggered_only = yes
     
@@ -588,7 +588,7 @@ character_event = {
 # ------ TSAESCI ------ #
 
 character_event = {
-    id = racechange.35
+    id = debugcommand.35
     hide_window = yes
     is_triggered_only = yes
     
@@ -606,7 +606,7 @@ character_event = {
 # ------ KAMAL ------ #
 
 character_event = {
-    id = racechange.36
+    id = debugcommand.36
     hide_window = yes
     is_triggered_only = yes
     
@@ -624,7 +624,7 @@ character_event = {
 # ------ DWEMER ------ #
 
 character_event = {
-    id = racechange.37
+    id = debugcommand.37
     hide_window = yes
     is_triggered_only = yes
     
@@ -636,5 +636,35 @@ character_event = {
 		set_character_flag = race_changer
 		remove_congenital_traits_racechange = yes
 		assign_random_congenital_racechange = yes
+	}
+}
+
+character_event = {
+	id = debugcommand.100
+	is_triggered_only = yes
+	hide_window = yes
+
+immediate = {
+    # ROOT is father
+    create_character = {
+        dynasty = ROOT
+        religion = ROOT
+        culture = ROOT
+        female = no
+        age = 0
+        set_father = ROOT
+        add_to_court = yes
+		name = "Gisel"
+    }
+    create_character = {
+        dynasty = ROOT
+        religion = ROOT
+        culture = ROOT
+        female = yes
+        age = 0
+        set_father = ROOT
+        add_to_court = yes
+		set_name = "Gisela"
+    	}
 	}
 }

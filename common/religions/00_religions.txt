@@ -581,7 +581,7 @@ tribunal = {
 		has_heir_designation = yes
 
 		character_modifier = {
-			culture_techpoints = 0.02
+			culture_techpoints = 0.8
 			learning = 1
 		}
 	}
