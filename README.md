@@ -39,4 +39,10 @@ The **Custom Elder Kangz Modpack Fork** is a collection of small to mid-sized mo
 **Creators**: LordHotspur 
 
 ### 11. [Dwemer Contingency 2.0](https://steamcommunity.com/sharedfiles/filedetails/?id=2145741418)  
-**Creators**: Mr Samuel Streamer, Nil 
+**Creators**: Mr Samuel Streamer, Nil
+
+## 12. [A Bigger Interface Elder Kings](https://steamcommunity.com/sharedfiles/filedetails/?id=3053309556&searchtext=bigger+interface+)
+**Creators**: Sir Tristan107
+
+## 13. [Elder Kings - Akaviri Trade Routes](https://steamcommunity.com/sharedfiles/filedetails/?id=2691828528)
+**Creators**: IRONVAKING
