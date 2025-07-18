@@ -5,7 +5,7 @@ guiTypes = {
 		name = "build_buildings_view"
 		backGround ="background_bv"
 		position = { x=-250 y=-350 }
-		size = { x=420 y=655 }
+		size = { x=420 y=748 }
 		moveable = 1
 		dontRender = ""
 		horizontalBorder = "0"
@@ -148,6 +148,8 @@ guiTypes = {
 			quadTextureSprite ="GFX_create_baron"
 			position = { x = 208 y = 118 }
 			Orientation = "UPPER_LEFT"
+			priority_shortcut = "v"
+			#shortcut = "v"
 			pdx_tooltip = "CREATE_BARON"
 		}
 
@@ -214,7 +216,7 @@ guiTypes = {
 			name ="prev_province"
 			quadTextureSprite = "GFX_buildview_prev"
 			position = { x= 13 y =121 }
-			shortcut = "b"
+			priority_shortcut = "z"
 			pdx_tooltip = "PREV_PROVINCE"
 			clicksound = generic_click_04
 		}
@@ -223,7 +225,8 @@ guiTypes = {
 			name ="next_province"
 			quadTextureSprite = "GFX_buildview_next"
 			position = { x= 87 y = 121 }
-			shortcut = "n"
+			priority_shortcut = "b"
+			#shortcut = "b"
 			pdx_tooltip = "NEXT_PROVINCE"
 			clicksound = generic_click_04
 		}
@@ -378,7 +381,7 @@ guiTypes = {
 			name = "building_list"
 			position = { x = 21 y = 167 }
 			backGround=""
-			size = { x=414 y = 350}
+			size = { x=414 y = 560}
 			spacing = 1
 			scrollbartype = "standardlistbox_slider"
 			borderSize = {x = 0 y = 0}

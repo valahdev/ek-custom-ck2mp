@@ -1,0 +1,513 @@
+guiTypes = {
+
+	windowType = {
+		name = "domestic_factions"
+		backGround =""
+		position = { x = 0 y = 97 }
+		size = { x = 576 y = 1076 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = "0"
+		verticalBorder = ""
+		fullScreen = no
+#		upsound = click
+		
+		iconType = {
+			name ="plots_bg"
+			spriteType = "GFX_plots_bg"
+			position = { x= 0 y = -98 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		
+		instantTextBoxType = {
+			name = "headline"
+			position = { x = 219 y = -22 }
+			textureFile = ""
+			font = "vic_22_black"
+			borderSize = {x = 0 y = 0}
+			text = "FACTIONS"	
+			maxWidth = 232
+			maxHeight =24
+			fixedsize = yes
+			format = centre
+		}
+		instantTextBoxType = {
+			name = "headline_pagan"
+			position = { x = 167 y = -22 }
+			textureFile = ""
+			font = "vic_22"
+			borderSize = {x = 0 y = 0}
+			text = "FACTIONS"	
+			maxWidth = 232
+			maxHeight =24
+			fixedsize = yes
+			format = centre
+		}
+
+		
+		### Faction view
+		windowType = {
+			name = "factions_window"
+			backGround =""
+			position = { x=0 y=0 }	
+			size = { x = 550 y = 900 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder = ""
+			verticalBorder = ""
+			fullScreen = no
+			
+			iconType = {
+				name ="factions_bg"
+				spriteType = "GFX_plots_faction_bg"
+				position = { x=0 y=-98 }
+				Orientation = "UPPER_LEFT"
+			}
+			iconType = {
+				name ="factions_bg2"
+				spriteType = "GFX_plots_faction_bg2"
+				position = { x=0 y=-98 }
+				Orientation = "UPPER_LEFT"
+			}
+			iconType = {
+				name ="repover_churchwindow_1"
+				spriteType = "GFX_repover_churchwindow_1"
+				position = { x= 9 y = -56 }
+			}
+			guiButtonType =	{
+				name = "upper_shield"
+				position = { x=20 y=63 }
+				quadTextureSprite ="GFX_shield_medium"	
+			}
+			iconType =
+			{
+				name ="upper_crown"
+				spriteType = "GFX_shield_crown_strip_medium"
+				position = { x= 32 y = 40 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			guiButtonType =	{
+				name = "lower_shield"
+				position = { x=20 y=480 }
+				quadTextureSprite ="GFX_shield_medium"	
+			}
+			iconType =
+			{
+				name ="lower_crown"
+				spriteType = "GFX_shield_crown_strip_medium"
+				position = { x= 32 y = 457 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			instantTextBoxType = {
+				name = "my_tier_label"
+				position = { x= 36 y = 85 }
+				format = centre
+				textureFile = ""
+				font = "vic_18_black"
+				borderSize = { x = 0 y = 0 }
+				text = ""	
+				maxWidth = 475
+				maxHeight = 20
+				fixedsize = yes
+				Orientation = "UPPER_LEFT"
+			}
+			
+			listboxType = {
+				name = "my_tier_listbox"
+				position = { x=12 y = 122 }
+				backGround=""
+				size = { x = 511 y = 340 } 
+				#use y = 980 when playing top liege. 
+				Orientation = "UPPER_LEFT"
+				spacing = 0
+				scrollbartype = "standardlistbox_slider"
+				borderSize = { x = 0 y = 0 }
+			}
+			
+			instantTextBoxType = {
+				name = "liege_tier_label"
+				position = { x= 36 y = 500 }
+				format = centre
+				textureFile = ""
+				font = "vic_18_black"
+				borderSize = { x = 0 y = 0 }
+				text = ""	
+				maxWidth = 475
+				maxHeight = 20
+				fixedsize = yes
+				Orientation = "UPPER_LEFT"
+			}
+			
+			listboxType = {
+				name = "liege_tier_listbox"
+				position = { x=12 y = 590 }
+				backGround=""
+				size = { x = 511 y = 340 }
+				spacing = 0
+				scrollbartype = "standardlistbox_slider"
+				borderSize = { x = 0 y = 0 }
+			}
+			
+			guiButtonType =	{
+				name = "create_faction_button"
+				position = { x = 47 y = 545 }
+				quadTextureSprite ="GFX_plots_plot_button"	
+				Orientation = "UPPER_LEFT"
+				clicksound = generic_click_03
+				shortcut = "x"
+			}
+			instantTextBoxType = {
+				name = "create_faction_text"
+				position = { x = 81 y = 550 }
+				format = centre
+				textureFile = ""
+				font = "vic_22"
+				borderSize = {x = 0 y = 0}
+				text = "START_A_FACTION"
+				maxWidth = 390
+				maxHeight = 24
+				fixedsize = yes
+				Orientation = "UPPER_LEFT"
+			}
+		}
+		
+		### create new faction window
+		windowType = {
+			name = "possible_factions_window"
+			backGround =""
+			position = { x=0 y=270 }	
+			size = { x = 200 y = 60 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder = ""
+			verticalBorder = ""
+			fullScreen = no
+			
+			iconType = {
+				name ="plots_available_bg"
+				spriteType = "GFX_plots_faction_choose_bg"
+				position = { x= 5 y = 55 }
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+					name = "start_faction_label"
+					position = { x = 123 y = 73 }
+					textureFile = ""
+					font = "vic_18"
+					borderSize = {x = 0 y = 0}
+					text = "START_A_FACTION"
+					maxWidth = 300
+					maxHeight = 20
+					fixedsize = yes
+					format = centre
+				}
+			listboxType = {
+				name = "possible_factions_listbox"
+				position = { x=43 y = 102 }
+				backGround=""
+				size = { x = 447 y = 350 }
+				Orientation = "UPPER_LEFT"
+				spacing = 0
+				scrollbartype = "standardlistbox_slider"
+				borderSize = { x = 0 y = 0 }
+			}
+			guiButtonType =	{
+				name = "cancel_button"
+				position = { x=219 y=445 }
+				quadTextureSprite ="GFX_standard_button_112"	
+				buttonFont = "vic_18"
+				buttonText = "BACK"
+				shortcut = "z"
+				Orientation = "UPPER_LEFT"
+				clicksound = generic_click_04
+			}
+		}
+		guiButtonType =	{
+			name = "button_close"
+			position = { x=515 y=-84 }
+			quadTextureSprite ="GFX_main_close_button"	
+			Orientation = "UPPER_LEFT"
+			shortcut = "ESCAPE"
+			pdx_tooltip = "CLOSE"
+		}
+
+	}
+	
+	## Possible Faction Entry
+	windowType = {
+		name = "possible_faction_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=400 y = 38 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		
+		guiButtonType = {
+			name = "plot_banner"
+			quadTextureSprite ="GFX_plots_available_entry"	
+			position = { x= 0 y = 0 }
+			orientation = "UPPER_LEFT"
+			clicksound = generic_click_04
+		}
+		iconType = {
+			name = "faction_icon"
+			spriteType ="GFX_icon_diplomacy"	
+			position = { x=2 y = 5 }
+			orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType= {
+			position = { x=30 y =11 }
+			name = "name"
+			font = "vic_18_black"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 335
+			maxHeight = 20
+			fixedsize = yes
+			text = ""	
+			orientation = "UPPER_LEFT"
+			format = left
+		}
+		guiButtonType = {
+			name ="target_portrait"
+			quadTextureSprite = "GFX_char_34"
+			position = { x = 370 y = 4 }
+			pdx_tooltip = "CHARACTER_TOOLTIP"
+			pdx_tooltip_delayed = "CHARACTER_TOOLTIP_DELAYED"
+		}
+		guiButtonType = {
+			name ="target_portrait_frame"
+			quadTextureSprite = "GFX_charframe_34"
+			position = { x= 365 y = -2 }
+		}
+		guiButtonType = {
+			name ="target_portrait_status"
+			spriteType = "GFX_overlay_char_status_34"
+			position = { x= 368 y = -2 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name ="target_portrait_relation"
+			spriteType = "GFX_overlay_char_relation_34"
+			position = { x= 389 y = -2 }
+			Orientation = "UPPER_LEFT"
+		}
+		guiButtonType = {
+			name ="target_shield"
+			quadTextureSprite = "GFX_shield_small"
+			position = { x= 352 y = 11 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType = {
+			name = "info_icon"
+			spriteType ="GFX_laws_info"	
+			position = { x=416 y = 5 }
+			orientation = "UPPER_LEFT"
+		}
+	}
+	
+	### faction entry
+	windowType = {
+		name = "faction_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=400 y = 68 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		
+		iconType = {
+			name = "plot_banner"
+			spriteType ="GFX_plots_faction_entry"	
+			position = { x= 0 y = -2 }
+		}
+		iconType = {
+			name = "plot_icon"
+			spriteType ="GFX_plot_kill_character"	
+			position = { x=314 y=4 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		instantTextBoxType = {
+			name = "leader_label"
+			position = { x = 10 y = 19 }
+			textureFile = ""
+			font = "Arial12_bold"
+			borderSize = {x = 0 y = 0}
+			text = "LEADER"
+			maxWidth = 75
+			maxHeight = 20
+			fixedsize = yes
+			format = centre
+		}
+		###
+		guiButtonType =	{
+			name ="plotter_portrait"
+			quadTextureSprite= "GFX_char_34"
+			position = { x= 28 y = 35 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "CHARACTER_TOOLTIP"
+			pdx_tooltip_delayed = "CHARACTER_TOOLTIP_DELAYED"
+		}
+		
+		guiButtonType = {
+			name ="plotter_portrait_frame"
+			quadTextureSprite = "GFX_charframe_34"
+			position = { x= 23 y = 29 }
+			Orientation = "UPPER_LEFT"
+		}
+		guiButtonType = {
+			name ="plotter_portrait_status"
+			spriteType = "GFX_overlay_char_status_34"
+			position = { x= 26 y = 29 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name ="plotter_portrait_relation"
+			spriteType = "GFX_overlay_char_relation_34"
+			position = { x= 47 y = 29 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		guiButtonType = {
+			name ="plotter_shield"
+			quadTextureSprite = "GFX_shield_small"
+			position = { x= 6 y = 42 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name ="plotter_opinion_bg"
+			spriteType = "GFX_opinion_bg"
+			position = { x= 52 y = 45 }
+		}
+		instantTextBoxType = {
+			name = "plotter_opinion"
+			position = { x = 46 y = 51 }
+			textureFile = ""
+			font = "Arial12"
+			borderSize = {x = 0 y = 0}
+			text = "UI_MISSING_TEXT"
+			maxWidth = 50
+			maxHeight = 18
+			fixedsize = yes
+			format = centre
+		}
+		###
+		
+		instantTextBoxType = {
+			name = "claimant_label"
+			position = { x = 90 y = 19 }
+			textureFile = ""
+			font = "Arial12_bold"
+			borderSize = {x = 0 y = 0}
+			text = "CLAIMANT"
+			maxWidth = 75
+			maxHeight = 20
+			fixedsize = yes
+			format = centre
+		}
+		###
+		guiButtonType =	{
+			name ="target_portrait"
+			quadTextureSprite= "GFX_char_34"
+			position = { x= 118 y = 35 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "CHARACTER_TOOLTIP"
+			pdx_tooltip_delayed = "CHARACTER_TOOLTIP_DELAYED"
+		}
+		guiButtonType = {
+			name ="target_portrait_frame"
+			quadTextureSprite = "GFX_charframe_34"
+			position = { x= 113 y = 29 }
+			Orientation = "UPPER_LEFT"
+		}
+		guiButtonType = {
+			name ="target_portrait_status"
+			spriteType = "GFX_overlay_char_status_34"
+			position = { x= 117 y = 29 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name ="target_portrait_relation"
+			spriteType = "GFX_overlay_char_relation_34"
+			position = { x= 143 y = 29 }
+			Orientation = "UPPER_LEFT"
+		}
+		guiButtonType = {
+			name ="target_shield"
+			quadTextureSprite = "GFX_shield_small"
+			position = { x= 96§ y = 42 }
+			Orientation = "UPPER_LEFT"
+		}
+		###
+		
+		instantTextBoxType = {
+			name = "faction_name"
+			position = { x = 17 y = 4 }
+			textureFile = ""
+			font = "vic_18_black"
+			borderSize = {x = 0 y = 0}
+			text = ""
+			maxWidth = 290
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+		}
+		
+		guiButtonType = {
+			name = "join_button"
+			position = { x = 480 y = 2 }
+			quadTextureSprite = "GFX_plots_faction_join"
+			Orientation = "UPPER_LEFT"
+			clicksound = generic_click_04
+		}
+		guiButtonType = {
+			name = "leave_button"
+			position = { x = 480 y = 2 }
+			quadTextureSprite = "GFX_plots_faction_leave"
+			Orientation = "UPPER_LEFT"
+			clicksound = generic_click_04
+		}
+		
+		instantTextBoxType = {
+			name = "power_info"
+			position = { x = 355 y = 4 }
+			textureFile = ""
+			font = "Arial12_black"
+			borderSize = {x = 0 y = 0}
+			text = ""
+			maxWidth = 120
+			maxHeight = 40
+			fixedsize = yes
+			format = centre
+		}
+		
+		instantTextBoxType = {
+			name = "backers_label"
+			position = { x = 215 y = 19 }
+			textureFile = ""
+			font = "Arial12_bold"
+			borderSize = {x = 0 y = 0}
+			text = "LEDGER_MEMBERS"
+			maxWidth = 75
+			maxHeight = 20
+			fixedsize = yes
+			format = centre
+		}
+		
+		OverlappingElementsBoxType = {
+			name = "backer_box"
+			position = { x = 178 y = 28 }
+			format = left
+			size = { x = 340 y = 64 }
+		}
+	}
+}

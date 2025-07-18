@@ -280,6 +280,7 @@ guiTypes = {
 			spriteType= "GFX_society_members_button"
 			position = { x= 500 y = 87 }
 			clicksound = generic_click_04
+			shortcut = "2"
 		}
 		
 		guiButtonType = {
@@ -359,7 +360,7 @@ guiTypes = {
 		iconType = {
 			name = "society_influence"
 			spriteType = "GFX_society_influence_the_assassins" # Changed in code
-			position = { x= 22 y = 308 } 
+			position = { x= 22 y = 308 }
 		}
 		
 		instantTextBoxType = {
@@ -382,12 +383,12 @@ guiTypes = {
 		iconType =	{
 			name = "society_currency"
 			spriteType = "GFX_society_currency_the_assassins" # Changed in code
-			position = { x= 341 y = 315 }
+			position = { x= 350 y = 306 }
 		}
 		
 		instantTextBoxType = {
 			name = "society_currency_text"
-			position = { x = 306 y = 327 }
+			position = { x = 315 y = 318 }
 			format = center
 			font = "vic_18"
 			maxHeight = 20
@@ -395,7 +396,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "society_currency_value_text"
-			position = { x = 467 y = 327 }
+			position = { x = 476 y = 318 }
 			maxWidth = 50
 			maxHeight = 15
 			font = "vic_18"
@@ -415,9 +416,8 @@ guiTypes = {
 		
 		OverlappingElementsBoxType = {
 			name = "society_rank_power_list"
-			position = { x = 326 y = 275 }
-			size = { x=196 y=32 }
-			format = center
+			position = { x = 358 y = 275 }
+			size = { x=187 y=32 }
 		}
 		
 		guiButtonType =	{
@@ -495,13 +495,14 @@ guiTypes = {
 			quadTextureSprite= "GFX_society_list_extend"
 			position = { x= 500 y = 48 }
 			clicksound = generic_click_04
+			shortcut = "1"
 		}
 		
 		windowType = {
 			name = "societies_window"
 			backGround =""
-			position = { x = 548 y = 3 }
-			size = { x = 392 y = 653  }
+			position = { x = 534 y = 3 }
+			size = { x = 392 y = 974  }
 			moveable = 0
 			dontRender = ""
 			horizontalBorder = "0"
@@ -518,7 +519,7 @@ guiTypes = {
 			iconType = {
 				name = "background"
 				spriteType = "GFX_society_expansion_background"
-				position = { x = 0 y = 44 }
+				position = { x = 14 y = 44 }
 				alwaysTransparent = yes
 			}
 			
@@ -535,7 +536,7 @@ guiTypes = {
 				name = "society_list"
 				position = { x = 48 y = 100 }
 				backGround=""
-				size = { x=306 y=500 }
+				size = { x=306 y=800 }
 				spacing = 0
 				scrollbartype = "standardlistbox_slider"
 				borderSize = {x = 0 y = 0}
@@ -546,8 +547,8 @@ guiTypes = {
 		windowType = {
 			name = "society_member_window"
 			backGround =""
-			position = { x = 548 y = 3 }
-			size = { x = 392 y = 653  }
+			position = { x = 534 y = 3 }
+			size = { x = 392 y = 974  }
 			moveable = 0
 			dontRender = ""
 			horizontalBorder = "0"
@@ -564,14 +565,14 @@ guiTypes = {
 			iconType = {
 				name = "background"
 				spriteType = "GFX_society_expansion_background"
-				position = { x = 0 y = 44 }
+				position = { x = 14 y = 44 }
 				alwaysTransparent = yes
 			}
 			
 			iconType = {
 				name = "society_member_list_header"
 				spriteType = "GFX_society_member_list_header"
-				position = { x = 17 y = 82 }
+				position = { x = 24 y = 82 }
 				alwaysTransparent = yes
 			}
 			
@@ -601,9 +602,9 @@ guiTypes = {
 			
 			listboxType = {
 				name = "society_member_list"
-				position = { x = 50 y = 120 }
+				position = { x = 56 y = 120 }
 				backGround=""
-				size = { x=306 y=500 }
+				size = { x=306 y=800 }
 				spacing = 0
 				scrollbartype = "standardlistbox_slider"
 				borderSize = {x = 0 y = 0}
@@ -611,7 +612,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "member_count"
-				position = { x = 15 y = 630 }
+				position = { x = 15 y = 910 }
 				font = "vic_22"
 				text = "UI_MISSING_TEXT"
 				format = left
@@ -819,8 +820,8 @@ guiTypes = {
 		iconType =	{
 			name ="society_rank_icon"
 			spriteType = "GFX_generic_ranks" # Changed in code
-			position = { x= 8 y = -7 }
-			Orientation = "CENTER"
+			position = { x= 25 y = 0 }
+			Orientation = "UPPER_LEFT"
 		}
 	}
 	

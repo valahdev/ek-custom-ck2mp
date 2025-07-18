@@ -171,9 +171,6 @@ guiTypes = {
 			maxHeight = 140	
 			format = centre
 			fixedsize = yes
-			scrollbartype = "standardtextbox_slider"
-			scrollbar_offset = { x = 0 y = -6 }
-			#hide_scrollbar = yes
 		}
 		
 		editBoxType = {
@@ -253,7 +250,7 @@ guiTypes = {
 			buttonText = "OK"
 			buttonFont = "vic_18"
 			position = { x= 275 y = 430 }
-			shortcut = "ENTER"
+			priority_shortcut = "c"
 			clicksound = generic_click_04
 		}
 		guiButtonType = {
@@ -262,7 +259,7 @@ guiTypes = {
 			buttonText = "CANCEL"
 			buttonFont = "vic_18"
 			position = { x= 75 y = 430 }
-			shortcut = "ESCAPE"
+			priority_shortcut = "z"
 			clicksound = generic_click_04
 		}
 		guiButtonType = {
@@ -600,9 +597,6 @@ guiTypes = {
 			maxHeight = 240	
 			format = centre
 			fixedsize = yes
-			scrollbartype = "standardtextbox_slider"
-			scrollbar_offset = { x = 0 y = -6 }
-			#hide_scrollbar = yes
 		}
 		
 		editBoxType = {
@@ -629,7 +623,7 @@ guiTypes = {
 			buttonText = "OK"
 			buttonFont = "vic_18"
 			position = { x= 275 y = 430 }
-			shortcut = "ENTER"
+			priority_shortcut = "c"
 			clicksound = generic_click_04
 		}
 		guiButtonType = {
@@ -1005,9 +999,6 @@ guiTypes = {
 			maxHeight = 180	
 			format = centre
 			fixedsize = yes
-			scrollbartype = "standardtextbox_slider"
-			scrollbar_offset = { x = 4 y = -10 }
-			#hide_scrollbar = yes
 		}
 		
 		guiButtonType = {
@@ -1017,6 +1008,7 @@ guiTypes = {
 			buttonFont = "vic_18"
 			position = { x= 101 y = 239 }
 			clicksound = generic_click_04
+			priority_shortcut = "z"
 		}
 		guiButtonType = {
 			name ="Message_Ok"
@@ -1025,6 +1017,7 @@ guiTypes = {
 			buttonFont = "vic_18"
 			position = { x= 328 y = 239 }
 			clicksound = generic_click_04
+			priority_shortcut = "c"
 		}
 		guiButtonType = {
 			name ="Message_Settings"
@@ -1354,8 +1347,6 @@ guiTypes = {
 			maxHeight = 200	
 			format = left
 			fixedsize = yes
-			#scrollbartype = "standardtextbox_slider"
-			#hide_scrollbar = yes
 		}
 	
 		# options:
@@ -1660,9 +1651,6 @@ guiTypes = {
 			maxHeight = 200	
 			format = centre
 			fixedsize = yes
-			#scrollbartype = "standardtextbox_slider"
-			#scrollbar_offset = { x = 0 y = 0 }
-			#hide_scrollbar = yes
 		}
 	
 		# options:
@@ -1902,9 +1890,6 @@ guiTypes = {
 			maxHeight = 220	
 			format = centre
 			fixedsize = yes
-			#scrollbartype = "standardtextbox_slider"
-			#scrollbar_offset = { x = 0 y = -6 }
-			#hide_scrollbar = yes
 		}
 		
 		# Option 1
@@ -2104,9 +2089,6 @@ guiTypes = {
 			maxHeight = 200	
 			format = left
 			fixedsize = yes
-			#scrollbartype = "standardtextbox_slider"
-			#scrollbar_offset = { x = 0 y = -6 }
-			#hide_scrollbar = yes
 		}
 	
 		# options:
@@ -2199,6 +2181,7 @@ guiTypes = {
 			name = "EventOptionButton1"
 			position = { x = 85 y = 614 }
 			quadTextureSprite ="GFX_event_normal_option"
+			priority_shortcut = "c"
 		}
 		instantTextBoxType = 
 		{

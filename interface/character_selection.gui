@@ -3,8 +3,8 @@ guiTypes = {
 	windowType = {
 		name = "character_selection"
 		backGround = "background"
-		position = { x=548 y=114 }
-		size = { x=512 y=512 }
+		position = { x=547 y=133 }	
+		size = { x=512 y=940 }
 		moveable = 1
 		dontRender = ""
 		horizontalBorder = "0"
@@ -124,7 +124,8 @@ guiTypes = {
 			tooltipText =""
 			delayedTooltipText = ""
 			Orientation = "UPPER_LEFT"
-			shortcut = "ESCAPE"
+			shortcut = "z"
+			priority_shortcut = "ESCAPE"
 		}
 		
 		### previous character
@@ -161,7 +162,6 @@ guiTypes = {
 				position = { x= 12 y = 3 }
 				Orientation = "UPPER_LEFT"
 			}
-
 			iconType = {
 				name ="button_portrait_relation"
 				spriteType = "GFX_overlay_char_relation_50"
@@ -365,7 +365,7 @@ guiTypes = {
 			name = "sort_buttons"
 			backGround =""
 			position = { x=13 y=203 }
-			size = { x=547 y=417 }
+			size = { x=560 y=700 }
 			moveable = 0
 			dontRender = ""
 			horizontalBorder = "0"
@@ -487,13 +487,13 @@ guiTypes = {
 			track= "listboxTrackButton"
 			leftbutton = "upButton"
 			rightbutton = "downButton"
-			size = { x=16 y=379 }
+			size = { x=16 y=700 }
 			position = { x=531 y=229 }
 			priority = 100			
 			borderSize = {x = 24 y = 24}	
-			maxValue =100
-			minValue =0
-			stepSize =1
+			maxValue = 100
+			minValue = 0
+			stepSize = 2
 			startValue = 0
 			horizontal = 0
 
@@ -537,7 +537,7 @@ guiTypes = {
 			name = "character_list"
 			backGround =""
 			position = { x=9 y=228 }
-			size = { x=540 y=384 }
+			size = { x=500 y=710 }
 			moveable = 0
 			dontRender = ""
 			horizontalBorder = ""
