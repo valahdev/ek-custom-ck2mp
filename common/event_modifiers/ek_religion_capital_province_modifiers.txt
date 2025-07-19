@@ -1,0 +1,27 @@
+
+
+capital_military_bonus = {
+    military_techpoints = 0.03
+
+    icon = 1
+}
+
+capital_economy_bonus = {
+    economy_techpoints = 0.03
+
+    icon = 3
+}
+
+capital_culture_bonus = {
+    culture_techpoints = 0.03
+
+    icon = 3
+}
+
+capital_all_techs_bonus = { #dwemer stuff
+	military_techpoints = 0.02
+	culture_techpoints = 0.02
+	economy_techpoints = 0.02
+
+    icon = 3
+}

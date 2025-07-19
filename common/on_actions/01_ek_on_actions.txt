@@ -513,6 +513,7 @@ on_yearly_pulse = {
 		}
 	}
 	events = {
+		rmbonus.1 #religion modifier check
 		ekbirth.103
 		ekpets.10 #Pet death tombola
 		magicka.0

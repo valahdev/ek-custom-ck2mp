@@ -639,32 +639,144 @@ character_event = {
 	}
 }
 
-character_event = {
+# ------ SPAWNING CHILDREN ------ #
+
+character_event = {  #spawning son age 0 
 	id = debugcommand.100
 	is_triggered_only = yes
 	hide_window = yes
 
-immediate = {
-    # ROOT is father
-    create_character = {
-        dynasty = ROOT
-        religion = ROOT
-        culture = ROOT
-        female = no
-        age = 0
-        set_father = ROOT
-        add_to_court = yes
-		name = "Gisel"
-    }
-    create_character = {
-        dynasty = ROOT
-        religion = ROOT
-        culture = ROOT
-        female = yes
-        age = 0
-        set_father = ROOT
-        add_to_court = yes
-		set_name = "Gisela"
+	immediate = {
+    	create_character = {
+        	dynasty = ROOT
+        	religion = ROOT
+        	culture = ROOT
+        	female = no
+        	age = 0
+	    }
+		new_character = {
+			set_character_flag = debug_spawned_child
+			save_event_target_as = child_scope
+		}
+
+    	if = { #checks if player char is female
+        	limit = { ROOT = { is_female = yes } }
+
+			any_courtier = {
+				limit = {
+					has_character_flag = debug_spawned_child
+				}
+				set_mother = ROOT
+			}
+
+			spouse = {
+				ROOT = {
+					any_courtier = {
+						limit = {
+							has_character_flag = debug_spawned_child
+						}
+						set_father = PREVPREV
+					}
+				}
+			}
+			event_target:child_scope = {
+				clr_character_flag = debug_spawned_child
+			}
+    	}
+
+    	if = {
+        	limit = { ROOT = { is_female = no } }
+
+			any_courtier = {
+				limit = {
+					has_character_flag = debug_spawned_child
+				}
+				set_father = ROOT
+			}
+
+			spouse = {
+				ROOT = {
+					any_courtier = {
+						limit = {
+							has_character_flag = debug_spawned_child
+						}
+						set_mother = PREVPREV
+					}
+				}
+			}
+			event_target:child_scope = {
+				clr_character_flag = debug_spawned_child
+			}
+    	}
+	}
+}
+
+character_event = {  #spawning son age 0 
+	id = debugcommand.101
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+    	create_character = {
+        	dynasty = ROOT
+        	religion = ROOT
+        	culture = ROOT
+        	female = yes
+        	age = 0
+	    }
+		new_character = {
+			set_character_flag = debug_spawned_child
+			save_event_target_as = child_scope
+		}
+
+    	if = { #checks if player char is female
+        	limit = { ROOT = { is_female = yes } }
+
+			any_courtier = {
+				limit = {
+					has_character_flag = debug_spawned_child
+				}
+				set_mother = ROOT
+			}
+
+			spouse = {
+				ROOT = {
+					any_courtier = {
+						limit = {
+							has_character_flag = debug_spawned_child
+						}
+						set_father = PREVPREV
+					}
+				}
+			}
+			event_target:child_scope = {
+				clr_character_flag = debug_spawned_child
+			}
+    	}
+
+    	if = {
+        	limit = { ROOT = { is_female = no } }
+
+			any_courtier = {
+				limit = {
+					has_character_flag = debug_spawned_child
+				}
+				set_father = ROOT
+			}
+
+			spouse = {
+				ROOT = {
+					any_courtier = {
+						limit = {
+							has_character_flag = debug_spawned_child
+						}
+						set_mother = PREVPREV
+					}
+				}
+			}
+			event_target:child_scope = {
+				clr_character_flag = debug_spawned_child
+			}
     	}
 	}
 }

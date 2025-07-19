@@ -2129,3 +2129,58 @@ wonder_volwesi = {
 		}
 	}
 }
+
+### Clockwork City
+wonder_clockworkcity = {
+	picture = GFX_wonder_strip_clockworkcity
+	show_model = no
+	allow_construction = no
+
+	potential = {
+		always = no
+	}
+
+	active = {
+		ROOT = {
+			trigger_if = {
+				limit = { has_game_rule = { name = great_work_limit value = any } }
+				has_game_rule = { name = great_work_limit value = any }
+			}
+			
+			trigger_else = {
+				OR = {
+					trigger_if = {
+						limit = { has_game_rule = { name = great_work_limit value = capital } }
+						has_game_rule = { name = great_work_limit value = capital }
+						custom_tooltip = {
+							text = WONDER_IN_CAPITAL_CT
+							FROMFROM = { location = { ROOT = { capital_scope = { province = PREVPREV } } } }
+						}
+					}
+					
+					trigger_else_if = {
+						limit = { has_game_rule = { name = great_work_limit value = demesne } }
+						has_game_rule = { name = great_work_limit value = demesne }
+						custom_tooltip = {
+							text = WONDER_IN_DEMESNE_CT
+							FROMFROM = { location = { ROOT = { any_demesne_province = { province = PREVPREV } } } }
+						}
+					}
+					
+					any_courtier_or_vassal = { has_minor_title = title_volwesi_governor }
+				}
+			}
+		}
+	}
+
+	flags = {
+		is_historical
+		is_destructible
+		cost_high
+		is_clockworkcity
+	}
+	available_upgrades = {
+		
+	}
+	
+}

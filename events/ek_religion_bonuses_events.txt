@@ -1,0 +1,34 @@
+namespace = rmbonus
+
+character_event = {
+    id = rmbonus.1
+    is_triggered_only = yes
+    hide_window = yes
+
+    trigger = {
+        has_landed_title = yes
+        is_feudal = yes
+    }
+
+    immediate = {
+        any_realm_province = {
+            limit = {
+                has_province_modifier = capital_culture_bonus
+            }
+            remove_province_modifier = capital_culture_bonus
+        }
+
+        if = {
+            limit = {
+                religion = dwemer_group
+                capital = { }
+            }
+            capital_scope = {
+                add_province_modifier = {
+                    name = capital_culture_bonus
+                    duration = 365
+                }
+            }
+        }
+    }
+}
