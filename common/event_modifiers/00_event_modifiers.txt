@@ -7484,3 +7484,4 @@ ruthless_host = {
 	icon = 5
 	plot_power_modifier = 0.15
 }
+

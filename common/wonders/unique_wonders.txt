@@ -98,20 +98,19 @@ wonder_skyforge = { #Now Jorrvaskr
 		#upgrade_investment_logging
 		#upgrade_investment_quarry
 	}
-	stage = {
-		allow = {
-		}
+	stage = { #Basic Forge
+		allow = { }
 		build_time = 360
 		gold_cost_flat = 600
-		gold_cost_ticking = 3
+		gold_cost_ticking = 2
 		restore_time = 300
 		loot_time = 20
 		restore_cost_flat = 400
 		restore_cost_ticking = 2
 		upgrade_slots = 2
 		local_modifier = {
-			local_revolt_risk = -0.0125
-			heavy_infantry = 22
+			local_revolt_risk = -0.01
+			heavy_infantry = 15
 		}
 		owner_modifier = {
 			monthly_character_prestige = 0.05
@@ -121,12 +120,12 @@ wonder_skyforge = { #Now Jorrvaskr
 			custom_modifier_text = tavern_custom_modifier_tt
 		}
 	}
-	stage = {
+	stage = { #Honoured Forge
 		allow = {
 		}
-		build_time = 300
-		gold_cost_flat = 650
-		gold_cost_ticking = 3
+		build_time = 540
+		gold_cost_flat = 750
+		gold_cost_ticking = 5
 		restore_time = 240
 		loot_time = 20
 		restore_cost_flat = 450
@@ -134,61 +133,61 @@ wonder_skyforge = { #Now Jorrvaskr
 		upgrade_slots = 2
 		local_modifier = {
 			local_revolt_risk = -0.0125
-			heavy_infantry = 22
+			heavy_infantry = 30
 		}
 		owner_modifier = {
-			monthly_character_prestige = 0.05
-			court_size_modifier = 1
-			drunkard_opinion = 1
-			nord_opinion = 1
-		}
-	}
-	stage = {
-		allow = {
-		}
-		build_time = 240
-		gold_cost_flat = 750
-		gold_cost_ticking = 3
-		restore_time = 180
-		loot_time = 6
-		restore_cost_flat = 500
-		restore_cost_ticking = 2
-		upgrade_slots = 2
-		local_modifier = {
-			local_revolt_risk = -0.0125
-			heavy_infantry = 22
-		}
-		owner_modifier = {
-			monthly_character_prestige = 0.05
-			court_size_modifier = 1
-			drunkard_opinion = 1
-			nord_opinion = 1
-		}
-	}
-	stage = {
-		allow = {
-		}
-		build_time = 240
-		gold_cost_flat = 750
-		gold_cost_ticking = 3
-		restore_time = 180
-		loot_time = 6
-		restore_cost_flat = 500
-		restore_cost_ticking = 2
-		upgrade_slots = 2
-		local_modifier = {
-			local_revolt_risk = -0.0125
-			heavy_infantry = 22
-		}
-		owner_modifier = {
-			monthly_character_prestige = 0.05
+			monthly_character_prestige = 0.10
 			court_size_modifier = 2
 			drunkard_opinion = 2
 			nord_opinion = 2
 		}
 	}
+	stage = { #Master Smith's Skyforge
+		allow = {
+		}
+		build_time = 600
+		gold_cost_flat = 900
+		gold_cost_ticking = 7
+		restore_time = 200
+		loot_time = 10
+		restore_cost_flat = 500
+		restore_cost_ticking = 5
+		upgrade_slots = 3
+		local_modifier = {
+			local_revolt_risk = -0.0125
+			heavy_infantry = 45
+		}
+		owner_modifier = {
+			monthly_character_prestige = 0.15
+			court_size_modifier = 3
+			drunkard_opinion = 3
+			nord_opinion = 3
+		}
+	}
+	stage = { #Legendary Skyforge
+		allow = {
+		}
+		build_time = 720
+		gold_cost_flat = 1500
+		gold_cost_ticking = 10
+		restore_time = 180
+		loot_time = 6
+		restore_cost_flat = 600
+		restore_cost_ticking = 7
+		upgrade_slots = 4
+		local_modifier = {
+			local_revolt_risk = -0.02
+			heavy_infantry = 60
+		}
+		owner_modifier = {
+			monthly_character_prestige = 0.05
+			court_size_modifier = 4
+			drunkard_opinion = 4
+			nord_opinion = 4
+		}
+	}
 }
-####Senchal Port
+####Senchal Port 
 wonder_senchal = { #Great Ports of Senchal
 	picture = GFX_wonder_strip_harbour
 	is_in_water = yes
@@ -256,7 +255,7 @@ wonder_senchal = { #Great Ports of Senchal
 		
 		#Cultural/Religion/Regional/Special Global Upgrades
 		upgrade_runestones
-		upgrade_necromancer_retinue
+		#upgrade_necromancer_retinue
 		upgrade_brewery
 		upgrade_meadery
 		upgrade_vineyard
@@ -274,84 +273,88 @@ wonder_senchal = { #Great Ports of Senchal
 		#upgrade_investment_quarry
 	}
 	
-	stage = {
+	stage = { #Dockyard Foundations
 		allow = {
 		}
-		build_time = 325
-		gold_cost_flat = 2000
-		gold_cost_ticking = 5
-		restore_time = 150
-		loot_time = 12
-		restore_cost_flat = 400
-		restore_cost_ticking = 2
-		upgrade_slots = 3
-		local_modifier = {
-			local_tax_modifier = 0.05
-			tradevalue = 35
-			tech_growth_modifier = 0.01
-		}
-		owner_modifier = {
-			monthly_character_prestige = 0.1
-		}
-	}
-	stage = {
-		allow = {
-		}
-		build_time = 375
-		gold_cost_flat = 2200
-		gold_cost_ticking = 5
-		restore_time = 200
-		loot_time = 12
+		build_time = 360
+		gold_cost_flat = 1200
+		gold_cost_ticking = 3
+		restore_time = 300
+		loot_time = 20
 		restore_cost_flat = 500
 		restore_cost_ticking = 2
 		upgrade_slots = 2
 		local_modifier = {
-			local_tax_modifier = 0.05
-			tradevalue = 35
+			local_tax_modifier = 0.10
+			tradevalue = 30
 			tech_growth_modifier = 0.01
 		}
 		owner_modifier = {
-			monthly_character_prestige = 0.1
+			monthly_character_prestige = 0.10
+			monthly_income = 1
 		}
 	}
-	stage = {
+	stage = { #Merchant's Wharf
 		allow = {
 		}
-		build_time = 375
+		build_time = 540
+		gold_cost_flat = 1800
+		gold_cost_ticking = 5
+		restore_time = 250
+		loot_time = 15
+		restore_cost_flat = 750
+		restore_cost_ticking = 5
+		upgrade_slots = 3
+		local_modifier = {
+			local_tax_modifier = 0.20
+			tradevalue = 35
+			tech_growth_modifier = 0.025
+		}
+		owner_modifier = {
+			monthly_character_prestige = 0.3
+			monthly_income = 2			
+		}
+	}
+	stage = { #Grand Harbor of Senchal
+		allow = {
+		}
+		build_time = 720
 		gold_cost_flat = 2400
-		gold_cost_ticking = 5
+		gold_cost_ticking = 7
 		restore_time = 200
-		loot_time = 12
-		restore_cost_flat = 500
-		restore_cost_ticking = 2
-		upgrade_slots = 2
+		loot_time = 10
+		restore_cost_flat = 1000
+		restore_cost_ticking = 8
+		upgrade_slots = 4
 		local_modifier = {
-			local_tax_modifier = 0.05
-			tradevalue = 35
-			tech_growth_modifier = 0.01
+			local_tax_modifier = 0.30
+			tradevalue = 40
+			tech_growth_modifier = 0.04
 		}
 		owner_modifier = {
-			monthly_character_prestige = 0.1
+			monthly_character_prestige = 0.50
+			monthly_income = 5	
 		}
 	}
-	stage = {
+	stage = { #Legendary Maritime Nexus
 		allow = {
 		}
-		build_time = 325
-		gold_cost_flat = 2600
-		gold_cost_ticking = 5
-		restore_time = 200
-		loot_time = 2
-		restore_cost_flat = 500
-		restore_cost_ticking = 2
-		upgrade_slots = 3
+		build_time = 900
+		gold_cost_flat = 3000
+		gold_cost_ticking = 9
+		restore_time = 180
+		loot_time = 15
+		restore_cost_flat = 1500
+		restore_cost_ticking = 10
+		upgrade_slots = 5
 		local_modifier = {
-			local_tax_modifier = 0.05
-			tradevalue = 35
-			tech_growth_modifier = 0.01
+			local_tax_modifier = 0.40
+			tradevalue = 50
+			tech_growth_modifier = 0.05
 		}
 		owner_modifier = {
-			monthly_character_prestige = 0.1
+			monthly_character_prestige = 0.70
+			monthly_income = 4	
 		}
 	}
 }
@@ -442,88 +445,88 @@ wonder_mane_palace = { #Palace of the Mane
 		#upgrade_investment_quarry
 	}
 	
-	stage = {
+	stage = { #Foundations
 		allow = {
 		}
-		build_time = 325
-		gold_cost_flat = 2000
-		gold_cost_ticking = 5
-		restore_time = 150
-		loot_time = 12
-		restore_cost_flat = 400
-		restore_cost_ticking = 2
-		upgrade_slots = 3
-		local_modifier = {
-			local_tax_modifier = 0.025
-			tech_growth_modifier_culture = 0.01
-		}
-		owner_modifier = {
-			monthly_character_prestige = 0.1
-			monthly_character_piety = 0.05
-			court_size_modifier = 3
-		}
-	}
-	stage = {
-		allow = {
-		}
-		build_time = 375
-		gold_cost_flat = 2200
-		gold_cost_ticking = 5
-		restore_time = 200
-		loot_time = 12
-		restore_cost_flat = 500
-		restore_cost_ticking = 2
-		upgrade_slots = 2
-		local_modifier = {
-			local_tax_modifier = 0.025
-			tech_growth_modifier_culture = 0.01
-		}
-		owner_modifier = {
-			monthly_character_prestige = 0.1
-			monthly_character_piety = 0.05
-			court_size_maintenance_cost_modifier = -0.05
-		}
-	}
-	stage = {
-		allow = {
-		}
-		build_time = 375
-		gold_cost_flat = 2400
-		gold_cost_ticking = 5
-		restore_time = 200
-		loot_time = 12
-		restore_cost_flat = 500
-		restore_cost_ticking = 2
+		build_time = 360
+		gold_cost_flat = 2000  
+		gold_cost_ticking = 3
+		restore_time = 300
+		loot_time = 20
+		restore_cost_flat = 600
+		restore_cost_ticking = 3
 		upgrade_slots = 2
 		local_modifier = {
 			local_tax_modifier = 0.05
-			tech_growth_modifier_culture = 0.01
+			tech_growth_modifier_culture = 0.02
 		}
 		owner_modifier = {
-			monthly_character_prestige = 0.1
-			monthly_character_piety = 0.05
-			court_size_modifier = 3
+			monthly_character_prestige = 0.15
+			monthly_character_piety = 0.10
+			court_size_modifier = 2
 		}
 	}
-	stage = {
+	stage = { #Sanctified Grounds
 		allow = {
 		}
-		build_time = 325
-		gold_cost_flat = 2600
+		build_time = 540
+		gold_cost_flat = 2800
 		gold_cost_ticking = 5
-		restore_time = 200
-		loot_time = 2
-		restore_cost_flat = 500
-		restore_cost_ticking = 2
+		restore_time = 250
+		loot_time = 15
+		restore_cost_flat = 900
+		restore_cost_ticking = 5
 		upgrade_slots = 3
 		local_modifier = {
-			local_tax_modifier = 0.025
-			tech_growth_modifier_culture = 0.01
+			local_tax_modifier = 0.10
+			tech_growth_modifier_culture = 0.03
 		}
 		owner_modifier = {
-			monthly_character_prestige = 0.1
-			monthly_character_piety = 0.05
-			court_size_maintenance_cost_modifier = -0.05
+			monthly_character_prestige = 0.25
+			monthly_character_piety = 0.20
+			court_size_maintenance_cost_modifier = -0.10
+		}
+	}
+	stage = { #Lunar Conclave
+		allow = {
+		}
+		build_time = 720
+		gold_cost_flat = 3800
+		gold_cost_ticking = 7
+		restore_time = 200
+		loot_time = 10
+		restore_cost_flat = 1200
+		restore_cost_ticking = 7
+		upgrade_slots = 4
+		local_modifier = {
+			local_tax_modifier = 0.15
+			tech_growth_modifier_culture = 0.05
+		}
+		owner_modifier = {
+			monthly_character_prestige = 0.35
+			monthly_character_piety = 0.30
+			court_size_modifier = 4
+		}
+	}
+	stage = { #Palace of the Mane
+		allow = {
+		}
+		build_time = 900
+		gold_cost_flat = 5000
+		gold_cost_ticking = 10
+		restore_time = 180
+		loot_time = 6
+		restore_cost_flat = 1500
+		restore_cost_ticking = 10
+		upgrade_slots = 5
+		local_modifier = {
+			local_tax_modifier = 0.20
+			tech_growth_modifier_culture = 0.08
+		}
+		owner_modifier = {
+			monthly_character_prestige = 0.50
+			monthly_character_piety = 0.40
+			court_size_maintenance_cost_modifier = -0.20
 		}
 	}
 }
@@ -612,85 +615,91 @@ wonder_palace_of_kings = {
 		#upgrade_investment_logging
 		upgrade_investment_quarry
 	}
-	stage = {
-		allow = {
-		}
-		build_time = 325
-		gold_cost_flat = 2000
-		gold_cost_ticking = 5
-		restore_time = 150
-		loot_time = 12
-		restore_cost_flat = 400
-		restore_cost_ticking = 2
-		upgrade_slots = 3
-		local_modifier = {
-			tech_growth_modifier_military = 0.025
-		}
-		owner_modifier = {
-			retinuesize = 100
-			monthly_character_prestige = 0.1
-			court_size_modifier = 5
-		}
+	stage = { #jarl's hall
+    	build_time = 360      
+    	gold_cost_flat = 1500
+    	gold_cost_ticking = 3
+    	restore_time = 300
+    	loot_time = 20
+    	restore_cost_flat = 500
+    	restore_cost_ticking = 3
+    	upgrade_slots = 2 
+    	local_modifier = {
+        	tech_growth_modifier_military = 0.05
+        	supply_limit = 2
+    	}
+    	owner_modifier = {
+        	retinuesize = 200 
+        	monthly_character_prestige = 0.15
+        	court_size_modifier = 3
+        	land_morale = 0.05
+    	}
 	}
-	stage = {
+	stage = { #moot hall
 		allow = {
 		}
-		build_time = 375
-		gold_cost_flat = 2200
-		gold_cost_ticking = 5
-		restore_time = 200
-		loot_time = 12
-		restore_cost_flat = 500
-		restore_cost_ticking = 2
-		upgrade_slots = 2
-		local_modifier = {
-			tech_growth_modifier_military = 0.025
-		}
-		owner_modifier = {
-			retinuesize = 100
-			monthly_character_prestige = 0.1
-			court_size_maintenance_cost_modifier = -0.05
-		}
+		 build_time = 540
+    	gold_cost_flat = 2100
+    	gold_cost_ticking = 5
+    	restore_time = 250
+    	loot_time = 15
+    	restore_cost_flat = 750
+    	restore_cost_ticking = 5
+    	upgrade_slots = 3
+    	local_modifier = {
+        	tech_growth_modifier_military = 0.10
+        	supply_limit = 3
+    	}
+    	owner_modifier = {
+        	retinuesize = 400 
+        	monthly_character_prestige = 0.25
+        	court_size_maintenance_cost_modifier = -0.10
+        	land_morale = 0.10
+    	}
 	}
-	stage = {
+	stage = { #high kings citadel
 		allow = {
 		}
-		build_time = 375
-		gold_cost_flat = 2400
-		gold_cost_ticking = 5
-		restore_time = 200
-		loot_time = 12
-		restore_cost_flat = 500
-		restore_cost_ticking = 2
-		upgrade_slots = 2
-		local_modifier = {
-			tech_growth_modifier_military = 0.025
-		}
-		owner_modifier = {
-			retinuesize = 100
-			monthly_character_prestige = 0.1
-			court_size_modifier = 5
-		}
+		build_time = 720
+    	gold_cost_flat = 3000
+    	gold_cost_ticking = 7
+    	restore_time = 200
+    	loot_time = 10
+    	restore_cost_flat = 1000
+    	restore_cost_ticking = 7
+    	upgrade_slots = 4
+    	local_modifier = {
+        	tech_growth_modifier_military = 0.15
+        	supply_limit = 4
+    	}
+    	owner_modifier = {
+        	retinuesize = 600
+        	monthly_character_prestige = 0.35
+        	court_size_modifier = 5
+        	land_morale = 0.15
+    	}
 	}
-	stage = {
+	stage = { #palace of kings
 		allow = {
 		}
-		build_time = 325
-		gold_cost_flat = 2600
-		gold_cost_ticking = 5
-		restore_time = 200
-		loot_time = 2
-		restore_cost_flat = 500
-		restore_cost_ticking = 2
-		upgrade_slots = 3
-		local_modifier = {
-			tech_growth_modifier_military = 0.025
-		}
-		owner_modifier = {
-			retinuesize = 100
-			monthly_character_prestige = 0.1
-			court_size_maintenance_cost_modifier = -0.05
-			land_morale = 0.025
+		build_time = 900
+    	gold_cost_flat = 4200
+    	gold_cost_ticking = 10
+    	restore_time = 180
+    	loot_time = 6
+    	restore_cost_flat = 1500
+    	restore_cost_ticking = 10
+    	upgrade_slots = 5
+    	local_modifier = {
+        	tech_growth_modifier_military = 0.20
+        	supply_limit = 5
+    	}
+    	owner_modifier = {
+        	retinuesize = 800
+        	monthly_character_prestige = 0.50
+        	court_size_maintenance_cost_modifier = -0.20
+        	land_morale = 0.20
+        	norse_opinion = 25
 		}
 	}
 }
@@ -783,82 +792,82 @@ wonder_imperial_city = {
 		#upgrade_investment_quarry
 	}
 	
-	stage = {
+	stage = { #Imperial District
 		allow = {
 		}
-		build_time = 360
-		gold_cost_flat = 2000
-		gold_cost_ticking = 5
+   		build_time = 480 
+    	gold_cost_flat = 3000
+    	gold_cost_ticking = 8
+    	restore_time = 360 
+    	loot_time = 30
+    	restore_cost_flat = 1500
+    	restore_cost_ticking = 5
+    	upgrade_slots = 3
+    	local_modifier = {
+        	local_tax_modifier = 0.10
+        	tradevalue = 50
+        	tech_growth_modifier = 0.03
+    	}
+    	owner_modifier = {
+        	monthly_character_prestige = 0.15
+        	demesne_size = 1
+        	culture_flex = -0.05 
+        	religion_flex = -0.05
+        	global_levy_size = 0.05
+        	global_trade_income = 0.10
+		}
+	}
+	stage = { #White-Gold Tower Complex
+		allow = {
+		}
+ 		build_time = 600
+    	gold_cost_flat = 4500
+    	gold_cost_ticking = 12
+    	restore_time = 300
+    	loot_time = 25
+    	restore_cost_flat = 2250
+    	restore_cost_ticking = 8
+    	upgrade_slots = 4
+    	local_modifier = {
+        	local_tax_modifier = 0.1
+        	tradevalue = 65
+        	tech_growth_modifier = 0.05
+    	}
+    	owner_modifier = {
+        	monthly_character_prestige = 0.25
+        	demesne_size = 2
+        	global_levy_size = 0.10
+        	global_trade_income = 0.15
+        	vassal_limit = 2
+		}
+	}
+
+	stage = { #Jewel of Cyrodiil
+		allow = {
+		}
+		build_time = 720
+		gold_cost_flat = 6500
+		gold_cost_ticking = 15
 		restore_time = 240
-		loot_time = 12
-		restore_cost_flat = 1000
-		restore_cost_ticking = 2
-		upgrade_slots = 4
+		loot_time = 20
+		restore_cost_flat = 3000
+		restore_cost_ticking = 10
+		upgrade_slots = 5
 		local_modifier = {
-			local_tax_modifier = 0.025
-			tradevalue = 25
-			tech_growth_modifier = 0.01
+			local_tax_modifier = 0.20
+			tradevalue = 75
+			tech_growth_modifier = 0.07
 		}
 		owner_modifier = {
-			monthly_character_prestige = 0.1
-			#vassal_limit = 2
-			demesne_size = 1
-			culture_flex = -0.025
+			monthly_character_prestige = 0.35
+			demesne_size = 3
+			culture_flex = 0.15
 			religion_flex = -0.025
-			global_levy_size = 0.01
+			global_levy_size = 0.50
+			vassal_limit = 3
 		}
 	}
-	stage = {
-		allow = {
-		}
-		build_time = 480
-		gold_cost_flat = 2000
-		gold_cost_ticking = 6
-		restore_time = 120
-		loot_time = 12
-		restore_cost_flat = 1000
-		restore_cost_ticking = 3
-		upgrade_slots = 4
-		local_modifier = {
-			local_tax_modifier = 0.025
-			tradevalue = 25
-			tech_growth_modifier = 0.01
-		}
-		owner_modifier = {
-			monthly_character_prestige = 0.1
-			#vassal_limit = 2
-			demesne_size = 1
-			culture_flex = -0.025
-			religion_flex = -0.025
-			global_levy_size = 0.01
-		}
-	}
-	stage = {
-		allow = {
-		}
-		build_time = 600
-		gold_cost_flat = 2000
-		gold_cost_ticking = 7
-		restore_time = 120
-		loot_time = 12
-		restore_cost_flat = 1000
-		restore_cost_ticking = 4
-		upgrade_slots = 4
-		local_modifier = {
-			local_tax_modifier = 0.025
-			tradevalue = 25
-			tech_growth_modifier = 0.01
-		}
-		owner_modifier = {
-			monthly_character_prestige = 0.1
-			#vassal_limit = 2
-			demesne_size = 1
-			culture_flex = -0.025
-			religion_flex = -0.025
-			global_levy_size = 0.01
-		}
-	}
-	stage = {
+	stage = { #Throne of Al-Esh
 		allow = {
 		}
 		build_time = 720
@@ -871,16 +880,16 @@ wonder_imperial_city = {
 		upgrade_slots = 4
 		local_modifier = {
 			local_tax_modifier = 0.025
-			tradevalue = 25
+			tradevalue = 85
 			tech_growth_modifier = 0.01
 		}
 		owner_modifier = {
-			monthly_character_prestige = 0.1
-			#vassal_limit = 2
+			monthly_character_prestige = 0.50
 			demesne_size = 1
-			culture_flex = -0.025
-			religion_flex = -0.025
-			global_levy_size = 0.01
+			culture_flex = -0.050
+			religion_flex = -0.050
+			global_levy_size = 1
+			vassal_limit = 4
 		}
 	}
 }
@@ -2119,4 +2128,59 @@ wonder_volwesi = {
 			global_levy_size = 0.01
 		}
 	}
+}
+
+### Clockwork City
+wonder_clockworkcity = {
+	picture = GFX_wonder_strip_clockworkcity
+	show_model = no
+	allow_construction = no
+
+	potential = {
+		always = no
+	}
+
+	active = {
+		ROOT = {
+			trigger_if = {
+				limit = { has_game_rule = { name = great_work_limit value = any } }
+				has_game_rule = { name = great_work_limit value = any }
+			}
+			
+			trigger_else = {
+				OR = {
+					trigger_if = {
+						limit = { has_game_rule = { name = great_work_limit value = capital } }
+						has_game_rule = { name = great_work_limit value = capital }
+						custom_tooltip = {
+							text = WONDER_IN_CAPITAL_CT
+							FROMFROM = { location = { ROOT = { capital_scope = { province = PREVPREV } } } }
+						}
+					}
+					
+					trigger_else_if = {
+						limit = { has_game_rule = { name = great_work_limit value = demesne } }
+						has_game_rule = { name = great_work_limit value = demesne }
+						custom_tooltip = {
+							text = WONDER_IN_DEMESNE_CT
+							FROMFROM = { location = { ROOT = { any_demesne_province = { province = PREVPREV } } } }
+						}
+					}
+					
+					any_courtier_or_vassal = { has_minor_title = title_volwesi_governor }
+				}
+			}
+		}
+	}
+
+	flags = {
+		is_historical
+		is_destructible
+		cost_high
+		is_clockworkcity
+	}
+	available_upgrades = {
+		
+	}
+	
 }

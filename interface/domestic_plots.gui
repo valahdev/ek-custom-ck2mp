@@ -4,7 +4,7 @@ guiTypes = {
 		name = "domestic_plots"
 		backGround =""
 		position = { x = 0 y = 97 }
-		size = { x = 576 y = 512 }
+		size = { x = 576 y = 1076 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = "0"
@@ -21,7 +21,7 @@ guiTypes = {
 		iconType = {
 			name ="prisoners_bg" # Used for the threats and prisoners tabs
 			spriteType = "GFX_prisoners_bg"
-			position = { x= 6 y = 334 }
+			position = { x= 6 y = 446 }
 			Orientation = "UPPER_LEFT"
 		}
 		iconType = {
@@ -67,8 +67,8 @@ guiTypes = {
 		windowType = {
 			name = "my_plots"   
 			backGround =""
-			position = { x =11 y=338 }
-			size = { x =528 y=300 }
+			position = { x =11 y=450 }
+			size = { x =528 y=540 }
 			moveable = 0
 			dontRender = ""
 			horizontalBorder = "0"
@@ -136,6 +136,7 @@ guiTypes = {
 				buttonText = ""
 				buttonFont = "vic_18"
 				pdx_tooltip = "AUTO_INVITE_PLOTTERS"
+				shortcut = "v"
 			}
 			
 			instantTextBoxType = {
@@ -229,6 +230,7 @@ guiTypes = {
 				name = "invite_button"
 				position = { x=371 y= 91 }
 				quadTextureSprite ="GFX_plots_invite_backer"
+				shortcut = "x"
 			}
 			
 			instantTextBoxType = {
@@ -262,12 +264,12 @@ guiTypes = {
 		iconType = {
 			name = "banner_purple"
 			spriteType ="GFX_banner_purple"	
-			position = { x= 27 y = 54 }
+			position = { x= 27 y = 50 }
 			orientation = "UPPER_LEFT"
 		}
 		instantTextBoxType = {
 			name = "decision_label"
-			position = { x = 24 y =63 }
+			position = { x = 24 y =59 }
 			format = centre
 			textureFile = ""
 			font = "vic_22"
@@ -280,16 +282,16 @@ guiTypes = {
 		}
 		guiButtonType = {
 			name = "decision_reset_button"
-			position = { x = 425 y = 57 }
+			position = { x = 425 y = 53 }
 			quadTextureSprite ="GFX_lobby_cust_reset"
 			clicksound = generic_click_04
 			pdx_tooltip = "RESET_DECISION_FILTERS"
 		}
 		listboxType = {
 			name = "decision_listbox"
-			position = { x = 45 y = 98 }
+			position = { x = 45 y = 94 }
 			backGround=""
-			size = { x = 445 y = 189 }
+			size = { x = 445 y = 324 }
 			Orientation = "UPPER_LEFT"
 			spacing = 0
 			scrollbartype = "standardlistbox_slider"
@@ -300,36 +302,40 @@ guiTypes = {
 		
 		guiButtonType =	{
 			name = "tab_1"
-			position = { x=14 y=308 }
+			position = { x=14 y=420 }
 			quadTextureSprite ="GFX_plots_tab_button"	
 			Orientation = "UPPER_LEFT"
 			clicksound = character_view_click
+			shortcut = "1"
 		}
 		guiButtonType =	{
 			name = "tab_2"
-			position = { x=274 y=308 }
+			position = { x=274 y=420 }
 			quadTextureSprite ="GFX_plots_tab_button"	
 			Orientation = "UPPER_LEFT"
 			clicksound = character_view_click
+			shortcut = "3"
 		}
 		guiButtonType =	{
 			name = "tab_3"
-			position = { x=144 y=308 }
+			position = { x=144 y=420 }
 			quadTextureSprite ="GFX_plots_tab_button"	
 			Orientation = "UPPER_LEFT"
 			clicksound = character_view_click
+			shortcut = "2"
 		}
 		guiButtonType =	{
 			name = "tab_4"
-			position = { x=404 y=308 }
+			position = { x=404 y=420 }
 			quadTextureSprite ="GFX_plots_tab_button"	
 			Orientation = "UPPER_LEFT"
 			clicksound = character_view_click
+			shortcut = "4"
 		}
 		
 		instantTextBoxType = {
 			name = "my_plots_text"
-			position = { x = 24 y = 319 }
+			position = { x = 24 y = 432 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
@@ -342,7 +348,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "prisoners_text"
-			position = { x = 290 y = 319 }
+			position = { x = 290 y = 432 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
@@ -355,7 +361,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "prisoners_nr"
-			position = { x = 342 y = 319 }
+			position = { x = 342 y = 432 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
@@ -368,7 +374,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "plotters_text"
-			position = { x = 160 y = 319 }
+			position = { x = 160 y = 432 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
@@ -381,7 +387,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "plotters_nr"
-			position = { x = 212 y = 319 }
+			position = { x = 212 y = 432 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
@@ -394,7 +400,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "threats_text"
-			position = { x = 420 y = 319 }
+			position = { x = 420 y = 432 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
@@ -407,7 +413,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "threats_nr"
-			position = { x = 472 y = 319 }
+			position = { x = 472 y = 432 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
@@ -422,7 +428,7 @@ guiTypes = {
 		windowType = {
 			name = "prisoners_extension"   
 			backGround =""
-			position = { x =549 y=306 }
+			position = { x =549 y=441 }
 			size = { x =315 y=367 }
 			moveable = 0
 			dontRender = ""
@@ -802,7 +808,7 @@ guiTypes = {
 		### sortbuttons THREAT
 		guiButtonType =	{
 			name = "sort_threat_name"
-			position = { x=16 y=345 }
+			position = { x=16 y=462 }
 			quadTextureSprite ="GFX_sort_180"	
 			buttonFont = "vic_18_black"
 			buttonText = "PLOTS_NAME"
@@ -810,7 +816,7 @@ guiTypes = {
 		}
 		guiButtonType =	{
 			name = "sort_threat_title"
-			position = { x=195 y=345 }
+			position = { x=195 y=462 }
 			quadTextureSprite ="GFX_sort_180"	
 			buttonFont = "vic_18_black"
 			buttonText = "PLOTS_TITLE"
@@ -818,7 +824,7 @@ guiTypes = {
 		}
 		guiButtonType =	{
 			name = "sort_threat_opinion"
-			position = { x=373 y=345 }
+			position = { x=373 y=462 }
 			quadTextureSprite ="GFX_sort_76"	
 			buttonFont = "vic_18_black"
 			buttonText = "PLOTS_OPINION"
@@ -826,7 +832,7 @@ guiTypes = {
 		}
 		guiButtonType =	{
 			name = "sort_threat_revoltrisk"
-			position = { x=446 y=345 }
+			position = { x=446 y=462 }
 			quadTextureSprite ="GFX_sort_88"	
 			buttonFont = "vic_18_black"
 			buttonText = "THREAT"
@@ -836,7 +842,7 @@ guiTypes = {
 		### sortbuttons PRISONERS
 		guiButtonType =	{
 			name = "sort_prisoner_name"
-			position = { x=16 y=345 }
+			position = { x=16 y=458 }
 			quadTextureSprite ="GFX_sort_84"	
 			buttonFont = "vic_18_black"
 			buttonText = "PLOTS_NAME"
@@ -844,7 +850,7 @@ guiTypes = {
 		}
 		guiButtonType =	{
 			name = "sort_prisoner_timeinprison"
-			position = { x=98 y=345 }
+			position = { x=98 y=458 }
 			quadTextureSprite ="GFX_sort_116"	
 			buttonFont = "vic_18_black"
 			buttonText = "PLOTS_TIMEINPRISON"
@@ -852,7 +858,7 @@ guiTypes = {
 		}
 		guiButtonType =	{
 			name = "sort_prisoner_title"
-			position = { x=211 y=345 }
+			position = { x=211 y=458 }
 			quadTextureSprite ="GFX_sort_116"	
 			buttonFont = "vic_18_black"
 			buttonText = "PLOTS_TITLE"
@@ -860,7 +866,7 @@ guiTypes = {
 		}
 		guiButtonType =	{
 			name = "sort_prisoner_opinion"
-			position = { x=324 y=345 }
+			position = { x=324 y=458 }
 			quadTextureSprite ="GFX_sort_76"	
 			buttonFont = "vic_18_black"
 			buttonText = "PLOTS_OPINION"
@@ -868,7 +874,7 @@ guiTypes = {
 		}
 		guiButtonType =	{
 			name = "sort_prisoner_actions"
-			position = { x=398 y=345 }
+			position = { x=398 y=458 }
 			quadTextureSprite ="GFX_sort_136"	
 			buttonFont = "vic_18_black"
 			buttonText = "PLOTS_ACTIONS"
@@ -877,16 +883,17 @@ guiTypes = {
 		### sortbuttons PLOTTERS
 		checkboxType = {
 			name = "auto_stop_plot_checkbox"
-			position = { x = 20 y = 355 }
+			position = { x = 20 y = 465 }
 			quadTextureSprite ="GFX_checkbox_default"	
 			buttonText = ""
 			buttonFont = "vic_18"
 			pdx_tooltip = "AUTO_STOP_PLOTS"
+			shortcut = "v"
 		}
 		
 		instantTextBoxType = {
 			name = "auto_stop_plot_checkbox_label"
-			position = { x = 50 y = 360 }
+			position = { x = 50 y = 470 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
@@ -900,7 +907,7 @@ guiTypes = {
 		
 		guiButtonType =	{
 			name = "sort_plotter_name"
-			position = { x=15 y=395 }
+			position = { x=15 y=506 }
 			quadTextureSprite ="GFX_sort_112"	
 			buttonFont = "vic_18_black"
 			buttonText = "PLOTS_NAME"
@@ -908,7 +915,7 @@ guiTypes = {
 		}
 		guiButtonType =	{
 			name = "sort_plotter_plot"
-			position = { x=125 y=395 }
+			position = { x=125 y=506 }
 			quadTextureSprite ="GFX_sort_112"	
 			buttonFont = "vic_18_black"
 			buttonText = "PLOTS_PLOT"
@@ -916,7 +923,7 @@ guiTypes = {
 		}
 		guiButtonType =	{
 			name = "sort_plotter_target"
-			position = { x=235 y=395 }
+			position = { x=235 y=506 }
 			quadTextureSprite ="GFX_sort_112"	
 			buttonFont = "vic_18_black"
 			buttonText = "PLOTS_TARGET"
@@ -924,7 +931,7 @@ guiTypes = {
 		}
 		guiButtonType =	{
 			name = "sort_plotter_backers"
-			position = { x=346 y=395 }
+			position = { x=346 y=506 }
 			quadTextureSprite ="GFX_sort_188"	
 			buttonFont = "vic_18_black"
 			buttonText = "PLOTS_BACKERS"
@@ -935,9 +942,9 @@ guiTypes = {
 		####  listbox for threats/prisoners/plotters
 		listboxType = {
 			name = "char_listbox"
-			position = { x=11 y = 368 } # Note that the real position is set by plotters_char_list_position and normal_char_list_position!
+			position = { x=11 y = 506 } # Note that the real position is set by plotters_char_list_position and normal_char_list_position!
 			backGround=""
-			size = { x = 512 y = 240 } # Like the position, actually set by plotters_char_list_size and normal_char_list_size
+			size = { x = 512 y = 432 } # Like the position, actually set by plotters_char_list_size and normal_char_list_size
 			Orientation = "UPPER_LEFT"
 			spacing = 0
 			scrollbartype = "standardlistbox_slider"
@@ -946,7 +953,7 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "prisoners_extend"
-			position = { x = 508 y = 338 }
+			position = { x = 508 y = 450 }
 			quadTextureSprite = "GFX_prisoners_extend"
 			Orientation = "UPPER_LEFT"
 			clicksound = click
@@ -958,7 +965,7 @@ guiTypes = {
 		windowType = {
 			name = "available_plots_window"
 			backGround =""
-			position = { x=-1 y=292 }	
+			position = { x=-1 y=362 }	
 			size = { x = 200 y = 60 }
 			moveable = 0
 			dontRender = ""
@@ -976,7 +983,7 @@ guiTypes = {
 				name = "available_plots_listbox"
 				position = { x=43 y = 110 }
 				backGround=""
-				size = { x = 447 y = 228 }
+				size = { x = 447 y = 456 }
 				Orientation = "UPPER_LEFT"
 				spacing = 0
 				scrollbartype = "standardlistbox_slider"
@@ -984,12 +991,13 @@ guiTypes = {
 			}
 			guiButtonType =	{
 				name = "cancel_button"
-				position = { x=219 y=338 }
+				position = { x=219 y=566  }
 				quadTextureSprite ="GFX_standard_button_112"	
 				buttonFont = "vic_18"
 				buttonText = "BACK"
 				Orientation = "UPPER_LEFT"
 				clicksound = generic_click_04
+				shortcut = "z"
 			}
 		}
 	}
@@ -1151,7 +1159,7 @@ guiTypes = {
 				font = "vic_18_black"
 				borderSize = {x = 0 y = 0}
 				text = "UI_MISSING_TEXT"
-				maxWidth = 110
+				maxWidth = 175
 				maxHeight = 20
 				fixedsize = yes
 				format = left
@@ -1163,7 +1171,7 @@ guiTypes = {
 				font = "vic_18_black"
 				borderSize = {x = 0 y = 0}
 				text = "UI_MISSING_TEXT"
-				maxWidth = 110
+				maxWidth = 115
 				maxHeight = 20
 				fixedsize = yes
 				format = right
@@ -1701,7 +1709,7 @@ guiTypes = {
 			font = "Arial12_black"
 			borderSize = {x = 0 y = 0}
 			text = "UI_MISSING_TEXT"
-			maxWidth = 225§
+			maxWidth = 225
 			maxHeight = 20
 			fixedsize = yes
 			format = left
@@ -1727,28 +1735,28 @@ guiTypes = {
 	
 	positionType = {
 		name = "my_tier_listbox_half_size"
-		position = { x = 511 y = 204 }
+		position = { x = 511 y = 340}
 	}
 	
 	positionType = {
 		name = "my_tier_listbox_full_size"
-		position = { x = 511 y = 476 }
+		position = { x = 511 y = 822 }
 	}
 	
 	positionType = {
 		name = "plotters_char_list_position"
-		position = { x = 11 y = 419 }
+		position = { x = 11 y = 532 }
 	}
 	positionType = {
 		name = "plotters_char_list_size"
-		position = { x = 512 y = 240 }
+		position = { x = 512 y = 432 }
 	}
 	positionType = {
 		name = "normal_char_list_position"
-		position = { x = 11 y = 370 }
+		position = { x = 11 y = 482 }
 	}
 	positionType = {
 		name = "normal_char_list_size"
-		position = { x = 512 y = 288 }
+		position = { x = 512 y = 480 }
 	}
 }

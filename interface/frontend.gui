@@ -534,6 +534,7 @@ guiTypes = {
 			buttonText = "BACK"
 			buttonFont = "vic_18"
 			clicksound = menu_click
+			shortcut = "z"
 		}				
 		guiButtonType = {
 			name = "custom_game"
@@ -542,6 +543,7 @@ guiTypes = {
 			buttonText = "CUSTOM_GAME"
 			buttonFont = "vic_18"
 			clicksound = menu_click
+			shortcut = "c"
 		}
 		guiButtonType = {
 			name = "start_game"
@@ -550,6 +552,7 @@ guiTypes = {
 			buttonText = "START_GAME"
 			buttonFont = "vic_18"
 			clicksound = menu_click
+			shortcut = "v"
 		}		
 		guiButtonType ={
 			name = "start_game_required_dlc"
@@ -751,6 +754,7 @@ guiTypes = {
 				delayedTooltipText = ""
 				buttonText = "FE_BACK"
 				buttonFont = "vic_18"
+				shortcut = "z"
 			}
 						
 		}
@@ -1050,6 +1054,7 @@ guiTypes = {
 					buttonText = "FE_SINGLE_PLAYER"
 					buttonFont = "vic_22"
 					clicksound = menu_click
+					shortcut = "c"
 				}
 				
 				guiButtonType = 
@@ -1099,6 +1104,7 @@ guiTypes = {
 					buttonText = "FE_EXIT"
 					buttonFont = "vic_22"
 					clicksound = quit
+					shortcut = "z"
 				}
 				
 				###### TEST BUTTONS ######
@@ -1111,6 +1117,7 @@ guiTypes = {
 					buttonText = "FE_NEW_GAME"
 					buttonFont = "vic_22"
 					clicksound = menu_click
+					shortcut = "c"
 				}
 				
 				guiButtonType = 
@@ -1121,6 +1128,7 @@ guiTypes = {
 					buttonText = "FE_LOAD_GAME"
 					buttonFont = "vic_22"
 					clicksound = menu_click
+					shortcut = "v"
 				}
 
 				guiButtonType = 
@@ -1141,6 +1149,7 @@ guiTypes = {
 					position = { x = -94 y = 170	 }
 					quadTextureSprite ="homepage"
 					clicksound = menu_click
+
 				}
 				guiButtonType = 
 				{
@@ -1148,6 +1157,7 @@ guiTypes = {
 					position = { x = -47 y = 170	 }
 					quadTextureSprite ="forum"	
 					clicksound = menu_click
+
 				}
 				guiButtonType = 
 				{
@@ -1251,28 +1261,12 @@ guiTypes = {
 					clicksound = menu_click
 				}
 				
-				#guiButtonType = {
-				#	name = "extend_featured_ruler"
-				#	position = { x = 145 y = -100 }
-				#	quadTextureSprite = "GFX_featured_ruler_arrow_round_right"
-				#	Orientation = "UPPER_LEFT"
-				#	clicksound = click
-				#}
-				
-				#guiButtonType = {
-				#	name = "extend_browser_window"
-				#	position = { x = -180 y = -100 }
-				#	quadTextureSprite = "GFX_featured_ruler_arrow_round_left"
-				#	Orientation = "UPPER_LEFT"
-				#	clicksound = click
-				#}
-				
 				###### TEST BUTTONS ######
 
 				guiButtonType = 
 				{
 					name = "single_player_button"
-					position = { x = -665 y = -110 }
+					position = { x = -465 y = -110 }
 					quadTextureSprite ="GFX_big_button_176"	
 					buttonText = "FE_NEW_GAME"
 					buttonFont = "vic_22"
@@ -1282,7 +1276,7 @@ guiTypes = {
 				guiButtonType = 
 				{
 					name = "load_game_button"
-					position = { x = -665 y = -60 }
+					position = { x = -465 y = -60 }
 					quadTextureSprite ="GFX_big_button_176"	
 					buttonText = "FE_LOAD_GAME"
 					buttonFont = "vic_22"
@@ -1292,7 +1286,7 @@ guiTypes = {
 				guiButtonType = 
 				{
 					name = "nudge_button"
-					position = { x = -665 y = -10 }
+					position = { x = -465 y = -10 }
 					quadTextureSprite ="GFX_big_button_176"	
 					buttonText = "NUDGE"
 					buttonFont = "vic_22"
@@ -1594,13 +1588,13 @@ guiTypes = {
 				{
 					name ="lobby_int_chars"
 					spriteType = "GFX_lobby_int_chars"
-					position = { x= 9 y = 273 }
+					position = { x= 9 y = 360 }
 					Orientation = "UPPER_LEFT"
 				}
 				instantTextBoxType = 
 				{
 					name = "interesting_characters_label"
-					position = { x = 22 y = 290 }
+					position = { x = 22 y = 375 }
 					textureFile = ""
 					font = "vic_18"
 					borderSize = {x = 0 y = 0}
@@ -1618,7 +1612,9 @@ guiTypes = {
 					buttonFont = "vic_18"
 					buttonText = "FE_LOAD_GAME"
 					clicksound = character_view_click
+					shortcut = "v"
 				}
+
 				### bookmarks
 				windowType = 
 				{
@@ -1652,7 +1648,7 @@ guiTypes = {
 						name ="bookmarks_list"
 						position = { x = -11 y = 106 }
 						backGround=""
-						size = { x=239 y =168}
+						size = { x=239 y =252}
 						Orientation = "UPPER_LEFT"
 						spacing = 0
 						scrollbartype = "standardlistbox_slider"
@@ -1661,9 +1657,9 @@ guiTypes = {
 					listboxType = 
 					{
 						name = "Chars_Listbox"
-						position = { x=20 y = 317 }
+						position = { x=20 y = 402 }
 						backGround=""
-						size = { x = 200  y = 228 }
+						size = { x = 200  y = 456 }
 						Orientation = "UPPER_LEFT"
 						spacing = 0
 						scrollbartype = "standardlistbox_slider"
@@ -2003,7 +1999,7 @@ guiTypes = {
 						name = "Vassals_Listbox"
 						position = { x=5 y = 385 }
 						backGround=""
-						size = { x = 200 y = 228 }
+						size = { x = 200 y = 456 }
 						Orientation = "UPPER_LEFT"
 						spacing = 0
 						scrollbartype = "standardlistbox_slider"
@@ -2131,7 +2127,7 @@ guiTypes = {
 						name = "Republics_Listbox"
 						position = { x=5 y = 67 }
 						backGround=""
-						size = { x = 200 y = 549 }
+						size = { x = 200 y = 610 }
 						Orientation = "UPPER_LEFT"
 						spacing = 0
 						scrollbartype = "standardlistbox_slider"
@@ -5414,6 +5410,7 @@ guiTypes = {
 					clicksound = menu_click
 					pdx_tooltip = "RANDOM_CHARACTER"
 					pdx_tooltip_delayed = "RANDOM_CHARACTER_DESC"
+					shortcut = "R"
 				}
 
 				guiButtonType = 
@@ -5444,7 +5441,7 @@ guiTypes = {
 					position = { x = -210 y = -80 }
 					Orientation = "LOWER_RIGHT"
 				}
-
+				
 				iconType = {
 					name = "bronzeman_icon"
 					spriteType = "GFX_bronzeman_icon"
@@ -5484,6 +5481,7 @@ guiTypes = {
 					buttonFont = "vic_18"
 					Orientation = "LOWER_RIGHT"
 					clicksound = menu_click
+					shortcut = "z"
 				}			
 			}
 
@@ -5548,7 +5546,7 @@ guiTypes = {
 			name ="traits"
 			position = { x=18 y =12}
 			backGround=""
-			size = { x=241 y =300}
+			size = { x=241 y =450}
 			Orientation = "UPPER_LEFT"
 			spacing = 0
 			scrollbartype = "standardlistbox_slider"
@@ -5560,7 +5558,7 @@ guiTypes = {
 		guiButtonType = 
 		{
 			name = "cancel_button"
-			position = { x = 61 y = 318 }
+			position = { x = 61 y = 468 }
 			quadTextureSprite ="GFX_standard_button_164"
 			buttonText = "CLOSE"
 			buttonFont = "vic_18"
@@ -5990,7 +5988,7 @@ guiTypes = {
 			font = "vic_18_black"
 			borderSize = {x = 1 y = 1}
 			text = ""	
-			maxWidth = 220
+			maxWidth = 240
 			maxHeight = 18	
 			fixedsize = yes
 			alwaystransparent = yes
@@ -6504,7 +6502,7 @@ guiTypes = {
 		}
 		
 	}
-
+	
 	### DLC ICON ENTRY
 	windowType = {
 		name = "dlc_icon_entry"
@@ -6652,6 +6650,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_standard_button_112"	
 			buttonText = "SM_BACK"
 			buttonFont = "vic_18"
+			shortcut = "z"
 		}
 		guiButtonType = {
 			name = "start"

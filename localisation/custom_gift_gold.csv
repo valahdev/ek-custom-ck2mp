@@ -1,0 +1,16 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+player_gift_gold;Custom Gift Gold;;;;;;;;;;;;;x
+player_gift_gold_desc;[From.GetBestName] has decided to give [Root.GetBestName], a sum of gold to save [Root.GetHerHis] broke ass.;;;;;;;;;;;;;x
+EVTDESCcustom_gift_gold_sender.0;[Root.GetBestName] is now thinking how much gold should [Root.GetSheHe] give to this broke ass n'wah [From.GetBestName].;;;;;;;;;;;;;x
+EVTDESCcustom_gift_gold_sender.1;[Root.GetBestName] is now thinking how much gold should [Root.GetSheHe] give to this broke ass n'wah [gift_target.GetBestName].;;;;;;;;;;;;;x
+EVTDESCcustom_gift_gold_receiver.0; [From.GetTitledFirstName] has sent you [From.gift_amount.GetValue] gold.;;;;;;;;;;;;;x
+EVTOPTcustom_gift_gold_received.0;Did [From.GetSheHe] just call me a broke ass n'wah?;;;;;;;;;;;;;x
+EVTOPTAcustom_gift_gold.0;Gift 10 Gold;;;;;;;;;;;;;x
+EVTOPTBcustom_gift_gold.0;Gift 50 Gold;;;;;;;;;;;;;x
+EVTOPTCcustom_gift_gold.0;Gift 100 Gold;;;;;;;;;;;;;x
+EVTOPTAcustom_gift_gold.1;Gift 200 Gold;;;;;;;;;;;;;x
+EVTOPTBcustom_gift_gold.1;Gift 500 Gold;;;;;;;;;;;;;x
+EVTOPTCcustom_gift_gold.1;Gift 1000 Gold;;;;;;;;;;;;;x
+EVTOPTAcustom_gift_gold.2;I changed my mind.;;;;;;;;;;;;;x
+
+

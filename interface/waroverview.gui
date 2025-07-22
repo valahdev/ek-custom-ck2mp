@@ -4,8 +4,8 @@ guiTypes = {
 	windowType = {
 		name = "waricon_box"
 		backGround =""
-		position = { x = -815 y = -50 }
-		size = { x = 200 y = 100 }
+		position = { x = -1170 y = -50 }
+		size = { x = 910 y = 100 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = "0"
@@ -17,7 +17,7 @@ guiTypes = {
 			name = "movable_box"
 			backGround =""
 			position = { x = 0 y = 0 }
-			size = { x = 200 y = 100 }
+			size = { x = 910 y = 100 }
 			moveable = 0
 			dontRender = ""
 			horizontalBorder = "0"
@@ -28,13 +28,14 @@ guiTypes = {
 			OverlappingElementsBoxType = {
 				name = "box" # This contains the war icons
 				position = { x = 0 y = 0 }
-				size = { x=380 y=100 }
+				size = { x = 910 y = 100 }
 				format = right
+				Orientation = "LOWER_RIGHT"
 			}
 		}
 	}
 
-	### ENTRY for who you are at war with beside the minimap.
+	### ENTRY for who you are at war with battleeside the minimap.
 	windowType = {
 		name = "waricon"
 		backGround =""
@@ -349,7 +350,7 @@ guiTypes = {
 		name = "waroverview"
 		backGround ="background"
 		position = { x = -300 y = -270 }
-		size = { x = 576 y = 512 }
+		size = { x = 576 y = 688 }
 		moveable = 1
 		dontRender = ""
 		horizontalBorder = "0"
@@ -625,7 +626,7 @@ guiTypes = {
 			name ="battles"
 			position = { x = 46 y = 260 }
 			backGround=""
-			size = { x=530  y =280 }
+			size = { x=530  y =420 }
 			Orientation = "UPPER_LEFT"
 			spacing = 0
 			scrollbartype = "standardlistbox_slider"

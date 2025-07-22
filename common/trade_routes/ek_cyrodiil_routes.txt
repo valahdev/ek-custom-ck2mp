@@ -3,28 +3,30 @@ niben_river_route = {
 	trade_post_display_trigger = {
 		OR = {
 			province_id = 1 #Imperial Province
+			province_id = 595 #Cropsford
 			province_id = 10 #Bravil
+			province_id = 222 #Rimmen
 			province_id = 13 #Leyawiin
-			province_id = 211 #Senchal
-			province_id = 1065 #Soulrest
-			province_id = 119 #Blackrose
 			province_id = 218 #Alabaster
-			province_id = 102 #Soulrest
+			province_id = 211 #Senchal
 			province_id = 208 #Torval
 			province_id = 244 #Haven
-			province_id = 222 #Rimmen
-			province_id = 595 #Cropsford
+			province_id = 1065 #Soulrest Sea
+			province_id = 102 #Soulrest
+			province_id = 119 #Blackrose
+			province_id = 989 #Lividur (Akavir Kamal)
+			province_id = 973 #Qul (Akvir Kamal)
 		}
 	}
 
 	modifier = {	# How the trade route modifies the provinces it passes
-		castle_tax_modifier = 0.02
-		city_tax_modifier = 0.02
-		temple_tax_modifier = 0.02
-		tribal_tax_modifier = 0.02
+		castle_tax_modifier = 0.01334
+		city_tax_modifier = 0.01334
+		temple_tax_modifier = 0.01334
+		tribal_tax_modifier = 0.01334
 		trade_route_value = 5
-		local_movement_speed = 0.05
-		tech_growth_modifier = 0.05
+		local_movement_speed = 0.03334
+		tech_growth_modifier = 0.03334
 		icon = 4
 	}
 
@@ -47,9 +49,6 @@ niben_river_route = {
 	path = { #Leyawiin - Topal Sea
 		13 528 1071 
 	}
-	path = {	# Topal Sea - Blackrose
-		1071 102 1065 119
-	}
 	path = {	# Topal Sea - Haven Sea
 		1071 211 403 1064 1282 1075
 	}
@@ -59,6 +58,19 @@ niben_river_route = {
 	path = {	# Haven Sea - Torval
 		1075 208
 	}
+	
+	path = {	# Topal Sea - Blackrose - Volatra - Dread Sea
+		1071 102 1065 119 117 1050 1051 1179 1176 1053
+	}
+
+	path = { # Dread Sea - Lividur
+		1053 1041 989
+	}
+
+	path = { # Dread Sea - Qul
+		1053 973
+	}
+
 }
 
 anvil_port_route = {

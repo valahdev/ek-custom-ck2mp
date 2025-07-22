@@ -1,0 +1,21 @@
+targetted_decisions = {
+	player_gift_gold = {
+	   filter = all
+
+		allow = {
+			FROM = { wealth = 1 }
+		}
+
+		effect = {
+			FROM = {
+				character_event = { id = custom_gift_gold.0 }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

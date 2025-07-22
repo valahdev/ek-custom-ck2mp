@@ -1,0 +1,146 @@
+namespace = custom_gift_gold
+
+character_event = {
+	id = custom_gift_gold.0
+	desc = EVTDESCcustom_gift_gold_sender.0
+	picture = GFX_evt_council
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAcustom_gift_gold.0
+		trigger = { wealth = 10 }
+
+		effect = {
+			ROOT = { wealth = -10 }
+			
+			FROM = {
+				wealth = 10
+				hidden_tooltip ={
+					set_variable = { which = gift_amount value = 10 }
+				}
+				character_event = { id = custom_gift_gold.2}
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTBcustom_gift_gold.0
+		trigger = { wealth = 50 }
+
+		effect = {
+			ROOT = { wealth = -50 }
+			
+			FROM = {
+				wealth = 50
+				hidden_tooltip ={
+					set_variable = { which = gift_amount value = 50 }
+				}
+				character_event = { id = custom_gift_gold.2}
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTCcustom_gift_gold.0
+		trigger = { wealth = 100 }
+
+		effect = {
+			ROOT = { wealth = -100 }
+			
+			FROM = {
+				wealth = 100
+				hidden_tooltip ={
+					set_variable = { which = gift_amount value = 100 }
+				}
+				character_event = { id = custom_gift_gold.2}
+			}
+		}
+	}
+
+	option = {
+		name = "More options..."
+		effect = {
+			FROM = { save_event_target_as = gift_target }
+			character_event = { id = custom_gift_gold.1}
+			}
+		}
+}
+
+character_event = {
+	id = custom_gift_gold.1
+	desc = EVTDESCcustom_gift_gold_sender.1
+	picture = GFX_evt_council
+	is_triggered_only = yes
+
+	immediate = {
+    	log = "Gift target is [event_target:gift_target.GetName]"
+}
+	option = {
+		name = EVTOPTAcustom_gift_gold.1
+		trigger = { wealth = 200 }
+
+		effect = {
+			ROOT = { wealth = -200 }
+			
+			event_target:gift_target = {
+				wealth = 200
+				hidden_tooltip ={
+					set_variable = { which = gift_amount value = 200 }
+				}
+				character_event = { id = custom_gift_gold.2}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTBcustom_gift_gold.1
+		trigger = { wealth = 500 }
+
+		effect = {
+			ROOT = { wealth = -500 }
+			
+			event_target:gift_target = {
+				wealth = 500
+				hidden_tooltip ={
+					set_variable = { which = gift_amount value = 500 }
+				}
+				character_event = { id = custom_gift_gold.2}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTCcustom_gift_gold.1
+		trigger = { wealth = 1000 }
+
+		effect = {
+			ROOT = { wealth = -1000 }
+			
+			event_target:gift_target = {
+				wealth = 1000
+				hidden_tooltip ={
+					set_variable = { which = gift_amount value = 1000 }
+				}
+				character_event = { id = custom_gift_gold.2}
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTAcustom_gift_gold.2
+	}
+}
+
+character_event = {
+	id = custom_gift_gold.2
+	desc = EVTDESCcustom_gift_gold_receiver.0
+	is_triggered_only = yes
+	picture = GFX_evt_council
+
+	option = {
+		name = EVTOPTcustom_gift_gold_received.0
+		effect = {
+        	FROM = { clr_variable = gift_amount }
+    	}
+	}
+}

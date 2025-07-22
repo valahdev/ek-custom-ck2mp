@@ -119,6 +119,44 @@ trade_route_post_trigger = {
 				province_id = 636 #Ravan
 				province_id = 633 #Samara
 				province_id = 527 #Herne
+
+
+				province_id = 1006 # Segaji
+				province_id = 845 # Shingen
+				province_id = 792 # Cirat
+				province_id = 808 # Mekaya
+
+				province_id = 806 # Cotu
+				province_id = 840 # Meralang
+				province_id = 836 # Papraya
+
+				province_id = 818 # Volatra
+				province_id = 805 # Karitu
+
+				province_id = 873 # Pedraha
+				province_id = 735 # Esroniet
+				province_id = 731 # Yneslea
+				province_id = 444 # Quey
+				province_id = 423 # Cronan
+
+				province_id = 825 #Amalam
+				province_id = 755 #Panyat
+
+				province_id = 1249 #Kansi
+				province_id = 912 #Chondahan
+				province_id = 913 #Burising
+				province_id = 887 #Mahala
+
+				province_id = 760 #Chungzi
+				province_id = 815 #Changzi
+				province_id = 780 #Ho Bei
+				province_id = 821 #Yichung
+				province_id = 847 #Nanchung
+
+				province_id = 753 #Tang Yala
+				province_id = 750 #Ratchata
+				province_id = 741 #Ang Het
+				province_id = 995 #Siman
 			}
 		}
 	}

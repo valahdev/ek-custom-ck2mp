@@ -117,6 +117,10 @@ on_startup = {
 		orgnum.19
 		relbeh.0 # Religious behaviour traits
 		DW.1
+		zakatrade.0 #North Akavir Trade POIs
+		#zakatrade.1 #Placeholder for South Akavir Trade POIs
+		zakatrade.2 #Adds POIs to the Niben River trade
+		
 	}
 }
 
@@ -509,6 +513,7 @@ on_yearly_pulse = {
 		}
 	}
 	events = {
+		rmbonus.1 #religion modifier check
 		ekbirth.103
 		ekpets.10 #Pet death tombola
 		magicka.0
